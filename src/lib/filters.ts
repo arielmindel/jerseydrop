@@ -6,6 +6,7 @@ export type ProductFilterParams = {
   league?: string | string[];
   team?: string | string[];
   nation?: string | string[];
+  type?: string | string[];
   version?: string | string[];
   size?: string | string[];
   season?: string | string[];
@@ -21,6 +22,7 @@ export type ParsedFilters = {
   league: string[];
   team: string[];
   nation: string[];
+  type: string[];
   version: ProductVersion[];
   size: Size[];
   season: string[];
@@ -54,6 +56,7 @@ export function parseFilters(params: ProductFilterParams): ParsedFilters {
     league: toArray(params.league),
     team: toArray(params.team),
     nation: toArray(params.nation),
+    type: toArray(params.type),
     version: toArray(params.version) as ProductVersion[],
     size: toArray(params.size) as Size[],
     season: toArray(params.season),
@@ -91,6 +94,8 @@ export function applyFilters(
     if (filters.team.length && !filters.team.includes(p.teamSlug))
       return false;
     if (filters.nation.length && (!p.nation || !filters.nation.includes(p.nation)))
+      return false;
+    if (filters.type.length && !filters.type.includes(p.type))
       return false;
     if (filters.version.length) {
       const match = p.versions.some((v) => filters.version.includes(v));
