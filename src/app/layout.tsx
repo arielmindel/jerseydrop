@@ -59,6 +59,10 @@ export const metadata: Metadata = {
       "חולצות רשמיות לנבחרות ולמועדונים. התאמה אישית. משלוח לכל הארץ.",
   },
   alternates: { canonical: "https://jerseydrop.co.il" },
+  icons: {
+    icon: [{ url: "/logo/logo-mark.svg", type: "image/svg+xml" }],
+    shortcut: "/logo/logo-mark.svg",
+  },
   robots: {
     index: true,
     follow: true,
