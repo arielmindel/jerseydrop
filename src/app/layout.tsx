@@ -1,0 +1,81 @@
+import type { Metadata, Viewport } from "next";
+import { Heebo, Space_Grotesk, Oswald } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+
+const heebo = Heebo({
+  subsets: ["hebrew", "latin"],
+  weight: ["300", "400", "600", "700", "900"],
+  variable: "--font-heebo",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-oswald",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://jerseydrop.co.il"),
+  title: {
+    default: "JerseyDrop — חולצות כדורגל רשמיות | מונדיאל 2026",
+    template: "%s | JerseyDrop",
+  },
+  description:
+    "חולצות רשמיות לנבחרות ולמועדונים. גרסת Fan ו-Player, התאמה אישית של שם ומספר, משלוח לכל הארץ.",
+  keywords: [
+    "חולצות כדורגל",
+    "מונדיאל 2026",
+    "ארגנטינה",
+    "ברזיל",
+    "ריאל מדריד",
+    "ברצלונה",
+    "JerseyDrop",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "he_IL",
+    url: "https://jerseydrop.co.il",
+    siteName: "JerseyDrop",
+    title: "JerseyDrop — חולצות כדורגל רשמיות",
+    description:
+      "חולצות רשמיות לנבחרות ולמועדונים. התאמה אישית. משלוח לכל הארץ.",
+  },
+  robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0A0A0A",
+  width: "device-width",
+  initialScale: 1,
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html
+      lang="he"
+      dir="rtl"
+      className={`${heebo.variable} ${spaceGrotesk.variable} ${oswald.variable}`}
+    >
+      <body className="min-h-screen bg-background font-sans text-foreground antialiased">
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
+      </body>
+    </html>
+  );
+}
