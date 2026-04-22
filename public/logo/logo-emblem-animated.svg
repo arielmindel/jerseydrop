@@ -1,22 +1,4 @@
-/**
- * Polished emblem / esports-style crest logo for JerseyDrop.
- * Hand-crafted SVG with multi-stop chrome gradient, gloss highlights,
- * proper soccer-ball patching, detailed whistle, and twinkle stars.
- *
- * Run: node scripts/generate-emblem-logo.mjs
- */
-
-import sharp from "sharp";
-import { promises as fs } from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const OUT_DIR = path.resolve(__dirname, "../public/brand");
-
-function buildEmblemSvg(size, { animated = false } = {}) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 1080 1080">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
   <defs>
     <!-- ===== GRADIENTS ===== -->
 
@@ -188,8 +170,8 @@ function buildEmblemSvg(size, { animated = false } = {}) {
     <circle cx="540" cy="990" r="5"/>
     <circle cx="100" cy="770" r="4"/>
     <circle cx="980" cy="770" r="4"/>
-    ${animated ? `
-    <animate attributeName="opacity" values="0.85;0.3;0.85" dur="2.5s" repeatCount="indefinite"/>` : ''}
+    
+    <animate attributeName="opacity" values="0.85;0.3;0.85" dur="2.5s" repeatCount="indefinite"/>
   </g>
 
   <!-- Corner stars with glow -->
@@ -299,11 +281,11 @@ function buildEmblemSvg(size, { animated = false } = {}) {
   </g>
 
   <!-- Soccer ball (center top) -->
-  <g transform="translate(480 328)"${animated ? '' : ''}>
-    ${animated ? `
+  <g transform="translate(480 328)">
+    
     <animateTransform attributeName="transform" type="rotate"
                       from="0 60 60" to="360 60 60"
-                      additive="sum" dur="18s" repeatCount="indefinite"/>` : ''}
+                      additive="sum" dur="18s" repeatCount="indefinite"/>
     <circle cx="60" cy="60" r="58" fill="#FFFFFF" stroke="#0F172A" stroke-width="4.5"/>
     <!-- Main central black pentagon -->
     <polygon points="60,30 86,49 76,80 44,80 34,49"
@@ -387,14 +369,14 @@ function buildEmblemSvg(size, { animated = false } = {}) {
             textLength="460" lengthAdjust="spacingAndGlyphs"
             fill="url(#chromeGloss)">JERSEY</text>
     </g>
-    ${animated ? `
+    
     <!-- Moving shine overlay -->
     <text x="540" y="597" text-anchor="middle"
           font-family="Arial Black, Helvetica Neue, sans-serif"
           font-weight="900" font-size="145" letter-spacing="-4"
           textLength="460" lengthAdjust="spacingAndGlyphs"
           fill="#FFFFFF" opacity="0" pointer-events="none">
-      <animate attributeName="opacity" values="0;0.8;0" dur="3.5s" repeatCount="indefinite"/>JERSEY</text>` : ''}
+      <animate attributeName="opacity" values="0;0.8;0" dur="3.5s" repeatCount="indefinite"/>JERSEY</text>
   </g>
 
   <!-- ===== "DROP" RIBBON BANNER ===== -->
@@ -462,38 +444,4 @@ function buildEmblemSvg(size, { animated = false } = {}) {
                fill="#FBBF24" stroke="#78350F" stroke-width="2"/>
     </g>
   </g>
-</svg>`;
-}
-
-async function render(svg, outPath) {
-  await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile(outPath);
-  const stats = await fs.stat(outPath);
-  console.log(`  ✓ ${path.basename(outPath).padEnd(32)} ${Math.round(stats.size / 1024)} KB`);
-}
-
-async function main() {
-  await fs.mkdir(OUT_DIR, { recursive: true });
-  console.log("Rendering polished emblem logo…");
-
-  // Static PNGs (no animations — baked for social media)
-  const sizes = [
-    { file: "emblem-1080.png", size: 1080 },
-    { file: "emblem-512.png", size: 512 },
-    { file: "emblem-400.png", size: 400 },
-  ];
-  for (const s of sizes) {
-    await render(buildEmblemSvg(s.size), path.join(OUT_DIR, s.file));
-  }
-
-  // Save the animated SVG separately for web use
-  const animatedSvgPath = path.resolve(__dirname, "../public/logo/logo-emblem-animated.svg");
-  await fs.writeFile(animatedSvgPath, buildEmblemSvg(1080, { animated: true }));
-  console.log(`  ✓ ${path.relative(path.resolve(__dirname, ".."), animatedSvgPath)}`);
-
-  console.log("\nDone → public/brand/emblem-*.png + public/logo/logo-emblem-animated.svg");
-}
-
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+</svg>
