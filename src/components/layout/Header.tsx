@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Search } from "lucide-react";
 import MegaMenu from "./MegaMenu";
@@ -12,17 +11,10 @@ export default function Header() {
         <div className="flex items-center gap-6">
           <Link
             href="/"
-            className="flex items-center transition-opacity hover:opacity-85"
+            className="font-display text-xl font-black uppercase tracking-tight text-foreground transition-opacity hover:opacity-85 md:text-2xl"
             aria-label="JerseyDrop — דף הבית"
           >
-            <Image
-              src="/logo/logo-full.svg"
-              alt="JerseyDrop"
-              width={400}
-              height={64}
-              priority
-              className="h-8 w-auto md:h-10"
-            />
+            Jersey<span className="text-accent">Drop</span>
           </Link>
           <MegaMenu />
         </div>

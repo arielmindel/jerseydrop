@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Mail, Instagram, Shield } from "lucide-react";
 
@@ -7,13 +6,9 @@ export default function Footer() {
     <footer className="mt-24 border-t border-border/60 bg-background">
       <div className="container grid gap-10 py-14 md:grid-cols-4">
         <div className="space-y-4">
-          <Image
-            src="/logo/logo-full.svg"
-            alt="JerseyDrop"
-            width={400}
-            height={64}
-            className="h-6 w-auto"
-          />
+          <div className="font-display text-2xl font-black uppercase tracking-tight">
+            Jersey<span className="text-accent">Drop</span>
+          </div>
           <p className="max-w-xs text-sm leading-relaxed text-muted">
             חולצות רשמיות לנבחרות ולמועדונים. איכות, התאמה אישית, משלוח לכל
             הארץ.
