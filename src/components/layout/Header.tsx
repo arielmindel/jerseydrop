@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Search } from "lucide-react";
 import MegaMenu from "./MegaMenu";
 import MobileMenu from "./MobileMenu";
 import CartDrawer from "@/components/cart/CartDrawer";
+import SearchBar from "@/components/search/SearchBar";
 
 export default function Header() {
   return (
@@ -26,14 +26,8 @@ export default function Header() {
           </Link>
           <MegaMenu />
         </div>
-        <div className="flex items-center gap-1">
-          <Link
-            href="/products"
-            aria-label="חיפוש"
-            className="hidden h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground md:inline-flex"
-          >
-            <Search className="h-5 w-5" />
-          </Link>
+        <div className="flex items-center gap-2">
+          <SearchBar variant="header" />
           <CartDrawer />
           <MobileMenu />
         </div>
