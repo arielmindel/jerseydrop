@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Search as SearchIcon } from "lucide-react";
 import { searchProducts, SEARCH_SUGGESTIONS } from "@/lib/search";
-import ProductGrid from "@/components/product/ProductGrid";
+import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
 import SearchBar from "@/components/search/SearchBar";
 
 type Props = {
@@ -56,7 +56,7 @@ export default function SearchPage({ searchParams }: Props) {
         {!q ? (
           <SuggestionsBlock />
         ) : products.length > 0 ? (
-          <ProductGrid products={products} />
+          <InfiniteProductGrid products={products} />
         ) : (
           <EmptyState query={q} />
         )}

@@ -6,7 +6,7 @@ import {
   parseFilters,
   type ProductFilterParams,
 } from "@/lib/filters";
-import ProductGrid from "@/components/product/ProductGrid";
+import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
 import FilterSidebar, {
   type FilterGroupConfig,
 } from "@/components/filters/FilterSidebar";
@@ -161,7 +161,7 @@ export default function ProductsPage({ searchParams }: Props) {
         <div className="flex flex-col gap-6 md:flex-row md:items-start">
           <FilterSidebar groups={groups} counts={counts} />
           <div className="flex-1">
-            <ProductGrid products={filtered} />
+            <InfiniteProductGrid products={filtered} />
           </div>
         </div>
       </section>
