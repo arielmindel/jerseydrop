@@ -40,6 +40,7 @@ import {
 } from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
+import { descriptionParagraphs } from "@/lib/sanitize";
 import type { Product, ProductVersion } from "@/lib/types";
 
 const FALLBACK_IMG =
@@ -466,17 +467,12 @@ export default function ProductDetail({ product }: { product: Product }) {
                   <Minus className="hidden h-4 w-4 transition-transform group-open:inline" />
                 </span>
               </summary>
-              {/* Description from supplier may contain inline HTML — Checkpoint
-                  9 swaps in sanitize-html. For now we render text-only by
-                  stripping tags client-side. */}
+              {/* Sanitized via sanitize-html (strict whitelist), then rendered
+                  as plain JSX paragraphs — no raw HTML injection. */}
               <div className="mt-3 space-y-2 text-sm leading-relaxed text-muted">
-                {product.description
-                  .replace(/<[^>]+>/g, " ")
-                  .split(/\s*\n\s*/)
-                  .filter(Boolean)
-                  .map((para, i) => (
-                    <p key={i}>{para}</p>
-                  ))}
+                {descriptionParagraphs(product.description).map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
               </div>
             </details>
           )}

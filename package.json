@@ -14,6 +14,7 @@
     "@radix-ui/react-label": "^2.1.8",
     "@radix-ui/react-navigation-menu": "^1.2.14",
     "@radix-ui/react-slot": "^1.2.4",
+    "@types/sanitize-html": "^2.16.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
@@ -22,6 +23,7 @@
     "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",
+    "sanitize-html": "^2.17.3",
     "tailwind-merge": "^3.5.0",
     "tailwindcss-animate": "^1.0.7",
     "zustand": "^5.0.12"
