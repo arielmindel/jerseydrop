@@ -39,6 +39,7 @@ import {
   whatsappLink,
 } from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
+import { BLUR_DATA_URL } from "@/lib/image-placeholder";
 import type { Product, ProductVersion } from "@/lib/types";
 
 const FALLBACK_IMG =
@@ -139,6 +140,8 @@ export default function ProductDetail({ product }: { product: Product }) {
               fill
               priority
               sizes="(min-width: 768px) 55vw, 100vw"
+              placeholder="blur"
+              blurDataURL={BLUR_DATA_URL}
               className="object-cover"
             />
             <div className="absolute top-3 flex flex-col gap-1.5 start-3">
@@ -171,6 +174,8 @@ export default function ProductDetail({ product }: { product: Product }) {
                     alt=""
                     fill
                     sizes="100px"
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URL}
                     className="object-cover"
                   />
                 </button>
