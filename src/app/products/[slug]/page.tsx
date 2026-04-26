@@ -57,10 +57,10 @@ export default function ProductPage({ params }: Props) {
       <nav className="container pt-6 text-xs text-muted">
         <Link
           href={
-            product.league
-              ? `/leagues/${product.league}`
-              : product.nation
-                ? `/nations/${product.nation}`
+            product.category === "national"
+              ? `/nations/${product.teamSlug}`
+              : product.league
+                ? `/leagues/${product.league}`
                 : "/products"
           }
           className="inline-flex items-center gap-1 hover:text-foreground"

@@ -4,7 +4,8 @@ export type LeagueId =
   | "serie-a"
   | "bundesliga"
   | "ligue-1"
-  | "other";
+  | "other"
+  | "israel";
 
 export type NationTier = "tier-1" | "tier-2" | "tier-3";
 
@@ -90,7 +91,23 @@ export const LEAGUES: LeagueInfo[] = [
       "Celtic",
     ],
   },
+  {
+    id: "israel",
+    slug: "israel",
+    nameHe: "ישראל",
+    nameEn: "Israel",
+    country: "ישראל",
+    teams: ["Hapoel Tel Aviv", "Maccabi Tel Aviv", "Beitar Jerusalem"],
+  },
 ];
+
+export const WHATSAPP_NUMBER =
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972000000000";
+
+export function whatsappLink(message?: string): string {
+  const text = message ? `?text=${encodeURIComponent(message)}` : "";
+  return `https://wa.me/${WHATSAPP_NUMBER}${text}`;
+}
 
 export type NationInfo = {
   slug: string;

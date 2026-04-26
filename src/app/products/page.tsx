@@ -23,7 +23,9 @@ export default function ProductsPage({ searchParams }: Props) {
     const p = all.find((x) => x.teamSlug === slug)!;
     return { value: slug, labelHe: p.team };
   });
-  const seasons = Array.from(new Set(all.map((p) => p.season)));
+  const seasons = Array.from(
+    new Set(all.map((p) => p.season).filter((s): s is string => Boolean(s))),
+  );
 
   const groups: FilterGroupConfig[] = [
     {

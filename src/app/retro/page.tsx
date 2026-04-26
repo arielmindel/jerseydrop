@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Sparkles } from "lucide-react";
-import { getProductsByCategory } from "@/lib/products";
+import { getRetroProducts } from "@/lib/products";
 import ProductGrid from "@/components/product/ProductGrid";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function RetroPage() {
-  const retro = getProductsByCategory("retro");
+  const retro = getRetroProducts();
 
   return (
     <>

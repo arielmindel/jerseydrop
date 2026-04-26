@@ -4,7 +4,15 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Check, Truck, Shield, MessageCircle, Plus, Minus, ArrowLeft } from "lucide-react";
+import {
+  Check,
+  Truck,
+  Shield,
+  MessageCircle,
+  Plus,
+  Minus,
+  ArrowLeft,
+} from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -19,21 +27,37 @@ import {
 import JerseyPreview from "./JerseyPreview";
 import SizeGuideTable from "@/components/product/SizeGuideTable";
 import { useCart } from "@/lib/cart";
-import { priceFor } from "@/lib/products";
-import { CUSTOMIZATION_FEE, SHIPPING, type Size } from "@/lib/constants";
+import {
+  getAvailableVersions,
+  getDisplayableSizes,
+  hasPrice,
+  priceFor,
+} from "@/lib/products";
+import {
+  CUSTOMIZATION_FEE,
+  SHIPPING,
+  whatsappLink,
+} from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
 import type { Product, ProductVersion } from "@/lib/types";
+
+const FALLBACK_IMG =
+  "https://picsum.photos/seed/jerseydrop-fallback/800/1000";
 
 export default function ProductDetail({ product }: { product: Product }) {
   const router = useRouter();
   const addItem = useCart((s) => s.addItem);
   const setOpen = useCart((s) => s.setOpen);
 
-  const availableVersions = product.versions;
-  const defaultVersion: ProductVersion = availableVersions[0];
+  const availableVersions = getAvailableVersions(product);
+  const sizes = getDisplayableSizes(product);
+  const productHasPrice = hasPrice(product);
+  const images = product.images?.length ? product.images : [FALLBACK_IMG];
 
-  const [version, setVersion] = useState<ProductVersion>(defaultVersion);
-  const [size, setSize] = useState<Size | null>(null);
+  const [version, setVersion] = useState<ProductVersion>(
+    availableVersions[0] ?? "fan",
+  );
+  const [size, setSize] = useState<string | null>(null);
   const [imageIdx, setImageIdx] = useState(0);
   const [custEnabled, setCustEnabled] = useState(false);
   const [custName, setCustName] = useState("");
@@ -42,7 +66,7 @@ export default function ProductDetail({ product }: { product: Product }) {
   const [justAdded, setJustAdded] = useState(false);
 
   const base = priceFor(product, version);
-  const total = base + (custEnabled ? CUSTOMIZATION_FEE : 0);
+  const total = base !== null ? base + (custEnabled ? CUSTOMIZATION_FEE : 0) : null;
 
   const versionLabel: Record<ProductVersion, string> = {
     fan: "Fan",
@@ -55,9 +79,16 @@ export default function ProductDetail({ product }: { product: Product }) {
     retro: "רפרודוקציה של הדגם המקורי",
   };
 
+  const whatsappMessage = `שלום! אני מתעניין/ת בחולצה: ${product.nameHe}${
+    product.season ? ` (${product.season})` : ""
+  }. אפשר לבדוק זמינות ומחיר?`;
+
   const addToCart = (buyNow = false) => {
-    if (!size) {
-      document.getElementById("size-group")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (!productHasPrice || base === null) return;
+    if (sizes.length > 0 && !size) {
+      document
+        .getElementById("size-group")
+        ?.scrollIntoView({ behavior: "smooth", block: "center" });
       return;
     }
     setAdding(true);
@@ -71,17 +102,16 @@ export default function ProductDetail({ product }: { product: Product }) {
       nameHe: product.nameHe,
       nameEn: product.nameEn,
       team: product.team,
-      image: product.images[0],
+      image: images[0],
       version,
-      size,
+      size: (size ?? "אחיד") as never,
       unitPrice: base,
       customization,
     });
     setTimeout(() => {
       setAdding(false);
-      if (buyNow) {
-        router.push("/checkout");
-      } else {
+      if (buyNow) router.push("/checkout");
+      else {
         setJustAdded(true);
         setOpen(true);
         setTimeout(() => setJustAdded(false), 1500);
@@ -90,8 +120,10 @@ export default function ProductDetail({ product }: { product: Product }) {
   };
 
   const stockBadge = useMemo(() => {
-    if (product.stock === "low") return { text: "אחרונים במלאי", tone: "destructive" as const };
-    if (product.stock === "preorder") return { text: "הזמנה מוקדמת", tone: "gold" as const };
+    if (product.stock === "low")
+      return { text: "אחרונים במלאי", tone: "destructive" as const };
+    if (product.stock === "preorder")
+      return { text: "הזמנה מוקדמת", tone: "gold" as const };
     return { text: "במלאי · משלוח 10-15 ימי עסקים", tone: "accent" as const };
   }, [product.stock]);
 
@@ -102,28 +134,30 @@ export default function ProductDetail({ product }: { product: Product }) {
         <div className="space-y-3">
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface">
             <Image
-              src={product.images[imageIdx]}
-              alt={`${product.nameEn} — ${product.nameHe}`}
+              src={images[imageIdx] || FALLBACK_IMG}
+              alt={product.nameHe || product.team}
               fill
               priority
               sizes="(min-width: 768px) 55vw, 100vw"
               className="object-cover"
             />
             <div className="absolute top-3 flex flex-col gap-1.5 start-3">
-              {product.tags.includes("world-cup-2026") && (
-                <Badge variant="accent">World Cup 2026</Badge>
+              {product.isWorldCup2026 && (
+                <Badge variant="gold">מונדיאל 2026</Badge>
               )}
-              {product.tags.includes("bestseller") && (
-                <Badge variant="accent">Bestseller</Badge>
+              {product.isRetro && <Badge variant="gold">Retro</Badge>}
+              {product.isKids && <Badge variant="accent">ילדים</Badge>}
+              {product.isLongSleeve && (
+                <Badge variant="outline">שרוול ארוך</Badge>
               )}
-              {product.category === "retro" && <Badge variant="gold">Retro</Badge>}
+              {product.isSpecial && <Badge variant="accent">מהדורה מיוחדת</Badge>}
             </div>
           </div>
-          {product.images.length > 1 && (
+          {images.length > 1 && (
             <div className="grid grid-cols-4 gap-2">
-              {product.images.map((src, i) => (
+              {images.map((src, i) => (
                 <button
-                  key={src}
+                  key={`${src}-${i}`}
                   onClick={() => setImageIdx(i)}
                   className={`relative aspect-square overflow-hidden rounded-xl border transition-all ${
                     i === imageIdx
@@ -148,87 +182,111 @@ export default function ProductDetail({ product }: { product: Product }) {
         {/* Details */}
         <div className="space-y-6">
           <div className="space-y-1">
-            <div className="section-eyebrow">{product.season}</div>
+            {product.season && (
+              <div className="section-eyebrow">{product.season}</div>
+            )}
             <h1 className="font-display text-3xl font-black uppercase leading-tight md:text-4xl">
-              {product.team}
+              {product.team || product.nameHe}
             </h1>
             <p className="text-sm text-muted">{product.nameHe}</p>
           </div>
 
           <Badge variant={stockBadge.tone}>{stockBadge.text}</Badge>
 
-          {/* Version selector */}
-          <fieldset>
-            <legend className="mb-2 font-display text-xs font-bold uppercase tracking-widest text-muted">
-              גרסה
-            </legend>
-            <div className="grid grid-cols-2 gap-2">
-              {availableVersions.map((v) => (
-                <button
-                  key={v}
-                  type="button"
-                  onClick={() => setVersion(v)}
-                  className={`flex flex-col items-start gap-0.5 rounded-xl border p-3 text-start transition-colors ${
-                    version === v
-                      ? "border-accent bg-accent/10"
-                      : "border-border bg-surface hover:border-accent/40"
-                  }`}
-                >
-                  <span className="flex w-full items-center justify-between">
-                    <span className="font-display text-sm font-bold uppercase">
-                      {versionLabel[v]}
-                    </span>
-                    <span className="font-display text-sm font-bold text-foreground">
-                      {formatILS(priceFor(product, v))}
-                    </span>
-                  </span>
-                  <span className="text-[11px] text-muted">{versionDesc[v]}</span>
-                </button>
-              ))}
-            </div>
-          </fieldset>
+          {/* Version selector — only when prices set */}
+          {productHasPrice && availableVersions.length > 0 && (
+            <fieldset>
+              <legend className="mb-2 font-display text-xs font-bold uppercase tracking-widest text-muted">
+                גרסה
+              </legend>
+              <div
+                className={`grid gap-2 ${
+                  availableVersions.length === 1
+                    ? "grid-cols-1"
+                    : availableVersions.length === 2
+                      ? "grid-cols-2"
+                      : "grid-cols-3"
+                }`}
+              >
+                {availableVersions.map((v) => {
+                  const p = priceFor(product, v);
+                  if (p === null) return null;
+                  return (
+                    <button
+                      key={v}
+                      type="button"
+                      onClick={() => setVersion(v)}
+                      className={`flex flex-col items-start gap-0.5 rounded-xl border p-3 text-start transition-colors ${
+                        version === v
+                          ? "border-accent bg-accent/10"
+                          : "border-border bg-surface hover:border-accent/40"
+                      }`}
+                    >
+                      <span className="flex w-full items-center justify-between">
+                        <span className="font-display text-sm font-bold uppercase">
+                          {versionLabel[v]}
+                        </span>
+                        <span className="font-display text-sm font-bold text-foreground">
+                          {formatILS(p)}
+                        </span>
+                      </span>
+                      <span className="text-[11px] text-muted">
+                        {versionDesc[v]}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </fieldset>
+          )}
 
           {/* Size selector */}
-          <fieldset id="size-group">
-            <legend className="mb-2 flex items-center justify-between font-display text-xs font-bold uppercase tracking-widest text-muted">
-              מידה
-              <Dialog>
-                <DialogTrigger asChild>
+          {sizes.length > 0 ? (
+            <fieldset id="size-group">
+              <legend className="mb-2 flex items-center justify-between font-display text-xs font-bold uppercase tracking-widest text-muted">
+                מידה
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button
+                      type="button"
+                      className="text-[10px] text-accent underline-offset-2 hover:underline"
+                    >
+                      מדריך מידות
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-xl">
+                    <DialogHeader>
+                      <DialogTitle>מדריך מידות</DialogTitle>
+                    </DialogHeader>
+                    <SizeGuideTable />
+                  </DialogContent>
+                </Dialog>
+              </legend>
+              <div className="flex flex-wrap gap-2">
+                {sizes.map((s) => (
                   <button
+                    key={s}
                     type="button"
-                    className="text-[10px] text-accent underline-offset-2 hover:underline"
+                    onClick={() => setSize(s)}
+                    className={`font-display h-10 min-w-[48px] rounded-full border px-4 text-sm font-bold transition-colors ${
+                      size === s
+                        ? "border-accent bg-accent/15 text-accent"
+                        : "border-border bg-surface text-foreground hover:border-accent/40"
+                    }`}
                   >
-                    מדריך מידות
+                    {s}
                   </button>
-                </DialogTrigger>
-                <DialogContent className="max-w-xl">
-                  <DialogHeader>
-                    <DialogTitle>מדריך מידות</DialogTitle>
-                  </DialogHeader>
-                  <SizeGuideTable />
-                </DialogContent>
-              </Dialog>
-            </legend>
-            <div className="flex flex-wrap gap-2">
-              {product.sizes.map((s) => (
-                <button
-                  key={s}
-                  type="button"
-                  onClick={() => setSize(s)}
-                  className={`font-display h-10 min-w-[48px] rounded-full border px-4 text-sm font-bold transition-colors ${
-                    size === s
-                      ? "border-accent bg-accent/15 text-accent"
-                      : "border-border bg-surface text-foreground hover:border-accent/40"
-                  }`}
-                >
-                  {s}
-                </button>
-              ))}
+                ))}
+              </div>
+            </fieldset>
+          ) : (
+            <div className="rounded-xl border border-border bg-surface px-3 py-2 text-xs text-muted">
+              מידה אחידה — בחר/י את הגרסה ולחץ/י על &quot;הוספה לסל&quot;.
             </div>
-          </fieldset>
+          )}
 
           {/* Customization */}
-          {product.customizable && (
+          {productHasPrice && (
             <div className="space-y-3 rounded-2xl border border-border bg-surface p-4">
               <label className="flex items-start gap-3">
                 <input
@@ -240,10 +298,13 @@ export default function ProductDetail({ product }: { product: Product }) {
                 <span className="space-y-0.5">
                   <span className="block font-display text-sm font-bold uppercase tracking-tight">
                     הוספת שם ומספר{" "}
-                    <span className="text-accent">+{formatILS(CUSTOMIZATION_FEE)}</span>
+                    <span className="text-accent">
+                      +{formatILS(CUSTOMIZATION_FEE)}
+                    </span>
                   </span>
                   <span className="block text-xs text-muted">
-                    הדפסה מקצועית בגב החולצה. עד 12 אותיות באנגלית + מספר 0-99.
+                    הדפסה מקצועית בגב החולצה. עד 12 אותיות באנגלית + מספר
+                    0-99.
                   </span>
                 </span>
               </label>
@@ -261,13 +322,17 @@ export default function ProductDetail({ product }: { product: Product }) {
                         value={custName}
                         onChange={(e) =>
                           setCustName(
-                            e.target.value.replace(/[^A-Za-z0-9 ]/g, "").toUpperCase(),
+                            e.target.value
+                              .replace(/[^A-Za-z0-9 ]/g, "")
+                              .toUpperCase(),
                           )
                         }
                         maxLength={12}
                         placeholder="MESSI"
                       />
-                      <div className="text-[10px] text-muted">{custName.length}/12</div>
+                      <div className="text-[10px] text-muted">
+                        {custName.length}/12
+                      </div>
                     </div>
                     <div className="space-y-1.5">
                       <Label htmlFor="cust-number">מספר</Label>
@@ -275,7 +340,9 @@ export default function ProductDetail({ product }: { product: Product }) {
                         id="cust-number"
                         value={custNumber}
                         onChange={(e) =>
-                          setCustNumber(e.target.value.replace(/\D/g, "").slice(0, 2))
+                          setCustNumber(
+                            e.target.value.replace(/\D/g, "").slice(0, 2),
+                          )
                         }
                         inputMode="numeric"
                         placeholder="10"
@@ -294,54 +361,80 @@ export default function ProductDetail({ product }: { product: Product }) {
           )}
 
           {/* CTAs */}
-          <div className="space-y-2">
-            <div className="flex items-baseline justify-between">
-              <span className="font-display text-xs uppercase tracking-widest text-muted">
-                סה״כ
-              </span>
-              <span className="font-display text-2xl font-black text-foreground">
-                {formatILS(total)}
-              </span>
+          {productHasPrice && total !== null ? (
+            <div className="space-y-2">
+              <div className="flex items-baseline justify-between">
+                <span className="font-display text-xs uppercase tracking-widest text-muted">
+                  סה״כ
+                </span>
+                <span className="font-display text-2xl font-black text-foreground">
+                  {formatILS(total)}
+                </span>
+              </div>
+              <div className="grid gap-2 sm:grid-cols-[1.5fr_1fr]">
+                <Button
+                  size="lg"
+                  onClick={() => addToCart(false)}
+                  disabled={adding}
+                  className={`animate-pulse-glow ${justAdded ? "bg-accent/80" : ""}`}
+                >
+                  {justAdded ? (
+                    <>
+                      <Check className="h-4 w-4" /> נוסף לסל
+                    </>
+                  ) : (
+                    <>הוספה לסל — {formatILS(total)}</>
+                  )}
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  onClick={() => addToCart(true)}
+                  disabled={adding}
+                >
+                  קנייה מיידית
+                </Button>
+              </div>
+              {sizes.length > 0 && !size && (
+                <p className="text-[11px] text-muted">
+                  בחרו מידה לפני הוספה לסל.
+                </p>
+              )}
             </div>
-            <div className="grid gap-2 sm:grid-cols-[1.5fr_1fr]">
-              <Button
-                size="lg"
-                onClick={() => addToCart(false)}
-                disabled={adding}
-                className={`animate-pulse-glow ${justAdded ? "bg-accent/80" : ""}`}
-              >
-                {justAdded ? (
-                  <>
-                    <Check className="h-4 w-4" /> נוסף לסל
-                  </>
-                ) : (
-                  <>
-                    הוספה לסל — {formatILS(total)}
-                  </>
-                )}
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={() => addToCart(true)}
-                disabled={adding}
-              >
-                קנייה מיידית
-              </Button>
-            </div>
-            {!size && (
-              <p className="text-[11px] text-muted">
-                בחרו מידה לפני הוספה לסל.
+          ) : (
+            <div className="space-y-3 rounded-2xl border border-accent/30 bg-accent/5 p-4">
+              <div className="flex items-baseline justify-between">
+                <span className="font-display text-xs uppercase tracking-widest text-muted">
+                  מחיר
+                </span>
+                <span className="font-display text-lg font-bold text-foreground">
+                  בקרוב
+                </span>
+              </div>
+              <p className="text-xs leading-relaxed text-muted">
+                המחיר עוד לא נקבע. שלח/י הודעה בוואטסאפ ונחזיר תשובה מיידית
+                עם מחיר וזמינות.
               </p>
-            )}
-          </div>
+              <Button asChild size="lg" className="w-full">
+                <a
+                  href={whatsappLink(whatsappMessage)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  הזמנה — צור קשר בוואטסאפ
+                </a>
+              </Button>
+            </div>
+          )}
 
           {/* Trust row */}
           <div className="grid gap-2 rounded-2xl border border-border bg-surface p-4 text-xs text-muted md:grid-cols-2">
             <div className="flex items-center gap-2">
               <Truck className="h-4 w-4 text-accent" />
               <span>
-                משלוח {SHIPPING.leadTimeDays} ימי עסקים · חינם מעל {formatILS(SHIPPING.freeThreshold)}
+                משלוח {SHIPPING.leadTimeDays} ימי עסקים · חינם מעל{" "}
+                {formatILS(SHIPPING.freeThreshold)}
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -358,49 +451,69 @@ export default function ProductDetail({ product }: { product: Product }) {
             </div>
           </div>
 
-          {/* Description */}
-          <details className="group rounded-2xl border border-border bg-surface p-4">
-            <summary className="cursor-pointer list-none font-display text-sm font-bold uppercase tracking-widest text-foreground">
-              <span className="flex items-center justify-between">
-                תיאור וחומרים
-                <Plus className="h-4 w-4 transition-transform group-open:hidden" />
-                <Minus className="hidden h-4 w-4 transition-transform group-open:inline" />
-              </span>
-            </summary>
-            <div className="mt-3 space-y-3 text-sm leading-relaxed text-muted">
-              <p>
-                חולצת {product.nameHe}, עונת {product.season}. גזרה נאמנה
-                למקור, פוליאסטר נושם בגרסת Fan ומיקרו-פייבר בגרסת Player.
-              </p>
-              <p>
-                כביסה: מקס׳ 30°, ללא מייבש חשמלי, ללא אקונומיקה. גיהוץ על הצד
-                ההפוך בטמפרטורה נמוכה.
-              </p>
-              <p>
-                הערה: חולצות עם שם ומספר מותאם אישית אינן ניתנות להחזרה.
-              </p>
-            </div>
-          </details>
+          {/* Description (sanitized HTML) */}
+          {product.description && (
+            <details className="group rounded-2xl border border-border bg-surface p-4" open>
+              <summary className="cursor-pointer list-none font-display text-sm font-bold uppercase tracking-widest text-foreground">
+                <span className="flex items-center justify-between">
+                  תיאור וחומרים
+                  <Plus className="h-4 w-4 transition-transform group-open:hidden" />
+                  <Minus className="hidden h-4 w-4 transition-transform group-open:inline" />
+                </span>
+              </summary>
+              {/* Description from supplier may contain inline HTML — Checkpoint
+                  9 swaps in sanitize-html. For now we render text-only by
+                  stripping tags client-side. */}
+              <div className="mt-3 space-y-2 text-sm leading-relaxed text-muted">
+                {product.description
+                  .replace(/<[^>]+>/g, " ")
+                  .split(/\s*\n\s*/)
+                  .filter(Boolean)
+                  .map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+              </div>
+            </details>
+          )}
         </div>
       </section>
 
       {/* Mobile sticky CTA */}
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/95 p-3 shadow-2xl backdrop-blur md:hidden">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex flex-col">
-            <span className="font-display text-[10px] uppercase text-muted">סה״כ</span>
-            <span className="font-display text-base font-bold">{formatILS(total)}</span>
+      {productHasPrice && total !== null ? (
+        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/95 p-3 shadow-2xl backdrop-blur md:hidden">
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex flex-col">
+              <span className="font-display text-[10px] uppercase text-muted">
+                סה״כ
+              </span>
+              <span className="font-display text-base font-bold">
+                {formatILS(total)}
+              </span>
+            </div>
+            <Button
+              size="md"
+              className="flex-1"
+              onClick={() => addToCart(false)}
+              disabled={adding}
+            >
+              {justAdded ? "נוסף" : "הוספה לסל"} <ArrowLeft className="h-4 w-4" />
+            </Button>
           </div>
-          <Button
-            size="md"
-            className="flex-1"
-            onClick={() => addToCart(false)}
-            disabled={adding}
-          >
-            {justAdded ? "נוסף" : "הוספה לסל"} <ArrowLeft className="h-4 w-4" />
+        </div>
+      ) : (
+        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/95 p-3 shadow-2xl backdrop-blur md:hidden">
+          <Button asChild size="md" className="w-full">
+            <a
+              href={whatsappLink(whatsappMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="h-4 w-4" />
+              הזמנה — וואטסאפ
+            </a>
           </Button>
         </div>
-      </div>
+      )}
     </>
   );
 }

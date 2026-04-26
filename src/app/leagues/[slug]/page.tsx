@@ -41,7 +41,9 @@ export default function LeaguePage({ params, searchParams }: Props) {
       return { value: slug, labelHe: prod.team };
     },
   );
-  const seasons = Array.from(new Set(all.map((p) => p.season)));
+  const seasons = Array.from(
+    new Set(all.map((p) => p.season).filter((s): s is string => Boolean(s))),
+  );
 
   const groups: FilterGroupConfig[] = [
     {

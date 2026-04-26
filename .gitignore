@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Product image backups — loaded from Shopify CDN at runtime, not deployed
+# Backup files exist locally for reference / future migration to own CDN
+public/images/products/*.jpg
+public/images/products/*.jpeg
+public/images/products/*.png
+public/images/products/*.webp
