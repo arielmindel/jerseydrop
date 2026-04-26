@@ -134,6 +134,34 @@ export default function MegaMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
+              href="/israeli"
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "gap-1 text-[#7CB9FF] hover:text-[#7CB9FF]",
+              )}
+            >
+              ישראל
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild>
+            <Link
+              href="/kids"
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "gap-1 text-pink-300 hover:text-pink-300",
+              )}
+            >
+              ילדים
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild>
+            <Link
               href="/retro"
               className={cn(navigationMenuTriggerStyle(), "gap-1 text-gold hover:text-gold")}
             >

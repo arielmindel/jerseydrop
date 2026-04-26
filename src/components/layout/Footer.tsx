@@ -93,6 +93,16 @@ export default function Footer() {
                 רטרו
               </Link>
             </li>
+            <li>
+              <Link className="transition-colors hover:text-foreground" href="/israeli">
+                ישראל
+              </Link>
+            </li>
+            <li>
+              <Link className="transition-colors hover:text-foreground" href="/kids">
+                ילדים
+              </Link>
+            </li>
           </ul>
         </div>
 
