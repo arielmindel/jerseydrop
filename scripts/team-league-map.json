@@ -1,48 +1,155 @@
 {
   "_comment": "Maps a corrected teamSlug to its true league/tier. Used by fix-products.mjs to also re-classify a product's league/category after relabeling.",
-
   "premier-league": [
-    "manchester-united", "manchester-city", "liverpool", "arsenal",
-    "chelsea", "tottenham", "newcastle", "aston-villa", "leicester",
-    "everton", "leeds", "wolves", "brighton", "fulham", "west-ham"
+    "manchester-united",
+    "manchester-city",
+    "liverpool",
+    "arsenal",
+    "chelsea",
+    "tottenham",
+    "newcastle",
+    "aston-villa",
+    "leicester",
+    "everton",
+    "leeds",
+    "wolves",
+    "brighton",
+    "fulham",
+    "west-ham",
+    "nottingham-forest"
   ],
   "la-liga": [
-    "real-madrid", "barcelona", "atletico-madrid", "sevilla", "betis",
-    "athletic-bilbao", "valencia", "cadiz"
+    "real-madrid",
+    "barcelona",
+    "atletico-madrid",
+    "sevilla",
+    "betis",
+    "athletic-bilbao",
+    "valencia",
+    "cadiz",
+    "villarreal",
+    "celta-vigo",
+    "getafe",
+    "osasuna",
+    "mallorca"
   ],
   "serie-a": [
-    "ac-milan", "inter-milan", "juventus", "napoli", "roma", "lazio"
+    "ac-milan",
+    "inter-milan",
+    "juventus",
+    "napoli",
+    "roma",
+    "lazio",
+    "parma",
+    "fiorentina",
+    "atalanta",
+    "torino"
   ],
   "bundesliga": [
-    "bayern-munich", "borussia-dortmund"
+    "bayern-munich",
+    "borussia-dortmund",
+    "eintracht-frankfurt",
+    "red-bull-leipzig",
+    "mainz",
+    "hoffenheim",
+    "wolfsburg",
+    "union-berlin",
+    "st-pauli"
   ],
   "ligue-1": [
-    "psg", "marseille", "lyon"
+    "psg",
+    "marseille",
+    "lyon",
+    "monaco",
+    "nice",
+    "lille",
+    "rennes"
   ],
   "other": [
-    "ajax", "benfica", "sporting", "porto", "braga", "celtic",
-    "flamengo", "santos", "palmeiras", "corinthians", "fluminense", "botafogo",
-    "boca-juniors", "river-plate", "inter-miami"
+    "ajax",
+    "benfica",
+    "sporting",
+    "porto",
+    "braga",
+    "celtic",
+    "flamengo",
+    "santos",
+    "palmeiras",
+    "corinthians",
+    "fluminense",
+    "botafogo",
+    "boca-juniors",
+    "river-plate",
+    "inter-miami",
+    "az-alkmaar",
+    "rangers",
+    "aberdeen",
+    "olympiacos",
+    "panathinaikos",
+    "galatasaray",
+    "fenerbahce",
+    "besiktas",
+    "shakhtar-donetsk",
+    "tigres",
+    "al-nassr",
+    "al-hilal",
+    "al-ittihad",
+    "al-ahli"
   ],
   "israel": [
-    "hapoel-tel-aviv", "maccabi-tel-aviv", "beitar-jerusalem",
-    "hapoel-beer-sheva", "maccabi-haifa"
+    "hapoel-tel-aviv",
+    "maccabi-tel-aviv",
+    "beitar-jerusalem",
+    "hapoel-beer-sheva",
+    "maccabi-haifa"
   ],
-
   "_nationTiers": {
     "tier-1": [
-      "argentina", "brazil", "portugal", "france", "spain", "germany", "england"
+      "argentina",
+      "brazil",
+      "portugal",
+      "france",
+      "spain",
+      "germany",
+      "england"
     ],
     "tier-2": [
-      "netherlands", "italy", "belgium", "japan", "morocco", "usa",
-      "mexico", "canada"
+      "netherlands",
+      "italy",
+      "belgium",
+      "japan",
+      "morocco",
+      "usa",
+      "mexico",
+      "canada"
     ],
     "tier-3": [
-      "colombia", "croatia", "turkey", "saudi-arabia", "south-korea",
-      "scotland", "wales", "switzerland", "norway", "denmark", "chile",
-      "uruguay", "peru", "ecuador", "ghana", "senegal", "nigeria",
-      "ivory-coast", "cameroon", "qatar", "iran", "iraq", "jordan",
-      "egypt", "tunisia", "algeria"
+      "colombia",
+      "croatia",
+      "turkey",
+      "saudi-arabia",
+      "south-korea",
+      "scotland",
+      "wales",
+      "switzerland",
+      "norway",
+      "denmark",
+      "chile",
+      "uruguay",
+      "peru",
+      "ecuador",
+      "ghana",
+      "senegal",
+      "nigeria",
+      "ivory-coast",
+      "cameroon",
+      "qatar",
+      "iran",
+      "iraq",
+      "jordan",
+      "egypt",
+      "tunisia",
+      "algeria"
     ]
   }
 }

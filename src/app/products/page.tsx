@@ -82,8 +82,7 @@ export default function ProductsPage({ searchParams }: Props) {
       labelHe: "ליגה",
       type: "multi",
       options: LEAGUES.map((l) => ({ value: l.slug, labelHe: l.nameHe })),
-      visibleWhen: (active) =>
-        !active.category?.length || active.category.includes("club"),
+      visibleWhen: { key: "category", notEquals: "national" },
     },
     {
       key: "league",
@@ -93,8 +92,7 @@ export default function ProductsPage({ searchParams }: Props) {
         value: t,
         labelHe: TIER_LABELS[t].he,
       })),
-      visibleWhen: (active) =>
-        active.category?.length === 1 && active.category[0] === "national",
+      visibleWhen: { key: "category", equals: "national" },
     },
     {
       key: "team",

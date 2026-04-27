@@ -984,5 +984,351 @@
     "en": [
       "algeria"
     ]
+  },
+  {
+    "slug": "az-alkmaar",
+    "he": [
+      "אז אלקמאר"
+    ],
+    "en": [
+      "az alkmaar",
+      "azalkmaar",
+      "az"
+    ]
+  },
+  {
+    "slug": "villarreal",
+    "he": [
+      "ויאריאל"
+    ],
+    "en": [
+      "villarreal"
+    ]
+  },
+  {
+    "slug": "st-pauli",
+    "he": [
+      "סנט פאולי"
+    ],
+    "en": [
+      "st pauli",
+      "st-pauli",
+      "stpauli"
+    ]
+  },
+  {
+    "slug": "nottingham-forest",
+    "he": [
+      "נוטינגהאם"
+    ],
+    "en": [
+      "nottingham",
+      "nottingham forest",
+      "nottingham-forest"
+    ]
+  },
+  {
+    "slug": "parma",
+    "he": [
+      "פארמה"
+    ],
+    "en": [
+      "parma",
+      "parmacalcio"
+    ]
+  },
+  {
+    "slug": "tigres",
+    "he": [
+      "טיגרס"
+    ],
+    "en": [
+      "tigres",
+      "tigres uanl",
+      "tigresuanl"
+    ]
+  },
+  {
+    "slug": "aberdeen",
+    "he": [
+      "אברדין"
+    ],
+    "en": [
+      "aberdeen"
+    ]
+  },
+  {
+    "slug": "eintracht-frankfurt",
+    "he": [
+      "פרנקפורט"
+    ],
+    "en": [
+      "eintracht",
+      "frankfurt",
+      "eintracht frankfurt"
+    ]
+  },
+  {
+    "slug": "rangers",
+    "he": [
+      "ריינג'רס"
+    ],
+    "en": [
+      "rangers",
+      "glasgow rangers"
+    ]
+  },
+  {
+    "slug": "red-bull-leipzig",
+    "he": [
+      "לייפציג"
+    ],
+    "en": [
+      "leipzig",
+      "rb leipzig",
+      "rb-leipzig",
+      "rbleipzig"
+    ]
+  },
+  {
+    "slug": "olympiacos",
+    "he": [
+      "אולימפיאקוס"
+    ],
+    "en": [
+      "olympiacos",
+      "olympiakos"
+    ]
+  },
+  {
+    "slug": "panathinaikos",
+    "he": [
+      "פנאתיניאקוס"
+    ],
+    "en": [
+      "panathinaikos"
+    ]
+  },
+  {
+    "slug": "galatasaray",
+    "he": [
+      "גלאטסארי"
+    ],
+    "en": [
+      "galatasaray"
+    ]
+  },
+  {
+    "slug": "fenerbahce",
+    "he": [
+      "פנרבחצ'ה"
+    ],
+    "en": [
+      "fenerbahce"
+    ]
+  },
+  {
+    "slug": "besiktas",
+    "he": [
+      "בשיקטש"
+    ],
+    "en": [
+      "besiktas"
+    ]
+  },
+  {
+    "slug": "shakhtar-donetsk",
+    "he": [
+      "שחטאר"
+    ],
+    "en": [
+      "shakhtar",
+      "shakhtar donetsk",
+      "shakhtardonetsk"
+    ]
+  },
+  {
+    "slug": "monaco",
+    "he": [
+      "מונאקו"
+    ],
+    "en": [
+      "monaco",
+      "as monaco",
+      "asmonaco"
+    ]
+  },
+  {
+    "slug": "nice",
+    "he": [
+      "ניס"
+    ],
+    "en": [
+      "nice"
+    ]
+  },
+  {
+    "slug": "lille",
+    "he": [
+      "ליל"
+    ],
+    "en": [
+      "lille"
+    ]
+  },
+  {
+    "slug": "rennes",
+    "he": [
+      "רן"
+    ],
+    "en": [
+      "rennes"
+    ]
+  },
+  {
+    "slug": "fiorentina",
+    "he": [
+      "פיורנטינה"
+    ],
+    "en": [
+      "fiorentina"
+    ]
+  },
+  {
+    "slug": "atalanta",
+    "he": [
+      "אטאלנטה"
+    ],
+    "en": [
+      "atalanta"
+    ]
+  },
+  {
+    "slug": "torino",
+    "he": [
+      "טורינו"
+    ],
+    "en": [
+      "torino"
+    ]
+  },
+  {
+    "slug": "mainz",
+    "he": [
+      "מיינץ"
+    ],
+    "en": [
+      "mainz"
+    ]
+  },
+  {
+    "slug": "hoffenheim",
+    "he": [
+      "הופנהיים"
+    ],
+    "en": [
+      "hoffenheim"
+    ]
+  },
+  {
+    "slug": "wolfsburg",
+    "he": [
+      "וולפסבורג"
+    ],
+    "en": [
+      "wolfsburg"
+    ]
+  },
+  {
+    "slug": "union-berlin",
+    "he": [
+      "אוניון ברלין"
+    ],
+    "en": [
+      "union berlin",
+      "unionberlin"
+    ]
+  },
+  {
+    "slug": "celta-vigo",
+    "he": [
+      "סלטה ויגו"
+    ],
+    "en": [
+      "celta",
+      "celta vigo",
+      "celtavigo"
+    ]
+  },
+  {
+    "slug": "getafe",
+    "he": [
+      "חטאפה"
+    ],
+    "en": [
+      "getafe"
+    ]
+  },
+  {
+    "slug": "osasuna",
+    "he": [
+      "אוסאסונה"
+    ],
+    "en": [
+      "osasuna"
+    ]
+  },
+  {
+    "slug": "mallorca",
+    "he": [
+      "מיורקה"
+    ],
+    "en": [
+      "mallorca"
+    ]
+  },
+  {
+    "slug": "al-nassr",
+    "he": [
+      "אל נאסר"
+    ],
+    "en": [
+      "al nassr",
+      "alnassr",
+      "al-nassr"
+    ]
+  },
+  {
+    "slug": "al-hilal",
+    "he": [
+      "אל הילאל"
+    ],
+    "en": [
+      "al hilal",
+      "alhilal",
+      "al-hilal"
+    ]
+  },
+  {
+    "slug": "al-ittihad",
+    "he": [
+      "אל איתיחאד"
+    ],
+    "en": [
+      "al ittihad",
+      "alittihad",
+      "al-ittihad"
+    ]
+  },
+  {
+    "slug": "al-ahli",
+    "he": [
+      "אל אהלי"
+    ],
+    "en": [
+      "al ahli",
+      "alahli",
+      "al-ahli"
+    ]
   }
 ]

@@ -1,22 +1,28 @@
 {
   "stats": {
     "total": 995,
-    "autoFixed": 87,
-    "flaggedImageMismatch": 56,
-    "flaggedNoTeam": 122,
-    "unchanged": 730
+    "autoFixed": 207,
+    "flaggedImageMismatch": 64,
+    "flaggedNoTeam": 81,
+    "unchanged": 643
   },
   "fixes": {
-    "10328706646290": {
-      "teamSlug": "spain",
-      "team": "ספרד",
-      "league": "tier-1",
+    "10328707727634": {
+      "teamSlug": "canada",
+      "team": "קנדה",
+      "league": "tier-2",
       "category": "national"
     },
-    "10328706318610": {
-      "teamSlug": "france",
-      "team": "צרפת",
-      "league": "tier-1",
+    "10328707498258": {
+      "teamSlug": "usa",
+      "team": "ארה\"ב",
+      "league": "tier-2",
+      "category": "national"
+    },
+    "10328707301650": {
+      "teamSlug": "usa",
+      "team": "ארה\"ב",
+      "league": "tier-2",
       "category": "national"
     },
     "10328706154770": {
@@ -25,9 +31,123 @@
       "league": "tier-1",
       "category": "national"
     },
+    "10293932261650": {
+      "teamSlug": "scotland",
+      "team": "סקוטלנד",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10293932196114": {
+      "teamSlug": "scotland",
+      "team": "סקוטלנד",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10293927444754": {
+      "teamSlug": "morocco",
+      "team": "מרוקו",
+      "league": "tier-2",
+      "category": "national"
+    },
+    "10293927117074": {
+      "teamSlug": "cameroon",
+      "team": "קמרון",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10293926723858": {
+      "teamSlug": "cameroon",
+      "team": "קמרון",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10293926592786": {
+      "teamSlug": "cameroon",
+      "team": "קמרון",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10293926396178": {
+      "teamSlug": "cameroon",
+      "team": "קמרון",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10291390873874": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג",
+      "league": "other",
+      "category": "club"
+    },
+    "10291390611730": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג",
+      "league": "other",
+      "category": "club"
+    },
+    "10291389858066": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג",
+      "league": "other",
+      "category": "club"
+    },
+    "10291389006098": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג",
+      "league": "other",
+      "category": "club"
+    },
+    "10291381076242": {
+      "teamSlug": "galatasaray",
+      "team": "גלאטסארי",
+      "league": "other",
+      "category": "club"
+    },
+    "10291380486418": {
+      "teamSlug": "fenerbahce",
+      "team": "פנרבחצ'ה",
+      "league": "other",
+      "category": "club"
+    },
+    "10291380257042": {
+      "teamSlug": "fenerbahce",
+      "team": "פנרבחצ'ה",
+      "league": "other",
+      "category": "club"
+    },
+    "10291380093202": {
+      "teamSlug": "fenerbahce",
+      "team": "פנרבחצ'ה",
+      "league": "other",
+      "category": "club"
+    },
+    "10291379994898": {
+      "teamSlug": "fenerbahce",
+      "team": "פנרבחצ'ה",
+      "league": "other",
+      "category": "club"
+    },
+    "10291379601682": {
+      "teamSlug": "besiktas",
+      "team": "בשיקטש",
+      "league": "other",
+      "category": "club"
+    },
+    "10291378454802": {
+      "teamSlug": "besiktas",
+      "team": "בשיקטש",
+      "league": "other",
+      "category": "club"
+    },
     "10291378356498": {
       "teamSlug": "braga",
       "team": "בראגה",
+      "league": "other",
+      "category": "club"
+    },
+    "10291378127122": {
+      "teamSlug": "az-alkmaar",
+      "team": "אז אלקמאר",
       "league": "other",
       "category": "club"
     },
@@ -36,6 +156,78 @@
       "team": "אנגליה",
       "league": "tier-1",
       "category": "national"
+    },
+    "10281004204306": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "10281004138770": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "10270525522194": {
+      "teamSlug": "algeria",
+      "team": "אלג'יריה",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10270525391122": {
+      "teamSlug": "algeria",
+      "team": "אלג'יריה",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10257725620498": {
+      "teamSlug": "colombia",
+      "team": "קולומביה",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10257725423890": {
+      "teamSlug": "senegal",
+      "team": "סנגל",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10257725260050": {
+      "teamSlug": "senegal",
+      "team": "סנגל",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10257724768530": {
+      "teamSlug": "belgium",
+      "team": "בלגיה",
+      "league": "tier-2",
+      "category": "national"
+    },
+    "10257724604690": {
+      "teamSlug": "switzerland",
+      "team": "שוויץ",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10257724342546": {
+      "teamSlug": "switzerland",
+      "team": "שוויץ",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10235330232594": {
+      "teamSlug": "psg",
+      "team": "פריז סן ז'רמן",
+      "league": "ligue-1",
+      "category": "club"
+    },
+    "10235327545618": {
+      "teamSlug": "liverpool",
+      "team": "ליברפול",
+      "league": "premier-league",
+      "category": "club"
     },
     "10234098221330": {
       "teamSlug": "river-plate",
@@ -73,10 +265,64 @@
       "league": "ligue-1",
       "category": "club"
     },
+    "10234089111826": {
+      "teamSlug": "valencia",
+      "team": "ולנסיה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "10234088915218": {
+      "teamSlug": "valencia",
+      "team": "ולנסיה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "10234088685842": {
+      "teamSlug": "valencia",
+      "team": "ולנסיה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "10234088620306": {
+      "teamSlug": "valencia",
+      "team": "ולנסיה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "10234088489234": {
+      "teamSlug": "valencia",
+      "team": "ולנסיה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "10234088096018": {
+      "teamSlug": "valencia",
+      "team": "ולנסיה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "10215571915026": {
+      "teamSlug": "colombia",
+      "team": "קולומביה",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10215571718418": {
+      "teamSlug": "colombia",
+      "team": "קולומביה",
+      "league": "tier-3",
+      "category": "national"
+    },
+    "10215571521810": {
+      "teamSlug": "colombia",
+      "team": "קולומביה",
+      "league": "tier-3",
+      "category": "national"
+    },
     "10215571161362": {
-      "teamSlug": "mexico",
-      "team": "מקסיקו",
-      "league": "tier-2",
+      "teamSlug": "colombia",
+      "team": "קולומביה",
+      "league": "tier-3",
       "category": "national"
     },
     "10212783128850": {
@@ -110,14 +356,32 @@
       "category": "club"
     },
     "10212769530130": {
-      "teamSlug": "real-madrid",
-      "team": "ריאל מדריד",
+      "teamSlug": "celta-vigo",
+      "team": "סלטה ויגו",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "10212769300754": {
+      "teamSlug": "villarreal",
+      "team": "ויאריאל",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "10212768743698": {
+      "teamSlug": "villarreal",
+      "team": "ויאריאל",
       "league": "la-liga",
       "category": "club"
     },
     "10212749771026": {
       "teamSlug": "west-ham",
       "team": "ווסטהאם",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "10211884597522": {
+      "teamSlug": "everton",
+      "team": "אברטון",
       "league": "premier-league",
       "category": "club"
     },
@@ -133,6 +397,12 @@
       "league": "other",
       "category": "club"
     },
+    "10211881451794": {
+      "teamSlug": "aston-villa",
+      "team": "אסטון וילה",
+      "league": "premier-league",
+      "category": "club"
+    },
     "10211823583506": {
       "teamSlug": "ajax",
       "team": "אאיאקס",
@@ -145,7 +415,73 @@
       "league": "other",
       "category": "club"
     },
+    "10211822731538": {
+      "teamSlug": "al-nassr",
+      "team": "אל נאסר",
+      "league": "other",
+      "category": "club"
+    },
+    "10211822141714": {
+      "teamSlug": "al-nassr",
+      "team": "אל נאסר",
+      "league": "other",
+      "category": "club"
+    },
+    "10200855445778": {
+      "teamSlug": "red-bull-leipzig",
+      "team": "לייפציג",
+      "league": "bundesliga",
+      "category": "club"
+    },
+    "10200854987026": {
+      "teamSlug": "red-bull-leipzig",
+      "team": "לייפציג",
+      "league": "bundesliga",
+      "category": "club"
+    },
+    "10200851841298": {
+      "teamSlug": "st-pauli",
+      "team": "סנט פאולי",
+      "league": "bundesliga",
+      "category": "club"
+    },
+    "10200851415314": {
+      "teamSlug": "st-pauli",
+      "team": "סנט פאולי",
+      "league": "bundesliga",
+      "category": "club"
+    },
+    "10200838701330": {
+      "teamSlug": "wolves",
+      "team": "וולבס",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "10200838537490": {
+      "teamSlug": "nottingham-forest",
+      "team": "נוטינגהאם",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "10200838340882": {
+      "teamSlug": "nottingham-forest",
+      "team": "נוטינגהאם",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "10200836112658": {
+      "teamSlug": "manchester-united",
+      "team": "מנצסטר יונייטד",
+      "league": "premier-league",
+      "category": "club"
+    },
     "10200835653906": {
+      "teamSlug": "manchester-united",
+      "team": "מנצסטר יונייטד",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "10200830574866": {
       "teamSlug": "everton",
       "team": "אברטון",
       "league": "premier-league",
@@ -157,17 +493,35 @@
       "league": "premier-league",
       "category": "club"
     },
+    "10200807768338": {
+      "teamSlug": "brighton",
+      "team": "ברייטון",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "10200806850834": {
+      "teamSlug": "brighton",
+      "team": "ברייטון",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "10200806490386": {
+      "teamSlug": "aston-villa",
+      "team": "אסטון וילה",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "10200805933330": {
+      "teamSlug": "aston-villa",
+      "team": "אסטון וילה",
+      "league": "premier-league",
+      "category": "club"
+    },
     "8220717941010": {
       "teamSlug": "barcelona",
       "team": "ברצלונה",
       "league": "la-liga",
       "category": "club"
-    },
-    "9729687093522": {
-      "teamSlug": "argentina",
-      "team": "ארגנטינה",
-      "league": "tier-1",
-      "category": "national"
     },
     "9166076510482": {
       "teamSlug": "real-madrid",
@@ -176,21 +530,21 @@
       "category": "club"
     },
     "10170548486418": {
-      "teamSlug": "real-madrid",
-      "team": "ריאל מדריד",
+      "teamSlug": "betis",
+      "team": "בטיס",
       "league": "la-liga",
       "category": "club"
     },
     "9166073856274": {
-      "teamSlug": "barcelona",
-      "team": "ברצלונה",
+      "teamSlug": "betis",
+      "team": "בטיס",
       "league": "la-liga",
       "category": "club"
     },
-    "9729689354514": {
-      "teamSlug": "ac-milan",
-      "team": "מילאן",
-      "league": "serie-a",
+    "9765787369746": {
+      "teamSlug": "red-bull-leipzig",
+      "team": "לייפציג",
+      "league": "bundesliga",
       "category": "club"
     },
     "9598253105426": {
@@ -253,59 +607,23 @@
       "league": "premier-league",
       "category": "club"
     },
-    "9690102169874": {
-      "teamSlug": "real-madrid",
-      "team": "ריאל מדריד",
-      "league": "la-liga",
-      "category": "club"
-    },
-    "9729685258514": {
-      "teamSlug": "borussia-dortmund",
-      "team": "דורטמונד",
-      "league": "bundesliga",
-      "category": "club"
-    },
-    "9598285807890": {
-      "teamSlug": "spain",
-      "team": "ספרד",
-      "league": "tier-1",
-      "category": "national"
-    },
-    "9690243465490": {
-      "teamSlug": "england",
-      "team": "אנגליה",
-      "league": "tier-1",
-      "category": "national"
-    },
     "9598274568466": {
       "teamSlug": "belgium",
       "team": "בלגיה",
       "league": "tier-2",
       "category": "national"
     },
-    "9690226295058": {
-      "teamSlug": "germany",
-      "team": "גרמניה",
-      "league": "tier-1",
-      "category": "national"
-    },
     "9729690304786": {
-      "teamSlug": "ac-milan",
-      "team": "מילאן",
-      "league": "serie-a",
+      "teamSlug": "santos",
+      "team": "סנטוס",
+      "league": "other",
       "category": "club"
     },
-    "10074398359826": {
-      "teamSlug": "spain",
-      "team": "ספרד",
-      "league": "tier-1",
-      "category": "national"
-    },
-    "10074397966610": {
-      "teamSlug": "england",
-      "team": "אנגליה",
-      "league": "tier-1",
-      "category": "national"
+    "9765795692818": {
+      "teamSlug": "st-pauli",
+      "team": "סנט פאולי",
+      "league": "bundesliga",
+      "category": "club"
     },
     "10074398621970": {
       "teamSlug": "chelsea",
@@ -313,15 +631,9 @@
       "league": "premier-league",
       "category": "club"
     },
-    "10074395541778": {
+    "9916327887122": {
       "teamSlug": "brazil",
       "team": "ברזיל",
-      "league": "tier-1",
-      "category": "national"
-    },
-    "10074397114642": {
-      "teamSlug": "germany",
-      "team": "גרמניה",
       "league": "tier-1",
       "category": "national"
     },
@@ -331,41 +643,17 @@
       "league": "bundesliga",
       "category": "club"
     },
-    "9690113343762": {
-      "teamSlug": "liverpool",
-      "team": "ליברפול",
-      "league": "premier-league",
-      "category": "club"
-    },
-    "9729687847186": {
-      "teamSlug": "real-madrid",
-      "team": "ריאל מדריד",
-      "league": "la-liga",
-      "category": "club"
-    },
-    "9690105872658": {
-      "teamSlug": "arsenal",
-      "team": "ארסנל",
-      "league": "premier-league",
-      "category": "club"
-    },
-    "9729681654034": {
-      "teamSlug": "inter-milan",
-      "team": "אינטר",
-      "league": "serie-a",
-      "category": "club"
-    },
     "8401873895698": {
       "teamSlug": "manchester-city",
       "team": "מנצ'סטר סיטי",
       "league": "premier-league",
       "category": "club"
     },
-    "9690124648722": {
-      "teamSlug": "arsenal",
-      "team": "ארסנל",
-      "league": "premier-league",
-      "category": "club"
+    "8220710174994": {
+      "teamSlug": "spain",
+      "team": "ספרד",
+      "league": "tier-1",
+      "category": "national"
     },
     "9754567999762": {
       "teamSlug": "marseille",
@@ -376,12 +664,6 @@
     "9754565640466": {
       "teamSlug": "marseille",
       "team": "מארסיי",
-      "league": "ligue-1",
-      "category": "club"
-    },
-    "9754559185170": {
-      "teamSlug": "psg",
-      "team": "פריז סן ז'רמן",
       "league": "ligue-1",
       "category": "club"
     },
@@ -439,6 +721,42 @@
       "league": "other",
       "category": "club"
     },
+    "8218488733970": {
+      "teamSlug": "ac-milan",
+      "team": "מילאן",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "9637352866066": {
+      "teamSlug": "parma",
+      "team": "פארמה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "10153291284754": {
+      "teamSlug": "parma",
+      "team": "פארמה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "9637356273938": {
+      "teamSlug": "parma",
+      "team": "פארמה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "9795627548946": {
+      "teamSlug": "celta-vigo",
+      "team": "סלטה ויגו",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "9724628042002": {
+      "teamSlug": "ac-milan",
+      "team": "מילאן",
+      "league": "serie-a",
+      "category": "club"
+    },
     "8236009980178": {
       "teamSlug": "celtic",
       "team": "סלטיק",
@@ -451,16 +769,16 @@
       "league": "la-liga",
       "category": "club"
     },
+    "9728044630290": {
+      "teamSlug": "psg",
+      "team": "פריז סן ז'רמן",
+      "league": "ligue-1",
+      "category": "club"
+    },
     "8225566720274": {
       "teamSlug": "liverpool",
       "team": "ליברפול",
       "league": "premier-league",
-      "category": "club"
-    },
-    "9636902797586": {
-      "teamSlug": "benfica",
-      "team": "בנפיקה",
-      "league": "other",
       "category": "club"
     },
     "9666986148114": {
@@ -469,16 +787,100 @@
       "league": "other",
       "category": "club"
     },
+    "10153380544786": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "10153378677010": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "10153382871314": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "10153379070226": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
     "8222061265170": {
       "teamSlug": "arsenal",
       "team": "ארסנל",
       "league": "premier-league",
       "category": "club"
     },
-    "9637376885010": {
-      "teamSlug": "benfica",
-      "team": "בנפיקה",
+    "8222061527314": {
+      "teamSlug": "fulham",
+      "team": "פולהאם",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "9892336402706": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג",
       "league": "other",
+      "category": "club"
+    },
+    "9637382095122": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג",
+      "league": "other",
+      "category": "club"
+    },
+    "9637376885010": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג",
+      "league": "other",
+      "category": "club"
+    },
+    "9775787770130": {
+      "teamSlug": "santos",
+      "team": "סנטוס",
+      "league": "other",
+      "category": "club"
+    },
+    "9743649898770": {
+      "teamSlug": "santos",
+      "team": "סנטוס",
+      "league": "other",
+      "category": "club"
+    },
+    "10073794543890": {
+      "teamSlug": "santos",
+      "team": "סנטוס",
+      "league": "other",
+      "category": "club"
+    },
+    "10073791987986": {
+      "teamSlug": "santos",
+      "team": "סנטוס",
+      "league": "other",
+      "category": "club"
+    },
+    "10073795199250": {
+      "teamSlug": "santos",
+      "team": "סנטוס",
+      "league": "other",
+      "category": "club"
+    },
+    "10073795002642": {
+      "teamSlug": "santos",
+      "team": "סנטוס",
+      "league": "other",
+      "category": "club"
+    },
+    "9765804015890": {
+      "teamSlug": "celta-vigo",
+      "team": "סלטה ויגו",
+      "league": "la-liga",
       "category": "club"
     },
     "9765807915282": {
@@ -517,10 +919,16 @@
       "league": "tier-2",
       "category": "national"
     },
-    "9754578911506": {
-      "teamSlug": "santos",
-      "team": "סנטוס",
-      "league": "other",
+    "9765808767250": {
+      "teamSlug": "valencia",
+      "team": "ולנסיה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "9765808406802": {
+      "teamSlug": "valencia",
+      "team": "ולנסיה",
+      "league": "la-liga",
       "category": "club"
     },
     "8233780019474": {
@@ -536,9 +944,51 @@
       "category": "national"
     },
     "9765803393298": {
-      "teamSlug": "real-madrid",
-      "team": "ריאל מדריד",
+      "teamSlug": "athletic-bilbao",
+      "team": "אתלטיק בילבאו",
       "league": "la-liga",
+      "category": "club"
+    },
+    "9988384784658": {
+      "teamSlug": "santos",
+      "team": "סנטוס",
+      "league": "other",
+      "category": "club"
+    },
+    "9636813340946": {
+      "teamSlug": "al-nassr",
+      "team": "אל נאסר",
+      "league": "other",
+      "category": "club"
+    },
+    "9636788207890": {
+      "teamSlug": "al-nassr",
+      "team": "אל נאסר",
+      "league": "other",
+      "category": "club"
+    },
+    "8235535663378": {
+      "teamSlug": "al-nassr",
+      "team": "אל נאסר",
+      "league": "other",
+      "category": "club"
+    },
+    "8235972919570": {
+      "teamSlug": "al-nassr",
+      "team": "אל נאסר",
+      "league": "other",
+      "category": "club"
+    },
+    "9765555699986": {
+      "teamSlug": "al-hilal",
+      "team": "אל הילאל",
+      "league": "other",
+      "category": "club"
+    },
+    "9765554651410": {
+      "teamSlug": "al-hilal",
+      "team": "אל הילאל",
+      "league": "other",
       "category": "club"
     },
     "9750583378194": {
@@ -560,9 +1010,9 @@
       "category": "club"
     },
     "8232678686994": {
-      "teamSlug": "napoli",
-      "team": "נאפולי",
-      "league": "serie-a",
+      "teamSlug": "ajax",
+      "team": "אאיאקס",
+      "league": "other",
       "category": "club"
     },
     "9750431170834": {
@@ -571,10 +1021,16 @@
       "league": "other",
       "category": "club"
     },
-    "8232646836498": {
-      "teamSlug": "celtic",
-      "team": "סלטיק",
-      "league": "other",
+    "9765805981970": {
+      "teamSlug": "osasuna",
+      "team": "אוסאסונה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "9765806113042": {
+      "teamSlug": "osasuna",
+      "team": "אוסאסונה",
+      "league": "la-liga",
       "category": "club"
     },
     "8221358358802": {
@@ -583,9 +1039,39 @@
       "league": "serie-a",
       "category": "club"
     },
+    "9690617544978": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
     "9165797392658": {
       "teamSlug": "napoli",
       "team": "נאפולי",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "10153376350482": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "9165808566546": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "10153363046674": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "9165810008338": {
+      "teamSlug": "fiorentina",
+      "team": "פיורנטינה",
       "league": "serie-a",
       "category": "club"
     },
@@ -607,25 +1093,67 @@
       "league": "serie-a",
       "category": "club"
     },
-    "8365073563922": {
+    "9737127788818": {
+      "teamSlug": "france",
+      "team": "צרפת",
+      "league": "tier-1",
+      "category": "national"
+    },
+    "9729691910418": {
+      "teamSlug": "france",
+      "team": "צרפת",
+      "league": "tier-1",
+      "category": "national"
+    },
+    "9728081920274": {
       "teamSlug": "brazil",
       "team": "ברזיל",
       "league": "tier-1",
       "category": "national"
     },
-    "9667010494738": {
-      "teamSlug": "germany",
-      "team": "גרמניה",
+    "9724619948306": {
+      "teamSlug": "brazil",
+      "team": "ברזיל",
       "league": "tier-1",
       "category": "national"
     },
-    "8235474845970": {
-      "teamSlug": "ac-milan",
-      "team": "מילאן",
+    "9724645998866": {
+      "teamSlug": "inter-milan",
+      "team": "אינטר",
       "league": "serie-a",
       "category": "club"
     },
+    "9157111742738": {
+      "teamSlug": "barcelona",
+      "team": "ברצלונה",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "8216356389138": {
+      "teamSlug": "inter-milan",
+      "team": "אינטר",
+      "league": "serie-a",
+      "category": "club"
+    },
+    "8235474845970": {
+      "teamSlug": "ajax",
+      "team": "אאיאקס",
+      "league": "other",
+      "category": "club"
+    },
+    "9775780888850": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
+    },
     "9728065274130": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
+    },
+    "9166081851666": {
       "teamSlug": "real-madrid",
       "team": "ריאל מדריד",
       "league": "la-liga",
@@ -636,6 +1164,24 @@
       "team": "סקוטלנד",
       "league": "tier-3",
       "category": "national"
+    },
+    "9728053805330": {
+      "teamSlug": "celtic",
+      "team": "סלטיק",
+      "league": "other",
+      "category": "club"
+    },
+    "9765794480402": {
+      "teamSlug": "wolfsburg",
+      "team": "וולפסבורג",
+      "league": "bundesliga",
+      "category": "club"
+    },
+    "9765792678162": {
+      "teamSlug": "wolfsburg",
+      "team": "וולפסבורג",
+      "league": "bundesliga",
+      "category": "club"
     },
     "8363464917266": {
       "teamSlug": "bayern-munich",
@@ -649,28 +1195,10 @@
       "league": "tier-1",
       "category": "national"
     },
-    "9729684996370": {
-      "teamSlug": "brazil",
-      "team": "ברזיל",
-      "league": "tier-1",
-      "category": "national"
-    },
     "8401822122258": {
       "teamSlug": "bayern-munich",
       "team": "באירן מינכן",
       "league": "bundesliga",
-      "category": "club"
-    },
-    "9598157226258": {
-      "teamSlug": "portugal",
-      "team": "פורטוגל",
-      "league": "tier-1",
-      "category": "national"
-    },
-    "9690210697490": {
-      "teamSlug": "barcelona",
-      "team": "ברצלונה",
-      "league": "la-liga",
       "category": "club"
     },
     "8287447154962": {
@@ -679,17 +1207,17 @@
       "league": "bundesliga",
       "category": "club"
     },
-    "9729683980562": {
-      "teamSlug": "ac-milan",
-      "team": "מילאן",
-      "league": "serie-a",
-      "category": "club"
-    },
     "9598269554962": {
-      "teamSlug": "italy",
-      "team": "איטליה",
+      "teamSlug": "belgium",
+      "team": "בלגיה",
       "league": "tier-2",
       "category": "national"
+    },
+    "9724629582098": {
+      "teamSlug": "bayern-munich",
+      "team": "באירן מינכן",
+      "league": "bundesliga",
+      "category": "club"
     },
     "8287445451026": {
       "teamSlug": "manchester-city",
@@ -697,69 +1225,45 @@
       "league": "premier-league",
       "category": "club"
     },
-    "9765719539986": {
-      "teamSlug": "borussia-dortmund",
-      "team": "דורטמונד",
-      "league": "bundesliga",
+    "9729685586194": {
+      "teamSlug": "al-nassr",
+      "team": "אל נאסר",
+      "league": "other",
       "category": "club"
     },
-    "9690121830674": {
-      "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי",
-      "league": "premier-league",
+    "10153419735314": {
+      "teamSlug": "aberdeen",
+      "team": "אברדין",
+      "league": "other",
       "category": "club"
     },
-    "9690105086226": {
-      "teamSlug": "chelsea",
-      "team": "צלסי",
-      "league": "premier-league",
+    "9750509748498": {
+      "teamSlug": "fenerbahce",
+      "team": "פנרבחצ'ה",
+      "league": "other",
       "category": "club"
     },
-    "9729686569234": {
-      "teamSlug": "brazil",
-      "team": "ברזיל",
-      "league": "tier-1",
-      "category": "national"
-    },
-    "9598247076114": {
-      "teamSlug": "netherlands",
-      "team": "הולנד",
-      "league": "tier-2",
-      "category": "national"
-    },
-    "9690240581906": {
-      "teamSlug": "france",
-      "team": "צרפת",
-      "league": "tier-1",
-      "category": "national"
-    },
-    "9729681326354": {
-      "teamSlug": "chelsea",
-      "team": "צלסי",
-      "league": "premier-league",
+    "9750511845650": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג",
+      "league": "other",
       "category": "club"
     },
-    "9690573963538": {
-      "teamSlug": "barcelona",
-      "team": "ברצלונה",
-      "league": "la-liga",
+    "9750516138258": {
+      "teamSlug": "tigres",
+      "team": "טיגרס",
+      "league": "other",
       "category": "club"
-    },
-    "9598262214930": {
-      "teamSlug": "france",
-      "team": "צרפת",
-      "league": "tier-1",
-      "category": "national"
-    },
-    "9690251395346": {
-      "teamSlug": "portugal",
-      "team": "פורטוגל",
-      "league": "tier-1",
-      "category": "national"
     },
     "9750497689874": {
-      "teamSlug": "boca-juniors",
-      "team": "בוקה",
+      "teamSlug": "aberdeen",
+      "team": "אברדין",
+      "league": "other",
+      "category": "club"
+    },
+    "9750507061522": {
+      "teamSlug": "aberdeen",
+      "team": "אברדין",
       "league": "other",
       "category": "club"
     },
@@ -781,6 +1285,12 @@
       "league": "premier-league",
       "category": "club"
     },
+    "9743434613010": {
+      "teamSlug": "fulham",
+      "team": "פולהאם",
+      "league": "premier-league",
+      "category": "club"
+    },
     "9743428419858": {
       "teamSlug": "everton",
       "team": "אברטון",
@@ -788,38 +1298,56 @@
       "category": "club"
     },
     "9743434088722": {
-      "teamSlug": "leeds",
-      "team": "לידס",
-      "league": "premier-league",
-      "category": "club"
-    },
-    "9797680529682": {
-      "teamSlug": "leeds",
-      "team": "לידס",
-      "league": "premier-league",
-      "category": "club"
-    },
-    "9743429173522": {
       "teamSlug": "newcastle",
       "team": "ניוקאסל",
       "league": "premier-league",
       "category": "club"
     },
+    "9743428878610": {
+      "teamSlug": "newcastle",
+      "team": "ניוקאסל",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "9797680529682": {
+      "teamSlug": "leicester",
+      "team": "לסטר",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "9743429173522": {
+      "teamSlug": "leicester",
+      "team": "לסטר",
+      "league": "premier-league",
+      "category": "club"
+    },
     "9797679972626": {
-      "teamSlug": "leeds",
-      "team": "לידס",
+      "teamSlug": "manchester-united",
+      "team": "מנצסטר יונייטד",
       "league": "premier-league",
       "category": "club"
     },
     "9765811716370": {
-      "teamSlug": "leeds",
-      "team": "לידס",
+      "teamSlug": "manchester-united",
+      "team": "מנצסטר יונייטד",
       "league": "premier-league",
       "category": "club"
     },
     "9743433335058": {
       "teamSlug": "manchester-united",
       "team": "מנצסטר יונייטד",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "9797666701586": {
+      "teamSlug": "wolves",
+      "team": "וולבס",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "9754591232274": {
+      "teamSlug": "wolves",
+      "team": "וולבס",
       "league": "premier-league",
       "category": "club"
     },
@@ -845,6 +1373,30 @@
       "teamSlug": "manchester-city",
       "team": "מנצ'סטר סיטי",
       "league": "premier-league",
+      "category": "club"
+    },
+    "9754589364498": {
+      "teamSlug": "aston-villa",
+      "team": "אסטון וילה",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "9743428092178": {
+      "teamSlug": "everton",
+      "team": "אברטון",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "9743427698962": {
+      "teamSlug": "everton",
+      "team": "אברטון",
+      "league": "premier-league",
+      "category": "club"
+    },
+    "8401839456530": {
+      "teamSlug": "barcelona",
+      "team": "ברצלונה",
+      "league": "la-liga",
       "category": "club"
     }
   },
@@ -903,42 +1455,7 @@
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
     },
-    "10291381076242": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
     "10291380846866": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10291380486418": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10291380257042": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10291380093202": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10291379994898": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10291379601682": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10291378454802": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
@@ -969,16 +1486,6 @@
       "currentTeam": "ישראלי"
     },
     "10291336413458": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "ישראלי"
-    },
-    "10281004204306": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "ישראלי"
-    },
-    "10281004138770": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "ישראלי"
@@ -1075,27 +1582,35 @@
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
     },
+    "10212776411410": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"celta-vigo\" but image filename mentions \"sevilla\"",
+      "teamFromUrl": "celta-vigo",
+      "teamFromImage": "sevilla",
+      "currentTeam": ""
+    },
+    "10212769530130": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"real-madrid\" but image filename mentions \"celta-vigo\"",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "celta-vigo",
+      "currentTeam": ""
+    },
+    "10212769300754": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"real-madrid\" but image filename mentions \"villarreal\"",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "villarreal",
+      "currentTeam": "ישראלי"
+    },
+    "10212768743698": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"real-madrid\" but image filename mentions \"villarreal\"",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "villarreal",
+      "currentTeam": "ישראלי"
+    },
     "10212750000402": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10211822731538": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10211822141714": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10200855445778": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10200854987026": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
@@ -1106,11 +1621,6 @@
       "currentTeam": "(empty)"
     },
     "10200846303506": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10200838537490": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
@@ -1170,11 +1680,6 @@
       "teamFromImage": "betis",
       "currentTeam": "בטיס"
     },
-    "9765787369746": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
     "10167955456274": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
@@ -1193,11 +1698,6 @@
       "teamFromUrl": "real-madrid",
       "teamFromImage": "chelsea",
       "currentTeam": "צלסי"
-    },
-    "9765796512018": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
     },
     "9729685258514": {
       "reason": "image-mismatch",
@@ -1243,11 +1743,6 @@
       "teamFromUrl": "ac-milan",
       "teamFromImage": "santos",
       "currentTeam": ""
-    },
-    "9765795692818": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
     },
     "10074398359826": {
       "reason": "image-mismatch",
@@ -1324,11 +1819,6 @@
       "teamFromImage": "lyon",
       "currentTeam": "ליון"
     },
-    "9795627548946": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "ישראלי"
-    },
     "8218527006994": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
@@ -1338,6 +1828,13 @@
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "ישראלי"
+    },
+    "9637360795922": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"parma\" but image filename mentions \"cadiz\"",
+      "teamFromUrl": "parma",
+      "teamFromImage": "cadiz",
+      "currentTeam": "מכבי תל אביב"
     },
     "9754530021650": {
       "reason": "no-team-detected",
@@ -1351,37 +1848,12 @@
       "teamFromImage": "flamengo",
       "currentTeam": "פלמנגו"
     },
-    "10153380544786": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10153378677010": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10153382871314": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10153379070226": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
     "9637376885010": {
       "reason": "image-mismatch",
       "detail": "URL says \"benfica\" but image filename mentions \"sporting\"",
       "teamFromUrl": "benfica",
       "teamFromImage": "sporting",
       "currentTeam": "ספורטינג"
-    },
-    "9765804015890": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
     },
     "9765807325458": {
       "reason": "no-team-detected",
@@ -1462,36 +1934,6 @@
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
     },
-    "9636813340946": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9636788207890": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "8235535663378": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "8235972919570": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9765555699986": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9765554651410": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
     "8216458985746": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
@@ -1516,42 +1958,7 @@
       "teamFromImage": "italy",
       "currentTeam": "איטליה"
     },
-    "9765805981970": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9765806113042": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
     "8216467341586": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9690617544978": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10153376350482": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9165808566546": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "10153363046674": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9165810008338": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
@@ -1605,16 +2012,6 @@
       "currentTeam": "(empty)"
     },
     "9765789499666": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9765794480402": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
-    "9765792678162": {
       "reason": "no-team-detected",
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
@@ -1721,11 +2118,6 @@
       "teamFromImage": "england",
       "currentTeam": "אנגליה"
     },
-    "9729685586194": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
     "9729681326354": {
       "reason": "image-mismatch",
       "detail": "URL says \"chelsea\" but image filename mentions \"inter-milan\"",
@@ -1769,15 +2161,19 @@
       "detail": "Could not detect team from URL, image, or label",
       "currentTeam": "(empty)"
     },
-    "10153419735314": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
-    },
     "9750509748498": {
-      "reason": "no-team-detected",
-      "detail": "Could not detect team from URL, image, or label",
-      "currentTeam": "(empty)"
+      "reason": "image-mismatch",
+      "detail": "URL says \"aberdeen\" but image filename mentions \"fenerbahce\"",
+      "teamFromUrl": "aberdeen",
+      "teamFromImage": "fenerbahce",
+      "currentTeam": ""
+    },
+    "9750497689874": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"boca-juniors\" but image filename mentions \"aberdeen\"",
+      "teamFromUrl": "boca-juniors",
+      "teamFromImage": "aberdeen",
+      "currentTeam": ""
     },
     "9765812175122": {
       "reason": "no-team-detected",
@@ -1850,6 +2246,13 @@
       "teamFromUrl": "bayern-munich",
       "teamFromImage": "barcelona",
       "currentTeam": "באירן מינכן"
+    },
+    "9637327995154": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"al-nassr\" but image filename mentions \"boca-juniors\"",
+      "teamFromUrl": "al-nassr",
+      "teamFromImage": "boca-juniors",
+      "currentTeam": "בוקה"
     }
   }
 }

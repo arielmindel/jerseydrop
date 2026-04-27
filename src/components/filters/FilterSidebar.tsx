@@ -8,6 +8,15 @@ import { normalizeText } from "@/lib/search";
 
 type Option = { value: string; labelHe: string; meta?: string };
 
+/** Serializable visibility rule. Client evaluates it against the URL-parsed
+ *  active filter map. (Functions can't cross the Server→Client boundary.) */
+export type VisibilityRule =
+  | { key: string; equals: string }
+  | { key: string; notEquals: string }
+  | { key: string; in: string[] }
+  | { key: string; empty: true }
+  | { key: string; nonEmpty: true };
+
 export type FilterGroupConfig = {
   key: string;
   labelHe: string;
@@ -15,9 +24,23 @@ export type FilterGroupConfig = {
   options?: Option[];
   /** Collapse the group by default if it has many options (e.g. team list). */
   defaultCollapsed?: boolean;
-  /** Hide the entire group when this predicate returns false (e.g. league only when category=club). */
-  visibleWhen?: (active: Record<string, string[]>) => boolean;
+  /** Hide the entire group when this rule fails (e.g. show league only when category=club). */
+  visibleWhen?: VisibilityRule;
 };
+
+function evalVisibility(
+  rule: VisibilityRule | undefined,
+  active: Record<string, string[]>,
+): boolean {
+  if (!rule) return true;
+  const values = active[rule.key] || [];
+  if ("empty" in rule) return values.length === 0;
+  if ("nonEmpty" in rule) return values.length > 0;
+  if ("equals" in rule) return values.includes(rule.equals);
+  if ("notEquals" in rule) return !values.includes(rule.notEquals);
+  if ("in" in rule) return values.some((v) => rule.in.includes(v));
+  return true;
+}
 
 type Props = {
   groups: FilterGroupConfig[];
@@ -70,9 +93,7 @@ export default function FilterSidebar({ groups, counts }: Props) {
     (k) => !["sort", "page", "q"].includes(k),
   ).length;
 
-  const visibleGroups = groups.filter((g) =>
-    g.visibleWhen ? g.visibleWhen(activeMap) : true,
-  );
+  const visibleGroups = groups.filter((g) => evalVisibility(g.visibleWhen, activeMap));
 
   const body = (
     <div className="space-y-5">

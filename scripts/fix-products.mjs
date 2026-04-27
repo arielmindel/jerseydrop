@@ -145,7 +145,7 @@ for (const p of products) {
 
   // CASE 1: URL & image agree → trust them (highest confidence)
   if (fromUrl && fromImg && fromUrl === fromImg) {
-    if (fromLabel !== fromUrl) {
+    if (p.teamSlug !== fromUrl) {
       // Label is wrong; relabel
       const meta = getCanonicalTeamMeta(fromUrl);
       if (meta) {
@@ -165,7 +165,7 @@ for (const p of products) {
 
   // CASE 2: only URL detected
   if (fromUrl && !fromImg) {
-    if (fromLabel !== fromUrl) {
+    if (p.teamSlug !== fromUrl) {
       const meta = getCanonicalTeamMeta(fromUrl);
       if (meta) {
         const lc = leagueForTeamSlug(meta.slug);
@@ -192,9 +192,11 @@ for (const p of products) {
       currentTeam: p.team,
     };
     stats.flaggedImageMismatch++;
-    // Still relabel based on URL — at least the team will be correct
-    if (fromLabel !== fromUrl) {
-      const meta = getCanonicalTeamMeta(fromUrl);
+    // Trust the IMAGE filename — it's what the user actually sees.
+    // URL slugs are noisier (typos, copies, ambiguous Hebrew substrings
+    // like "ריאל" matching inside "וויריאל").
+    if (p.teamSlug !== fromImg) {
+      const meta = getCanonicalTeamMeta(fromImg);
       if (meta) {
         const lc = leagueForTeamSlug(meta.slug);
         fixes[p.id] = {
@@ -209,7 +211,7 @@ for (const p of products) {
 
   // CASE 4: only image detected (fallback)
   if (!fromUrl && fromImg) {
-    if (fromLabel !== fromImg) {
+    if (p.teamSlug !== fromImg) {
       const meta = getCanonicalTeamMeta(fromImg);
       if (meta) {
         const lc = leagueForTeamSlug(meta.slug);

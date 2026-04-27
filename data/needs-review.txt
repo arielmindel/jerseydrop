@@ -1,11 +1,11 @@
-JerseyDrop Fixer — 2026-04-27T00:25:04.590Z
+JerseyDrop Fixer — 2026-04-27T08:11:57.729Z
 =====================================
 
 Total products: 995
-✅ Auto-fixed labels (URL + image agreement): 87
-⚠️  Flagged: image likely wrong (URL says one thing, image another): 56
-⚠️  Flagged: no team could be detected from any signal: 122
-☑️  Unchanged: 730
+✅ Auto-fixed labels (URL + image agreement): 207
+⚠️  Flagged: image likely wrong (URL says one thing, image another): 64
+⚠️  Flagged: no team could be detected from any signal: 81
+☑️  Unchanged: 643
 
 The "image-mismatch" products WILL still be displayed (with relabeled team)
 but the image may be incorrect — they're flagged for human review.
