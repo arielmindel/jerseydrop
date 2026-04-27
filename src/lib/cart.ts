@@ -18,6 +18,10 @@ export type CartItem = {
   size: Size;
   unitPrice: number; // base price for the version
   customization?: { name: string; number: string } | null;
+  /** Selected free patch id (matches patches-config.json). null = no patch. */
+  selectedPatchId?: string | null;
+  /** Optional free-text customer note (max 200 chars). null = none. */
+  customerNotes?: string | null;
   quantity: number;
 };
 
@@ -36,12 +40,20 @@ function lineKey(i: {
   version: ProductVersion;
   size: Size;
   customization?: CartItem["customization"];
+  selectedPatchId?: CartItem["selectedPatchId"];
+  customerNotes?: CartItem["customerNotes"];
 }): string {
   const cust =
     i.customization && (i.customization.name || i.customization.number)
       ? `${i.customization.name}:${i.customization.number}`
       : "none";
-  return `${i.productId}|${i.version}|${i.size}|${cust}`;
+  const patch = i.selectedPatchId || "none";
+  // Hash notes so an identical product with different notes becomes a new line
+  // but the line key stays a reasonable length.
+  const notes = i.customerNotes
+    ? `n${i.customerNotes.length}-${i.customerNotes.slice(0, 12)}`
+    : "none";
+  return `${i.productId}|${i.version}|${i.size}|${cust}|${patch}|${notes}`;
 }
 
 export const useCart = create<CartState>()(

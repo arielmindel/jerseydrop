@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
 import {
   Check,
   Truck,
@@ -14,8 +13,6 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -24,8 +21,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import JerseyPreview from "./JerseyPreview";
 import SizeGuideTable from "@/components/product/SizeGuideTable";
+import CustomizationForm, {
+  initialCustomization,
+  type CustomizationState,
+} from "./CustomizationForm";
 import { useCart } from "@/lib/cart";
 import {
   getAvailableVersions,
@@ -38,6 +38,7 @@ import {
   SHIPPING,
   whatsappLink,
 } from "@/lib/constants";
+import { NO_PATCH } from "@/lib/patches";
 import { formatILS } from "@/lib/utils";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
 import { descriptionParagraphs } from "@/lib/sanitize";
@@ -61,14 +62,17 @@ export default function ProductDetail({ product }: { product: Product }) {
   );
   const [size, setSize] = useState<string | null>(null);
   const [imageIdx, setImageIdx] = useState(0);
-  const [custEnabled, setCustEnabled] = useState(false);
-  const [custName, setCustName] = useState("");
-  const [custNumber, setCustNumber] = useState("");
+  const [customization, setCustomization] = useState<CustomizationState>(
+    initialCustomization,
+  );
   const [adding, setAdding] = useState(false);
   const [justAdded, setJustAdded] = useState(false);
 
   const base = priceFor(product, version);
-  const total = base !== null ? base + (custEnabled ? CUSTOMIZATION_FEE : 0) : null;
+  const total =
+    base !== null
+      ? base + (customization.nameNumberEnabled ? CUSTOMIZATION_FEE : 0)
+      : null;
 
   const versionLabel: Record<ProductVersion, string> = {
     fan: "Fan",
@@ -94,10 +98,19 @@ export default function ProductDetail({ product }: { product: Product }) {
       return;
     }
     setAdding(true);
-    const customization =
-      custEnabled && (custName || custNumber)
-        ? { name: custName.toUpperCase(), number: custNumber }
+    const nameNumber =
+      customization.nameNumberEnabled &&
+      (customization.name || customization.number)
+        ? {
+            name: customization.name.toUpperCase(),
+            number: customization.number,
+          }
         : null;
+    const patchId =
+      customization.selectedPatchId && customization.selectedPatchId !== NO_PATCH.id
+        ? customization.selectedPatchId
+        : null;
+    const notes = customization.customerNotes.trim() || null;
     addItem({
       productId: product.id,
       slug: product.slug,
@@ -108,7 +121,9 @@ export default function ProductDetail({ product }: { product: Product }) {
       version,
       size: (size ?? "אחיד") as never,
       unitPrice: base,
-      customization,
+      customization: nameNumber,
+      selectedPatchId: patchId,
+      customerNotes: notes,
     });
     setTimeout(() => {
       setAdding(false);
@@ -291,79 +306,13 @@ export default function ProductDetail({ product }: { product: Product }) {
             </div>
           )}
 
-          {/* Customization */}
+          {/* Customization (name+number, patch, notes) */}
           {productHasPrice && (
-            <div className="space-y-3 rounded-2xl border border-border bg-surface p-4">
-              <label className="flex items-start gap-3">
-                <input
-                  type="checkbox"
-                  checked={custEnabled}
-                  onChange={(e) => setCustEnabled(e.target.checked)}
-                  className="mt-1 h-5 w-5 accent-[#00FF88]"
-                />
-                <span className="space-y-0.5">
-                  <span className="block font-display text-sm font-bold uppercase tracking-tight">
-                    הוספת שם ומספר{" "}
-                    <span className="text-accent">
-                      +{formatILS(CUSTOMIZATION_FEE)}
-                    </span>
-                  </span>
-                  <span className="block text-xs text-muted">
-                    הדפסה מקצועית בגב החולצה. עד 12 אותיות באנגלית + מספר
-                    0-99.
-                  </span>
-                </span>
-              </label>
-              {custEnabled && (
-                <motion.div
-                  initial={{ opacity: 0, y: -6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="grid gap-4 md:grid-cols-[1.2fr_1fr]"
-                >
-                  <div className="space-y-3">
-                    <div className="space-y-1.5">
-                      <Label htmlFor="cust-name">שם (A-Z, מספרים)</Label>
-                      <Input
-                        id="cust-name"
-                        value={custName}
-                        onChange={(e) =>
-                          setCustName(
-                            e.target.value
-                              .replace(/[^A-Za-z0-9 ]/g, "")
-                              .toUpperCase(),
-                          )
-                        }
-                        maxLength={12}
-                        placeholder="MESSI"
-                      />
-                      <div className="text-[10px] text-muted">
-                        {custName.length}/12
-                      </div>
-                    </div>
-                    <div className="space-y-1.5">
-                      <Label htmlFor="cust-number">מספר</Label>
-                      <Input
-                        id="cust-number"
-                        value={custNumber}
-                        onChange={(e) =>
-                          setCustNumber(
-                            e.target.value.replace(/\D/g, "").slice(0, 2),
-                          )
-                        }
-                        inputMode="numeric"
-                        placeholder="10"
-                      />
-                    </div>
-                  </div>
-                  <div className="relative aspect-square rounded-2xl border border-border bg-background p-2">
-                    <JerseyPreview name={custName} number={custNumber} />
-                    <span className="absolute bottom-2 end-2 rounded-full bg-background/80 px-2 py-0.5 font-display text-[9px] font-bold uppercase tracking-widest text-accent">
-                      תצוגה חיה
-                    </span>
-                  </div>
-                </motion.div>
-              )}
-            </div>
+            <CustomizationForm
+              product={product}
+              value={customization}
+              onChange={setCustomization}
+            />
           )}
 
           {/* CTAs */}
