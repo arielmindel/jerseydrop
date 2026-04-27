@@ -3,6 +3,7 @@ import CategoryShowcase from "@/components/home/CategoryShowcase";
 import LeagueStrip from "@/components/home/LeagueStrip";
 import NationsStrip from "@/components/home/NationsStrip";
 import FeaturedGrid from "@/components/home/FeaturedGrid";
+import CollectionsSection from "@/components/home/CollectionsSection";
 import IsraeliFaves from "@/components/home/IsraeliFaves";
 import WhyUs from "@/components/home/WhyUs";
 import HomepageFAQ from "@/components/home/HomepageFAQ";
@@ -16,6 +17,7 @@ export default function Home() {
       <LeagueStrip />
       <NationsStrip />
       <FeaturedGrid />
+      <CollectionsSection />
       <IsraeliFaves />
       <WhyUs />
       <HomepageFAQ />
