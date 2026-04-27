@@ -1,16 +1,32 @@
 import type { Metadata } from "next";
 import { Sparkles } from "lucide-react";
-import { getRetroProducts } from "@/lib/products";
-import ProductGrid from "@/components/product/ProductGrid";
+import { getRetroProducts, getRetroByDecade } from "@/lib/products";
+import RetroDecadeTabs from "@/components/product/RetroDecadeTabs";
 
 export const metadata: Metadata = {
   title: "רטרו — קלאסיקות שלא יחזרו",
   description:
-    "חולצות רטרו ונוסטלגיה: ארגנטינה 2010, ריאל 06-07, מנצ׳סטר יונייטד 13-14 ועוד.",
+    "חולצות רטרו ונוסטלגיה לפי עשור: 80s, 90s, 00s, 10s. ארגנטינה 2010, ריאל 06-07, יונייטד 13-14 ועוד.",
 };
 
 export default function RetroPage() {
-  const retro = getRetroProducts();
+  const total = getRetroProducts();
+  // Pre-compute each decade so the client tabs don't need to do it
+  const byDecade = {
+    "80s": getRetroByDecade("80s"),
+    "90s": getRetroByDecade("90s"),
+    "00s": getRetroByDecade("00s"),
+    "10s": getRetroByDecade("10s"),
+  };
+  const undated = total.filter(
+    (p) =>
+      ![
+        ...byDecade["80s"],
+        ...byDecade["90s"],
+        ...byDecade["00s"],
+        ...byDecade["10s"],
+      ].some((m) => m.id === p.id),
+  );
 
   return (
     <>
@@ -30,14 +46,13 @@ export default function RetroPage() {
           <p className="mt-4 max-w-xl text-sm text-muted md:text-base">
             חולצות מיתולוגיות שמעבירות אתכם לעונות שלא נשכחו — רפרודוקציות
             נאמנות למקור, בדים כמו של פעם, ותחושה שלא תקבלו במקום אחר.
+            <span className="text-gold"> {total.length} פריטים בקטלוג.</span>
           </p>
         </div>
       </section>
+
       <section className="container py-10 md:py-14">
-        <ProductGrid
-          products={retro}
-          emptyHint="הרטרו עומד לחזור — בקרוב יתווספו דגמים חדשים."
-        />
+        <RetroDecadeTabs byDecade={byDecade} undated={undated} />
       </section>
     </>
   );

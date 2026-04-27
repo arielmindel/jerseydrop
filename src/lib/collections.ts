@@ -9,7 +9,9 @@ const UCL_TEAMS = new Set(
 export type CollectionId =
   | "world-cup-2026"
   | "retro-90s"
-  | "champions-league";
+  | "champions-league"
+  | "short-suit"
+  | "long-sleeve";
 
 export type CollectionMeta = {
   id: CollectionId;
@@ -53,6 +55,26 @@ export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
     accent: "#00FF88",
     badgeLabel: "UEFA CHAMPIONS LEAGUE 25-26",
   },
+  "short-suit": {
+    id: "short-suit",
+    slug: "short-suit",
+    titleHe: "סטים — חולצה + מכנס",
+    subtitleHe: "ערכת המשחק המלאה",
+    descriptionHe:
+      "סטים תואמים — חולצה ומכנס באותו עיצוב. למשחק, לאימון, או לסט שלם של אספן. למבוגרים ולילדים.",
+    accent: "#22D3EE",
+    badgeLabel: "SHORT SUITS · CONTROL THE LOOK",
+  },
+  "long-sleeve": {
+    id: "long-sleeve",
+    slug: "long-sleeve",
+    titleHe: "שרוול ארוך",
+    subtitleHe: "חולצות בגזרה ארוכה",
+    descriptionHe:
+      "כל הדגמים בשרוול ארוך — מתאימים לחורף, לשוערים, ולמי שאוהב את המראה הקלאסי.",
+    accent: "#A855F7",
+    badgeLabel: "LONG SLEEVE",
+  },
 };
 
 const NINETY_S = /199\d/;
@@ -74,6 +96,12 @@ export function getCollectionProducts(id: CollectionId): Product[] {
       return all.filter(
         (p) => p.category === "club" && UCL_TEAMS.has(p.teamSlug),
       );
+    case "short-suit":
+      return all.filter(
+        (p) => p.isShortSuit || p.tags?.includes("short-suit"),
+      );
+    case "long-sleeve":
+      return all.filter((p) => p.isLongSleeve);
   }
 }
 
