@@ -22,6 +22,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import SizeGuideTable from "@/components/product/SizeGuideTable";
+import JerseyDropWatermark from "./JerseyDropWatermark";
 import CustomizationForm, {
   initialCustomization,
   type CustomizationState,
@@ -160,6 +161,7 @@ export default function ProductDetail({ product }: { product: Product }) {
               blurDataURL={BLUR_DATA_URL}
               className="object-cover"
             />
+            <JerseyDropWatermark src={images[imageIdx]} size="md" />
             <div className="absolute top-3 flex flex-col gap-1.5 start-3">
               {product.isWorldCup2026 && (
                 <Badge variant="gold">מונדיאל 2026</Badge>

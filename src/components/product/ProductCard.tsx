@@ -4,6 +4,17 @@ import type { Product } from "@/lib/types";
 import { formatILS } from "@/lib/utils";
 import { getStartingPrice, hasPrice } from "@/lib/products";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
+import JerseyDropWatermark from "./JerseyDropWatermark";
+
+/** Some products from the merge ended up without a clean Hebrew team name —
+ *  fall back to deriving from nameHe so cards never show "Unknown". */
+function displayTeam(product: Product): string {
+  const t = (product.team || "").trim();
+  if (t && t.toLowerCase() !== "unknown") return t;
+  // Fall back to nameHe minus season prefix
+  return (product.nameHe || "").replace(/^\d{2,4}[-/]\d{2,4}\s*/, "").trim() ||
+    "חולצת כדורגל";
+}
 
 export default function ProductCard({ product }: { product: Product }) {
   const startingPrice = getStartingPrice(product);
@@ -14,7 +25,8 @@ export default function ProductCard({ product }: { product: Product }) {
   const fallbackImg =
     "https://picsum.photos/seed/jerseydrop-fallback/600/750";
   const primaryImg = product.images?.[0] || fallbackImg;
-  const altText = product.nameHe || product.nameEn || product.team;
+  const altText = product.nameHe || product.nameEn || displayTeam(product);
+  const teamLabel = displayTeam(product);
 
   return (
     <Link
@@ -32,14 +44,14 @@ export default function ProductCard({ product }: { product: Product }) {
           blurDataURL={BLUR_DATA_URL}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        {/* Badges intentionally removed from card grids — kept on the detail page only.
-            Cards show: image, team, season, price chip. */}
+        <JerseyDropWatermark src={primaryImg} size="sm" />
+        {/* Badges intentionally removed from card grids — kept on the detail page only. */}
       </div>
 
       <div className="flex flex-1 flex-col gap-2 p-4">
         <div className="flex items-baseline justify-between gap-2">
           <span className="line-clamp-1 font-display text-sm font-bold uppercase tracking-tight text-foreground">
-            {product.team}
+            {teamLabel}
           </span>
           {product.season && (
             <span className="font-display text-[10px] text-muted">
