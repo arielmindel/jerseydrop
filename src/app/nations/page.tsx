@@ -1,8 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Flag, Trophy } from "lucide-react";
 import { NATIONS, TIER_LABELS, type NationTier } from "@/lib/constants";
-import { getProductsByNation } from "@/lib/products";
+import { getHeroImageFor, getProductsByNation } from "@/lib/products";
+import { BLUR_DATA_URL } from "@/lib/image-placeholder";
 import WorldCupCountdown from "@/components/home/WorldCupCountdown";
 
 export const metadata: Metadata = {
@@ -13,26 +15,44 @@ export const metadata: Metadata = {
 
 function NationCard({ slug, nameHe, nameEn, flag }: (typeof NATIONS)[number]) {
   const productsCount = getProductsByNation(slug).length;
+  const img = getHeroImageFor({ team: slug });
   return (
     <Link
       href={`/nations/${slug}`}
-      className="group flex items-center gap-4 rounded-2xl border border-border bg-surface p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-glow-sm"
+      className="group relative flex aspect-[5/3] items-end overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-500 hover:-translate-y-1 hover:border-accent/60 hover:shadow-glow-sm"
     >
-      <span className="text-4xl md:text-5xl">{flag}</span>
-      <div className="flex flex-1 flex-col">
-        <span className="font-display text-base font-bold uppercase tracking-tight text-foreground">
-          {nameHe}
-        </span>
-        <span className="font-display text-[11px] text-muted">{nameEn}</span>
+      {img ? (
+        <Image
+          src={img}
+          alt={nameHe}
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          placeholder="blur"
+          blurDataURL={BLUR_DATA_URL}
+          className="object-cover opacity-70 transition-all duration-500 group-hover:scale-105 group-hover:opacity-95"
+        />
+      ) : (
+        <div className="absolute inset-0 bg-card-gradient" />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+      <div className="absolute end-3 top-3 rounded-full border border-border/60 bg-background/80 px-2 py-1 backdrop-blur-sm">
+        <span className="text-2xl">{flag}</span>
+      </div>
+      <div className="relative w-full p-4">
+        <div className="flex items-baseline justify-between gap-2">
+          <span className="font-display text-base font-bold uppercase tracking-tight text-foreground">
+            {nameHe}
+          </span>
+          <span className="font-display text-[10px] tracking-widest text-accent">
+            {nameEn}
+          </span>
+        </div>
         {productsCount > 0 && (
-          <span className="mt-1 font-display text-[10px] uppercase tracking-widest text-accent">
+          <span className="mt-1 inline-block font-display text-[10px] uppercase tracking-widest text-muted">
             {productsCount} חולצות זמינות
           </span>
         )}
       </div>
-      <span className="font-display text-xs font-bold uppercase tracking-widest text-muted group-hover:text-accent">
-        ←
-      </span>
     </Link>
   );
 }
@@ -50,7 +70,9 @@ function TierSection({
   return (
     <div className="space-y-5">
       <div className="flex items-center gap-2">
-        <Icon className={`h-5 w-5 ${tier === "tier-1" ? "text-accent" : "text-muted"}`} />
+        <Icon
+          className={`h-5 w-5 ${tier === "tier-1" ? "text-accent" : "text-muted"}`}
+        />
         <div>
           <span className="section-eyebrow">{title}</span>
           <h2 className="mt-1 font-display text-2xl font-black uppercase tracking-tight md:text-3xl">
@@ -73,10 +95,10 @@ function TierSection({
 export default function NationsPage() {
   return (
     <>
-      <section className="relative isolate overflow-hidden border-b border-border/60 bg-background">
+      <section className="relative isolate overflow-hidden border-b border-border/60">
         <div
           aria-hidden
-          className="absolute -top-20 start-1/2 h-[460px] w-[460px] -translate-x-1/2 rounded-full bg-accent/15 blur-[160px]"
+          className="absolute inset-0 bg-mesh-aurora opacity-80"
         />
         <div className="container relative grid gap-10 py-14 md:grid-cols-[1.2fr_1fr] md:items-center md:py-20">
           <div>
@@ -89,8 +111,8 @@ export default function NationsPage() {
               <span className="text-accent">מונדיאל 2026</span>
             </h1>
             <p className="mt-4 max-w-xl text-sm text-muted md:text-base">
-              המונדיאל נפתח ב-11 ביוני 2026. הזמינו את החולצות עכשיו — 10–15 ימי
-              עסקים, מגיעות ישר אליכם בזמן.
+              המונדיאל נפתח ב-11 ביוני 2026. הזמינו את החולצות עכשיו — 10–15
+              ימי עסקים, מגיעות ישר אליכם בזמן.
             </p>
           </div>
           <WorldCupCountdown />

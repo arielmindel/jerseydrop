@@ -248,3 +248,82 @@ export function getSearchTokens(product: Product): string[] {
     ...(product.tags || []),
   ].filter(Boolean);
 }
+
+// ============================================================================
+// Hero / showcase image picker — returns the most representative product
+// image for a category, with safe fallbacks. Used by homepage strips,
+// /leagues, /nations, /retro, /kids, /israeli pages.
+// ============================================================================
+
+function pickRepresentative(filtered: Product[]): Product | null {
+  if (!filtered.length) return null;
+  const withImage = filtered.filter((p) => p.images?.length);
+  if (!withImage.length) return null;
+
+  // Prefer current-season home/away products (cleaner photography)
+  const current2025 = withImage.find(
+    (p) =>
+      p.season?.startsWith("2025") &&
+      (p.type === "home" || p.type === "away") &&
+      !p.isKids,
+  );
+  if (current2025) return current2025;
+
+  // Then any current-season product
+  const anyCurrent = withImage.find((p) => p.season?.startsWith("2025"));
+  if (anyCurrent) return anyCurrent;
+
+  return withImage[0];
+}
+
+export function getHeroImageFor(scope: {
+  league?: Product["league"];
+  team?: string;
+  isRetro?: boolean;
+  isKids?: boolean;
+  isWorldCup2026?: boolean;
+  category?: Product["category"];
+}): string | null {
+  let pool = products;
+  if (scope.league) pool = pool.filter((p) => p.league === scope.league);
+  if (scope.team) pool = pool.filter((p) => p.teamSlug === scope.team);
+  if (scope.isRetro !== undefined)
+    pool = pool.filter((p) => p.isRetro === scope.isRetro);
+  if (scope.isKids !== undefined)
+    pool = pool.filter((p) => p.isKids === scope.isKids);
+  if (scope.isWorldCup2026 !== undefined)
+    pool = pool.filter((p) => p.isWorldCup2026 === scope.isWorldCup2026);
+  if (scope.category)
+    pool = pool.filter((p) => p.category === scope.category);
+  const pick = pickRepresentative(pool);
+  return pick?.images?.[0] || null;
+}
+
+/** Pick N products with images for a strip / collage display. */
+export function getShowcaseProducts(
+  scope: Parameters<typeof getHeroImageFor>[0],
+  limit = 6,
+): Product[] {
+  let pool = products;
+  if (scope.league) pool = pool.filter((p) => p.league === scope.league);
+  if (scope.team) pool = pool.filter((p) => p.teamSlug === scope.team);
+  if (scope.isRetro !== undefined)
+    pool = pool.filter((p) => p.isRetro === scope.isRetro);
+  if (scope.isKids !== undefined)
+    pool = pool.filter((p) => p.isKids === scope.isKids);
+  if (scope.isWorldCup2026 !== undefined)
+    pool = pool.filter((p) => p.isWorldCup2026 === scope.isWorldCup2026);
+  if (scope.category)
+    pool = pool.filter((p) => p.category === scope.category);
+  // De-dupe by team so we get visual variety in collages
+  const seenTeams = new Set<string>();
+  const out: Product[] = [];
+  for (const p of pool) {
+    if (!p.images?.length) continue;
+    if (seenTeams.has(p.teamSlug)) continue;
+    seenTeams.add(p.teamSlug);
+    out.push(p);
+    if (out.length >= limit) break;
+  }
+  return out;
+}

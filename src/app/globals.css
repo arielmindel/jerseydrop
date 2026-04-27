@@ -8,12 +8,18 @@
   }
 
   html {
-    background: #0a0a0a;
-    color: #ffffff;
+    background: #0b1220;
+    color: #f8fafc;
   }
 
+  /* Subtle global aurora wash so the page never feels flat-black */
   body {
     @apply bg-background text-foreground antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 8% -10%, rgba(0, 255, 136, 0.06), transparent 60%),
+      radial-gradient(1100px 700px at 100% 10%, rgba(168, 85, 247, 0.05), transparent 55%),
+      radial-gradient(1400px 800px at 50% 110%, rgba(34, 211, 238, 0.05), transparent 60%);
+    background-attachment: fixed;
     font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -50,6 +56,67 @@
 
   .section-eyebrow {
     @apply font-display text-xs font-bold uppercase tracking-[0.2em] text-accent;
+  }
+
+  /* Multi-color section accents — drop into a section's parent for a soft wash */
+  .section-aurora-green {
+    background-image: radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 255, 136, 0.08),
+      transparent 55%
+    );
+  }
+  .section-aurora-cyan {
+    background-image: radial-gradient(
+      circle at 80% 30%,
+      rgba(34, 211, 238, 0.10),
+      transparent 55%
+    );
+  }
+  .section-aurora-violet {
+    background-image: radial-gradient(
+      circle at 60% 80%,
+      rgba(168, 85, 247, 0.10),
+      transparent 55%
+    );
+  }
+  .section-aurora-rose {
+    background-image: radial-gradient(
+      circle at 10% 80%,
+      rgba(244, 114, 182, 0.10),
+      transparent 55%
+    );
+  }
+  .section-aurora-amber {
+    background-image: radial-gradient(
+      circle at 50% 50%,
+      rgba(245, 158, 11, 0.10),
+      transparent 55%
+    );
+  }
+
+  /* Glassmorphic surface for premium cards */
+  .surface-glass {
+    @apply border border-border/60 bg-surface/60 backdrop-blur-md;
+  }
+
+  /* Animated shimmer line for hero CTAs / loading states */
+  .shimmer-line {
+    position: relative;
+    overflow: hidden;
+  }
+  .shimmer-line::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      120deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.08) 50%,
+      transparent 70%
+    );
+    transform: translateX(-100%);
+    animation: shimmer 2.4s ease-in-out infinite;
   }
 }
 
