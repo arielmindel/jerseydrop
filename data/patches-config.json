@@ -5,7 +5,7 @@
       "id": "champions-league-25-26",
       "nameHe": "ליגת האלופות",
       "nameEn": "Champions League",
-      "iconUrl": "/images/patches/champions-league.png",
+      "iconUrl": "/images/patches/champions-league.svg",
       "price": 0,
       "description": "פאצ' רשמי של ליגת האלופות 2025-26"
     },
@@ -13,7 +13,7 @@
       "id": "europa-league-25-26",
       "nameHe": "ליגה האירופית",
       "nameEn": "Europa League",
-      "iconUrl": "/images/patches/europa-league.png",
+      "iconUrl": "/images/patches/europa-league.svg",
       "price": 0,
       "description": "פאצ' רשמי של ליגה האירופית 2025-26"
     },
@@ -21,7 +21,7 @@
       "id": "premier-league",
       "nameHe": "פרמייר ליג",
       "nameEn": "Premier League",
-      "iconUrl": "/images/patches/premier-league.png",
+      "iconUrl": "/images/patches/premier-league.svg",
       "price": 0,
       "description": "פאצ' רשמי של הפרמייר ליג"
     },
@@ -29,7 +29,7 @@
       "id": "la-liga",
       "nameHe": "לה ליגה",
       "nameEn": "La Liga",
-      "iconUrl": "/images/patches/la-liga.png",
+      "iconUrl": "/images/patches/la-liga.svg",
       "price": 0,
       "description": "פאצ' רשמי של לה ליגה"
     },
@@ -37,7 +37,7 @@
       "id": "serie-a",
       "nameHe": "סריה א",
       "nameEn": "Serie A",
-      "iconUrl": "/images/patches/serie-a.png",
+      "iconUrl": "/images/patches/serie-a.svg",
       "price": 0,
       "description": "פאצ' רשמי של סריה א"
     },
@@ -45,7 +45,7 @@
       "id": "bundesliga",
       "nameHe": "בונדסליגה",
       "nameEn": "Bundesliga",
-      "iconUrl": "/images/patches/bundesliga.png",
+      "iconUrl": "/images/patches/bundesliga.svg",
       "price": 0,
       "description": "פאצ' רשמי של הבונדסליגה"
     },
@@ -53,7 +53,7 @@
       "id": "ligue-1",
       "nameHe": "ליג 1",
       "nameEn": "Ligue 1",
-      "iconUrl": "/images/patches/ligue-1.png",
+      "iconUrl": "/images/patches/ligue-1.svg",
       "price": 0,
       "description": "פאצ' רשמי של ליג 1"
     },
@@ -61,7 +61,7 @@
       "id": "world-cup-2026",
       "nameHe": "מונדיאל 2026",
       "nameEn": "FIFA World Cup 2026",
-      "iconUrl": "/images/patches/world-cup-2026.png",
+      "iconUrl": "/images/patches/world-cup-2026.svg",
       "price": 0,
       "description": "פאצ' רשמי של מונדיאל פיפ\"א 2026"
     },
@@ -69,7 +69,7 @@
       "id": "israeli-premier-league",
       "nameHe": "ליגת העל",
       "nameEn": "Israeli Premier League",
-      "iconUrl": "/images/patches/israeli-premier-league.png",
+      "iconUrl": "/images/patches/israeli-premier-league.svg",
       "price": 0,
       "description": "פאצ' רשמי של ליגת העל הישראלית"
     }
