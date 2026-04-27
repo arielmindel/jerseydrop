@@ -3,6 +3,7 @@ import { Heebo, Space_Grotesk, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import MarqueeBanner from "@/components/layout/MarqueeBanner";
 import JsonLd from "@/components/seo/JsonLd";
 
 const heebo = Heebo({
@@ -119,6 +120,7 @@ export default function RootLayout({
         <JsonLd data={ORGANIZATION_LD} />
         <JsonLd data={WEBSITE_LD} />
         <div className="flex min-h-screen flex-col">
+          <MarqueeBanner />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

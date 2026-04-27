@@ -100,6 +100,30 @@
     @apply border border-border/60 bg-surface/60 backdrop-blur-md;
   }
 
+  /* Marquee track — duplicates content twice and translates -50% to loop */
+  .marquee-track {
+    animation: marquee 30s linear infinite;
+    will-change: transform;
+  }
+  .group:hover .marquee-track,
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+      transform: none;
+    }
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   /* Animated shimmer line for hero CTAs / loading states */
   .shimmer-line {
     position: relative;
