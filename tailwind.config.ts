@@ -81,6 +81,14 @@ const config: Config = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        "accordion-down": {
+          "0%": { height: "0", opacity: "0" },
+          "100%": { height: "var(--radix-accordion-content-height)", opacity: "1" },
+        },
+        "accordion-up": {
+          "0%": { height: "var(--radix-accordion-content-height)", opacity: "1" },
+          "100%": { height: "0", opacity: "0" },
+        },
         floaty: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-6px)" },
