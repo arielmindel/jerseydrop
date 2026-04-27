@@ -183,6 +183,20 @@ export default function MegaMenu({ counts }: { counts?: Counts }) {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
+              href="/collections/special"
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "gap-1 text-amber hover:text-amber",
+              )}
+            >
+              מיוחדות
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild>
+            <Link
               href="/retro"
               className={cn(navigationMenuTriggerStyle(), "gap-1 text-gold hover:text-gold")}
             >

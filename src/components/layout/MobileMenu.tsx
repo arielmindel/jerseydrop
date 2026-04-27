@@ -170,6 +170,17 @@ export default function MobileMenu() {
             <li>
               <SheetClose asChild>
                 <Link
+                  href="/collections/special"
+                  className="block rounded-xl px-4 py-3 text-base font-semibold text-amber transition-colors hover:bg-background"
+                  onClick={close}
+                >
+                  מיוחדות
+                </Link>
+              </SheetClose>
+            </li>
+            <li>
+              <SheetClose asChild>
+                <Link
                   href="/retro"
                   className="block rounded-xl px-4 py-3 text-base font-semibold text-gold transition-colors hover:bg-background"
                   onClick={close}

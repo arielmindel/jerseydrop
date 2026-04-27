@@ -11,7 +11,10 @@ export type CollectionId =
   | "retro-90s"
   | "champions-league"
   | "short-suit"
-  | "long-sleeve";
+  | "long-sleeve"
+  | "special"
+  | "drip"
+  | "surprise";
 
 export type CollectionMeta = {
   id: CollectionId;
@@ -75,6 +78,36 @@ export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
     accent: "#A855F7",
     badgeLabel: "LONG SLEEVE",
   },
+  special: {
+    id: "special",
+    slug: "special",
+    titleHe: "מיוחדות — חולצות שלא ניתן להשיג בכל מקום",
+    subtitleHe: "מהדורות מיוחדות, אספנות ויצירות הוואי",
+    descriptionHe:
+      "אסופה של חולצות מיוחדות — מהדורות הוואי, מארדונה, באלוגי, ימי הולדת מועדונים, ועוד שאי אפשר למצוא בקטלוג רגיל.",
+    accent: "#F59E0B",
+    badgeLabel: "SPECIAL EDITIONS",
+  },
+  drip: {
+    id: "drip",
+    slug: "drip",
+    titleHe: "דריפ — סטריט-וור עם הקבוצות הגדולות",
+    subtitleHe: "lifestyle ולא רק על המגרש",
+    descriptionHe:
+      "החולצות שמתאימות יותר לרחוב מאשר למגרש — קולאבים מיוחדים, מהדורות סטייל, וגזרות שמתאימות לכל יום.",
+    accent: "#F472B6",
+    badgeLabel: "DRIP · STREETWEAR",
+  },
+  surprise: {
+    id: "surprise",
+    slug: "surprise",
+    titleHe: "חולצה בהפתעה",
+    subtitleHe: "תזמינו, אנחנו נבחר ונפתיע",
+    descriptionHe:
+      "המהדורה המיוחדת שלנו — הזמינו חולצה בהפתעה ואנחנו נבחר עבורכם דגם איכותי במחיר מוזל. גודל לבחירה, הקבוצה — מפתיעה.",
+    accent: "#FCD34D",
+    badgeLabel: "MYSTERY DROP",
+  },
 };
 
 const NINETY_S = /199\d/;
@@ -102,6 +135,17 @@ export function getCollectionProducts(id: CollectionId): Product[] {
       );
     case "long-sleeve":
       return all.filter((p) => p.isLongSleeve);
+    case "special":
+      return all.filter((p) => p.isSpecial);
+    case "drip":
+      // Drip is a curated lens on isSpecial — same products, framed as
+      // streetwear-first. Once we add real "drip" tags via merch curation
+      // we'll narrow this to tags?.includes("drip").
+      return all.filter((p) => p.isSpecial);
+    case "surprise":
+      // Mystery Drop has no specific product list — the page is a feature
+      // page (see src/app/collections/surprise/page.tsx).
+      return [];
   }
 }
 
