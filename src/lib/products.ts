@@ -177,6 +177,34 @@ export function getIsraeliProducts(): Product[] {
   return products.filter((p) => p.league === "israel");
 }
 
+export function getShortSuitProducts(): Product[] {
+  return products.filter(
+    (p) => p.isShortSuit || p.tags?.includes("short-suit"),
+  );
+}
+
+export function getLongSleeveProducts(): Product[] {
+  return products.filter((p) => p.isLongSleeve);
+}
+
+/** Categorize retro products into decade buckets (80s/90s/00s/10s). */
+export function getRetroByDecade(decade: "80s" | "90s" | "00s" | "10s"): Product[] {
+  const ranges: Record<string, [number, number]> = {
+    "80s": [1980, 1989],
+    "90s": [1990, 1999],
+    "00s": [2000, 2009],
+    "10s": [2010, 2019],
+  };
+  const [from, to] = ranges[decade];
+  return products.filter((p) => {
+    if (!p.isRetro) return false;
+    const yearMatch = (p.season || "").match(/(\d{4})/) || (p.nameHe || "").match(/(\d{4})/);
+    if (!yearMatch) return false;
+    const y = parseInt(yearMatch[1], 10);
+    return y >= from && y <= to;
+  });
+}
+
 export function getWorldCupProducts(): Product[] {
   return products.filter((p) => p.isWorldCup2026);
 }

@@ -53,6 +53,12 @@ export type Product = {
   isWorldCup2026: boolean;
   isSpecial: boolean;
   isLongSleeve: boolean;
+  /** Short-suit (matching shirt+shorts kit). Set when catalog === "short-suit". */
+  isShortSuit?: boolean;
+  /** Hebrew color label extracted from yupoo title (e.g. "ירוק"). */
+  colorHe?: string | null;
+  /** Original Chinese title from the supplier — INTERNAL, never display. */
+  sourceHandleCn?: string;
   priceFan: number | null;
   pricePlayer: number | null;
   priceRetro: number | null;

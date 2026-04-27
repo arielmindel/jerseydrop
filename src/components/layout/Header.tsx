@@ -4,8 +4,27 @@ import MegaMenu from "./MegaMenu";
 import MobileMenu from "./MobileMenu";
 import CartDrawer from "@/components/cart/CartDrawer";
 import SearchBar from "@/components/search/SearchBar";
+import { getAllProducts } from "@/lib/products";
+
+/** Computed once per request — passed to the client MegaMenu so each
+ *  league/tier/team chip can render with its product count. */
+function buildNavCounts() {
+  const products = getAllProducts();
+  const byLeague: Record<string, number> = {};
+  const byTeamSlug: Record<string, number> = {};
+  const byTier: Record<string, number> = {};
+  for (const p of products) {
+    if (p.league) byLeague[p.league] = (byLeague[p.league] || 0) + 1;
+    if (p.teamSlug) byTeamSlug[p.teamSlug] = (byTeamSlug[p.teamSlug] || 0) + 1;
+    if (p.category === "national" && p.league?.startsWith("tier-")) {
+      byTier[p.league] = (byTier[p.league] || 0) + 1;
+    }
+  }
+  return { byLeague, byTeamSlug, byTier };
+}
 
 export default function Header() {
+  const counts = buildNavCounts();
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container flex h-20 items-center justify-between gap-4">
@@ -24,7 +43,7 @@ export default function Header() {
               className="h-14 w-auto md:h-16"
             />
           </Link>
-          <MegaMenu />
+          <MegaMenu counts={counts} />
         </div>
         <div className="flex items-center gap-2">
           <SearchBar variant="header" />

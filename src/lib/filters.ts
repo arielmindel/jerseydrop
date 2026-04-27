@@ -13,8 +13,14 @@ export type ProductFilterParams = {
   size?: string | string[];
   season?: string | string[];
   tag?: string | string[];
-  /** flag-based filter: "retro" / "kids" / "long-sleeve" / "wc2026" / "special" */
+  /** flag-based filter: "retro" / "kids" / "long-sleeve" / "wc2026" / "special" / "short-suit" */
   flag?: string | string[];
+  /** catalog source filter: "player" / "fan" / "short-suit" / "retro" */
+  catalog?: string | string[];
+  /** color filter (Hebrew name): "ירוק" / "אדום" / "כחול" / ... */
+  color?: string | string[];
+  /** decade filter (retro only): "80s" / "90s" / "00s" / "10s" */
+  decade?: string | string[];
   min?: string;
   max?: string;
   sort?: string;
@@ -32,6 +38,9 @@ export type ParsedFilters = {
   season: string[];
   tag: string[];
   flag: string[];
+  catalog: string[];
+  color: string[];
+  decade: string[];
   min: number;
   max: number;
   sort: SortKey;
@@ -67,6 +76,9 @@ export function parseFilters(params: ProductFilterParams): ParsedFilters {
     season: toArray(params.season),
     tag: toArray(params.tag),
     flag: toArray(params.flag),
+    catalog: toArray(params.catalog),
+    color: toArray(params.color),
+    decade: toArray(params.decade),
     min: Number(params.min ?? PRICE_MIN) || PRICE_MIN,
     max: Number(params.max ?? PRICE_MAX) || PRICE_MAX,
     sort: (params.sort as SortKey) || "popularity",
@@ -132,7 +144,34 @@ export function applyFilters(
       if (p.isLongSleeve) flags.push("long-sleeve");
       if (p.isWorldCup2026) flags.push("wc2026");
       if (p.isSpecial) flags.push("special");
+      if (p.isShortSuit || p.tags?.includes("short-suit")) flags.push("short-suit");
       if (!flags.some((f) => filters.flag.includes(f))) return false;
+    }
+    if (filters.catalog.length) {
+      // Each product carries one of these tag families: 'player', 'fan',
+      // 'short-suit', 'retro' (added at merge time).
+      const tags = p.tags || [];
+      if (!filters.catalog.some((c) => tags.includes(c))) return false;
+    }
+    if (filters.color.length) {
+      if (!p.colorHe || !filters.color.includes(p.colorHe)) return false;
+    }
+    if (filters.decade.length) {
+      if (!p.isRetro) return false;
+      const year = (p.season || "").match(/(\d{4})/)?.[1] || (p.nameHe || "").match(/(\d{4})/)?.[1];
+      if (!year) return false;
+      const y = parseInt(year, 10);
+      const decade =
+        y >= 1980 && y < 1990
+          ? "80s"
+          : y >= 1990 && y < 2000
+            ? "90s"
+            : y >= 2000 && y < 2010
+              ? "00s"
+              : y >= 2010 && y < 2020
+                ? "10s"
+                : null;
+      if (!decade || !filters.decade.includes(decade)) return false;
     }
     // Price filter — only applied when product has a known price.
     // Null-price products bypass the filter so they remain visible until pricing is set.

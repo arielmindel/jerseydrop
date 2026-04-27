@@ -14,9 +14,17 @@ import {
 import { LEAGUES, NATIONS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
-export default function MegaMenu() {
+type Counts = {
+  byLeague: Record<string, number>;
+  byTeamSlug: Record<string, number>;
+  byTier: Record<string, number>;
+};
+
+export default function MegaMenu({ counts }: { counts?: Counts }) {
   const tier1 = NATIONS.filter((n) => n.tier === "tier-1");
   const tier2 = NATIONS.filter((n) => n.tier === "tier-2");
+  const fmt = (n: number | undefined) =>
+    typeof n === "number" && n > 0 ? ` (${n})` : "";
 
   return (
     <NavigationMenu className="hidden md:flex">
@@ -39,6 +47,9 @@ export default function MegaMenu() {
                     <div className="flex items-baseline justify-between">
                       <span className="font-display text-base font-bold uppercase tracking-tight text-foreground">
                         {league.nameHe}
+                        <span className="ms-1 font-display text-xs text-accent">
+                          {fmt(counts?.byLeague[league.slug])}
+                        </span>
                       </span>
                       <span className="font-display text-xs text-muted">
                         {league.nameEn}
@@ -70,7 +81,9 @@ export default function MegaMenu() {
               <div>
                 <div className="mb-3 flex items-center gap-2">
                   <Trophy className="h-4 w-4 text-accent" />
-                  <span className="section-eyebrow">Tier 1 · Must-have</span>
+                  <span className="section-eyebrow">
+                    Tier 1 · Must-have{fmt(counts?.byTier["tier-1"])}
+                  </span>
                 </div>
                 <ul className="flex flex-col gap-1">
                   {tier1.map((nation) => (
@@ -83,6 +96,9 @@ export default function MegaMenu() {
                           <span className="flex items-center gap-2 text-sm font-semibold text-foreground">
                             <span className="text-lg">{nation.flag}</span>
                             {nation.nameHe}
+                            <span className="font-display text-[10px] text-accent">
+                              {fmt(counts?.byTeamSlug[nation.slug])}
+                            </span>
                           </span>
                           <span className="font-display text-xs text-muted">
                             {nation.nameEn}
@@ -96,7 +112,9 @@ export default function MegaMenu() {
               <div>
                 <div className="mb-3 flex items-center gap-2">
                   <Flag className="h-4 w-4 text-muted" />
-                  <span className="section-eyebrow !text-muted">Tier 2 · Popular</span>
+                  <span className="section-eyebrow !text-muted">
+                    Tier 2 · Popular{fmt(counts?.byTier["tier-2"])}
+                  </span>
                 </div>
                 <ul className="flex flex-col gap-1">
                   {tier2.map((nation) => (
@@ -109,6 +127,9 @@ export default function MegaMenu() {
                           <span className="flex items-center gap-2 text-sm font-semibold text-foreground">
                             <span className="text-lg">{nation.flag}</span>
                             {nation.nameHe}
+                            <span className="font-display text-[10px] text-accent">
+                              {fmt(counts?.byTeamSlug[nation.slug])}
+                            </span>
                           </span>
                           <span className="font-display text-xs text-muted">
                             {nation.nameEn}
