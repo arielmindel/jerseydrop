@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Home } from "lucide-react";
 import MegaMenu from "./MegaMenu";
 import MobileMenu from "./MobileMenu";
 import CartDrawer from "@/components/cart/CartDrawer";
@@ -46,6 +47,14 @@ export default function Header() {
           <MegaMenu counts={counts} />
         </div>
         <div className="flex items-center gap-2">
+          <Link
+            href="/"
+            aria-label="חזרה לעמוד הבית"
+            title="עמוד הבית"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-accent"
+          >
+            <Home className="h-5 w-5" />
+          </Link>
           <SearchBar variant="header" />
           <CartDrawer />
           <MobileMenu />

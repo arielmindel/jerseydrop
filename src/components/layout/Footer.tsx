@@ -174,7 +174,23 @@ export default function Footer() {
 
       <div className="border-t border-border/60">
         <div className="container flex flex-col items-center justify-between gap-3 py-5 text-xs text-muted md:flex-row">
-          <div>© {new Date().getFullYear()} JerseyDrop. כל הזכויות שמורות.</div>
+          <div className="flex flex-col items-center gap-1 md:flex-row md:gap-4">
+            <span>
+              © {new Date().getFullYear()} JerseyDrop. כל הזכויות שמורות.
+            </span>
+            <span className="hidden h-3 w-px bg-border md:inline" />
+            <span>
+              נבנה על ידי{" "}
+              <a
+                href="https://www.pixelio.co.il"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-foreground transition-colors hover:text-accent"
+              >
+                Pixelio
+              </a>
+            </span>
+          </div>
           <div className="flex items-center gap-3 font-display text-[10px] font-bold uppercase tracking-widest">
             <span className="rounded border border-border px-2 py-1">VISA</span>
             <span className="rounded border border-border px-2 py-1">MASTERCARD</span>
