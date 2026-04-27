@@ -7,6 +7,7 @@ import {
   type ProductFilterParams,
 } from "@/lib/filters";
 import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
+import QuickFilterChips from "@/components/product/QuickFilterChips";
 import FilterSidebar, {
   type FilterGroupConfig,
 } from "@/components/filters/FilterSidebar";
@@ -38,6 +39,17 @@ export default function ProductsPage({ searchParams }: Props) {
     new Set(all.map((p) => p.season).filter((s): s is string => Boolean(s))),
   ).sort()
     .reverse();
+
+  // Color filter options — pull all distinct Hebrew colors from the catalog
+  const colorOptions = Array.from(
+    new Set(
+      all
+        .map((p) => p.colorHe)
+        .filter((c): c is string => Boolean(c) && c !== "ראשי"),
+    ),
+  )
+    .sort()
+    .map((c) => ({ value: c, labelHe: c }));
 
   // Build counts cache (for badges next to each filter option)
   const counts: Record<string, number> = {};
@@ -127,6 +139,36 @@ export default function ProductsPage({ searchParams }: Props) {
       type: "multi",
       options: SIZES.map((s) => ({ value: s, labelHe: s })),
     },
+    {
+      key: "catalog",
+      labelHe: "סוג מקור",
+      type: "multi",
+      options: [
+        { value: "player", labelHe: "Player Edition" },
+        { value: "fan", labelHe: "Fan Edition" },
+        { value: "short-suit", labelHe: "סטים (חולצה+מכנס)" },
+        { value: "retro", labelHe: "רטרו" },
+      ],
+    },
+    {
+      key: "color",
+      labelHe: "צבע",
+      type: "multi",
+      options: colorOptions,
+      defaultCollapsed: true,
+    },
+    {
+      key: "decade",
+      labelHe: "עשור (רטרו)",
+      type: "multi",
+      options: [
+        { value: "80s", labelHe: "שנות ה-80" },
+        { value: "90s", labelHe: "שנות ה-90" },
+        { value: "00s", labelHe: "שנות ה-00" },
+        { value: "10s", labelHe: "שנות ה-10" },
+      ],
+      visibleWhen: { key: "flag", in: ["retro"] },
+    },
     { key: "price", labelHe: "טווח מחירים", type: "price" },
   ];
 
@@ -155,7 +197,11 @@ export default function ProductsPage({ searchParams }: Props) {
         </div>
       </section>
 
-      <section className="container py-8 md:py-12">
+      <section className="container py-6 md:py-8">
+        <QuickFilterChips />
+      </section>
+
+      <section className="container py-4 md:py-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-start">
           <FilterSidebar groups={groups} counts={counts} />
           <div className="flex-1">
