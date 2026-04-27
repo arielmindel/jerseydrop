@@ -108,12 +108,19 @@ const ALL_PRODUCTS: Product[] = normalizeProducts(
   productsJson as unknown as Product[],
 );
 
-/** Public-facing catalog: filters out products flagged "no-team-detected". */
-export const products: Product[] = ALL_PRODUCTS.filter(
-  (p) => !HIDDEN_IDS.has(p.id),
-);
+// Public-facing catalog now includes ALL products (no hide-by-flag filtering).
+// The HIDDEN_IDS set is still exposed via `isReviewFlagged()` for admin
+// tooling, but products with no detectable team are still listed in /products
+// — they just won't show up in team / league / nation specific pages.
+export const products: Product[] = ALL_PRODUCTS;
 
-/** Includes hidden products. Use only for admin/review tooling. */
+/** Whether the supplier flagged this product as needing manual review (no
+ *  detectable team). Use to surface a quiet badge in admin views. */
+export function isReviewFlagged(productId: string): boolean {
+  return HIDDEN_IDS.has(productId);
+}
+
+/** Backwards-compat alias — same array as `products` now. */
 export const allProductsIncludingHidden: Product[] = ALL_PRODUCTS;
 
 // ============================================================================

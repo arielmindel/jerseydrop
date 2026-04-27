@@ -1,10 +1,10 @@
 {
   "stats": {
-    "total": 995,
-    "autoFixed": 207,
+    "total": 983,
+    "autoFixed": 198,
     "flaggedImageMismatch": 64,
     "flaggedNoTeam": 81,
-    "unchanged": 643
+    "unchanged": 640
   },
   "fixes": {
     "10328707727634": {
@@ -552,60 +552,6 @@
       "team": "אנגליה",
       "league": "tier-1",
       "category": "national"
-    },
-    "9738429759762": {
-      "teamSlug": "chelsea",
-      "team": "צלסי",
-      "league": "premier-league",
-      "category": "club"
-    },
-    "9738429399314": {
-      "teamSlug": "borussia-dortmund",
-      "team": "דורטמונד",
-      "league": "bundesliga",
-      "category": "club"
-    },
-    "9738260250898": {
-      "teamSlug": "barcelona",
-      "team": "ברצלונה",
-      "league": "la-liga",
-      "category": "club"
-    },
-    "9738428416274": {
-      "teamSlug": "liverpool",
-      "team": "ליברפול",
-      "league": "premier-league",
-      "category": "club"
-    },
-    "9738425925906": {
-      "teamSlug": "psg",
-      "team": "פריז סן ז'רמן",
-      "league": "ligue-1",
-      "category": "club"
-    },
-    "9738430644498": {
-      "teamSlug": "real-madrid",
-      "team": "ריאל מדריד",
-      "league": "la-liga",
-      "category": "club"
-    },
-    "9738429137170": {
-      "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי",
-      "league": "premier-league",
-      "category": "club"
-    },
-    "9738428547346": {
-      "teamSlug": "ac-milan",
-      "team": "מילאן",
-      "league": "serie-a",
-      "category": "club"
-    },
-    "9738427924754": {
-      "teamSlug": "liverpool",
-      "team": "ליברפול",
-      "league": "premier-league",
-      "category": "club"
     },
     "9598274568466": {
       "teamSlug": "belgium",

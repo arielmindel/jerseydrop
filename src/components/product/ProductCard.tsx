@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import type { Product } from "@/lib/types";
 import { formatILS } from "@/lib/utils";
 import { getStartingPrice, hasPrice } from "@/lib/products";
@@ -33,19 +32,8 @@ export default function ProductCard({ product }: { product: Product }) {
           blurDataURL={BLUR_DATA_URL}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute top-3 flex flex-col items-start gap-1.5 start-3">
-          {product.isWorldCup2026 && (
-            <Badge variant="gold">מונדיאל 2026</Badge>
-          )}
-          {product.isRetro && <Badge variant="gold">Retro</Badge>}
-          {product.isKids && <Badge variant="accent">ילדים</Badge>}
-          {product.isLongSleeve && (
-            <Badge variant="outline">שרוול ארוך</Badge>
-          )}
-          {product.stock === "low" && (
-            <Badge variant="destructive">אחרונים</Badge>
-          )}
-        </div>
+        {/* Badges intentionally removed from card grids — kept on the detail page only.
+            Cards show: image, team, season, price chip. */}
       </div>
 
       <div className="flex flex-1 flex-col gap-2 p-4">
