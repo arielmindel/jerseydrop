@@ -266,22 +266,30 @@ export default function ProductDetail({ product }: { product: Product }) {
             <fieldset id="size-group">
               <legend className="mb-2 flex items-center justify-between font-display text-xs font-bold uppercase tracking-widest text-muted">
                 מידה
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <button
-                      type="button"
-                      className="text-[10px] text-accent underline-offset-2 hover:underline"
-                    >
-                      מדריך מידות
-                    </button>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-xl">
-                    <DialogHeader>
-                      <DialogTitle>מדריך מידות</DialogTitle>
-                    </DialogHeader>
-                    <SizeGuideTable />
-                  </DialogContent>
-                </Dialog>
+                <span className="flex items-center gap-3">
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <button
+                        type="button"
+                        className="text-[10px] text-accent underline-offset-2 hover:underline"
+                      >
+                        מדריך מידות מהיר
+                      </button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-xl">
+                      <DialogHeader>
+                        <DialogTitle>מדריך מידות</DialogTitle>
+                      </DialogHeader>
+                      <SizeGuideTable />
+                    </DialogContent>
+                  </Dialog>
+                  <a
+                    href="/size-guide"
+                    className="text-[10px] text-muted underline-offset-2 hover:text-accent hover:underline"
+                  >
+                    לא בטוחים? מדריך מידות מלא ←
+                  </a>
+                </span>
               </legend>
               <div className="flex flex-wrap gap-2">
                 {sizes.map((s) => (
