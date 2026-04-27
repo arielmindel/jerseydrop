@@ -9,563 +9,843 @@
   "fixes": {
     "10328706646290": {
       "teamSlug": "spain",
-      "team": "ספרד"
+      "team": "ספרד",
+      "league": "tier-1",
+      "category": "national"
     },
     "10328706318610": {
       "teamSlug": "france",
-      "team": "צרפת"
+      "team": "צרפת",
+      "league": "tier-1",
+      "category": "national"
     },
     "10328706154770": {
       "teamSlug": "france",
-      "team": "צרפת"
+      "team": "צרפת",
+      "league": "tier-1",
+      "category": "national"
     },
     "10291378356498": {
       "teamSlug": "braga",
-      "team": "בראגה"
+      "team": "בראגה",
+      "league": "other",
+      "category": "club"
     },
     "10291376423186": {
       "teamSlug": "england",
-      "team": "אנגליה"
+      "team": "אנגליה",
+      "league": "tier-1",
+      "category": "national"
     },
     "10234098221330": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "10234097828114": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "10234096845074": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "10234092454162": {
       "teamSlug": "marseille",
-      "team": "מארסיי"
+      "team": "מארסיי",
+      "league": "ligue-1",
+      "category": "club"
     },
     "10234092060946": {
       "teamSlug": "marseille",
-      "team": "מארסיי"
+      "team": "מארסיי",
+      "league": "ligue-1",
+      "category": "club"
     },
     "10234091864338": {
       "teamSlug": "marseille",
-      "team": "מארסיי"
+      "team": "מארסיי",
+      "league": "ligue-1",
+      "category": "club"
     },
     "10215571161362": {
       "teamSlug": "mexico",
-      "team": "מקסיקו"
+      "team": "מקסיקו",
+      "league": "tier-2",
+      "category": "national"
     },
     "10212783128850": {
       "teamSlug": "athletic-bilbao",
-      "team": "אתלטיק בילבאו"
+      "team": "אתלטיק בילבאו",
+      "league": "la-liga",
+      "category": "club"
     },
     "10212782670098": {
       "teamSlug": "athletic-bilbao",
-      "team": "אתלטיק בילבאו"
+      "team": "אתלטיק בילבאו",
+      "league": "la-liga",
+      "category": "club"
     },
     "10212777787666": {
       "teamSlug": "sevilla",
-      "team": "סביליה"
+      "team": "סביליה",
+      "league": "la-liga",
+      "category": "club"
     },
     "10212777394450": {
       "teamSlug": "sevilla",
-      "team": "סביליה"
+      "team": "סביליה",
+      "league": "la-liga",
+      "category": "club"
     },
     "10212776411410": {
       "teamSlug": "sevilla",
-      "team": "סביליה"
+      "team": "סביליה",
+      "league": "la-liga",
+      "category": "club"
     },
     "10212769530130": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "10212749771026": {
       "teamSlug": "west-ham",
-      "team": "ווסטהאם"
+      "team": "ווסטהאם",
+      "league": "premier-league",
+      "category": "club"
     },
     "10212748722450": {
       "teamSlug": "ajax",
-      "team": "אאיאקס"
+      "team": "אאיאקס",
+      "league": "other",
+      "category": "club"
     },
     "10212748427538": {
       "teamSlug": "ajax",
-      "team": "אאיאקס"
+      "team": "אאיאקס",
+      "league": "other",
+      "category": "club"
     },
     "10211823583506": {
       "teamSlug": "ajax",
-      "team": "אאיאקס"
+      "team": "אאיאקס",
+      "league": "other",
+      "category": "club"
     },
     "10211823485202": {
       "teamSlug": "ajax",
-      "team": "אאיאקס"
+      "team": "אאיאקס",
+      "league": "other",
+      "category": "club"
     },
     "10200835653906": {
       "teamSlug": "everton",
-      "team": "אברטון"
+      "team": "אברטון",
+      "league": "premier-league",
+      "category": "club"
     },
     "10200807932178": {
       "teamSlug": "brighton",
-      "team": "ברייטון"
+      "team": "ברייטון",
+      "league": "premier-league",
+      "category": "club"
     },
     "8220717941010": {
       "teamSlug": "barcelona",
-      "team": "ברצלונה"
+      "team": "ברצלונה",
+      "league": "la-liga",
+      "category": "club"
     },
     "9729687093522": {
       "teamSlug": "argentina",
-      "team": "ארגנטינה"
+      "team": "ארגנטינה",
+      "league": "tier-1",
+      "category": "national"
     },
     "9166076510482": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "10170548486418": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "9166073856274": {
       "teamSlug": "barcelona",
-      "team": "ברצלונה"
+      "team": "ברצלונה",
+      "league": "la-liga",
+      "category": "club"
     },
     "9729689354514": {
       "teamSlug": "ac-milan",
-      "team": "מילאן"
+      "team": "מילאן",
+      "league": "serie-a",
+      "category": "club"
     },
     "9598253105426": {
       "teamSlug": "england",
-      "team": "אנגליה"
+      "team": "אנגליה",
+      "league": "tier-1",
+      "category": "national"
     },
     "9738429759762": {
       "teamSlug": "chelsea",
-      "team": "צלסי"
+      "team": "צלסי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9738429399314": {
       "teamSlug": "borussia-dortmund",
-      "team": "דורטמונד"
+      "team": "דורטמונד",
+      "league": "bundesliga",
+      "category": "club"
     },
     "9738260250898": {
       "teamSlug": "barcelona",
-      "team": "ברצלונה"
+      "team": "ברצלונה",
+      "league": "la-liga",
+      "category": "club"
     },
     "9738428416274": {
       "teamSlug": "liverpool",
-      "team": "ליברפול"
+      "team": "ליברפול",
+      "league": "premier-league",
+      "category": "club"
     },
     "9738425925906": {
       "teamSlug": "psg",
-      "team": "פריז סן ז'רמן"
+      "team": "פריז סן ז'רמן",
+      "league": "ligue-1",
+      "category": "club"
     },
     "9738430644498": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "9738429137170": {
       "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי"
+      "team": "מנצ'סטר סיטי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9738428547346": {
       "teamSlug": "ac-milan",
-      "team": "מילאן"
+      "team": "מילאן",
+      "league": "serie-a",
+      "category": "club"
     },
     "9738427924754": {
       "teamSlug": "liverpool",
-      "team": "ליברפול"
+      "team": "ליברפול",
+      "league": "premier-league",
+      "category": "club"
     },
     "9690102169874": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "9729685258514": {
       "teamSlug": "borussia-dortmund",
-      "team": "דורטמונד"
+      "team": "דורטמונד",
+      "league": "bundesliga",
+      "category": "club"
     },
     "9598285807890": {
       "teamSlug": "spain",
-      "team": "ספרד"
+      "team": "ספרד",
+      "league": "tier-1",
+      "category": "national"
     },
     "9690243465490": {
       "teamSlug": "england",
-      "team": "אנגליה"
+      "team": "אנגליה",
+      "league": "tier-1",
+      "category": "national"
     },
     "9598274568466": {
       "teamSlug": "belgium",
-      "team": "בלגיה"
+      "team": "בלגיה",
+      "league": "tier-2",
+      "category": "national"
     },
     "9690226295058": {
       "teamSlug": "germany",
-      "team": "גרמניה"
+      "team": "גרמניה",
+      "league": "tier-1",
+      "category": "national"
     },
     "9729690304786": {
       "teamSlug": "ac-milan",
-      "team": "מילאן"
+      "team": "מילאן",
+      "league": "serie-a",
+      "category": "club"
     },
     "10074398359826": {
       "teamSlug": "spain",
-      "team": "ספרד"
+      "team": "ספרד",
+      "league": "tier-1",
+      "category": "national"
     },
     "10074397966610": {
       "teamSlug": "england",
-      "team": "אנגליה"
+      "team": "אנגליה",
+      "league": "tier-1",
+      "category": "national"
     },
     "10074398621970": {
       "teamSlug": "chelsea",
-      "team": "צלסי"
+      "team": "צלסי",
+      "league": "premier-league",
+      "category": "club"
     },
     "10074395541778": {
       "teamSlug": "brazil",
-      "team": "ברזיל"
+      "team": "ברזיל",
+      "league": "tier-1",
+      "category": "national"
     },
     "10074397114642": {
       "teamSlug": "germany",
-      "team": "גרמניה"
+      "team": "גרמניה",
+      "league": "tier-1",
+      "category": "national"
     },
     "9690599620882": {
       "teamSlug": "borussia-dortmund",
-      "team": "דורטמונד"
+      "team": "דורטמונד",
+      "league": "bundesliga",
+      "category": "club"
     },
     "9690113343762": {
       "teamSlug": "liverpool",
-      "team": "ליברפול"
+      "team": "ליברפול",
+      "league": "premier-league",
+      "category": "club"
     },
     "9729687847186": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "9690105872658": {
       "teamSlug": "arsenal",
-      "team": "ארסנל"
+      "team": "ארסנל",
+      "league": "premier-league",
+      "category": "club"
     },
     "9729681654034": {
       "teamSlug": "inter-milan",
-      "team": "אינטר"
+      "team": "אינטר",
+      "league": "serie-a",
+      "category": "club"
     },
     "8401873895698": {
       "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי"
+      "team": "מנצ'סטר סיטי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9690124648722": {
       "teamSlug": "arsenal",
-      "team": "ארסנל"
+      "team": "ארסנל",
+      "league": "premier-league",
+      "category": "club"
     },
     "9754567999762": {
       "teamSlug": "marseille",
-      "team": "מארסיי"
+      "team": "מארסיי",
+      "league": "ligue-1",
+      "category": "club"
     },
     "9754565640466": {
       "teamSlug": "marseille",
-      "team": "מארסיי"
+      "team": "מארסיי",
+      "league": "ligue-1",
+      "category": "club"
     },
     "9754559185170": {
       "teamSlug": "psg",
-      "team": "פריז סן ז'רמן"
+      "team": "פריז סן ז'רמן",
+      "league": "ligue-1",
+      "category": "club"
     },
     "9690614235410": {
       "teamSlug": "inter-miami",
-      "team": "אינטר מיאמי"
+      "team": "אינטר מיאמי",
+      "league": "other",
+      "category": "club"
     },
     "10170447134994": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "10132106805522": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "9666987688210": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "10132117815570": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "10132104315154": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "10132105330962": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "9708678283538": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "10132106019090": {
       "teamSlug": "river-plate",
-      "team": "ריבר פלייט"
+      "team": "ריבר פלייט",
+      "league": "other",
+      "category": "club"
     },
     "8236009980178": {
       "teamSlug": "celtic",
-      "team": "סלטיק"
+      "team": "סלטיק",
+      "league": "other",
+      "category": "club"
     },
     "9637360795922": {
       "teamSlug": "cadiz",
-      "team": "קאדיז"
+      "team": "קאדיז",
+      "league": "la-liga",
+      "category": "club"
     },
     "8225566720274": {
       "teamSlug": "liverpool",
-      "team": "ליברפול"
+      "team": "ליברפול",
+      "league": "premier-league",
+      "category": "club"
     },
     "9636902797586": {
       "teamSlug": "benfica",
-      "team": "בנפיקה"
+      "team": "בנפיקה",
+      "league": "other",
+      "category": "club"
     },
     "9666986148114": {
       "teamSlug": "sporting",
-      "team": "ספורטינג"
+      "team": "ספורטינג",
+      "league": "other",
+      "category": "club"
     },
     "8222061265170": {
       "teamSlug": "arsenal",
-      "team": "ארסנל"
+      "team": "ארסנל",
+      "league": "premier-league",
+      "category": "club"
     },
     "9637376885010": {
       "teamSlug": "benfica",
-      "team": "בנפיקה"
+      "team": "בנפיקה",
+      "league": "other",
+      "category": "club"
     },
     "9765807915282": {
       "teamSlug": "sevilla",
-      "team": "סביליה"
+      "team": "סביליה",
+      "league": "la-liga",
+      "category": "club"
     },
     "9765808242962": {
       "teamSlug": "sevilla",
-      "team": "סביליה"
+      "team": "סביליה",
+      "league": "la-liga",
+      "category": "club"
     },
     "8239945023762": {
       "teamSlug": "netherlands",
-      "team": "הולנד"
+      "team": "הולנד",
+      "league": "tier-2",
+      "category": "national"
     },
     "8287455576338": {
       "teamSlug": "brazil",
-      "team": "ברזיל"
+      "team": "ברזיל",
+      "league": "tier-1",
+      "category": "national"
     },
     "8239887450386": {
       "teamSlug": "italy",
-      "team": "איטליה"
+      "team": "איטליה",
+      "league": "tier-2",
+      "category": "national"
     },
     "8239882076434": {
       "teamSlug": "netherlands",
-      "team": "הולנד"
+      "team": "הולנד",
+      "league": "tier-2",
+      "category": "national"
     },
     "9754578911506": {
       "teamSlug": "santos",
-      "team": "סנטוס"
+      "team": "סנטוס",
+      "league": "other",
+      "category": "club"
     },
     "8233780019474": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "8239900786962": {
       "teamSlug": "argentina",
-      "team": "ארגנטינה"
+      "team": "ארגנטינה",
+      "league": "tier-1",
+      "category": "national"
     },
     "9765803393298": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "9750583378194": {
       "teamSlug": "flamengo",
-      "team": "פלמנגו"
+      "team": "פלמנגו",
+      "league": "other",
+      "category": "club"
     },
     "8216474190098": {
       "teamSlug": "ajax",
-      "team": "אאיאקס"
+      "team": "אאיאקס",
+      "league": "other",
+      "category": "club"
     },
     "9636949852434": {
       "teamSlug": "ajax",
-      "team": "אאיאקס"
+      "team": "אאיאקס",
+      "league": "other",
+      "category": "club"
     },
     "8232678686994": {
       "teamSlug": "napoli",
-      "team": "נאפולי"
+      "team": "נאפולי",
+      "league": "serie-a",
+      "category": "club"
     },
     "9750431170834": {
       "teamSlug": "ajax",
-      "team": "אאיאקס"
+      "team": "אאיאקס",
+      "league": "other",
+      "category": "club"
     },
     "8232646836498": {
       "teamSlug": "celtic",
-      "team": "סלטיק"
+      "team": "סלטיק",
+      "league": "other",
+      "category": "club"
     },
     "8221358358802": {
       "teamSlug": "napoli",
-      "team": "נאפולי"
+      "team": "נאפולי",
+      "league": "serie-a",
+      "category": "club"
     },
     "9165797392658": {
       "teamSlug": "napoli",
-      "team": "נאפולי"
+      "team": "נאפולי",
+      "league": "serie-a",
+      "category": "club"
     },
     "8221343613202": {
       "teamSlug": "ac-milan",
-      "team": "מילאן"
+      "team": "מילאן",
+      "league": "serie-a",
+      "category": "club"
     },
     "8221237739794": {
       "teamSlug": "juventus",
-      "team": "יובנטוס"
+      "team": "יובנטוס",
+      "league": "serie-a",
+      "category": "club"
     },
     "8221225845010": {
       "teamSlug": "inter-milan",
-      "team": "אינטר"
+      "team": "אינטר",
+      "league": "serie-a",
+      "category": "club"
     },
     "8365073563922": {
       "teamSlug": "brazil",
-      "team": "ברזיל"
+      "team": "ברזיל",
+      "league": "tier-1",
+      "category": "national"
     },
     "9667010494738": {
       "teamSlug": "germany",
-      "team": "גרמניה"
+      "team": "גרמניה",
+      "league": "tier-1",
+      "category": "national"
     },
     "8235474845970": {
       "teamSlug": "ac-milan",
-      "team": "מילאן"
+      "team": "מילאן",
+      "league": "serie-a",
+      "category": "club"
     },
     "9728065274130": {
       "teamSlug": "real-madrid",
-      "team": "ריאל מדריד"
+      "team": "ריאל מדריד",
+      "league": "la-liga",
+      "category": "club"
     },
     "8218623115538": {
       "teamSlug": "scotland",
-      "team": "סקוטלנד"
+      "team": "סקוטלנד",
+      "league": "tier-3",
+      "category": "national"
     },
     "8363464917266": {
       "teamSlug": "bayern-munich",
-      "team": "באירן מינכן"
+      "team": "באירן מינכן",
+      "league": "bundesliga",
+      "category": "club"
     },
     "9598241145106": {
       "teamSlug": "germany",
-      "team": "גרמניה"
+      "team": "גרמניה",
+      "league": "tier-1",
+      "category": "national"
     },
     "9729684996370": {
       "teamSlug": "brazil",
-      "team": "ברזיל"
+      "team": "ברזיל",
+      "league": "tier-1",
+      "category": "national"
     },
     "8401822122258": {
       "teamSlug": "bayern-munich",
-      "team": "באירן מינכן"
+      "team": "באירן מינכן",
+      "league": "bundesliga",
+      "category": "club"
     },
     "9598157226258": {
       "teamSlug": "portugal",
-      "team": "פורטוגל"
+      "team": "פורטוגל",
+      "league": "tier-1",
+      "category": "national"
     },
     "9690210697490": {
       "teamSlug": "barcelona",
-      "team": "ברצלונה"
+      "team": "ברצלונה",
+      "league": "la-liga",
+      "category": "club"
     },
     "8287447154962": {
       "teamSlug": "bayern-munich",
-      "team": "באירן מינכן"
+      "team": "באירן מינכן",
+      "league": "bundesliga",
+      "category": "club"
     },
     "9729683980562": {
       "teamSlug": "ac-milan",
-      "team": "מילאן"
+      "team": "מילאן",
+      "league": "serie-a",
+      "category": "club"
     },
     "9598269554962": {
       "teamSlug": "italy",
-      "team": "איטליה"
+      "team": "איטליה",
+      "league": "tier-2",
+      "category": "national"
     },
     "8287445451026": {
       "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי"
+      "team": "מנצ'סטר סיטי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9765719539986": {
       "teamSlug": "borussia-dortmund",
-      "team": "דורטמונד"
+      "team": "דורטמונד",
+      "league": "bundesliga",
+      "category": "club"
     },
     "9690121830674": {
       "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי"
+      "team": "מנצ'סטר סיטי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9690105086226": {
       "teamSlug": "chelsea",
-      "team": "צלסי"
+      "team": "צלסי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9729686569234": {
       "teamSlug": "brazil",
-      "team": "ברזיל"
+      "team": "ברזיל",
+      "league": "tier-1",
+      "category": "national"
     },
     "9598247076114": {
       "teamSlug": "netherlands",
-      "team": "הולנד"
+      "team": "הולנד",
+      "league": "tier-2",
+      "category": "national"
     },
     "9690240581906": {
       "teamSlug": "france",
-      "team": "צרפת"
+      "team": "צרפת",
+      "league": "tier-1",
+      "category": "national"
     },
     "9729681326354": {
       "teamSlug": "chelsea",
-      "team": "צלסי"
+      "team": "צלסי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9690573963538": {
       "teamSlug": "barcelona",
-      "team": "ברצלונה"
+      "team": "ברצלונה",
+      "league": "la-liga",
+      "category": "club"
     },
     "9598262214930": {
       "teamSlug": "france",
-      "team": "צרפת"
+      "team": "צרפת",
+      "league": "tier-1",
+      "category": "national"
     },
     "9690251395346": {
       "teamSlug": "portugal",
-      "team": "פורטוגל"
+      "team": "פורטוגל",
+      "league": "tier-1",
+      "category": "national"
     },
     "9750497689874": {
       "teamSlug": "boca-juniors",
-      "team": "בוקה"
+      "team": "בוקה",
+      "league": "other",
+      "category": "club"
     },
     "9797681512722": {
       "teamSlug": "manchester-united",
-      "team": "מנצסטר יונייטד"
+      "team": "מנצסטר יונייטד",
+      "league": "premier-league",
+      "category": "club"
     },
     "9797682397458": {
       "teamSlug": "manchester-united",
-      "team": "מנצסטר יונייטד"
+      "team": "מנצסטר יונייטד",
+      "league": "premier-league",
+      "category": "club"
     },
     "9797678825746": {
       "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי"
+      "team": "מנצ'סטר סיטי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9743428419858": {
       "teamSlug": "everton",
-      "team": "אברטון"
+      "team": "אברטון",
+      "league": "premier-league",
+      "category": "club"
     },
     "9743434088722": {
       "teamSlug": "leeds",
-      "team": "לידס"
+      "team": "לידס",
+      "league": "premier-league",
+      "category": "club"
     },
     "9797680529682": {
       "teamSlug": "leeds",
-      "team": "לידס"
+      "team": "לידס",
+      "league": "premier-league",
+      "category": "club"
     },
     "9743429173522": {
       "teamSlug": "newcastle",
-      "team": "ניוקאסל"
+      "team": "ניוקאסל",
+      "league": "premier-league",
+      "category": "club"
     },
     "9797679972626": {
       "teamSlug": "leeds",
-      "team": "לידס"
+      "team": "לידס",
+      "league": "premier-league",
+      "category": "club"
     },
     "9765811716370": {
       "teamSlug": "leeds",
-      "team": "לידס"
+      "team": "לידס",
+      "league": "premier-league",
+      "category": "club"
     },
     "9743433335058": {
       "teamSlug": "manchester-united",
-      "team": "מנצסטר יונייטד"
+      "team": "מנצסטר יונייטד",
+      "league": "premier-league",
+      "category": "club"
     },
     "9743431926034": {
       "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי"
+      "team": "מנצ'סטר סיטי",
+      "league": "premier-league",
+      "category": "club"
     },
     "9743430189330": {
       "teamSlug": "west-ham",
-      "team": "ווסטהאם"
+      "team": "ווסטהאם",
+      "league": "premier-league",
+      "category": "club"
     },
     "9743429927186": {
       "teamSlug": "west-ham",
-      "team": "ווסטהאם"
+      "team": "ווסטהאם",
+      "league": "premier-league",
+      "category": "club"
     },
     "9743425863954": {
       "teamSlug": "manchester-city",
-      "team": "מנצ'סטר סיטי"
+      "team": "מנצ'סטר סיטי",
+      "league": "premier-league",
+      "category": "club"
     }
   },
   "flags": {

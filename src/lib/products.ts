@@ -13,7 +13,12 @@ import { CUSTOMIZATION_FEE } from "./constants";
 //   review. The "image-mismatch" subset is shown but the team label has
 //   already been corrected — only the photo may be wrong.
 // ============================================================================
-type Correction = { teamSlug: string; team: string };
+type Correction = {
+  teamSlug: string;
+  team: string;
+  league?: string;
+  category?: "national" | "club";
+};
 type Flag = {
   reason: "image-mismatch" | "no-team-detected";
   detail: string;
@@ -72,11 +77,17 @@ function buildCanonicalSlug(p: Product): string {
 }
 
 function normalizeProducts(raw: Product[]): Product[] {
-  // Step A: apply team/teamSlug corrections from the audit run
+  // Step A: apply team/teamSlug/league/category corrections from the audit run
   const corrected = raw.map((p) => {
     const fix = CORRECTIONS.fixes[p.id];
     if (!fix) return p;
-    return { ...p, team: fix.team, teamSlug: fix.teamSlug };
+    return {
+      ...p,
+      team: fix.team,
+      teamSlug: fix.teamSlug,
+      ...(fix.league ? { league: fix.league as Product["league"] } : {}),
+      ...(fix.category ? { category: fix.category } : {}),
+    };
   });
 
   // Step B: compute canonical slugs + their frequencies (uses corrected teamSlug)

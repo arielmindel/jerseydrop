@@ -109,6 +109,22 @@ function getCanonicalTeamMeta(slug) {
   };
 }
 
+const LEAGUE_MAP = JSON.parse(
+  await fs.readFile(path.join(__dirname, "team-league-map.json"), "utf8"),
+);
+
+function leagueForTeamSlug(slug) {
+  for (const [league, teams] of Object.entries(LEAGUE_MAP)) {
+    if (league.startsWith("_")) continue;
+    if (Array.isArray(teams) && teams.includes(slug))
+      return { category: "club", league };
+  }
+  for (const [tier, teams] of Object.entries(LEAGUE_MAP._nationTiers || {})) {
+    if (teams.includes(slug)) return { category: "national", league: tier };
+  }
+  return null;
+}
+
 // ---------------------------------------------------------------------------
 // Run fixer
 // ---------------------------------------------------------------------------
@@ -133,7 +149,12 @@ for (const p of products) {
       // Label is wrong; relabel
       const meta = getCanonicalTeamMeta(fromUrl);
       if (meta) {
-        fixes[p.id] = { teamSlug: meta.slug, team: meta.he };
+        const lc = leagueForTeamSlug(meta.slug);
+        fixes[p.id] = {
+          teamSlug: meta.slug,
+          team: meta.he,
+          ...(lc ? { league: lc.league, category: lc.category } : {}),
+        };
         stats.autoFixed++;
         continue;
       }
@@ -147,7 +168,12 @@ for (const p of products) {
     if (fromLabel !== fromUrl) {
       const meta = getCanonicalTeamMeta(fromUrl);
       if (meta) {
-        fixes[p.id] = { teamSlug: meta.slug, team: meta.he };
+        const lc = leagueForTeamSlug(meta.slug);
+        fixes[p.id] = {
+          teamSlug: meta.slug,
+          team: meta.he,
+          ...(lc ? { league: lc.league, category: lc.category } : {}),
+        };
         stats.autoFixed++;
         continue;
       }
@@ -169,7 +195,14 @@ for (const p of products) {
     // Still relabel based on URL — at least the team will be correct
     if (fromLabel !== fromUrl) {
       const meta = getCanonicalTeamMeta(fromUrl);
-      if (meta) fixes[p.id] = { teamSlug: meta.slug, team: meta.he };
+      if (meta) {
+        const lc = leagueForTeamSlug(meta.slug);
+        fixes[p.id] = {
+          teamSlug: meta.slug,
+          team: meta.he,
+          ...(lc ? { league: lc.league, category: lc.category } : {}),
+        };
+      }
     }
     continue;
   }
@@ -179,7 +212,12 @@ for (const p of products) {
     if (fromLabel !== fromImg) {
       const meta = getCanonicalTeamMeta(fromImg);
       if (meta) {
-        fixes[p.id] = { teamSlug: meta.slug, team: meta.he };
+        const lc = leagueForTeamSlug(meta.slug);
+        fixes[p.id] = {
+          teamSlug: meta.slug,
+          team: meta.he,
+          ...(lc ? { league: lc.league, category: lc.category } : {}),
+        };
         stats.autoFixed++;
         continue;
       }
