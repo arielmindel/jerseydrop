@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import MarqueeBanner from "@/components/layout/MarqueeBanner";
+import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import JsonLd from "@/components/seo/JsonLd";
 
 const heebo = Heebo({
@@ -125,6 +126,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+        <WhatsAppFloat />
       </body>
     </html>
   );

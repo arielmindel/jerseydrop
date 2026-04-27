@@ -102,7 +102,7 @@ export const LEAGUES: LeagueInfo[] = [
 ];
 
 export const WHATSAPP_NUMBER =
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972000000000";
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972533936304";
 
 export function whatsappLink(message?: string): string {
   const text = message ? `?text=${encodeURIComponent(message)}` : "";
