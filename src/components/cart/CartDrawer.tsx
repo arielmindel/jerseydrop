@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { SHIPPING } from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
 import { useCart, computeTotals, lineTotal } from "@/lib/cart";
+import CartItemDetails from "./CartItemDetails";
 
 export default function CartDrawer() {
   const items = useCart((s) => s.items);
@@ -105,12 +106,18 @@ export default function CartDrawer() {
                     <span>·</span>
                     <span>מידה {item.size}</span>
                   </div>
-                  {item.customization &&
-                    (item.customization.name || item.customization.number) && (
-                      <div className="text-[11px] text-accent">
-                        {item.customization.name} {item.customization.number}
-                      </div>
-                    )}
+                  <CartItemDetails item={item} />
+                  {item.customerNotes && (
+                    <div
+                      className="line-clamp-2 text-[11px] text-muted"
+                      title={item.customerNotes}
+                    >
+                      📝{" "}
+                      {item.customerNotes.length > 30
+                        ? item.customerNotes.slice(0, 30) + "…"
+                        : item.customerNotes}
+                    </div>
+                  )}
                   <div className="mt-1 flex items-center justify-between gap-2">
                     <div className="inline-flex items-center gap-1 rounded-full border border-border bg-background">
                       <button

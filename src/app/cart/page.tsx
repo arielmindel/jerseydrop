@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Trash2, Plus, Minus, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart, computeTotals, lineTotal } from "@/lib/cart";
+import CartItemDetails from "@/components/cart/CartItemDetails";
 import { SHIPPING } from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
 
@@ -81,12 +82,16 @@ export default function CartPage() {
                   <span>·</span>
                   <span>מידה {item.size}</span>
                 </div>
-                {item.customization &&
-                  (item.customization.name || item.customization.number) && (
-                    <div className="text-xs text-accent">
-                      הדפסה: {item.customization.name} {item.customization.number}
-                    </div>
-                  )}
+                <CartItemDetails item={item} />
+                {item.customerNotes && (
+                  <div
+                    className="rounded-lg border border-border bg-background px-2 py-1.5 text-[11px] leading-relaxed text-muted"
+                    title={item.customerNotes}
+                  >
+                    📝 <span className="font-semibold text-foreground">הערות:</span>{" "}
+                    {item.customerNotes}
+                  </div>
+                )}
                 <div className="mt-auto flex items-center gap-3">
                   <div className="inline-flex items-center gap-1 rounded-full border border-border bg-background">
                     <button

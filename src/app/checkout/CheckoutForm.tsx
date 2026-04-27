@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useCart, computeTotals, lineTotal } from "@/lib/cart";
+import CartItemDetails from "@/components/cart/CartItemDetails";
 import { SHIPPING } from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
 
@@ -253,12 +254,15 @@ export default function CheckoutForm() {
                 <span className="text-[11px] text-muted">
                   {versionLabel[item.version]} · {item.size} · ×{item.quantity}
                 </span>
-                {item.customization &&
-                  (item.customization.name || item.customization.number) && (
-                    <span className="text-[11px] text-accent">
-                      {item.customization.name} {item.customization.number}
-                    </span>
-                  )}
+                <CartItemDetails item={item} />
+                {item.customerNotes && (
+                  <span
+                    className="line-clamp-1 text-[10px] italic text-muted"
+                    title={item.customerNotes}
+                  >
+                    📝 {item.customerNotes}
+                  </span>
+                )}
               </div>
               <span className="font-display text-sm font-bold">
                 {formatILS(lineTotal(item))}
