@@ -1,0 +1,3537 @@
+{
+  "stats": {
+    "total": 995,
+    "resolvedFromUrl": 762,
+    "resolvedFromImage": 631,
+    "conflictUrlVsLabel": 35,
+    "conflictImageVsLabel": 16,
+    "conflictImageVsUrl": 56,
+    "unresolvable": 122
+  },
+  "issues": [
+    {
+      "id": "10328707596562",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "נורבגיה מדי בית 2025/26 - מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/נורבגיה-מדי-בית-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/nwrbgyh-mdy-byt-2025-26-mwndyl-559.jpg?v=1774714621"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10328706646290",
+      "slug": "netherlands-away-2025-26",
+      "team": "הולנד",
+      "nameHe": "הולנד מדי חוץ 2025/26 - מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/ספרד-מדי-חוץ-2025-26-מונדיאל-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlnd-mdy-hwz-2025-26-mwndyl-605.jpg?v=1774714574"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "netherlands",
+      "teamFromUrl": "spain",
+      "teamFromImage": "netherlands",
+      "teamFromLabel": "netherlands",
+      "canonicalRecommendation": "spain"
+    },
+    {
+      "id": "10328706318610",
+      "slug": "spain-away-2025-26",
+      "team": "ספרד",
+      "nameHe": "ספרד מדי חוץ 2025/26 - מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/צרפת-מדי-בית-2025-26-מונדיאל-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/sprd-mdy-hwz-2025-26-mwndyl-340.jpg?v=1774714556"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "spain",
+      "teamFromUrl": "france",
+      "teamFromImage": "spain",
+      "teamFromLabel": "spain",
+      "canonicalRecommendation": "france"
+    },
+    {
+      "id": "10328706154770",
+      "slug": "england-home-2025-26",
+      "team": "אנגליה",
+      "nameHe": "צרפת מדי בית 2025/26 - מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/צרפת-מדי-בית-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/zrpt-mdy-byt-2025-26-mwndyl-311.jpg?v=1774714545"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "england",
+      "teamFromUrl": "france",
+      "teamFromImage": "france",
+      "teamFromLabel": "england",
+      "canonicalRecommendation": "france"
+    },
+    {
+      "id": "10320634609938",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "ג'מייקה & בוב מארלי חוץ 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/גמייקה-בוב-מארלי-חוץ-2025-26-מונדיאל-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/gmyyqh-bwb-mrly-hwz-2025-26-mwndyl-881.jpg?v=1774714514"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10320634282258",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "ג'מייקה & בוב מארלי בית 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/גמייקה-חולצה-מיוחדת-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/gmyyqh-bwb-mrly-byt-2025-26-mwndyl-813.jpg?v=1774714496"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10303557271826",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "פריט כללי 160",
+      "sourceUrl": "https://sporthubkit.com/products/פריט-כללי-160",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10297313493266",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "פריט כלליי",
+      "sourceUrl": "https://sporthubkit.com/products/פריט-כלליי",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10296987222290",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "פריט כללי",
+      "sourceUrl": "https://sporthubkit.com/products/פריט-כללי",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10293932687634",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "קאטר מדי בית 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/קאטר-מדי-בית-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/qtr-mdy-byt-2025-26-mwndyl-369.jpg?v=1774714415"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10293929017618",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "מאלי חולצת בית 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/מאלי-חולצת-בית-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/mly-hwlzt-byt-2025-26-mwndyl-329.jpg?v=1774714375"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291381076242",
+      "slug": "jersey-retro-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל  גלאטסריי בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-גלאטסריי-בית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/galatasarays-2025-26-home.jpg?v=1768594859"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291380846866",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל  טרבזונספור רטרו 2011",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-טרנזבספור-רטרו-2011",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Trabzonspor2011.jpg?v=1768594683"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291380486418",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל פנרבחצה רטרו 2007",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פנרבחצה-רטרו-2007",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fenerbahce2007.jpg?v=1768594394"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291380257042",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצת כדורגל פנרבחצה נטרלית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-פנרבחצה-נטרלית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/FenerbahceTHI.jpg?v=1768594394"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291380093202",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצת כדורגל פנרבחצה בית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-פנרבחצה-בית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fenerbahce2025H.jpg?v=1768594394"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291379994898",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצת כדורגל פנרבחצה חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-פנרבחצה-חוץ",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/FenerbahceAWAY.jpg?v=1768594394"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291379601682",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצת כדורגל בשיקטאש חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-בשיקטאש-חוץ",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Besiktas2025A.jpg?v=1768594272"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291378454802",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצת כדורגל בשיקטאש בית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-בשיקטאש-בית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Besiktas2025H.jpg?v=1768593999"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291378356498",
+      "slug": "hapoel-tel-aviv-home-2025-26",
+      "team": "הפועל תל אביב",
+      "nameHe": "2025/26 חולצת כדורגל בארגה בית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-בארגה-בית-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/braga-2025-26-home.jpg?v=1768593932"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "braga",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "braga"
+    },
+    {
+      "id": "10291376718098",
+      "slug": "israeli-other-home-2025-26",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדורגל שארלוט  2025/26 - אבדה",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-שארלוט-2025-26-אבדה",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/CharlotteFC2025.jpg?v=1768592889"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291376554258",
+      "slug": "israeli-other-home-2025-26",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדורגל דיסי ייוניטד 2025/26 - בריבו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדוגל-ניו-אינגלנד-דיסי-ייוניטד-2025-26-בריבו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/2025032216451122.jpg?v=1768592834"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291339854098",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל סנדרלנד חוץ 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-סנדרלנד-חוץ-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlzt-kdwrgl-sndrlnd-hwz-2025-26-532.jpg?v=1768590320"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291338608914",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל סנדרלנד בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-סנדרלנד-בית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlzt-kdwrgl-sndrlnd-byt-2025-26-159.jpg?v=1768590307"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291337167122",
+      "slug": "israeli-other-home-2025-26",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדוגל לאצה בית 2025/26 - עומרי גנדלמן",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדוגל-לאצה-בית-2025-26-עומרי-גנדלמן-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlzt-kdwgl-lzh-byt-2025-26-wmry-gndlmn-628.jpg?v=1768582283"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10291336413458",
+      "slug": "israeli-other-away-2025-26",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדוגל לאצה חוץ 2025/26 - עומרי גנדלמן",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדוגל-לאצה-בית-2025-26-עומרי-גנדלמן",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlzt-kdwgl-lzh-hwz-2025-26-wmry-gndlmn-689.jpg?v=1768582304"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10281004204306",
+      "slug": "israeli-other-home-2025-26",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדוגל פיורנטינה בית 2025/26 מנור סולומון",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדוגל-פיורנטינה-בית-2025-26-מנור-סולומון-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/IMG-0204.png?v=1767367321"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10281004138770",
+      "slug": "israeli-other-home-2025-26",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדוגל פיורנטינה בית 2025/26 מנור סולומון",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדוגל-פיורנטינה-בית-2025-26-מנור-סולומון",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/SpoHu_manor.png?v=1767367235"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10270526669074",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "וונצואלה מדי בית 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/וונצואלה-מדי-בית-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/wwnzwlh-mdy-byt-2025-26-mwndyl-658.jpg?v=1774714306"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10270525227282",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "ערב הסעדוית מדי בית 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/ערב-הסעדוית-מדי-בית-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/rb-hsdwyt-mdy-byt-2025-26-mwndyl-531.jpg?v=1774714267"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10270525063442",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "שוודיה מדי בית 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/אוקרינה-מדי-בית-2025-26-מונדיאל-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/swwdyh-mdy-byt-2025-26-mwndyl-213.jpg?v=1774714255"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10270524375314",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "אוקרינה מדי בית 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/אוקרינה-מדי-בית-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/wqrynh-mdy-byt-2025-26-mwndyl-699.jpg?v=1774714243"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10257725063442",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "הונגריה מדי בית 2025/26 מונדיאל",
+      "sourceUrl": "https://sporthubkit.com/products/הונגריה-מדי-בית-2025-26-מונדיאל",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwngryh-mdy-byt-2025-26-mwndyl-541.jpg?v=1774714170"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10234099532050",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצת כדורגל אאק אתונה חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-אאק-אתונה-חוץ-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/AEKAthensAWAY.jpg?v=1760510480"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10234099073298",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצת כדורגל אאק אתונה בית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-אאק-אתונה-חוץ",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/AEKAthensHOME.jpg?v=1760510453"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10234097828114",
+      "slug": "hapoel-tel-aviv-retro",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט 2003",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-2003",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/RiverPlate2003.jpg?v=1760510302"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "10234096845074",
+      "slug": "hapoel-tel-aviv-away",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל חוץ רייבר פלייט 2025",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-חוץ-רייבר-פלייט-2025",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/RiverPlate2025.jpg?v=1760510229"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "10234094518546",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל שאחטר דוניצק  2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-שאחטר-דוניצק-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/46d1a9bb.jpg?v=1760509845"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10234092552466",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כודורגל רטרו  מארסי 2009",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כודורגל-רטרו-מארסי-בית2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlzt-kwdwrgl-rtrw-mrsy-2009-454.webp?v=1767990773"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10215571161362",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל קולומביה בית רטרו 1990",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-מקסיקו-מיוחדת-2027",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Colombia_1990_Home.jpg?v=1757172168"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "mexico",
+      "teamFromImage": "colombia",
+      "teamFromLabel": "colombia",
+      "canonicalRecommendation": "mexico"
+    },
+    {
+      "id": "10212784079122",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל לבנטה בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-לבנטה-בית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Levante_UD_2025.jpg?v=1756833508"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10212781293842",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל גראנדה חוץ 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-גראנדה-חוץ-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/granada_AWAY.jpg?v=1756832939"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10212780835090",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל גראנדה בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-גירונה-בית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Granada_2025.jpg?v=1756832889"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10212780278034",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל גירונה נטרלית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-דיפורטיבו-גירונה-נטרלית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Girona_2025_THI.jpg?v=1756832604"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10212780146962",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל גירונה חוץ 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-דיפורטיבו-גירונה-חוץ-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Girona_AWA.jpg?v=1756832667"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10212779229458",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל גירונה בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-דיפורטיבו-אלבאס-חוץ-2025-26-copy-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Girona_2025.jpg?v=1756832635"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10212778836242",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל דיפורטיבו אלבאס חוץ 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-דיפורטיבו-אלבאס-חוץ-2025-26-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Deportivo_Alaves_2025_AW.jpg?v=1756832483"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10212778213650",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל דיפורטיבו אלבאס בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-דיפורטיבו-אלבאס-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Deportivo_Alaves_2025_H.jpg?v=1756832424"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10212750000402",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצות כדורגל ברנלי בית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצות-כדורגל-וואסטהאם-נטרלית-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Burnley_F.C._2025.jpg?v=1756825262"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10211823583506",
+      "slug": "hapoel-tel-aviv-home-2025-26",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל אייקס נטרלית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אייקס-נטרלית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Ajax_2025_TH.jpg?v=1756641876"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "ajax",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "ajax"
+    },
+    {
+      "id": "10211823485202",
+      "slug": "hapoel-tel-aviv-away-2025-26",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל אייקס חוץ 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אייקס-חוץ-2025-26-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Ajax_25_Away.jpg?v=1756641876"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "ajax",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "ajax"
+    },
+    {
+      "id": "10211822731538",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל אל נאסר נטרלית 25/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אל-נאסר-נטרלית-25-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Al-Nassr2025THI.jpg?v=1756641383"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10211822141714",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "חולצת כדורגל אל נאסר בית 25/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אל-נאסר-בית-25-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Al-Nassr.jpg?v=1756641383"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10200855445778",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "רדבול לייפציג חוץ 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/רדבול-לייפציג-בית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Bayer_04_Leverkusen_AWAY.jpg?v=1754757286"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10200854987026",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "רדבול לייפציג בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/רדבול-לייפציג-בית-2024-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Bayer_04_Leverkusen.jpg?v=1754757240"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10200852070674",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "המבורג בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/סט-פאולי-שלישית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Hamburger_SV_2025.jpg?v=1754757051"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10200846303506",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "סט פאולי בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/סט-פאולי-בית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Pauli_2025.jpg?v=1754756847"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10200838537490",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצות כדורגל נוטינגהאם פורסט חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצות-כדורגל-נוטינגהאם-פורסט-חוץ",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Nottingham_Forest_Away.jpg?v=1754754238"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10200836112658",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצות כדורגל לידס יוניטד בית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצות-כדורגל-לידס-יוניטד-בית-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Leeds_United1.jpg?v=1754753601"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "manchester-united",
+      "teamFromLabel": "leeds",
+      "canonicalRecommendation": "leeds"
+    },
+    {
+      "id": "10200835653906",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצות כדורגל וואסטהאם בית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצות-כדורגל-אברטון-בית-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/ham-united-2025-26-home.jpg?v=1754753503"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "everton",
+      "teamFromImage": "manchester-united",
+      "teamFromLabel": null,
+      "canonicalRecommendation": "everton"
+    },
+    {
+      "id": "10200830083346",
+      "slug": "jersey-home-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצות כדורגל דרבי קאונטי בית",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצות-כדורגל-דרבי-קאונטי-בית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Derby_County.jpg?v=1754752322"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9772882723090",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "תוספת מכנס",
+      "sourceUrl": "https://sporthubkit.com/products/תוספת-מכנס",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765792121106",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "שטוטגרט בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/שטוטגרט-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/VfB_Stuttgarts.jpg?v=1742382686"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9729685356818",
+      "slug": "israeli-other-home-2024-25-kids",
+      "team": "ישראלי",
+      "nameHe": "שארלוט בית 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/פריס-סנט-גרמן-בית-2024-25-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Charlotte_FC_2024.jpg?v=1742317263"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8220717941010",
+      "slug": "real-madrid-third",
+      "team": "ריאל מדריד",
+      "nameHe": "ריאל מדריד שלישית 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-ברצלונה-שלישית-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Untitsdled-2.webp?v=1774720184"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "real-madrid",
+      "teamFromUrl": "barcelona",
+      "teamFromImage": null,
+      "teamFromLabel": "real-madrid",
+      "canonicalRecommendation": "barcelona"
+    },
+    {
+      "id": "9729687093522",
+      "slug": "real-madrid-home-kids",
+      "team": "ריאל מדריד",
+      "nameHe": "ריאל מדריד רטרו 2015- סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ארגנטינה-רטרו-1986-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/kids_Real_Madrid_14-15.jpg?v=1742382500"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "real-madrid",
+      "teamFromUrl": "argentina",
+      "teamFromImage": "real-madrid",
+      "teamFromLabel": "real-madrid",
+      "canonicalRecommendation": "argentina"
+    },
+    {
+      "id": "9166076510482",
+      "slug": "real-betis-home-2023-24",
+      "team": "בטיס",
+      "nameHe": "ריאל בטיס מיוחדת 2024",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-ריאל-בטיס-בית-2024",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/23-24BTSgreen.jpg?v=1742317478"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "real-betis",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": null,
+      "teamFromLabel": "betis",
+      "canonicalRecommendation": "real-madrid"
+    },
+    {
+      "id": "10170548486418",
+      "slug": "real-betis-home-2025-26",
+      "team": "בטיס",
+      "nameHe": "ריאל בטיס בית 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/ריאל-בטיס-בית-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/RealBetis2025.jpg?v=1751147354"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "real-betis",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "betis",
+      "teamFromLabel": "betis",
+      "canonicalRecommendation": "real-madrid"
+    },
+    {
+      "id": "9166073856274",
+      "slug": "real-betis-home-2024-25",
+      "team": "בטיס",
+      "nameHe": "ריאל בטיס בית 2024/25",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-אימון-ירוקה-ברצלונה-2024",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Real_Betis_2024.jpg?v=1742317480"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "real-betis",
+      "teamFromUrl": "barcelona",
+      "teamFromImage": "betis",
+      "teamFromLabel": "betis",
+      "canonicalRecommendation": "barcelona"
+    },
+    {
+      "id": "9765787369746",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "רדבול לייפציג בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/רדבול-לייפציג-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/RB_Leipzig..jpg?v=1742382676"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10167955456274",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "קופה - כללי",
+      "sourceUrl": "https://sporthubkit.com/products/קופה-כללי",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9729689354514",
+      "slug": "france-home-kids",
+      "team": "צרפת",
+      "nameHe": "צרפת רטרו 1998- סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/מילאן-רטרו-2006-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/kids_France_1998.jpg?v=1742317248"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "france",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": "france",
+      "teamFromLabel": "france",
+      "canonicalRecommendation": "ac-milan"
+    },
+    {
+      "id": "9598253105426",
+      "slug": "france-away",
+      "team": "צרפת",
+      "nameHe": "צרפת מדי חוץ 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/אנגליה-מדי-בית-2024-יורו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/458d3eb8.jpg?v=1742317464"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "france",
+      "teamFromUrl": "england",
+      "teamFromImage": null,
+      "teamFromLabel": "france",
+      "canonicalRecommendation": "england"
+    },
+    {
+      "id": "9738429759762",
+      "slug": "real-madrid-home",
+      "team": "ריאל מדריד",
+      "nameHe": "צעיף ריאל מדריד",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-צלסי",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/6_2ad96316-b3d5-40db-95d4-bfc91e887741.png?v=1742317219"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "real-madrid",
+      "teamFromUrl": "chelsea",
+      "teamFromImage": null,
+      "teamFromLabel": "real-madrid",
+      "canonicalRecommendation": "chelsea"
+    },
+    {
+      "id": "9738429399314",
+      "slug": "chelsea-home",
+      "team": "צלסי",
+      "nameHe": "צעיף צלסי",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-דורטמונד",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/8_fc3dfdd8-6bfb-4cbe-8c56-e4e3bac9f1f2.png?v=1742317220"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "chelsea",
+      "teamFromUrl": "borussia-dortmund",
+      "teamFromImage": null,
+      "teamFromLabel": "chelsea",
+      "canonicalRecommendation": "borussia-dortmund"
+    },
+    {
+      "id": "9738260250898",
+      "slug": "manchester-united-home",
+      "team": "יונייטד",
+      "nameHe": "צעיף מנצסטר יוניטד",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-ברצלונה-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/1_8cf02785-8505-4149-a097-12bf9452ec42.png?v=1742317230"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "manchester-united",
+      "teamFromUrl": "barcelona",
+      "teamFromImage": null,
+      "teamFromLabel": "manchester-united",
+      "canonicalRecommendation": "barcelona"
+    },
+    {
+      "id": "9738428416274",
+      "slug": "ac-milan-home",
+      "team": "מילאן",
+      "nameHe": "צעיף מילאן",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-ליברפול-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/9.3.png?v=1742317225"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "ac-milan",
+      "teamFromUrl": "liverpool",
+      "teamFromImage": null,
+      "teamFromLabel": "ac-milan",
+      "canonicalRecommendation": "liverpool"
+    },
+    {
+      "id": "9738425925906",
+      "slug": "liverpool-home",
+      "team": "ליברפול",
+      "nameHe": "צעיף ליברפול",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-פריז-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/9.4.png?v=1742317228"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "liverpool",
+      "teamFromUrl": "psg",
+      "teamFromImage": null,
+      "teamFromLabel": "liverpool",
+      "canonicalRecommendation": "psg"
+    },
+    {
+      "id": "9738430644498",
+      "slug": "tottenham-home",
+      "team": "טוטנהאם",
+      "nameHe": "צעיף טוטנהאם",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-ריאל-מדריד-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/7_fd8f0e91-efd5-4576-960e-277d75de79c3.png?v=1742317218"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "tottenham",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": null,
+      "teamFromLabel": "tottenham",
+      "canonicalRecommendation": "real-madrid"
+    },
+    {
+      "id": "9738429137170",
+      "slug": "borussia-dortmund-home",
+      "team": "דורטמונד",
+      "nameHe": "צעיף דורטמונד",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-מנצסטר-סיטי",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/4_4c215578-b86a-480a-94dd-62ff41361050.png?v=1742317222"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "borussia-dortmund",
+      "teamFromUrl": "manchester-city",
+      "teamFromImage": null,
+      "teamFromLabel": "borussia-dortmund",
+      "canonicalRecommendation": "manchester-city"
+    },
+    {
+      "id": "9738428547346",
+      "slug": "arsenal-home",
+      "team": "ארסנל",
+      "nameHe": "צעיף ארסנל",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-מילאן",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/9.2.png?v=1742317224"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "arsenal",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": null,
+      "teamFromLabel": "arsenal",
+      "canonicalRecommendation": "ac-milan"
+    },
+    {
+      "id": "9738427924754",
+      "slug": "inter-milan-home",
+      "team": "אינטר",
+      "nameHe": "צעיף אינטר",
+      "sourceUrl": "https://sporthubkit.com/products/צעיף-ליברפול",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/3_dab78075-157a-4bf0-a348-e55362ec3ab7.png?v=1742317226"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "inter-milan",
+      "teamFromUrl": "liverpool",
+      "teamFromImage": null,
+      "teamFromLabel": "inter-milan",
+      "canonicalRecommendation": "liverpool"
+    },
+    {
+      "id": "9690102169874",
+      "slug": "chelsea-home-kids",
+      "team": "צלסי",
+      "nameHe": "צלסי 2012 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ריאל-מדריד-בית-2024-25-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/12_Retro_Chelsea.jpg?v=1742317360"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "chelsea",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "chelsea",
+      "teamFromLabel": "chelsea",
+      "canonicalRecommendation": "real-madrid"
+    },
+    {
+      "id": "9765796512018",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "פרנקפורט בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/סט-פאולי-בית-2024-25-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/bcc97225.jpg?v=1742382695"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9729685258514",
+      "slug": "psg-home-2024-25-kids",
+      "team": "פריס",
+      "nameHe": "פריס סנט גרמן בית 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/דורטמונד-בית-2024-25-סט-ילדים",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/24-25_kids_PSG.jpg?v=1742381357"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "psg",
+      "teamFromUrl": "borussia-dortmund",
+      "teamFromImage": "psg",
+      "teamFromLabel": "psg",
+      "canonicalRecommendation": "borussia-dortmund"
+    },
+    {
+      "id": "10171630616850",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "פריט קופה - כללי",
+      "sourceUrl": "https://sporthubkit.com/products/פריט-קופה-כללי",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10154964189458",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "פריט כללי - קופה",
+      "sourceUrl": "https://sporthubkit.com/products/פריט-כללי-קופה",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9598285807890",
+      "slug": "portugal-home",
+      "team": "פורטוגל",
+      "nameHe": "פורטוגל מדי בית 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/ספרד-מדי-חוץ-2024-יורו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/da7d7b1af5b839b272df4fa0b0ca2ce6.jpg?v=1742317456"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "portugal",
+      "teamFromUrl": "spain",
+      "teamFromImage": "portugal",
+      "teamFromLabel": "portugal",
+      "canonicalRecommendation": "spain"
+    },
+    {
+      "id": "9690243465490",
+      "slug": "portugal-home-kids",
+      "team": "פורטוגל",
+      "nameHe": "פורטוגל בית 2024 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/אנגליה-בית-2024-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Portugal_2024HO.jpg?v=1742381358"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "portugal",
+      "teamFromUrl": "england",
+      "teamFromImage": "portugal",
+      "teamFromLabel": "portugal",
+      "canonicalRecommendation": "england"
+    },
+    {
+      "id": "9598274568466",
+      "slug": "spain-home",
+      "team": "ספרד",
+      "nameHe": "ספרד מדי בית 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/בלגיה-מדי-בית-2024-יורו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/5ab3bbd8875d234798ccbd4c1b8798d7.jpg?v=1742317458"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "spain",
+      "teamFromUrl": "belgium",
+      "teamFromImage": null,
+      "teamFromLabel": "spain",
+      "canonicalRecommendation": "belgium"
+    },
+    {
+      "id": "9690226295058",
+      "slug": "spain-away-kids",
+      "team": "ספרד",
+      "nameHe": "ספרד חוץ 2024 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/גרמניה-חוץ-2024-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Spain_2024_AWAY.jpg?v=1742317341"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "spain",
+      "teamFromUrl": "germany",
+      "teamFromImage": "spain",
+      "teamFromLabel": "spain",
+      "canonicalRecommendation": "germany"
+    },
+    {
+      "id": "9729690304786",
+      "slug": "jersey-home-kids",
+      "team": "",
+      "nameHe": "סנטוס רטרו 2012- סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/מילאן-רטרו-2006-סט-ילדים-copy-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Santos_11.12_Home_Kids_Set.webp?v=1742317246"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": "santos",
+      "teamFromLabel": "santos",
+      "canonicalRecommendation": "ac-milan"
+    },
+    {
+      "id": "9765795692818",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "סט פאולי בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/סט-פאולי-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/FC_St._Pauli_2024.jpg?v=1742382694"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10074398359826",
+      "slug": "chelsea-home",
+      "team": "צלסי",
+      "nameHe": "מעיל צלסי 2012",
+      "sourceUrl": "https://sporthubkit.com/products/מעיל-ספרד-1998",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Chelsea_2012_3524a1be-0a08-467f-b4ac-dfe0c3bd6cae.jpg?v=1742316769"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "chelsea",
+      "teamFromUrl": "spain",
+      "teamFromImage": "chelsea",
+      "teamFromLabel": "chelsea",
+      "canonicalRecommendation": "spain"
+    },
+    {
+      "id": "10074397966610",
+      "slug": "spain-home",
+      "team": "ספרד",
+      "nameHe": "מעיל ספרד 1998",
+      "sourceUrl": "https://sporthubkit.com/products/מעיל-אנגליה-1996-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Spain_1996_WIND.jpg?v=1742316771"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "spain",
+      "teamFromUrl": "england",
+      "teamFromImage": "spain",
+      "teamFromLabel": "spain",
+      "canonicalRecommendation": "england"
+    },
+    {
+      "id": "10074398621970",
+      "slug": "manchester-united-home",
+      "team": "מנצ'סטר יוניטד",
+      "nameHe": "מעיל מנצסטר יוניטד 1998",
+      "sourceUrl": "https://sporthubkit.com/products/מעיל-צלסי-2012",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/ba6776_1833f8c46d924a3fb4c7cc4350902135_mv2.webp?v=1742316768"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "manchester-united",
+      "teamFromUrl": "chelsea",
+      "teamFromImage": null,
+      "teamFromLabel": "manchester-united",
+      "canonicalRecommendation": "chelsea"
+    },
+    {
+      "id": "10074395541778",
+      "slug": "germany-home",
+      "team": "גרמניה",
+      "nameHe": "מעיל גרמניה 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/מעיל-ברזיל-1998-רטרו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Germany_2024_2.jpg?v=1742316774"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "germany",
+      "teamFromUrl": "brazil",
+      "teamFromImage": "germany",
+      "teamFromLabel": "germany",
+      "canonicalRecommendation": "brazil"
+    },
+    {
+      "id": "10074397114642",
+      "slug": "england-home",
+      "team": "אנגליה",
+      "nameHe": "מעיל אנגליה 1996",
+      "sourceUrl": "https://sporthubkit.com/products/מעיל-גרמניה-2024-יורו-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/ENGLAND_98_JACET.webp?v=1742316772"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "england",
+      "teamFromUrl": "germany",
+      "teamFromImage": "england",
+      "teamFromLabel": "england",
+      "canonicalRecommendation": "germany"
+    },
+    {
+      "id": "9690113343762",
+      "slug": "manchester-city-home-2024-25-kids",
+      "team": "סיטי",
+      "nameHe": "מנצסטר סיטי בית 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ליברפול-חוץ-2024-25-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Manchester_City_2024_d4d7cc87-161b-4437-a3b9-66f93b12e403.jpg?v=1742317351"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "manchester-city",
+      "teamFromUrl": "liverpool",
+      "teamFromImage": "manchester-city",
+      "teamFromLabel": "manchester-city",
+      "canonicalRecommendation": "liverpool"
+    },
+    {
+      "id": "9729687847186",
+      "slug": "manchester-united-home-kids",
+      "team": "מנצ'סטר יוניטד",
+      "nameHe": "מנצסטר יוניטד רטרו 98-99 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ריאל-מדריד-רטרו-2017-18-סט-ילדים-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/kids_Manchester_United_98-99.jpg?v=1742317250"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "manchester-united",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "manchester-united",
+      "teamFromLabel": "manchester-united",
+      "canonicalRecommendation": "real-madrid"
+    },
+    {
+      "id": "9690105872658",
+      "slug": "manchester-united-home-kids",
+      "team": "יונייטד",
+      "nameHe": "מנצסטר יוניטד 2007- סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ארסנל-2004-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/08_Retro_Manchester_United.jpg?v=1742317357"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "manchester-united",
+      "teamFromUrl": "arsenal",
+      "teamFromImage": "manchester-united",
+      "teamFromLabel": "manchester-united",
+      "canonicalRecommendation": "arsenal"
+    },
+    {
+      "id": "9729681654034",
+      "slug": "ac-milan-home-2024-25-kids",
+      "team": "מילאן",
+      "nameHe": "מילאן בית 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/אינטר-מילאן-2010-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/ACMilan2024.jpg?v=1742317275"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "ac-milan",
+      "teamFromUrl": "inter-milan",
+      "teamFromImage": "ac-milan",
+      "teamFromLabel": "ac-milan",
+      "canonicalRecommendation": "inter-milan"
+    },
+    {
+      "id": "8401873895698",
+      "slug": "manchester-united-home-2023-24",
+      "team": "מנצ'סטר יוניטד",
+      "nameHe": "מדי אימון מנצסטר יוניטד 2024",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-מדי-אימון-מנצסטר-סיטי-2024",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/9_1.webp?v=1774721867"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "manchester-united",
+      "teamFromUrl": "manchester-city",
+      "teamFromImage": null,
+      "teamFromLabel": "manchester-united",
+      "canonicalRecommendation": "manchester-city"
+    },
+    {
+      "id": "10167955521810",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "כללי",
+      "sourceUrl": "https://sporthubkit.com/products/כללי",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9690124648722",
+      "slug": "tottenham-away-2024-25-kids",
+      "team": "טוטנהאם",
+      "nameHe": "טוטנהאם מדי חוץ 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ארסנל-מדי-חוץ-2024-25-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Tottenham_Hotspur_2024_2.jpg?v=1742317346"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "tottenham",
+      "teamFromUrl": "arsenal",
+      "teamFromImage": "tottenham",
+      "teamFromLabel": "tottenham",
+      "canonicalRecommendation": "arsenal"
+    },
+    {
+      "id": "9754559185170",
+      "slug": "lyon-away-2024-25",
+      "team": "ליון",
+      "nameHe": "חולצת כודורגל אולימפיק ליון חוץ 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פריז-סן-גרמן-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Olympique_Lyonnais_2024_AWAY.jpg?v=1742317133"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "lyon",
+      "teamFromUrl": "psg",
+      "teamFromImage": "lyon",
+      "teamFromLabel": "lyon",
+      "canonicalRecommendation": "psg"
+    },
+    {
+      "id": "10170447134994",
+      "slug": "hapoel-tel-aviv-away-2025-26",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט חוץ 2025/26",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-חוץ-2025-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/River_Plate_2025_d5cf0b63-385e-45b4-90f4-a34eabb96012.jpg?v=1751122388"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "10132106805522",
+      "slug": "hapoel-tel-aviv-home",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט 2025",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-2025",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/River_Plate_2025.jpg?v=1746635411"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "9666987688210",
+      "slug": "hapoel-tel-aviv-retro-2019-20",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט 2019-20",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פיינורד-2024-25-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/river_19-20.jpg?v=1742317395"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "10132117815570",
+      "slug": "hapoel-tel-aviv-retro",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט 2016",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-2016",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/16_River_Plate.jpg?v=1746636030"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "10132104315154",
+      "slug": "hapoel-tel-aviv-retro",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט 2000",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-1998",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/River_Plate_2000.jpg?v=1746635411"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "10132105330962",
+      "slug": "hapoel-tel-aviv-retro",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט 1999",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-2000",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/River_Plate_1999.jpg?v=1746635411"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "9708678283538",
+      "slug": "hapoel-tel-aviv-retro",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט 1997",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-1997",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/River_Plate_1996.jpg?v=1742317300"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "10132106019090",
+      "slug": "hapoel-tel-aviv-retro",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל רייבר פלייט 1996",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-1999",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/River_Plate_96.jpg?v=1746635512"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "river-plate",
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "river-plate"
+    },
+    {
+      "id": "9795627548946",
+      "slug": "israeli-other-retro",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדורגל רטרו סלטה ויגו בית 1999",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-סלטה-ויגו-בית-2025-copy-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Celta_Vigo_1999.1.jpg?v=1742316981"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8218527006994",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל רטרו נגיריה 1994",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רטרו-נגיריה-1994",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/0254d464.webp?v=1774719890"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8236033704210",
+      "slug": "israeli-other-third",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדורגל רדבול זלצבורג שלישית 2023-2 (אוסקר גלוך)",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-רדבול-זלצבורג-בית-2023-אוסקר-גלוך",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/8b7b0954_71dcdff7-34a1-46b7-bd77-8f6851d921d7.webp?v=1774720727"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9637360795922",
+      "slug": "maccabi-tel-aviv-home-2024-25",
+      "team": "מכבי תל אביב",
+      "nameHe": "חולצת כדורגל קאדיז 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-רטרו-פארמה-1995-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Cadiz_2024.jpg?v=1742317407"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "maccabi-tel-aviv",
+      "teamFromUrl": null,
+      "teamFromImage": "cadiz",
+      "teamFromLabel": "maccabi-tel-aviv",
+      "canonicalRecommendation": "cadiz"
+    },
+    {
+      "id": "8225566720274",
+      "slug": "psg-home",
+      "team": "פריס",
+      "nameHe": "חולצת כדורגל פריז סן גרמן בית 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-2023-ליברפול-חולצת-בית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/1_318454aa-a42e-4b4f-9b8e-d2d824360a25.webp?v=1774720401"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "psg",
+      "teamFromUrl": "liverpool",
+      "teamFromImage": null,
+      "teamFromLabel": "psg",
+      "canonicalRecommendation": "liverpool"
+    },
+    {
+      "id": "9754530021650",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל פסו אינדובן 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פסו-אינדובן-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/PSV_Eindhoven.jpg?v=1742317144"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9636902797586",
+      "slug": "flamengo-retro",
+      "team": "פלמנגו",
+      "nameHe": "חולצת כדורגל פלמנגו 2008",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-בנפיקה-חוץ-2023-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/2008_2009_Flamengo.jpg?v=1742317430"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "flamengo",
+      "teamFromUrl": "benfica",
+      "teamFromImage": "flamengo",
+      "teamFromLabel": "flamengo",
+      "canonicalRecommendation": "benfica"
+    },
+    {
+      "id": "9666986148114",
+      "slug": "hapoel-tel-aviv-home-2024-25",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל פיינורד 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-ספורטינג-ליסבון-רטרו-2001-02-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Feyenoord_Rotterdam.jpg?v=1742317396"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": "sporting",
+      "teamFromImage": null,
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "sporting"
+    },
+    {
+      "id": "10153380544786",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל פיורנטינה 1999/00 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פיורנטינה-1995-96-רטרו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fiorentina_99.jpg?v=1748875737"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10153378677010",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל פיורנטינה 1997/98 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פיורנטינה-1998-99-רטרו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fiorentina_1997.jpg?v=1748875537"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10153382871314",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל פיורנטינה 1995/96 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פיורנטינה-1995-96-רטרו-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fiorentina_95_HOME.jpg?v=1748875943"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10153379070226",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל פיורנטינה 1995/96 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פיורנטינה-1997-98-רטרו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fiorentina_1995.jpg?v=1748875693"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8222061265170",
+      "slug": "jersey-away",
+      "team": "",
+      "nameHe": "חולצת כדורגל פולהאם חוץ 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-ארסנל-נטרלית-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/1_cee20853-a52a-409d-8543-8b064cb33618.webp?v=1774720349"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "",
+      "teamFromUrl": "arsenal",
+      "teamFromImage": null,
+      "teamFromLabel": "fulham",
+      "canonicalRecommendation": "arsenal"
+    },
+    {
+      "id": "9637376885010",
+      "slug": "sporting-lisbon-home-2024-25",
+      "team": "ספורטינג",
+      "nameHe": "חולצת כדורגל ספורטינג ליסבון 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-בנפיקה-שלישית-2023-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Sporting_CP_2024.jpg?v=1742317406"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "sporting-lisbon",
+      "teamFromUrl": "benfica",
+      "teamFromImage": "sporting",
+      "teamFromLabel": "sporting",
+      "canonicalRecommendation": "benfica"
+    },
+    {
+      "id": "9765804015890",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל סלטה ויגו בית 2025",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-סלטה-ויגו-בית-2025-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Celta_Vigo.jpg?v=1742382711"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765807325458",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל סוסיאדאד חוץ 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-סוסיאדאד-חוץ-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Real_Sociedad_2024_471a5966-f83a-4266-9ae9-720eb1ebf532.jpg?v=1742382810"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765807128850",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל סוסיאדאד בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אספניול-בית-2024-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Real_Sociedad_2024.jpg?v=1742382810"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8239945023762",
+      "slug": "portugal-home",
+      "team": "פורטוגל",
+      "nameHe": "חולצת כדורגל נבחרת פורטוגל בית 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-נבחרת-הולנד-חוץ-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/40fc6eac.webp?v=1774721062"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "portugal",
+      "teamFromUrl": "netherlands",
+      "teamFromImage": null,
+      "teamFromLabel": "portugal",
+      "canonicalRecommendation": "netherlands"
+    },
+    {
+      "id": "8287455576338",
+      "slug": "japan-special-2023-24",
+      "team": "יפן",
+      "nameHe": "חולצת כדורגל נבחרת יפן 2024",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-ברזיל-מיוחדת-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/24_2_2e7a5c61-c777-492d-890d-ee4eefe49d24.webp?v=1774721183"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "japan",
+      "teamFromUrl": "brazil",
+      "teamFromImage": null,
+      "teamFromLabel": "japan",
+      "canonicalRecommendation": "brazil"
+    },
+    {
+      "id": "8239887450386",
+      "slug": "england-home",
+      "team": "אנגליה",
+      "nameHe": "חולצת כדורגל נבחרת אנגליה",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-נבחרת-איטליה",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Untitled-1.webp?v=1774720856"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "england",
+      "teamFromUrl": "italy",
+      "teamFromImage": null,
+      "teamFromLabel": "england",
+      "canonicalRecommendation": "italy"
+    },
+    {
+      "id": "8239882076434",
+      "slug": "איטליה-home",
+      "team": "איטליה",
+      "nameHe": "חולצת כדורגל נבחרת איטליה",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-נבחרת-הולנד-בגרסא-מיוחדת",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/9a6c4412.webp?v=1774720836"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "איטליה",
+      "teamFromUrl": "netherlands",
+      "teamFromImage": null,
+      "teamFromLabel": "italy",
+      "canonicalRecommendation": "netherlands"
+    },
+    {
+      "id": "9765805883666",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל מלאגה חוץ 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-מלאגה-חוץ-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Malaga_2024_NET.jpg?v=1742382802"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765805555986",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל מלאגה בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-גראנדה-בית-2025-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Malaga.jpg?v=1742382804"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8554500161810",
+      "slug": "jersey-home-2023-24",
+      "team": "",
+      "nameHe": "חולצת כדורגל מארסי",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-מארסי",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/2.1.webp?v=1774722010"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9754578911506",
+      "slug": "tottenham-retro",
+      "team": "טוטנהאם",
+      "nameHe": "חולצת כדורגל טוטנהאם רטרו 1994",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-סנטוס-רטרו-2012-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Tottenham_Hotspur_1994.1.jpg?v=1742317127"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "tottenham",
+      "teamFromUrl": "santos",
+      "teamFromImage": "tottenham",
+      "teamFromLabel": "tottenham",
+      "canonicalRecommendation": "santos"
+    },
+    {
+      "id": "9765807554834",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל וויאדוליד חוץ 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-וויאדוליד-חוץ-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Real_Valladolid_2024_2.jpg?v=1742382830"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765807456530",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל וויאדוליד בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-וויאדוליד-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Real_Valladolid.1.jpg?v=1742382831"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765805392146",
+      "slug": "israeli-other-home-2024-25",
+      "team": "ישראלי",
+      "nameHe": "חולצת כדורגל גראנדה בית 2025 (וויסמן)",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-גראנדה-בית-2025",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Granada_CF_2024.jpg?v=1742382717"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "ישראלי",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765804507410",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל גירונה בית 2025",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-גירונה-בית-2025",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Girona_202425.jpg?v=1742382716"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8233780019474",
+      "slug": "barcelona-special",
+      "team": "ברצלונה",
+      "nameHe": "חולצת כדורגל ברצלונה מיוחדת 2023",
+      "sourceUrl": "https://sporthubkit.com/products/ריאל-מדריד-שלישית-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/1_2_7fa46305-2c4f-4ab6-a2bd-4d5b8bf71632.webp?v=1774720596"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "barcelona",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": null,
+      "teamFromLabel": "barcelona",
+      "canonicalRecommendation": "real-madrid"
+    },
+    {
+      "id": "8239900786962",
+      "slug": "brazil-home",
+      "team": "ברזיל",
+      "nameHe": "חולצת כדורגל ברזיל בית 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-אימונית-נבחרת-ארגנטינה",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/1_1_520153ac-5a42-4d6e-af9b-2dbfc40a41b5.webp?v=1774721004"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "brazil",
+      "teamFromUrl": "argentina",
+      "teamFromImage": null,
+      "teamFromLabel": "brazil",
+      "canonicalRecommendation": "argentina"
+    },
+    {
+      "id": "8232659026194",
+      "slug": "jersey-special",
+      "team": "",
+      "nameHe": "חולצת כדורגל אתלטיק מניירו מיוחדת",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-ואסקו-דה-גאמה-מיוחדת",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/4_2_3e925d9e-231d-4647-a802-de9b981f4d5a.webp?v=1774720512"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765803393298",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אתלטיק בילבאו בית 2025",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-ריאל-מדריד-בית-2025-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Athletic_Bilbao_2024.jpg?v=1742382708"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "athletic-bilbao",
+      "teamFromLabel": "athletic-bilbao",
+      "canonicalRecommendation": "real-madrid"
+    },
+    {
+      "id": "9765806702866",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אספניול בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אספניול-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/RCD_Espanyol_2024.11.jpg?v=1742382812"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765804310802",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אלבאס חוץ 2025",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אלבאס-חוץ-2025",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Deportivo_Alaves2.2.jpg?v=1742382800"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765804212498",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אלבאס בית 2025",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אלבאס-בית-2025",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Deportivo_Alaves1.jpg?v=1742382714"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9636813340946",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אל נאסר חוץ 2024-25 רונאלדו (Copy)",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אל-נאסר-חוץ-2024-25-רונאלדו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Al-Nassr_2024_2.jpg?v=1742317431"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9636788207890",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אל נאסר בית 2024-25 רונאלדו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אל-נאסר-בית-2023-רונאלדו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Al-Nassr_2024.jpg?v=1742317433"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8235535663378",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "חולצת כדורגל אל נאסר בית 2023 רונאלדו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אל-נאסר-רונאלדו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/1699ccad.webp?v=1774720648"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8235972919570",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "חולצת כדורגל אל נאסר 2023 רונאלדו",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-אל-נאסר-בית-2023-רונאלדו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/be7e693e.webp?v=1774720676"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765555699986",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אל אילהל חוץ 2024-25 ניימאר",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אל-אילהל-חוץ-2024-25-ניימאר",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Al_Hilal_SC_2024_AWAY.jpg?v=1742317120"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765554651410",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אל אילהל בית 2024-25 ניימאר",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אל-אילהל-בית-2024-25-ניימאר",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Al_Hilal_SC_2.jpg?v=1742317121"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9750583378194",
+      "slug": "hapoel-tel-aviv-home-2024-25",
+      "team": "הפועל תל אביב",
+      "nameHe": "חולצת כדורגל אל אהלי 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-פלמנגו-2000-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/El_Ahly_2024.jpg?v=1742317146"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "hapoel-tel-aviv",
+      "teamFromUrl": "flamengo",
+      "teamFromImage": null,
+      "teamFromLabel": "hapoel-tel-aviv",
+      "canonicalRecommendation": "flamengo"
+    },
+    {
+      "id": "8216458985746",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל אייקס רטרו 1998",
+      "sourceUrl": "https://sporthubkit.com/products/אייקס-רטרו-1998",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlzt-kdwrgl-yyqs-rtrw-1998-300.webp?v=1774719531"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8232678686994",
+      "slug": "jersey-special",
+      "team": "",
+      "nameHe": "חולצת כדורגל אייקס בוב מארלי מיוחדת",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדורגל-נאפולי-ומארדונה-מיוחדת",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Ajax_2021_BOB.webp?v=1774720541"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "napoli",
+      "teamFromImage": "ajax",
+      "teamFromLabel": null,
+      "canonicalRecommendation": "napoli"
+    },
+    {
+      "id": "8216439390482",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל אייקס 1996 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/אייקס-1996-רטרו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlzt-kdwrgl-yyqs-1996-rtrw-499.webp?v=1774719521"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8232646836498",
+      "slug": "italy-special",
+      "team": "איטליה",
+      "nameHe": "חולצת כדורגל איטליה וורסאצה",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-1980-חולצה-כדורגל-רטרו-סלטיק",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/10.webp?v=1774720499"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "italy",
+      "teamFromUrl": "celtic",
+      "teamFromImage": "italy",
+      "teamFromLabel": "italy",
+      "canonicalRecommendation": "celtic"
+    },
+    {
+      "id": "9765805981970",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אוסוסונה חוץ 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-מלאגה-חוץ-2024-25-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Osasuna_3.jpg?v=1742382821"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765806113042",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדורגל אוסוסונה בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-אוסוסונה-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Osasuna_2024.jpg?v=1742382817"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8216467341586",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדורגל אולד בויס רטרו 1994",
+      "sourceUrl": "https://sporthubkit.com/products/אולד-בויס-רטרו-1994",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/8b0a835b.webp?v=1774719539"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8221358358802",
+      "slug": "roma-home",
+      "team": "רומא",
+      "nameHe": "חולצת כדוגל רומא בית 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדוגל-נאפולי-שלישית-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Untiasstled-2.webp?v=1774720339"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "roma",
+      "teamFromUrl": "napoli",
+      "teamFromImage": null,
+      "teamFromLabel": "roma",
+      "canonicalRecommendation": "napoli"
+    },
+    {
+      "id": "9690617544978",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "חולצת כדוגל פיורנטינה בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדוגל-פיורנטינה-בית-2024-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fiorentina_2024.jpg?v=1742317313"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10153376350482",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדוגל פיורנטינה 1998/99 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדוגל-פיורנטינה-1999-רטרו-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fiorentina_1998_AWAY.jpg?v=1748875482"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9165808566546",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדוגל פיורנטינה 1998/99 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדוגל-פיורנטינה-חוץ-2024",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fiorentina_1998.webp?v=1774722313"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10153363046674",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדוגל פיורנטינה 1997/98 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדוגל-פיורנטינה-1999-רטרו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fiorentina_97.98_AWAY.jpg?v=1748875851"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9165810008338",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצת כדוגל פיורנטינה 1992 רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדוגל-פיורנטינה-1999-רטרו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/92-93Fiorentina.webp?v=1774722324"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8221343613202",
+      "slug": "napoli-home",
+      "team": "נאפולי",
+      "nameHe": "חולצת כדוגל נאפולי בית 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדוגל-מילאן-שלישית-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/1_8baff9f9-192b-46c7-bd99-9777ca9ccbeb.webp?v=1774720321"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "napoli",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": null,
+      "teamFromLabel": "napoli",
+      "canonicalRecommendation": "ac-milan"
+    },
+    {
+      "id": "8221237739794",
+      "slug": "ac-milan-home",
+      "team": "מילאן",
+      "nameHe": "חולצת כדוגל מילאן בית 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדוגל-יובנטוס-בית-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Untitlased-2.webp?v=1774720286"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "ac-milan",
+      "teamFromUrl": "juventus",
+      "teamFromImage": null,
+      "teamFromLabel": "ac-milan",
+      "canonicalRecommendation": "juventus"
+    },
+    {
+      "id": "8221225845010",
+      "slug": "juventus-away",
+      "team": "יובנטוס",
+      "nameHe": "חולצת כדוגל יובנטוס חוץ 2023",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצת-כדוגל-אינטר-חוץ-2023",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/3_fea0e660-8feb-4a4c-b807-57f71881baa8.webp?v=1774720259"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "juventus",
+      "teamFromUrl": "inter-milan",
+      "teamFromImage": null,
+      "teamFromLabel": "juventus",
+      "canonicalRecommendation": "inter-milan"
+    },
+    {
+      "id": "9797683937554",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצות כדורגל סנדרלנד רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/2005-חולצות-כדורגל-סנדרלנד-רטרו",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Sunderlandl2005.jpg?v=1742316956"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8365073563922",
+      "slug": "france-retro",
+      "team": "צרפת",
+      "nameHe": "חולצה רטרו צרפת בית  2006",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצה-רטרו-ברזיל-2002",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/France_2006_HOME.webp?v=1774721673"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "france",
+      "teamFromUrl": "brazil",
+      "teamFromImage": "france",
+      "teamFromLabel": "france",
+      "canonicalRecommendation": "brazil"
+    },
+    {
+      "id": "9667010494738",
+      "slug": "spain-retro",
+      "team": "ספרד",
+      "nameHe": "חולצה רטרו ספרד 2010",
+      "sourceUrl": "https://sporthubkit.com/products/חולצה-רטרו-גרמניה-2014-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Spain_2010HOME.jpg?v=1742317376"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "spain",
+      "teamFromUrl": "germany",
+      "teamFromImage": "spain",
+      "teamFromLabel": "spain",
+      "canonicalRecommendation": "germany"
+    },
+    {
+      "id": "9157111742738",
+      "slug": "inter-milan-retro",
+      "team": "אינטר",
+      "nameHe": "חולצה רטרו אינטר 2021 מיוחדת",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-חולצה-רטרו-אינטר-1999",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/0fcb55e13bde9c58229981f8a06363f5_de46c445-f7a7-4a22-864f-d6639c236d92.webp?v=1774722227"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "inter-milan",
+      "teamFromUrl": "inter-milan",
+      "teamFromImage": "barcelona",
+      "teamFromLabel": "inter-milan",
+      "canonicalRecommendation": "inter-milan"
+    },
+    {
+      "id": "8235474845970",
+      "slug": "maccabi-tel-aviv-retro",
+      "team": "מכבי תל אביב",
+      "nameHe": "חולצה רטרו אייקס",
+      "sourceUrl": "https://sporthubkit.com/products/חולצה-רטרו-מילאן-2014-בית-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Ajax2000_f8467e73-fc30-453b-9d50-d5d226b2fa2e.webp?v=1774720633"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "maccabi-tel-aviv",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": "ajax",
+      "teamFromLabel": "maccabi-tel-aviv",
+      "canonicalRecommendation": "ac-milan"
+    },
+    {
+      "id": "9728065274130",
+      "slug": "real-betis-retro",
+      "team": "בטיס",
+      "nameHe": "חולצה כדורגל רטרו ריאל בטיס 1995-7",
+      "sourceUrl": "https://sporthubkit.com/products/חולצה-כדורגל-רטרו-ריאל-בטיס-1995-7-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/e5c49c1a.jpg?v=1742317475"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "real-betis",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": null,
+      "teamFromLabel": "betis",
+      "canonicalRecommendation": "real-madrid"
+    },
+    {
+      "id": "8218623115538",
+      "slug": "chelsea-retro",
+      "team": "צלסי",
+      "nameHe": "חולצה כדורגל רטרו צלסי 2011",
+      "sourceUrl": "https://sporthubkit.com/products/חולצה-כדורגל-רטרו-סקוטלנד-1988",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/12_2749fe86-1508-4333-a261-330717172d39.webp?v=1774720007"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "chelsea",
+      "teamFromUrl": "scotland",
+      "teamFromImage": null,
+      "teamFromLabel": "chelsea",
+      "canonicalRecommendation": "scotland"
+    },
+    {
+      "id": "8215087350034",
+      "slug": "jersey-retro",
+      "team": "",
+      "nameHe": "חולצה כדורגל רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצה-רטרו-x",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlzh-kdwrgl-rtrw-778.webp?v=1774719511"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8306401575186",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "חולצה בהפתעה רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצה-בהפתעה",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/333.webp?v=1774721245"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8306393645330",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "חולצה בהפתעה רגיל",
+      "sourceUrl": "https://sporthubkit.com/products/חולצה-בהפתעה-אוהד",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/f48b77fa68a5d8f267d0875db733c5e0.webp?v=1774721236"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765789499666",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "וורדברמן חוץ 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/וורדברמן-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/SV_Werder_Bremen3.1.jpg?v=1742382683"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765794480402",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "וולפסבורג חוץ 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/וולפסבורג-חוץ-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/372e8687.jpg?v=1742382691"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765792678162",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "וולפסבורג בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/וולפסבורג-בית-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Wolfsburg_2024.jpg?v=1742382687"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765786550546",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "המבורג בית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/סט-פאולי-חוץ-2024-25-copy-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Hamburger_SV_1.jpg?v=1742382673"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9598241145106",
+      "slug": "netherlands-away",
+      "team": "הולנד",
+      "nameHe": "הולנד מדי חוץ 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/גרמניה-מדי-חוץ-2024-יורו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/83a843c30cb999c2018bbe31dd1dbf17.jpg?v=1742317469"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "netherlands",
+      "teamFromUrl": "germany",
+      "teamFromImage": null,
+      "teamFromLabel": "netherlands",
+      "canonicalRecommendation": "germany"
+    },
+    {
+      "id": "9729684996370",
+      "slug": "borussia-dortmund-home-2025-26-kids",
+      "team": "דורטמונד",
+      "nameHe": "דורטמונד בית 2025/26 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ברזיל-בית-2022-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Dortmund_2025_KID.jpg?v=1760442597"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "borussia-dortmund",
+      "teamFromUrl": "brazil",
+      "teamFromImage": "borussia-dortmund",
+      "teamFromLabel": "borussia-dortmund",
+      "canonicalRecommendation": "brazil"
+    },
+    {
+      "id": "8401822122258",
+      "slug": "borussia-dortmund-home-2023-24",
+      "team": "דורטמונד",
+      "nameHe": "דורטמונד 2024 מדי בית",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-באירן-מינכן-חוץ-2026",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/18_5.webp?v=1774721749"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "borussia-dortmund",
+      "teamFromUrl": "bayern-munich",
+      "teamFromImage": null,
+      "teamFromLabel": "borussia-dortmund",
+      "canonicalRecommendation": "bayern-munich"
+    },
+    {
+      "id": "9598157226258",
+      "slug": "germany-home",
+      "team": "גרמניה",
+      "nameHe": "גרמניה מדי בית 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/חולצת-כדורגל-נבחרת-פורטוגל-בית-2023-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/35fcdb19fdfd1aca9d61182accbe7c89.jpg?v=1742317471"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "germany",
+      "teamFromUrl": "portugal",
+      "teamFromImage": "germany",
+      "teamFromLabel": "germany",
+      "canonicalRecommendation": "portugal"
+    },
+    {
+      "id": "9690210697490",
+      "slug": "germany-home-kids",
+      "team": "גרמניה",
+      "nameHe": "גרמניה בית 2024 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ברצלונה-2011-סט-ילדים-copy-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Germany_2024.jpg?v=1742317344"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "germany",
+      "teamFromUrl": "barcelona",
+      "teamFromImage": "germany",
+      "teamFromLabel": "germany",
+      "canonicalRecommendation": "barcelona"
+    },
+    {
+      "id": "9690620657938",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "גרוטר פירת' 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/מנשדגלבאך-חוץ-2024-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Greuther_Furth_2024.2.jpg?v=1742317312"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8287447154962",
+      "slug": "barcelona-retro",
+      "team": "ברצלונה",
+      "nameHe": "ברצלונה 2021 בית רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-באירן-מינכן-2024-השארה",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/BARCLONA_2020.webp?v=1774721167"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "barcelona",
+      "teamFromUrl": "bayern-munich",
+      "teamFromImage": null,
+      "teamFromLabel": "barcelona",
+      "canonicalRecommendation": "bayern-munich"
+    },
+    {
+      "id": "9729683980562",
+      "slug": "brazil-home-2024-25-kids",
+      "team": "ברזיל",
+      "nameHe": "ברזיל בית 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/מילאן-בית-2024-25-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/25_Kids_Brazil.jpg?v=1742317269"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "brazil",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": "brazil",
+      "teamFromLabel": "brazil",
+      "canonicalRecommendation": "ac-milan"
+    },
+    {
+      "id": "9598269554962",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "בלגיה מדי בית 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/איטליה-מדי-בית-2024-יורו-copy-1",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Belgium_2024_25_Euro_Home_Jersey6.jpg?v=1742317459"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "italy",
+      "teamFromImage": "belgium",
+      "teamFromLabel": "belgium",
+      "canonicalRecommendation": "italy"
+    },
+    {
+      "id": "8287445451026",
+      "slug": "bayern-munich-away-2023-24",
+      "team": "באירן מינכן",
+      "nameHe": "באירן מינכן חוץ 2024",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-מנצסטר-סיטי-חולצה-2024-השארה",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/24_1_cafb38fd-9be0-403e-a43b-ad9316558b4f.webp?v=1774721143"
+      ],
+      "issue": "url-vs-label",
+      "currentTeamSlug": "bayern-munich",
+      "teamFromUrl": "manchester-city",
+      "teamFromImage": null,
+      "teamFromLabel": "bayern-munich",
+      "canonicalRecommendation": "manchester-city"
+    },
+    {
+      "id": "9765719539986",
+      "slug": "bayern-munich-home-2024-25-kids",
+      "team": "באירן מינכן",
+      "nameHe": "באירן מינכן בית 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/דורטמונד-בית-2024-25-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Bayern_Munich_20243.jpg?v=1742317113"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "bayern-munich",
+      "teamFromUrl": "borussia-dortmund",
+      "teamFromImage": "bayern-munich",
+      "teamFromLabel": "bayern-munich",
+      "canonicalRecommendation": "borussia-dortmund"
+    },
+    {
+      "id": "9765783601426",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "באייר לברקוזן נטרלית 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/באייר-לברקוזן-נטרלית-2024-26",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Bayer_04_Leverkusen_2024_NET.jpg?v=1742317107"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765782356242",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "באייר לברקוזן חוץ 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/באייר-לברקוזן-חוץ-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Bayer_04_Leverkusen_2024_AWAY.jpg?v=1742317110"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9690591428882",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "באייר לברקוזן 2024-25",
+      "sourceUrl": "https://sporthubkit.com/products/באייר-לברקוזן-2024-25",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Bayer_04_Leverkusen_2024.jpg?v=1742317322"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9690121830674",
+      "slug": "arsenal-away-2024-25-kids",
+      "team": "ארסנל",
+      "nameHe": "ארסנל מדי חוץ 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/מנצסטר-סיטי-שוער-2024-25-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Arsenal_2024_d3e1a94d-ed0e-4432-ad25-d0346fdefa20.jpg?v=1742317347"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "arsenal",
+      "teamFromUrl": "manchester-city",
+      "teamFromImage": "arsenal",
+      "teamFromLabel": "arsenal",
+      "canonicalRecommendation": "manchester-city"
+    },
+    {
+      "id": "9690105086226",
+      "slug": "arsenal-home-2002-04-kids",
+      "team": "ארסנל",
+      "nameHe": "ארסנל 2002-04 סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/צלסי-2012-סט-ילדים",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/04_Retro_Arsenal_Home.jpg?v=1742317358"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "arsenal",
+      "teamFromUrl": "chelsea",
+      "teamFromImage": "arsenal",
+      "teamFromLabel": "arsenal",
+      "canonicalRecommendation": "chelsea"
+    },
+    {
+      "id": "9729686569234",
+      "slug": "argentina-away-kids",
+      "team": "ארגנטינה",
+      "nameHe": "ארגנטינה חוץ 2024 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ברזיל-רטרו-2002-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Kids_Argentina_away.jpg?v=1742382499"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "argentina",
+      "teamFromUrl": "brazil",
+      "teamFromImage": "argentina",
+      "teamFromLabel": "argentina",
+      "canonicalRecommendation": "brazil"
+    },
+    {
+      "id": "9598247076114",
+      "slug": "england-away",
+      "team": "אנגליה",
+      "nameHe": "אנגליה מדי חוץ 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/הולנד-מדי-בית-2024-יורו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/1724c9acfa59c9c9350ae029b162e754.jpg?v=1742317466"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "england",
+      "teamFromUrl": "netherlands",
+      "teamFromImage": "england",
+      "teamFromLabel": "england",
+      "canonicalRecommendation": "netherlands"
+    },
+    {
+      "id": "9690240581906",
+      "slug": "england-away-kids",
+      "team": "אנגליה",
+      "nameHe": "אנגליה חוץ 2024 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/צרפת-חוץ-2024-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/England_2024.jpg?v=1742317336"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "england",
+      "teamFromUrl": "france",
+      "teamFromImage": "england",
+      "teamFromLabel": "england",
+      "canonicalRecommendation": "france"
+    },
+    {
+      "id": "9729685586194",
+      "slug": "jersey-home-2024-25-kids",
+      "team": "",
+      "nameHe": "אל נאסר בית 2024-25 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/שארלוט-בית-2024-25-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Al-Nassr_2024_b36925a1-3da9-4438-b6f3-dab39c4206f1.jpg?v=1742317262"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9729681326354",
+      "slug": "inter-milan-home-kids",
+      "team": "אינטר",
+      "nameHe": "אינטר מילאן 2010 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/צלסי-2012-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/10RetroInter.jpg?v=1742317277"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "inter-milan",
+      "teamFromUrl": "chelsea",
+      "teamFromImage": "inter-milan",
+      "teamFromLabel": "inter-milan",
+      "canonicalRecommendation": "chelsea"
+    },
+    {
+      "id": "9690573963538",
+      "slug": "inter-miami-home-kids",
+      "team": "אינטר מיאמי",
+      "nameHe": "אינטר מיאמי בית 2024 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/ברצלונה-2011-סט-ילדים-copy-2",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Miami_HOME1.jpg?v=1742317329"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "inter-miami",
+      "teamFromUrl": "barcelona",
+      "teamFromImage": "inter-miami",
+      "teamFromLabel": "inter-miami",
+      "canonicalRecommendation": "barcelona"
+    },
+    {
+      "id": "9598262214930",
+      "slug": "italy-home",
+      "team": "איטליה",
+      "nameHe": "איטליה מדי בית 2024 יורו",
+      "sourceUrl": "https://sporthubkit.com/products/צרפת-מדי-בית-2024-יורו-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Italy_202425_Euro_Home_Shorts.jpg?v=1742317462"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "italy",
+      "teamFromUrl": "france",
+      "teamFromImage": "italy",
+      "teamFromLabel": "italy",
+      "canonicalRecommendation": "france"
+    },
+    {
+      "id": "9690251395346",
+      "slug": "italy-home-kids",
+      "team": "איטליה",
+      "nameHe": "איטליה בית 2024 - סט ילדים",
+      "sourceUrl": "https://sporthubkit.com/products/פורטוגל-חוץ-2024-סט-ילדים-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Italy_2024.jpg?v=1742317331"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "italy",
+      "teamFromUrl": "portugal",
+      "teamFromImage": "italy",
+      "teamFromLabel": "italy",
+      "canonicalRecommendation": "portugal"
+    },
+    {
+      "id": "10148766974226",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "Untitled May26_13:49",
+      "sourceUrl": "https://sporthubkit.com/products/untitled-may26_13-49",
+      "images": [],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9747402719506",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "Shipping Protection",
+      "sourceUrl": "https://sporthubkit.com/products/shipping-protection",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/10eb6285aef6baae0e7ef0025a29650a.png?v=1742317166"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8650608410898",
+      "slug": "jersey-home",
+      "team": "",
+      "nameHe": "Gift card",
+      "sourceUrl": "https://sporthubkit.com/products/rise-ai-giftcard",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/36697cd395bb478e85b1f4219fedc6b0.webp?v=1774722208"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "10153419735314",
+      "slug": "jersey-away-2025-26",
+      "team": "",
+      "nameHe": "2025/26 חולצת כדורגל אברדין חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2025-26-חולצת-כדורגל-אברדין-חוץ",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Aberdeen_F.C._2025.jpg?v=1748879147"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9750509748498",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצת כדורגל פנרבחצה בית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצת-כדורגל-אברדין-חוץ-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Fenerbahce_S.K._2024.jpg?v=1742317153"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9765812175122",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל פורסטמות בית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-פורסטמות-בית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Portsmouth_F.C._2024.jpg?v=1742382840"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9797683347730",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל סנדרלנד חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-סנדרלנד-חוץ",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Sunderlandl_2024.1.jpg?v=1742316957"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9743434088722",
+      "slug": "jersey-third-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל ניוקאסל שלישית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-לידס-בית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Newcastle_United_2024_3_1.jpg?v=1742317180"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "newcastle",
+      "teamFromLabel": "newcastle",
+      "canonicalRecommendation": "leeds"
+    },
+    {
+      "id": "9797680529682",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל לסטר סיטי חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-לידס-נטרלית-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Leicester_City_2024.2_a3eace2d-e93e-4fb7-ad9f-5fcfa4376ad9.jpg?v=1742316963"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "leicester",
+      "teamFromLabel": "manchester-city",
+      "canonicalRecommendation": "leeds"
+    },
+    {
+      "id": "9743429173522",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל לסטר סיטי בית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-ניוקאסל-בית-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Leicester_City_2024..jpg?v=1742317194"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "",
+      "teamFromUrl": "newcastle",
+      "teamFromImage": "leicester",
+      "teamFromLabel": "manchester-city",
+      "canonicalRecommendation": "newcastle"
+    },
+    {
+      "id": "9797679972626",
+      "slug": "maccabi-tel-aviv-home-2024-25",
+      "team": "מכבי תל אביב",
+      "nameHe": "2024-25 חולצות כדורגל לידס נטרלית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-לידס-נטרלית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Leeds_United_F.C._2024.25_Thirds.jpg?v=1742316964"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "maccabi-tel-aviv",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "manchester-united",
+      "teamFromLabel": "maccabi-tel-aviv",
+      "canonicalRecommendation": "leeds"
+    },
+    {
+      "id": "9765811716370",
+      "slug": "maccabi-tel-aviv-away-2024-25",
+      "team": "מכבי תל אביב",
+      "nameHe": "2024-25 חולצות כדורגל לידס חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-לידס-חוץ",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Leeds_United_F.C._2024.jpg?v=1742382841"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "maccabi-tel-aviv",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "manchester-united",
+      "teamFromLabel": "maccabi-tel-aviv",
+      "canonicalRecommendation": "leeds"
+    },
+    {
+      "id": "9743433335058",
+      "slug": "israeli-other-home-2024-25",
+      "team": "ישראלי",
+      "nameHe": "2024-25 חולצות כדורגל לידס בית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-ווטפורד-בית-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Leeds_United.jpg?v=1742317183"
+      ],
+      "issue": "image-vs-label",
+      "currentTeamSlug": "israeli-other",
+      "teamFromUrl": null,
+      "teamFromImage": "manchester-united",
+      "teamFromLabel": "leeds",
+      "canonicalRecommendation": "manchester-united"
+    },
+    {
+      "id": "9797687214354",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל וורקסהאם נטרלית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-וורקסהאם-נטרלית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Wrexham_2024.25_Third.jpg?v=1742316951"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9797686722834",
+      "slug": "jersey-away-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל וורקסהאם חוץ",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-וורקסהאם-חוץ",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Wrexham_2024.25_Away.jpg?v=1742316953"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9797685608722",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל וורקסהאם בית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-סנדרלנד-חוץ-copy",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Wrexham_2024.25_Home.jpg?v=1742316955"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "9743426519314",
+      "slug": "jersey-home-2024-25",
+      "team": "",
+      "nameHe": "2024-25 חולצות כדורגל  קריסטל פאלאס בית",
+      "sourceUrl": "https://sporthubkit.com/products/2024-25-חולצות-כדורגל-ברמנוטס-בית",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Crystal_Palace_2024.2.jpg?v=1742317202"
+      ],
+      "issue": "no-team-detected",
+      "currentTeam": "",
+      "teamFromUrl": null,
+      "teamFromImage": null,
+      "teamFromLabel": null
+    },
+    {
+      "id": "8401839456530",
+      "slug": "bayern-munich-retro",
+      "team": "באירן מינכן",
+      "nameHe": "2012 באירן מינכן רטרו",
+      "sourceUrl": "https://sporthubkit.com/products/copy-of-באירן-מינכן-רטרו-1998",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/0fcb55e13bde9c58229981f8a06363f5.webp?v=1774721800"
+      ],
+      "issue": "image-vs-url",
+      "currentTeamSlug": "bayern-munich",
+      "teamFromUrl": "bayern-munich",
+      "teamFromImage": "barcelona",
+      "teamFromLabel": "bayern-munich",
+      "canonicalRecommendation": "bayern-munich"
+    }
+  ]
+}

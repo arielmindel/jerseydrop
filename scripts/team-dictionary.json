@@ -1,0 +1,988 @@
+[
+  {
+    "slug": "real-madrid",
+    "he": [
+      "ריאל מדריד",
+      "ריאל"
+    ],
+    "en": [
+      "real madrid",
+      "real-madrid",
+      "realmadrid",
+      "rmcf"
+    ]
+  },
+  {
+    "slug": "barcelona",
+    "he": [
+      "ברצלונה",
+      "ברסה"
+    ],
+    "en": [
+      "barcelona",
+      "barca",
+      "fcb",
+      "fc-barcelona"
+    ]
+  },
+  {
+    "slug": "manchester-united",
+    "he": [
+      "מנצסטר יונייטד",
+      "מנצ'סטר יונייטד",
+      "יונייטד",
+      "manunited"
+    ],
+    "en": [
+      "manchester united",
+      "man united",
+      "man-united",
+      "manchester-united",
+      "united",
+      "mufc"
+    ]
+  },
+  {
+    "slug": "manchester-city",
+    "he": [
+      "מנצ'סטר סיטי",
+      "סיטי"
+    ],
+    "en": [
+      "manchester city",
+      "man city",
+      "manchester-city",
+      "man-city",
+      "city",
+      "mci"
+    ]
+  },
+  {
+    "slug": "liverpool",
+    "he": [
+      "ליברפול"
+    ],
+    "en": [
+      "liverpool",
+      "lfc"
+    ]
+  },
+  {
+    "slug": "arsenal",
+    "he": [
+      "ארסנל"
+    ],
+    "en": [
+      "arsenal",
+      "afc"
+    ]
+  },
+  {
+    "slug": "chelsea",
+    "he": [
+      "צלסי"
+    ],
+    "en": [
+      "chelsea",
+      "cfc"
+    ]
+  },
+  {
+    "slug": "tottenham",
+    "he": [
+      "טוטהנאם",
+      "טוטנהאם",
+      "ספרס"
+    ],
+    "en": [
+      "tottenham",
+      "spurs",
+      "thfc"
+    ]
+  },
+  {
+    "slug": "newcastle",
+    "he": [
+      "ניוקאסל"
+    ],
+    "en": [
+      "newcastle",
+      "nufc"
+    ]
+  },
+  {
+    "slug": "bayern-munich",
+    "he": [
+      "באירן מינכן",
+      "באיירן",
+      "באירן"
+    ],
+    "en": [
+      "bayern",
+      "bayern munich",
+      "bayern-munich",
+      "fcb"
+    ]
+  },
+  {
+    "slug": "borussia-dortmund",
+    "he": [
+      "דורטמונד"
+    ],
+    "en": [
+      "dortmund",
+      "bvb",
+      "borussia"
+    ]
+  },
+  {
+    "slug": "psg",
+    "he": [
+      "פריז סן ז'רמן",
+      "פריז",
+      "פסז"
+    ],
+    "en": [
+      "psg",
+      "paris",
+      "paris-saint-germain"
+    ]
+  },
+  {
+    "slug": "marseille",
+    "he": [
+      "מארסיי",
+      "מרסיי"
+    ],
+    "en": [
+      "marseille",
+      "om",
+      "olympique-marseille"
+    ]
+  },
+  {
+    "slug": "lyon",
+    "he": [
+      "ליון"
+    ],
+    "en": [
+      "lyon",
+      "olympique-lyonnais",
+      "ol"
+    ]
+  },
+  {
+    "slug": "juventus",
+    "he": [
+      "יובנטוס",
+      "יובה"
+    ],
+    "en": [
+      "juventus",
+      "juve",
+      "juv"
+    ]
+  },
+  {
+    "slug": "ac-milan",
+    "he": [
+      "מילאן",
+      "אצ' מילאן"
+    ],
+    "en": [
+      "milan",
+      "ac milan",
+      "ac-milan",
+      "acmilan"
+    ]
+  },
+  {
+    "slug": "inter-milan",
+    "he": [
+      "אינטר",
+      "אינטר מילאן"
+    ],
+    "en": [
+      "inter",
+      "inter milan",
+      "inter-milan",
+      "intermilan"
+    ]
+  },
+  {
+    "slug": "napoli",
+    "he": [
+      "נאפולי"
+    ],
+    "en": [
+      "napoli",
+      "ssc-napoli"
+    ]
+  },
+  {
+    "slug": "roma",
+    "he": [
+      "רומא"
+    ],
+    "en": [
+      "roma",
+      "as-roma",
+      "asroma"
+    ]
+  },
+  {
+    "slug": "lazio",
+    "he": [
+      "לאציו"
+    ],
+    "en": [
+      "lazio",
+      "ss-lazio"
+    ]
+  },
+  {
+    "slug": "atletico-madrid",
+    "he": [
+      "אתלטיקו מדריד",
+      "אתלטיקו"
+    ],
+    "en": [
+      "atletico",
+      "atletico-madrid",
+      "atleti"
+    ]
+  },
+  {
+    "slug": "sevilla",
+    "he": [
+      "סביליה"
+    ],
+    "en": [
+      "sevilla"
+    ]
+  },
+  {
+    "slug": "betis",
+    "he": [
+      "בטיס"
+    ],
+    "en": [
+      "betis",
+      "real-betis"
+    ]
+  },
+  {
+    "slug": "athletic-bilbao",
+    "he": [
+      "אתלטיק בילבאו"
+    ],
+    "en": [
+      "athletic",
+      "bilbao",
+      "athletic-bilbao"
+    ]
+  },
+  {
+    "slug": "celtic",
+    "he": [
+      "סלטיק"
+    ],
+    "en": [
+      "celtic"
+    ]
+  },
+  {
+    "slug": "ajax",
+    "he": [
+      "אאיאקס",
+      "אייאקס"
+    ],
+    "en": [
+      "ajax"
+    ]
+  },
+  {
+    "slug": "benfica",
+    "he": [
+      "בנפיקה"
+    ],
+    "en": [
+      "benfica"
+    ]
+  },
+  {
+    "slug": "sporting",
+    "he": [
+      "ספורטינג"
+    ],
+    "en": [
+      "sporting",
+      "sporting-cp",
+      "lisbon"
+    ]
+  },
+  {
+    "slug": "porto",
+    "he": [
+      "פורטו"
+    ],
+    "en": [
+      "porto",
+      "fc-porto"
+    ]
+  },
+  {
+    "slug": "braga",
+    "he": [
+      "בראגה"
+    ],
+    "en": [
+      "braga",
+      "sc-braga"
+    ]
+  },
+  {
+    "slug": "inter-miami",
+    "he": [
+      "אינטר מיאמי",
+      "מיאמי"
+    ],
+    "en": [
+      "inter miami",
+      "miami",
+      "intermiami"
+    ]
+  },
+  {
+    "slug": "boca-juniors",
+    "he": [
+      "בוקה",
+      "בוקה ג'וניורס"
+    ],
+    "en": [
+      "boca",
+      "boca-juniors",
+      "boca juniors"
+    ]
+  },
+  {
+    "slug": "river-plate",
+    "he": [
+      "ריבר פלייט"
+    ],
+    "en": [
+      "river",
+      "river-plate",
+      "river plate"
+    ]
+  },
+  {
+    "slug": "flamengo",
+    "he": [
+      "פלמנגו"
+    ],
+    "en": [
+      "flamengo"
+    ]
+  },
+  {
+    "slug": "santos",
+    "he": [
+      "סנטוס"
+    ],
+    "en": [
+      "santos"
+    ]
+  },
+  {
+    "slug": "palmeiras",
+    "he": [
+      "פלמייראס"
+    ],
+    "en": [
+      "palmeiras"
+    ]
+  },
+  {
+    "slug": "corinthians",
+    "he": [
+      "קורינתיאנס"
+    ],
+    "en": [
+      "corinthians"
+    ]
+  },
+  {
+    "slug": "fluminense",
+    "he": [
+      "פלומיננזה"
+    ],
+    "en": [
+      "fluminense"
+    ]
+  },
+  {
+    "slug": "botafogo",
+    "he": [
+      "בוטאפוגו"
+    ],
+    "en": [
+      "botafogo"
+    ]
+  },
+  {
+    "slug": "leicester",
+    "he": [
+      "לסטר"
+    ],
+    "en": [
+      "leicester",
+      "lcfc"
+    ]
+  },
+  {
+    "slug": "aston-villa",
+    "he": [
+      "אסטון וילה"
+    ],
+    "en": [
+      "aston villa",
+      "aston-villa",
+      "avfc"
+    ]
+  },
+  {
+    "slug": "everton",
+    "he": [
+      "אברטון"
+    ],
+    "en": [
+      "everton"
+    ]
+  },
+  {
+    "slug": "leeds",
+    "he": [
+      "לידס"
+    ],
+    "en": [
+      "leeds"
+    ]
+  },
+  {
+    "slug": "wolves",
+    "he": [
+      "וולבס",
+      "וולבר"
+    ],
+    "en": [
+      "wolves",
+      "wolverhampton"
+    ]
+  },
+  {
+    "slug": "brighton",
+    "he": [
+      "ברייטון"
+    ],
+    "en": [
+      "brighton"
+    ]
+  },
+  {
+    "slug": "fulham",
+    "he": [
+      "פולהאם"
+    ],
+    "en": [
+      "fulham"
+    ]
+  },
+  {
+    "slug": "west-ham",
+    "he": [
+      "ווסטהאם"
+    ],
+    "en": [
+      "west ham",
+      "west-ham",
+      "westham"
+    ]
+  },
+  {
+    "slug": "valencia",
+    "he": [
+      "ולנסיה"
+    ],
+    "en": [
+      "valencia"
+    ]
+  },
+  {
+    "slug": "cadiz",
+    "he": [
+      "קאדיז"
+    ],
+    "en": [
+      "cadiz"
+    ]
+  },
+  {
+    "slug": "hapoel-tel-aviv",
+    "he": [
+      "הפועל תל אביב",
+      "הפועל ת\"א"
+    ],
+    "en": [
+      "hapoel-tel-aviv",
+      "hapoel tel aviv",
+      "hapoel-ta",
+      "hapoel"
+    ]
+  },
+  {
+    "slug": "maccabi-tel-aviv",
+    "he": [
+      "מכבי תל אביב",
+      "מכבי ת\"א"
+    ],
+    "en": [
+      "maccabi-tel-aviv",
+      "maccabi tel aviv",
+      "maccabi-ta",
+      "maccabi"
+    ]
+  },
+  {
+    "slug": "beitar-jerusalem",
+    "he": [
+      "ביתר ירושלים",
+      "ביתר"
+    ],
+    "en": [
+      "beitar",
+      "beitar-jerusalem",
+      "beitar jerusalem"
+    ]
+  },
+  {
+    "slug": "hapoel-beer-sheva",
+    "he": [
+      "הפועל באר שבע"
+    ],
+    "en": [
+      "hapoel-beer-sheva",
+      "beer sheva"
+    ]
+  },
+  {
+    "slug": "maccabi-haifa",
+    "he": [
+      "מכבי חיפה"
+    ],
+    "en": [
+      "maccabi-haifa",
+      "maccabi haifa"
+    ]
+  },
+  {
+    "slug": "argentina",
+    "he": [
+      "ארגנטינה"
+    ],
+    "en": [
+      "argentina",
+      "rgntynh",
+      "rgntyn"
+    ]
+  },
+  {
+    "slug": "brazil",
+    "he": [
+      "ברזיל"
+    ],
+    "en": [
+      "brazil",
+      "brasil",
+      "brzyl"
+    ]
+  },
+  {
+    "slug": "portugal",
+    "he": [
+      "פורטוגל"
+    ],
+    "en": [
+      "portugal",
+      "pwrtwgl"
+    ]
+  },
+  {
+    "slug": "france",
+    "he": [
+      "צרפת"
+    ],
+    "en": [
+      "france",
+      "zrpt"
+    ]
+  },
+  {
+    "slug": "spain",
+    "he": [
+      "ספרד"
+    ],
+    "en": [
+      "spain",
+      "sprd"
+    ]
+  },
+  {
+    "slug": "germany",
+    "he": [
+      "גרמניה"
+    ],
+    "en": [
+      "germany",
+      "grmnyh",
+      "grmny"
+    ]
+  },
+  {
+    "slug": "england",
+    "he": [
+      "אנגליה"
+    ],
+    "en": [
+      "england",
+      "nglyh",
+      "ngly"
+    ]
+  },
+  {
+    "slug": "italy",
+    "he": [
+      "איטליה"
+    ],
+    "en": [
+      "italy",
+      "ytlyh",
+      "ytly"
+    ]
+  },
+  {
+    "slug": "netherlands",
+    "he": [
+      "הולנד"
+    ],
+    "en": [
+      "netherlands",
+      "holland",
+      "hwlnd"
+    ]
+  },
+  {
+    "slug": "belgium",
+    "he": [
+      "בלגיה"
+    ],
+    "en": [
+      "belgium",
+      "blgyh"
+    ]
+  },
+  {
+    "slug": "japan",
+    "he": [
+      "יפן"
+    ],
+    "en": [
+      "japan",
+      "ypn"
+    ]
+  },
+  {
+    "slug": "mexico",
+    "he": [
+      "מקסיקו"
+    ],
+    "en": [
+      "mexico",
+      "mqsyqw",
+      "msyqw"
+    ]
+  },
+  {
+    "slug": "morocco",
+    "he": [
+      "מרוקו"
+    ],
+    "en": [
+      "morocco",
+      "mrwqw"
+    ]
+  },
+  {
+    "slug": "usa",
+    "he": [
+      "ארה\"ב",
+      "ארהב"
+    ],
+    "en": [
+      "usa",
+      "us",
+      "united states"
+    ]
+  },
+  {
+    "slug": "canada",
+    "he": [
+      "קנדה"
+    ],
+    "en": [
+      "canada",
+      "qndh"
+    ]
+  },
+  {
+    "slug": "colombia",
+    "he": [
+      "קולומביה"
+    ],
+    "en": [
+      "colombia"
+    ]
+  },
+  {
+    "slug": "croatia",
+    "he": [
+      "קרואטיה"
+    ],
+    "en": [
+      "croatia"
+    ]
+  },
+  {
+    "slug": "turkey",
+    "he": [
+      "טורקיה"
+    ],
+    "en": [
+      "turkey"
+    ]
+  },
+  {
+    "slug": "saudi-arabia",
+    "he": [
+      "סעודיה",
+      "ערב הסעודית"
+    ],
+    "en": [
+      "saudi",
+      "saudi-arabia"
+    ]
+  },
+  {
+    "slug": "south-korea",
+    "he": [
+      "דרום קוריאה"
+    ],
+    "en": [
+      "south korea",
+      "south-korea",
+      "korea"
+    ]
+  },
+  {
+    "slug": "scotland",
+    "he": [
+      "סקוטלנד"
+    ],
+    "en": [
+      "scotland"
+    ]
+  },
+  {
+    "slug": "wales",
+    "he": [
+      "וויילס",
+      "וילס"
+    ],
+    "en": [
+      "wales"
+    ]
+  },
+  {
+    "slug": "switzerland",
+    "he": [
+      "שוויץ"
+    ],
+    "en": [
+      "switzerland"
+    ]
+  },
+  {
+    "slug": "norway",
+    "he": [
+      "נורווגיה"
+    ],
+    "en": [
+      "norway"
+    ]
+  },
+  {
+    "slug": "denmark",
+    "he": [
+      "דנמרק"
+    ],
+    "en": [
+      "denmark"
+    ]
+  },
+  {
+    "slug": "chile",
+    "he": [
+      "צ'ילה"
+    ],
+    "en": [
+      "chile"
+    ]
+  },
+  {
+    "slug": "uruguay",
+    "he": [
+      "אורוגוואי"
+    ],
+    "en": [
+      "uruguay"
+    ]
+  },
+  {
+    "slug": "peru",
+    "he": [
+      "פרו"
+    ],
+    "en": [
+      "peru"
+    ]
+  },
+  {
+    "slug": "ecuador",
+    "he": [
+      "אקוודור"
+    ],
+    "en": [
+      "ecuador"
+    ]
+  },
+  {
+    "slug": "ghana",
+    "he": [
+      "גאנה"
+    ],
+    "en": [
+      "ghana"
+    ]
+  },
+  {
+    "slug": "senegal",
+    "he": [
+      "סנגל"
+    ],
+    "en": [
+      "senegal"
+    ]
+  },
+  {
+    "slug": "nigeria",
+    "he": [
+      "ניגריה"
+    ],
+    "en": [
+      "nigeria"
+    ]
+  },
+  {
+    "slug": "ivory-coast",
+    "he": [
+      "חוף השנהב"
+    ],
+    "en": [
+      "ivory coast",
+      "ivory-coast",
+      "cote d ivoire"
+    ]
+  },
+  {
+    "slug": "cameroon",
+    "he": [
+      "קמרון"
+    ],
+    "en": [
+      "cameroon"
+    ]
+  },
+  {
+    "slug": "qatar",
+    "he": [
+      "קטאר"
+    ],
+    "en": [
+      "qatar"
+    ]
+  },
+  {
+    "slug": "iran",
+    "he": [
+      "איראן"
+    ],
+    "en": [
+      "iran"
+    ]
+  },
+  {
+    "slug": "iraq",
+    "he": [
+      "עיראק"
+    ],
+    "en": [
+      "iraq"
+    ]
+  },
+  {
+    "slug": "jordan",
+    "he": [
+      "ירדן"
+    ],
+    "en": [
+      "jordan"
+    ]
+  },
+  {
+    "slug": "egypt",
+    "he": [
+      "מצרים"
+    ],
+    "en": [
+      "egypt"
+    ]
+  },
+  {
+    "slug": "tunisia",
+    "he": [
+      "תוניסיה"
+    ],
+    "en": [
+      "tunisia"
+    ]
+  },
+  {
+    "slug": "algeria",
+    "he": [
+      "אלג'יריה"
+    ],
+    "en": [
+      "algeria"
+    ]
+  }
+]

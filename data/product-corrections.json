@@ -1,0 +1,1575 @@
+{
+  "stats": {
+    "total": 995,
+    "autoFixed": 87,
+    "flaggedImageMismatch": 56,
+    "flaggedNoTeam": 122,
+    "unchanged": 730
+  },
+  "fixes": {
+    "10328706646290": {
+      "teamSlug": "spain",
+      "team": "ספרד"
+    },
+    "10328706318610": {
+      "teamSlug": "france",
+      "team": "צרפת"
+    },
+    "10328706154770": {
+      "teamSlug": "france",
+      "team": "צרפת"
+    },
+    "10291378356498": {
+      "teamSlug": "braga",
+      "team": "בראגה"
+    },
+    "10291376423186": {
+      "teamSlug": "england",
+      "team": "אנגליה"
+    },
+    "10234098221330": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "10234097828114": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "10234096845074": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "10234092454162": {
+      "teamSlug": "marseille",
+      "team": "מארסיי"
+    },
+    "10234092060946": {
+      "teamSlug": "marseille",
+      "team": "מארסיי"
+    },
+    "10234091864338": {
+      "teamSlug": "marseille",
+      "team": "מארסיי"
+    },
+    "10215571161362": {
+      "teamSlug": "mexico",
+      "team": "מקסיקו"
+    },
+    "10212783128850": {
+      "teamSlug": "athletic-bilbao",
+      "team": "אתלטיק בילבאו"
+    },
+    "10212782670098": {
+      "teamSlug": "athletic-bilbao",
+      "team": "אתלטיק בילבאו"
+    },
+    "10212777787666": {
+      "teamSlug": "sevilla",
+      "team": "סביליה"
+    },
+    "10212777394450": {
+      "teamSlug": "sevilla",
+      "team": "סביליה"
+    },
+    "10212776411410": {
+      "teamSlug": "sevilla",
+      "team": "סביליה"
+    },
+    "10212769530130": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "10212749771026": {
+      "teamSlug": "west-ham",
+      "team": "ווסטהאם"
+    },
+    "10212748722450": {
+      "teamSlug": "ajax",
+      "team": "אאיאקס"
+    },
+    "10212748427538": {
+      "teamSlug": "ajax",
+      "team": "אאיאקס"
+    },
+    "10211823583506": {
+      "teamSlug": "ajax",
+      "team": "אאיאקס"
+    },
+    "10211823485202": {
+      "teamSlug": "ajax",
+      "team": "אאיאקס"
+    },
+    "10200835653906": {
+      "teamSlug": "everton",
+      "team": "אברטון"
+    },
+    "10200807932178": {
+      "teamSlug": "brighton",
+      "team": "ברייטון"
+    },
+    "8220717941010": {
+      "teamSlug": "barcelona",
+      "team": "ברצלונה"
+    },
+    "9729687093522": {
+      "teamSlug": "argentina",
+      "team": "ארגנטינה"
+    },
+    "9166076510482": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "10170548486418": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "9166073856274": {
+      "teamSlug": "barcelona",
+      "team": "ברצלונה"
+    },
+    "9729689354514": {
+      "teamSlug": "ac-milan",
+      "team": "מילאן"
+    },
+    "9598253105426": {
+      "teamSlug": "england",
+      "team": "אנגליה"
+    },
+    "9738429759762": {
+      "teamSlug": "chelsea",
+      "team": "צלסי"
+    },
+    "9738429399314": {
+      "teamSlug": "borussia-dortmund",
+      "team": "דורטמונד"
+    },
+    "9738260250898": {
+      "teamSlug": "barcelona",
+      "team": "ברצלונה"
+    },
+    "9738428416274": {
+      "teamSlug": "liverpool",
+      "team": "ליברפול"
+    },
+    "9738425925906": {
+      "teamSlug": "psg",
+      "team": "פריז סן ז'רמן"
+    },
+    "9738430644498": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "9738429137170": {
+      "teamSlug": "manchester-city",
+      "team": "מנצ'סטר סיטי"
+    },
+    "9738428547346": {
+      "teamSlug": "ac-milan",
+      "team": "מילאן"
+    },
+    "9738427924754": {
+      "teamSlug": "liverpool",
+      "team": "ליברפול"
+    },
+    "9690102169874": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "9729685258514": {
+      "teamSlug": "borussia-dortmund",
+      "team": "דורטמונד"
+    },
+    "9598285807890": {
+      "teamSlug": "spain",
+      "team": "ספרד"
+    },
+    "9690243465490": {
+      "teamSlug": "england",
+      "team": "אנגליה"
+    },
+    "9598274568466": {
+      "teamSlug": "belgium",
+      "team": "בלגיה"
+    },
+    "9690226295058": {
+      "teamSlug": "germany",
+      "team": "גרמניה"
+    },
+    "9729690304786": {
+      "teamSlug": "ac-milan",
+      "team": "מילאן"
+    },
+    "10074398359826": {
+      "teamSlug": "spain",
+      "team": "ספרד"
+    },
+    "10074397966610": {
+      "teamSlug": "england",
+      "team": "אנגליה"
+    },
+    "10074398621970": {
+      "teamSlug": "chelsea",
+      "team": "צלסי"
+    },
+    "10074395541778": {
+      "teamSlug": "brazil",
+      "team": "ברזיל"
+    },
+    "10074397114642": {
+      "teamSlug": "germany",
+      "team": "גרמניה"
+    },
+    "9690599620882": {
+      "teamSlug": "borussia-dortmund",
+      "team": "דורטמונד"
+    },
+    "9690113343762": {
+      "teamSlug": "liverpool",
+      "team": "ליברפול"
+    },
+    "9729687847186": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "9690105872658": {
+      "teamSlug": "arsenal",
+      "team": "ארסנל"
+    },
+    "9729681654034": {
+      "teamSlug": "inter-milan",
+      "team": "אינטר"
+    },
+    "8401873895698": {
+      "teamSlug": "manchester-city",
+      "team": "מנצ'סטר סיטי"
+    },
+    "9690124648722": {
+      "teamSlug": "arsenal",
+      "team": "ארסנל"
+    },
+    "9754567999762": {
+      "teamSlug": "marseille",
+      "team": "מארסיי"
+    },
+    "9754565640466": {
+      "teamSlug": "marseille",
+      "team": "מארסיי"
+    },
+    "9754559185170": {
+      "teamSlug": "psg",
+      "team": "פריז סן ז'רמן"
+    },
+    "9690614235410": {
+      "teamSlug": "inter-miami",
+      "team": "אינטר מיאמי"
+    },
+    "10170447134994": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "10132106805522": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "9666987688210": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "10132117815570": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "10132104315154": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "10132105330962": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "9708678283538": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "10132106019090": {
+      "teamSlug": "river-plate",
+      "team": "ריבר פלייט"
+    },
+    "8236009980178": {
+      "teamSlug": "celtic",
+      "team": "סלטיק"
+    },
+    "9637360795922": {
+      "teamSlug": "cadiz",
+      "team": "קאדיז"
+    },
+    "8225566720274": {
+      "teamSlug": "liverpool",
+      "team": "ליברפול"
+    },
+    "9636902797586": {
+      "teamSlug": "benfica",
+      "team": "בנפיקה"
+    },
+    "9666986148114": {
+      "teamSlug": "sporting",
+      "team": "ספורטינג"
+    },
+    "8222061265170": {
+      "teamSlug": "arsenal",
+      "team": "ארסנל"
+    },
+    "9637376885010": {
+      "teamSlug": "benfica",
+      "team": "בנפיקה"
+    },
+    "9765807915282": {
+      "teamSlug": "sevilla",
+      "team": "סביליה"
+    },
+    "9765808242962": {
+      "teamSlug": "sevilla",
+      "team": "סביליה"
+    },
+    "8239945023762": {
+      "teamSlug": "netherlands",
+      "team": "הולנד"
+    },
+    "8287455576338": {
+      "teamSlug": "brazil",
+      "team": "ברזיל"
+    },
+    "8239887450386": {
+      "teamSlug": "italy",
+      "team": "איטליה"
+    },
+    "8239882076434": {
+      "teamSlug": "netherlands",
+      "team": "הולנד"
+    },
+    "9754578911506": {
+      "teamSlug": "santos",
+      "team": "סנטוס"
+    },
+    "8233780019474": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "8239900786962": {
+      "teamSlug": "argentina",
+      "team": "ארגנטינה"
+    },
+    "9765803393298": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "9750583378194": {
+      "teamSlug": "flamengo",
+      "team": "פלמנגו"
+    },
+    "8216474190098": {
+      "teamSlug": "ajax",
+      "team": "אאיאקס"
+    },
+    "9636949852434": {
+      "teamSlug": "ajax",
+      "team": "אאיאקס"
+    },
+    "8232678686994": {
+      "teamSlug": "napoli",
+      "team": "נאפולי"
+    },
+    "9750431170834": {
+      "teamSlug": "ajax",
+      "team": "אאיאקס"
+    },
+    "8232646836498": {
+      "teamSlug": "celtic",
+      "team": "סלטיק"
+    },
+    "8221358358802": {
+      "teamSlug": "napoli",
+      "team": "נאפולי"
+    },
+    "9165797392658": {
+      "teamSlug": "napoli",
+      "team": "נאפולי"
+    },
+    "8221343613202": {
+      "teamSlug": "ac-milan",
+      "team": "מילאן"
+    },
+    "8221237739794": {
+      "teamSlug": "juventus",
+      "team": "יובנטוס"
+    },
+    "8221225845010": {
+      "teamSlug": "inter-milan",
+      "team": "אינטר"
+    },
+    "8365073563922": {
+      "teamSlug": "brazil",
+      "team": "ברזיל"
+    },
+    "9667010494738": {
+      "teamSlug": "germany",
+      "team": "גרמניה"
+    },
+    "8235474845970": {
+      "teamSlug": "ac-milan",
+      "team": "מילאן"
+    },
+    "9728065274130": {
+      "teamSlug": "real-madrid",
+      "team": "ריאל מדריד"
+    },
+    "8218623115538": {
+      "teamSlug": "scotland",
+      "team": "סקוטלנד"
+    },
+    "8363464917266": {
+      "teamSlug": "bayern-munich",
+      "team": "באירן מינכן"
+    },
+    "9598241145106": {
+      "teamSlug": "germany",
+      "team": "גרמניה"
+    },
+    "9729684996370": {
+      "teamSlug": "brazil",
+      "team": "ברזיל"
+    },
+    "8401822122258": {
+      "teamSlug": "bayern-munich",
+      "team": "באירן מינכן"
+    },
+    "9598157226258": {
+      "teamSlug": "portugal",
+      "team": "פורטוגל"
+    },
+    "9690210697490": {
+      "teamSlug": "barcelona",
+      "team": "ברצלונה"
+    },
+    "8287447154962": {
+      "teamSlug": "bayern-munich",
+      "team": "באירן מינכן"
+    },
+    "9729683980562": {
+      "teamSlug": "ac-milan",
+      "team": "מילאן"
+    },
+    "9598269554962": {
+      "teamSlug": "italy",
+      "team": "איטליה"
+    },
+    "8287445451026": {
+      "teamSlug": "manchester-city",
+      "team": "מנצ'סטר סיטי"
+    },
+    "9765719539986": {
+      "teamSlug": "borussia-dortmund",
+      "team": "דורטמונד"
+    },
+    "9690121830674": {
+      "teamSlug": "manchester-city",
+      "team": "מנצ'סטר סיטי"
+    },
+    "9690105086226": {
+      "teamSlug": "chelsea",
+      "team": "צלסי"
+    },
+    "9729686569234": {
+      "teamSlug": "brazil",
+      "team": "ברזיל"
+    },
+    "9598247076114": {
+      "teamSlug": "netherlands",
+      "team": "הולנד"
+    },
+    "9690240581906": {
+      "teamSlug": "france",
+      "team": "צרפת"
+    },
+    "9729681326354": {
+      "teamSlug": "chelsea",
+      "team": "צלסי"
+    },
+    "9690573963538": {
+      "teamSlug": "barcelona",
+      "team": "ברצלונה"
+    },
+    "9598262214930": {
+      "teamSlug": "france",
+      "team": "צרפת"
+    },
+    "9690251395346": {
+      "teamSlug": "portugal",
+      "team": "פורטוגל"
+    },
+    "9750497689874": {
+      "teamSlug": "boca-juniors",
+      "team": "בוקה"
+    },
+    "9797681512722": {
+      "teamSlug": "manchester-united",
+      "team": "מנצסטר יונייטד"
+    },
+    "9797682397458": {
+      "teamSlug": "manchester-united",
+      "team": "מנצסטר יונייטד"
+    },
+    "9797678825746": {
+      "teamSlug": "manchester-city",
+      "team": "מנצ'סטר סיטי"
+    },
+    "9743428419858": {
+      "teamSlug": "everton",
+      "team": "אברטון"
+    },
+    "9743434088722": {
+      "teamSlug": "leeds",
+      "team": "לידס"
+    },
+    "9797680529682": {
+      "teamSlug": "leeds",
+      "team": "לידס"
+    },
+    "9743429173522": {
+      "teamSlug": "newcastle",
+      "team": "ניוקאסל"
+    },
+    "9797679972626": {
+      "teamSlug": "leeds",
+      "team": "לידס"
+    },
+    "9765811716370": {
+      "teamSlug": "leeds",
+      "team": "לידס"
+    },
+    "9743433335058": {
+      "teamSlug": "manchester-united",
+      "team": "מנצסטר יונייטד"
+    },
+    "9743431926034": {
+      "teamSlug": "manchester-city",
+      "team": "מנצ'סטר סיטי"
+    },
+    "9743430189330": {
+      "teamSlug": "west-ham",
+      "team": "ווסטהאם"
+    },
+    "9743429927186": {
+      "teamSlug": "west-ham",
+      "team": "ווסטהאם"
+    },
+    "9743425863954": {
+      "teamSlug": "manchester-city",
+      "team": "מנצ'סטר סיטי"
+    }
+  },
+  "flags": {
+    "10328707596562": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10328706646290": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"spain\" but image filename mentions \"netherlands\"",
+      "teamFromUrl": "spain",
+      "teamFromImage": "netherlands",
+      "currentTeam": "הולנד"
+    },
+    "10328706318610": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"france\" but image filename mentions \"spain\"",
+      "teamFromUrl": "france",
+      "teamFromImage": "spain",
+      "currentTeam": "ספרד"
+    },
+    "10320634609938": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10320634282258": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10303557271826": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10297313493266": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10296987222290": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10293932687634": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10293929017618": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291381076242": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291380846866": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291380486418": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291380257042": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291380093202": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291379994898": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291379601682": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291378454802": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291376718098": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "10291376554258": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "10291339854098": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291338608914": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10291337167122": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "10291336413458": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "10281004204306": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "10281004138770": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "10270526669074": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10270525227282": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10270525063442": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10270524375314": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10257725063442": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10234099532050": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10234099073298": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10234094518546": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10234092552466": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10215571161362": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"mexico\" but image filename mentions \"colombia\"",
+      "teamFromUrl": "mexico",
+      "teamFromImage": "colombia",
+      "currentTeam": ""
+    },
+    "10212784079122": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10212781293842": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10212780835090": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10212780278034": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10212780146962": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10212779229458": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10212778836242": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10212778213650": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10212750000402": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10211822731538": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10211822141714": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10200855445778": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10200854987026": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10200852070674": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10200846303506": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10200838537490": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10200836112658": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"leeds\" but image filename mentions \"manchester-united\"",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "manchester-united",
+      "currentTeam": ""
+    },
+    "10200835653906": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"everton\" but image filename mentions \"manchester-united\"",
+      "teamFromUrl": "everton",
+      "teamFromImage": "manchester-united",
+      "currentTeam": ""
+    },
+    "10200830083346": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9772882723090": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765792121106": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9729685356818": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "9729687093522": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"argentina\" but image filename mentions \"real-madrid\"",
+      "teamFromUrl": "argentina",
+      "teamFromImage": "real-madrid",
+      "currentTeam": "ריאל מדריד"
+    },
+    "10170548486418": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"real-madrid\" but image filename mentions \"betis\"",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "betis",
+      "currentTeam": "בטיס"
+    },
+    "9166073856274": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"barcelona\" but image filename mentions \"betis\"",
+      "teamFromUrl": "barcelona",
+      "teamFromImage": "betis",
+      "currentTeam": "בטיס"
+    },
+    "9765787369746": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10167955456274": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9729689354514": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"ac-milan\" but image filename mentions \"france\"",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": "france",
+      "currentTeam": "צרפת"
+    },
+    "9690102169874": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"real-madrid\" but image filename mentions \"chelsea\"",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "chelsea",
+      "currentTeam": "צלסי"
+    },
+    "9765796512018": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9729685258514": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"borussia-dortmund\" but image filename mentions \"psg\"",
+      "teamFromUrl": "borussia-dortmund",
+      "teamFromImage": "psg",
+      "currentTeam": "פריס"
+    },
+    "10171630616850": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10154964189458": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9598285807890": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"spain\" but image filename mentions \"portugal\"",
+      "teamFromUrl": "spain",
+      "teamFromImage": "portugal",
+      "currentTeam": "פורטוגל"
+    },
+    "9690243465490": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"england\" but image filename mentions \"portugal\"",
+      "teamFromUrl": "england",
+      "teamFromImage": "portugal",
+      "currentTeam": "פורטוגל"
+    },
+    "9690226295058": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"germany\" but image filename mentions \"spain\"",
+      "teamFromUrl": "germany",
+      "teamFromImage": "spain",
+      "currentTeam": "ספרד"
+    },
+    "9729690304786": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"ac-milan\" but image filename mentions \"santos\"",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": "santos",
+      "currentTeam": ""
+    },
+    "9765795692818": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10074398359826": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"spain\" but image filename mentions \"chelsea\"",
+      "teamFromUrl": "spain",
+      "teamFromImage": "chelsea",
+      "currentTeam": "צלסי"
+    },
+    "10074397966610": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"england\" but image filename mentions \"spain\"",
+      "teamFromUrl": "england",
+      "teamFromImage": "spain",
+      "currentTeam": "ספרד"
+    },
+    "10074395541778": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"brazil\" but image filename mentions \"germany\"",
+      "teamFromUrl": "brazil",
+      "teamFromImage": "germany",
+      "currentTeam": "גרמניה"
+    },
+    "10074397114642": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"germany\" but image filename mentions \"england\"",
+      "teamFromUrl": "germany",
+      "teamFromImage": "england",
+      "currentTeam": "אנגליה"
+    },
+    "9690113343762": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"liverpool\" but image filename mentions \"manchester-city\"",
+      "teamFromUrl": "liverpool",
+      "teamFromImage": "manchester-city",
+      "currentTeam": "סיטי"
+    },
+    "9729687847186": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"real-madrid\" but image filename mentions \"manchester-united\"",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "manchester-united",
+      "currentTeam": "מנצ'סטר יוניטד"
+    },
+    "9690105872658": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"arsenal\" but image filename mentions \"manchester-united\"",
+      "teamFromUrl": "arsenal",
+      "teamFromImage": "manchester-united",
+      "currentTeam": "יונייטד"
+    },
+    "9729681654034": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"inter-milan\" but image filename mentions \"ac-milan\"",
+      "teamFromUrl": "inter-milan",
+      "teamFromImage": "ac-milan",
+      "currentTeam": "מילאן"
+    },
+    "10167955521810": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9690124648722": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"arsenal\" but image filename mentions \"tottenham\"",
+      "teamFromUrl": "arsenal",
+      "teamFromImage": "tottenham",
+      "currentTeam": "טוטנהאם"
+    },
+    "9754559185170": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"psg\" but image filename mentions \"lyon\"",
+      "teamFromUrl": "psg",
+      "teamFromImage": "lyon",
+      "currentTeam": "ליון"
+    },
+    "9795627548946": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "8218527006994": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8236033704210": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "9754530021650": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9636902797586": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"benfica\" but image filename mentions \"flamengo\"",
+      "teamFromUrl": "benfica",
+      "teamFromImage": "flamengo",
+      "currentTeam": "פלמנגו"
+    },
+    "10153380544786": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10153378677010": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10153382871314": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10153379070226": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9637376885010": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"benfica\" but image filename mentions \"sporting\"",
+      "teamFromUrl": "benfica",
+      "teamFromImage": "sporting",
+      "currentTeam": "ספורטינג"
+    },
+    "9765804015890": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765807325458": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765807128850": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765805883666": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765805555986": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8554500161810": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9754578911506": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"santos\" but image filename mentions \"tottenham\"",
+      "teamFromUrl": "santos",
+      "teamFromImage": "tottenham",
+      "currentTeam": "טוטנהאם"
+    },
+    "9765807554834": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765807456530": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765805392146": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "ישראלי"
+    },
+    "9765804507410": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8232659026194": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765803393298": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"real-madrid\" but image filename mentions \"athletic-bilbao\"",
+      "teamFromUrl": "real-madrid",
+      "teamFromImage": "athletic-bilbao",
+      "currentTeam": ""
+    },
+    "9765806702866": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765804310802": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765804212498": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9636813340946": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9636788207890": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8235535663378": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8235972919570": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765555699986": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765554651410": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8216458985746": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8232678686994": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"napoli\" but image filename mentions \"ajax\"",
+      "teamFromUrl": "napoli",
+      "teamFromImage": "ajax",
+      "currentTeam": ""
+    },
+    "8216439390482": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8232646836498": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"celtic\" but image filename mentions \"italy\"",
+      "teamFromUrl": "celtic",
+      "teamFromImage": "italy",
+      "currentTeam": "איטליה"
+    },
+    "9765805981970": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765806113042": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8216467341586": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9690617544978": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10153376350482": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9165808566546": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10153363046674": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9165810008338": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9797683937554": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8365073563922": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"brazil\" but image filename mentions \"france\"",
+      "teamFromUrl": "brazil",
+      "teamFromImage": "france",
+      "currentTeam": "צרפת"
+    },
+    "9667010494738": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"germany\" but image filename mentions \"spain\"",
+      "teamFromUrl": "germany",
+      "teamFromImage": "spain",
+      "currentTeam": "ספרד"
+    },
+    "9157111742738": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"inter-milan\" but image filename mentions \"barcelona\"",
+      "teamFromUrl": "inter-milan",
+      "teamFromImage": "barcelona",
+      "currentTeam": "אינטר"
+    },
+    "8235474845970": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"ac-milan\" but image filename mentions \"ajax\"",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": "ajax",
+      "currentTeam": "מכבי תל אביב"
+    },
+    "8215087350034": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8306401575186": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8306393645330": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765789499666": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765794480402": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765792678162": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765786550546": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9729684996370": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"brazil\" but image filename mentions \"borussia-dortmund\"",
+      "teamFromUrl": "brazil",
+      "teamFromImage": "borussia-dortmund",
+      "currentTeam": "דורטמונד"
+    },
+    "9598157226258": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"portugal\" but image filename mentions \"germany\"",
+      "teamFromUrl": "portugal",
+      "teamFromImage": "germany",
+      "currentTeam": "גרמניה"
+    },
+    "9690210697490": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"barcelona\" but image filename mentions \"germany\"",
+      "teamFromUrl": "barcelona",
+      "teamFromImage": "germany",
+      "currentTeam": "גרמניה"
+    },
+    "9690620657938": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9729683980562": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"ac-milan\" but image filename mentions \"brazil\"",
+      "teamFromUrl": "ac-milan",
+      "teamFromImage": "brazil",
+      "currentTeam": "ברזיל"
+    },
+    "9598269554962": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"italy\" but image filename mentions \"belgium\"",
+      "teamFromUrl": "italy",
+      "teamFromImage": "belgium",
+      "currentTeam": ""
+    },
+    "9765719539986": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"borussia-dortmund\" but image filename mentions \"bayern-munich\"",
+      "teamFromUrl": "borussia-dortmund",
+      "teamFromImage": "bayern-munich",
+      "currentTeam": "באירן מינכן"
+    },
+    "9765783601426": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765782356242": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9690591428882": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9690121830674": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"manchester-city\" but image filename mentions \"arsenal\"",
+      "teamFromUrl": "manchester-city",
+      "teamFromImage": "arsenal",
+      "currentTeam": "ארסנל"
+    },
+    "9690105086226": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"chelsea\" but image filename mentions \"arsenal\"",
+      "teamFromUrl": "chelsea",
+      "teamFromImage": "arsenal",
+      "currentTeam": "ארסנל"
+    },
+    "9729686569234": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"brazil\" but image filename mentions \"argentina\"",
+      "teamFromUrl": "brazil",
+      "teamFromImage": "argentina",
+      "currentTeam": "ארגנטינה"
+    },
+    "9598247076114": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"netherlands\" but image filename mentions \"england\"",
+      "teamFromUrl": "netherlands",
+      "teamFromImage": "england",
+      "currentTeam": "אנגליה"
+    },
+    "9690240581906": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"france\" but image filename mentions \"england\"",
+      "teamFromUrl": "france",
+      "teamFromImage": "england",
+      "currentTeam": "אנגליה"
+    },
+    "9729685586194": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9729681326354": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"chelsea\" but image filename mentions \"inter-milan\"",
+      "teamFromUrl": "chelsea",
+      "teamFromImage": "inter-milan",
+      "currentTeam": "אינטר"
+    },
+    "9690573963538": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"barcelona\" but image filename mentions \"inter-miami\"",
+      "teamFromUrl": "barcelona",
+      "teamFromImage": "inter-miami",
+      "currentTeam": "אינטר מיאמי"
+    },
+    "9598262214930": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"france\" but image filename mentions \"italy\"",
+      "teamFromUrl": "france",
+      "teamFromImage": "italy",
+      "currentTeam": "איטליה"
+    },
+    "9690251395346": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"portugal\" but image filename mentions \"italy\"",
+      "teamFromUrl": "portugal",
+      "teamFromImage": "italy",
+      "currentTeam": "איטליה"
+    },
+    "10148766974226": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9747402719506": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8650608410898": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "10153419735314": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9750509748498": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9765812175122": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9797683347730": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9743434088722": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"leeds\" but image filename mentions \"newcastle\"",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "newcastle",
+      "currentTeam": ""
+    },
+    "9797680529682": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"leeds\" but image filename mentions \"leicester\"",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "leicester",
+      "currentTeam": ""
+    },
+    "9743429173522": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"newcastle\" but image filename mentions \"leicester\"",
+      "teamFromUrl": "newcastle",
+      "teamFromImage": "leicester",
+      "currentTeam": ""
+    },
+    "9797679972626": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"leeds\" but image filename mentions \"manchester-united\"",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "manchester-united",
+      "currentTeam": "מכבי תל אביב"
+    },
+    "9765811716370": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"leeds\" but image filename mentions \"manchester-united\"",
+      "teamFromUrl": "leeds",
+      "teamFromImage": "manchester-united",
+      "currentTeam": "מכבי תל אביב"
+    },
+    "9797687214354": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9797686722834": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9797685608722": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "9743426519314": {
+      "reason": "no-team-detected",
+      "detail": "Could not detect team from URL, image, or label",
+      "currentTeam": "(empty)"
+    },
+    "8401839456530": {
+      "reason": "image-mismatch",
+      "detail": "URL says \"bayern-munich\" but image filename mentions \"barcelona\"",
+      "teamFromUrl": "bayern-munich",
+      "teamFromImage": "barcelona",
+      "currentTeam": "באירן מינכן"
+    }
+  }
+}

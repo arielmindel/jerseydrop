@@ -1,0 +1,36 @@
+JerseyDrop Fixer — 2026-04-27T00:22:14.148Z
+=====================================
+
+Total products: 995
+✅ Auto-fixed labels (URL + image agreement): 87
+⚠️  Flagged: image likely wrong (URL says one thing, image another): 56
+⚠️  Flagged: no team could be detected from any signal: 122
+☑️  Unchanged: 730
+
+The "image-mismatch" products WILL still be displayed (with relabeled team)
+but the image may be incorrect — they're flagged for human review.
+
+The "no-team-detected" products are HIDDEN from public listings until
+reviewed (they have no detectable team to organize them under).
+
+Top 10 flagged products to review:
+  - [no-team-detected] (empty) → Could not detect team from URL, image, or label
+    id: 10328707596562
+  - [image-mismatch] הולנד → URL says "spain" but image filename mentions "netherlands"
+    id: 10328706646290
+  - [image-mismatch] ספרד → URL says "france" but image filename mentions "spain"
+    id: 10328706318610
+  - [no-team-detected] (empty) → Could not detect team from URL, image, or label
+    id: 10320634609938
+  - [no-team-detected] (empty) → Could not detect team from URL, image, or label
+    id: 10320634282258
+  - [no-team-detected] (empty) → Could not detect team from URL, image, or label
+    id: 10303557271826
+  - [no-team-detected] (empty) → Could not detect team from URL, image, or label
+    id: 10297313493266
+  - [no-team-detected] (empty) → Could not detect team from URL, image, or label
+    id: 10296987222290
+  - [no-team-detected] (empty) → Could not detect team from URL, image, or label
+    id: 10293932687634
+  - [no-team-detected] (empty) → Could not detect team from URL, image, or label
+    id: 10293929017618

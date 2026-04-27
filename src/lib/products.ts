@@ -1,6 +1,47 @@
 import productsJson from "@catalog/sporthub-products.json";
+import correctionsJson from "@catalog/product-corrections.json";
 import type { Product, ProductVersion } from "./types";
 import { CUSTOMIZATION_FEE } from "./constants";
+
+// ============================================================================
+// Catalog corrections (from scripts/fix-products.mjs)
+// ----------------------------------------------------------------------------
+// • `fixes` map: high-confidence relabels (URL + image agreed against the
+//   original label). Applied at module load to override `team` + `teamSlug`.
+// • `flags` map: products with image-mismatch or no-team-detected. The
+//   "no-team-detected" subset is HIDDEN from public listings until human
+//   review. The "image-mismatch" subset is shown but the team label has
+//   already been corrected — only the photo may be wrong.
+// ============================================================================
+type Correction = { teamSlug: string; team: string };
+type Flag = {
+  reason: "image-mismatch" | "no-team-detected";
+  detail: string;
+  teamFromUrl?: string;
+  teamFromImage?: string;
+  currentTeam?: string;
+};
+const CORRECTIONS = correctionsJson as {
+  stats: Record<string, number>;
+  fixes: Record<string, Correction>;
+  flags: Record<string, Flag>;
+};
+
+const HIDDEN_IDS = new Set<string>(
+  Object.entries(CORRECTIONS.flags)
+    .filter(([, f]) => f.reason === "no-team-detected")
+    .map(([id]) => id),
+);
+
+const IMAGE_MISMATCH_IDS = new Set<string>(
+  Object.entries(CORRECTIONS.flags)
+    .filter(([, f]) => f.reason === "image-mismatch")
+    .map(([id]) => id),
+);
+
+export function isImageMismatchFlagged(productId: string): boolean {
+  return IMAGE_MISMATCH_IDS.has(productId);
+}
 
 // ============================================================================
 // Slug normalization
@@ -31,13 +72,20 @@ function buildCanonicalSlug(p: Product): string {
 }
 
 function normalizeProducts(raw: Product[]): Product[] {
-  // First pass: compute canonical slugs + their frequencies
-  const canonical = raw.map(buildCanonicalSlug);
+  // Step A: apply team/teamSlug corrections from the audit run
+  const corrected = raw.map((p) => {
+    const fix = CORRECTIONS.fixes[p.id];
+    if (!fix) return p;
+    return { ...p, team: fix.team, teamSlug: fix.teamSlug };
+  });
+
+  // Step B: compute canonical slugs + their frequencies (uses corrected teamSlug)
+  const canonical = corrected.map(buildCanonicalSlug);
   const freq = new Map<string, number>();
   canonical.forEach((s) => freq.set(s, (freq.get(s) || 0) + 1));
 
-  // Second pass: append id suffix where the canonical form still collides
-  return raw.map((p, i) => {
+  // Step C: append id suffix where the canonical form still collides
+  return corrected.map((p, i) => {
     const base = canonical[i];
     const slug =
       (freq.get(base) || 0) > 1 ? `${base}-${p.id.slice(-6)}` : base;
@@ -45,9 +93,17 @@ function normalizeProducts(raw: Product[]): Product[] {
   });
 }
 
-export const products: Product[] = normalizeProducts(
+const ALL_PRODUCTS: Product[] = normalizeProducts(
   productsJson as unknown as Product[],
 );
+
+/** Public-facing catalog: filters out products flagged "no-team-detected". */
+export const products: Product[] = ALL_PRODUCTS.filter(
+  (p) => !HIDDEN_IDS.has(p.id),
+);
+
+/** Includes hidden products. Use only for admin/review tooling. */
+export const allProductsIncludingHidden: Product[] = ALL_PRODUCTS;
 
 // ============================================================================
 // Lookups

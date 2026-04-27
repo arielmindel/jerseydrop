@@ -1,0 +1,95 @@
+JerseyDrop Audit — 2026-04-27T00:20:46.480Z
+=====================================
+
+Total products: 995
+Resolved from URL: 762
+Resolved from image: 631
+Unresolvable (no team detected anywhere): 122
+
+CONFLICTS:
+  Image filename ≠ URL handle: 56  ← these likely have wrong images
+  Image filename ≠ Label: 16
+  URL handle ≠ Label: 35
+
+TOTAL ISSUES: 229
+
+Top 20 mismatched products:
+  - [image-vs-url] הולנד | URL says: spain | Image says: netherlands
+    sourceUrl: https://sporthubkit.com/products/ספרד-מדי-חוץ-2025-26-מונדיאל-copy
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/hwlnd-mdy-hwz-2025-26-mwndyl-605.jpg?v=1774714574
+
+  - [image-vs-url] ספרד | URL says: france | Image says: spain
+    sourceUrl: https://sporthubkit.com/products/צרפת-מדי-בית-2025-26-מונדיאל-1
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/sprd-mdy-hwz-2025-26-mwndyl-340.jpg?v=1774714556
+
+  - [image-vs-label] אנגליה | URL says: france | Image says: france
+    sourceUrl: https://sporthubkit.com/products/צרפת-מדי-בית-2025-26-מונדיאל
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/zrpt-mdy-byt-2025-26-mwndyl-311.jpg?v=1774714545
+
+  - [image-vs-label] הפועל תל אביב | URL says: ? | Image says: braga
+    sourceUrl: https://sporthubkit.com/products/2025-26-חולצת-כדורגל-בארגה-בית-copy
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/braga-2025-26-home.jpg?v=1768593932
+
+  - [image-vs-label] הפועל תל אביב | URL says: ? | Image says: river-plate
+    sourceUrl: https://sporthubkit.com/products/חולצת-כדורגל-רייבר-פלייט-2003
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/RiverPlate2003.jpg?v=1760510302
+
+  - [image-vs-label] הפועל תל אביב | URL says: ? | Image says: river-plate
+    sourceUrl: https://sporthubkit.com/products/חולצת-כדורגל-חוץ-רייבר-פלייט-2025
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/RiverPlate2025.jpg?v=1760510229
+
+  - [image-vs-url] (no team) | URL says: mexico | Image says: colombia
+    sourceUrl: https://sporthubkit.com/products/חולצת-כדורגל-מקסיקו-מיוחדת-2027
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Colombia_1990_Home.jpg?v=1757172168
+
+  - [image-vs-label] הפועל תל אביב | URL says: ? | Image says: ajax
+    sourceUrl: https://sporthubkit.com/products/חולצת-כדורגל-אייקס-נטרלית-2025-26
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Ajax_2025_TH.jpg?v=1756641876
+
+  - [image-vs-label] הפועל תל אביב | URL says: ? | Image says: ajax
+    sourceUrl: https://sporthubkit.com/products/חולצת-כדורגל-אייקס-חוץ-2025-26-copy
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Ajax_25_Away.jpg?v=1756641876
+
+  - [image-vs-url] (no team) | URL says: leeds | Image says: manchester-united
+    sourceUrl: https://sporthubkit.com/products/2025-26-חולצות-כדורגל-לידס-יוניטד-בית-1
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Leeds_United1.jpg?v=1754753601
+
+  - [image-vs-url] (no team) | URL says: everton | Image says: manchester-united
+    sourceUrl: https://sporthubkit.com/products/2025-26-חולצות-כדורגל-אברטון-בית-1
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/ham-united-2025-26-home.jpg?v=1754753503
+
+  - [url-vs-label] ריאל מדריד | URL says: barcelona | Image says: ?
+    sourceUrl: https://sporthubkit.com/products/copy-of-ברצלונה-שלישית-2023
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Untitsdled-2.webp?v=1774720184
+
+  - [image-vs-url] ריאל מדריד | URL says: argentina | Image says: real-madrid
+    sourceUrl: https://sporthubkit.com/products/ארגנטינה-רטרו-1986-סט-ילדים-copy
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/kids_Real_Madrid_14-15.jpg?v=1742382500
+
+  - [url-vs-label] בטיס | URL says: real-madrid | Image says: ?
+    sourceUrl: https://sporthubkit.com/products/copy-of-ריאל-בטיס-בית-2024
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/23-24BTSgreen.jpg?v=1742317478
+
+  - [image-vs-url] בטיס | URL says: real-madrid | Image says: betis
+    sourceUrl: https://sporthubkit.com/products/ריאל-בטיס-בית-2025-26
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/RealBetis2025.jpg?v=1751147354
+
+  - [image-vs-url] בטיס | URL says: barcelona | Image says: betis
+    sourceUrl: https://sporthubkit.com/products/copy-of-חולצת-אימון-ירוקה-ברצלונה-2024
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/Real_Betis_2024.jpg?v=1742317480
+
+  - [image-vs-url] צרפת | URL says: ac-milan | Image says: france
+    sourceUrl: https://sporthubkit.com/products/מילאן-רטרו-2006-סט-ילדים-copy
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/kids_France_1998.jpg?v=1742317248
+
+  - [url-vs-label] צרפת | URL says: england | Image says: ?
+    sourceUrl: https://sporthubkit.com/products/אנגליה-מדי-בית-2024-יורו-copy
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/458d3eb8.jpg?v=1742317464
+
+  - [url-vs-label] ריאל מדריד | URL says: chelsea | Image says: ?
+    sourceUrl: https://sporthubkit.com/products/צעיף-צלסי
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/6_2ad96316-b3d5-40db-95d4-bfc91e887741.png?v=1742317219
+
+  - [url-vs-label] צלסי | URL says: borussia-dortmund | Image says: ?
+    sourceUrl: https://sporthubkit.com/products/צעיף-דורטמונד
+    image: https://cdn.shopify.com/s/files/1/0732/1452/5714/files/8_fc3dfdd8-6bfb-4cbe-8c56-e4e3bac9f1f2.png?v=1742317220
