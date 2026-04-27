@@ -5,7 +5,7 @@ import { MessageCircle, Mail, Instagram, Shield } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="mt-24 border-t border-border/60 bg-background">
-      <div className="container grid gap-10 py-14 md:grid-cols-4">
+      <div className="container grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-5">
         <div className="space-y-4">
           <Image
             src="/logo/logo-192.png"
@@ -127,6 +127,46 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <Shield className="h-3.5 w-3.5" />
               <span>החלפות תוך 14 יום</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="mb-3 font-display text-xs font-bold uppercase tracking-widest text-accent">
+            מידע משפטי
+          </h4>
+          <ul className="space-y-2 text-sm text-muted">
+            <li>
+              <Link
+                className="transition-colors hover:text-foreground"
+                href="/terms"
+              >
+                תקנון
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-colors hover:text-foreground"
+                href="/privacy"
+              >
+                מדיניות פרטיות
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-colors hover:text-foreground"
+                href="/size-guide"
+              >
+                מדריך מידות
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-colors hover:text-foreground"
+                href="/contact"
+              >
+                החזרות וביטולים
+              </Link>
             </li>
           </ul>
         </div>
