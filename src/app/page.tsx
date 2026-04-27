@@ -1,10 +1,8 @@
 import HeroVideo from "@/components/home/HeroVideo";
-import CategoryShowcase from "@/components/home/CategoryShowcase";
-import LeagueStrip from "@/components/home/LeagueStrip";
-import NationsStrip from "@/components/home/NationsStrip";
+import LeaguesShowcase from "@/components/home/LeaguesShowcase";
+import CollectionsShowcase from "@/components/home/CollectionsShowcase";
 import FeaturedGrid from "@/components/home/FeaturedGrid";
 import DiscoverByCatalog from "@/components/home/DiscoverByCatalog";
-import CollectionsSection from "@/components/home/CollectionsSection";
 import IsraeliFaves from "@/components/home/IsraeliFaves";
 import WhyUs from "@/components/home/WhyUs";
 import HomepageFAQ from "@/components/home/HomepageFAQ";
@@ -14,12 +12,10 @@ export default function Home() {
   return (
     <>
       <HeroVideo />
-      <CategoryShowcase />
-      <LeagueStrip />
-      <NationsStrip />
+      <LeaguesShowcase />
+      <CollectionsShowcase />
       <FeaturedGrid />
       <DiscoverByCatalog />
-      <CollectionsSection />
       <IsraeliFaves />
       <WhyUs />
       <HomepageFAQ />
