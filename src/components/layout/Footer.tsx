@@ -94,11 +94,6 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link className="transition-colors hover:text-foreground" href="/israeli">
-                ישראל
-              </Link>
-            </li>
-            <li>
               <Link className="transition-colors hover:text-foreground" href="/kids">
                 ילדים
               </Link>

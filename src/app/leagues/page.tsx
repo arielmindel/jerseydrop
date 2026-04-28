@@ -29,8 +29,8 @@ export default function LeaguesPage() {
             הליגות הגדולות <span className="text-accent">בעולם</span>
           </h1>
           <p className="mt-4 max-w-xl text-sm text-muted md:text-base">
-            5 ליגות מובילות + ישראל + קטגוריית ״אחר״ לברזיל, MLS, הולנד,
-            סקוטלנד ופורטוגל. בחרו ליגה וגלו את כל החולצות.
+            5 ליגות מובילות + קטגוריית ״אחר״ לברזיל, MLS, הולנד, סקוטלנד
+            ופורטוגל. בחרו ליגה וגלו את כל החולצות.
           </p>
         </div>
       </section>

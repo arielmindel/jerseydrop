@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Star, Sparkles, Gift, Baby, Shirt, Crown, Flag } from "lucide-react";
+import { ArrowLeft, Star, Sparkles, Gift, Baby, Shirt, Crown } from "lucide-react";
 import { getAllProducts, getHeroImageFor } from "@/lib/products";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
 
 /**
  * Magazine-style collections grid (sporthub-inspired).
- * Bento layout: a single big card on the right (RTL = reads first), a tall
- * card next to it, and 5 smaller cards filling the rest.
+ * Bento layout: a single big card on the right (RTL = reads first), 4 smaller
+ * cards filling the rest. After V5 cleanup we removed:
+ *   - "ישראל" — no real israeli inventory yet
+ *   - "דריפ"  — duplicated /collections/special filter; merged back in
  */
 
 type Tile = {
@@ -31,20 +33,6 @@ const TILES: Tile[] = [
     // Big hero — 2 cols × 2 rows
     span: "md:col-span-2 md:row-span-2",
     pickImage: () => getHeroImageFor({ team: "real-madrid" }),
-  },
-  {
-    href: "/collections/drip",
-    titleHe: "דריפ",
-    badgeLabel: "STREETWEAR",
-    ribbonClass: "bg-foreground/95 text-background",
-    Icon: Sparkles,
-    // Tall — 1 col × 2 rows
-    span: "md:row-span-2",
-    pickImage: () => {
-      const all = getAllProducts();
-      const drip = all.find((p) => p.isSpecial && p.images?.length);
-      return drip?.images[0] || getHeroImageFor({ team: "barcelona" });
-    },
   },
   {
     href: "/retro",
@@ -77,7 +65,7 @@ const TILES: Tile[] = [
     titleHe: "מיוחדות",
     badgeLabel: "SPECIAL EDITIONS",
     ribbonClass: "bg-amber/95 text-background",
-    Icon: Star,
+    Icon: Sparkles,
     span: "",
     pickImage: () => {
       const all = getAllProducts();
@@ -96,19 +84,6 @@ const TILES: Tile[] = [
       const all = getAllProducts();
       const ls = all.find((p) => p.isLongSleeve && p.images?.length);
       return ls?.images[0] || null;
-    },
-  },
-  {
-    href: "/israeli",
-    titleHe: "ישראל",
-    badgeLabel: "MADE IN ISRAEL",
-    ribbonClass: "bg-blue-600/95 text-foreground",
-    Icon: Flag,
-    span: "",
-    pickImage: () => {
-      const all = getAllProducts();
-      const il = all.find((p) => p.league === "israel" && p.images?.length);
-      return il?.images[0] || null;
     },
   },
 ];

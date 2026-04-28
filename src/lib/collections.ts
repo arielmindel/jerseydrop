@@ -13,7 +13,6 @@ export type CollectionId =
   | "short-suit"
   | "long-sleeve"
   | "special"
-  | "drip"
   | "surprise";
 
 export type CollectionMeta = {
@@ -88,16 +87,6 @@ export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
     accent: "#F59E0B",
     badgeLabel: "SPECIAL EDITIONS",
   },
-  drip: {
-    id: "drip",
-    slug: "drip",
-    titleHe: "דריפ — סטריט-וור עם הקבוצות הגדולות",
-    subtitleHe: "lifestyle ולא רק על המגרש",
-    descriptionHe:
-      "החולצות שמתאימות יותר לרחוב מאשר למגרש — קולאבים מיוחדים, מהדורות סטייל, וגזרות שמתאימות לכל יום.",
-    accent: "#F472B6",
-    badgeLabel: "DRIP · STREETWEAR",
-  },
   surprise: {
     id: "surprise",
     slug: "surprise",
@@ -136,11 +125,6 @@ export function getCollectionProducts(id: CollectionId): Product[] {
     case "long-sleeve":
       return all.filter((p) => p.isLongSleeve);
     case "special":
-      return all.filter((p) => p.isSpecial);
-    case "drip":
-      // Drip is a curated lens on isSpecial — same products, framed as
-      // streetwear-first. Once we add real "drip" tags via merch curation
-      // we'll narrow this to tags?.includes("drip").
       return all.filter((p) => p.isSpecial);
     case "surprise":
       // Mystery Drop has no specific product list — the page is a feature

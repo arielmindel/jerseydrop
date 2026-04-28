@@ -173,10 +173,6 @@ export function getKidsProducts(): Product[] {
   return products.filter((p) => p.isKids);
 }
 
-export function getIsraeliProducts(): Product[] {
-  return products.filter((p) => p.league === "israel");
-}
-
 export function getShortSuitProducts(): Product[] {
   return products.filter(
     (p) => p.isShortSuit || p.tags?.includes("short-suit"),
@@ -354,7 +350,7 @@ export function getSearchTokens(product: Product): string[] {
 // ============================================================================
 // Hero / showcase image picker — returns the most representative product
 // image for a category, with safe fallbacks. Used by homepage strips,
-// /leagues, /nations, /retro, /kids, /israeli pages.
+// /leagues, /nations, /retro, /kids pages.
 // ============================================================================
 
 function pickRepresentative(filtered: Product[]): Product | null {

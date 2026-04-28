@@ -155,20 +155,6 @@ export default function MegaMenu({ counts }: { counts?: Counts }) {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/israeli"
-              className={cn(
-                navigationMenuTriggerStyle(),
-                "gap-1 text-[#7CB9FF] hover:text-[#7CB9FF]",
-              )}
-            >
-              ישראל
-            </Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link
               href="/kids"
               className={cn(
                 navigationMenuTriggerStyle(),

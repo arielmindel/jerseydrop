@@ -4,8 +4,7 @@ export type LeagueId =
   | "serie-a"
   | "bundesliga"
   | "ligue-1"
-  | "other"
-  | "israel";
+  | "other";
 
 export type NationTier = "tier-1" | "tier-2" | "tier-3";
 
@@ -90,14 +89,6 @@ export const LEAGUES: LeagueInfo[] = [
       "Sporting",
       "Celtic",
     ],
-  },
-  {
-    id: "israel",
-    slug: "israel",
-    nameHe: "ישראל",
-    nameEn: "Israel",
-    country: "ישראל",
-    teams: ["Hapoel Tel Aviv", "Maccabi Tel Aviv", "Beitar Jerusalem"],
   },
 ];
 

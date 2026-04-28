@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/leagues`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE}/nations`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE}/retro`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${BASE}/israeli`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE}/kids`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },

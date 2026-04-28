@@ -148,17 +148,6 @@ export default function MobileMenu() {
             <li>
               <SheetClose asChild>
                 <Link
-                  href="/israeli"
-                  className="block rounded-xl px-4 py-3 text-base font-semibold text-[#7CB9FF] transition-colors hover:bg-background"
-                  onClick={close}
-                >
-                  ישראל
-                </Link>
-              </SheetClose>
-            </li>
-            <li>
-              <SheetClose asChild>
-                <Link
                   href="/kids"
                   className="block rounded-xl px-4 py-3 text-base font-semibold text-pink-300 transition-colors hover:bg-background"
                   onClick={close}
