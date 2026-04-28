@@ -1,23 +1,36 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
-import { getHeroImageFor } from "@/lib/products";
-import { BLUR_DATA_URL } from "@/lib/image-placeholder";
+import {
+  LaLigaLogo,
+  PremierLeagueLogo,
+  BundesligaLogo,
+  SerieALogo,
+  Ligue1Logo,
+  NationsLogo,
+  WorldCupLogo,
+  OtherLeaguesLogo,
+} from "@/components/icons/LeagueLogos";
 
 /**
- * Magazine-grid showcase of leagues + nations + WC. Inspired by sporthub.com:
- * tall portrait cards with full-bleed jersey photography, Hebrew title in a
- * coloured ribbon at the bottom, hover lifts the image slightly.
+ * Magazine grid of league/category cards on the homepage. After V5 feedback:
+ * each card now shows a branded SVG emblem (NOT a jersey photo) on a
+ * gradient background that matches the league's identity. Hover lifts the
+ * logo and brightens the gradient.
+ *
+ * The emblems live in components/icons/LeagueLogos.tsx — they're hand-built
+ * abstractions, not the trademarked official marks.
  */
 
 type LeagueTile = {
   href: string;
   titleHe: string;
   titleEn: string;
-  /** Tailwind text colour for the ribbon — picks up via class composition. */
+  /** Background gradient (CSS) for the card's main area. */
+  bgGradient: string;
+  /** Tailwind colour class for the title ribbon at the bottom. */
   ribbonClass: string;
-  /** Pull representative image from one of these signals. */
-  pickImage: () => string | null;
+  /** SVG logo component. */
+  Logo: (props: { className?: string }) => JSX.Element;
 };
 
 const TILES: LeagueTile[] = [
@@ -26,64 +39,78 @@ const TILES: LeagueTile[] = [
     href: "/leagues/la-liga",
     titleHe: "ליגה ספרדית",
     titleEn: "La Liga",
+    bgGradient:
+      "radial-gradient(circle at 50% 35%, #2A1100 0%, #0B0500 100%)",
     ribbonClass: "bg-amber/95 text-background",
-    pickImage: () => getHeroImageFor({ team: "real-madrid" }) || getHeroImageFor({ league: "la-liga" }),
+    Logo: LaLigaLogo,
   },
   {
     href: "/leagues/premier-league",
     titleHe: "ליגה אנגלית",
     titleEn: "Premier League",
+    bgGradient:
+      "radial-gradient(circle at 50% 35%, #1A0826 0%, #07000C 100%)",
     ribbonClass: "bg-violet/95 text-foreground",
-    pickImage: () => getHeroImageFor({ team: "manchester-united" }) || getHeroImageFor({ league: "premier-league" }),
+    Logo: PremierLeagueLogo,
   },
   {
     href: "/nations",
     titleHe: "נבחרות",
     titleEn: "National Teams",
+    bgGradient:
+      "radial-gradient(circle at 50% 35%, #051A24 0%, #000A12 100%)",
     ribbonClass: "bg-cyan/95 text-background",
-    pickImage: () => getHeroImageFor({ team: "argentina" }) || getHeroImageFor({ category: "national" }),
+    Logo: NationsLogo,
   },
   {
     href: "/collections/world-cup-2026",
     titleHe: "מונדיאל",
     titleEn: "World Cup 2026",
+    bgGradient:
+      "radial-gradient(circle at 50% 30%, #1A0F00 0%, #000000 100%)",
     ribbonClass: "bg-gold/95 text-background",
-    pickImage: () => getHeroImageFor({ category: "national", isWorldCup2026: true }) || getHeroImageFor({ team: "brazil" }),
+    Logo: WorldCupLogo,
   },
   // Row 2
   {
     href: "/leagues/other",
     titleHe: "ליגות אחרות",
     titleEn: "Other Leagues",
+    bgGradient:
+      "radial-gradient(circle at 50% 35%, #042819 0%, #00100A 100%)",
     ribbonClass: "bg-accent/95 text-background",
-    pickImage: () => getHeroImageFor({ team: "inter-miami" }) || getHeroImageFor({ league: "other" }),
+    Logo: OtherLeaguesLogo,
   },
   {
     href: "/leagues/ligue-1",
     titleHe: "ליגה צרפתית",
     titleEn: "Ligue 1",
+    bgGradient:
+      "radial-gradient(circle at 50% 35%, #001436 0%, #00071A 100%)",
     ribbonClass: "bg-blue-500/95 text-foreground",
-    pickImage: () => getHeroImageFor({ team: "psg" }) || getHeroImageFor({ league: "ligue-1" }),
+    Logo: Ligue1Logo,
   },
   {
     href: "/leagues/bundesliga",
     titleHe: "ליגה גרמנית",
     titleEn: "Bundesliga",
+    bgGradient:
+      "radial-gradient(circle at 50% 35%, #2A0007 0%, #100002 100%)",
     ribbonClass: "bg-destructive/95 text-foreground",
-    pickImage: () => getHeroImageFor({ team: "bayern-munich" }) || getHeroImageFor({ league: "bundesliga" }),
+    Logo: BundesligaLogo,
   },
   {
     href: "/leagues/serie-a",
     titleHe: "ליגה איטלקית",
     titleEn: "Serie A",
+    bgGradient:
+      "radial-gradient(circle at 50% 35%, #00103A 0%, #00071A 100%)",
     ribbonClass: "bg-sky-400/95 text-background",
-    pickImage: () => getHeroImageFor({ team: "ac-milan" }) || getHeroImageFor({ league: "serie-a" }),
+    Logo: SerieALogo,
   },
 ];
 
 export default function LeaguesShowcase() {
-  const tiles = TILES.map((t) => ({ ...t, image: t.pickImage() }));
-
   return (
     <section className="container py-14 md:py-20">
       <div className="mb-8 text-center md:mb-12">
@@ -100,31 +127,26 @@ export default function LeaguesShowcase() {
       </div>
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-        {tiles.map((t) => (
+        {TILES.map((t) => (
           <Link
             key={t.href}
             href={t.href}
-            className="group relative block aspect-[3/4] overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-500 hover:-translate-y-1 hover:shadow-glow-sm md:aspect-[3/4.2]"
+            className="group relative block aspect-[3/4] overflow-hidden rounded-2xl border border-border transition-all duration-500 hover:-translate-y-1 hover:border-accent/50 hover:shadow-glow-sm md:aspect-[3/4.2]"
+            style={{ background: t.bgGradient }}
           >
-            {t.image ? (
-              <Image
-                src={t.image}
-                alt={t.titleHe}
-                fill
-                sizes="(min-width: 768px) 25vw, 50vw"
-                placeholder="blur"
-                blurDataURL={BLUR_DATA_URL}
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-            ) : (
-              <div className="absolute inset-0 bg-card-gradient" />
-            )}
-            {/* Soft top-down dark gradient so the ribbon stands out */}
-            <div
-              aria-hidden
-              className="absolute inset-0 bg-gradient-to-b from-background/10 via-transparent to-background/40"
-            />
-            {/* Ribbon */}
+            {/* Main logo panel — fills ~70% of the card height */}
+            <div className="absolute inset-x-0 top-0 flex h-[78%] items-center justify-center p-6">
+              <t.Logo className="h-full w-auto max-w-[80%] drop-shadow-[0_8px_24px_rgba(0,0,0,0.5)] transition-transform duration-500 group-hover:scale-105" />
+            </div>
+
+            {/* English subtitle floating above the ribbon */}
+            <div className="absolute inset-x-0 bottom-[44px] text-center">
+              <span className="font-display text-[10px] font-bold uppercase tracking-[0.25em] text-muted/80">
+                {t.titleEn}
+              </span>
+            </div>
+
+            {/* Coloured ribbon */}
             <div
               className={`absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 px-4 py-3 ${t.ribbonClass}`}
             >
