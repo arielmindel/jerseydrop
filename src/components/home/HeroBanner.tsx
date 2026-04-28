@@ -33,10 +33,14 @@ export default function HeroBanner() {
           aria-label="קנה עכשיו — לכל החולצות"
           className="group/cta absolute z-10 cursor-pointer rounded-md transition-all duration-300 hover:scale-[1.05] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           style={{
-            left: "11%",
-            top: "70%",
-            width: "22%",
-            height: "11%",
+            // Pixel-perfect: matches the painted gold border in the source
+            // image (measured via canvas pixel scan: x 12.43→32.36%,
+            // y 68.49→77.73%). 0.5% margin on every side makes the click
+            // target slightly larger than the visible button.
+            left: "11.9%",
+            top: "68%",
+            width: "21%",
+            height: "10.2%",
           }}
         >
           {/* Always-on soft halo so visitors clock that this is clickable */}
