@@ -33,10 +33,10 @@ export default function HeroBanner() {
           aria-label="קנה עכשיו — לכל החולצות"
           className="group/cta absolute z-10 cursor-pointer rounded-md transition-all duration-300 hover:scale-[1.05] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           style={{
-            left: "4%",
+            left: "11%",
             top: "70%",
             width: "22%",
-            height: "14%",
+            height: "11%",
           }}
         >
           {/* Always-on soft halo so visitors clock that this is clickable */}
