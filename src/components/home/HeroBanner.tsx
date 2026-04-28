@@ -33,14 +33,14 @@ export default function HeroBanner() {
           aria-label="קנה עכשיו — לכל החולצות"
           className="group/cta absolute z-10 cursor-pointer rounded-md transition-all duration-300 hover:scale-[1.05] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           style={{
-            // Pixel-perfect: matches the painted gold border in the source
-            // image (measured via canvas pixel scan: x 12.43→32.36%,
-            // y 68.49→77.73%). 0.5% margin on every side makes the click
-            // target slightly larger than the visible button.
-            left: "11.9%",
-            top: "68%",
-            width: "21%",
-            height: "10.2%",
+            // Pixel-perfect: canvas-scan of the painted gold border in the
+            // source image found x=12.43%→32.36%, y=68.49%→77.73%.
+            // The Link uses those exact values so the click area sits
+            // precisely on the visible button.
+            left: "12.43%",
+            top: "68.49%",
+            width: "19.93%",
+            height: "9.24%",
           }}
         >
           {/* Always-on soft halo so visitors clock that this is clickable */}
@@ -48,10 +48,10 @@ export default function HeroBanner() {
             aria-hidden
             className="hero-cta-pulse absolute inset-0 rounded-md"
           />
-          {/* Stronger glow on hover */}
+          {/* Stronger glow on hover, but kept close to the button edge */}
           <span
             aria-hidden
-            className="absolute inset-0 rounded-md ring-2 ring-gold/0 transition-all duration-300 group-hover/cta:ring-gold group-hover/cta:shadow-[0_0_36px_6px_rgba(212,175,55,0.7)]"
+            className="absolute inset-0 rounded-md ring-2 ring-gold/0 transition-all duration-300 group-hover/cta:ring-gold group-hover/cta:shadow-[0_0_18px_2px_rgba(212,175,55,0.7)]"
           />
           {/* Brightness wash on hover so the painted button "lights up" */}
           <span
