@@ -102,26 +102,24 @@ export default function LeaguesShowcase() {
           <Link
             key={t.href}
             href={t.href}
-            className="group relative block aspect-[3/4] overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-500 hover:-translate-y-1 hover:border-accent/60 hover:shadow-glow-sm md:aspect-[3/4.2]"
+            className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-500 hover:-translate-y-1 hover:border-accent/60 hover:shadow-glow-sm"
           >
-            <Image
-              src={t.src}
-              alt={t.titleHe}
-              fill
-              sizes="(min-width: 768px) 25vw, 50vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-              priority={false}
-            />
+            {/* Banner area — aspect matches the source images (1600×1066 = 3:2)
+                so the full composition is visible with no cropping. */}
+            <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <Image
+                src={t.src}
+                alt={t.titleHe}
+                fill
+                sizes="(min-width: 768px) 25vw, 50vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                priority={false}
+              />
+            </div>
 
-            {/* Soft gradient so the ribbon stands out */}
+            {/* Coloured ribbon — sits BELOW the image so nothing is covered. */}
             <div
-              aria-hidden
-              className="absolute inset-0 bg-gradient-to-b from-background/0 via-transparent to-background/55"
-            />
-
-            {/* Coloured ribbon */}
-            <div
-              className={`absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 px-4 py-3 ${t.ribbonClass}`}
+              className={`flex items-center justify-between gap-2 px-4 py-3 ${t.ribbonClass}`}
             >
               <span className="font-display text-base font-black uppercase leading-none tracking-tight md:text-lg">
                 {t.titleHe}
