@@ -1,0 +1,8410 @@
+{
+  "stats": {
+    "total": 1646,
+    "unchanged": 1405,
+    "fixedSlug": 185,
+    "fixedLeague": 95,
+    "fixedCategory": 14,
+    "fixedAll": 66,
+    "noSignal": 27,
+    "conflicts": 145,
+    "newIsSpecial": 25
+  },
+  "changes": [
+    {
+      "id": "10291339854098",
+      "nameHe": "חולצת כדורגל סנדרלנד חוץ 2025/26",
+      "from": {
+        "slug": "sunderland",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sunderland",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "sunderland": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "10291338608914",
+      "nameHe": "חולצת כדורגל סנדרלנד בית 2025/26",
+      "from": {
+        "slug": "sunderland",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sunderland",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "sunderland": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "10270525227282",
+      "nameHe": "ערב הסעדוית מדי בית 2025/26 מונדיאל",
+      "from": {
+        "slug": "misc",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "to": {
+        "slug": "saudi-arabia",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 3,
+      "sources": {
+        "saudi-arabia": [
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "10270524375314",
+      "nameHe": "אוקרינה מדי בית 2025/26 מונדיאל",
+      "from": {
+        "slug": "misc",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "to": {
+        "slug": "ukraine",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 8,
+      "sources": {
+        "ukraine": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "10234094518546",
+      "nameHe": "חולצת כדורגל שאחטר דוניצק 2025/26",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "shakhtar-donetsk",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "shakhtar-donetsk": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "10234092552466",
+      "nameHe": "חולצת כודורגל רטרו מארסי 2009",
+      "from": {
+        "slug": "marseille",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "marseille": [
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10234092454162",
+      "nameHe": "חולצת כודורגל אולימפיק מארסי נטרלית 2025/26",
+      "from": {
+        "slug": "marseille",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "marseille": [
+          "image",
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10234092060946",
+      "nameHe": "חולצת כודורגל אולימפיק מארסי בית 2025/26",
+      "from": {
+        "slug": "marseille",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "marseille": [
+          "image",
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10234091864338",
+      "nameHe": "חולצת כודורגל אולימפיק מארסי חוץ 2025/26",
+      "from": {
+        "slug": "marseille",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "marseille": [
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212784079122",
+      "nameHe": "חולצת כדורגל לבנטה בית 2025/26",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "levante",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "levante": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212783128850",
+      "nameHe": "חולצת כדורגל אתלטיק בליבאו בית 2025/26",
+      "from": {
+        "slug": "athletic-bilbao",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "athletic-bilbao",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "athletic-bilbao": [
+          "image",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212782670098",
+      "nameHe": "חולצת כדורגל אתלטיק בליבאו חוץ 2025/26",
+      "from": {
+        "slug": "athletic-bilbao",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "athletic-bilbao",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "athletic-bilbao": [
+          "image",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212780278034",
+      "nameHe": "חולצת כדורגל גירונה נטרלית 2025/26",
+      "from": {
+        "slug": "girona",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "girona",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "girona": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212780146962",
+      "nameHe": "חולצת כדורגל גירונה חוץ 2025/26",
+      "from": {
+        "slug": "girona",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "girona",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "girona": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212779229458",
+      "nameHe": "חולצת כדורגל גירונה בית 2025/26",
+      "from": {
+        "slug": "girona",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "girona",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "girona": [
+          "image",
+          "nameHe"
+        ],
+        "alaves": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212778836242",
+      "nameHe": "חולצת כדורגל דיפורטיבו אלבאס חוץ 2025/26",
+      "from": {
+        "slug": "deportivo-alaves",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "alaves",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "alaves": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212778213650",
+      "nameHe": "חולצת כדורגל דיפורטיבו אלבאס בית 2025/26",
+      "from": {
+        "slug": "deportivo-alaves",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "alaves",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "alaves": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212777787666",
+      "nameHe": "חולצת כדורגל סיביליה נטרלית 2025/26",
+      "from": {
+        "slug": "sevilla",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sevilla",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "sevilla": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212777394450",
+      "nameHe": "חולצת כדורגל סיביליה חוץ 2025/26",
+      "from": {
+        "slug": "sevilla",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sevilla",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "sevilla": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212776411410",
+      "nameHe": "חולצת כדורגל סיביליה בית 2025/26",
+      "from": {
+        "slug": "sevilla",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sevilla",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "sevilla": [
+          "image",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10212750000402",
+      "nameHe": "2025/26 חולצות כדורגל ברנלי בית",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "burnley",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "burnley": [
+          "image",
+          "nameHe"
+        ],
+        "west-ham": [
+          "sourceHandleHe"
+        ]
+      }
+    },
+    {
+      "id": "10212749771026",
+      "nameHe": "2025/26 חולצות כדורגל וואסטהאם נטרלית",
+      "from": {
+        "slug": "west-ham",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "west-ham",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "west-ham": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "10200852070674",
+      "nameHe": "המבורג בית 2025/26",
+      "from": {
+        "slug": "hamburg",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "st-pauli",
+        "league": "bundesliga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "st-pauli": [
+          "sourceHandleHe"
+        ],
+        "germany": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "10200835653906",
+      "nameHe": "2025/26 חולצות כדורגל וואסטהאם בית",
+      "from": {
+        "slug": "west-ham",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "west-ham",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "everton": [
+          "sourceHandleHe"
+        ],
+        "west-ham": [
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "10200830083346",
+      "nameHe": "2025/26 חולצות כדורגל דרבי קאונטי בית",
+      "from": {
+        "slug": "derby-county",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "derby-county",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "derby-county": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "10200807932178",
+      "nameHe": "2025/26 חולצות כדורגל קריסטל פאלס בית",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "crystal-palace",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "crystal-palace": [
+          "image",
+          "nameHe"
+        ],
+        "brighton": [
+          "sourceHandleHe"
+        ]
+      }
+    },
+    {
+      "id": "9690599620882",
+      "nameHe": "מנשדגלבאך חוץ 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "borussia-monchengladbach",
+        "league": "bundesliga",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "borussia-monchengladbach": [
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "maccabi-haifa": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9754567999762",
+      "nameHe": "חולצת כודורגל אולימפיק מארסי חוץ 2024-25",
+      "from": {
+        "slug": "marseille",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "marseille": [
+          "image",
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9754565640466",
+      "nameHe": "חולצת כודורגל אולימפיק מארסי בית 2024-25",
+      "from": {
+        "slug": "marseille",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "marseille": [
+          "image",
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9666987688210",
+      "nameHe": "חולצת כדורגל רייבר פלייט 2019-20",
+      "from": {
+        "slug": "river-plate",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "feyenoord",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "feyenoord": [
+          "sourceHandleHe"
+        ],
+        "hapoel-tel-aviv": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "8218527006994",
+      "nameHe": "חולצת כדורגל רטרו נגיריה 1994",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "nigeria",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 5,
+      "sources": {
+        "nigeria": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9754530021650",
+      "nameHe": "חולצת כדורגל פסו אינדובן 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "psv",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "psv": [
+          "image"
+        ]
+      }
+    },
+    {
+      "id": "9765807915282",
+      "nameHe": "חולצת כדורגל סיביליה חוץ 2024-25",
+      "from": {
+        "slug": "sevilla",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sevilla",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "sevilla": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765808242962",
+      "nameHe": "חולצת כדורגל סיביליה בית 2024-25",
+      "from": {
+        "slug": "sevilla",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sevilla",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "sevilla": [
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765807325458",
+      "nameHe": "חולצת כדורגל סוסיאדאד חוץ 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "real-sociedad",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "real-sociedad": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765807128850",
+      "nameHe": "חולצת כדורגל סוסיאדאד בית 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "real-sociedad",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "real-sociedad": [
+          "image",
+          "nameHe"
+        ],
+        "espanyol": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765807554834",
+      "nameHe": "חולצת כדורגל וויאדוליד חוץ 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "real-valladolid",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "real-valladolid": [
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765807456530",
+      "nameHe": "חולצת כדורגל וויאדוליד בית 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "real-valladolid",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "real-valladolid": [
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765804507410",
+      "nameHe": "חולצת כדורגל גירונה בית 2025",
+      "from": {
+        "slug": "girona",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "girona",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "girona": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "8232659026194",
+      "nameHe": "חולצת כדורגל אתלטיק מניירו מיוחדת",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "atletico-mineiro",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "atletico-mineiro": [
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9765804310802",
+      "nameHe": "חולצת כדורגל אלבאס חוץ 2025",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "alaves",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "alaves": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765804212498",
+      "nameHe": "חולצת כדורגל אלבאס בית 2025",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "alaves",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "alaves": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765805981970",
+      "nameHe": "חולצת כדורגל אוסוסונה חוץ 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "osasuna",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "osasuna": [
+          "image"
+        ],
+        "malaga": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765806113042",
+      "nameHe": "חולצת כדורגל אוסוסונה בית 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "osasuna",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "osasuna": [
+          "image"
+        ],
+        "spain": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "8216467341586",
+      "nameHe": "חולצת כדורגל אולד בויס רטרו 1994",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "young-boys",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "young-boys": [
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9797683937554",
+      "nameHe": "חולצות כדורגל סנדרלנד רטרו",
+      "from": {
+        "slug": "sunderland",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sunderland",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "sunderland": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9765789499666",
+      "nameHe": "וורדברמן חוץ 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "werder-bremen",
+        "league": "bundesliga",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "werder-bremen": [
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "maccabi-haifa": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9765786550546",
+      "nameHe": "המבורג בית 2024-25",
+      "from": {
+        "slug": "hamburg",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "st-pauli",
+        "league": "bundesliga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "st-pauli": [
+          "sourceHandleHe"
+        ],
+        "germany": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "8363464917266",
+      "nameHe": "הופניים 2024",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "bayern-munich",
+        "league": "bundesliga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "bayern-munich": [
+          "sourceHandleHe"
+        ]
+      }
+    },
+    {
+      "id": "9690620657938",
+      "nameHe": "גרוטר פירת' 2024-25",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "borussia-monchengladbach",
+        "league": "bundesliga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "borussia-monchengladbach": [
+          "sourceHandleHe"
+        ],
+        "maccabi-haifa": [
+          "tags"
+        ]
+      }
+    },
+    {
+      "id": "9797681512722",
+      "nameHe": "2024-25 חולצות כדורגל שפילד יוניטד חוץ",
+      "from": {
+        "slug": "sheffield-united",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sheffield-united",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "sheffield-united": [
+          "image",
+          "nameHe"
+        ],
+        "manchester-united": [
+          "sourceHandleHe"
+        ]
+      }
+    },
+    {
+      "id": "9797682397458",
+      "nameHe": "2024-25 חולצות כדורגל שפילד יוניטד בית",
+      "from": {
+        "slug": "sheffield-united",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sheffield-united",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 6,
+      "sources": {
+        "sheffield-united": [
+          "image",
+          "nameHe"
+        ],
+        "manchester-united": [
+          "sourceHandleHe"
+        ]
+      }
+    },
+    {
+      "id": "9797678825746",
+      "nameHe": "2024-25 חולצות כדורגל קונבטרי בית",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "coventry",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "coventry": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9797683347730",
+      "nameHe": "2024-25 חולצות כדורגל סנדרלנד חוץ",
+      "from": {
+        "slug": "sunderland",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sunderland",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "sunderland": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9743428419858",
+      "nameHe": "2024-25 חולצות כדורגל סנדרלנד",
+      "from": {
+        "slug": "sunderland",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sunderland",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "everton": [
+          "sourceHandleHe"
+        ],
+        "sunderland": [
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9797687214354",
+      "nameHe": "2024-25 חולצות כדורגל וורקסהאם נטרלית",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "wrexham",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "wrexham": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9797686722834",
+      "nameHe": "2024-25 חולצות כדורגל וורקסהאם חוץ",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "wrexham",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 5,
+      "sources": {
+        "wrexham": [
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9797685608722",
+      "nameHe": "2024-25 חולצות כדורגל וורקסהאם בית",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "wrexham",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "sunderland": [
+          "sourceHandleHe"
+        ],
+        "wrexham": [
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9743431926034",
+      "nameHe": "2024-25 חולצות כדורגל ווטפורד בית",
+      "from": {
+        "slug": "watford",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "leicester-city",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "leicester-city": [
+          "sourceHandleHe"
+        ]
+      }
+    },
+    {
+      "id": "9743430189330",
+      "nameHe": "2024-25 חולצות כדורגל וואסטהאם חוץ",
+      "from": {
+        "slug": "west-ham",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "west-ham",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "west-ham": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9743429927186",
+      "nameHe": "2024-25 חולצות כדורגל וואסטהאם בית",
+      "from": {
+        "slug": "west-ham",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "west-ham",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 8,
+      "sources": {
+        "west-ham": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ]
+      }
+    },
+    {
+      "id": "9743425863954",
+      "nameHe": "2024-25 חולצות כדורגל ברמנוטס בית",
+      "from": {
+        "slug": "misc",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "bournemouth",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "bournemouth": [
+          "image"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-1-91",
+      "nameHe": "25-26 כחול בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruz-azul",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "cruz-azul": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-1-97",
+      "nameHe": "25-26 לבן ירוק בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-1-195",
+      "nameHe": "24-25 חוף השנהב מהדורה מיוחדת",
+      "from": {
+        "slug": "palmeiras",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "ivory-coast",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 3,
+      "sources": {
+        "ivory-coast": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-1-200",
+      "nameHe": "24-25 חוץ",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-1-202",
+      "nameHe": "24-25 חוץ",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-1-207",
+      "nameHe": "מנצ'סטר סיטי מהדורה מיוחדת",
+      "from": {
+        "slug": "bayern-munich",
+        "league": "bundesliga",
+        "category": "club"
+      },
+      "to": {
+        "slug": "manchester-city",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "bayern-munich": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-2-458",
+      "nameHe": "חולצת כדורגל",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "santos",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "santos": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-2-461",
+      "nameHe": "חולצת כדורגל מהדורה מיוחדת",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "santos",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "santos": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-2-465",
+      "nameHe": "2026 כחול מנצ'סטר יונייטד מהדורה מיוחדת",
+      "from": {
+        "slug": "manchester-city",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "to": {
+        "slug": "manchester-united",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "manchester-united": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-2-467",
+      "nameHe": "חולצת כדורגל",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "santos",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "santos": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-2-504",
+      "nameHe": "אדום בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "mallorca",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "mallorca": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-2-511",
+      "nameHe": "24-25 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "mallorca",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "mallorca": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-535",
+      "nameHe": "25-26 פאלמייראס מהדורה מיוחדת",
+      "from": {
+        "slug": "palmeiras",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruz-azul",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "cruz-azul": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-539",
+      "nameHe": "25-26 חוץ",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "botafogo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "botafogo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-540",
+      "nameHe": "25-26 חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "vasco",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "vasco": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-542",
+      "nameHe": "25-26 מארסיי חוץ שלישי",
+      "from": {
+        "slug": "psg",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "marseille": [
+          "nameHe"
+        ],
+        "psg": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-545",
+      "nameHe": "25-26 בז' חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "fluminense",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "fluminense": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-547",
+      "nameHe": "25-26 שחור",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "argentina",
+        "league": "tier-1",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "argentina": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-548",
+      "nameHe": "25-26 בז' חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "gremio",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "gremio": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-554",
+      "nameHe": "25-26 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "fenerbahce",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "fenerbahce": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-555",
+      "nameHe": "25-26 חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "fenerbahce",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "fenerbahce": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-557",
+      "nameHe": "25-26 חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-558",
+      "nameHe": "25-26 חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruz-azul",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "cruz-azul": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-590",
+      "nameHe": "25-26 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-593",
+      "nameHe": "25-26 חוץ",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-601",
+      "nameHe": "25-26 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-ittihad",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-ittihad": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-603",
+      "nameHe": "25-26 חוץ",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "monterrey",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "monterrey": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-611",
+      "nameHe": "25-26 חוץ שני S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-612",
+      "nameHe": "25-26 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-613",
+      "nameHe": "25-26 חוץ S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-614",
+      "nameHe": "25-26 חוץ שני S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "aston-villa",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "aston-villa": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-620",
+      "nameHe": "25-26 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "feyenoord",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "feyenoord": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-624",
+      "nameHe": "25-29 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "real-betis",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "real-betis": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-634",
+      "nameHe": "25-26 חוץ S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-641",
+      "nameHe": "25-26 כחול S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "monterrey",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "monterrey": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-707",
+      "nameHe": "25-26 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "palmeiras",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "palmeiras": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-708",
+      "nameHe": "25-26 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "millonarios",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "millonarios": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-717",
+      "nameHe": "25-26 בז' בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "atletico-mineiro",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "atletico-mineiro": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-740",
+      "nameHe": "24/25 חוץ שני S-2XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-744",
+      "nameHe": "24/25 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-hilal",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-hilal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-749",
+      "nameHe": "24/25 כחול בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruz-azul",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "cruz-azul": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-754",
+      "nameHe": "24/25 כחול חוץ S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruz-azul",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "cruz-azul": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-755",
+      "nameHe": "24/25 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-756",
+      "nameHe": "24/25 חוץ שני S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-762",
+      "nameHe": "24/25 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "monterrey",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "monterrey": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-764",
+      "nameHe": "24/25 חוץ S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "monterrey",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "monterrey": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-772",
+      "nameHe": "24/25 חוץ S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-777",
+      "nameHe": "24/25 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-782",
+      "nameHe": "24/25 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-787",
+      "nameHe": "24/25 חוץ S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-788",
+      "nameHe": "24/25 בית S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-790",
+      "nameHe": "24/25 חוץ שני S-4XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-824",
+      "nameHe": "2024 מנצ'סטר סיטי מהדורה מיוחדת",
+      "from": {
+        "slug": "algeria",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "to": {
+        "slug": "manchester-city",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "algeria": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-832",
+      "nameHe": "24/25 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "china",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "china": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-fan-3-834",
+      "nameHe": "24/25 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "czech-republic",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "czech-republic": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-879",
+      "nameHe": "2026 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "nigeria",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "nigeria": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-890",
+      "nameHe": "2627 קרוזיירו בית",
+      "from": {
+        "slug": "palmeiras",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruzeiro",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "cruzeiro": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-894",
+      "nameHe": "2627 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "vasco",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "vasco": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-895",
+      "nameHe": "2627 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "flamengo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "flamengo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-897",
+      "nameHe": "2627 בז' בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "atletico-mineiro",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "atletico-mineiro": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-899",
+      "nameHe": "26-27 בז' בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "fluminense",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "fluminense": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-934",
+      "nameHe": "1998-99 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "fiorentina",
+        "league": "serie-a",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "fiorentina": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-972",
+      "nameHe": "2526 קורינתיאנס חוץ שני",
+      "from": {
+        "slug": "manchester-united",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "to": {
+        "slug": "corinthians",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "corinthians": [
+          "nameHe"
+        ],
+        "manchester-united": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-979",
+      "nameHe": "2526 מנצ'סטר סיטי ילדים",
+      "from": {
+        "slug": "santos",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "manchester-city",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "santos": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-981",
+      "nameHe": "2526 מנצ'סטר סיטי בית שרוול ארוך ילדים",
+      "from": {
+        "slug": "manchester-united",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "to": {
+        "slug": "manchester-city",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "manchester-united": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-984",
+      "nameHe": "2526 כהה בית שרוול ארוך ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-988",
+      "nameHe": "2526 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "botafogo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "botafogo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-989",
+      "nameHe": "2526 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "vasco",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "vasco": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-998",
+      "nameHe": "2526 חוץ סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1006",
+      "nameHe": "2526 כהה חוץ שני שרוול ארוך ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1018",
+      "nameHe": "2526 בית סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1021",
+      "nameHe": "2526 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1024",
+      "nameHe": "2526 חוץ שני ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "flamengo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "flamengo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1026",
+      "nameHe": "2526 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1028",
+      "nameHe": "2526 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "botafogo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "botafogo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1030",
+      "nameHe": "2526 חוץ שני ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1034",
+      "nameHe": "2526 כהה חוץ שני ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1043",
+      "nameHe": "2526 בית סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1048",
+      "nameHe": "2526 חוץ סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1050",
+      "nameHe": "2526 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1051",
+      "nameHe": "2526 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1057",
+      "nameHe": "2526 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "everton",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "everton": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1060",
+      "nameHe": "2526 אדום ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "valencia",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "valencia": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1061",
+      "nameHe": "2526 לבן ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "valencia",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "valencia": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1065",
+      "nameHe": "2526 חוץ שני ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "panama",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "panama": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1067",
+      "nameHe": "2526 צהוב ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "valencia",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "valencia": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1068",
+      "nameHe": "2526 כהה חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1078",
+      "nameHe": "2526 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "panama",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "panama": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1079",
+      "nameHe": "2526 כהה בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1100",
+      "nameHe": "2526 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "vasco",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "vasco": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1101",
+      "nameHe": "2526 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1118",
+      "nameHe": "2526 כהה בית סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1125",
+      "nameHe": "0103 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1127",
+      "nameHe": "2526 חוץ סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "atletico-nacional",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "atletico-nacional": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1137",
+      "nameHe": "2526 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "flamengo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "flamengo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1139",
+      "nameHe": "2526C מהדורה מיוחדת ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1140",
+      "nameHe": "2526 ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "santos",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "santos": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1145",
+      "nameHe": "2425 סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "atletico-nacional",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "atletico-nacional": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1151",
+      "nameHe": "2025 ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "china",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "china": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1160",
+      "nameHe": "מנצ'סטר יונייטד מהדורה מיוחדת ילדים",
+      "from": {
+        "slug": "palmeiras",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "manchester-united",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "manchester-united": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1175",
+      "nameHe": "C סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1176",
+      "nameHe": "2526 בית סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "flamengo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "flamengo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1178",
+      "nameHe": "סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "inter-miami",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "inter-miami": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1181",
+      "nameHe": "C ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1183",
+      "nameHe": "ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "inter-miami",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "inter-miami": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1184",
+      "nameHe": "ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "colo-colo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "colo-colo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1191",
+      "nameHe": "2025 בית S-2XL",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "china",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "china": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1206",
+      "nameHe": "2425 צ'יבאס חוץ שני סט",
+      "from": {
+        "slug": "japan",
+        "league": "tier-2",
+        "category": "national"
+      },
+      "to": {
+        "slug": "chivas",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "chivas": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1216",
+      "nameHe": "2526 בז' בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "fluminense",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "fluminense": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1227",
+      "nameHe": "25-26 בית חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "universidad-catolica",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "universidad-catolica": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1266",
+      "nameHe": "25-26 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "palmeiras",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "palmeiras": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1268",
+      "nameHe": "2526AC125 סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "ac-milan",
+        "league": "serie-a",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "ac-milan": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1272",
+      "nameHe": "25-26 בז' בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "atletico-mineiro",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "atletico-mineiro": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1275",
+      "nameHe": "25-26 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "flamengo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "flamengo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1285",
+      "nameHe": "25-26 כחול חוץ שני סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruz-azul",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "cruz-azul": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1288",
+      "nameHe": "25-26 חוץ שני סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1290",
+      "nameHe": "25-26 ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "colo-colo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "colo-colo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1297",
+      "nameHe": "12-13 בית רטרו ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "santos",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "santos": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1306",
+      "nameHe": "24-25 חוץ שני ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1313",
+      "nameHe": "24-25 מארסיי חוץ שני ילדים",
+      "from": {
+        "slug": "south-korea",
+        "league": "tier-2",
+        "category": "national"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "marseille": [
+          "nameHe"
+        ],
+        "south-korea": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1324",
+      "nameHe": "24-25 כהה חוץ שרוול ארוך סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1327",
+      "nameHe": "24-25 מנצ'סטר סיטי בית סט שרוול ארוך",
+      "from": {
+        "slug": "manchester-united",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "to": {
+        "slug": "manchester-city",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "manchester-united": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1328",
+      "nameHe": "24-25 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-hilal",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-hilal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1335",
+      "nameHe": "24-25 בית סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1338",
+      "nameHe": "24-25 כהה חוץ שני סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1340",
+      "nameHe": "24-25 כהה בית שרוול ארוך",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1347",
+      "nameHe": "24-25 כהה חוץ שני ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1357",
+      "nameHe": "24-25 כהה חוץ סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1377",
+      "nameHe": "24-25 חוץ סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1378",
+      "nameHe": "24-25 בית סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1381",
+      "nameHe": "24-25 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1384",
+      "nameHe": "24-25 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1392",
+      "nameHe": "24-25 כהה בית סט",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1399",
+      "nameHe": "24-25 חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "panama",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 2,
+      "sources": {
+        "panama": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1403",
+      "nameHe": "24-25 כהה חוץ ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1404",
+      "nameHe": "24-25 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1422",
+      "nameHe": "24-25 כהה בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1441",
+      "nameHe": "אדום כהה 02.03 רטרו ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "arsenal",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "arsenal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1448",
+      "nameHe": "24-25 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "vasco",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "vasco": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-short-suit-1459",
+      "nameHe": "24-25 בית ילדים",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "flamengo",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "flamengo": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1515",
+      "nameHe": "כחול מהדורה מיוחדת",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruz-azul",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "cruz-azul": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1521",
+      "nameHe": "כחול מהדורה מיוחדת",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "cruz-azul",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "cruz-azul": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1532",
+      "nameHe": "חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-hilal",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-hilal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1551",
+      "nameHe": "90-91 בית",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "marseille",
+        "league": "ligue-1",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "marseille": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1624",
+      "nameHe": "חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1625",
+      "nameHe": "חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "club-america",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "club-america": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1627",
+      "nameHe": "24-25 חוץ שלישי",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "sporting-lisbon",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "sporting-lisbon": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1632",
+      "nameHe": "חוץ שני",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1633",
+      "nameHe": "67 מהדורה מיוחדת",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-hilal",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-hilal": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-1-1667",
+      "nameHe": "2024 מצרים בית",
+      "from": {
+        "slug": "algeria",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "to": {
+        "slug": "egypt",
+        "league": "tier-3",
+        "category": "national"
+      },
+      "votes": 3,
+      "sources": {
+        "egypt": [
+          "nameHe"
+        ],
+        "algeria": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-2-1731",
+      "nameHe": "25-26 חוץ",
+      "from": {
+        "slug": "unknown",
+        "league": "other",
+        "category": "club"
+      },
+      "to": {
+        "slug": "al-nassr",
+        "league": "other",
+        "category": "club"
+      },
+      "votes": 2,
+      "sources": {
+        "al-nassr": [
+          "cn"
+        ]
+      }
+    },
+    {
+      "id": "yp-player-2-1763",
+      "nameHe": "25-26 מנצ'סטר סיטי בית （ שרוול ארוך ）",
+      "from": {
+        "slug": "atletico-madrid",
+        "league": "la-liga",
+        "category": "club"
+      },
+      "to": {
+        "slug": "manchester-city",
+        "league": "premier-league",
+        "category": "club"
+      },
+      "votes": 3,
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "atletico-madrid": [
+          "cn"
+        ]
+      }
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "10340448010514",
+      "currentSlug": "japan",
+      "pickedSlug": "japan",
+      "signals": {
+        "image": "japan",
+        "sourceHandleHe": "japan",
+        "sourceHandleLatin": null,
+        "nameHe": "japan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "ajax",
+        "tags": "japan"
+      },
+      "sources": {
+        "japan": [
+          "image",
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ],
+        "ajax": [
+          "cn"
+        ]
+      },
+      "nameHe": "יפן מדי חוץ 2025/26 מונדיאל"
+    },
+    {
+      "id": "10328706646290",
+      "currentSlug": "netherlands",
+      "pickedSlug": "netherlands",
+      "signals": {
+        "image": "netherlands",
+        "sourceHandleHe": "spain",
+        "sourceHandleLatin": null,
+        "nameHe": "netherlands",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "netherlands"
+      },
+      "sources": {
+        "netherlands": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "spain": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "הולנד מדי חוץ 2025/26 - מונדיאל"
+    },
+    {
+      "id": "10328706318610",
+      "currentSlug": "spain",
+      "pickedSlug": "spain",
+      "signals": {
+        "image": "spain",
+        "sourceHandleHe": "france",
+        "sourceHandleLatin": null,
+        "nameHe": "spain",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "spain",
+        "tags": "spain"
+      },
+      "sources": {
+        "spain": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "france": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "ספרד מדי חוץ 2025/26 - מונדיאל"
+    },
+    {
+      "id": "10328706154770",
+      "currentSlug": "france",
+      "pickedSlug": "france",
+      "signals": {
+        "image": "france",
+        "sourceHandleHe": "france",
+        "sourceHandleLatin": null,
+        "nameHe": "france",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "england",
+        "tags": "england"
+      },
+      "sources": {
+        "france": [
+          "image",
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "england": [
+          "cn",
+          "tags"
+        ]
+      },
+      "nameHe": "צרפת מדי בית 2025/26 - מונדיאל"
+    },
+    {
+      "id": "10291378127122",
+      "currentSlug": "az-alkmaar",
+      "pickedSlug": "az-alkmaar",
+      "signals": {
+        "image": "az-alkmaar",
+        "sourceHandleHe": "aek-athens",
+        "sourceHandleLatin": null,
+        "nameHe": "az-alkmaar",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "hapoel-tel-aviv"
+      },
+      "sources": {
+        "az-alkmaar": [
+          "image",
+          "nameHe"
+        ],
+        "aek-athens": [
+          "sourceHandleHe"
+        ],
+        "hapoel-tel-aviv": [
+          "tags"
+        ]
+      },
+      "nameHe": "2025/26 חולצת כדורגל אלקמר בית"
+    },
+    {
+      "id": "10291376423186",
+      "currentSlug": "new-england-revolution",
+      "pickedSlug": "new-england-revolution",
+      "signals": {
+        "image": "new-england-revolution",
+        "sourceHandleHe": "lecce",
+        "sourceHandleLatin": null,
+        "nameHe": "new-england-revolution",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "new-england-revolution": [
+          "image",
+          "nameHe"
+        ],
+        "lecce": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדוגל ניו אינגלנד חוץ 2025/26 - תורגמן, פיינגולד"
+    },
+    {
+      "id": "10270525063442",
+      "currentSlug": "sweden",
+      "pickedSlug": "sweden",
+      "signals": {
+        "image": "sweden",
+        "sourceHandleHe": "ukraine",
+        "sourceHandleLatin": null,
+        "nameHe": "sweden",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "sweden": [
+          "image",
+          "nameHe"
+        ],
+        "ukraine": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "שוודיה מדי בית 2025/26 מונדיאל"
+    },
+    {
+      "id": "10257721458962",
+      "currentSlug": "japan",
+      "pickedSlug": "japan",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "japan",
+        "sourceHandleLatin": null,
+        "nameHe": "japan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "atletico-madrid",
+        "tags": "japan"
+      },
+      "sources": {
+        "japan": [
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ],
+        "atletico-madrid": [
+          "cn"
+        ]
+      },
+      "nameHe": "יפן מדי בית 2025/26 מונדיאל"
+    },
+    {
+      "id": "10215571161362",
+      "currentSlug": "colombia",
+      "pickedSlug": "colombia",
+      "signals": {
+        "image": "colombia",
+        "sourceHandleHe": "mexico",
+        "sourceHandleLatin": null,
+        "nameHe": "colombia",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "colombia"
+      },
+      "sources": {
+        "colombia": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "mexico": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל קולומביה בית רטרו 1990"
+    },
+    {
+      "id": "10212780835090",
+      "currentSlug": "granada",
+      "pickedSlug": "granada",
+      "signals": {
+        "image": "granada",
+        "sourceHandleHe": "girona",
+        "sourceHandleLatin": null,
+        "nameHe": null,
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "spain"
+      },
+      "sources": {
+        "granada": [
+          "image"
+        ],
+        "girona": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל גראנדה בית 2025/26"
+    },
+    {
+      "id": "10212779229458",
+      "currentSlug": "girona",
+      "pickedSlug": "girona",
+      "signals": {
+        "image": "girona",
+        "sourceHandleHe": "alaves",
+        "sourceHandleLatin": null,
+        "nameHe": "girona",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "spain"
+      },
+      "sources": {
+        "girona": [
+          "image",
+          "nameHe"
+        ],
+        "alaves": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל גירונה בית 2025/26"
+    },
+    {
+      "id": "10212750000402",
+      "currentSlug": "misc",
+      "pickedSlug": "burnley",
+      "signals": {
+        "image": "burnley",
+        "sourceHandleHe": "west-ham",
+        "sourceHandleLatin": null,
+        "nameHe": "burnley",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "burnley": [
+          "image",
+          "nameHe"
+        ],
+        "west-ham": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2025/26 חולצות כדורגל ברנלי בית"
+    },
+    {
+      "id": "10200855445778",
+      "currentSlug": "rb-leipzig",
+      "pickedSlug": "rb-leipzig",
+      "signals": {
+        "image": "bayer-leverkusen",
+        "sourceHandleHe": "rb-leipzig",
+        "sourceHandleLatin": null,
+        "nameHe": "rb-leipzig",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "germany"
+      },
+      "sources": {
+        "bayer-leverkusen": [
+          "image"
+        ],
+        "rb-leipzig": [
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "germany": [
+          "tags"
+        ]
+      },
+      "nameHe": "רדבול לייפציג חוץ 2025/26"
+    },
+    {
+      "id": "10200854987026",
+      "currentSlug": "rb-leipzig",
+      "pickedSlug": "rb-leipzig",
+      "signals": {
+        "image": "bayer-leverkusen",
+        "sourceHandleHe": "rb-leipzig",
+        "sourceHandleLatin": null,
+        "nameHe": "rb-leipzig",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "germany"
+      },
+      "sources": {
+        "bayer-leverkusen": [
+          "image"
+        ],
+        "rb-leipzig": [
+          "sourceHandleHe",
+          "nameHe"
+        ],
+        "germany": [
+          "tags"
+        ]
+      },
+      "nameHe": "רדבול לייפציג בית 2025/26"
+    },
+    {
+      "id": "10200836112658",
+      "currentSlug": "leeds",
+      "pickedSlug": "leeds",
+      "signals": {
+        "image": "leeds",
+        "sourceHandleHe": "manchester-united",
+        "sourceHandleLatin": null,
+        "nameHe": "leeds",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "leeds": [
+          "image",
+          "nameHe"
+        ],
+        "manchester-united": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2025/26 חולצות כדורגל לידס יוניטד בית"
+    },
+    {
+      "id": "10200835653906",
+      "currentSlug": "west-ham",
+      "pickedSlug": "west-ham",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "everton",
+        "sourceHandleLatin": null,
+        "nameHe": "west-ham",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "everton": [
+          "sourceHandleHe"
+        ],
+        "west-ham": [
+          "nameHe"
+        ]
+      },
+      "nameHe": "2025/26 חולצות כדורגל וואסטהאם בית"
+    },
+    {
+      "id": "10200807932178",
+      "currentSlug": "misc",
+      "pickedSlug": "crystal-palace",
+      "signals": {
+        "image": "crystal-palace",
+        "sourceHandleHe": "brighton",
+        "sourceHandleLatin": null,
+        "nameHe": "crystal-palace",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "crystal-palace": [
+          "image",
+          "nameHe"
+        ],
+        "brighton": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2025/26 חולצות כדורגל קריסטל פאלס בית"
+    },
+    {
+      "id": "8220717941010",
+      "currentSlug": "real-madrid",
+      "pickedSlug": "real-madrid",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "barcelona",
+        "sourceHandleLatin": null,
+        "nameHe": "real-madrid",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "real-madrid"
+      },
+      "sources": {
+        "barcelona": [
+          "sourceHandleHe"
+        ],
+        "real-madrid": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "ריאל מדריד שלישית 2023"
+    },
+    {
+      "id": "9729687093522",
+      "currentSlug": "real-madrid",
+      "pickedSlug": "real-madrid",
+      "signals": {
+        "image": "real-madrid",
+        "sourceHandleHe": "argentina",
+        "sourceHandleLatin": null,
+        "nameHe": "real-madrid",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "real-madrid",
+        "tags": "real-madrid"
+      },
+      "sources": {
+        "real-madrid": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "argentina": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "ריאל מדריד רטרו 2015- סט ילדים"
+    },
+    {
+      "id": "9166073856274",
+      "currentSlug": "real-betis",
+      "pickedSlug": "real-betis",
+      "signals": {
+        "image": "real-betis",
+        "sourceHandleHe": "barcelona",
+        "sourceHandleLatin": null,
+        "nameHe": "real-betis",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "real-betis"
+      },
+      "sources": {
+        "real-betis": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "barcelona": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "ריאל בטיס בית 2024/25"
+    },
+    {
+      "id": "9729689354514",
+      "currentSlug": "france",
+      "pickedSlug": "france",
+      "signals": {
+        "image": "france",
+        "sourceHandleHe": "ac-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "france",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "france"
+      },
+      "sources": {
+        "france": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "ac-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "צרפת רטרו 1998- סט ילדים"
+    },
+    {
+      "id": "9598253105426",
+      "currentSlug": "france",
+      "pickedSlug": "france",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "england",
+        "sourceHandleLatin": null,
+        "nameHe": "france",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "france"
+      },
+      "sources": {
+        "england": [
+          "sourceHandleHe"
+        ],
+        "france": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "צרפת מדי חוץ 2024 יורו"
+    },
+    {
+      "id": "9765796512018",
+      "currentSlug": "eintracht-frankfurt",
+      "pickedSlug": "eintracht-frankfurt",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "st-pauli",
+        "sourceHandleLatin": null,
+        "nameHe": "eintracht-frankfurt",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "germany"
+      },
+      "sources": {
+        "st-pauli": [
+          "sourceHandleHe"
+        ],
+        "eintracht-frankfurt": [
+          "nameHe"
+        ],
+        "germany": [
+          "tags"
+        ]
+      },
+      "nameHe": "פרנקפורט בית 2024-25"
+    },
+    {
+      "id": "9729685258514",
+      "currentSlug": "psg",
+      "pickedSlug": "psg",
+      "signals": {
+        "image": "psg",
+        "sourceHandleHe": "borussia-dortmund",
+        "sourceHandleLatin": null,
+        "nameHe": null,
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "psg": [
+          "image"
+        ],
+        "borussia-dortmund": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "פריס סנט גרמן בית 2024-25 - סט ילדים"
+    },
+    {
+      "id": "9598285807890",
+      "currentSlug": "portugal",
+      "pickedSlug": "portugal",
+      "signals": {
+        "image": "portugal",
+        "sourceHandleHe": "spain",
+        "sourceHandleLatin": null,
+        "nameHe": "portugal",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "portugal"
+      },
+      "sources": {
+        "portugal": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "spain": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "פורטוגל מדי בית 2024 יורו"
+    },
+    {
+      "id": "9690243465490",
+      "currentSlug": "portugal",
+      "pickedSlug": "portugal",
+      "signals": {
+        "image": "portugal",
+        "sourceHandleHe": "england",
+        "sourceHandleLatin": null,
+        "nameHe": "portugal",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "portugal"
+      },
+      "sources": {
+        "portugal": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "england": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "פורטוגל בית 2024 - סט ילדים"
+    },
+    {
+      "id": "9598274568466",
+      "currentSlug": "spain",
+      "pickedSlug": "spain",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "belgium",
+        "sourceHandleLatin": null,
+        "nameHe": "spain",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "spain",
+        "tags": "spain"
+      },
+      "sources": {
+        "belgium": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "nameHe",
+          "cn",
+          "tags"
+        ]
+      },
+      "nameHe": "ספרד מדי בית 2024 יורו"
+    },
+    {
+      "id": "9690226295058",
+      "currentSlug": "spain",
+      "pickedSlug": "spain",
+      "signals": {
+        "image": "spain",
+        "sourceHandleHe": "germany",
+        "sourceHandleLatin": null,
+        "nameHe": "spain",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "spain"
+      },
+      "sources": {
+        "spain": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "germany": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "ספרד חוץ 2024 - סט ילדים"
+    },
+    {
+      "id": "9729690304786",
+      "currentSlug": "santos",
+      "pickedSlug": "santos",
+      "signals": {
+        "image": "santos",
+        "sourceHandleHe": "ac-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "santos",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "santos"
+      },
+      "sources": {
+        "santos": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "ac-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "סנטוס רטרו 2012- סט ילדים"
+    },
+    {
+      "id": "10074398359826",
+      "currentSlug": "chelsea",
+      "pickedSlug": "chelsea",
+      "signals": {
+        "image": "chelsea",
+        "sourceHandleHe": "spain",
+        "sourceHandleLatin": null,
+        "nameHe": "chelsea",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "chelsea",
+        "tags": "chelsea"
+      },
+      "sources": {
+        "chelsea": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "spain": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "מעיל צלסי 2012"
+    },
+    {
+      "id": "10074397966610",
+      "currentSlug": "spain",
+      "pickedSlug": "spain",
+      "signals": {
+        "image": "spain",
+        "sourceHandleHe": "england",
+        "sourceHandleLatin": null,
+        "nameHe": "spain",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "spain"
+      },
+      "sources": {
+        "spain": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "england": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "מעיל ספרד 1998"
+    },
+    {
+      "id": "10074398621970",
+      "currentSlug": "manchester-united",
+      "pickedSlug": "manchester-united",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "chelsea",
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-united",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "manchester-united"
+      },
+      "sources": {
+        "chelsea": [
+          "sourceHandleHe"
+        ],
+        "manchester-united": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "מעיל מנצסטר יוניטד 1998"
+    },
+    {
+      "id": "10074395541778",
+      "currentSlug": "germany",
+      "pickedSlug": "germany",
+      "signals": {
+        "image": "germany",
+        "sourceHandleHe": "brazil",
+        "sourceHandleLatin": null,
+        "nameHe": "germany",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "germany"
+      },
+      "sources": {
+        "germany": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "brazil": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "מעיל גרמניה 2024 יורו"
+    },
+    {
+      "id": "10074397114642",
+      "currentSlug": "england",
+      "pickedSlug": "england",
+      "signals": {
+        "image": "england",
+        "sourceHandleHe": "germany",
+        "sourceHandleLatin": null,
+        "nameHe": "england",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "england",
+        "tags": "england"
+      },
+      "sources": {
+        "england": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "germany": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "מעיל אנגליה 1996"
+    },
+    {
+      "id": "9690113343762",
+      "currentSlug": "manchester-city",
+      "pickedSlug": "manchester-city",
+      "signals": {
+        "image": "manchester-city",
+        "sourceHandleHe": "liverpool",
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "manchester-city"
+      },
+      "sources": {
+        "manchester-city": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "liverpool": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "מנצסטר סיטי בית 2024-25 - סט ילדים"
+    },
+    {
+      "id": "9690105872658",
+      "currentSlug": "manchester-united",
+      "pickedSlug": "manchester-united",
+      "signals": {
+        "image": "manchester-united",
+        "sourceHandleHe": "arsenal",
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-united",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "manchester-united"
+      },
+      "sources": {
+        "manchester-united": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "arsenal": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "מנצסטר יוניטד 2007- סט ילדים"
+    },
+    {
+      "id": "9729688469778",
+      "currentSlug": "ac-milan",
+      "pickedSlug": "ac-milan",
+      "signals": {
+        "image": "ac-milan",
+        "sourceHandleHe": "manchester-united",
+        "sourceHandleLatin": null,
+        "nameHe": "ac-milan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "ac-milan"
+      },
+      "sources": {
+        "ac-milan": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "manchester-united": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "מילאן רטרו 2006 - סט ילדים"
+    },
+    {
+      "id": "9729681654034",
+      "currentSlug": "ac-milan",
+      "pickedSlug": "ac-milan",
+      "signals": {
+        "image": "ac-milan",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "ac-milan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "ac-milan"
+      },
+      "sources": {
+        "ac-milan": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "מילאן בית 2024-25 - סט ילדים"
+    },
+    {
+      "id": "9690110427410",
+      "currentSlug": "liverpool",
+      "pickedSlug": "liverpool",
+      "signals": {
+        "image": "liverpool",
+        "sourceHandleHe": "manchester-united",
+        "sourceHandleLatin": null,
+        "nameHe": "liverpool",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "liverpool"
+      },
+      "sources": {
+        "liverpool": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "manchester-united": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "ליברפול בית 2024-25 - סט ילדים"
+    },
+    {
+      "id": "9690124648722",
+      "currentSlug": "tottenham",
+      "pickedSlug": "tottenham",
+      "signals": {
+        "image": "tottenham",
+        "sourceHandleHe": "arsenal",
+        "sourceHandleLatin": null,
+        "nameHe": "tottenham",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "tottenham"
+      },
+      "sources": {
+        "tottenham": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "arsenal": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "טוטנהאם מדי חוץ 2024-25 - סט ילדים"
+    },
+    {
+      "id": "9754559185170",
+      "currentSlug": "lyon",
+      "pickedSlug": "lyon",
+      "signals": {
+        "image": "lyon",
+        "sourceHandleHe": "psg",
+        "sourceHandleLatin": null,
+        "nameHe": "lyon",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "lyon"
+      },
+      "sources": {
+        "lyon": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "psg": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כודורגל אולימפיק ליון חוץ 2024-25"
+    },
+    {
+      "id": "9690614235410",
+      "currentSlug": "charlotte-fc",
+      "pickedSlug": "charlotte-fc",
+      "signals": {
+        "image": "charlotte-fc",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": null,
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "charlotte-fc": [
+          "image"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל שארלוט 2024 ליאל אבדה"
+    },
+    {
+      "id": "8236009980178",
+      "currentSlug": "red-bull-salzburg",
+      "pickedSlug": "red-bull-salzburg",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "celtic",
+        "sourceHandleLatin": null,
+        "nameHe": "red-bull-salzburg",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "celtic": [
+          "sourceHandleHe"
+        ],
+        "red-bull-salzburg": [
+          "nameHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל רדבול זלצבורג בית 2023 (אוסקר גלוך)"
+    },
+    {
+      "id": "9750463512850",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "inter-miami",
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל רביעית אינטר מיאמי 2024-25"
+    },
+    {
+      "id": "9637360795922",
+      "currentSlug": "cadiz",
+      "pickedSlug": "cadiz",
+      "signals": {
+        "image": "cadiz",
+        "sourceHandleHe": "parma",
+        "sourceHandleLatin": null,
+        "nameHe": null,
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "maccabi-tel-aviv"
+      },
+      "sources": {
+        "cadiz": [
+          "image"
+        ],
+        "parma": [
+          "sourceHandleHe"
+        ],
+        "maccabi-tel-aviv": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל קאדיז 2024-25"
+    },
+    {
+      "id": "8225566720274",
+      "currentSlug": "psg",
+      "pickedSlug": "psg",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "liverpool",
+        "sourceHandleLatin": null,
+        "nameHe": "psg",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "liverpool": [
+          "sourceHandleHe"
+        ],
+        "psg": [
+          "nameHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל פריז סן גרמן בית 2023"
+    },
+    {
+      "id": "9636902797586",
+      "currentSlug": "flamengo",
+      "pickedSlug": "flamengo",
+      "signals": {
+        "image": "flamengo",
+        "sourceHandleHe": "benfica",
+        "sourceHandleLatin": null,
+        "nameHe": "flamengo",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "hapoel-tel-aviv"
+      },
+      "sources": {
+        "flamengo": [
+          "image",
+          "nameHe"
+        ],
+        "benfica": [
+          "sourceHandleHe"
+        ],
+        "hapoel-tel-aviv": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל פלמנגו 2008"
+    },
+    {
+      "id": "9666986148114",
+      "currentSlug": "feyenoord",
+      "pickedSlug": "feyenoord",
+      "signals": {
+        "image": "feyenoord",
+        "sourceHandleHe": "sporting-lisbon",
+        "sourceHandleLatin": null,
+        "nameHe": "feyenoord",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "hapoel-tel-aviv"
+      },
+      "sources": {
+        "feyenoord": [
+          "image",
+          "nameHe"
+        ],
+        "sporting-lisbon": [
+          "sourceHandleHe"
+        ],
+        "hapoel-tel-aviv": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל פיינורד 2024-25"
+    },
+    {
+      "id": "8222061265170",
+      "currentSlug": "fulham",
+      "pickedSlug": "fulham",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "arsenal",
+        "sourceHandleLatin": null,
+        "nameHe": "fulham",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "fulham"
+      },
+      "sources": {
+        "arsenal": [
+          "sourceHandleHe"
+        ],
+        "fulham": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל פולהאם חוץ 2023"
+    },
+    {
+      "id": "9637376885010",
+      "currentSlug": "sporting-lisbon",
+      "pickedSlug": "sporting-lisbon",
+      "signals": {
+        "image": "sporting-lisbon",
+        "sourceHandleHe": "benfica",
+        "sourceHandleLatin": null,
+        "nameHe": "sporting-lisbon",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "maccabi-haifa"
+      },
+      "sources": {
+        "sporting-lisbon": [
+          "image",
+          "nameHe"
+        ],
+        "benfica": [
+          "sourceHandleHe"
+        ],
+        "maccabi-haifa": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל ספורטינג ליסבון 2024-25"
+    },
+    {
+      "id": "9765807128850",
+      "currentSlug": "misc",
+      "pickedSlug": "real-sociedad",
+      "signals": {
+        "image": "real-sociedad",
+        "sourceHandleHe": "espanyol",
+        "sourceHandleLatin": null,
+        "nameHe": "real-sociedad",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "spain"
+      },
+      "sources": {
+        "real-sociedad": [
+          "image",
+          "nameHe"
+        ],
+        "espanyol": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל סוסיאדאד בית 2024-25"
+    },
+    {
+      "id": "10170445267218",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "inter-miami",
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל נטרילת אינטר מיאמי 2025-26"
+    },
+    {
+      "id": "8239945023762",
+      "currentSlug": "portugal",
+      "pickedSlug": "portugal",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "netherlands",
+        "sourceHandleLatin": null,
+        "nameHe": "portugal",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "portugal"
+      },
+      "sources": {
+        "netherlands": [
+          "sourceHandleHe"
+        ],
+        "portugal": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל נבחרת פורטוגל בית 2023"
+    },
+    {
+      "id": "9798623330578",
+      "currentSlug": "japan",
+      "pickedSlug": "japan",
+      "signals": {
+        "image": "japan",
+        "sourceHandleHe": "japan",
+        "sourceHandleLatin": null,
+        "nameHe": "japan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": "japan"
+      },
+      "sources": {
+        "japan": [
+          "image",
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "חולצת כדורגל נבחרת יפן חוץ 2024"
+    },
+    {
+      "id": "9798624149778",
+      "currentSlug": "japan",
+      "pickedSlug": "japan",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "japan",
+        "sourceHandleLatin": null,
+        "nameHe": "japan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": "japan"
+      },
+      "sources": {
+        "japan": [
+          "sourceHandleHe",
+          "nameHe",
+          "tags"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "חולצת כדורגל נבחרת יפן דרגון בול 2024"
+    },
+    {
+      "id": "8287455576338",
+      "currentSlug": "japan",
+      "pickedSlug": "japan",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "brazil",
+        "sourceHandleLatin": null,
+        "nameHe": "japan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "japan"
+      },
+      "sources": {
+        "brazil": [
+          "sourceHandleHe"
+        ],
+        "japan": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל נבחרת יפן 2024"
+    },
+    {
+      "id": "8239887450386",
+      "currentSlug": "england",
+      "pickedSlug": "england",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "italy",
+        "sourceHandleLatin": null,
+        "nameHe": "england",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "england"
+      },
+      "sources": {
+        "italy": [
+          "sourceHandleHe"
+        ],
+        "england": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל נבחרת אנגליה"
+    },
+    {
+      "id": "8239882076434",
+      "currentSlug": "italy",
+      "pickedSlug": "italy",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "netherlands",
+        "sourceHandleLatin": null,
+        "nameHe": "italy",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "netherlands": [
+          "sourceHandleHe"
+        ],
+        "italy": [
+          "nameHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל נבחרת איטליה"
+    },
+    {
+      "id": "9754578911506",
+      "currentSlug": "tottenham",
+      "pickedSlug": "tottenham",
+      "signals": {
+        "image": "tottenham",
+        "sourceHandleHe": "santos",
+        "sourceHandleLatin": null,
+        "nameHe": "tottenham",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "tottenham"
+      },
+      "sources": {
+        "tottenham": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "santos": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל טוטנהאם רטרו 1994"
+    },
+    {
+      "id": "10132072497426",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "inter-miami",
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל חוץ אינטר מיאמי 2025-26"
+    },
+    {
+      "id": "9765808406802",
+      "currentSlug": "valencia",
+      "pickedSlug": "valencia",
+      "signals": {
+        "image": "valencia",
+        "sourceHandleHe": "sevilla",
+        "sourceHandleLatin": null,
+        "nameHe": null,
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "spain"
+      },
+      "sources": {
+        "valencia": [
+          "image"
+        ],
+        "sevilla": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל וולנסיה בית 2024-25"
+    },
+    {
+      "id": "8239900786962",
+      "currentSlug": "brazil",
+      "pickedSlug": "brazil",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "argentina",
+        "sourceHandleLatin": null,
+        "nameHe": "brazil",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "brazil"
+      },
+      "sources": {
+        "argentina": [
+          "sourceHandleHe"
+        ],
+        "brazil": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל ברזיל בית 2023"
+    },
+    {
+      "id": "9750583378194",
+      "currentSlug": "al-ahly",
+      "pickedSlug": "al-ahly",
+      "signals": {
+        "image": "al-ahly",
+        "sourceHandleHe": "flamengo",
+        "sourceHandleLatin": null,
+        "nameHe": "al-ahly",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "hapoel-tel-aviv"
+      },
+      "sources": {
+        "al-ahly": [
+          "image",
+          "nameHe"
+        ],
+        "flamengo": [
+          "sourceHandleHe"
+        ],
+        "hapoel-tel-aviv": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל אל אהלי 2024-25"
+    },
+    {
+      "id": "10132070498578",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל אינטר מיאמי 2025-26"
+    },
+    {
+      "id": "9690712310034",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל אינטר מיאמי 2024-25 מיוחדת"
+    },
+    {
+      "id": "9635370008850",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל אינטר מיאמי 2024-25 מיוחדת"
+    },
+    {
+      "id": "8363468456210",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "ajax",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "inter-miami",
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "ajax": [
+          "sourceHandleHe"
+        ],
+        "inter-miami": [
+          "nameHe",
+          "cn",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל אינטר מיאמי 2024 מסי"
+    },
+    {
+      "id": "8232678686994",
+      "currentSlug": "ajax",
+      "pickedSlug": "ajax",
+      "signals": {
+        "image": "ajax",
+        "sourceHandleHe": "napoli",
+        "sourceHandleLatin": null,
+        "nameHe": "ajax",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "ajax"
+      },
+      "sources": {
+        "ajax": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "napoli": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל אייקס בוב מארלי מיוחדת"
+    },
+    {
+      "id": "8232646836498",
+      "currentSlug": "italy",
+      "pickedSlug": "italy",
+      "signals": {
+        "image": "italy",
+        "sourceHandleHe": "celtic",
+        "sourceHandleLatin": null,
+        "nameHe": "italy",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "italy"
+      },
+      "sources": {
+        "italy": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "celtic": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצת כדורגל איטליה וורסאצה"
+    },
+    {
+      "id": "9765805981970",
+      "currentSlug": "misc",
+      "pickedSlug": "osasuna",
+      "signals": {
+        "image": "osasuna",
+        "sourceHandleHe": "malaga",
+        "sourceHandleLatin": null,
+        "nameHe": null,
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "spain"
+      },
+      "sources": {
+        "osasuna": [
+          "image"
+        ],
+        "malaga": [
+          "sourceHandleHe"
+        ],
+        "spain": [
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדורגל אוסוסונה חוץ 2024-25"
+    },
+    {
+      "id": "8221358358802",
+      "currentSlug": "roma",
+      "pickedSlug": "roma",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "napoli",
+        "sourceHandleLatin": null,
+        "nameHe": "roma",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "roma"
+      },
+      "sources": {
+        "napoli": [
+          "sourceHandleHe"
+        ],
+        "roma": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדוגל רומא בית 2023"
+    },
+    {
+      "id": "9165797392658",
+      "currentSlug": "fiorentina",
+      "pickedSlug": "fiorentina",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "napoli",
+        "sourceHandleLatin": null,
+        "nameHe": "fiorentina",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "fiorentina"
+      },
+      "sources": {
+        "napoli": [
+          "sourceHandleHe"
+        ],
+        "fiorentina": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדוגל פיורנטינה בית 2024"
+    },
+    {
+      "id": "8221343613202",
+      "currentSlug": "napoli",
+      "pickedSlug": "napoli",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "ac-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "napoli",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "napoli",
+        "tags": "napoli"
+      },
+      "sources": {
+        "ac-milan": [
+          "sourceHandleHe"
+        ],
+        "napoli": [
+          "nameHe",
+          "cn",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדוגל נאפולי בית 2023"
+    },
+    {
+      "id": "8221237739794",
+      "currentSlug": "ac-milan",
+      "pickedSlug": "ac-milan",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "juventus",
+        "sourceHandleLatin": null,
+        "nameHe": "ac-milan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "ac-milan"
+      },
+      "sources": {
+        "juventus": [
+          "sourceHandleHe"
+        ],
+        "ac-milan": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדוגל מילאן בית 2023"
+    },
+    {
+      "id": "8221225845010",
+      "currentSlug": "juventus",
+      "pickedSlug": "juventus",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "juventus",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "juventus",
+        "tags": "juventus"
+      },
+      "sources": {
+        "inter-milan": [
+          "sourceHandleHe"
+        ],
+        "juventus": [
+          "nameHe",
+          "cn",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצת כדוגל יובנטוס חוץ 2023"
+    },
+    {
+      "id": "8365073563922",
+      "currentSlug": "france",
+      "pickedSlug": "france",
+      "signals": {
+        "image": "france",
+        "sourceHandleHe": "brazil",
+        "sourceHandleLatin": null,
+        "nameHe": "france",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "france"
+      },
+      "sources": {
+        "france": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "brazil": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצה רטרו צרפת בית 2006"
+    },
+    {
+      "id": "9667010494738",
+      "currentSlug": "spain",
+      "pickedSlug": "spain",
+      "signals": {
+        "image": "spain",
+        "sourceHandleHe": "germany",
+        "sourceHandleLatin": null,
+        "nameHe": "spain",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "spain"
+      },
+      "sources": {
+        "spain": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "germany": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצה רטרו ספרד 2010"
+    },
+    {
+      "id": "8235474845970",
+      "currentSlug": "ajax",
+      "pickedSlug": "ajax",
+      "signals": {
+        "image": "ajax",
+        "sourceHandleHe": "ac-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "ajax",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "ajax"
+      },
+      "sources": {
+        "ajax": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "ac-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "חולצה רטרו אייקס"
+    },
+    {
+      "id": "8218623115538",
+      "currentSlug": "chelsea",
+      "pickedSlug": "chelsea",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "scotland",
+        "sourceHandleLatin": null,
+        "nameHe": "chelsea",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "chelsea"
+      },
+      "sources": {
+        "scotland": [
+          "sourceHandleHe"
+        ],
+        "chelsea": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "חולצה כדורגל רטרו צלסי 2011"
+    },
+    {
+      "id": "9598241145106",
+      "currentSlug": "netherlands",
+      "pickedSlug": "netherlands",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "germany",
+        "sourceHandleLatin": null,
+        "nameHe": "netherlands",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "netherlands",
+        "tags": "netherlands"
+      },
+      "sources": {
+        "germany": [
+          "sourceHandleHe"
+        ],
+        "netherlands": [
+          "nameHe",
+          "cn",
+          "tags"
+        ]
+      },
+      "nameHe": "הולנד מדי חוץ 2024 יורו"
+    },
+    {
+      "id": "9729684996370",
+      "currentSlug": "borussia-dortmund",
+      "pickedSlug": "borussia-dortmund",
+      "signals": {
+        "image": "borussia-dortmund",
+        "sourceHandleHe": "brazil",
+        "sourceHandleLatin": null,
+        "nameHe": "borussia-dortmund",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "borussia-dortmund"
+      },
+      "sources": {
+        "borussia-dortmund": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "brazil": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "דורטמונד בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "8401822122258",
+      "currentSlug": "borussia-dortmund",
+      "pickedSlug": "borussia-dortmund",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "bayern-munich",
+        "sourceHandleLatin": null,
+        "nameHe": "borussia-dortmund",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "borussia-dortmund"
+      },
+      "sources": {
+        "bayern-munich": [
+          "sourceHandleHe"
+        ],
+        "borussia-dortmund": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "דורטמונד 2024 מדי בית"
+    },
+    {
+      "id": "9598157226258",
+      "currentSlug": "germany",
+      "pickedSlug": "germany",
+      "signals": {
+        "image": "germany",
+        "sourceHandleHe": "portugal",
+        "sourceHandleLatin": null,
+        "nameHe": "germany",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "germany"
+      },
+      "sources": {
+        "germany": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "portugal": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "גרמניה מדי בית 2024 יורו"
+    },
+    {
+      "id": "9690210697490",
+      "currentSlug": "germany",
+      "pickedSlug": "germany",
+      "signals": {
+        "image": "germany",
+        "sourceHandleHe": "barcelona",
+        "sourceHandleLatin": null,
+        "nameHe": "germany",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "germany",
+        "tags": "germany"
+      },
+      "sources": {
+        "germany": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "barcelona": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "גרמניה בית 2024 - סט ילדים"
+    },
+    {
+      "id": "8287447154962",
+      "currentSlug": "barcelona",
+      "pickedSlug": "barcelona",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "bayern-munich",
+        "sourceHandleLatin": null,
+        "nameHe": "barcelona",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "barcelona"
+      },
+      "sources": {
+        "bayern-munich": [
+          "sourceHandleHe"
+        ],
+        "barcelona": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "ברצלונה 2021 בית רטרו"
+    },
+    {
+      "id": "9729683980562",
+      "currentSlug": "brazil",
+      "pickedSlug": "brazil",
+      "signals": {
+        "image": "brazil",
+        "sourceHandleHe": "ac-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "brazil",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "brazil"
+      },
+      "sources": {
+        "brazil": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "ac-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "ברזיל בית 2024-25 - סט ילדים"
+    },
+    {
+      "id": "9598269554962",
+      "currentSlug": "belgium",
+      "pickedSlug": "belgium",
+      "signals": {
+        "image": "belgium",
+        "sourceHandleHe": "italy",
+        "sourceHandleLatin": null,
+        "nameHe": "belgium",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "belgium": [
+          "image",
+          "nameHe"
+        ],
+        "italy": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "בלגיה מדי בית 2024 יורו"
+    },
+    {
+      "id": "9765719539986",
+      "currentSlug": "bayern-munich",
+      "pickedSlug": "bayern-munich",
+      "signals": {
+        "image": "bayern-munich",
+        "sourceHandleHe": "borussia-dortmund",
+        "sourceHandleLatin": null,
+        "nameHe": "bayern-munich",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "bayern-munich"
+      },
+      "sources": {
+        "bayern-munich": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "borussia-dortmund": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "באירן מינכן בית 2024-25 - סט ילדים"
+    },
+    {
+      "id": "9690105086226",
+      "currentSlug": "arsenal",
+      "pickedSlug": "arsenal",
+      "signals": {
+        "image": "arsenal",
+        "sourceHandleHe": "chelsea",
+        "sourceHandleLatin": null,
+        "nameHe": "arsenal",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "arsenal"
+      },
+      "sources": {
+        "arsenal": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "chelsea": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "ארסנל 2002-04 סט ילדים"
+    },
+    {
+      "id": "9729686569234",
+      "currentSlug": "argentina",
+      "pickedSlug": "argentina",
+      "signals": {
+        "image": "argentina",
+        "sourceHandleHe": "brazil",
+        "sourceHandleLatin": null,
+        "nameHe": "argentina",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "argentina"
+      },
+      "sources": {
+        "argentina": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "brazil": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "ארגנטינה חוץ 2024 - סט ילדים"
+    },
+    {
+      "id": "9598247076114",
+      "currentSlug": "england",
+      "pickedSlug": "england",
+      "signals": {
+        "image": "england",
+        "sourceHandleHe": "netherlands",
+        "sourceHandleLatin": null,
+        "nameHe": "england",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "england",
+        "tags": "england"
+      },
+      "sources": {
+        "england": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "netherlands": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "אנגליה מדי חוץ 2024 יורו"
+    },
+    {
+      "id": "9690240581906",
+      "currentSlug": "england",
+      "pickedSlug": "england",
+      "signals": {
+        "image": "england",
+        "sourceHandleHe": "france",
+        "sourceHandleLatin": null,
+        "nameHe": "england",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "england"
+      },
+      "sources": {
+        "england": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "france": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "אנגליה חוץ 2024 - סט ילדים"
+    },
+    {
+      "id": "9729681326354",
+      "currentSlug": "inter-milan",
+      "pickedSlug": "inter-milan",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "chelsea",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-milan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "inter-milan"
+      },
+      "sources": {
+        "chelsea": [
+          "sourceHandleHe"
+        ],
+        "inter-milan": [
+          "nameHe",
+          "tags"
+        ]
+      },
+      "nameHe": "אינטר מילאן 2010 - סט ילדים"
+    },
+    {
+      "id": "10170444906770",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "inter-miami",
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "אינטר מיאמי נטרילת 2025-26 - סט ילדים"
+    },
+    {
+      "id": "10132073382162",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "inter-miami",
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "אינטר מיאמי חוץ 2025-26 - סט ילדים"
+    },
+    {
+      "id": "9690576650514",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "אינטר מיאמי חוץ 2024 - סט ילדים"
+    },
+    {
+      "id": "10170444480786",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "אינטר מיאמי בית 2025-26 - סט ילדים"
+    },
+    {
+      "id": "9690573963538",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "barcelona",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "barcelona": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "אינטר מיאמי בית 2024 - סט ילדים"
+    },
+    {
+      "id": "9750464626962",
+      "currentSlug": "inter-miami",
+      "pickedSlug": "inter-miami",
+      "signals": {
+        "image": "inter-miami",
+        "sourceHandleHe": "inter-milan",
+        "sourceHandleLatin": null,
+        "nameHe": "inter-miami",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "inter-miami"
+      },
+      "sources": {
+        "inter-miami": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "inter-milan": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "אינטר מיאמי 2024-25 - סט ילדים"
+    },
+    {
+      "id": "9598262214930",
+      "currentSlug": "italy",
+      "pickedSlug": "italy",
+      "signals": {
+        "image": "italy",
+        "sourceHandleHe": "france",
+        "sourceHandleLatin": null,
+        "nameHe": "italy",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "italy",
+        "tags": "italy"
+      },
+      "sources": {
+        "italy": [
+          "image",
+          "nameHe",
+          "cn",
+          "tags"
+        ],
+        "france": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "איטליה מדי בית 2024 יורו"
+    },
+    {
+      "id": "9690251395346",
+      "currentSlug": "italy",
+      "pickedSlug": "italy",
+      "signals": {
+        "image": "italy",
+        "sourceHandleHe": "portugal",
+        "sourceHandleLatin": null,
+        "nameHe": "italy",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "italy"
+      },
+      "sources": {
+        "italy": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "portugal": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "איטליה בית 2024 - סט ילדים"
+    },
+    {
+      "id": "9750509748498",
+      "currentSlug": "fenerbahce",
+      "pickedSlug": "fenerbahce",
+      "signals": {
+        "image": "fenerbahce",
+        "sourceHandleHe": "aberdeen",
+        "sourceHandleLatin": null,
+        "nameHe": "fenerbahce",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "fenerbahce": [
+          "image",
+          "nameHe"
+        ],
+        "aberdeen": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצת כדורגל פנרבחצה בית"
+    },
+    {
+      "id": "9750497689874",
+      "currentSlug": "aberdeen",
+      "pickedSlug": "aberdeen",
+      "signals": {
+        "image": "aberdeen",
+        "sourceHandleHe": "boca-juniors",
+        "sourceHandleLatin": null,
+        "nameHe": "aberdeen",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "aberdeen": [
+          "image",
+          "nameHe"
+        ],
+        "boca-juniors": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצת כדורגל אברדין חוץ"
+    },
+    {
+      "id": "9797681512722",
+      "currentSlug": "sheffield-united",
+      "pickedSlug": "sheffield-united",
+      "signals": {
+        "image": "sheffield-united",
+        "sourceHandleHe": "manchester-united",
+        "sourceHandleLatin": null,
+        "nameHe": "sheffield-united",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "sheffield-united": [
+          "image",
+          "nameHe"
+        ],
+        "manchester-united": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצות כדורגל שפילד יוניטד חוץ"
+    },
+    {
+      "id": "9797682397458",
+      "currentSlug": "sheffield-united",
+      "pickedSlug": "sheffield-united",
+      "signals": {
+        "image": "sheffield-united",
+        "sourceHandleHe": "manchester-united",
+        "sourceHandleLatin": null,
+        "nameHe": "sheffield-united",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "sheffield-united": [
+          "image",
+          "nameHe"
+        ],
+        "manchester-united": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצות כדורגל שפילד יוניטד בית"
+    },
+    {
+      "id": "9743428419858",
+      "currentSlug": "sunderland",
+      "pickedSlug": "sunderland",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "everton",
+        "sourceHandleLatin": null,
+        "nameHe": "sunderland",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "everton": [
+          "sourceHandleHe"
+        ],
+        "sunderland": [
+          "nameHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצות כדורגל סנדרלנד"
+    },
+    {
+      "id": "9743434088722",
+      "currentSlug": "newcastle",
+      "pickedSlug": "newcastle",
+      "signals": {
+        "image": "newcastle",
+        "sourceHandleHe": "leeds",
+        "sourceHandleLatin": null,
+        "nameHe": "newcastle",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "newcastle": [
+          "image",
+          "nameHe"
+        ],
+        "leeds": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצות כדורגל ניוקאסל שלישית"
+    },
+    {
+      "id": "9743428878610",
+      "currentSlug": "newcastle",
+      "pickedSlug": "newcastle",
+      "signals": {
+        "image": "newcastle",
+        "sourceHandleHe": "sunderland",
+        "sourceHandleLatin": null,
+        "nameHe": "newcastle",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "newcastle": [
+          "image",
+          "nameHe"
+        ],
+        "sunderland": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצות כדורגל ניוקאסל בית"
+    },
+    {
+      "id": "9797680529682",
+      "currentSlug": "leicester-city",
+      "pickedSlug": "leicester-city",
+      "signals": {
+        "image": "leicester-city",
+        "sourceHandleHe": "leeds",
+        "sourceHandleLatin": null,
+        "nameHe": "leicester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "leicester-city": [
+          "image",
+          "nameHe"
+        ],
+        "leeds": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצות כדורגל לסטר סיטי חוץ"
+    },
+    {
+      "id": "9743429173522",
+      "currentSlug": "leicester-city",
+      "pickedSlug": "leicester-city",
+      "signals": {
+        "image": "leicester-city",
+        "sourceHandleHe": "newcastle",
+        "sourceHandleLatin": null,
+        "nameHe": "leicester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "leicester-city": [
+          "image",
+          "nameHe"
+        ],
+        "newcastle": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצות כדורגל לסטר סיטי בית"
+    },
+    {
+      "id": "9797685608722",
+      "currentSlug": "misc",
+      "pickedSlug": "wrexham",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": "sunderland",
+        "sourceHandleLatin": null,
+        "nameHe": "wrexham",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": null
+      },
+      "sources": {
+        "sunderland": [
+          "sourceHandleHe"
+        ],
+        "wrexham": [
+          "nameHe"
+        ]
+      },
+      "nameHe": "2024-25 חולצות כדורגל וורקסהאם בית"
+    },
+    {
+      "id": "9637327995154",
+      "currentSlug": "boca-juniors",
+      "pickedSlug": "boca-juniors",
+      "signals": {
+        "image": "boca-juniors",
+        "sourceHandleHe": "al-nassr",
+        "sourceHandleLatin": null,
+        "nameHe": "boca-juniors",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": null,
+        "tags": "boca-juniors"
+      },
+      "sources": {
+        "boca-juniors": [
+          "image",
+          "nameHe",
+          "tags"
+        ],
+        "al-nassr": [
+          "sourceHandleHe"
+        ]
+      },
+      "nameHe": "1996 חולצת כדורגל בוקה גוניורס"
+    },
+    {
+      "id": "yp-fan-1-0",
+      "currentSlug": "nigeria",
+      "pickedSlug": "nigeria",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "nigeria",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": null
+      },
+      "sources": {
+        "nigeria": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "26-27 ירוק ניגריה בית"
+    },
+    {
+      "id": "yp-fan-1-3",
+      "currentSlug": "south-africa",
+      "pickedSlug": "south-africa",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "south-africa",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": null
+      },
+      "sources": {
+        "south-africa": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "26-27 ירוק דרום אפריקה חוץ"
+    },
+    {
+      "id": "yp-fan-1-60",
+      "currentSlug": "belgium",
+      "pickedSlug": "belgium",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "belgium",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "colombia",
+        "tags": null
+      },
+      "sources": {
+        "belgium": [
+          "nameHe"
+        ],
+        "colombia": [
+          "cn"
+        ]
+      },
+      "nameHe": "26 אדום בלגיה בית"
+    },
+    {
+      "id": "yp-fan-1-62",
+      "currentSlug": "senegal",
+      "pickedSlug": "senegal",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "senegal",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "ivory-coast",
+        "tags": null
+      },
+      "sources": {
+        "senegal": [
+          "nameHe"
+        ],
+        "ivory-coast": [
+          "cn"
+        ]
+      },
+      "nameHe": "26 ירוק סנגל חוץ"
+    },
+    {
+      "id": "yp-fan-1-176",
+      "currentSlug": "santos",
+      "pickedSlug": "santos",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "santos",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "palmeiras",
+        "tags": null
+      },
+      "sources": {
+        "santos": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      },
+      "nameHe": "24-25 לבן סנטוס בית"
+    },
+    {
+      "id": "yp-fan-1-195",
+      "currentSlug": "palmeiras",
+      "pickedSlug": "ivory-coast",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "ivory-coast",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "palmeiras",
+        "tags": null
+      },
+      "sources": {
+        "ivory-coast": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      },
+      "nameHe": "24-25 חוף השנהב מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-207",
+      "currentSlug": "bayern-munich",
+      "pickedSlug": "manchester-city",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "bayern-munich",
+        "tags": null
+      },
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "bayern-munich": [
+          "cn"
+        ]
+      },
+      "nameHe": "מנצ'סטר סיטי מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-245",
+      "currentSlug": "psg",
+      "pickedSlug": "psg",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "psg",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "palmeiras",
+        "tags": null
+      },
+      "sources": {
+        "psg": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      },
+      "nameHe": "24-25 פריז חוץ"
+    },
+    {
+      "id": "yp-fan-2-465",
+      "currentSlug": "manchester-city",
+      "pickedSlug": "manchester-united",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-united",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": null
+      },
+      "sources": {
+        "manchester-united": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "2026 כחול מנצ'סטר יונייטד מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-2-480",
+      "currentSlug": "ajax",
+      "pickedSlug": "ajax",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "ajax",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-united",
+        "tags": null
+      },
+      "sources": {
+        "ajax": [
+          "nameHe"
+        ],
+        "manchester-united": [
+          "cn"
+        ]
+      },
+      "nameHe": "70# רטרו כחול אייאקס מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-2-498",
+      "currentSlug": "psg",
+      "pickedSlug": "psg",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "psg",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "cruz-azul",
+        "tags": null
+      },
+      "sources": {
+        "psg": [
+          "nameHe"
+        ],
+        "cruz-azul": [
+          "cn"
+        ]
+      },
+      "nameHe": "2526 לבן פריז מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-2-500",
+      "currentSlug": "tunisia",
+      "pickedSlug": "tunisia",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "tunisia",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "nice",
+        "tags": null
+      },
+      "sources": {
+        "tunisia": [
+          "nameHe"
+        ],
+        "nice": [
+          "cn"
+        ]
+      },
+      "nameHe": "תוניסיה"
+    },
+    {
+      "id": "yp-fan-3-542",
+      "currentSlug": "psg",
+      "pickedSlug": "marseille",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "marseille",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "psg",
+        "tags": null
+      },
+      "sources": {
+        "marseille": [
+          "nameHe"
+        ],
+        "psg": [
+          "cn"
+        ]
+      },
+      "nameHe": "25-26 מארסיי חוץ שלישי"
+    },
+    {
+      "id": "yp-fan-3-570",
+      "currentSlug": "senegal",
+      "pickedSlug": "senegal",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "senegal",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "japan",
+        "tags": null
+      },
+      "sources": {
+        "senegal": [
+          "nameHe"
+        ],
+        "japan": [
+          "cn"
+        ]
+      },
+      "nameHe": "2026 סנגל חוץ"
+    },
+    {
+      "id": "yp-fan-3-824",
+      "currentSlug": "algeria",
+      "pickedSlug": "manchester-city",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "algeria",
+        "tags": null
+      },
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "algeria": [
+          "cn"
+        ]
+      },
+      "nameHe": "2024 מנצ'סטר סיטי מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-short-suit-882",
+      "currentSlug": "psg",
+      "pickedSlug": "psg",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "psg",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": null
+      },
+      "sources": {
+        "psg": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "2526 פריז חוץ שלישי"
+    },
+    {
+      "id": "yp-short-suit-890",
+      "currentSlug": "palmeiras",
+      "pickedSlug": "cruzeiro",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "cruzeiro",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "palmeiras",
+        "tags": null
+      },
+      "sources": {
+        "cruzeiro": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      },
+      "nameHe": "2627 קרוזיירו בית"
+    },
+    {
+      "id": "yp-short-suit-940",
+      "currentSlug": "japan",
+      "pickedSlug": "japan",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "japan",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": null
+      },
+      "sources": {
+        "japan": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "2526 יפן"
+    },
+    {
+      "id": "yp-short-suit-972",
+      "currentSlug": "manchester-united",
+      "pickedSlug": "corinthians",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "corinthians",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-united",
+        "tags": null
+      },
+      "sources": {
+        "corinthians": [
+          "nameHe"
+        ],
+        "manchester-united": [
+          "cn"
+        ]
+      },
+      "nameHe": "2526 קורינתיאנס חוץ שני"
+    },
+    {
+      "id": "yp-short-suit-979",
+      "currentSlug": "santos",
+      "pickedSlug": "manchester-city",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "santos",
+        "tags": null
+      },
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "santos": [
+          "cn"
+        ]
+      },
+      "nameHe": "2526 מנצ'סטר סיטי ילדים"
+    },
+    {
+      "id": "yp-short-suit-981",
+      "currentSlug": "manchester-united",
+      "pickedSlug": "manchester-city",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-united",
+        "tags": null
+      },
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "manchester-united": [
+          "cn"
+        ]
+      },
+      "nameHe": "2526 מנצ'סטר סיטי בית שרוול ארוך ילדים"
+    },
+    {
+      "id": "yp-short-suit-986",
+      "currentSlug": "psg",
+      "pickedSlug": "psg",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "psg",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": null
+      },
+      "sources": {
+        "psg": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "2526 פריז חוץ שני ילדים"
+    },
+    {
+      "id": "yp-short-suit-1082",
+      "currentSlug": "bayern-munich",
+      "pickedSlug": "bayern-munich",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "bayern-munich",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "palmeiras",
+        "tags": null
+      },
+      "sources": {
+        "bayern-munich": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      },
+      "nameHe": "25-26 באיירן מינכן בית ילדים"
+    },
+    {
+      "id": "yp-short-suit-1160",
+      "currentSlug": "palmeiras",
+      "pickedSlug": "manchester-united",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-united",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "palmeiras",
+        "tags": null
+      },
+      "sources": {
+        "manchester-united": [
+          "nameHe"
+        ],
+        "palmeiras": [
+          "cn"
+        ]
+      },
+      "nameHe": "מנצ'סטר יונייטד מהדורה מיוחדת ילדים"
+    },
+    {
+      "id": "yp-short-suit-1192",
+      "currentSlug": "river-plate",
+      "pickedSlug": "river-plate",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "river-plate",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "psg",
+        "tags": null
+      },
+      "sources": {
+        "river-plate": [
+          "nameHe"
+        ],
+        "psg": [
+          "cn"
+        ]
+      },
+      "nameHe": "ריבר פלייט חוץ שלישי סט"
+    },
+    {
+      "id": "yp-short-suit-1261",
+      "currentSlug": "santos",
+      "pickedSlug": "santos",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "santos",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": null
+      },
+      "sources": {
+        "santos": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "24-25 סנטוס בית ילדים"
+    },
+    {
+      "id": "yp-short-suit-1313",
+      "currentSlug": "south-korea",
+      "pickedSlug": "marseille",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "marseille",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "south-korea",
+        "tags": null
+      },
+      "sources": {
+        "marseille": [
+          "nameHe"
+        ],
+        "south-korea": [
+          "cn"
+        ]
+      },
+      "nameHe": "24-25 מארסיי חוץ שני ילדים"
+    },
+    {
+      "id": "yp-short-suit-1327",
+      "currentSlug": "manchester-united",
+      "pickedSlug": "manchester-city",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-united",
+        "tags": null
+      },
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "manchester-united": [
+          "cn"
+        ]
+      },
+      "nameHe": "24-25 מנצ'סטר סיטי בית סט שרוול ארוך"
+    },
+    {
+      "id": "yp-player-1-1485",
+      "currentSlug": "psg",
+      "pickedSlug": "psg",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "psg",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "ghana",
+        "tags": null
+      },
+      "sources": {
+        "psg": [
+          "nameHe"
+        ],
+        "ghana": [
+          "cn"
+        ]
+      },
+      "nameHe": "26-27 פריז מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-player-1-1667",
+      "currentSlug": "algeria",
+      "pickedSlug": "egypt",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "egypt",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "algeria",
+        "tags": null
+      },
+      "sources": {
+        "egypt": [
+          "nameHe"
+        ],
+        "algeria": [
+          "cn"
+        ]
+      },
+      "nameHe": "2024 מצרים בית"
+    },
+    {
+      "id": "yp-player-1-1669",
+      "currentSlug": "morocco",
+      "pickedSlug": "morocco",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "morocco",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "algeria",
+        "tags": null
+      },
+      "sources": {
+        "morocco": [
+          "nameHe"
+        ],
+        "algeria": [
+          "cn"
+        ]
+      },
+      "nameHe": "2024 מרוקו חוץ"
+    },
+    {
+      "id": "yp-player-2-1759",
+      "currentSlug": "atletico-madrid",
+      "pickedSlug": "atletico-madrid",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "atletico-madrid",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "manchester-city",
+        "tags": null
+      },
+      "sources": {
+        "atletico-madrid": [
+          "nameHe"
+        ],
+        "manchester-city": [
+          "cn"
+        ]
+      },
+      "nameHe": "25-26 אתלטיקו מדריד חוץ （ שרוול ארוך ）"
+    },
+    {
+      "id": "yp-player-2-1763",
+      "currentSlug": "atletico-madrid",
+      "pickedSlug": "manchester-city",
+      "signals": {
+        "image": null,
+        "sourceHandleHe": null,
+        "sourceHandleLatin": null,
+        "nameHe": "manchester-city",
+        "nameHeLatin": null,
+        "nameEn": null,
+        "cn": "atletico-madrid",
+        "tags": null
+      },
+      "sources": {
+        "manchester-city": [
+          "nameHe"
+        ],
+        "atletico-madrid": [
+          "cn"
+        ]
+      },
+      "nameHe": "25-26 מנצ'סטר סיטי בית （ שרוול ארוך ）"
+    }
+  ],
+  "noSignal": [
+    {
+      "id": "8215087350034",
+      "currentSlug": "misc",
+      "currentLeague": "other",
+      "nameHe": "חולצה כדורגל רטרו"
+    },
+    {
+      "id": "8306401575186",
+      "currentSlug": "misc",
+      "currentLeague": "other",
+      "nameHe": "חולצה בהפתעה רטרו"
+    },
+    {
+      "id": "8306393645330",
+      "currentSlug": "misc",
+      "currentLeague": "other",
+      "nameHe": "חולצה בהפתעה רגיל"
+    },
+    {
+      "id": "9765812175122",
+      "currentSlug": "misc",
+      "currentLeague": "other",
+      "nameHe": "2024-25 חולצות כדורגל פורסטמות בית"
+    },
+    {
+      "id": "yp-fan-2-301",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "כחול לבן",
+      "cn": "宝蓝色白色标"
+    },
+    {
+      "id": "yp-fan-2-305",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "כחול אפור",
+      "cn": "宝蓝色灰色标"
+    },
+    {
+      "id": "yp-fan-2-307",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ורוד",
+      "cn": "粉色"
+    },
+    {
+      "id": "yp-fan-2-308",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק",
+      "cn": "墨绿色"
+    },
+    {
+      "id": "yp-fan-2-310",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "רטרו שחור / לבן",
+      "cn": "复古三叶草撞色黑/白"
+    },
+    {
+      "id": "yp-fan-2-312",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "רטרו לבן / ירוק",
+      "cn": "复古三叶草撞色白/墨绿"
+    },
+    {
+      "id": "yp-fan-2-315",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "רטרו ירוק לבן",
+      "cn": "复古三叶草撞色墨绿白"
+    },
+    {
+      "id": "yp-fan-2-317",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק",
+      "cn": "绿色三叶草经典版"
+    },
+    {
+      "id": "yp-fan-2-318",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "לבן שחור",
+      "cn": "白黑色经典大荷花"
+    },
+    {
+      "id": "yp-fan-2-319",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "שחור לבן",
+      "cn": "黑白色经典大荷花"
+    },
+    {
+      "id": "yp-fan-2-320",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ורוד",
+      "cn": "粉色三叶草经典版"
+    },
+    {
+      "id": "yp-fan-2-323",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "כתום",
+      "cn": "橙色三叶草经典版"
+    },
+    {
+      "id": "yp-fan-2-327",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק לבן / בהיר כחול",
+      "cn": "绿洲队 白/浅蓝"
+    },
+    {
+      "id": "yp-fan-2-328",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק שחור ירוק",
+      "cn": "绿洲队 黑 荧光绿"
+    },
+    {
+      "id": "yp-fan-2-329",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק אדום / לבן",
+      "cn": "绿洲队 红/白色"
+    },
+    {
+      "id": "yp-fan-2-330",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק ורוד / לבן",
+      "cn": "绿洲队 粉/白色"
+    },
+    {
+      "id": "yp-fan-2-331",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק ירוק / לבן",
+      "cn": "绿洲队 墨绿/白色"
+    },
+    {
+      "id": "yp-fan-2-333",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק לבן / ירוק",
+      "cn": "绿洲队 白/墨绿色"
+    },
+    {
+      "id": "yp-fan-2-335",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק בהיר כחול",
+      "cn": "绿洲队浅蓝色"
+    },
+    {
+      "id": "yp-fan-2-337",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק לבן / אדום",
+      "cn": "绿洲队 白/红色"
+    },
+    {
+      "id": "yp-fan-2-339",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "ירוק לבן",
+      "cn": "绿洲队白色"
+    },
+    {
+      "id": "yp-fan-2-454",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "מהדורה מיוחדת חולצת כדורגל",
+      "cn": "特别版球衣"
+    },
+    {
+      "id": "yp-fan-2-457",
+      "currentSlug": "unknown",
+      "currentLeague": "other",
+      "nameHe": "מהדורה מיוחדת חולצת כדורגל",
+      "cn": "特别版球衣"
+    }
+  ]
+}
