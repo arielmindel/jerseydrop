@@ -20,7 +20,15 @@ type Counts = {
   byTier: Record<string, number>;
 };
 
-export default function MegaMenu({ counts }: { counts?: Counts }) {
+type TopTeams = Record<string, { slug: string; name: string }[]>;
+
+export default function MegaMenu({
+  counts,
+  topTeamsByLeague,
+}: {
+  counts?: Counts;
+  topTeamsByLeague?: TopTeams;
+}) {
   const tier1 = NATIONS.filter((n) => n.tier === "tier-1");
   const tier2 = NATIONS.filter((n) => n.tier === "tier-2");
   const fmt = (n: number | undefined) =>
@@ -33,34 +41,65 @@ export default function MegaMenu({ counts }: { counts?: Counts }) {
         <NavigationMenuItem>
           <NavigationMenuTrigger>ליגות</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="grid w-[640px] grid-cols-2 gap-4 p-6">
+            <div className="grid w-[760px] grid-cols-2 gap-4 p-6">
               <div className="col-span-2 mb-1 flex items-center gap-2">
                 <Shield className="h-4 w-4 text-accent" />
                 <span className="section-eyebrow">ליגות מובילות</span>
               </div>
-              {LEAGUES.map((league) => (
-                <NavigationMenuLink key={league.id} asChild>
-                  <Link
-                    href={`/leagues/${league.slug}`}
-                    className="group flex flex-col gap-1 rounded-xl border border-transparent p-3 transition-colors hover:border-border hover:bg-background"
+              {LEAGUES.map((league) => {
+                const topTeams = topTeamsByLeague?.[league.slug] ?? [];
+                return (
+                  <div
+                    key={league.id}
+                    className="rounded-xl border border-transparent p-3 transition-colors hover:border-border hover:bg-background"
                   >
-                    <div className="flex items-baseline justify-between">
-                      <span className="font-display text-base font-bold uppercase tracking-tight text-foreground">
-                        {league.nameHe}
-                        <span className="ms-1 font-display text-xs text-accent">
-                          {fmt(counts?.byLeague[league.slug])}
-                        </span>
-                      </span>
-                      <span className="font-display text-xs text-muted">
-                        {league.nameEn}
-                      </span>
-                    </div>
-                    <span className="line-clamp-1 text-xs text-muted">
-                      {league.teams.slice(0, 4).join(" · ")}
-                    </span>
-                  </Link>
-                </NavigationMenuLink>
-              ))}
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href={`/leagues/${league.slug}`}
+                        className="block"
+                      >
+                        <div className="flex items-baseline justify-between">
+                          <span className="font-display text-base font-bold uppercase tracking-tight text-foreground">
+                            {league.nameHe}
+                            <span className="ms-1 font-display text-xs text-accent">
+                              {fmt(counts?.byLeague[league.slug])}
+                            </span>
+                          </span>
+                          <span className="font-display text-xs text-muted">
+                            {league.nameEn}
+                          </span>
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    {topTeams.length > 0 && (
+                      <ul className="mt-1.5 flex flex-wrap gap-1">
+                        {topTeams.map((t) => (
+                          <li key={t.slug}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={`/teams/${t.slug}`}
+                                className="inline-block rounded-md border border-border/40 bg-background/40 px-2 py-0.5 text-[11px] text-muted transition-colors hover:border-accent/40 hover:text-accent"
+                              >
+                                {t.name}
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              href={`/leagues/${league.slug}`}
+                              className="inline-block rounded-md px-2 py-0.5 text-[11px] font-bold text-accent transition-colors hover:underline"
+                            >
+                              לכל הקבוצות ←
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
+                    )}
+                  </div>
+                );
+              })}
               <NavigationMenuLink asChild>
                 <Link
                   href="/leagues"

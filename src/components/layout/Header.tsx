@@ -6,6 +6,8 @@ import MobileMenu from "./MobileMenu";
 import CartDrawer from "@/components/cart/CartDrawer";
 import SearchBar from "@/components/search/SearchBar";
 import { getAllProducts } from "@/lib/products";
+import { getTopTeams } from "@/lib/teams";
+import { LEAGUES } from "@/lib/constants";
 
 /** Computed once per request — passed to the client MegaMenu so each
  *  league/tier/team chip can render with its product count. */
@@ -24,8 +26,21 @@ function buildNavCounts() {
   return { byLeague, byTeamSlug, byTier };
 }
 
+/** Top-5 teams per league for the mega-menu quick links. */
+function buildTopTeams() {
+  const out: Record<string, { slug: string; name: string }[]> = {};
+  for (const l of LEAGUES) {
+    out[l.slug] = getTopTeams(l.slug, 5).map((t) => ({
+      slug: t.slug,
+      name: t.name,
+    }));
+  }
+  return out;
+}
+
 export default function Header() {
   const counts = buildNavCounts();
+  const topTeamsByLeague = buildTopTeams();
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container flex h-20 items-center justify-between gap-4">
@@ -44,7 +59,7 @@ export default function Header() {
               className="h-14 w-auto md:h-16"
             />
           </Link>
-          <MegaMenu counts={counts} />
+          <MegaMenu counts={counts} topTeamsByLeague={topTeamsByLeague} />
         </div>
         <div className="flex items-center gap-2">
           <Link
