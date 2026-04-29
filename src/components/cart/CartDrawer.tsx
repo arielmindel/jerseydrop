@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ShoppingBag, Trash2, Plus, Minus } from "lucide-react";
@@ -19,18 +19,29 @@ import { useCart, computeTotals, lineTotal } from "@/lib/cart";
 import CartItemDetails from "./CartItemDetails";
 
 export default function CartDrawer() {
-  const items = useCart((s) => s.items);
+  // Hydration-safety: Zustand-persist reads from localStorage on the client,
+  // but on the server `items` is always []. If we render `count > 0` before
+  // mount, the server HTML and the first client render disagree → React
+  // hydration error #418/#423/#425, which throws away the entire DOM tree
+  // and re-renders. That re-render breaks Next/Image's lazy loading and
+  // leaves product images blank across the whole site.
+  //
+  // Fix: render with the empty-cart state until `mounted` flips true on the
+  // client. After mount we use the real persisted store. The server HTML
+  // and the first client render stay byte-identical.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const storeItems = useCart((s) => s.items);
   const isOpen = useCart((s) => s.isOpen);
   const setOpen = useCart((s) => s.setOpen);
   const updateQuantity = useCart((s) => s.updateQuantity);
   const removeItem = useCart((s) => s.removeItem);
 
+  const items = mounted ? storeItems : [];
   const { subtotal, count, shipping, total } = computeTotals(items);
-
-  // Hydration-safe count for trigger badge
-  useEffect(() => {
-    // noop — mount sync
-  }, []);
 
   const versionLabel: Record<string, string> = {
     fan: "Fan",
