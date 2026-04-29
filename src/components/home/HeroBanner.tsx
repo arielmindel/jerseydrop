@@ -41,12 +41,12 @@ export default function HeroBanner() {
             height: "9.24%",
           }}
         >
-          {/* Pulsing gold glow — INSIDE the button bounds only (inset
-              box-shadow + bg tint), so it can never grow past the painted
-              border. Hover intensifies it. */}
+          {/* Pulsing gold tint — bg-color only, no shadow/ring. The painted
+              border stays exactly the same; only the button interior gets
+              a gold wash that fades in and out. */}
           <span
             aria-hidden
-            className="hero-cta-pulse absolute inset-0 rounded-md transition-all duration-300 group-hover/cta:bg-gold/15 group-hover/cta:shadow-[inset_0_0_28px_2px_rgba(212,175,55,0.85)]"
+            className="hero-cta-pulse absolute inset-0 rounded-md transition-colors duration-300 group-hover/cta:bg-gold/30"
           />
           <span className="sr-only">קנה עכשיו</span>
         </Link>
