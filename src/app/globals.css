@@ -10,6 +10,7 @@
   html {
     background: #0b1220;
     color: #f8fafc;
+    scroll-behavior: smooth;
   }
 
   /* Subtle global aurora wash so the page never feels flat-black */

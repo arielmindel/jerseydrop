@@ -83,7 +83,7 @@ const TILES: LeagueTile[] = [
 
 export default function LeaguesShowcase() {
   return (
-    <section className="container py-14 md:py-20">
+    <section id="leagues" className="container scroll-mt-20 py-14 md:py-20">
       <div className="mb-8 text-center md:mb-12">
         <h2
           className="font-display text-5xl font-black uppercase tracking-tight md:text-7xl"

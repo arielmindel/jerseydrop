@@ -38,8 +38,8 @@ export default function HeroBanner() {
             Pixel-measured (canvas scan) at x=12.43%→32.36%, y=68.49%→77.73%
             so the link sits exactly on the visible button. */}
         <Link
-          href="/products"
-          aria-label="קנה עכשיו — לכל החולצות"
+          href="#leagues"
+          aria-label="קנה עכשיו — דלגו לקטגוריות הליגות"
           className="group/cta absolute z-10 cursor-pointer overflow-hidden rounded-md transition-transform duration-300 hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           style={{
             left: "12.43%",
