@@ -17,7 +17,14 @@ import Image from "next/image";
 export default function HeroBanner() {
   return (
     <section aria-label="Hero" className="relative w-full">
-      <div className="relative aspect-[1717/916] min-h-[280px] max-h-[640px] w-full overflow-hidden">
+      {/* aspect-[1717/916] alone — no max-h, no min-h. With max-h, the
+          container's actual aspect differed from the image's natural aspect,
+          which forced object-cover to crop top/bottom and shifted the
+          painted button DOWN inside the visible area. The Link's % then
+          pointed to the wrong place. Removing the height clamp keeps the
+          rendered area at the source's natural ratio everywhere → the % we
+          measured against the source image stays valid at every breakpoint. */}
+      <div className="relative aspect-[1717/916] w-full overflow-hidden">
         <Image
           src="/images/hero/hero-banner.jpg"
           alt="לבש את התשוקה למשחק — חולצות כדורגל מהליגות והנבחרות הכי גדולות בעולם"
