@@ -88,6 +88,14 @@ function TierSection({
           <NationCard key={team.slug} {...team} />
         ))}
       </div>
+      <div className="text-center">
+        <Link
+          href={`/nations/${tier}`}
+          className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-2 font-display text-xs font-bold uppercase tracking-widest text-accent transition-colors hover:bg-accent/20"
+        >
+          לכל הנבחרות ב-{TIER_LABELS[tier].he} ←
+        </Link>
+      </div>
     </div>
   );
 }
