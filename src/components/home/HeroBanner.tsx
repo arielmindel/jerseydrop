@@ -33,7 +33,7 @@ export default function HeroBanner() {
         <Link
           href="/products"
           aria-label="קנה עכשיו — לכל החולצות"
-          className="group/cta absolute z-10 cursor-pointer rounded-md transition-transform duration-300 hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="group/cta absolute z-10 cursor-pointer overflow-hidden rounded-md transition-transform duration-300 hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           style={{
             left: "12.43%",
             top: "68.49%",
@@ -41,6 +41,13 @@ export default function HeroBanner() {
             height: "9.24%",
           }}
         >
+          {/* Pulsing gold glow — INSIDE the button bounds only (inset
+              box-shadow + bg tint), so it can never grow past the painted
+              border. Hover intensifies it. */}
+          <span
+            aria-hidden
+            className="hero-cta-pulse absolute inset-0 rounded-md transition-all duration-300 group-hover/cta:bg-gold/15 group-hover/cta:shadow-[inset_0_0_28px_2px_rgba(212,175,55,0.85)]"
+          />
           <span className="sr-only">קנה עכשיו</span>
         </Link>
       </div>
