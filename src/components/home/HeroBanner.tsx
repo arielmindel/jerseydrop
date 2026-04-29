@@ -6,11 +6,13 @@ import Image from "next/image";
  *
  * The image at /public/images/hero/hero-banner.jpg ships with the headline,
  * tagline, and "קנה עכשיו" CTA already painted in. Only the button itself is
- * clickable — a precisely positioned <Link> overlay sits on top of the
- * painted button (percentages, so it scales with the image at any width).
+ * clickable — an invisible <Link> sits exactly over the painted button and
+ * relies on cursor:pointer + a subtle scale-up on hover for the click cue.
  *
- * The overlay carries a soft gold pulse so visitors know it's interactive
- * even before they hover, and intensifies on hover/focus.
+ * No box-shadow halo / ring is rendered around the button at rest — earlier
+ * versions added a gold pulse that visually appeared as a SECOND rectangle
+ * just outside the painted border, so we removed it. The painted gold border
+ * is the visual; this component only owns interactivity.
  */
 export default function HeroBanner() {
   return (
@@ -26,38 +28,19 @@ export default function HeroBanner() {
         />
 
         {/* Clickable area precisely over the painted "קנה עכשיו" button.
-            Percentages match the source PNG (1717×916) so the link scales
-            cleanly at every breakpoint. */}
+            Pixel-measured (canvas scan) at x=12.43%→32.36%, y=68.49%→77.73%
+            so the link sits exactly on the visible button. */}
         <Link
           href="/products"
           aria-label="קנה עכשיו — לכל החולצות"
-          className="group/cta absolute z-10 cursor-pointer rounded-md transition-all duration-300 hover:scale-[1.05] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="group/cta absolute z-10 cursor-pointer rounded-md transition-transform duration-300 hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           style={{
-            // Pixel-perfect: canvas-scan of the painted gold border in the
-            // source image found x=12.43%→32.36%, y=68.49%→77.73%.
-            // The Link uses those exact values so the click area sits
-            // precisely on the visible button.
             left: "12.43%",
             top: "68.49%",
             width: "19.93%",
             height: "9.24%",
           }}
         >
-          {/* Always-on soft halo so visitors clock that this is clickable */}
-          <span
-            aria-hidden
-            className="hero-cta-pulse absolute inset-0 rounded-md"
-          />
-          {/* Stronger glow on hover, but kept close to the button edge */}
-          <span
-            aria-hidden
-            className="absolute inset-0 rounded-md ring-2 ring-gold/0 transition-all duration-300 group-hover/cta:ring-gold group-hover/cta:shadow-[0_0_18px_2px_rgba(212,175,55,0.7)]"
-          />
-          {/* Brightness wash on hover so the painted button "lights up" */}
-          <span
-            aria-hidden
-            className="absolute inset-0 rounded-md bg-gold/0 transition-colors duration-300 group-hover/cta:bg-gold/15"
-          />
           <span className="sr-only">קנה עכשיו</span>
         </Link>
       </div>

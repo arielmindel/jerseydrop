@@ -124,23 +124,6 @@
     }
   }
 
-  /* Always-on soft gold pulse — used by the hero banner CTA overlay so the
-     painted "קנה עכשיו" button reads as interactive even without hover.
-     Spread/blur kept small so the halo sits tightly on the painted border. */
-  .hero-cta-pulse {
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
-    animation: heroCtaPulse 2.4s ease-in-out infinite;
-  }
-  @keyframes heroCtaPulse {
-    0%,
-    100% {
-      box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
-    }
-    50% {
-      box-shadow: 0 0 10px 0 rgba(212, 175, 55, 0.55);
-    }
-  }
-
   /* Animated shimmer line for hero CTAs / loading states */
   .shimmer-line {
     position: relative;
