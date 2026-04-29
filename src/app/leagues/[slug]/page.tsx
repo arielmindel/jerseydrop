@@ -2,17 +2,11 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ChevronLeft } from "lucide-react";
-import { LEAGUES, SIZES } from "@/lib/constants";
-import { getProductsByLeague } from "@/lib/products";
-import { applyFilters, parseFilters, type ProductFilterParams } from "@/lib/filters";
-import ProductGrid from "@/components/product/ProductGrid";
-import FilterSidebar, { type FilterGroupConfig } from "@/components/filters/FilterSidebar";
-import SortDropdown from "@/components/filters/SortDropdown";
+import { LEAGUES } from "@/lib/constants";
+import { getTeamsInScope } from "@/lib/teams";
+import TeamCard from "@/components/team/TeamCard";
 
-type Props = {
-  params: { slug: string };
-  searchParams: ProductFilterParams;
-};
+type Props = { params: { slug: string } };
 
 export function generateStaticParams() {
   return LEAGUES.map((l) => ({ slug: l.slug }));
@@ -22,60 +16,17 @@ export function generateMetadata({ params }: Props): Metadata {
   const league = LEAGUES.find((l) => l.slug === params.slug);
   if (!league) return { title: "ליגה לא נמצאה" };
   return {
-    title: `${league.nameHe} · ${league.nameEn}`,
-    description: `חולצות מקוריות של ${league.nameHe} — ${league.teams.slice(0, 5).join(", ")} ועוד. גרסת Fan ו-Player.`,
+    title: `${league.nameHe} · ${league.nameEn} — קבוצות וחולצות`,
+    description: `כל קבוצות ${league.nameHe}. בחרו קבוצה וגלו את כל החולצות שלה — בית, חוץ, רטרו ועוד.`,
   };
 }
 
-export default function LeaguePage({ params, searchParams }: Props) {
+export default function LeaguePage({ params }: Props) {
   const league = LEAGUES.find((l) => l.slug === params.slug);
   if (!league) notFound();
 
-  const all = getProductsByLeague(league.slug);
-  const filters = parseFilters(searchParams);
-  const filtered = applyFilters(all, filters);
-
-  const teamOptions = Array.from(new Set(all.map((p) => p.teamSlug))).map(
-    (slug) => {
-      const prod = all.find((p) => p.teamSlug === slug)!;
-      return { value: slug, labelHe: prod.team };
-    },
-  );
-  const seasons = Array.from(
-    new Set(all.map((p) => p.season).filter((s): s is string => Boolean(s))),
-  );
-
-  const groups: FilterGroupConfig[] = [
-    {
-      key: "team",
-      labelHe: "קבוצה",
-      type: "multi",
-      options: teamOptions,
-    },
-    {
-      key: "version",
-      labelHe: "גרסה",
-      type: "multi",
-      options: [
-        { value: "fan", labelHe: "Fan" },
-        { value: "player", labelHe: "Player" },
-        { value: "retro", labelHe: "Retro" },
-      ],
-    },
-    {
-      key: "size",
-      labelHe: "מידה",
-      type: "multi",
-      options: SIZES.map((s) => ({ value: s, labelHe: s })),
-    },
-    {
-      key: "season",
-      labelHe: "עונה",
-      type: "multi",
-      options: seasons.map((s) => ({ value: s, labelHe: s })),
-    },
-    { key: "price", labelHe: "טווח מחירים", type: "price" },
-  ];
+  const teams = getTeamsInScope(league.slug);
+  const totalProducts = teams.reduce((sum, t) => sum + t.productCount, 0);
 
   return (
     <>
@@ -87,38 +38,40 @@ export default function LeaguePage({ params, searchParams }: Props) {
               ליגות
             </Link>
           </nav>
-          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div>
-              <span className="section-eyebrow">{league.nameEn}</span>
-              <h1 className="mt-2 font-display text-4xl font-black uppercase leading-tight md:text-5xl">
-                {league.nameHe}
-              </h1>
-              <p className="mt-2 text-sm text-muted md:text-base">
-                {league.country} · {league.teams.length} מועדונים · {all.length}{" "}
-                חולצות זמינות
-              </p>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="text-sm text-muted">
-                {filtered.length} / {all.length} חולצות
-              </span>
-              <SortDropdown />
-            </div>
-          </div>
+          <span className="section-eyebrow">{league.nameEn}</span>
+          <h1 className="mt-2 font-display text-4xl font-black uppercase leading-tight md:text-5xl">
+            {league.nameHe}
+          </h1>
+          <p className="mt-2 text-sm text-muted md:text-base">
+            {league.country} · {totalProducts} חולצות מ-{teams.length} קבוצות
+          </p>
         </div>
       </section>
 
-      <section className="container py-8 md:py-12">
-        <div className="flex flex-col gap-6 md:flex-row md:items-start">
-          <FilterSidebar groups={groups} />
-          <div className="flex-1 space-y-6">
-            <ProductGrid
-              products={filtered}
-              emptyHint={`אין כרגע חולצות זמינות ב-${league.nameHe} עם הפילטרים האלה.`}
-            />
+      {teams.length === 0 ? (
+        <section className="container py-16">
+          <div className="rounded-3xl border border-dashed border-border bg-surface/40 p-10 text-center">
+            <p className="font-display text-lg font-bold uppercase tracking-tight">
+              אין כרגע קבוצות זמינות בליגה הזו
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <section className="container py-8 md:py-12">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+            {teams.map((t) => (
+              <TeamCard
+                key={t.slug}
+                to={`/teams/${t.slug}`}
+                slug={t.slug}
+                name={t.name}
+                productCount={t.productCount}
+                image={t.heroImage}
+              />
+            ))}
+          </div>
+        </section>
+      )}
     </>
   );
 }
