@@ -55,6 +55,11 @@ export type Product = {
   isLongSleeve: boolean;
   /** Short-suit (matching shirt+shorts kit). Set when catalog === "short-suit". */
   isShortSuit?: boolean;
+  /** Set by scripts/image-quality-audit.mjs when ALL of a product's images
+   *  fail the quality bar (close-up of fabric/collar instead of full jersey).
+   *  Such products are HIDDEN from public listings until merch replaces
+   *  the photos. */
+  imageQuality?: "low";
   /** Hebrew color label extracted from yupoo title (e.g. "ירוק"). */
   colorHe?: string | null;
   /** Original Chinese title from the supplier — INTERNAL, never display. */

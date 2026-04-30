@@ -108,11 +108,15 @@ const ALL_PRODUCTS: Product[] = normalizeProducts(
   productsJson as unknown as Product[],
 );
 
-// Public-facing catalog now includes ALL products (no hide-by-flag filtering).
-// The HIDDEN_IDS set is still exposed via `isReviewFlagged()` for admin
-// tooling, but products with no detectable team are still listed in /products
-// — they just won't show up in team / league / nation specific pages.
-export const products: Product[] = ALL_PRODUCTS;
+// Public-facing catalog HIDES products that the image-quality audit flagged
+// as `imageQuality: "low"` — the source images for those SKUs are macro
+// fabric / collar / sponsor close-ups, not full jersey shots. Showing them
+// looks broken. The flag is set by scripts/image-quality-audit.mjs; once
+// the merch team replaces the photos and clears the flag, the products
+// rejoin every public listing automatically.
+export const products: Product[] = ALL_PRODUCTS.filter(
+  (p) => p.imageQuality !== "low",
+);
 
 /** Whether the supplier flagged this product as needing manual review (no
  *  detectable team). Use to surface a quiet badge in admin views. */
