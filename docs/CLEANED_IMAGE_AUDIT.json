@@ -1,0 +1,1938 @@
+{
+  "total": 2734,
+  "suspects": [
+    {
+      "id": "10320634609938",
+      "idx": 1,
+      "path": "public/images/products-clean/10320634609938-1.webp",
+      "nameHe": "ג'מייקה & בוב מארלי חוץ 2025/26 מונדיאל",
+      "reason": "low-fill(8.1%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 8.12,
+        "bbox": "447x326",
+        "bbox_ratio": 0.146,
+        "bbox_aspect_h_over_w": 0.73
+      }
+    },
+    {
+      "id": "10320633069842",
+      "idx": 1,
+      "path": "public/images/products-clean/10320633069842-1.webp",
+      "nameHe": "חולצת כדורגל ברזיל מיוחדת 2025/26",
+      "reason": "low-fill(11.4%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 11.37,
+        "bbox": "473x813",
+        "bbox_ratio": 0.385,
+        "bbox_aspect_h_over_w": 1.72
+      }
+    },
+    {
+      "id": "10293942911250",
+      "idx": 0,
+      "path": "public/images/products-clean/10293942911250-0.webp",
+      "nameHe": "חולצה רטרו ספרד חוץ 2006",
+      "reason": "low-fill(15.8%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 15.85,
+        "bbox": "815x831",
+        "bbox_ratio": 0.646,
+        "bbox_aspect_h_over_w": 1.02
+      }
+    },
+    {
+      "id": "10293942911250",
+      "idx": 1,
+      "path": "public/images/products-clean/10293942911250-1.webp",
+      "nameHe": "חולצה רטרו ספרד חוץ 2006",
+      "reason": "low-fill(12.0%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 12.0,
+        "bbox": "673x859",
+        "bbox_ratio": 0.551,
+        "bbox_aspect_h_over_w": 1.28
+      }
+    },
+    {
+      "id": "10293941436690",
+      "idx": 0,
+      "path": "public/images/products-clean/10293941436690-0.webp",
+      "nameHe": "חולצת כדורגל נבחרת איטליה חוץ רטרו 2004",
+      "reason": "low-fill(20.1%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 20.14,
+        "bbox": "817x787",
+        "bbox_ratio": 0.643,
+        "bbox_aspect_h_over_w": 0.96
+      }
+    },
+    {
+      "id": "10293941436690",
+      "idx": 1,
+      "path": "public/images/products-clean/10293941436690-1.webp",
+      "nameHe": "חולצת כדורגל נבחרת איטליה חוץ רטרו 2004",
+      "reason": "low-fill(8.4%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 8.42,
+        "bbox": "639x771",
+        "bbox_ratio": 0.493,
+        "bbox_aspect_h_over_w": 1.21
+      }
+    },
+    {
+      "id": "10293935538450",
+      "idx": 1,
+      "path": "public/images/products-clean/10293935538450-1.webp",
+      "nameHe": "איטליה מדי בית 2025/26 מונדיאל",
+      "reason": "low-fill(1.4%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 1.44,
+        "bbox": "121x197",
+        "bbox_ratio": 0.024,
+        "bbox_aspect_h_over_w": 1.63
+      }
+    },
+    {
+      "id": "10270525391122",
+      "idx": 0,
+      "path": "public/images/products-clean/10270525391122-0.webp",
+      "nameHe": "אלגיריה מדי בית 2025/26 מונדיאל",
+      "reason": "low-fill(15.8%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 15.76,
+        "bbox": "846x815",
+        "bbox_ratio": 0.689,
+        "bbox_aspect_h_over_w": 0.96
+      }
+    },
+    {
+      "id": "10257725260050",
+      "idx": 1,
+      "path": "public/images/products-clean/10257725260050-1.webp",
+      "nameHe": "סנגל מדי בית 2025/26 מונדיאל",
+      "reason": "low-fill(20.8%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 20.75,
+        "bbox": "653x878",
+        "bbox_ratio": 0.573,
+        "bbox_aspect_h_over_w": 1.34
+      }
+    },
+    {
+      "id": "10250236461330",
+      "idx": 1,
+      "path": "public/images/products-clean/10250236461330-1.webp",
+      "nameHe": "ארגנטינה בית 2026 - מונדיאל",
+      "reason": "low-fill(19.7%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 19.71,
+        "bbox": "515x855",
+        "bbox_ratio": 0.44,
+        "bbox_aspect_h_over_w": 1.66
+      }
+    },
+    {
+      "id": "10235327545618",
+      "idx": 0,
+      "path": "public/images/products-clean/10235327545618-0.webp",
+      "nameHe": "חולצה רטרו ליברפול 1996",
+      "reason": "weird-aspect(3.50)",
+      "metrics": {
+        "w": 736,
+        "h": 920,
+        "fill_pct": 25.36,
+        "bbox": "260x911",
+        "bbox_ratio": 0.35,
+        "bbox_aspect_h_over_w": 3.5
+      }
+    },
+    {
+      "id": "10234088685842",
+      "idx": 0,
+      "path": "public/images/products-clean/10234088685842-0.webp",
+      "nameHe": "וולנסיה רטרו 2006",
+      "reason": "low-fill(14.5%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 14.52,
+        "bbox": "869x816",
+        "bbox_ratio": 0.676,
+        "bbox_aspect_h_over_w": 0.94
+      }
+    },
+    {
+      "id": "10215575224594",
+      "idx": 0,
+      "path": "public/images/products-clean/10215575224594-0.webp",
+      "nameHe": "חולצת כדוגל נאפולי חוץ 2025/26",
+      "reason": "low-fill(17.6%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 17.55,
+        "bbox": "755x777",
+        "bbox_ratio": 0.587,
+        "bbox_aspect_h_over_w": 1.03
+      }
+    },
+    {
+      "id": "10215575224594",
+      "idx": 1,
+      "path": "public/images/products-clean/10215575224594-1.webp",
+      "nameHe": "חולצת כדוגל נאפולי חוץ 2025/26",
+      "reason": "low-fill(20.8%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 20.81,
+        "bbox": "649x882",
+        "bbox_ratio": 0.572,
+        "bbox_aspect_h_over_w": 1.36
+      }
+    },
+    {
+      "id": "10212769300754",
+      "idx": 0,
+      "path": "public/images/products-clean/10212769300754-0.webp",
+      "nameHe": "חולצת כדורגל וויריאל חוץ 2025/26",
+      "reason": "low-fill(12.8%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 12.78,
+        "bbox": "780x817",
+        "bbox_ratio": 0.637,
+        "bbox_aspect_h_over_w": 1.05
+      }
+    },
+    {
+      "id": "10212754293010",
+      "idx": 0,
+      "path": "public/images/products-clean/10212754293010-0.webp",
+      "nameHe": "באירן מינכן חוץ 2025/26 - סט ילדים",
+      "reason": "low-fill(19.1%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 19.09,
+        "bbox": "547x857",
+        "bbox_ratio": 0.469,
+        "bbox_aspect_h_over_w": 1.57
+      }
+    },
+    {
+      "id": "10212755144978",
+      "idx": 0,
+      "path": "public/images/products-clean/10212755144978-0.webp",
+      "nameHe": "באירן מינכן חוץ 2025/26 - סט ילדים",
+      "reason": "low-fill(19.1%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 19.09,
+        "bbox": "547x857",
+        "bbox_ratio": 0.469,
+        "bbox_aspect_h_over_w": 1.57
+      }
+    },
+    {
+      "id": "10212748427538",
+      "idx": 0,
+      "path": "public/images/products-clean/10212748427538-0.webp",
+      "nameHe": "אייקס בית 2025/26 - סט ילדים",
+      "reason": "low-fill(20.9%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 20.92,
+        "bbox": "583x840",
+        "bbox_ratio": 0.467,
+        "bbox_aspect_h_over_w": 1.44
+      }
+    },
+    {
+      "id": "10211853041938",
+      "idx": 1,
+      "path": "public/images/products-clean/10211853041938-1.webp",
+      "nameHe": "חולצת כדורגל ארסנל נטרילת 2025/26",
+      "reason": "low-fill(0.8%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 0.81,
+        "bbox": "165x103",
+        "bbox_ratio": 0.017,
+        "bbox_aspect_h_over_w": 0.62
+      }
+    },
+    {
+      "id": "9729687093522",
+      "idx": 1,
+      "path": "public/images/products-clean/9729687093522-1.webp",
+      "nameHe": "ריאל מדריד רטרו 2015- סט ילדים",
+      "reason": "low-fill(20.3%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 20.33,
+        "bbox": "535x782",
+        "bbox_ratio": 0.418,
+        "bbox_aspect_h_over_w": 1.46
+      }
+    },
+    {
+      "id": "9541186322706",
+      "idx": 0,
+      "path": "public/images/products-clean/9541186322706-0.webp",
+      "nameHe": "ריאל מדריד גמר ליגת אלופות 23/24",
+      "reason": "low-fill(6.4%)",
+      "metrics": {
+        "w": 1170,
+        "h": 1630,
+        "fill_pct": 6.42,
+        "bbox": "1170x1282",
+        "bbox_ratio": 0.787,
+        "bbox_aspect_h_over_w": 1.1
+      }
+    },
+    {
+      "id": "9690231669010",
+      "idx": 0,
+      "path": "public/images/products-clean/9690231669010-0.webp",
+      "nameHe": "צרפת חוץ 2024 - סט ילדים",
+      "reason": "low-fill(16.2%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 16.17,
+        "bbox": "773x800",
+        "bbox_ratio": 0.429,
+        "bbox_aspect_h_over_w": 1.03
+      }
+    },
+    {
+      "id": "9690247397650",
+      "idx": 0,
+      "path": "public/images/products-clean/9690247397650-0.webp",
+      "nameHe": "פורטוגל חוץ 2024 - סט ילדים",
+      "reason": "low-fill(18.3%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 18.32,
+        "bbox": "814x490",
+        "bbox_ratio": 0.277,
+        "bbox_aspect_h_over_w": 0.6
+      }
+    },
+    {
+      "id": "10132163494162",
+      "idx": 1,
+      "path": "public/images/products-clean/10132163494162-1.webp",
+      "nameHe": "מנצסטר סיטי חולצת חוץ 2025/26",
+      "reason": "low-fill(4.1%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 4.14,
+        "bbox": "231x285",
+        "bbox_ratio": 0.063,
+        "bbox_aspect_h_over_w": 1.23
+      }
+    },
+    {
+      "id": "9690111869202",
+      "idx": 0,
+      "path": "public/images/products-clean/9690111869202-0.webp",
+      "nameHe": "ליברפול חוץ 2024-25 - סט ילדים",
+      "reason": "low-fill(11.3%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 11.32,
+        "bbox": "630x976",
+        "bbox_ratio": 0.427,
+        "bbox_aspect_h_over_w": 1.55
+      }
+    },
+    {
+      "id": "8219364131090",
+      "idx": 1,
+      "path": "public/images/products-clean/8219364131090-1.webp",
+      "nameHe": "טוטנהאם חולצת בית 2023",
+      "reason": "low-fill(17.7%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 17.67,
+        "bbox": "691x883",
+        "bbox_ratio": 0.61,
+        "bbox_aspect_h_over_w": 1.28
+      }
+    },
+    {
+      "id": "10073805652242",
+      "idx": 1,
+      "path": "public/images/products-clean/10073805652242-1.webp",
+      "nameHe": "חולצת רטרו גרמניה 1990",
+      "reason": "low-fill(21.4%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 21.39,
+        "bbox": "874x700",
+        "bbox_ratio": 0.583,
+        "bbox_aspect_h_over_w": 0.8
+      }
+    },
+    {
+      "id": "8218488733970",
+      "idx": 0,
+      "path": "public/images/products-clean/8218488733970-0.webp",
+      "nameHe": "חולצת כדורגל רטרו של מילאן 2010",
+      "reason": "low-fill(12.3%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 12.32,
+        "bbox": "270x807",
+        "bbox_ratio": 0.218,
+        "bbox_aspect_h_over_w": 2.99
+      }
+    },
+    {
+      "id": "8236058149138",
+      "idx": 1,
+      "path": "public/images/products-clean/8236058149138-1.webp",
+      "nameHe": "חולצת כדורגל סלטיק רביעית 2023",
+      "reason": "sleeves-missing(277/587)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 40.3,
+        "bbox": "627x987",
+        "bbox_ratio": 0.619,
+        "bbox_aspect_h_over_w": 1.57,
+        "upper_to_middle_ratio": 0.47
+      }
+    },
+    {
+      "id": "9798708920594",
+      "idx": 1,
+      "path": "public/images/products-clean/9798708920594-1.webp",
+      "nameHe": "חולצת כדורגל נבחרת יפן מיוחדת 5 2024",
+      "reason": "sleeves-missing(379/705)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 37.08,
+        "bbox": "795x1102",
+        "bbox_ratio": 0.608,
+        "bbox_aspect_h_over_w": 1.39,
+        "upper_to_middle_ratio": 0.54
+      }
+    },
+    {
+      "id": "9666979430674",
+      "idx": 1,
+      "path": "public/images/products-clean/9666979430674-1.webp",
+      "nameHe": "חולצת כדורגל נבחרת יפן מיוחדת 5 2024",
+      "reason": "low-fill(8.7%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 8.66,
+        "bbox": "577x630",
+        "bbox_ratio": 0.252,
+        "bbox_aspect_h_over_w": 1.09
+      }
+    },
+    {
+      "id": "9666980544786",
+      "idx": 0,
+      "path": "public/images/products-clean/9666980544786-0.webp",
+      "nameHe": "חולצת כדורגל נבחרת יפן מיוחדת 3 2024",
+      "reason": "sleeves-missing(368/675)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 36.09,
+        "bbox": "793x1094",
+        "bbox_ratio": 0.602,
+        "bbox_aspect_h_over_w": 1.38,
+        "upper_to_middle_ratio": 0.55
+      }
+    },
+    {
+      "id": "10153424847122",
+      "idx": 0,
+      "path": "public/images/products-clean/10153424847122-0.webp",
+      "nameHe": "חולצת כדורגל נבחרת יפן מיוחדת - נארוטו",
+      "reason": "sleeves-missing(296/622)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 34.75,
+        "bbox": "795x1098",
+        "bbox_ratio": 0.606,
+        "bbox_aspect_h_over_w": 1.38,
+        "upper_to_middle_ratio": 0.48
+      }
+    },
+    {
+      "id": "8287455576338",
+      "idx": 1,
+      "path": "public/images/products-clean/8287455576338-1.webp",
+      "nameHe": "חולצת כדורגל נבחרת יפן 2024",
+      "reason": "low-fill(4.5%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 4.55,
+        "bbox": "338x349",
+        "bbox_ratio": 0.118,
+        "bbox_aspect_h_over_w": 1.03
+      }
+    },
+    {
+      "id": "8239897411858",
+      "idx": 1,
+      "path": "public/images/products-clean/8239897411858-1.webp",
+      "nameHe": "חולצת כדורגל נבחרת ארגנטינה חוץ",
+      "reason": "low-fill(10.2%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 10.24,
+        "bbox": "333x491",
+        "bbox_ratio": 0.164,
+        "bbox_aspect_h_over_w": 1.47
+      }
+    },
+    {
+      "id": "9886620909842",
+      "idx": 0,
+      "path": "public/images/products-clean/9886620909842-0.webp",
+      "nameHe": "חולצת כדורגל ארסנל רטרו 2007",
+      "reason": "low-fill(18.4%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 18.38,
+        "bbox": "998x1001",
+        "bbox_ratio": 0.694,
+        "bbox_aspect_h_over_w": 1.0
+      }
+    },
+    {
+      "id": "9886620909842",
+      "idx": 1,
+      "path": "public/images/products-clean/9886620909842-1.webp",
+      "nameHe": "חולצת כדורגל ארסנל רטרו 2007",
+      "reason": "low-fill(18.7%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 18.65,
+        "bbox": "822x1112",
+        "bbox_ratio": 0.635,
+        "bbox_aspect_h_over_w": 1.35
+      }
+    },
+    {
+      "id": "8220296544530",
+      "idx": 1,
+      "path": "public/images/products-clean/8220296544530-1.webp",
+      "nameHe": "חולצת כדורגל ארסנל בית 2023",
+      "reason": "low-fill(13.0%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 12.97,
+        "bbox": "682x335",
+        "bbox_ratio": 0.228,
+        "bbox_aspect_h_over_w": 0.49
+      }
+    },
+    {
+      "id": "9988384784658",
+      "idx": 0,
+      "path": "public/images/products-clean/9988384784658-0.webp",
+      "nameHe": "חולצת כדורגל ארוכה סנטוס רטרו 2012",
+      "reason": "low-fill(12.2%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 12.22,
+        "bbox": "734x841",
+        "bbox_ratio": 0.589,
+        "bbox_aspect_h_over_w": 1.15
+      }
+    },
+    {
+      "id": "9636788207890",
+      "idx": 1,
+      "path": "public/images/products-clean/9636788207890-1.webp",
+      "nameHe": "חולצת כדורגל אל נאסר בית 2024-25 רונאלדו",
+      "reason": "low-fill(15.0%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 14.95,
+        "bbox": "507x614",
+        "bbox_ratio": 0.216,
+        "bbox_aspect_h_over_w": 1.21
+      }
+    },
+    {
+      "id": "9159768867090",
+      "idx": 0,
+      "path": "public/images/products-clean/9159768867090-0.webp",
+      "nameHe": "חולצת כדורגל אינטר מיוחדת צבי הנינגה",
+      "reason": "low-fill(16.9%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 16.9,
+        "bbox": "694x886",
+        "bbox_ratio": 0.615,
+        "bbox_aspect_h_over_w": 1.28
+      }
+    },
+    {
+      "id": "9159768867090",
+      "idx": 1,
+      "path": "public/images/products-clean/9159768867090-1.webp",
+      "nameHe": "חולצת כדורגל אינטר מיוחדת צבי הנינגה",
+      "reason": "low-fill(21.5%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 21.53,
+        "bbox": "739x888",
+        "bbox_ratio": 0.656,
+        "bbox_aspect_h_over_w": 1.2
+      }
+    },
+    {
+      "id": "10079427658002",
+      "idx": 0,
+      "path": "public/images/products-clean/10079427658002-0.webp",
+      "nameHe": "חולצת כדורגל אינטר חוץ רטרו 2004",
+      "reason": "low-fill(20.2%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 20.18,
+        "bbox": "808x808",
+        "bbox_ratio": 0.623,
+        "bbox_aspect_h_over_w": 1.0
+      }
+    },
+    {
+      "id": "9636949852434",
+      "idx": 1,
+      "path": "public/images/products-clean/9636949852434-1.webp",
+      "nameHe": "חולצת כדורגל אייקס חוץ 2024-25",
+      "reason": "low-fill(20.3%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 20.26,
+        "bbox": "525x746",
+        "bbox_ratio": 0.272,
+        "bbox_aspect_h_over_w": 1.42
+      }
+    },
+    {
+      "id": "10153363046674",
+      "idx": 1,
+      "path": "public/images/products-clean/10153363046674-1.webp",
+      "nameHe": "חולצת כדוגל פיורנטינה 1997/98 רטרו",
+      "reason": "low-fill(21.5%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 21.51,
+        "bbox": "712x953",
+        "bbox_ratio": 0.647,
+        "bbox_aspect_h_over_w": 1.34
+      }
+    },
+    {
+      "id": "9708681036050",
+      "idx": 1,
+      "path": "public/images/products-clean/9708681036050-1.webp",
+      "nameHe": "חולצה רטרו מנצסטר יוניטד 1997-98",
+      "reason": "low-fill(10.7%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 10.73,
+        "bbox": "1200x297",
+        "bbox_ratio": 0.247,
+        "bbox_aspect_h_over_w": 0.25
+      }
+    },
+    {
+      "id": "9973478981906",
+      "idx": 1,
+      "path": "public/images/products-clean/9973478981906-1.webp",
+      "nameHe": "חולצה רטרו ליברפול 2001",
+      "reason": "low-fill(16.5%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 16.49,
+        "bbox": "734x812",
+        "bbox_ratio": 0.568,
+        "bbox_aspect_h_over_w": 1.11
+      }
+    },
+    {
+      "id": "9740982583570",
+      "idx": 1,
+      "path": "public/images/products-clean/9740982583570-1.webp",
+      "nameHe": "חולצה רטרו ליברפול - ביטלס",
+      "reason": "low-fill(14.6%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 14.61,
+        "bbox": "663x564",
+        "bbox_ratio": 0.26,
+        "bbox_aspect_h_over_w": 0.85
+      }
+    },
+    {
+      "id": "8216356389138",
+      "idx": 0,
+      "path": "public/images/products-clean/8216356389138-0.webp",
+      "nameHe": "חולצה רטרו אינטר 2009",
+      "reason": "low-fill(18.5%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 18.54,
+        "bbox": "535x642",
+        "bbox_ratio": 0.343,
+        "bbox_aspect_h_over_w": 1.2
+      }
+    },
+    {
+      "id": "9775780888850",
+      "idx": 0,
+      "path": "public/images/products-clean/9775780888850-0.webp",
+      "nameHe": "חולצה כדורגל רטרו ריאל מדריד מיוחדות 14/15",
+      "reason": "weird-aspect(2.64)",
+      "metrics": {
+        "w": 736,
+        "h": 920,
+        "fill_pct": 31.62,
+        "bbox": "329x869",
+        "bbox_ratio": 0.422,
+        "bbox_aspect_h_over_w": 2.64
+      }
+    },
+    {
+      "id": "9637161173266",
+      "idx": 1,
+      "path": "public/images/products-clean/9637161173266-1.webp",
+      "nameHe": "חולצה כדורגל רטרו ריאל מדריד 14/15",
+      "reason": "low-fill(1.9%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 1.94,
+        "bbox": "176x234",
+        "bbox_ratio": 0.029,
+        "bbox_aspect_h_over_w": 1.33
+      }
+    },
+    {
+      "id": "8218529890578",
+      "idx": 1,
+      "path": "public/images/products-clean/8218529890578-1.webp",
+      "nameHe": "חולצה כדורגל רטרו ניוקאסל 1997",
+      "reason": "low-fill(13.3%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 13.32,
+        "bbox": "450x482",
+        "bbox_ratio": 0.217,
+        "bbox_aspect_h_over_w": 1.07
+      }
+    },
+    {
+      "id": "8218545520914",
+      "idx": 1,
+      "path": "public/images/products-clean/8218545520914-1.webp",
+      "nameHe": "חולצה כדורגל רטרו מנצסטר סיטי 1972",
+      "reason": "low-fill(4.6%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 4.56,
+        "bbox": "268x751",
+        "bbox_ratio": 0.201,
+        "bbox_aspect_h_over_w": 2.8
+      }
+    },
+    {
+      "id": "8306401575186",
+      "idx": 0,
+      "path": "public/images/products-clean/8306401575186-0.webp",
+      "nameHe": "חולצה בהפתעה רטרו",
+      "reason": "sleeves-missing(233/795)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 50.36,
+        "bbox": "816x1000",
+        "bbox_ratio": 0.816,
+        "bbox_aspect_h_over_w": 1.23,
+        "upper_to_middle_ratio": 0.29
+      }
+    },
+    {
+      "id": "8306401575186",
+      "idx": 1,
+      "path": "public/images/products-clean/8306401575186-1.webp",
+      "nameHe": "חולצה בהפתעה רטרו",
+      "reason": "low-fill(6.6%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 6.57,
+        "bbox": "578x699",
+        "bbox_ratio": 0.404,
+        "bbox_aspect_h_over_w": 1.21
+      }
+    },
+    {
+      "id": "8306393645330",
+      "idx": 0,
+      "path": "public/images/products-clean/8306393645330-0.webp",
+      "nameHe": "חולצה בהפתעה רגיל",
+      "reason": "low-fill(6.4%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 6.37,
+        "bbox": "577x698",
+        "bbox_ratio": 0.403,
+        "bbox_aspect_h_over_w": 1.21
+      }
+    },
+    {
+      "id": "9907534364946",
+      "idx": 0,
+      "path": "public/images/products-clean/9907534364946-0.webp",
+      "nameHe": "ברצלונה לאמין יאמל מיוחדת 2024",
+      "reason": "low-fill(9.7%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 9.68,
+        "bbox": "849x811",
+        "bbox_ratio": 0.657,
+        "bbox_aspect_h_over_w": 0.96
+      }
+    },
+    {
+      "id": "9690032046354",
+      "idx": 0,
+      "path": "public/images/products-clean/9690032046354-0.webp",
+      "nameHe": "ברצלונה 2024-25 חוץ - סט ילדים",
+      "reason": "low-fill(16.5%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 16.53,
+        "bbox": "735x830",
+        "bbox_ratio": 0.424,
+        "bbox_aspect_h_over_w": 1.13
+      }
+    },
+    {
+      "id": "9862615236882",
+      "idx": 0,
+      "path": "public/images/products-clean/9862615236882-0.webp",
+      "nameHe": "ברצלונה 2024-25 בית קולדפליי - סט ילדים",
+      "reason": "low-fill(21.3%)",
+      "metrics": {
+        "w": 1024,
+        "h": 1024,
+        "fill_pct": 21.31,
+        "bbox": "515x751",
+        "bbox_ratio": 0.369,
+        "bbox_aspect_h_over_w": 1.46
+      }
+    },
+    {
+      "id": "9690024116498",
+      "idx": 0,
+      "path": "public/images/products-clean/9690024116498-0.webp",
+      "nameHe": "ברצלונה 2013 - סט ילדים",
+      "reason": "low-fill(21.7%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 21.67,
+        "bbox": "606x932",
+        "bbox_ratio": 0.392,
+        "bbox_aspect_h_over_w": 1.54
+      }
+    },
+    {
+      "id": "9690020380946",
+      "idx": 0,
+      "path": "public/images/products-clean/9690020380946-0.webp",
+      "nameHe": "ברצלונה 2010 - סט ילדים",
+      "reason": "low-fill(21.6%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 21.57,
+        "bbox": "575x932",
+        "bbox_ratio": 0.372,
+        "bbox_aspect_h_over_w": 1.62
+      }
+    },
+    {
+      "id": "9689979945234",
+      "idx": 0,
+      "path": "public/images/products-clean/9689979945234-0.webp",
+      "nameHe": "ברצלונה 2009 - סט ילדים",
+      "reason": "low-fill(19.9%)",
+      "metrics": {
+        "w": 800,
+        "h": 800,
+        "fill_pct": 19.85,
+        "bbox": "392x576",
+        "bbox_ratio": 0.353,
+        "bbox_aspect_h_over_w": 1.47
+      }
+    },
+    {
+      "id": "9724627714322",
+      "idx": 0,
+      "path": "public/images/products-clean/9724627714322-0.webp",
+      "nameHe": "ברצלונה 2004 רטרו בית",
+      "reason": "sleeves-missing(283/576)",
+      "metrics": {
+        "w": 736,
+        "h": 920,
+        "fill_pct": 46.67,
+        "bbox": "642x776",
+        "bbox_ratio": 0.736,
+        "bbox_aspect_h_over_w": 1.21,
+        "upper_to_middle_ratio": 0.49
+      }
+    },
+    {
+      "id": "9729686307090",
+      "idx": 0,
+      "path": "public/images/products-clean/9729686307090-0.webp",
+      "nameHe": "ברזיל רטרו 2002- סט ילדים",
+      "reason": "low-fill(21.2%)",
+      "metrics": {
+        "w": 800,
+        "h": 800,
+        "fill_pct": 21.23,
+        "bbox": "390x586",
+        "bbox_ratio": 0.357,
+        "bbox_aspect_h_over_w": 1.5
+      }
+    },
+    {
+      "id": "9729684439314",
+      "idx": 0,
+      "path": "public/images/products-clean/9729684439314-0.webp",
+      "nameHe": "ברזיל רטרו 1998 - סט ילדים",
+      "reason": "low-fill(20.7%)",
+      "metrics": {
+        "w": 800,
+        "h": 800,
+        "fill_pct": 20.68,
+        "bbox": "410x580",
+        "bbox_ratio": 0.372,
+        "bbox_aspect_h_over_w": 1.41
+      }
+    },
+    {
+      "id": "9729684832530",
+      "idx": 0,
+      "path": "public/images/products-clean/9729684832530-0.webp",
+      "nameHe": "ברזיל בית 2022 - סט ילדים",
+      "reason": "low-fill(19.1%)",
+      "metrics": {
+        "w": 1080,
+        "h": 1080,
+        "fill_pct": 19.12,
+        "bbox": "570x629",
+        "bbox_ratio": 0.307,
+        "bbox_aspect_h_over_w": 1.1
+      }
+    },
+    {
+      "id": "9690105086226",
+      "idx": 0,
+      "path": "public/images/products-clean/9690105086226-0.webp",
+      "nameHe": "ארסנל 2002-04 סט ילדים",
+      "reason": "low-fill(20.8%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 20.84,
+        "bbox": "648x921",
+        "bbox_ratio": 0.414,
+        "bbox_aspect_h_over_w": 1.42
+      }
+    },
+    {
+      "id": "8363445125394",
+      "idx": 1,
+      "path": "public/images/products-clean/8363445125394-1.webp",
+      "nameHe": "2024 ליברפול חולצת בית",
+      "reason": "low-fill(1.6%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 1.57,
+        "bbox": "641x210",
+        "bbox_ratio": 0.135,
+        "bbox_aspect_h_over_w": 0.33
+      }
+    },
+    {
+      "id": "8220392128786",
+      "idx": 0,
+      "path": "public/images/products-clean/8220392128786-0.webp",
+      "nameHe": "2023 חולצת כדורגל יוניטד בית",
+      "reason": "low-fill(2.0%)",
+      "metrics": {
+        "w": 1000,
+        "h": 1000,
+        "fill_pct": 1.96,
+        "bbox": "255x150",
+        "bbox_ratio": 0.038,
+        "bbox_aspect_h_over_w": 0.59
+      }
+    },
+    {
+      "id": "10132144849170",
+      "idx": 1,
+      "path": "public/images/products-clean/10132144849170-1.webp",
+      "nameHe": "2012 חולצה כדורגל רטרו צלסי",
+      "reason": "low-fill(0.2%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 0.22,
+        "bbox": "1028x1200",
+        "bbox_ratio": 0.857,
+        "bbox_aspect_h_over_w": 1.17
+      }
+    },
+    {
+      "id": "10132143669522",
+      "idx": 1,
+      "path": "public/images/products-clean/10132143669522-1.webp",
+      "nameHe": "2009 חולצה כדורגל רטרו צלסי",
+      "reason": "low-fill(0.3%)",
+      "metrics": {
+        "w": 1200,
+        "h": 1200,
+        "fill_pct": 0.25,
+        "bbox": "53x114",
+        "bbox_ratio": 0.004,
+        "bbox_aspect_h_over_w": 2.15
+      }
+    },
+    {
+      "id": "yp-fan-1-25",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-fan-1-25-0.webp",
+      "nameHe": "26-27 שחור ריאל מדריד פולו",
+      "reason": "weird-aspect(2.72)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 35.31,
+        "bbox": "378x1027",
+        "bbox_ratio": 0.444,
+        "bbox_aspect_h_over_w": 2.72
+      }
+    },
+    {
+      "id": "yp-fan-1-223",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-fan-1-223-1.webp",
+      "nameHe": "בנפיקה בית",
+      "reason": "low-fill(17.3%)",
+      "metrics": {
+        "w": 1080,
+        "h": 1080,
+        "fill_pct": 17.31,
+        "bbox": "550x668",
+        "bbox_ratio": 0.315,
+        "bbox_aspect_h_over_w": 1.21
+      }
+    },
+    {
+      "id": "yp-fan-2-299",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-fan-2-299-0.webp",
+      "nameHe": "ברצלונה חוץ שלישי",
+      "reason": "low-fill(10.4%)",
+      "metrics": {
+        "w": 1080,
+        "h": 1080,
+        "fill_pct": 10.36,
+        "bbox": "386x398",
+        "bbox_ratio": 0.132,
+        "bbox_aspect_h_over_w": 1.03
+      }
+    },
+    {
+      "id": "yp-short-suit-863",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-863-1.webp",
+      "nameHe": "2026 צרפת חוץ",
+      "reason": "low-fill(11.2%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 11.22,
+        "bbox": "761x503",
+        "bbox_ratio": 0.438,
+        "bbox_aspect_h_over_w": 0.66
+      }
+    },
+    {
+      "id": "yp-short-suit-931",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-931-0.webp",
+      "nameHe": "1998 אנגליה בית",
+      "reason": "low-fill(21.5%)",
+      "metrics": {
+        "w": 1080,
+        "h": 1080,
+        "fill_pct": 21.48,
+        "bbox": "493x882",
+        "bbox_ratio": 0.373,
+        "bbox_aspect_h_over_w": 1.79
+      }
+    },
+    {
+      "id": "yp-short-suit-1126",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1126-1.webp",
+      "nameHe": "0910AC בית ילדים",
+      "reason": "low-fill(20.4%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 20.37,
+        "bbox": "810x714",
+        "bbox_ratio": 0.661,
+        "bbox_aspect_h_over_w": 0.88
+      }
+    },
+    {
+      "id": "yp-short-suit-1195",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1195-1.webp",
+      "nameHe": "2002 ברזיל בית שרוול ארוך",
+      "reason": "low-fill(19.2%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 19.22,
+        "bbox": "810x601",
+        "bbox_ratio": 0.556,
+        "bbox_aspect_h_over_w": 0.74
+      }
+    },
+    {
+      "id": "yp-short-suit-1207",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1207-1.webp",
+      "nameHe": "1415 ריאל מדריד שחור ילדים שרוול ארוך",
+      "reason": "low-fill(5.7%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 5.75,
+        "bbox": "635x140",
+        "bbox_ratio": 0.102,
+        "bbox_aspect_h_over_w": 0.22
+      }
+    },
+    {
+      "id": "yp-short-suit-1228",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1228-0.webp",
+      "nameHe": "17-18 ריאל מדריד חוץ שני שרוול ארוך",
+      "reason": "low-fill(17.9%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 17.95,
+        "bbox": "692x464",
+        "bbox_ratio": 0.367,
+        "bbox_aspect_h_over_w": 0.67
+      }
+    },
+    {
+      "id": "yp-short-suit-1229",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1229-0.webp",
+      "nameHe": "0708 מנצ'סטר יונייטד חוץ שרוול ארוך",
+      "reason": "low-fill(14.3%)",
+      "metrics": {
+        "w": 808,
+        "h": 1080,
+        "fill_pct": 14.33,
+        "bbox": "446x408",
+        "bbox_ratio": 0.209,
+        "bbox_aspect_h_over_w": 0.91
+      }
+    },
+    {
+      "id": "yp-short-suit-1230",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1230-0.webp",
+      "nameHe": "1213 סנטוס בית שרוול ארוך",
+      "reason": "low-fill(16.5%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 16.47,
+        "bbox": "488x893",
+        "bbox_ratio": 0.498,
+        "bbox_aspect_h_over_w": 1.83
+      }
+    },
+    {
+      "id": "yp-short-suit-1230",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1230-1.webp",
+      "nameHe": "1213 סנטוס בית שרוול ארוך",
+      "reason": "low-fill(4.8%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 4.76,
+        "bbox": "281x156",
+        "bbox_ratio": 0.05,
+        "bbox_aspect_h_over_w": 0.56
+      }
+    },
+    {
+      "id": "yp-short-suit-1231",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1231-1.webp",
+      "nameHe": "0809 מנצ'סטר יונייטד חוץ שני שרוול ארוך",
+      "reason": "low-fill(2.8%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 2.84,
+        "bbox": "224x132",
+        "bbox_ratio": 0.034,
+        "bbox_aspect_h_over_w": 0.59
+      }
+    },
+    {
+      "id": "yp-short-suit-1232",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1232-1.webp",
+      "nameHe": "16-17 ריאל מדריד חוץ שרוול ארוך",
+      "reason": "low-fill(3.5%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 3.47,
+        "bbox": "476x128",
+        "bbox_ratio": 0.07,
+        "bbox_aspect_h_over_w": 0.27
+      }
+    },
+    {
+      "id": "yp-short-suit-1233",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1233-0.webp",
+      "nameHe": "1718 ריאל מדריד בית שרוול ארוך",
+      "reason": "low-fill(2.1%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 2.12,
+        "bbox": "220x141",
+        "bbox_ratio": 0.035,
+        "bbox_aspect_h_over_w": 0.64
+      }
+    },
+    {
+      "id": "yp-short-suit-1233",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1233-1.webp",
+      "nameHe": "1718 ריאל מדריד בית שרוול ארוך",
+      "reason": "low-fill(4.4%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 4.42,
+        "bbox": "324x284",
+        "bbox_ratio": 0.105,
+        "bbox_aspect_h_over_w": 0.88
+      }
+    },
+    {
+      "id": "yp-short-suit-1234",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1234-0.webp",
+      "nameHe": "0708 מנצ'סטר יונייטד בית שרוול ארוך סט",
+      "reason": "low-fill(19.0%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 18.95,
+        "bbox": "564x312",
+        "bbox_ratio": 0.201,
+        "bbox_aspect_h_over_w": 0.55
+      }
+    },
+    {
+      "id": "yp-short-suit-1234",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1234-1.webp",
+      "nameHe": "0708 מנצ'סטר יונייטד בית שרוול ארוך סט",
+      "reason": "low-fill(4.3%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 4.25,
+        "bbox": "418x146",
+        "bbox_ratio": 0.07,
+        "bbox_aspect_h_over_w": 0.35
+      }
+    },
+    {
+      "id": "yp-short-suit-1274",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1274-0.webp",
+      "nameHe": "2425 פריז חוץ שלישי 16-28",
+      "reason": "low-fill(20.7%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 20.68,
+        "bbox": "791x450",
+        "bbox_ratio": 0.407,
+        "bbox_aspect_h_over_w": 0.57
+      }
+    },
+    {
+      "id": "yp-short-suit-1274",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1274-1.webp",
+      "nameHe": "2425 פריז חוץ שלישי 16-28",
+      "reason": "low-fill(20.2%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 20.17,
+        "bbox": "779x418",
+        "bbox_ratio": 0.372,
+        "bbox_aspect_h_over_w": 0.54
+      }
+    },
+    {
+      "id": "yp-short-suit-1293",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1293-0.webp",
+      "nameHe": "87-88 נאפולי בית",
+      "reason": "low-fill(8.6%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 8.58,
+        "bbox": "301x332",
+        "bbox_ratio": 0.114,
+        "bbox_aspect_h_over_w": 1.1
+      }
+    },
+    {
+      "id": "yp-short-suit-1293",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1293-1.webp",
+      "nameHe": "87-88 נאפולי בית",
+      "reason": "low-fill(5.7%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 5.66,
+        "bbox": "302x319",
+        "bbox_ratio": 0.11,
+        "bbox_aspect_h_over_w": 1.06
+      }
+    },
+    {
+      "id": "yp-short-suit-1297",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1297-1.webp",
+      "nameHe": "12-13 בית רטרו ילדים",
+      "reason": "low-fill(10.5%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 10.5,
+        "bbox": "503x223",
+        "bbox_ratio": 0.128,
+        "bbox_aspect_h_over_w": 0.44
+      }
+    },
+    {
+      "id": "yp-short-suit-1301",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1301-0.webp",
+      "nameHe": "07-08 מנצ'סטר יונייטד בית רטרו ילדים",
+      "reason": "low-fill(8.3%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 8.31,
+        "bbox": "307x321",
+        "bbox_ratio": 0.113,
+        "bbox_aspect_h_over_w": 1.05
+      }
+    },
+    {
+      "id": "yp-short-suit-1303",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1303-0.webp",
+      "nameHe": "14-15 ברצלונה בית רטרו ילדים",
+      "reason": "low-fill(4.5%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 4.53,
+        "bbox": "596x156",
+        "bbox_ratio": 0.106,
+        "bbox_aspect_h_over_w": 0.26
+      }
+    },
+    {
+      "id": "yp-short-suit-1303",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1303-1.webp",
+      "nameHe": "14-15 ברצלונה בית רטרו ילדים",
+      "reason": "weird-aspect(2.85)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 38.26,
+        "bbox": "379x1080",
+        "bbox_ratio": 0.468,
+        "bbox_aspect_h_over_w": 2.85
+      }
+    },
+    {
+      "id": "yp-short-suit-1315",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1315-0.webp",
+      "nameHe": "24-25 חוץ שני סט",
+      "reason": "sleeves-missing(334/667)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 34.37,
+        "bbox": "676x714",
+        "bbox_ratio": 0.552,
+        "bbox_aspect_h_over_w": 1.06,
+        "upper_to_middle_ratio": 0.5
+      }
+    },
+    {
+      "id": "yp-short-suit-1370",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1370-0.webp",
+      "nameHe": "1718 ריאל מדריד חוץ רטרו ילדים",
+      "reason": "low-fill(14.9%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 14.92,
+        "bbox": "369x526",
+        "bbox_ratio": 0.222,
+        "bbox_aspect_h_over_w": 1.43
+      }
+    },
+    {
+      "id": "yp-short-suit-1386",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1386-0.webp",
+      "nameHe": "16-17 ריאל מדריד חוץ רטרו ילדים",
+      "reason": "low-fill(6.2%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 6.19,
+        "bbox": "255x359",
+        "bbox_ratio": 0.105,
+        "bbox_aspect_h_over_w": 1.41
+      }
+    },
+    {
+      "id": "yp-short-suit-1392",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1392-0.webp",
+      "nameHe": "24-25 כהה בית סט",
+      "reason": "low-fill(13.8%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 13.8,
+        "bbox": "337x452",
+        "bbox_ratio": 0.174,
+        "bbox_aspect_h_over_w": 1.34
+      }
+    },
+    {
+      "id": "yp-short-suit-1407",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1407-1.webp",
+      "nameHe": "96-97 ברצלונה בית",
+      "reason": "low-fill(6.8%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 6.76,
+        "bbox": "205x764",
+        "bbox_ratio": 0.179,
+        "bbox_aspect_h_over_w": 3.73
+      }
+    },
+    {
+      "id": "yp-short-suit-1418",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1418-0.webp",
+      "nameHe": "1994 ארגנטינה חוץ רטרו ילדים",
+      "reason": "low-fill(14.7%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 14.67,
+        "bbox": "411x345",
+        "bbox_ratio": 0.162,
+        "bbox_aspect_h_over_w": 0.84
+      }
+    },
+    {
+      "id": "yp-short-suit-1427",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1427-0.webp",
+      "nameHe": "2010 אינטר בית רטרו ילדים",
+      "reason": "low-fill(3.4%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 3.43,
+        "bbox": "267x410",
+        "bbox_ratio": 0.125,
+        "bbox_aspect_h_over_w": 1.54
+      }
+    },
+    {
+      "id": "yp-short-suit-1439",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-short-suit-1439-0.webp",
+      "nameHe": "לבן פורטוגל 2012 רטרו ילדים",
+      "reason": "sleeves-missing(112/594)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 42.27,
+        "bbox": "738x1044",
+        "bbox_ratio": 0.881,
+        "bbox_aspect_h_over_w": 1.41,
+        "upper_to_middle_ratio": 0.19
+      }
+    },
+    {
+      "id": "yp-short-suit-1439",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1439-1.webp",
+      "nameHe": "לבן פורטוגל 2012 רטרו ילדים",
+      "reason": "low-fill(11.4%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 11.43,
+        "bbox": "334x383",
+        "bbox_ratio": 0.146,
+        "bbox_aspect_h_over_w": 1.15
+      }
+    },
+    {
+      "id": "yp-short-suit-1440",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1440-1.webp",
+      "nameHe": "ברזיל בית 1998 רטרו ילדים",
+      "reason": "low-fill(16.0%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 16.04,
+        "bbox": "383x590",
+        "bbox_ratio": 0.258,
+        "bbox_aspect_h_over_w": 1.54
+      }
+    },
+    {
+      "id": "yp-short-suit-1441",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-short-suit-1441-1.webp",
+      "nameHe": "אדום כהה 02.03 רטרו ילדים",
+      "reason": "low-fill(10.0%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 10.03,
+        "bbox": "442x366",
+        "bbox_ratio": 0.185,
+        "bbox_aspect_h_over_w": 0.83
+      }
+    },
+    {
+      "id": "yp-player-1-1480",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-player-1-1480-0.webp",
+      "nameHe": "26-27 ריאל מדריד חוץ שני",
+      "reason": "low-fill(15.7%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 15.72,
+        "bbox": "632x422",
+        "bbox_ratio": 0.305,
+        "bbox_aspect_h_over_w": 0.67
+      }
+    },
+    {
+      "id": "yp-player-1-1485",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-player-1-1485-1.webp",
+      "nameHe": "26-27 פריז מהדורה מיוחדת",
+      "reason": "low-fill(11.1%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 11.08,
+        "bbox": "394x875",
+        "bbox_ratio": 0.394,
+        "bbox_aspect_h_over_w": 2.22
+      }
+    },
+    {
+      "id": "yp-player-1-1488",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-player-1-1488-0.webp",
+      "nameHe": "26-27AC חוץ",
+      "reason": "low-fill(6.4%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 6.43,
+        "bbox": "275x258",
+        "bbox_ratio": 0.081,
+        "bbox_aspect_h_over_w": 0.94
+      }
+    },
+    {
+      "id": "yp-player-1-1490",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-player-1-1490-0.webp",
+      "nameHe": "26-27AC בית",
+      "reason": "low-fill(4.3%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 4.32,
+        "bbox": "224x214",
+        "bbox_ratio": 0.055,
+        "bbox_aspect_h_over_w": 0.96
+      }
+    },
+    {
+      "id": "yp-player-1-1490",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-player-1-1490-1.webp",
+      "nameHe": "26-27AC בית",
+      "reason": "low-fill(6.6%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 6.63,
+        "bbox": "509x437",
+        "bbox_ratio": 0.254,
+        "bbox_aspect_h_over_w": 0.86
+      }
+    },
+    {
+      "id": "yp-player-1-1508",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-player-1-1508-1.webp",
+      "nameHe": "26-27 ג'מייקה בית",
+      "reason": "low-fill(9.1%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 9.08,
+        "bbox": "603x155",
+        "bbox_ratio": 0.107,
+        "bbox_aspect_h_over_w": 0.26
+      }
+    },
+    {
+      "id": "yp-player-1-1510",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-player-1-1510-1.webp",
+      "nameHe": "26-27 ג'מייקה חוץ",
+      "reason": "low-fill(8.5%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 8.53,
+        "bbox": "608x139",
+        "bbox_ratio": 0.097,
+        "bbox_aspect_h_over_w": 0.23
+      }
+    },
+    {
+      "id": "yp-player-1-1625",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-player-1-1625-1.webp",
+      "nameHe": "חוץ שני",
+      "reason": "low-fill(8.4%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 8.44,
+        "bbox": "287x829",
+        "bbox_ratio": 0.272,
+        "bbox_aspect_h_over_w": 2.89
+      }
+    },
+    {
+      "id": "yp-player-1-1682",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-player-1-1682-0.webp",
+      "nameHe": "2025 פורטוגל בית",
+      "reason": "low-fill(17.9%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 17.86,
+        "bbox": "457x578",
+        "bbox_ratio": 0.302,
+        "bbox_aspect_h_over_w": 1.26
+      }
+    },
+    {
+      "id": "yp-player-1-1682",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-player-1-1682-1.webp",
+      "nameHe": "2025 פורטוגל בית",
+      "reason": "low-fill(2.7%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 2.73,
+        "bbox": "340x315",
+        "bbox_ratio": 0.122,
+        "bbox_aspect_h_over_w": 0.93
+      }
+    },
+    {
+      "id": "yp-player-2-1699",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-player-2-1699-0.webp",
+      "nameHe": "2026 ספרד חוץ",
+      "reason": "low-fill(12.3%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 12.34,
+        "bbox": "280x420",
+        "bbox_ratio": 0.134,
+        "bbox_aspect_h_over_w": 1.5
+      }
+    },
+    {
+      "id": "yp-player-2-1714",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-player-2-1714-0.webp",
+      "nameHe": "26-27AC חוץ",
+      "reason": "low-fill(2.7%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 2.72,
+        "bbox": "317x268",
+        "bbox_ratio": 0.097,
+        "bbox_aspect_h_over_w": 0.85
+      }
+    },
+    {
+      "id": "yp-player-2-1763",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-player-2-1763-0.webp",
+      "nameHe": "25-26 מנצ'סטר סיטי בית （ שרוול ארוך ）",
+      "reason": "low-fill(10.6%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 10.6,
+        "bbox": "364x368",
+        "bbox_ratio": 0.153,
+        "bbox_aspect_h_over_w": 1.01
+      }
+    },
+    {
+      "id": "yp-player-2-1765",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-player-2-1765-1.webp",
+      "nameHe": "מקסיקו מהדורה מיוחדת （ שרוול ארוך ）",
+      "reason": "low-fill(10.7%)",
+      "metrics": {
+        "w": 810,
+        "h": 1080,
+        "fill_pct": 10.71,
+        "bbox": "405x699",
+        "bbox_ratio": 0.324,
+        "bbox_aspect_h_over_w": 1.73
+      }
+    },
+    {
+      "id": "yp-retro-1797",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-retro-1797-0.webp",
+      "nameHe": "00-01 AC חוץ",
+      "reason": "weird-aspect(2.90)",
+      "metrics": {
+        "w": 683,
+        "h": 1080,
+        "fill_pct": 41.67,
+        "bbox": "368x1068",
+        "bbox_ratio": 0.533,
+        "bbox_aspect_h_over_w": 2.9
+      }
+    },
+    {
+      "id": "yp-retro-1797",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-retro-1797-1.webp",
+      "nameHe": "00-01 AC חוץ",
+      "reason": "weird-aspect(2.70)",
+      "metrics": {
+        "w": 612,
+        "h": 1080,
+        "fill_pct": 47.51,
+        "bbox": "394x1062",
+        "bbox_ratio": 0.633,
+        "bbox_aspect_h_over_w": 2.7
+      }
+    },
+    {
+      "id": "yp-retro-1803",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-retro-1803-0.webp",
+      "nameHe": "95−97 צלסי חוץ",
+      "reason": "weird-aspect(2.80)",
+      "metrics": {
+        "w": 749,
+        "h": 1080,
+        "fill_pct": 39.5,
+        "bbox": "384x1074",
+        "bbox_ratio": 0.51,
+        "bbox_aspect_h_over_w": 2.8
+      }
+    },
+    {
+      "id": "yp-retro-1803",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-retro-1803-1.webp",
+      "nameHe": "95−97 צלסי חוץ",
+      "reason": "weird-aspect(2.83)",
+      "metrics": {
+        "w": 735,
+        "h": 1080,
+        "fill_pct": 40.41,
+        "bbox": "378x1069",
+        "bbox_ratio": 0.509,
+        "bbox_aspect_h_over_w": 2.83
+      }
+    },
+    {
+      "id": "yp-retro-1804",
+      "idx": 0,
+      "path": "public/images/products-clean/yp-retro-1804-0.webp",
+      "nameHe": "03−04 ריאל מדריד חוץ",
+      "reason": "weird-aspect(2.53)",
+      "metrics": {
+        "w": 711,
+        "h": 1080,
+        "fill_pct": 40.03,
+        "bbox": "422x1068",
+        "bbox_ratio": 0.587,
+        "bbox_aspect_h_over_w": 2.53
+      }
+    },
+    {
+      "id": "yp-retro-1805",
+      "idx": 1,
+      "path": "public/images/products-clean/yp-retro-1805-1.webp",
+      "nameHe": "95−96 דורטמונד בית",
+      "reason": "weird-aspect(2.78)",
+      "metrics": {
+        "w": 757,
+        "h": 1080,
+        "fill_pct": 38.79,
+        "bbox": "387x1075",
+        "bbox_ratio": 0.509,
+        "bbox_aspect_h_over_w": 2.78
+      }
+    }
+  ],
+  "by_reason": {
+    "low-fill": 110,
+    "weird-aspect": 10,
+    "sleeves-missing": 8
+  }
+}
