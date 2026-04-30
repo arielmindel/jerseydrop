@@ -73029,7 +73029,8 @@
     "stock": "in-stock",
     "sourcePriceMin": null,
     "sourcePriceMax": null,
-    "primaryImage": "/api/yupoo-image?url=https%3A%2F%2Fphoto.yupoo.com%2Fqiqirong%2F2228ed14%2Fbig.jpg"
+    "primaryImage": "/api/yupoo-image?url=https%3A%2F%2Fphoto.yupoo.com%2Fqiqirong%2F2228ed14%2Fbig.jpg",
+    "imageQuality": "low"
   },
   {
     "id": "yp-player-2-1763",
