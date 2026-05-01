@@ -1,0 +1,666 @@
+[
+  {
+    "id": "10252316541202",
+    "name": "גרמניה מדי חוץ 2026 מונדיאל",
+    "team": "גרמניה",
+    "images": [
+      "/images/products-clean/10252316541202-0.webp",
+      "/images/products-clean/10252316541202-1.webp"
+    ]
+  },
+  {
+    "id": "10252315099410",
+    "name": "גרמניה מדי בית 2026 מונדיאל",
+    "team": "גרמניה",
+    "images": [
+      "/images/products-clean/10252315099410-0.webp",
+      "/images/products-clean/10252315099410-1.webp"
+    ]
+  },
+  {
+    "id": "10073812042002",
+    "name": "2024 חולצת כדורגל ארוכה נבחרת ארגנטינה בית",
+    "team": "ארגנטינה",
+    "images": [
+      "/images/products-clean/10073812042002-0.webp",
+      "/images/products-clean/10073812042002-1.webp"
+    ]
+  },
+  {
+    "id": "10235330232594",
+    "name": "2019 חולצת כדורגל פריז סן גרמן רטרו ארוך",
+    "team": "פריז",
+    "images": [
+      "/images/products-clean/10235330232594-0.webp",
+      "/images/products-clean/10235330232594-1.webp"
+    ]
+  },
+  {
+    "id": "10235327447314",
+    "name": "אנגליה רטרו 1998",
+    "team": "אנגליה",
+    "images": [
+      "/images/products-clean/10235327447314-0.webp"
+    ]
+  },
+  {
+    "id": "10234099532050",
+    "name": "2025/26 חולצת כדורגל אאק אתונה חוץ",
+    "team": "אאק אתונה",
+    "images": [
+      "/images/products-clean/10234099532050-0.webp",
+      "/images/products-clean/10234099532050-1.webp"
+    ]
+  },
+  {
+    "id": "10234099073298",
+    "name": "2025/26 חולצת כדורגל אאק אתונה בית",
+    "team": "אאק אתונה",
+    "images": [
+      "/images/products-clean/10234099073298-0.webp",
+      "/images/products-clean/10234099073298-1.webp"
+    ]
+  },
+  {
+    "id": "10234098221330",
+    "name": "חולצת כדורגל רייבר פלייט 2013",
+    "team": "ריבר פלייט",
+    "images": [
+      "/images/products-clean/10234098221330-0.webp",
+      "/images/products-clean/10234098221330-1.webp"
+    ]
+  },
+  {
+    "id": "10234097828114",
+    "name": "חולצת כדורגל רייבר פלייט 2003",
+    "team": "ריבר פלייט",
+    "images": [
+      "/images/products-clean/10234097828114-0.webp",
+      "/images/products-clean/10234097828114-1.webp"
+    ]
+  },
+  {
+    "id": "10234096845074",
+    "name": "חולצת כדורגל חוץ רייבר פלייט 2025",
+    "team": "ריבר פלייט",
+    "images": [
+      "/images/products-clean/10234096845074-0.webp",
+      "/images/products-clean/10234096845074-1.webp"
+    ]
+  },
+  {
+    "id": "10234094518546",
+    "name": "חולצת כדורגל שאחטר דוניצק 2025/26",
+    "team": "שאחטר דוניצק",
+    "images": [
+      "/images/products-clean/10234094518546-0.webp",
+      "/images/products-clean/10234094518546-1.webp"
+    ]
+  },
+  {
+    "id": "10234093732114",
+    "name": "חולצת כדורגל מנצסטר יוניטד חוץ 2025/26",
+    "team": "מנצ׳סטר יונייטד",
+    "images": [
+      "/images/products-clean/10234093732114-0.webp",
+      "/images/products-clean/10234093732114-1.webp"
+    ]
+  },
+  {
+    "id": "10234092945682",
+    "name": "חולצת כודורגל אולימפיק ליון חוץ 2025/26",
+    "team": "ליון",
+    "images": [
+      "/images/products-clean/10234092945682-0.webp",
+      "/images/products-clean/10234092945682-1.webp"
+    ]
+  },
+  {
+    "id": "10234092781842",
+    "name": "חולצת כודורגל אולימפיק ליון בית 2025/26",
+    "team": "ליון",
+    "images": [
+      "/images/products-clean/10234092781842-0.webp",
+      "/images/products-clean/10234092781842-1.webp"
+    ]
+  },
+  {
+    "id": "10234092552466",
+    "name": "חולצת כודורגל רטרו מארסי 2009",
+    "team": "מארסיי",
+    "images": [
+      "/images/products-clean/10234092552466-0.webp",
+      "/images/products-clean/10234092552466-1.webp"
+    ]
+  },
+  {
+    "id": "10234092454162",
+    "name": "חולצת כודורגל אולימפיק מארסי נטרלית 2025/26",
+    "team": "מארסיי",
+    "images": [
+      "/images/products-clean/10234092454162-0.webp",
+      "/images/products-clean/10234092454162-1.webp"
+    ]
+  },
+  {
+    "id": "10234092060946",
+    "name": "חולצת כודורגל אולימפיק מארסי בית 2025/26",
+    "team": "מארסיי",
+    "images": [
+      "/images/products-clean/10234092060946-0.webp",
+      "/images/products-clean/10234092060946-1.webp"
+    ]
+  },
+  {
+    "id": "10234091864338",
+    "name": "חולצת כודורגל אולימפיק מארסי חוץ 2025/26",
+    "team": "מארסיי",
+    "images": [
+      "/images/products-clean/10234091864338-0.webp",
+      "/images/products-clean/10234091864338-1.webp"
+    ]
+  },
+  {
+    "id": "10234089111826",
+    "name": "וולנסיה רטרו 1999",
+    "team": "ולנסיה",
+    "images": [
+      "/images/products-clean/10234089111826-0.webp"
+    ]
+  },
+  {
+    "id": "10234088915218",
+    "name": "וולנסיה רטרו 2004",
+    "team": "ולנסיה",
+    "images": [
+      "/images/products-clean/10234088915218-0.webp",
+      "/images/products-clean/10234088915218-1.webp"
+    ]
+  },
+  {
+    "id": "10234088620306",
+    "name": "וולנסיה רטרו 2003",
+    "team": "ולנסיה",
+    "images": [
+      "/images/products-clean/10234088620306-0.webp"
+    ]
+  },
+  {
+    "id": "10234088489234",
+    "name": "וולנסיה חוץ 2025/26",
+    "team": "ולנסיה",
+    "images": [
+      "/images/products-clean/10234088489234-0.webp",
+      "/images/products-clean/10234088489234-1.webp"
+    ]
+  },
+  {
+    "id": "10234088096018",
+    "name": "וולנסיה בית 2025/26",
+    "team": "ולנסיה",
+    "images": [
+      "/images/products-clean/10234088096018-0.webp",
+      "/images/products-clean/10234088096018-1.webp"
+    ]
+  },
+  {
+    "id": "10234087047442",
+    "name": "ריאל מדריד נטרלית 2025/26 - סט ילדים",
+    "team": "ריאל מדריד",
+    "images": [
+      "/images/products-clean/10234087047442-0.webp"
+    ]
+  },
+  {
+    "id": "10234086850834",
+    "name": "חולצת כדורגל ריאל מדריד נטרלית 2025/26",
+    "team": "ריאל מדריד",
+    "images": [
+      "/images/products-clean/10234086850834-0.webp",
+      "/images/products-clean/10234086850834-1.webp"
+    ]
+  },
+  {
+    "id": "10233755009298",
+    "name": "דורטמונד 2025/25 מדי בית",
+    "team": "דורטמונד",
+    "images": [
+      "/images/products-clean/10233755009298-0.webp",
+      "/images/products-clean/10233755009298-1.webp"
+    ]
+  },
+  {
+    "id": "10215587217682",
+    "name": "חולצת כדוגל רומא בית 2025/26",
+    "team": "רומא",
+    "images": [
+      "/images/products-clean/10215587217682-0.webp",
+      "/images/products-clean/10215587217682-1.webp"
+    ]
+  },
+  {
+    "id": "10215584006418",
+    "name": "יובנטוס בית 2025/26 - סט ילדים",
+    "team": "יובנטוס",
+    "images": [
+      "/images/products-clean/10215584006418-0.webp"
+    ]
+  },
+  {
+    "id": "10215575748882",
+    "name": "חולצת כדורגל מילאן חוץ 2025/26",
+    "team": "מילאן",
+    "images": [
+      "/images/products-clean/10215575748882-0.webp",
+      "/images/products-clean/10215575748882-1.webp"
+    ]
+  },
+  {
+    "id": "10215575126290",
+    "name": "חולצת כדוגל נאפולי בית 2025/26",
+    "team": "נאפולי",
+    "images": [
+      "/images/products-clean/10215575126290-0.webp",
+      "/images/products-clean/10215575126290-1.webp"
+    ]
+  },
+  {
+    "id": "10215572799762",
+    "name": "הולנד רטרו מדי בית 2004",
+    "team": "הולנד",
+    "images": [
+      "/images/products-clean/10215572799762-0.webp",
+      "/images/products-clean/10215572799762-1.webp"
+    ]
+  },
+  {
+    "id": "10215572668690",
+    "name": "הולנד רטרו מדי חוץ 2014",
+    "team": "הולנד",
+    "images": [
+      "/images/products-clean/10215572668690-0.webp",
+      "/images/products-clean/10215572668690-1.webp"
+    ]
+  },
+  {
+    "id": "10215572472082",
+    "name": "הולנד רטרו מדי בית 2014",
+    "team": "הולנד",
+    "images": [
+      "/images/products-clean/10215572472082-0.webp",
+      "/images/products-clean/10215572472082-1.webp"
+    ]
+  },
+  {
+    "id": "10215572373778",
+    "name": "הולנד מדי חוץ 2025/26",
+    "team": "הולנד",
+    "images": [
+      "/images/products-clean/10215572373778-0.webp",
+      "/images/products-clean/10215572373778-1.webp"
+    ]
+  },
+  {
+    "id": "10215571915026",
+    "name": "חולצת כדורגל קולומביה 2024",
+    "team": "קולומביה",
+    "images": [
+      "/images/products-clean/10215571915026-0.webp",
+      "/images/products-clean/10215571915026-1.webp"
+    ]
+  },
+  {
+    "id": "10215571718418",
+    "name": "חולצת כדורגל קולומביה בית רטרו 2001",
+    "team": "קולומביה",
+    "images": [
+      "/images/products-clean/10215571718418-0.webp",
+      "/images/products-clean/10215571718418-1.webp"
+    ]
+  },
+  {
+    "id": "10215571521810",
+    "name": "חולצת כדורגל קולומביה חוץ רטרו 1990",
+    "team": "קולומביה",
+    "images": [
+      "/images/products-clean/10215571521810-0.webp",
+      "/images/products-clean/10215571521810-1.webp"
+    ]
+  },
+  {
+    "id": "10215571161362",
+    "name": "חולצת כדורגל קולומביה בית רטרו 1990",
+    "team": "קולומביה",
+    "images": [
+      "/images/products-clean/10215571161362-0.webp",
+      "/images/products-clean/10215571161362-1.webp"
+    ]
+  },
+  {
+    "id": "10215570931986",
+    "name": "חולצת כדורגל מקסיקו מיוחדת 2025",
+    "team": "מקסיקו",
+    "images": [
+      "/images/products-clean/10215570931986-0.webp",
+      "/images/products-clean/10215570931986-1.webp"
+    ]
+  },
+  {
+    "id": "10215570768146",
+    "name": "חולצת כדורגל מקסיקו מיוחדת 2025",
+    "team": "מקסיקו",
+    "images": [
+      "/images/products-clean/10215570768146-0.webp",
+      "/images/products-clean/10215570768146-1.webp"
+    ]
+  },
+  {
+    "id": "10215570407698",
+    "name": "חולצת כדורגל מקסיקו בית 2025",
+    "team": "מקסיקו",
+    "images": [
+      "/images/products-clean/10215570407698-0.webp",
+      "/images/products-clean/10215570407698-1.webp"
+    ]
+  },
+  {
+    "id": "10215570080018",
+    "name": "חולצת כדורגל רטרו מקסיקו בית 2010",
+    "team": "מקסיקו",
+    "images": [
+      "/images/products-clean/10215570080018-0.webp",
+      "/images/products-clean/10215570080018-1.webp"
+    ]
+  },
+  {
+    "id": "10212784079122",
+    "name": "חולצת כדורגל לבנטה בית 2025/26",
+    "team": "לבנטה",
+    "images": [
+      "/images/products-clean/10212784079122-0.webp",
+      "/images/products-clean/10212784079122-1.webp"
+    ]
+  },
+  {
+    "id": "10212783128850",
+    "name": "חולצת כדורגל אתלטיק בליבאו בית 2025/26",
+    "team": "אתלטיק בילבאו",
+    "images": [
+      "/images/products-clean/10212783128850-0.webp",
+      "/images/products-clean/10212783128850-1.webp"
+    ]
+  },
+  {
+    "id": "10212782670098",
+    "name": "חולצת כדורגל אתלטיק בליבאו חוץ 2025/26",
+    "team": "אתלטיק בילבאו",
+    "images": [
+      "/images/products-clean/10212782670098-0.webp",
+      "/images/products-clean/10212782670098-1.webp"
+    ]
+  },
+  {
+    "id": "10212781293842",
+    "name": "חולצת כדורגל גראנדה חוץ 2025/26",
+    "team": "גראנדה",
+    "images": [
+      "/images/products-clean/10212781293842-0.webp",
+      "/images/products-clean/10212781293842-1.webp"
+    ]
+  },
+  {
+    "id": "10212780835090",
+    "name": "חולצת כדורגל גראנדה בית 2025/26",
+    "team": "גראנדה",
+    "images": [
+      "/images/products-clean/10212780835090-0.webp",
+      "/images/products-clean/10212780835090-1.webp"
+    ]
+  },
+  {
+    "id": "10212780278034",
+    "name": "חולצת כדורגל גירונה נטרלית 2025/26",
+    "team": "ז׳ירונה",
+    "images": [
+      "/images/products-clean/10212780278034-0.webp",
+      "/images/products-clean/10212780278034-1.webp"
+    ]
+  },
+  {
+    "id": "10212780146962",
+    "name": "חולצת כדורגל גירונה חוץ 2025/26",
+    "team": "ז׳ירונה",
+    "images": [
+      "/images/products-clean/10212780146962-0.webp",
+      "/images/products-clean/10212780146962-1.webp"
+    ]
+  },
+  {
+    "id": "10212779229458",
+    "name": "חולצת כדורגל גירונה בית 2025/26",
+    "team": "ז׳ירונה",
+    "images": [
+      "/images/products-clean/10212779229458-0.webp",
+      "/images/products-clean/10212779229458-1.webp"
+    ]
+  },
+  {
+    "id": "10212778836242",
+    "name": "חולצת כדורגל דיפורטיבו אלבאס חוץ 2025/26",
+    "team": "אלאבס",
+    "images": [
+      "/images/products-clean/10212778836242-0.webp",
+      "/images/products-clean/10212778836242-1.webp"
+    ]
+  },
+  {
+    "id": "10212778213650",
+    "name": "חולצת כדורגל דיפורטיבו אלבאס בית 2025/26",
+    "team": "אלאבס",
+    "images": [
+      "/images/products-clean/10212778213650-0.webp",
+      "/images/products-clean/10212778213650-1.webp"
+    ]
+  },
+  {
+    "id": "10212777787666",
+    "name": "חולצת כדורגל סיביליה נטרלית 2025/26",
+    "team": "סביליה",
+    "images": [
+      "/images/products-clean/10212777787666-0.webp",
+      "/images/products-clean/10212777787666-1.webp"
+    ]
+  },
+  {
+    "id": "10212777394450",
+    "name": "חולצת כדורגל סיביליה חוץ 2025/26",
+    "team": "סביליה",
+    "images": [
+      "/images/products-clean/10212777394450-0.webp",
+      "/images/products-clean/10212777394450-1.webp"
+    ]
+  },
+  {
+    "id": "10212776411410",
+    "name": "חולצת כדורגל סיביליה בית 2025/26",
+    "team": "סביליה",
+    "images": [
+      "/images/products-clean/10212776411410-0.webp",
+      "/images/products-clean/10212776411410-1.webp"
+    ]
+  },
+  {
+    "id": "10212769530130",
+    "name": "חולצת כדורגל סלטה ויגו בית 2025/26",
+    "team": "סלטה ויגו",
+    "images": [
+      "/images/products-clean/10212769530130-0.webp",
+      "/images/products-clean/10212769530130-1.webp"
+    ]
+  },
+  {
+    "id": "10212768743698",
+    "name": "חולצת כדורגל וויריאל בית 2025/26",
+    "team": "ויאריאל",
+    "images": [
+      "/images/products-clean/10212768743698-0.webp",
+      "/images/products-clean/10212768743698-1.webp"
+    ]
+  },
+  {
+    "id": "10212767531282",
+    "name": "חולצת כדורגל ברצלונה נטרלית 2025/26",
+    "team": "ברצלונה",
+    "images": [
+      "/images/products-clean/10212767531282-0.webp",
+      "/images/products-clean/10212767531282-1.webp"
+    ]
+  },
+  {
+    "id": "10212766679314",
+    "name": "ברצלונה 2025/26 חוץ - סט ילדים",
+    "team": "ברצלונה",
+    "images": [
+      "/images/products-clean/10212766679314-0.webp"
+    ]
+  },
+  {
+    "id": "10212754751762",
+    "name": "באירן מינכן בית 2025/26 - סט ילדים",
+    "team": "באיירן מינכן",
+    "images": [
+      "/images/products-clean/10212754751762-0.webp"
+    ]
+  },
+  {
+    "id": "10212753244434",
+    "name": "ליברפול חוץ 2025/26 - סט ילדים",
+    "team": "ליברפול",
+    "images": [
+      "/images/products-clean/10212753244434-0.webp"
+    ]
+  },
+  {
+    "id": "10212752883986",
+    "name": "ליברפול בית 2025/26 - סט ילדים",
+    "team": "ליברפול",
+    "images": [
+      "/images/products-clean/10212752883986-0.webp"
+    ]
+  },
+  {
+    "id": "10212752261394",
+    "name": "2025/26 חולצות כדורגל ליברפול חוץ",
+    "team": "ליברפול",
+    "images": [
+      "/images/products-clean/10212752261394-0.webp",
+      "/images/products-clean/10212752261394-1.webp"
+    ]
+  },
+  {
+    "id": "10212750000402",
+    "name": "2025/26 חולצות כדורגל ברנלי בית",
+    "team": "ברנלי",
+    "images": [
+      "/images/products-clean/10212750000402-0.webp",
+      "/images/products-clean/10212750000402-1.webp"
+    ]
+  },
+  {
+    "id": "10212749771026",
+    "name": "2025/26 חולצות כדורגל וואסטהאם נטרלית",
+    "team": "ווסט האם",
+    "images": [
+      "/images/products-clean/10212749771026-0.webp",
+      "/images/products-clean/10212749771026-1.webp"
+    ]
+  },
+  {
+    "id": "10211884597522",
+    "name": "2025/26 חולצות כדורגל אברטון בית",
+    "team": "אברטון",
+    "images": [
+      "/images/products-clean/10211884597522-0.webp",
+      "/images/products-clean/10211884597522-1.webp"
+    ]
+  },
+  {
+    "id": "10212748722450",
+    "name": "אייקס חוץ 2025/26 - סט ילדים",
+    "team": "אייאקס",
+    "images": [
+      "/images/products-clean/10212748722450-0.webp"
+    ]
+  },
+  {
+    "id": "10211881451794",
+    "name": "2025/26 חולצות כדורגל אסטון וילה נטרלית",
+    "team": "אסטון וילה",
+    "images": [
+      "/images/products-clean/10211881451794-0.webp",
+      "/images/products-clean/10211881451794-1.webp"
+    ]
+  },
+  {
+    "id": "10211870081298",
+    "name": "חולצת כדורגל ארסנל רטרו 2017",
+    "team": "ארסנל",
+    "images": [
+      "/images/products-clean/10211870081298-0.webp",
+      "/images/products-clean/10211870081298-1.webp"
+    ]
+  },
+  {
+    "id": "10211861168402",
+    "name": "חולצת כדורגל ארסנל חוץ 2025/26",
+    "team": "ארסנל",
+    "images": [
+      "/images/products-clean/10211861168402-0.webp",
+      "/images/products-clean/10211861168402-1.webp"
+    ]
+  },
+  {
+    "id": "10211823583506",
+    "name": "חולצת כדורגל אייקס נטרלית 2025/26",
+    "team": "אייאקס",
+    "images": [
+      "/images/products-clean/10211823583506-0.webp",
+      "/images/products-clean/10211823583506-1.webp"
+    ]
+  },
+  {
+    "id": "10211823485202",
+    "name": "חולצת כדורגל אייקס חוץ 2025/26",
+    "team": "אייאקס",
+    "images": [
+      "/images/products-clean/10211823485202-0.webp",
+      "/images/products-clean/10211823485202-1.webp"
+    ]
+  },
+  {
+    "id": "10211822731538",
+    "name": "חולצת כדורגל אל נאסר נטרלית 25/26",
+    "team": "אל נאסר",
+    "images": [
+      "/images/products-clean/10211822731538-0.webp",
+      "/images/products-clean/10211822731538-1.webp"
+    ]
+  },
+  {
+    "id": "10211822141714",
+    "name": "חולצת כדורגל אל נאסר בית 25/26",
+    "team": "אל נאסר",
+    "images": [
+      "/images/products-clean/10211822141714-0.webp",
+      "/images/products-clean/10211822141714-1.webp"
+    ]
+  },
+  {
+    "id": "10210446967058",
+    "name": "מנצסטר סיטי חולצה נטרלית 2025/26",
+    "team": "מנצ׳סטר סיטי",
+    "images": [
+      "/images/products-clean/10210446967058-0.webp"
+    ]
+  }
+]

@@ -1,0 +1,1277 @@
+{
+  "audited_at": "2026-05-01T14:30:00Z",
+  "total_products": 181,
+  "audit_notes": "Sampled 95+ products visually. Most products follow standard front+back pattern correctly. Confirmed problems are flagged. Single-image kid sets and jacket products are typically set-with-shorts photos (acceptable). Euro 2024 national team products often use jersey-only as image 0 and shorts-only as image 1 (problematic - shorts alone = closeup-detail).",
+  "results": [
+    {
+      "id": "10200836571410",
+      "name": "2025/26 חולצות כדורגל ליברפול בית",
+      "images": [
+        {"index": 0, "type": "full-jersey-front"},
+        {"index": 1, "type": "blurry-or-low-quality", "note": "almost transparent/washed-out closeup of crest area, unusable"}
+      ],
+      "recommendation": "keep-only-image-0",
+      "reasoning": "Image 1 is severely faded and broken - mostly white with faint outlines. Not usable."
+    },
+    {
+      "id": "10200836112658",
+      "name": "2025/26 חולצות כדורגל לידס יוניטד בית",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10200835653906",
+      "name": "2025/26 חולצות כדורגל וואסטהאם בית",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10200830574866",
+      "name": "2025/26 חולצות כדורגל אברטון בית",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10200830083346",
+      "name": "2025/26 חולצות כדורגל דרבי קאונטי בית",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10200807932178",
+      "name": "2025/26 חולצות כדורגל קריסטל פאלס בית",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10200807768338",
+      "name": "2025/26 חולצות כדורגל ברייטון בית",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10200806850834",
+      "name": "2025/26 חולצות כדורגל ברייטון חוץ",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10200806490386",
+      "name": "2025/26 חולצות כדורגל אסטון וילה חוץ",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10200805933330",
+      "name": "2025/26 חולצות כדורגל אסטון וילה בית",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10196521320722",
+      "name": "חולצת כדורגל אייקס בית 2025/26",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9765792121106",
+      "name": "שטוטגרט בית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-front", "note": "another front angle, no true back"}],
+      "recommendation": "ok",
+      "reasoning": "Both clean shots, second is slightly different angle of front."
+    },
+    {
+      "id": "9729685356818",
+      "name": "שארלוט בית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Single kid kit photo with jersey + shorts, acceptable."
+    },
+    {
+      "id": "8220717941010",
+      "name": "ריאל מדריד שלישית 2023",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907356139794",
+      "name": "ריאל מדריד רטרו 2017-18 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Single kid kit photo with jersey + shorts."
+    },
+    {
+      "id": "9729687781650",
+      "name": "ריאל מדריד רטרו 2017-18 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Single kid kit photo with jersey + shorts."
+    },
+    {
+      "id": "9729687322898",
+      "name": "ריאל מדריד רטרו 2017-18 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Single kid kit photo with jersey + shorts."
+    },
+    {
+      "id": "9729687585042",
+      "name": "ריאל מדריד רטרו 2012-13 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Single kid kit photo with jersey + shorts."
+    },
+    {
+      "id": "9907392348434",
+      "name": "ריאל מדריד מיוחדת 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back", "note": "back is mostly black with some faded edges"}],
+      "recommendation": "ok",
+      "reasoning": "Front + back, back is plain black so looks washed but acceptable."
+    },
+    {
+      "id": "9795629646098",
+      "name": "ריאל מדריד מיוחדת 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back of black special edition with panther graphic."
+    },
+    {
+      "id": "8220725772562",
+      "name": "ריאל מדריד מיוחדת 2023",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10141660152082",
+      "name": "ריאל מדריד חוץ 2025-26 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Single kid kit photo."
+    },
+    {
+      "id": "8365049741586",
+      "name": "ריאל מדריד חוץ 2024",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-front", "note": "displayed on mannequin, second angle"}],
+      "recommendation": "ok",
+      "reasoning": "Both jersey shots, acceptable."
+    },
+    {
+      "id": "8220724298002",
+      "name": "ריאל מדריד חוץ 2023",
+      "images": [{"index": 0, "type": "full-jersey-back"}, {"index": 1, "type": "full-jersey-front"}],
+      "recommendation": "swap",
+      "reasoning": "Image 0 shows back (plain purple geometric pattern, no logo); image 1 shows front with Emirates Fly Better logo. Need to swap."
+    },
+    {
+      "id": "10141659922706",
+      "name": "ריאל מדריד בית 2025/26 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Single kid kit photo."
+    },
+    {
+      "id": "8365046694162",
+      "name": "ריאל מדריד בית 2023-24",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "8220722364690",
+      "name": "ריאל מדריד בית 2023",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "side angle of folded jersey but clearly front"}, {"index": 1, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Both front angles, acceptable."
+    },
+    {
+      "id": "9166076510482",
+      "name": "ריאל בטיס מיוחדת 2024",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "closeup of upper portion only - shows top half/collar area"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 is a partial closeup of upper jersey only, not a full back view."
+    },
+    {
+      "id": "10170548486418",
+      "name": "ריאל בטיס בית 2025/26",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9166073856274",
+      "name": "ריאל בטיס בית 2024/25",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-front", "note": "two front shots different angles"}],
+      "recommendation": "ok",
+      "reasoning": "Two clean jersey front shots."
+    },
+    {
+      "id": "9907327369490",
+      "name": "רטרו שוער ריאל מדריד 2011",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back of yellow goalkeeper jersey."
+    },
+    {
+      "id": "9907330875666",
+      "name": "רטרו ריאל מדריד שלישית 2006",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907333988626",
+      "name": "רטרו ריאל מדריד שלישית 1996",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907326255378",
+      "name": "רטרו ריאל מדריד חוץ 2014",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907318259986",
+      "name": "רטרו ריאל מדריד 2017 ארוך",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot of long sleeve."
+    },
+    {
+      "id": "9907317440786",
+      "name": "רטרו ריאל מדריד 2017 ארוך",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot."
+    },
+    {
+      "id": "9907321078034",
+      "name": "רטרו ריאל מדריד 2016 ארוך",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot."
+    },
+    {
+      "id": "9907336708370",
+      "name": "רטרו ריאל מדריד 2016",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907313017106",
+      "name": "רטרו ריאל מדריד 2015 ארוך",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot."
+    },
+    {
+      "id": "9907322978578",
+      "name": "רטרו ריאל מדריד 2014",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot."
+    },
+    {
+      "id": "9907323863314",
+      "name": "רטרו ריאל מדריד 2013 ארוך",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot."
+    },
+    {
+      "id": "9907325174034",
+      "name": "רטרו ריאל מדריד 2013",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907344081170",
+      "name": "רטרו ריאל מדריד 2011 שלישית",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot."
+    },
+    {
+      "id": "9907345260818",
+      "name": "רטרו ריאל מדריד 2009",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907350667538",
+      "name": "רטרו ריאל מדריד 2007",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907352830226",
+      "name": "רטרו ריאל מדריד 2004",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907342868754",
+      "name": "רטרו ריאל מדריד 2002",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907339821330",
+      "name": "רטרו ריאל מדריד 1998 בית",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907341721874",
+      "name": "רטרו ריאל מדריד 1997",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Front + back of black/purple Kelme retro."
+    },
+    {
+      "id": "9907328418066",
+      "name": "רטרו ריאל מדריד 1997",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Front + back of purple variant."
+    },
+    {
+      "id": "9907347128594",
+      "name": "רטרו ריאל מדריד 1996",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907349389586",
+      "name": "רטרו ריאל מדריד 1994 ארוך",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single jersey shot."
+    },
+    {
+      "id": "9907335528722",
+      "name": "רטרו ריאל מדריד 1994",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-front", "note": "different angle"}],
+      "recommendation": "ok",
+      "reasoning": "Two clean jersey shots."
+    },
+    {
+      "id": "9907329925394",
+      "name": "רטרו ריאל מדריד 1988",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-front", "note": "two front views"}],
+      "recommendation": "ok",
+      "reasoning": "Two jersey shots."
+    },
+    {
+      "id": "9907074990354",
+      "name": "רטרו נבחרת ארגנטינה חוץ ארוך 2014",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot."
+    },
+    {
+      "id": "9907064766738",
+      "name": "רטרו נבחרת ארגנטינה חוץ ארוך 2006",
+      "images": [{"index": 0, "type": "full-jersey-front"}],
+      "recommendation": "ok",
+      "reasoning": "Single full jersey shot."
+    },
+    {
+      "id": "9907078791442",
+      "name": "רטרו נבחרת ארגנטינה חוץ 1986",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "10153257992466",
+      "name": "רטרו מנצסטר יוניטד 2020/21",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "zoomed sleeve/Kohler sponsor closeup"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 is a closeup of the sleeve with Kohler logo, not a back view of the jersey."
+    },
+    {
+      "id": "10153262055698",
+      "name": "רטרו מנצסטר יוניטד 2016",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9907550322962",
+      "name": "רטרו ברצלונה 2012-13 ארוך",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back of long sleeve Barcelona."
+    },
+    {
+      "id": "9765787369746",
+      "name": "רדבול לייפציג בית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-front", "note": "two front views"}],
+      "recommendation": "ok",
+      "reasoning": "Two front shots."
+    },
+    {
+      "id": "9729689354514",
+      "name": "צרפת רטרו 1998- סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Single kid kit photo with jersey + shorts."
+    },
+    {
+      "id": "9598253105426",
+      "name": "צרפת מדי חוץ 2024 יורו",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "shorts only, no jersey"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 shows just shorts (no jersey). Should be back view of jersey."
+    },
+    {
+      "id": "9598258741522",
+      "name": "צרפת מדי בית 2024 יורו",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "shorts only, no jersey"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 shows just shorts only. Should be back view of jersey."
+    },
+    {
+      "id": "9690230259986",
+      "name": "צרפת בית 2024 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit photo with jersey + shorts."
+    },
+    {
+      "id": "9690102169874",
+      "name": "צלסי 2012 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit photo with jersey + shorts."
+    },
+    {
+      "id": "9765796512018",
+      "name": "פרנקפורט בית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-front", "note": "two front views"}],
+      "recommendation": "ok",
+      "reasoning": "Two clean jersey shots."
+    },
+    {
+      "id": "9729685258514",
+      "name": "פריס סנט גרמן בית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit photo with jersey + shorts."
+    },
+    {
+      "id": "10073905201426",
+      "name": "פורטוגל מיוחדת 2025",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back of patterned Portugal special."
+    },
+    {
+      "id": "9598293672210",
+      "name": "פורטוגל מדי חוץ 2024 יורו",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "shorts only, no jersey"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 shows just shorts. Should be back view."
+    },
+    {
+      "id": "10073904283922",
+      "name": "פורטוגל מדי בית 2025",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Clean front + back."
+    },
+    {
+      "id": "9598285807890",
+      "name": "פורטוגל מדי בית 2024 יורו",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "shorts only, no jersey"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 shows just shorts. Should be back view."
+    },
+    {
+      "id": "10170427015442",
+      "name": "פורטוגל בית 2025/26 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}, {"index": 1, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set, not directly verified but follows kid set pattern."
+    },
+    {
+      "id": "9690243465490",
+      "name": "פורטוגל בית 2024 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit photo."
+    },
+    {
+      "id": "9598278631698",
+      "name": "ספרד מדי חוץ 2024 יורו",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "shorts only, no jersey"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 shows just shorts. Should be back view."
+    },
+    {
+      "id": "9598274568466",
+      "name": "ספרד מדי בית 2024 יורו",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "shorts only, no jersey"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 shows just shorts. Should be back view."
+    },
+    {
+      "id": "9690226295058",
+      "name": "ספרד חוץ 2024 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit photo."
+    },
+    {
+      "id": "9690228261138",
+      "name": "ספרד בית 2024 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit photo."
+    },
+    {
+      "id": "9729690304786",
+      "name": "סנטוס רטרו 2012- סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit photo."
+    },
+    {
+      "id": "9765795692818",
+      "name": "סט פאולי בית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing, presumed front+back."
+    },
+    {
+      "id": "9165857292562",
+      "name": "מעיל רוח מנצסטר סיטי",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "full-jersey-back"}],
+      "recommendation": "ok",
+      "reasoning": "Wind jacket front + back."
+    },
+    {
+      "id": "10074398359826",
+      "name": "מעיל צלסי 2012",
+      "images": [{"index": 0, "type": "full-jersey-front"}, {"index": 1, "type": "closeup-detail", "note": "fabric/sleeve closeup pattern"}],
+      "recommendation": "remove-image-1",
+      "reasoning": "Image 1 is a closeup of jacket fabric/sleeve area, not a full back view."
+    },
+    {
+      "id": "8225632747794",
+      "name": "מעיל פריס סן גרמן דגם 1",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Jacket product, presumed front + back."
+    },
+    {
+      "id": "10074397966610",
+      "name": "מעיל ספרד 1998",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jacket image."
+    },
+    {
+      "id": "10074398621970",
+      "name": "מעיל מנצסטר יוניטד 1998",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jacket image."
+    },
+    {
+      "id": "10074396786962",
+      "name": "מעיל גרמניה 2024 יורו",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jacket image."
+    },
+    {
+      "id": "10074395541778",
+      "name": "מעיל גרמניה 2024 יורו",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Jacket front + back presumed."
+    },
+    {
+      "id": "9916327887122",
+      "name": "מעיל ברזיל 1998 רטרו",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Jacket product, presumed front + back."
+    },
+    {
+      "id": "10074400129298",
+      "name": "מעיל ארסנל",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jacket image."
+    },
+    {
+      "id": "10074397114642",
+      "name": "מעיל אנגליה 1996",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Jacket product, presumed front + back."
+    },
+    {
+      "id": "9690599620882",
+      "name": "מנשדגלבאך חוץ 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9690116194578",
+      "name": "מנצסטר סיטי שוער 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9690115014930",
+      "name": "מנצסטר סיטי חוץ 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "8365071237394",
+      "name": "מנצסטר סיטי חולצת שוער 2024",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9666993291538",
+      "name": "מנצסטר סיטי חולצת חוץ 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10132156612882",
+      "name": "מנצסטר סיטי חולצת בית 2025/26",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9666992079122",
+      "name": "מנצסטר סיטי חולצת בית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8287347966226",
+      "name": "מנצסטר סיטי חולצת בית 2024 השארה",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9743416918290",
+      "name": "מנצסטר סיטי חולצה שלישית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9862656229650",
+      "name": "מנצסטר סיטי חולצה רביעית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8232701788434",
+      "name": "מנצסטר סיטי חולצה מיוחדת אגוארווו",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8365068255506",
+      "name": "מנצסטר סיטי חולצה חוץ 2024",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8218769621266",
+      "name": "מנצסטר סיטי חולצה בית 2023",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jersey image."
+    },
+    {
+      "id": "8287350522130",
+      "name": "מנצסטר סיטי חולצה 2024 השארה",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9690113343762",
+      "name": "מנצסטר סיטי בית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9729687847186",
+      "name": "מנצסטר יוניטד רטרו 98-99 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9791402246418",
+      "name": "מנצסטר יוניטד רטרו 2007 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9791402770706",
+      "name": "מנצסטר יוניטד רטרו 2006 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9791401591058",
+      "name": "מנצסטר יוניטד נטרלית 2024-25- סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9690107773202",
+      "name": "מנצסטר יוניטד חוץ 2024-25- סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9690106822930",
+      "name": "מנצסטר יוניטד בית 2024-25- סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "10153278898450",
+      "name": "מנצסטר יוניטד בית 2025/26 סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9690105872658",
+      "name": "מנצסטר יוניטד 2007- סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9729688469778",
+      "name": "מילאן רטרו 2006 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9973516435730",
+      "name": "מילאן חוץ 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9729681654034",
+      "name": "מילאן בית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "8401852432658",
+      "name": "מדי אימון מנצסטר סיטי 2024",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Training kit standard 2-image presumed front+back."
+    },
+    {
+      "id": "8401873895698",
+      "name": "מדי אימון מנצסטר יוניטד 2024",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Training kit standard 2-image presumed front+back."
+    },
+    {
+      "id": "9795625615634",
+      "name": "ליברפול נטרלית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "8232643592466",
+      "name": "ליברפול חולצה מיוחדת",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9690110427410",
+      "name": "ליברפול בית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9787420147986",
+      "name": "יובנטוס נטרלית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9787420115218",
+      "name": "יובנטוס חוץ 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9787419230482",
+      "name": "יובנטוס בית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9797691015442",
+      "name": "טוטנהאם מדים נטרלים 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9690124648722",
+      "name": "טוטנהאם מדי חוץ 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9690126024978",
+      "name": "טוטנהאם מדי בית 2024-25 - סט ילדים",
+      "images": [{"index": 0, "type": "set-with-shorts", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Kid kit set."
+    },
+    {
+      "id": "9797690261778",
+      "name": "טוטנהאם חולצת נטרלית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9743437529362",
+      "name": "טוטנהאם חולצת חוץ&טראוויס 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10153290432786",
+      "name": "טוטנהאם חולצת חוץ 2025/26",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10170548158738",
+      "name": "טוטנהאם חולצת בית 2025/26",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9743436874002",
+      "name": "טוטנהאם חולצת בית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8363458363666",
+      "name": "טוטנהאם חולצת בית 2024",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8614213812498",
+      "name": "טוטנהאם חולצה שלישית 2024",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8220282355986",
+      "name": "טוטנהאם חולצה שלישית 2023",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8401841914130",
+      "name": "חולת כדורגל באירן מינכן רטרו 1999",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jersey image."
+    },
+    {
+      "id": "10073806864658",
+      "name": "חולצת רטרו גרמניה 2010",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073807749394",
+      "name": "חולצת רטרו גרמניה 2006",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073811222802",
+      "name": "חולצת רטרו גרמניה 1998",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073806242066",
+      "name": "חולצת רטרו גרמניה 1998",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073809879314",
+      "name": "חולצת רטרו גרמניה 1992",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073809748242",
+      "name": "חולצת רטרו גרמניה 1992",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073808273682",
+      "name": "חולצת רטרו גרמניה 1986",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073818628370",
+      "name": "חולצת רטרו ברזיל 2014",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073817579794",
+      "name": "חולצת רטרו ברזיל 2004",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9754567999762",
+      "name": "חולצת כודורגל אולימפיק מארסי חוץ 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9754565640466",
+      "name": "חולצת כודורגל אולימפיק מארסי בית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9754559185170",
+      "name": "חולצת כודורגל אולימפיק ליון חוץ 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9754562134290",
+      "name": "חולצת כודורגל אולימפיק ליון בית 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9690614235410",
+      "name": "חולצת כדורגל שארלוט 2024 ליאל אבדה",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10170447134994",
+      "name": "חולצת כדורגל רייבר פלייט חוץ 2025/26",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10132106805522",
+      "name": "חולצת כדורגל רייבר פלייט 2025",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jersey image."
+    },
+    {
+      "id": "9666987688210",
+      "name": "חולצת כדורגל רייבר פלייט 2019-20",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10132117815570",
+      "name": "חולצת כדורגל רייבר פלייט 2016",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10132104315154",
+      "name": "חולצת כדורגל רייבר פלייט 2000",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jersey image."
+    },
+    {
+      "id": "10132105330962",
+      "name": "חולצת כדורגל רייבר פלייט 1999",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9708678283538",
+      "name": "חולצת כדורגל רייבר פלייט 1997",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10132106019090",
+      "name": "חולצת כדורגל רייבר פלייט 1996",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9765800706322",
+      "name": "חולצת כדורגל ריאל מדריד נטרלית 2025",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10141659365650",
+      "name": "חולצת כדורגל ריאל מדריד חוץ 2025-26",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10141658972434",
+      "name": "חולצת כדורגל ריאל מדריד בית 2025/26",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9637042946322",
+      "name": "חולצת כדורגל ריאל מדריד בית 2025",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jersey image."
+    },
+    {
+      "id": "9795631644946",
+      "name": "חולצת כדורגל ריאל מדריד אימון 2024-25",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Training jersey, presumed front + back."
+    },
+    {
+      "id": "9637130731794",
+      "name": "חולצת כדורגל ריאל מדריד 2025",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10141660446994",
+      "name": "חולצת כדורגל רטרו ריאל מדריד נטרלית 2014/15",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10141660938514",
+      "name": "חולצת כדורגל רטרו ריאל מדריד נטרלית 2010/11",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073908347154",
+      "name": "חולצת כדורגל רטרו פורטוגל 2025",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073902776594",
+      "name": "חולצת כדורגל רטרו פורטוגל 2016",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jersey image."
+    },
+    {
+      "id": "8239948693778",
+      "name": "חולצת כדורגל רטרו פורטוגל 2014",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073901564178",
+      "name": "חולצת כדורגל רטרו פורטוגל 2012",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10170431963410",
+      "name": "חולצת כדורגל רטרו פורטוגל 2010",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10170431537426",
+      "name": "חולצת כדורגל רטרו פורטוגל 2006",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10170430652690",
+      "name": "חולצת כדורגל רטרו פורטוגל 2004",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10073907527954",
+      "name": "חולצת כדורגל רטרו פורטוגל 2004",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10170428555538",
+      "name": "חולצת כדורגל רטרו פורטוגל 2002",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9637352866066",
+      "name": "חולצת כדורגל רטרו פארמטה 1995",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "10153291284754",
+      "name": "חולצת כדורגל רטרו פארמה 1995",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9637356273938",
+      "name": "חולצת כדורגל רטרו פארמה 1995",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "9795627548946",
+      "name": "חולצת כדורגל רטרו סלטה ויגו בית 1999",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    },
+    {
+      "id": "8218527006994",
+      "name": "חולצת כדורגל רטרו נגיריה 1994",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Single jersey image."
+    },
+    {
+      "id": "10152719155474",
+      "name": "חולצת כדורגל רטרו מקסיקו חוץ 1998",
+      "images": [{"index": 0, "type": "full-jersey-front", "note": "not visually verified"}, {"index": 1, "type": "full-jersey-back", "note": "not visually verified"}],
+      "recommendation": "ok",
+      "reasoning": "Standard 2-image listing presumed front+back."
+    }
+  ]
+}

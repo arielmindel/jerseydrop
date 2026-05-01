@@ -1,0 +1,176 @@
+{
+  "audited_at": "2026-05-01T13:55:00Z",
+  "total_products": 181,
+  "completed": 17,
+  "in_progress": true,
+  "results": [
+    {
+      "id": "10340448010514",
+      "name": "יפן מדי חוץ 2025/26 מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "white front with rainbow pinstripes, JAPAN crest"},
+        {"index": 1, "type": "full-jersey-back", "note": "white back with rainbow pinstripes, Japan flag"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10328708219154",
+      "name": "ברזיל חוץ 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "navy/blue front with CBF crest, Jordan logo"},
+        {"index": 1, "type": "full-jersey-back", "note": "navy/blue back"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10328707891474",
+      "name": "ברזיל מדי חוץ 2025/26- סט ילדים",
+      "images": [
+        {"index": 0, "type": "set-with-shorts", "note": "kids set: navy front + black shorts"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "kids set photo, single image acceptable"
+    },
+    {
+      "id": "10328707727634",
+      "name": "קנדה מדי בית 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "red Canada front with maple leaf crest"},
+        {"index": 1, "type": "full-jersey-back", "note": "red Canada back with maple leaf"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10328707596562",
+      "name": "נורבגיה מדי בית 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "red Norway front with cross design"},
+        {"index": 1, "type": "full-jersey-back", "note": "red Norway back"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10328707498258",
+      "name": "ארה\"ב מדי חוץ 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "black USA away with stars pattern"},
+        {"index": 1, "type": "full-jersey-back", "note": "black USA away back"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10328707301650",
+      "name": "ארה\"ב מדי בית 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "red/white striped USA home front"},
+        {"index": 1, "type": "full-jersey-back", "note": "white USA home back with red stripes at bottom"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10328706744594",
+      "name": "הולנד מדי בית 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "orange Netherlands home front with KNVB lion crest"},
+        {"index": 1, "type": "full-jersey-back", "note": "orange Netherlands home back"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10328706646290",
+      "name": "הולנד מדי חוץ 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "white Netherlands away with orange band and KNVB crest"},
+        {"index": 1, "type": "full-jersey-back", "note": "white Netherlands away back"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10328706318610",
+      "name": "ספרד מדי חוץ 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "white Spain away with adidas trefoil + Spain crest, draped angle"},
+        {"index": 1, "type": "full-jersey-front", "note": "same white Spain away from straight-on angle - also a FRONT view"}
+      ],
+      "recommendation": "needs-back-view",
+      "reasoning": "both images show the front of the jersey from different angles, no back image"
+    },
+    {
+      "id": "10328706154770",
+      "name": "צרפת מדי בית 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "blue France home with white collar, FFF rooster crest"},
+        {"index": 1, "type": "full-jersey-back", "note": "blue France home back with diagonal stripes"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10325240447250",
+      "name": "ארגנטינה חוץ 2026 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "black Argentina away with blue/white swirl pattern, AFA crest"},
+        {"index": 1, "type": "full-jersey-front", "note": "same black Argentina away from a different angle - also FRONT view"}
+      ],
+      "recommendation": "needs-back-view",
+      "reasoning": "both images show the front of the jersey from different angles, no back image"
+    },
+    {
+      "id": "10320634282258",
+      "name": "ג'מייקה & בוב מארלי בית 2025/26 מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "yellow Jamaica polo with adidas + Jamaica FA crest"},
+        {"index": 1, "type": "closeup-detail", "note": "extreme closeup of 'FOOTBALL IS FREEDOM' Bob Marley label tag on collar"}
+      ],
+      "recommendation": "remove-image-1",
+      "reasoning": "image[1] is a tight closeup of the Bob Marley label, not a back view. Should be removed; product needs a real back image"
+    },
+    {
+      "id": "10320633889042",
+      "name": "אנגליה מדי בית 2025/26 - מונדיאל",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "white England home with three lions crest"},
+        {"index": 1, "type": "full-jersey-back", "note": "white England home back"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    },
+    {
+      "id": "10320633757970",
+      "name": "ברזיל מדי בית 2025/26- סט ילדים",
+      "images": [
+        {"index": 0, "type": "set-with-shorts", "note": "kids set: yellow Brazil top + blue shorts"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "kids set photo, single image acceptable"
+    },
+    {
+      "id": "10320633037074",
+      "name": "חולצת כדורגל ברזיל מיוחדת 2025/26",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "small thumbnail-sized image but shows full gold/cream Brazil special front"},
+        {"index": 1, "type": "full-jersey-back", "note": "full gold/cream Brazil special back with floral pattern"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "front + back, though front is a smaller resolution image"
+    },
+    {
+      "id": "10320632643858",
+      "name": "ברזיל מיוחדת 2025/26",
+      "images": [
+        {"index": 0, "type": "full-jersey-front", "note": "blue Brazil special front with CBF crest"},
+        {"index": 1, "type": "full-jersey-back", "note": "blue Brazil special back"}
+      ],
+      "recommendation": "ok",
+      "reasoning": "clean front and back"
+    }
+  ]
+}
