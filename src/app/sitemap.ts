@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getAllProducts } from "@/lib/products";
-import { LEAGUES, NATIONS } from "@/lib/constants";
+import { LEAGUES, NATIONS, SITE_URL } from "@/lib/constants";
 
-const BASE = "https://jerseydrop.co.il";
+const BASE = SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

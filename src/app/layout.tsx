@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import MarqueeBanner from "@/components/layout/MarqueeBanner";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/constants";
 
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
@@ -29,7 +30,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jerseydrop.co.il"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "JerseyDrop — חולצות כדורגל רשמיות | מונדיאל 2026",
     template: "%s | JerseyDrop",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "he_IL",
-    url: "https://jerseydrop.co.il",
+    url: SITE_URL,
     siteName: "JerseyDrop",
     title: "JerseyDrop — חולצות כדורגל רשמיות",
     description:
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
     description:
       "חולצות רשמיות לנבחרות ולמועדונים. התאמה אישית. משלוח לכל הארץ.",
   },
-  alternates: { canonical: "https://jerseydrop.co.il" },
+  alternates: { canonical: SITE_URL },
   icons: {
     icon: [
       { url: "/logo/favicon-32.png", type: "image/png", sizes: "32x32" },
@@ -83,8 +84,8 @@ const ORGANIZATION_LD = {
   "@type": "Organization",
   name: "JerseyDrop",
   alternateName: "ג׳רסי-דרופ",
-  url: "https://jerseydrop.co.il",
-  logo: "https://jerseydrop.co.il/opengraph-image",
+  url: SITE_URL,
+  logo: `${SITE_URL}/opengraph-image`,
   sameAs: ["https://instagram.com/jerseydrop"],
   address: { "@type": "PostalAddress", addressCountry: "IL" },
 };
@@ -93,11 +94,11 @@ const WEBSITE_LD = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "JerseyDrop",
-  url: "https://jerseydrop.co.il",
+  url: SITE_URL,
   inLanguage: "he-IL",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://jerseydrop.co.il/products?q={search_term_string}",
+    target: `${SITE_URL}/products?q={search_term_string}`,
     "query-input": "required name=search_term_string",
   },
 };

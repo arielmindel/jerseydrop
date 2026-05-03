@@ -13,6 +13,7 @@ import { descriptionParagraphs } from "@/lib/sanitize";
 import ProductDetail from "@/components/product/ProductDetail";
 import RelatedProducts from "@/components/product/RelatedProducts";
 import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/constants";
 
 type Props = { params: { slug: string } };
 
@@ -41,7 +42,7 @@ export function generateMetadata({ params }: Props): Metadata {
         : undefined,
       type: "website",
     },
-    alternates: { canonical: `https://jerseydrop.co.il/products/${product.slug}` },
+    alternates: { canonical: `${SITE_URL}/products/${product.slug}` },
   };
 }
 
@@ -78,7 +79,7 @@ export default function ProductPage({ params }: Props) {
           : product.stock === "low"
             ? "https://schema.org/LimitedAvailability"
             : "https://schema.org/InStock",
-      url: `https://jerseydrop.co.il/products/${product.slug}`,
+      url: `${SITE_URL}/products/${product.slug}`,
     };
   }
 
@@ -91,7 +92,7 @@ export default function ProductPage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "JerseyDrop",
-        item: "https://jerseydrop.co.il",
+        item: SITE_URL,
       },
       {
         "@type": "ListItem",
@@ -102,8 +103,8 @@ export default function ProductPage({ params }: Props) {
             : "מועדונים",
         item:
           product.category === "national"
-            ? "https://jerseydrop.co.il/nations"
-            : "https://jerseydrop.co.il/leagues",
+            ? `${SITE_URL}/nations`
+            : `${SITE_URL}/leagues`,
       },
       {
         "@type": "ListItem",
@@ -111,14 +112,14 @@ export default function ProductPage({ params }: Props) {
         name: product.team,
         item:
           product.category === "national"
-            ? `https://jerseydrop.co.il/nations/${product.teamSlug}`
-            : `https://jerseydrop.co.il/leagues/${product.league}`,
+            ? `${SITE_URL}/nations/${product.teamSlug}`
+            : `${SITE_URL}/leagues/${product.league}`,
       },
       {
         "@type": "ListItem",
         position: 4,
         name: product.nameHe,
-        item: `https://jerseydrop.co.il/products/${product.slug}`,
+        item: `${SITE_URL}/products/${product.slug}`,
       },
     ],
   };
