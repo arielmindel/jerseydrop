@@ -20,10 +20,10 @@ function isCollectionId(s: string): s is CollectionId {
 }
 
 export function generateMetadata({ params }: Props): Metadata {
-  if (!isCollectionId(params.slug)) return {
-    alternates: { canonical: `/collections/${params.slug}` }, title: "קולקציה לא נמצאה" };
+  if (!isCollectionId(params.slug)) return { title: "קולקציה לא נמצאה" };
   const meta = getCollectionMeta(params.slug);
   return {
+    alternates: { canonical: `/collections/${params.slug}` },
     title: meta.titleHe,
     description: meta.descriptionHe,
   };

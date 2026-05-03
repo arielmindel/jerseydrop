@@ -14,9 +14,9 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   const league = LEAGUES.find((l) => l.slug === params.slug);
-  if (!league) return {
-    alternates: { canonical: `/leagues/${params.slug}` }, title: "ליגה לא נמצאה" };
+  if (!league) return { title: "ליגה לא נמצאה" };
   return {
+    alternates: { canonical: `/leagues/${params.slug}` },
     title: `${league.nameHe} · ${league.nameEn} — קבוצות וחולצות`,
     description: `כל קבוצות ${league.nameHe}. בחרו קבוצה וגלו את כל החולצות שלה — בית, חוץ, רטרו ועוד.`,
   };

@@ -38,6 +38,7 @@ export function generateMetadata({ params }: Props): Metadata {
   const nation = NATIONS.find((n) => n.slug === params.slug);
   if (!nation) return { title: "נבחרת לא נמצאה" };
   return {
+    alternates: { canonical: `/nations/${params.slug}` },
     title: `${nation.nameHe} · ${nation.nameEn}`,
     description: `כל חולצות נבחרת ${nation.nameHe} — בית, חוץ, שוער ומהדורות מיוחדות למונדיאל 2026.`,
   };
