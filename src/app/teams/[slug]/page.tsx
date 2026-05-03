@@ -28,7 +28,8 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   const meta = getTeamMeta(params.slug);
-  if (!meta) return { title: "קבוצה לא נמצאה" };
+  if (!meta) return {
+    alternates: { canonical: `/teams/${params.slug}` }, title: "קבוצה לא נמצאה" };
   return {
     title: `${meta.name} — ${meta.productCount} חולצות`,
     description: `כל החולצות של ${meta.name} — בית, חוץ, רטרו ואדישנס מיוחדות. גרסת Fan ו-Player.`,

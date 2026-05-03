@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" },
   title: "מדיניות פרטיות",
   description:
     "כיצד JerseyDrop אוספת, משתמשת ושומרת מידע אישי. עוגיות, זכויות הצרכן, אבטחה.",

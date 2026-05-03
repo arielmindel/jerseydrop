@@ -8,6 +8,7 @@ import { BLUR_DATA_URL } from "@/lib/image-placeholder";
 import WorldCupCountdown from "@/components/home/WorldCupCountdown";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/nations" },
   title: "נבחרות לאומיות — מונדיאל 2026",
   description:
     "כל חולצות הנבחרות לקראת מונדיאל 2026. ארגנטינה, ברזיל, פורטוגל, צרפת, ספרד, גרמניה, אנגליה ועוד.",

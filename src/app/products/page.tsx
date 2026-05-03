@@ -14,6 +14,7 @@ import FilterSidebar, {
 import SortDropdown from "@/components/filters/SortDropdown";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/products" },
   title: "כל החולצות — ליגות, נבחרות ורטרו",
   description:
     "כל חולצות הכדורגל של JerseyDrop במקום אחד. סנן לפי קבוצה, ליגה, גרסה, מידה ומחיר.",

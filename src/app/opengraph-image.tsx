@@ -1,6 +1,8 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
+// Removed `runtime = "edge"` — edge runtime sometimes returns 0-byte PNGs
+// when the JSX includes mixed-direction Hebrew text + complex gradients.
+// Node runtime renders reliably.
 export const alt = "JerseyDrop — חולצות כדורגל רשמיות";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -18,8 +20,6 @@ export default async function OG() {
           justifyContent: "center",
           padding: "64px 72px",
           backgroundColor: "#0A0A0A",
-          backgroundImage:
-            "radial-gradient(1000px 500px at 80% -20%, rgba(0,255,136,0.25), transparent 60%)",
           color: "#FFFFFF",
           fontFamily: "sans-serif",
         }}
@@ -37,36 +37,34 @@ export default async function OG() {
         </div>
         <div
           style={{
-            fontSize: 120,
+            fontSize: 140,
             fontWeight: 900,
             lineHeight: 1,
             marginTop: 16,
             textTransform: "uppercase",
+            color: "#FFFFFF",
           }}
         >
           JerseyDrop
         </div>
         <div
           style={{
-            fontSize: 40,
+            fontSize: 36,
             marginTop: 24,
             color: "#A3A3A3",
-            maxWidth: 900,
           }}
         >
-          חולצות רשמיות לנבחרות ולמועדונים · משלוח לכל הארץ
+          Official Football Jerseys · Israel
         </div>
         <div
           style={{
             marginTop: 48,
             fontSize: 28,
             fontWeight: 700,
-            display: "flex",
-            gap: 16,
             color: "#00FF88",
           }}
         >
-          <span>jerseydrop.co.il</span>
+          jerseydrop.co.il
         </div>
       </div>
     ),

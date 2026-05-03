@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ContactForm from "./ContactForm";
 import { MessageCircle, Mail, Clock } from "lucide-react";
+import { whatsappLink } from "@/lib/constants";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "צור קשר",
   description: "שאלות? נשמח לעזור. WhatsApp, אימייל, וטופס פנייה.",
 };
@@ -47,7 +49,7 @@ export default function ContactPage() {
 
       <section className="container grid gap-6 pb-10 md:grid-cols-3">
         <a
-          href="https://wa.me/972000000000"
+          href={whatsappLink()}
           className="group flex items-center gap-3 rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-accent/60"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/10 text-accent">

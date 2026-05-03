@@ -3,6 +3,7 @@ import { Trophy, Shield, Heart } from "lucide-react";
 import WorldCupCountdown from "@/components/home/WorldCupCountdown";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "עלינו",
   description:
     "JerseyDrop היא מותג עצמאי ישראלי שמביא חולצות כדורגל רשמיות ישירות לבית שלכם. אהבה לכדורגל, איכות, ושירות בעברית.",

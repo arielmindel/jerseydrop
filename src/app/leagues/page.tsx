@@ -7,6 +7,7 @@ import { getHeroImageFor, getProductsByLeague } from "@/lib/products";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/leagues" },
   title: "ליגות — כל חולצות המועדונים",
   description:
     "פרמייר ליג, לה ליגה, סריה א, בונדסליגה, ליג 1 ועוד. כל חולצות המועדונים הגדולים של אירופה, MLS וברזיל.",

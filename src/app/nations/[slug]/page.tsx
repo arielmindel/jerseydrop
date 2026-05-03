@@ -30,6 +30,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (TIER_SLUGS.includes(params.slug as NationTier)) {
     const t = TIER_LABELS[params.slug as NationTier];
     return {
+    alternates: { canonical: `/nations/${params.slug}` },
       title: `${t.he} — נבחרות`,
       description: `כל הנבחרות ב-${t.he}. בחרו נבחרת וגלו את כל החולצות שלה.`,
     };

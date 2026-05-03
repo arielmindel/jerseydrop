@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms" },
   title: "תקנון",
   description:
     "תקנון השימוש באתר JerseyDrop — תנאי רכישה, משלוח, החזרות, אחריות וסודיות.",

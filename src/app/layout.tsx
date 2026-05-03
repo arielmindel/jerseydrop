@@ -61,7 +61,9 @@ export const metadata: Metadata = {
     description:
       "חולצות רשמיות לנבחרות ולמועדונים. התאמה אישית. משלוח לכל הארץ.",
   },
-  alternates: { canonical: SITE_URL },
+  // Canonical here applies only to the homepage. Other pages override
+  // via their own generateMetadata().
+  alternates: { canonical: "/" },
   icons: {
     icon: [
       { url: "/logo/favicon-32.png", type: "image/png", sizes: "32x32" },

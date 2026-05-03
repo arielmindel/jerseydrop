@@ -12,6 +12,7 @@ type Props = {
 export function generateMetadata({ searchParams }: Props): Metadata {
   const q = searchParams.q?.trim();
   return {
+    alternates: { canonical: "/search" },
     title: q ? `תוצאות חיפוש: ${q}` : "חיפוש",
     description: "חיפוש בכל קטלוג JerseyDrop — לפי קבוצה, ליגה, נבחרת ועוד.",
     robots: { index: false, follow: true },

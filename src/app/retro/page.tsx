@@ -4,6 +4,7 @@ import { getRetroProducts, getRetroByDecade } from "@/lib/products";
 import RetroDecadeTabs from "@/components/product/RetroDecadeTabs";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/retro" },
   title: "רטרו — קלאסיקות שלא יחזרו",
   description:
     "חולצות רטרו ונוסטלגיה לפי עשור: 80s, 90s, 00s, 10s. ארגנטינה 2010, ריאל 06-07, יונייטד 13-14 ועוד.",

@@ -4,6 +4,7 @@ import { getKidsProducts } from "@/lib/products";
 import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/kids" },
   title: "ילדים — חולצות במידות נוער",
   description:
     "חולצות הקבוצות הגדולות במידות לילדים. מבחר רחב מהליגות המובילות, נבחרות לאומיות ומונדיאל 2026.",

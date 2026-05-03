@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Mail, Instagram, Shield } from "lucide-react";
+import { whatsappLink } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-2 pt-1">
             <a
-              href="https://wa.me/972000000000"
+              href={whatsappLink()}
               aria-label="WhatsApp"
               className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-accent hover:text-accent"
             >
