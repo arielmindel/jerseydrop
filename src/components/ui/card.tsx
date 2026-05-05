@@ -6,7 +6,14 @@ const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElemen
     <div
       ref={ref}
       className={cn(
-        "rounded-2xl border border-border bg-surface text-foreground shadow-sm transition-colors",
+        // Base surface — rounded, bordered, subtle gradient. The card-gradient
+        // utility (config) gives a soft top-light → bottom-dark wash so the
+        // surface reads as a "real" 3D object, not a flat tile.
+        "group relative overflow-hidden rounded-2xl border border-border bg-surface bg-card-gradient text-foreground shadow-card",
+        // Hover: gentle lift + accent border glow. Transform/box-shadow only
+        // (no margin / no width) so neighbours don't reflow on hover.
+        "transition-all duration-base ease-emphasized",
+        "hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-glow-sm",
         className,
       )}
       {...props}

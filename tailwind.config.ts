@@ -45,6 +45,33 @@ const config: Config = {
         display: ["var(--font-space-grotesk)", "ui-sans-serif", "sans-serif"],
         jersey: ["var(--font-oswald)", "Arial Black", "sans-serif"],
       },
+      // Type scale — see docs/DESIGN_SYSTEM.md
+      // Tailwind merges with default sizes, so xs/sm/base/lg/xl/2xl/etc. still work.
+      // The new tokens below give us a consistent type rhythm across the catalog.
+      fontSize: {
+        "display-xl": ["clamp(2.75rem, 6vw + 1rem, 4.5rem)", { lineHeight: "1", letterSpacing: "-0.02em", fontWeight: "900" }],
+        "display-lg": ["clamp(2.25rem, 4vw + 1rem, 3.5rem)", { lineHeight: "1.05", letterSpacing: "-0.02em", fontWeight: "900" }],
+        display: ["clamp(1.75rem, 3vw + 0.75rem, 2.5rem)", { lineHeight: "1.1", letterSpacing: "-0.015em", fontWeight: "800" }],
+        h1: ["2rem", { lineHeight: "1.15", letterSpacing: "-0.01em", fontWeight: "800" }],
+        h2: ["1.5rem", { lineHeight: "1.2", letterSpacing: "-0.005em", fontWeight: "700" }],
+        h3: ["1.25rem", { lineHeight: "1.3", fontWeight: "700" }],
+        "body-lg": ["1.125rem", { lineHeight: "1.6" }],
+        body: ["1rem", { lineHeight: "1.6" }],
+        "body-sm": ["0.875rem", { lineHeight: "1.55" }],
+        caption: ["0.75rem", { lineHeight: "1.4" }],
+        overline: ["0.6875rem", { lineHeight: "1", letterSpacing: "0.18em", fontWeight: "700" }],
+      },
+      transitionDuration: {
+        snap: "120ms",
+        fast: "180ms",
+        base: "240ms",
+        slow: "360ms",
+        graceful: "480ms",
+      },
+      transitionTimingFunction: {
+        spring: "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        emphasized: "cubic-bezier(0.2, 0, 0, 1)",
+      },
       boxShadow: {
         glow: "0 0 24px rgba(0, 255, 136, 0.35)",
         "glow-sm": "0 0 12px rgba(0, 255, 136, 0.25)",

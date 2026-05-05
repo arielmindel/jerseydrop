@@ -41,8 +41,62 @@
     text-wrap: balance;
   }
 
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
   .neon-glow {
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.35);
+  }
+
+  /* ============================================================
+   * SECTION RHYTHM — consistent vertical spacing between sections.
+   * Use `.section-y` on the outer wrapper of every page section so
+   * the rhythm stays identical site-wide. Mobile = compact, desktop
+   * = generous. py-12 → 48px, md:py-20 → 80px, lg:py-24 → 96px.
+   * ============================================================ */
+  .section-y {
+    @apply py-12 md:py-20 lg:py-24;
+  }
+  .section-y-tight {
+    @apply py-8 md:py-12 lg:py-16;
+  }
+  .section-y-loose {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Stagger reveal — apply to a parent; children with .reveal-item
+   * fade up sequentially. Used by product grids, team cards. The
+   * Framer Motion alternative is preferred for client components.
+   */
+  .reveal-grid > .reveal-item {
+    animation: fadeUp 0.5s ease-out both;
+  }
+  .reveal-grid > .reveal-item:nth-child(1) { animation-delay: 0ms; }
+  .reveal-grid > .reveal-item:nth-child(2) { animation-delay: 60ms; }
+  .reveal-grid > .reveal-item:nth-child(3) { animation-delay: 120ms; }
+  .reveal-grid > .reveal-item:nth-child(4) { animation-delay: 180ms; }
+  .reveal-grid > .reveal-item:nth-child(5) { animation-delay: 240ms; }
+  .reveal-grid > .reveal-item:nth-child(6) { animation-delay: 300ms; }
+  .reveal-grid > .reveal-item:nth-child(7) { animation-delay: 360ms; }
+  .reveal-grid > .reveal-item:nth-child(8) { animation-delay: 420ms; }
+
+  /* Card hover lift — paired with .card-press for tactile press-back.
+   * Use on Link wrappers around cards; the card itself doesn't need
+   * its own hover styles. */
+  .lift-on-hover {
+    @apply transition-all duration-base ease-emphasized hover:-translate-y-1;
+  }
+  .card-press {
+    @apply active:translate-y-0 active:duration-snap;
+  }
+
+  /* Edge highlight — adds a thin top-edge highlight on cards/buttons,
+   * giving them a "lit" sheen. Like a subtle reflection. */
+  .edge-light {
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.06),
+      0 4px 24px -8px rgba(0, 0, 0, 0.4);
   }
 
   .grain::before {
