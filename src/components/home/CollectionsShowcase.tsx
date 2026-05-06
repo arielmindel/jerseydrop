@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowLeft, Star, Sparkles, Gift, Baby, Shirt, Crown } from "lucide-react";
 import { getAllProducts, getHeroImageFor } from "@/lib/products";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 /**
  * Magazine-style collections grid (sporthub-inspired).
@@ -92,10 +93,11 @@ export default function CollectionsShowcase() {
   const tiles = TILES.map((t) => ({ ...t, image: t.pickImage() }));
 
   return (
-    <section className="container py-14 md:py-20">
-      <div className="mb-8 text-center md:mb-12">
+    <section className="container section-y">
+      <header className="mb-8 flex flex-col items-center gap-3 text-center md:mb-12">
+        <SectionEyebrow tone="gold">Curated Drops</SectionEyebrow>
         <h2
-          className="font-display text-5xl font-black uppercase tracking-tight md:text-7xl"
+          className="font-display text-display-lg font-black uppercase"
           style={{
             WebkitTextStroke: "1.5px rgba(212, 175, 55, 0.45)",
             color: "transparent",
@@ -104,14 +106,17 @@ export default function CollectionsShowcase() {
         >
           קולקציות
         </h2>
-      </div>
+        <p className="max-w-md text-body-sm text-muted">
+          קולקציות מובחרות לכל סוג אוהד — רטרו, ילדים, מהדורות מיוחדות ועוד.
+        </p>
+      </header>
 
-      <div className="grid auto-rows-[180px] grid-cols-2 gap-3 md:auto-rows-[220px] md:grid-cols-4 md:gap-4">
+      <div className="reveal-grid grid auto-rows-[180px] grid-cols-2 gap-3 md:auto-rows-[220px] md:grid-cols-4 md:gap-4 lg:gap-6">
         {tiles.map((t) => (
           <Link
             key={t.href}
             href={t.href}
-            className={`group relative block overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-500 hover:-translate-y-1 hover:shadow-glow-sm ${t.span}`}
+            className={`reveal-item group relative block overflow-hidden rounded-2xl border border-border bg-surface edge-light transition-all duration-base ease-emphasized hover:-translate-y-1 hover:border-accent/40 hover:shadow-glow-sm ${t.span}`}
           >
             {t.image ? (
               <Image
@@ -121,28 +126,30 @@ export default function CollectionsShowcase() {
                 sizes="(min-width: 768px) 25vw, 50vw"
                 placeholder="blur"
                 blurDataURL={BLUR_DATA_URL}
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-transform duration-slow group-hover:scale-[1.08]"
               />
             ) : (
               <div className="absolute inset-0 bg-card-gradient" />
             )}
             <div
               aria-hidden
-              className="absolute inset-0 bg-gradient-to-b from-background/10 via-transparent to-background/50"
+              className="absolute inset-0 bg-gradient-to-b from-background/10 via-transparent to-background/55"
             />
-            <div className="absolute end-3 top-3 inline-flex items-center gap-1 rounded-full border border-border/40 bg-background/60 px-2 py-1 backdrop-blur-sm">
+            {/* Floating badge — top-end. Subtly glassy so it doesn't fight
+                 with the image. */}
+            <div className="absolute end-3 top-3 inline-flex items-center gap-1 rounded-full border border-border/40 bg-background/60 px-2.5 py-1 backdrop-blur-md">
               <t.Icon className="h-3 w-3 text-foreground/80" />
-              <span className="font-display text-[9px] font-bold uppercase tracking-widest text-foreground/80">
+              <span className="font-display text-[0.625rem] font-bold uppercase leading-none tracking-[0.18em] text-foreground/80">
                 {t.badgeLabel}
               </span>
             </div>
             <div
               className={`absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 px-4 py-3 ${t.ribbonClass}`}
             >
-              <span className="font-display text-base font-black uppercase leading-none tracking-tight md:text-lg">
+              <span className="font-display text-h3 font-black uppercase leading-none tracking-tight">
                 {t.titleHe}
               </span>
-              <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+              <ArrowLeft className="h-4 w-4 transition-transform duration-base group-hover:-translate-x-1" />
             </div>
           </Link>
         ))}

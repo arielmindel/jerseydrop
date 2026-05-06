@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 const ITEMS: { id: string; q: string; a: string }[] = [
   {
@@ -45,23 +46,31 @@ const ITEMS: { id: string; q: string; a: string }[] = [
 
 export default function HomepageFAQ() {
   return (
-    <section className="container py-16 md:py-24">
-      <div className="mx-auto max-w-3xl text-center">
-        <span className="section-eyebrow">FAQ</span>
-        <h2 className="mt-2 font-display text-3xl font-black uppercase tracking-tight md:text-5xl">
+    <section className="container section-y">
+      <header className="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+        <SectionEyebrow>FAQ</SectionEyebrow>
+        <h2 className="font-display text-display font-black uppercase">
           שאלות נפוצות
         </h2>
-        <p className="mt-3 text-sm text-muted md:text-base">
+        <p className="text-body-sm text-muted md:text-body">
           כל מה שצריך לדעת לפני שמזמינים
         </p>
-      </div>
+      </header>
 
-      <div className="mx-auto mt-10 max-w-3xl">
+      <div className="mx-auto mt-10 max-w-3xl md:mt-12">
         <Accordion type="single" defaultValue="shipping" collapsible className="space-y-3">
           {ITEMS.map((item) => (
-            <AccordionItem key={item.id} value={item.id}>
-              <AccordionTrigger>{item.q}</AccordionTrigger>
-              <AccordionContent>{item.a}</AccordionContent>
+            <AccordionItem
+              key={item.id}
+              value={item.id}
+              className="rounded-2xl border border-border bg-surface/60 px-5 transition-colors duration-base hover:border-accent/30 data-[state=open]:border-accent/50 data-[state=open]:bg-surface"
+            >
+              <AccordionTrigger className="text-start font-display text-body font-bold leading-snug">
+                {item.q}
+              </AccordionTrigger>
+              <AccordionContent className="pb-4 text-body-sm leading-relaxed text-muted">
+                {item.a}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

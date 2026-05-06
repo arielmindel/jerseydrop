@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { ArrowLeft, Check } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
@@ -25,19 +26,24 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="container py-16 md:py-24">
-      <div className="relative overflow-hidden rounded-3xl border border-border bg-surface p-8 md:p-12">
+    <section className="container section-y">
+      <div className="relative overflow-hidden rounded-3xl border border-border bg-surface edge-light p-8 md:p-12">
+        {/* Two-tone aurora glow — accent + violet for depth */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -top-20 start-1/4 h-72 w-72 rounded-full bg-accent/20 blur-[130px]"
+          className="pointer-events-none absolute -top-24 start-1/4 h-72 w-72 rounded-full bg-accent/20 blur-[130px]"
         />
-        <div className="relative grid gap-8 md:grid-cols-2 md:items-center">
-          <div className="space-y-2">
-            <span className="section-eyebrow">Newsletter</span>
-            <h2 className="font-display text-3xl font-black uppercase tracking-tight md:text-4xl">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-24 end-1/4 h-72 w-72 rounded-full bg-violet/15 blur-[140px]"
+        />
+        <div className="relative grid gap-8 md:grid-cols-2 md:items-center md:gap-12">
+          <div className="space-y-3">
+            <SectionEyebrow>Newsletter</SectionEyebrow>
+            <h2 className="font-display text-display font-black uppercase">
               תהיו הראשונים לדעת
             </h2>
-            <p className="text-sm text-muted md:text-base">
+            <p className="max-w-md text-body-sm leading-relaxed text-muted md:text-body">
               קולקציות חדשות, מהדורות מוגבלות של המונדיאל, ומבצעים רק למנויים.
               בלי ספאם — אפשר לבטל בכל רגע.
             </p>
@@ -60,7 +66,7 @@ export default function Newsletter() {
               <button
                 type="submit"
                 disabled={status === "submitting" || status === "success"}
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-accent px-6 font-display text-sm font-bold uppercase tracking-wide text-accent-foreground shadow-glow transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
+                className="group/cta inline-flex h-12 items-center justify-center gap-2 rounded-full bg-accent px-6 font-display text-sm font-bold uppercase tracking-wide text-accent-foreground shadow-glow transition-all duration-base ease-emphasized hover:-translate-y-0.5 hover:shadow-glow active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {status === "success" ? (
                   <>
@@ -68,16 +74,27 @@ export default function Newsletter() {
                   </>
                 ) : (
                   <>
-                    הרשמה <ArrowLeft className="h-4 w-4" />
+                    הרשמה
+                    <ArrowLeft className="h-4 w-4 transition-transform duration-base group-hover/cta:-translate-x-0.5" />
                   </>
                 )}
               </button>
             </div>
             {status === "error" && (
-              <p className="text-xs text-destructive">אנא הזינו אימייל תקין.</p>
+              <p
+                role="alert"
+                aria-live="polite"
+                className="text-caption text-destructive"
+              >
+                אנא הזינו אימייל תקין.
+              </p>
             )}
             {status === "success" && (
-              <p className="text-xs text-accent">
+              <p
+                role="status"
+                aria-live="polite"
+                className="text-caption text-accent"
+              >
                 תודה! נשלח לך עדכון על הקולקציה הבאה.
               </p>
             )}

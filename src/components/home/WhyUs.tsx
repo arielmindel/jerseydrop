@@ -1,4 +1,5 @@
 import { Shield, Pencil, Truck } from "lucide-react";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 const ITEMS = [
   {
@@ -23,31 +24,31 @@ const ITEMS = [
 
 export default function WhyUs() {
   return (
-    <section className="relative overflow-hidden border-y border-border/60 bg-surface/40 py-16 md:py-24">
+    <section className="relative overflow-hidden border-y border-border/60 bg-surface/40 section-y">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,255,136,0.08),transparent_60%)]"
       />
       <div className="container relative">
-        <div className="mb-10 max-w-2xl space-y-2 md:mb-14">
-          <span className="section-eyebrow">Why JerseyDrop</span>
-          <h2 className="font-display text-3xl font-black uppercase tracking-tight md:text-5xl">
+        <header className="mb-10 max-w-2xl space-y-3 md:mb-14">
+          <SectionEyebrow>Why JerseyDrop</SectionEyebrow>
+          <h2 className="font-display text-display font-black uppercase">
             למה כדאי לכם אצלנו
           </h2>
-        </div>
-        <div className="grid gap-5 md:grid-cols-3">
+        </header>
+        <div className="reveal-grid grid gap-5 md:grid-cols-3 lg:gap-6">
           {ITEMS.map((item) => (
             <div
               key={item.title}
-              className="group relative flex flex-col gap-3 rounded-2xl border border-border bg-background p-6 transition-colors hover:border-accent/40 md:p-7"
+              className="reveal-item group relative flex flex-col gap-3 rounded-2xl border border-border bg-background edge-light p-6 transition-all duration-base ease-emphasized hover:-translate-y-1 hover:border-accent/40 hover:shadow-glow-sm md:p-7"
             >
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-accent/30 bg-accent/10 text-accent transition-transform duration-base group-hover:scale-110">
                 <item.icon className="h-5 w-5" />
               </div>
-              <h3 className="font-display text-xl font-bold uppercase tracking-tight">
+              <h3 className="font-display text-h2 font-bold uppercase tracking-tight">
                 {item.title}
               </h3>
-              <p className="text-sm leading-relaxed text-muted">
+              <p className="text-body-sm leading-relaxed text-muted">
                 {item.description}
               </p>
             </div>

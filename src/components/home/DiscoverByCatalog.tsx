@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { getAllProducts, getHeroImageFor } from "@/lib/products";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 type CatalogTile = {
   href: string;
@@ -60,25 +61,25 @@ export default function DiscoverByCatalog() {
   });
 
   return (
-    <section className="container py-14 md:py-20">
-      <div className="mb-8 flex items-end justify-between gap-4">
-        <div>
-          <span className="section-eyebrow">Discover</span>
-          <h2 className="mt-1 font-display text-3xl font-black uppercase tracking-tight md:text-4xl">
+    <section className="container section-y">
+      <header className="mb-8 flex items-end justify-between gap-4 md:mb-10">
+        <div className="flex flex-col gap-2">
+          <SectionEyebrow>Discover</SectionEyebrow>
+          <h2 className="font-display text-display font-black uppercase">
             גלה לפי קטלוג
           </h2>
-          <p className="mt-2 text-sm text-muted md:text-base">
+          <p className="text-body-sm text-muted">
             סינון מהיר לפי איכות וסגנון
           </p>
         </div>
-      </div>
+      </header>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="reveal-grid grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
         {tiles.map((t) => (
           <Link
             key={t.href}
             href={t.href}
-            className="group relative block aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface transition-all duration-500 hover:-translate-y-1"
+            className="reveal-item group relative block aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface edge-light transition-all duration-base ease-emphasized hover:-translate-y-1 hover:border-accent/40"
           >
             {t.image ? (
               <Image
@@ -88,14 +89,15 @@ export default function DiscoverByCatalog() {
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                 placeholder="blur"
                 blurDataURL={BLUR_DATA_URL}
-                className="object-cover opacity-70 transition-all duration-700 group-hover:scale-105 group-hover:opacity-90"
+                className="object-cover opacity-70 transition-all duration-slow group-hover:scale-[1.06] group-hover:opacity-95"
               />
             ) : (
               <div className="absolute inset-0 bg-card-gradient" />
             )}
+            {/* Accent colour wash — fades up on hover for that "lit" feel */}
             <div
               aria-hidden
-              className="pointer-events-none absolute inset-0 mix-blend-overlay opacity-25 transition-opacity duration-500 group-hover:opacity-45"
+              className="pointer-events-none absolute inset-0 mix-blend-overlay opacity-25 transition-opacity duration-base group-hover:opacity-50"
               style={{ backgroundColor: t.accent }}
             />
             <div
@@ -104,17 +106,18 @@ export default function DiscoverByCatalog() {
             />
             <div className="absolute inset-x-0 bottom-0 flex flex-col gap-1.5 p-5">
               <span
-                className="font-display text-[10px] font-bold uppercase tracking-widest"
+                className="font-display text-[0.625rem] font-bold uppercase leading-none tracking-[0.18em]"
                 style={{ color: t.accent }}
               >
                 {t.badgeLabel}
               </span>
-              <h3 className="font-display text-xl font-black uppercase leading-tight">
+              <h3 className="font-display text-h2 font-black uppercase leading-tight">
                 {t.titleHe}
               </h3>
-              <p className="line-clamp-2 text-xs text-muted">{t.subtitleHe}</p>
-              <div className="mt-1 inline-flex items-center gap-1.5 font-display text-[10px] font-bold uppercase tracking-widest text-foreground">
-                {t.count} פריטים <ArrowLeft className="h-3 w-3" />
+              <p className="line-clamp-2 text-body-sm text-muted">{t.subtitleHe}</p>
+              <div className="mt-1 inline-flex items-center gap-1.5 font-display text-[0.625rem] font-bold uppercase tracking-[0.18em] text-foreground">
+                {t.count} פריטים{" "}
+                <ArrowLeft className="h-3 w-3 transition-transform duration-base group-hover:-translate-x-0.5" />
               </div>
             </div>
           </Link>
