@@ -38,7 +38,7 @@ export default function ContactPage() {
       <section className="container py-12 md:py-16">
         <div className="max-w-2xl space-y-3">
           <span className="section-eyebrow">Contact</span>
-          <h1 className="font-display text-4xl font-black uppercase leading-tight md:text-5xl">
+          <h1 className="font-display text-display-lg font-black uppercase">
             נשמח לעזור
           </h1>
           <p className="text-sm text-muted md:text-base">

@@ -5,8 +5,17 @@ import { whatsappLink } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="mt-24 border-t border-border/60 bg-background">
-      <div className="container grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-5">
+    <footer className="relative mt-24 overflow-hidden border-t border-border/60 bg-background">
+      {/* Soft accent halo at the top edge — matches the header's hairline. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -bottom-32 start-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-accent/5 blur-[140px]"
+      />
+      <div className="container relative grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-5">
         <div className="space-y-4">
           <Image
             src="/logo/logo-192.png"
@@ -23,14 +32,14 @@ export default function Footer() {
             <a
               href={whatsappLink()}
               aria-label="WhatsApp"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-accent hover:text-accent"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-all duration-base hover:-translate-y-0.5 hover:border-accent hover:bg-accent/10 hover:text-accent"
             >
               <MessageCircle className="h-4 w-4" />
             </a>
             <a
               href="mailto:hello@jerseydrop.co.il"
               aria-label="אימייל"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-accent hover:text-accent"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-all duration-base hover:-translate-y-0.5 hover:border-accent hover:bg-accent/10 hover:text-accent"
             >
               <Mail className="h-4 w-4" />
             </a>
@@ -39,7 +48,7 @@ export default function Footer() {
               aria-label="Instagram"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-accent hover:text-accent"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-all duration-base hover:-translate-y-0.5 hover:border-accent hover:bg-accent/10 hover:text-accent"
             >
               <Instagram className="h-4 w-4" />
             </a>
@@ -47,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-3 font-display text-xs font-bold uppercase tracking-widest text-accent">
+          <h4 className="mb-3 font-display text-overline font-bold tracking-[0.18em] text-accent">
             קישורים מהירים
           </h4>
           <ul className="space-y-2 text-sm text-muted">
@@ -75,7 +84,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-3 font-display text-xs font-bold uppercase tracking-widest text-accent">
+          <h4 className="mb-3 font-display text-overline font-bold tracking-[0.18em] text-accent">
             קטגוריות
           </h4>
           <ul className="space-y-2 text-sm text-muted">
@@ -103,7 +112,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-3 font-display text-xs font-bold uppercase tracking-widest text-accent">
+          <h4 className="mb-3 font-display text-overline font-bold tracking-[0.18em] text-accent">
             שירות
           </h4>
           <ul className="space-y-2 text-sm text-muted">
@@ -128,7 +137,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-3 font-display text-xs font-bold uppercase tracking-widest text-accent">
+          <h4 className="mb-3 font-display text-overline font-bold tracking-[0.18em] text-accent">
             מידע משפטי
           </h4>
           <ul className="space-y-2 text-sm text-muted">

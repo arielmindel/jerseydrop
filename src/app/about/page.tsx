@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section className="container py-14 md:py-20">
         <div className="max-w-2xl space-y-4">
           <span className="section-eyebrow">Our Story</span>
-          <h1 className="font-display text-4xl font-black uppercase leading-[1.05] md:text-6xl">
+          <h1 className="font-display text-display-xl font-black uppercase">
             נולדנו מהאהבה <br />
             <span className="text-accent">לכדורגל</span>
           </h1>
@@ -69,7 +69,7 @@ export default function AboutPage() {
           <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
             <div className="space-y-3">
               <span className="section-eyebrow">June 11, 2026</span>
-              <h2 className="font-display text-3xl font-black uppercase leading-tight md:text-4xl">
+              <h2 className="font-display text-display font-black uppercase">
                 מונדיאל בפתח. זה הזמן להתארגן.
               </h2>
               <p className="text-sm text-muted md:text-base">

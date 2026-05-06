@@ -42,12 +42,18 @@ export default function Header() {
   const counts = buildNavCounts();
   const topTeamsByLeague = buildTopTeams();
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
+      {/* Top hairline accent — barely-there neon green strip that signals
+           "premium dark UI" without being loud. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
+      />
       <div className="container flex h-20 items-center justify-between gap-4">
         <div className="flex items-center gap-6">
           <Link
             href="/"
-            className="flex items-center transition-transform hover:scale-[1.02]"
+            className="flex items-center transition-transform duration-base ease-emphasized hover:scale-[1.03]"
             aria-label="JerseyDrop — דף הבית"
           >
             <Image
@@ -66,7 +72,7 @@ export default function Header() {
             href="/"
             aria-label="חזרה לעמוד הבית"
             title="עמוד הבית"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-accent"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-all duration-base hover:bg-surface hover:text-accent"
           >
             <Home className="h-5 w-5" />
           </Link>

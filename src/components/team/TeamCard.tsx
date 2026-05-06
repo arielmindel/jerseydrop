@@ -34,7 +34,7 @@ export default function TeamCard({
     <Link
       href={to}
       aria-label={`${name} — ${productCount} חולצות`}
-      className="group relative block aspect-[3/4] overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-glow-sm"
+      className="group relative block aspect-[3/4] overflow-hidden rounded-2xl border border-border bg-surface edge-light transition-all duration-base ease-emphasized hover:-translate-y-1 hover:border-accent/60 hover:shadow-glow-sm"
     >
       {/* Top 75%: jersey backdrop */}
       <div className="absolute inset-x-0 top-0 h-3/4 overflow-hidden">
@@ -46,7 +46,7 @@ export default function TeamCard({
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
             placeholder="blur"
             blurDataURL={BLUR_DATA_URL}
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+            className="object-cover transition-transform duration-slow ease-emphasized group-hover:scale-[1.06]"
           />
         ) : (
           <div className="absolute inset-0 bg-card-gradient" />
@@ -63,14 +63,14 @@ export default function TeamCard({
         className={`absolute inset-x-0 bottom-0 flex h-1/4 items-center justify-between gap-2 px-4 ${colors.bg} ${colors.fg}`}
       >
         <div className="flex flex-col leading-tight">
-          <span className="font-display text-sm font-black uppercase tracking-tight md:text-base">
+          <span className="font-display text-h3 font-black uppercase leading-none tracking-tight">
             {name}
           </span>
-          <span className="font-display text-[10px] font-bold uppercase tracking-widest opacity-80">
+          <span className="font-display text-[0.625rem] font-bold uppercase tracking-[0.18em] opacity-80">
             {productCount} חולצות
           </span>
         </div>
-        <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+        <ArrowLeft className="h-4 w-4 transition-transform duration-base group-hover:-translate-x-1" />
       </div>
     </Link>
   );
