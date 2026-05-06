@@ -54,12 +54,12 @@ export default function CartDrawer() {
       <SheetTrigger asChild>
         <button
           type="button"
-          aria-label="עגלת קניות"
-          className="relative inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground"
+          aria-label={`עגלת קניות${count > 0 ? ` — ${count} פריטים` : ""}`}
+          className="relative inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-all duration-base hover:bg-surface hover:text-foreground"
         >
           <ShoppingBag className="h-5 w-5" />
           {count > 0 && (
-            <span className="absolute -end-0.5 -top-0.5 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 font-display text-[10px] font-bold text-accent-foreground">
+            <span className="absolute -end-0.5 -top-0.5 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 font-display text-[0.625rem] font-bold text-accent-foreground shadow-glow-sm">
               {count}
             </span>
           )}
@@ -71,15 +71,16 @@ export default function CartDrawer() {
         </SheetHeader>
 
         {items.length === 0 ? (
+          // Empty state — friendly icon + clear next step.
           <div className="flex flex-1 items-center justify-center px-6 py-12">
             <div className="flex flex-col items-center gap-3 text-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-background">
-                <ShoppingBag className="h-7 w-7 text-muted" />
+              <div className="flex h-20 w-20 items-center justify-center rounded-full border border-accent/20 bg-accent/10 text-accent shadow-glow-sm">
+                <ShoppingBag className="h-8 w-8" />
               </div>
-              <p className="font-display text-lg font-bold uppercase tracking-tight">
+              <p className="font-display text-h2 font-bold uppercase tracking-tight">
                 הסל ריק
               </p>
-              <p className="text-sm text-muted">
+              <p className="max-w-xs text-body-sm text-muted">
                 זה הזמן לבחור את החולצה הבאה שלך.
               </p>
               <Button
@@ -170,7 +171,7 @@ export default function CartDrawer() {
         )}
 
         <SheetFooter>
-          <div className="space-y-1 text-sm">
+          <div className="space-y-1 text-body-sm">
             <div className="flex items-center justify-between text-muted">
               <span>סיכום ביניים</span>
               <span className="font-display font-bold text-foreground">
@@ -184,16 +185,20 @@ export default function CartDrawer() {
               </span>
             </div>
             <div className="mt-1 flex items-center justify-between border-t border-border pt-2">
-              <span className="font-display text-xs uppercase tracking-widest text-muted">
+              <span className="font-display text-overline font-bold tracking-[0.18em] text-muted">
                 סה״כ
               </span>
-              <span className="font-display text-lg font-black text-accent">
+              <span className="font-display text-h2 font-black text-accent">
                 {formatILS(total)}
               </span>
             </div>
           </div>
           {subtotal > 0 && subtotal < SHIPPING.freeThreshold && (
-            <p className="text-xs text-muted">
+            <p
+              role="status"
+              aria-live="polite"
+              className="rounded-lg border border-accent/20 bg-accent/5 px-3 py-2 text-caption text-accent"
+            >
               עוד {formatILS(SHIPPING.freeThreshold - subtotal)} למשלוח חינם.
             </p>
           )}
@@ -216,7 +221,7 @@ export default function CartDrawer() {
             <button
               type="button"
               onClick={() => setOpen(false)}
-              className="text-center text-xs text-muted hover:text-foreground"
+              className="text-center text-caption text-muted transition-colors duration-base hover:text-foreground"
             >
               המשך בקניות
             </button>

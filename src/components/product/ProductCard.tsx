@@ -31,7 +31,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/products/${product.slug}`}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-glow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-surface edge-light transition-all duration-base ease-emphasized hover:-translate-y-1 hover:border-accent/50 hover:shadow-glow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
     >
       <div className="relative aspect-[4/5] overflow-hidden bg-background">
         <Image
@@ -42,7 +42,12 @@ export default function ProductCard({ product }: { product: Product }) {
           loading="lazy"
           placeholder="blur"
           blurDataURL={BLUR_DATA_URL}
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover transition-transform duration-slow ease-emphasized group-hover:scale-[1.06]"
+        />
+        {/* Subtle bottom gradient on hover so the card feet read as connected */}
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent opacity-0 transition-opacity duration-base group-hover:opacity-100"
         />
         <JerseyDropWatermark src={primaryImg} size="sm" />
         {/* Badges intentionally removed from card grids — kept on the detail page only. */}
@@ -50,37 +55,40 @@ export default function ProductCard({ product }: { product: Product }) {
 
       <div className="flex flex-1 flex-col gap-2 p-4">
         <div className="flex items-baseline justify-between gap-2">
-          <span className="line-clamp-1 font-display text-sm font-bold uppercase tracking-tight text-foreground">
+          <span className="line-clamp-1 font-display text-body-sm font-bold uppercase tracking-tight text-foreground transition-colors duration-base group-hover:text-accent">
             {teamLabel}
           </span>
           {product.season && (
-            <span className="font-display text-[10px] text-muted">
+            <span className="font-display text-caption text-muted">
               {product.season}
             </span>
           )}
         </div>
-        <div className="line-clamp-1 text-xs text-muted">{product.nameHe}</div>
+        <div className="line-clamp-1 text-caption text-muted">{product.nameHe}</div>
         <div className="mt-auto flex items-center justify-between pt-2">
           <div className="flex items-baseline gap-2">
             {hasPrice(product) && typeof startingPrice === "number" ? (
               <>
-                <span className="font-display text-lg font-bold text-foreground">
+                <span className="font-display text-body-lg font-bold text-foreground">
                   {formatILS(startingPrice)}
                 </span>
                 {hasDiscount && (
-                  <span className="font-display text-xs text-muted line-through">
+                  <span className="font-display text-caption text-muted line-through">
                     {formatILS(product.originalPrice as number)}
                   </span>
                 )}
               </>
             ) : (
-              <span className="font-display text-xs uppercase tracking-widest text-muted">
+              <span className="font-display text-caption uppercase tracking-[0.18em] text-muted">
                 מחיר בקרוב
               </span>
             )}
           </div>
-          <span className="font-display text-[10px] uppercase tracking-widest text-muted group-hover:text-accent">
-            גלה ←
+          <span className="inline-flex items-center gap-1 font-display text-[0.625rem] uppercase tracking-[0.18em] text-muted transition-all duration-base group-hover:gap-2 group-hover:text-accent">
+            גלה
+            <span aria-hidden className="transition-transform duration-base group-hover:-translate-x-0.5">
+              ←
+            </span>
           </span>
         </div>
       </div>

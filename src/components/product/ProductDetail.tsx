@@ -219,7 +219,7 @@ export default function ProductDetail({ product }: { product: Product }) {
           {/* Version selector — only when prices set */}
           {productHasPrice && availableVersions.length > 0 && (
             <fieldset>
-              <legend className="mb-2 font-display text-xs font-bold uppercase tracking-widest text-muted">
+              <legend className="mb-2 font-display text-overline font-bold tracking-[0.18em] text-muted">
                 גרסה
               </legend>
               <div
@@ -234,26 +234,28 @@ export default function ProductDetail({ product }: { product: Product }) {
                 {availableVersions.map((v) => {
                   const p = priceFor(product, v);
                   if (p === null) return null;
+                  const selected = version === v;
                   return (
                     <button
                       key={v}
                       type="button"
                       onClick={() => setVersion(v)}
-                      className={`flex flex-col items-start gap-0.5 rounded-xl border p-3 text-start transition-colors ${
-                        version === v
-                          ? "border-accent bg-accent/10"
-                          : "border-border bg-surface hover:border-accent/40"
+                      aria-pressed={selected}
+                      className={`flex flex-col items-start gap-0.5 rounded-xl border p-3 text-start transition-all duration-base ease-emphasized active:translate-y-0 ${
+                        selected
+                          ? "border-accent bg-accent/10 shadow-glow-sm"
+                          : "border-border bg-surface hover:-translate-y-0.5 hover:border-accent/40"
                       }`}
                     >
                       <span className="flex w-full items-center justify-between">
-                        <span className="font-display text-sm font-bold uppercase">
+                        <span className="font-display text-body-sm font-bold uppercase">
                           {versionLabel[v]}
                         </span>
-                        <span className="font-display text-sm font-bold text-foreground">
+                        <span className="font-display text-body-sm font-bold text-foreground">
                           {formatILS(p)}
                         </span>
                       </span>
-                      <span className="text-[11px] text-muted">
+                      <span className="text-caption text-muted">
                         {versionDesc[v]}
                       </span>
                     </button>
@@ -266,14 +268,14 @@ export default function ProductDetail({ product }: { product: Product }) {
           {/* Size selector */}
           {sizes.length > 0 ? (
             <fieldset id="size-group">
-              <legend className="mb-2 flex items-center justify-between font-display text-xs font-bold uppercase tracking-widest text-muted">
+              <legend className="mb-2 flex items-center justify-between font-display text-overline font-bold tracking-[0.18em] text-muted">
                 מידה
                 <span className="flex items-center gap-3">
                   <Dialog>
                     <DialogTrigger asChild>
                       <button
                         type="button"
-                        className="text-[10px] text-accent underline-offset-2 hover:underline"
+                        className="text-caption text-accent underline-offset-4 transition-colors duration-base hover:underline"
                       >
                         מדריך מידות מהיר
                       </button>
@@ -287,31 +289,35 @@ export default function ProductDetail({ product }: { product: Product }) {
                   </Dialog>
                   <a
                     href="/size-guide"
-                    className="text-[10px] text-muted underline-offset-2 hover:text-accent hover:underline"
+                    className="text-caption text-muted underline-offset-4 transition-colors duration-base hover:text-accent hover:underline"
                   >
                     לא בטוחים? מדריך מידות מלא ←
                   </a>
                 </span>
               </legend>
               <div className="flex flex-wrap gap-2">
-                {sizes.map((s) => (
-                  <button
-                    key={s}
-                    type="button"
-                    onClick={() => setSize(s)}
-                    className={`font-display h-10 min-w-[48px] rounded-full border px-4 text-sm font-bold transition-colors ${
-                      size === s
-                        ? "border-accent bg-accent/15 text-accent"
-                        : "border-border bg-surface text-foreground hover:border-accent/40"
-                    }`}
-                  >
-                    {s}
-                  </button>
-                ))}
+                {sizes.map((s) => {
+                  const selected = size === s;
+                  return (
+                    <button
+                      key={s}
+                      type="button"
+                      onClick={() => setSize(s)}
+                      aria-pressed={selected}
+                      className={`font-display h-11 min-w-[52px] rounded-full border px-4 text-sm font-bold transition-all duration-fast ease-emphasized active:translate-y-0 ${
+                        selected
+                          ? "border-accent bg-accent/15 text-accent shadow-glow-sm"
+                          : "border-border bg-surface text-foreground hover:-translate-y-0.5 hover:border-accent/40 hover:text-accent"
+                      }`}
+                    >
+                      {s}
+                    </button>
+                  );
+                })}
               </div>
             </fieldset>
           ) : (
-            <div className="rounded-xl border border-border bg-surface px-3 py-2 text-xs text-muted">
+            <div className="rounded-xl border border-border bg-surface px-3 py-2 text-caption text-muted">
               מידה אחידה — בחר/י את הגרסה ולחץ/י על &quot;הוספה לסל&quot;.
             </div>
           )}
@@ -327,12 +333,12 @@ export default function ProductDetail({ product }: { product: Product }) {
 
           {/* CTAs */}
           {productHasPrice && total !== null ? (
-            <div className="space-y-2">
+            <div className="space-y-3 rounded-2xl border border-border/60 bg-surface/40 p-4 edge-light backdrop-blur-sm">
               <div className="flex items-baseline justify-between">
-                <span className="font-display text-xs uppercase tracking-widest text-muted">
+                <span className="font-display text-overline font-bold tracking-[0.18em] text-muted">
                   סה״כ
                 </span>
-                <span className="font-display text-2xl font-black text-foreground">
+                <span className="font-display text-h1 font-black text-foreground">
                   {formatILS(total)}
                 </span>
               </div>
@@ -341,7 +347,7 @@ export default function ProductDetail({ product }: { product: Product }) {
                   size="lg"
                   onClick={() => addToCart(false)}
                   disabled={adding}
-                  className={`animate-pulse-glow ${justAdded ? "bg-accent/80" : ""}`}
+                  className={`animate-pulse-glow transition-all duration-base ease-emphasized ${justAdded ? "bg-accent/80" : ""}`}
                 >
                   {justAdded ? (
                     <>
@@ -361,7 +367,11 @@ export default function ProductDetail({ product }: { product: Product }) {
                 </Button>
               </div>
               {sizes.length > 0 && !size && (
-                <p className="text-[11px] text-muted">
+                <p
+                  role="status"
+                  aria-live="polite"
+                  className="text-caption text-muted"
+                >
                   בחרו מידה לפני הוספה לסל.
                 </p>
               )}
