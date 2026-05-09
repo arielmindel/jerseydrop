@@ -1,53 +1,114 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { ChevronDown, ArrowDown } from "lucide-react";
-import WorldCupCountdown from "./WorldCupCountdown";
+import { useEffect, useRef, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowDown, ChevronDown } from "lucide-react";
+import { WORLD_CUP_START_UTC } from "@/lib/constants";
 
 /**
- * Cinematic video hero — JerseyDrop V8.
+ * Cinematic video hero — JerseyDrop V8 (premium polish).
  *
  * Distinct from competitor (sporthubkit.com) by design:
- *   • dual overlay = radial vignette + neon-green corner glow (vs. their
- *     plain dark gradient)
- *   • bold display type with gold accent on key word "התשוקה"
- *   • bottom-LEFT CTA with smooth-scroll to the products/leagues block
- *     (vs. their static link)
- *   • live World Cup 2026 countdown integrated INTO the hero
+ *   • Multi-layer overlay (linear darken + radial vignette + green corner
+ *     glow + amber upper-right tint + film grain) → depth, not flat dark
+ *   • Bold display H1 with metallic gold gradient on key word "התשוקה"
+ *   • 4 large countdown boxes with neon green digits + gold borders
+ *   • Bottom-LEFT gold CTA with pulsing glow + smooth scroll to #leagues
  *
  * Performance:
- *   • <source media> swaps to a 480p variant on narrow viewports (~280KB)
- *   • prefers-reduced-motion → pauses video, poster stays visible
+ *   • <source media> serves a 854px variant under 768px viewports
+ *   • prefers-reduced-motion → pauses video AND skips entrance animations
  *   • muted + playsInline + autoPlay (Safari iOS friendly)
  *   • poster shown immediately so the hero isn't blank during decode
  */
+
+type TimeLeft = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+function compute(): TimeLeft {
+  const diff = WORLD_CUP_START_UTC - Date.now();
+  if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  return {
+    days: Math.floor(diff / 86_400_000),
+    hours: Math.floor((diff / 3_600_000) % 24),
+    minutes: Math.floor((diff / 60_000) % 60),
+    seconds: Math.floor((diff / 1_000) % 60),
+  };
+}
+
+const pad = (n: number) => n.toString().padStart(2, "0");
+
+function CountdownBox({
+  value,
+  label,
+  index,
+  reduced,
+}: {
+  value: number;
+  label: string;
+  index: number;
+  reduced: boolean;
+}) {
+  return (
+    <motion.div
+      initial={reduced ? false : { opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.5,
+        delay: reduced ? 0 : 0.6 + index * 0.1,
+        ease: "easeOut",
+      }}
+      className="flex flex-col items-center gap-1 rounded-xl border border-gold/40 bg-black/35 px-4 py-3 backdrop-blur-md sm:px-6 sm:py-4"
+      style={{
+        boxShadow:
+          "0 0 0 1px rgba(212,175,55,0.20), 0 12px 30px -10px rgba(0,255,136,0.18)",
+      }}
+    >
+      <span
+        className="font-display text-3xl font-black tabular-nums leading-none tracking-tight sm:text-4xl md:text-5xl"
+        style={{
+          color: "#00ff88",
+          textShadow:
+            "0 0 18px rgba(0,255,136,0.55), 0 0 4px rgba(0,255,136,0.45)",
+        }}
+      >
+        {pad(value)}
+      </span>
+      <span className="font-display text-[0.625rem] font-bold uppercase tracking-[0.22em] text-neutral-400">
+        {label}
+      </span>
+    </motion.div>
+  );
+}
+
 export default function HeroVideoLoop() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const prefersReduced = useReducedMotion() ?? false;
+  const [time, setTime] = useState<TimeLeft>(() => compute());
 
+  // Live countdown tick (only on client, only after mount)
   useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-    // Honor reduced-motion: pause the loop, the poster image stays.
-    const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const apply = () => {
-      if (mql.matches) {
-        video.pause();
-      } else {
-        // play() returns a promise; some browsers reject if autoplay blocked
-        video.play().catch(() => {});
-      }
-    };
-    apply();
-    mql.addEventListener("change", apply);
-    return () => mql.removeEventListener("change", apply);
+    setTime(compute());
+    const id = window.setInterval(() => setTime(compute()), 1000);
+    return () => window.clearInterval(id);
   }, []);
 
-  const scrollToLeagues: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
-    e.preventDefault();
-    const el = document.getElementById("leagues");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+  // Honor reduced-motion: pause the loop, the poster image stays.
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    if (prefersReduced) v.pause();
+    else v.play().catch(() => {});
+  }, [prefersReduced]);
+
+  const scrollToLeagues = () => {
+    document
+      .getElementById("leagues")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -76,97 +137,150 @@ export default function HeroVideoLoop() {
         <source src="/videos/hero-loop.mp4" type="video/mp4" />
       </video>
 
-      {/* ---- DUAL OVERLAY (this is the unique differentiator) ----
-           Layer 1: radial vignette so the corners darken and the
-           foreground type sits comfortably no matter the frame.
-           Layer 2: bottom-left neon-green soft glow that ties the
-           hero to the JerseyDrop accent palette. */}
+      {/* ============ MULTI-LAYER OVERLAY (depth, not flat dark) ============ */}
+      {/* L1 — vertical darken: heavier at bottom for text legibility */}
       <div
         aria-hidden
-        className="absolute inset-0 pointer-events-none"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at center, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.78) 100%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.85) 100%)",
         }}
       />
+      {/* L2 — radial vignette: corners darker than center */}
       <div
         aria-hidden
-        className="absolute inset-0 pointer-events-none"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 60% 60% at 12% 88%, rgba(0,255,136,0.18) 0%, transparent 65%), radial-gradient(ellipse 50% 50% at 85% 15%, rgba(212,175,55,0.10) 0%, transparent 60%)",
+            "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.30) 65%, rgba(0,0,0,0.60) 100%)",
         }}
       />
-
-      {/* Subtle film grain (texture so video doesn't look "clean stock") */}
+      {/* L3 — bottom-left neon-green glow (where the CTA sits) */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.05] mix-blend-overlay"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 55% 55% at 12% 90%, rgba(0,255,136,0.10) 0%, transparent 60%)",
+        }}
+      />
+      {/* L4 — top-right amber tint (subtle warmth on the eyebrow side) */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 50% 50% at 88% 12%, rgba(212,175,55,0.07) 0%, transparent 60%)",
+        }}
+      />
+      {/* L5 — SVG film grain (so stock footage doesn't read as "stock") */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay"
         style={{
           backgroundImage:
             "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.6'/></svg>\")",
         }}
       />
 
-      {/* ---- FOREGROUND CONTENT ---- */}
-      <div className="container relative z-10 flex h-full flex-col py-8 md:py-12">
-        {/* Top row — eyebrow tag (right side in RTL) */}
-        <div className="flex items-center justify-end">
-          <span className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-background/30 px-3 py-1.5 font-display text-[0.625rem] font-bold uppercase tracking-[0.32em] text-accent backdrop-blur-md">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-glow-sm" />
-            JerseyDrop
-          </span>
-        </div>
-
+      {/* ============ FOREGROUND CONTENT ============ */}
+      <div className="container relative z-10 flex h-full flex-col py-10 md:py-14">
         {/* Center — H1 + subline + countdown */}
         <div className="my-auto flex flex-col items-center text-center">
-          <h1 className="font-display text-4xl font-black uppercase leading-[0.95] tracking-tight text-white drop-shadow-2xl sm:text-5xl md:text-7xl">
+          {/* H1 — huge, dramatic, gold accent on התשוקה */}
+          <motion.h1
+            initial={prefersReduced ? false : { opacity: 0, y: 18, scale: 0.96 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="font-display font-black uppercase text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.6)]"
+            style={{
+              fontSize: "clamp(2.75rem, 8vw, 6.5rem)",
+              lineHeight: 0.95,
+              letterSpacing: "-0.02em",
+            }}
+          >
             לבש את{" "}
             <span
               className="inline-block bg-clip-text text-transparent"
               style={{
-                backgroundImage: "linear-gradient(180deg, #fcd34d 0%, #d4a017 100%)",
+                backgroundImage:
+                  "linear-gradient(180deg, #fcd34d 0%, #f4e5a1 38%, #d4a017 100%)",
+                textShadow: "0 0 30px rgba(252,211,77,0.25)",
+                filter: "drop-shadow(0 2px 0 rgba(120,80,10,0.35))",
               }}
             >
               התשוקה
             </span>{" "}
             למשחק
-          </h1>
-          <p className="mt-4 max-w-xl font-display text-sm text-white/80 sm:text-base md:text-lg">
-            חולצות כדורגל מהליגות הגדולות בעולם · משלוח 10–15 ימי עסקים
-          </p>
+          </motion.h1>
 
-          {/* Countdown — neon green, integrated into hero */}
-          <div className="mt-6 md:mt-8">
-            <WorldCupCountdown compact />
+          {/* Subline — neutral-300 (hierarchy below H1), max-width capped */}
+          <motion.p
+            initial={prefersReduced ? false : { opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: prefersReduced ? 0 : 0.25, ease: "easeOut" }}
+            className="mt-5 max-w-[600px] font-display text-sm text-neutral-300 sm:text-base md:text-lg"
+            style={{ letterSpacing: "0.02em" }}
+          >
+            חולצות כדורגל מהליגות הגדולות בעולם · משלוח 10–15 ימי עסקים
+          </motion.p>
+
+          {/* Countdown — 4 large boxes, neon green digits, gold borders */}
+          <motion.div
+            initial={prefersReduced ? false : { opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: prefersReduced ? 0 : 0.5, duration: 0.4 }}
+            className="mt-8 flex items-center gap-2 sm:gap-3 md:gap-4"
+          >
+            <CountdownBox value={time.days} label="ימים" index={0} reduced={prefersReduced} />
+            <CountdownBox value={time.hours} label="שעות" index={1} reduced={prefersReduced} />
+            <CountdownBox value={time.minutes} label="דקות" index={2} reduced={prefersReduced} />
+            <CountdownBox value={time.seconds} label="שניות" index={3} reduced={prefersReduced} />
+          </motion.div>
+          <div className="mt-3 font-display text-[0.625rem] font-bold uppercase tracking-[0.32em] text-accent/80">
+            מונדיאל 2026 · עוד מעט
           </div>
         </div>
 
-        {/* Bottom row — CTA on the left (RTL) + scroll hint */}
-        <div className="flex items-end justify-between gap-3">
+        {/* Bottom-left — CTA + scroll hint */}
+        <div className="flex items-end justify-start">
           <div className="flex flex-col items-start gap-2">
-            <a
-              href="#leagues"
+            <motion.button
+              type="button"
               onClick={scrollToLeagues}
-              className="group inline-flex h-12 items-center gap-2 rounded-full px-6 font-display text-sm font-black uppercase tracking-[0.18em] text-background shadow-2xl transition-all duration-base ease-emphasized hover:-translate-y-0.5 sm:h-14 sm:px-8 sm:text-base"
+              initial={prefersReduced ? false : { opacity: 0, y: 14 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                boxShadow: prefersReduced
+                  ? "0 14px 40px -10px rgba(252,211,77,0.55), 0 0 0 1px rgba(252,211,77,0.40)"
+                  : [
+                      "0 14px 40px -10px rgba(252,211,77,0.45), 0 0 0 1px rgba(252,211,77,0.40)",
+                      "0 14px 60px -8px rgba(252,211,77,0.75), 0 0 0 1px rgba(252,211,77,0.55)",
+                      "0 14px 40px -10px rgba(252,211,77,0.45), 0 0 0 1px rgba(252,211,77,0.40)",
+                    ],
+              }}
+              transition={{
+                opacity: { duration: 0.6, delay: prefersReduced ? 0 : 0.85 },
+                y: { duration: 0.6, delay: prefersReduced ? 0 : 0.85 },
+                boxShadow: prefersReduced
+                  ? { duration: 0 }
+                  : { duration: 3, repeat: Infinity, ease: "easeInOut" },
+              }}
+              className="group inline-flex h-12 items-center gap-2 rounded-full px-6 font-display text-sm font-black uppercase tracking-[0.18em] text-background transition-transform duration-base ease-emphasized hover:-translate-y-0.5 sm:h-14 sm:px-8 sm:text-base"
               style={{
                 background: "linear-gradient(135deg, #fcd34d 0%, #d4a017 100%)",
-                boxShadow:
-                  "0 14px 40px -10px rgba(252,211,77,0.55), 0 0 0 1px rgba(252,211,77,0.40)",
               }}
             >
               קנה עכשיו
               <ArrowDown className="h-4 w-4 transition-transform duration-base group-hover:translate-y-0.5" />
-            </a>
+            </motion.button>
             <button
               type="button"
-              onClick={() =>
-                document
-                  .getElementById("leagues")
-                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
-              }
+              onClick={scrollToLeagues}
               aria-label="גלול למטה"
-              className="ml-2 inline-flex items-center gap-1 text-[0.625rem] font-bold uppercase tracking-[0.32em] text-white/60 transition-colors duration-base hover:text-accent"
+              className="ml-2 inline-flex items-center gap-1 text-[0.625rem] font-bold uppercase tracking-[0.32em] text-white/55 transition-colors duration-base hover:text-accent"
             >
               <ChevronDown className="h-3 w-3 animate-bounce" />
               גלול למטה
