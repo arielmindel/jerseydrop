@@ -34,11 +34,7 @@ import {
   hasPrice,
   priceFor,
 } from "@/lib/products";
-import {
-  CUSTOMIZATION_FEE,
-  SHIPPING,
-  whatsappLink,
-} from "@/lib/constants";
+import { CUSTOMIZATION_FEE, SHIPPING, whatsappLink } from "@/lib/constants";
 import { NO_PATCH } from "@/lib/patches";
 import { formatILS } from "@/lib/utils";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";

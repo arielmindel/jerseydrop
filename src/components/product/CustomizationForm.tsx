@@ -6,8 +6,6 @@ import { Label } from "@/components/ui/label";
 import JerseyPreview from "./JerseyPreview";
 import PatchSelector from "./PatchSelector";
 import CustomerNotes from "./CustomerNotes";
-import { CUSTOMIZATION_FEE } from "@/lib/constants";
-import { formatILS } from "@/lib/utils";
 import { getAvailablePatches, NO_PATCH } from "@/lib/patches";
 import type { Product } from "@/lib/types";
 
@@ -40,27 +38,51 @@ export default function CustomizationForm({ product, value, onChange }: Props) {
 
   return (
     <div className="space-y-4">
-      {/* Name + number (paid +30₪) */}
-      <div className="space-y-3 rounded-2xl border border-border bg-surface p-4">
-        <label className="flex items-start gap-3">
-          <input
-            type="checkbox"
-            checked={value.nameNumberEnabled}
-            onChange={(e) => update({ nameNumberEnabled: e.target.checked })}
-            className="mt-1 h-5 w-5 accent-[#00FF88]"
-          />
-          <span className="space-y-0.5">
-            <span className="block font-display text-sm font-bold uppercase tracking-tight">
-              הוספת שם ומספר{" "}
-              <span className="text-accent">
-                +{formatILS(CUSTOMIZATION_FEE)}
-              </span>
-            </span>
-            <span className="block text-xs text-muted">
-              הדפסה מקצועית בגב החולצה. עד 12 אותיות באנגלית + מספר 0-99.
-            </span>
-          </span>
-        </label>
+      {/* Section header — emphasises the new "free" reality */}
+      <div className="flex flex-col gap-1">
+        <h3 className="font-display text-h3 font-black uppercase">
+          התאמה אישית — <span className="text-accent">חינם</span>
+        </h3>
+        <p className="text-body-sm text-muted">
+          תוסיפו שם ומספר לחולצה ללא תוספת תשלום
+        </p>
+      </div>
+
+      {/* Two-state radio: clean jersey vs custom name+number. Default = clean.
+          Same fields as the previous checkbox approach, just framed as a
+          binary choice now that there's no upcharge to "unlock". */}
+      <div className="space-y-3 rounded-2xl border border-border bg-surface p-4 edge-light">
+        <div
+          role="radiogroup"
+          aria-label="התאמה אישית"
+          className="grid grid-cols-2 gap-2"
+        >
+          {[
+            { id: "off", label: "בלי שם ומספר", on: false },
+            { id: "on", label: "עם שם ומספר", on: true },
+          ].map((opt) => {
+            const selected = value.nameNumberEnabled === opt.on;
+            return (
+              <button
+                key={opt.id}
+                type="button"
+                role="radio"
+                aria-checked={selected}
+                onClick={() => update({ nameNumberEnabled: opt.on })}
+                className={`rounded-xl border px-3 py-2.5 text-start font-display text-body-sm font-bold uppercase tracking-tight transition-all duration-base ease-emphasized ${
+                  selected
+                    ? "border-accent bg-accent/10 text-accent shadow-glow-sm"
+                    : "border-border bg-surface text-foreground hover:-translate-y-0.5 hover:border-accent/40"
+                }`}
+              >
+                {opt.label}
+              </button>
+            );
+          })}
+        </div>
+        <p className="text-caption text-muted">
+          הדפסה מקצועית בגב החולצה. עד 12 אותיות באנגלית + מספר 0-99.
+        </p>
         {value.nameNumberEnabled && (
           <motion.div
             initial={{ opacity: 0, y: -6 }}
