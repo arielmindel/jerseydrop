@@ -148,9 +148,39 @@ export default function CartPage() {
               {shipping === 0 ? "חינם" : formatILS(shipping)}
             </dd>
           </div>
-          {subtotal < SHIPPING.freeThreshold && (
-            <div className="rounded-lg bg-accent/10 p-2 text-[11px] text-accent">
-              עוד {formatILS(SHIPPING.freeThreshold - subtotal)} ותקבלו משלוח חינם.
+          {subtotal > 0 && subtotal < SHIPPING.freeThreshold && (
+            <div className="space-y-1.5 rounded-lg border border-accent/20 bg-accent/5 px-3 py-2.5">
+              <div className="flex items-center justify-between gap-2 text-caption">
+                <span className="text-accent">
+                  עוד{" "}
+                  <strong className="font-display">
+                    {formatILS(SHIPPING.freeThreshold - subtotal)}
+                  </strong>{" "}
+                  ל-משלוח חינם!
+                </span>
+                <span className="text-muted">
+                  {formatILS(subtotal)} / {formatILS(SHIPPING.freeThreshold)}
+                </span>
+              </div>
+              <div
+                className="h-1.5 w-full overflow-hidden rounded-full bg-accent/10"
+                aria-hidden
+              >
+                <div
+                  className="h-full rounded-full bg-accent transition-all duration-base ease-emphasized"
+                  style={{
+                    width: `${Math.min(
+                      100,
+                      (subtotal / SHIPPING.freeThreshold) * 100,
+                    )}%`,
+                  }}
+                />
+              </div>
+            </div>
+          )}
+          {subtotal >= SHIPPING.freeThreshold && (
+            <div className="rounded-lg border border-accent/30 bg-accent/10 px-3 py-2 text-center font-display text-caption font-bold uppercase tracking-[0.18em] text-accent">
+              משלוח חינם 🎉
             </div>
           )}
           <div className="mt-2 flex items-center justify-between border-t border-border pt-3">
