@@ -92,10 +92,10 @@ export default function HeroLegendsRotator() {
   return (
     <section
       aria-label="Hero"
-      // Mobile: 88vh — almost full screen, immersive without crowding the
-      // header. Desktop: full viewport height (clamped at 1080px on huge
-      // monitors so the hero never balloons absurdly).
-      className="relative w-full overflow-hidden bg-black h-[88vh] md:h-screen md:max-h-[1080px]"
+      // h-screen as the fallback (older browsers), h-[100dvh] takes over
+      // where supported (Safari 15.4+, Chrome 108+) so iOS browser chrome
+      // doesn't steal pixels. Desktop clamps at 1080px on huge monitors.
+      className="relative w-full overflow-hidden bg-black h-screen h-[100dvh] md:h-screen md:max-h-[1080px]"
     >
       {/* ============ TWO STACKED VIDEO LAYERS (always mounted) ============ */}
       <video
@@ -143,12 +143,18 @@ export default function HeroLegendsRotator() {
         }}
       />
 
+      {/* ============ Bottom gradient overlay for CTA contrast ============ */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+      />
+
       {/* ============ "קנה עכשיו" CTA (bottom-start) — scrolls to leagues ============ */}
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-        className="absolute bottom-10 start-5 z-10 md:bottom-12 md:start-12"
+        className="absolute bottom-12 start-6 z-10 md:bottom-14 md:start-10 lg:bottom-16 lg:start-16"
         style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
       >
         <motion.div
@@ -158,10 +164,13 @@ export default function HeroLegendsRotator() {
           <button
             type="button"
             onClick={scrollToLeagues}
-            className="group inline-flex items-center gap-3 rounded-full bg-[#00FF88] px-8 py-4 font-display text-xl font-black uppercase tracking-[0.16em] text-black shadow-[0_18px_50px_-10px_rgba(0,255,136,0.55)] transition-all duration-200 ease-out hover:scale-[1.08] hover:brightness-110 md:px-12 md:py-6 md:text-2xl"
+            className="group inline-flex min-h-[56px] items-center gap-3 rounded-full bg-[#00FF88] px-10 py-5 font-display text-2xl font-black uppercase tracking-[0.16em] text-black shadow-[0_18px_50px_-10px_rgba(0,255,136,0.55)] transition-all duration-200 ease-out hover:scale-[1.08] hover:brightness-110 md:text-xl lg:px-12 lg:py-6 lg:text-2xl"
           >
             קנה עכשיו
-            <ArrowDown className="h-5 w-5 transition-transform duration-200 group-hover:translate-y-0.5 md:h-6 md:w-6" />
+            <ArrowDown
+              aria-hidden
+              className="h-7 w-7 transition-transform duration-200 group-hover:translate-y-0.5 md:h-6 md:w-6 lg:h-7 lg:w-7"
+            />
           </button>
         </motion.div>
       </motion.div>

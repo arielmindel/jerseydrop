@@ -49,7 +49,7 @@ export default function Header() {
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
       />
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 md:h-20 md:gap-4 md:px-8">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 md:h-16 md:px-8 lg:h-20">
         <div className="flex items-center gap-4 md:gap-6">
           <Link
             href="/"
@@ -62,7 +62,7 @@ export default function Header() {
               width={256}
               height={256}
               priority
-              className="h-10 w-auto md:h-12"
+              className="h-9 w-auto md:h-10 lg:h-12"
             />
           </Link>
           <MegaMenu counts={counts} topTeamsByLeague={topTeamsByLeague} />

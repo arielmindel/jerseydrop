@@ -41,9 +41,11 @@ const sheetVariants = cva(
         right:
           "inset-y-0 left-0 h-full w-3/4 border-e border-border sm:max-w-sm data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left",
         // Responsive cart: full-width bottom sheet on mobile (handles thumb
-        // reach), right-edge drawer on md+ (RTL → visually right).
+        // reach), right-edge drawer (480px) on md+ (RTL → visually right).
+        // Uses 85dvh on mobile so iOS Safari chrome doesn't push content
+        // off-screen.
         "responsive-cart":
-          "inset-x-0 bottom-0 max-h-[88vh] rounded-t-2xl border-t border-border data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom md:inset-y-0 md:bottom-auto md:left-auto md:right-0 md:h-full md:max-h-none md:w-3/4 md:max-w-sm md:rounded-none md:border-s md:border-t-0 md:data-[state=closed]:slide-out-to-right md:data-[state=open]:slide-in-from-right",
+          "inset-x-0 bottom-0 h-[85dvh] max-h-[85dvh] rounded-t-2xl border-t border-border data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom md:inset-y-0 md:bottom-auto md:left-auto md:right-0 md:h-full md:max-h-none md:w-[480px] md:max-w-none md:rounded-none md:border-s md:border-t-0 md:data-[state=closed]:slide-out-to-right md:data-[state=open]:slide-in-from-right",
       },
     },
     defaultVariants: { side: "left" },
@@ -70,10 +72,10 @@ const SheetContent = React.forwardRef<
       {children}
       {!hideClose && (
         <SheetClose
-          className="absolute end-4 top-4 rounded-full p-1 text-muted transition-colors hover:bg-background hover:text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+          className="absolute end-3 top-3 inline-flex h-12 w-12 items-center justify-center rounded-full text-muted transition-colors hover:bg-background hover:text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
           aria-label="סגור"
         >
-          <X className="h-5 w-5" />
+          <X className="h-6 w-6" />
         </SheetClose>
       )}
     </DialogPrimitive.Content>

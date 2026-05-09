@@ -24,7 +24,7 @@ export default function MarqueeBanner() {
       dir="ltr"
       aria-label="Promotions and policies"
     >
-      <div className="marquee-track flex items-center whitespace-nowrap py-2 font-display text-xs font-semibold uppercase tracking-widest">
+      <div className="marquee-track flex h-9 items-center whitespace-nowrap font-display text-xs font-semibold uppercase tracking-widest md:h-10 md:text-sm">
         {/* The strip is rendered twice — animation translates by -50%
             (one full strip width) so the second copy seamlessly takes over. */}
         {[0, 1].map((dup) => (

@@ -11,8 +11,16 @@
     background: #0b1220;
     color: #f8fafc;
     scroll-behavior: smooth;
+    /* Prevent iOS auto-zoom on text inputs at >100% page zoom */
+    -webkit-text-size-adjust: 100%;
     /* iOS: prevent rubber-banding side-scroll caused by stray sub-pixel overflow */
     overflow-x: hidden;
+  }
+  body {
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    /* Prevent iOS bounce on white area when overscrolling */
+    overscroll-behavior: none;
   }
 
   /* iOS Safari: any <input>/<select>/<textarea> with font-size < 16px gets
@@ -25,6 +33,14 @@
   @media (min-width: 768px) {
     input, select, textarea {
       font-size: inherit;
+    }
+  }
+
+  /* dvh fallback for iOS Safari < 15.4 — when h-screen alone is used,
+   * upgrade it to true 100dvh so the browser chrome doesn't steal pixels. */
+  @supports (height: 100dvh) {
+    .h-screen {
+      height: 100dvh;
     }
   }
 
@@ -71,18 +87,18 @@
    * = generous. py-12 → 48px, md:py-20 → 80px, lg:py-24 → 96px.
    * ============================================================ */
   .section-y {
-    /* mobile py-16 (64px), desktop md:py-24 (96px), generous lg:py-28 (112px) */
-    @apply py-16 md:py-24 lg:py-28;
+    /* Full responsive scale — mobile 48px → desktop 128px */
+    @apply py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32;
   }
   .section-y-tight {
-    @apply py-12 md:py-16 lg:py-20;
+    @apply py-8 sm:py-10 md:py-14 lg:py-16;
   }
   .section-y-loose {
-    @apply py-20 md:py-28 lg:py-36;
+    @apply py-16 sm:py-20 md:py-28 lg:py-32 xl:py-40;
   }
   /* Use on consecutive collection rows for vertical breathing room */
   .row-y {
-    @apply my-12 md:my-20;
+    @apply my-8 sm:my-12 md:my-16 lg:my-20;
   }
 
   /* Stagger reveal — apply to a parent; children with .reveal-item

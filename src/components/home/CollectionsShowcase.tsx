@@ -95,12 +95,12 @@ export default function CollectionsShowcase() {
         </p>
       </header>
 
-      <div className="reveal-grid grid auto-rows-[180px] grid-cols-2 gap-3 md:auto-rows-[220px] md:grid-cols-4 md:gap-4 lg:gap-6">
+      <div className="reveal-grid grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-6">
         {tiles.map((t) => (
           <Link
             key={t.href}
             href={t.href}
-            className={`reveal-item group relative block overflow-hidden rounded-2xl border border-border bg-surface edge-light transition-all duration-base ease-emphasized hover:-translate-y-1 hover:border-accent/40 hover:shadow-glow-sm ${t.span}`}
+            className="reveal-item group relative block aspect-[16/10] overflow-hidden rounded-xl border border-border bg-surface md:rounded-2xl edge-light transition-all duration-base ease-emphasized [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:border-accent/40 [@media(hover:hover)]:hover:shadow-glow-sm"
           >
             <Image
               src={t.image}

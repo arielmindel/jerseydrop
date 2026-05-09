@@ -54,7 +54,7 @@ export default function Footer() {
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
       />
 
-      <div className="container relative grid gap-8 py-12 md:grid-cols-3 md:gap-10 md:py-16">
+      <div className="container relative grid gap-8 py-12 md:grid-cols-2 md:gap-8 md:py-14 lg:grid-cols-3 lg:gap-12 lg:py-16">
         {/* ============ COL 1 — BRAND ============ */}
         <div className="space-y-5">
           <Link href="/" aria-label="JerseyDrop — דף הבית" className="inline-block">

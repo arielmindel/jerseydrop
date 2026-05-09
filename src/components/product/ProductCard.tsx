@@ -31,7 +31,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/products/${product.slug}`}
-      className="group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-md transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background md:hover:-translate-y-1 md:hover:border-accent/50 md:hover:shadow-2xl md:hover:shadow-accent/15"
+      className="group relative flex cursor-pointer flex-col overflow-hidden rounded-xl border border-border bg-surface shadow-md transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background md:rounded-2xl [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:border-accent/50 [@media(hover:hover)]:hover:shadow-2xl [@media(hover:hover)]:hover:shadow-accent/15"
     >
       <div className="relative aspect-[3/4] overflow-hidden bg-background">
         <Image
@@ -42,7 +42,7 @@ export default function ProductCard({ product }: { product: Product }) {
           loading="lazy"
           placeholder="blur"
           blurDataURL={BLUR_DATA_URL}
-          className="object-cover transition-transform duration-300 ease-out md:group-hover:scale-105"
+          className="object-cover transition-transform duration-300 ease-out [@media(hover:hover)]:group-hover:scale-105"
         />
         {/* Subtle bottom gradient on hover so the card feet read as connected */}
         <div
