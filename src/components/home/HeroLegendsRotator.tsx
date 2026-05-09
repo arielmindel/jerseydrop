@@ -27,7 +27,7 @@ const CLIPS = [
 ];
 
 const CLIP_DWELL_MS = 6400; // visible per clip
-const VORTEX_MS = 1400; // crossfade/swirl duration
+const FADE_MS = 1100; // crossfade duration
 
 export default function HeroLegendsRotator() {
   const prefersReduced = useReducedMotion() ?? false;
@@ -75,22 +75,18 @@ export default function HeroLegendsRotator() {
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  // Vortex transform: outgoing spins out + blurs + shrinks while
-  // incoming spins in + unblurs + grows. Both transitions overlap
-  // so the swap is one continuous swirl. Both layers are always in
-  // the DOM — we never tear down a <video>, so there's no load pause.
+  // Smooth crossfade with a tiny scale "breath" on the outgoing layer.
+  // No spin, no blur — keeps the GPU light so playback never stutters.
+  // Both layers are always in the DOM, so there's no load pause.
   const aIsFront = frontLayer === "a";
   const layerStyle = (isFront: boolean): React.CSSProperties => ({
-    transform: isFront ? "scale(1) rotate(0deg)" : "scale(0.06) rotate(720deg)",
-    filter: isFront ? "blur(0px)" : "blur(28px)",
+    transform: isFront ? "scale(1)" : "scale(1.06)",
     opacity: isFront ? 1 : 0,
     transition: prefersReduced
       ? "opacity 200ms linear"
-      : `transform ${VORTEX_MS}ms cubic-bezier(${
-          isFront ? "0.16, 1, 0.3, 1" : "0.7, 0, 0.84, 0"
-        }), filter ${VORTEX_MS}ms ease-in-out, opacity ${VORTEX_MS}ms ease-in-out`,
+      : `opacity ${FADE_MS}ms ease-in-out, transform ${FADE_MS + 600}ms cubic-bezier(0.22, 1, 0.36, 1)`,
     transformOrigin: "50% 50%",
-    willChange: "transform, opacity, filter",
+    willChange: "transform, opacity",
   });
 
   return (
