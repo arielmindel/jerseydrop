@@ -1,4 +1,4 @@
-import HeroBanner from "@/components/home/HeroBanner";
+import HeroVideoLoop from "@/components/home/HeroVideoLoop";
 import LeaguesShowcase from "@/components/home/LeaguesShowcase";
 import CollectionsShowcase from "@/components/home/CollectionsShowcase";
 import FeaturedGrid from "@/components/home/FeaturedGrid";
@@ -10,7 +10,7 @@ import Newsletter from "@/components/home/Newsletter";
 export default function Home() {
   return (
     <>
-      <HeroBanner />
+      <HeroVideoLoop />
       <LeaguesShowcase />
       <CollectionsShowcase />
       <FeaturedGrid />

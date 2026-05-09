@@ -1,0 +1,19 @@
+Hero loop video — JerseyDrop V8
+================================
+
+Source:  Mixkit
+URL:     https://mixkit.co/free-stock-video/close-shot-of-a-soccer-player-shooting-a-penalty-43494/
+ID:      43494
+License: Mixkit Stock Video Free License — free for commercial use,
+         no attribution required, no watermark, royalty-free.
+         (https://mixkit.co/license/)
+
+Files:
+  hero-loop.mp4         — 1280×720, 5.7s, ~758KB (desktop)
+  hero-loop-mobile.mp4  — 854×480,  5.7s, ~284KB (mobile, <768px)
+  hero-poster.jpg       — 1280×720,        ~81KB (poster + reduced-motion fallback)
+
+Pipeline:
+  ffmpeg -i 43494-720.mp4 -vf "scale=-2:720" -c:v libx264 -crf 26 -preset slow -an -movflags +faststart hero-loop.mp4
+  ffmpeg -i 43494-720.mp4 -vf "scale=-2:480" -c:v libx264 -crf 28 -preset slow -an -movflags +faststart hero-loop-mobile.mp4
+  ffmpeg -ss 1.0 -i 43494-720.mp4 -frames:v 1 -q:v 3 hero-poster.jpg
