@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Sparkles, Star } from "lucide-react";
 import { getKidsProducts } from "@/lib/products";
 import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
@@ -25,27 +26,53 @@ export default function KidsPage() {
           aria-hidden
           className="absolute -bottom-10 end-0 h-[360px] w-[360px] rounded-full bg-accent/15 blur-[140px]"
         />
-        <div className="container relative py-14 md:py-20">
-          <div className="flex items-center gap-2">
-            <Sparkles className="h-5 w-5 text-pink-400" />
-            <span className="section-eyebrow !text-pink-300">Kids · ילדים</span>
-          </div>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl font-black uppercase leading-[1.05] md:text-6xl">
-            חולצות <span className="text-accent">לילדים</span>
-          </h1>
-          <p className="mt-4 max-w-xl text-sm text-muted md:text-base">
-            הקבוצה האהובה שלהם, במידות שמתאימות. {products.length} דגמים — מ-
-            ריאל מדריד ועד נבחרת ארגנטינה למונדיאל 2026.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-pink-500/30 bg-pink-500/10 px-3 py-1.5 text-xs text-pink-300">
-              <Star className="h-3 w-3" />
-              גיל 4-14
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent/10 px-3 py-1.5 text-xs text-accent">
-              <Sparkles className="h-3 w-3" />
-              גם עם שם ומספר
-            </span>
+        <div className="container relative py-12 md:py-20">
+          <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
+            <div>
+              <div className="flex items-center gap-2">
+                <Sparkles className="h-5 w-5 text-pink-400" />
+                <span className="section-eyebrow !text-pink-300">Kids · ילדים</span>
+              </div>
+              <h1 className="mt-3 font-display text-4xl font-black uppercase leading-[1.05] md:text-6xl">
+                חולצות <span className="text-accent">לילדים</span>
+              </h1>
+              <p className="mt-4 max-w-xl text-sm text-muted md:text-base">
+                הקבוצה האהובה שלהם, במידות שמתאימות. {products.length} דגמים — מ-
+                ריאל מדריד ועד נבחרת ארגנטינה למונדיאל 2026.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-pink-500/30 bg-pink-500/10 px-3 py-1.5 text-xs text-pink-300">
+                  <Star className="h-3 w-3" />
+                  גיל 4-14
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent/10 px-3 py-1.5 text-xs text-accent">
+                  <Sparkles className="h-3 w-3" />
+                  גם עם שם ומספר
+                </span>
+              </div>
+            </div>
+            <div
+              className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border/60 bg-surface shadow-2xl"
+              style={{
+                boxShadow: "0 30px 60px -20px rgba(236,72,153,0.30), 0 0 0 1px rgba(236,72,153,0.18)",
+              }}
+            >
+              <Image
+                src="/categories/kids.jpg"
+                alt="ילדים בחולצות הקבוצות שלהם"
+                fill
+                priority
+                sizes="(min-width: 768px) 40vw, 100vw"
+                className="object-cover"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0"
+                style={{
+                  background: "linear-gradient(180deg, transparent 60%, rgba(11,18,32,0.55) 100%)",
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>

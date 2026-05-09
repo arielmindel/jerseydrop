@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Sparkles } from "lucide-react";
 import { getRetroProducts, getRetroByDecade } from "@/lib/products";
 import RetroDecadeTabs from "@/components/product/RetroDecadeTabs";
@@ -36,19 +37,45 @@ export default function RetroPage() {
           aria-hidden
           className="absolute -top-10 end-0 h-96 w-96 rounded-full bg-gold/10 blur-[160px]"
         />
-        <div className="container relative py-14 md:py-20">
-          <div className="flex items-center gap-2">
-            <Sparkles className="h-4 w-4 text-gold" />
-            <span className="section-eyebrow !text-gold">Retro · Classic</span>
+        <div className="container relative py-12 md:py-20">
+          <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
+            <div>
+              <div className="flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-gold" />
+                <span className="section-eyebrow !text-gold">Retro · Classic</span>
+              </div>
+              <h1 className="mt-3 font-display text-4xl font-black uppercase leading-[1.05] md:text-6xl">
+                קלאסיקות <span className="text-gold">שלא יחזרו</span>
+              </h1>
+              <p className="mt-4 max-w-xl text-sm text-muted md:text-base">
+                חולצות מיתולוגיות שמעבירות אתכם לעונות שלא נשכחו — רפרודוקציות
+                נאמנות למקור, בדים כמו של פעם, ותחושה שלא תקבלו במקום אחר.
+                <span className="text-gold"> {total.length} פריטים בקטלוג.</span>
+              </p>
+            </div>
+            <div
+              className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border/60 bg-surface shadow-2xl"
+              style={{
+                boxShadow: "0 30px 60px -20px rgba(212,175,55,0.25), 0 0 0 1px rgba(212,175,55,0.15)",
+              }}
+            >
+              <Image
+                src="/categories/retro.jpg"
+                alt="חולצות רטרו — Maradona, Ronaldo"
+                fill
+                priority
+                sizes="(min-width: 768px) 40vw, 100vw"
+                className="object-cover"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0"
+                style={{
+                  background: "linear-gradient(180deg, transparent 60%, rgba(11,18,32,0.55) 100%)",
+                }}
+              />
+            </div>
           </div>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl font-black uppercase leading-[1.05] md:text-6xl">
-            קלאסיקות <span className="text-gold">שלא יחזרו</span>
-          </h1>
-          <p className="mt-4 max-w-xl text-sm text-muted md:text-base">
-            חולצות מיתולוגיות שמעבירות אתכם לעונות שלא נשכחו — רפרודוקציות
-            נאמנות למקור, בדים כמו של פעם, ותחושה שלא תקבלו במקום אחר.
-            <span className="text-gold"> {total.length} פריטים בקטלוג.</span>
-          </p>
         </div>
       </section>
 

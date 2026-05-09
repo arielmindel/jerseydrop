@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Gift, Sparkles, Truck, Heart } from "lucide-react";
 import MysteryBoxBuilder from "@/components/mystery/MysteryBoxBuilder";
@@ -54,19 +55,45 @@ export default function SurprisePage() {
           }}
         />
         <div className="container relative py-12 md:py-16">
-          <div className="flex items-center gap-2">
-            <Gift className="h-4 w-4 text-amber" />
-            <span className="font-display text-xs font-bold uppercase tracking-widest text-amber">
-              MYSTERY DROP
-            </span>
+          <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] md:items-center">
+            <div>
+              <div className="flex items-center gap-2">
+                <Gift className="h-4 w-4 text-amber" />
+                <span className="font-display text-xs font-bold uppercase tracking-widest text-amber">
+                  MYSTERY DROP
+                </span>
+              </div>
+              <h1 className="mt-3 font-display text-4xl font-black uppercase leading-[1.05] md:text-6xl">
+                חולצה <span className="text-amber">בהפתעה</span>
+              </h1>
+              <p className="mt-4 max-w-xl text-sm text-muted md:text-lg">
+                תבחרו כמות (ללא הגבלה), קהל, סוג ומידה לכל חולצה — וגם מה
+                פחות אוהבים. אנחנו נבחר את החולצה עצמה לפי הזמין במלאי.
+              </p>
+            </div>
+            <div
+              className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-amber/40 bg-surface shadow-2xl"
+              style={{
+                boxShadow: "0 30px 60px -20px rgba(252,211,77,0.30), 0 0 0 1px rgba(252,211,77,0.20)",
+              }}
+            >
+              <Image
+                src="/categories/mystery.jpg"
+                alt="Mystery Box — חולצה בהפתעה"
+                fill
+                priority
+                sizes="(min-width: 768px) 40vw, 100vw"
+                className="object-cover"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0"
+                style={{
+                  background: "linear-gradient(180deg, transparent 60%, rgba(11,18,32,0.55) 100%)",
+                }}
+              />
+            </div>
           </div>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl font-black uppercase leading-[1.05] md:text-6xl">
-            חולצה <span className="text-amber">בהפתעה</span>
-          </h1>
-          <p className="mt-4 max-w-xl text-sm text-muted md:text-lg">
-            תבחרו כמות (ללא הגבלה), קהל, סוג ומידה לכל חולצה — וגם מה
-            פחות אוהבים. אנחנו נבחר את החולצה עצמה לפי הזמין במלאי.
-          </p>
         </div>
       </section>
 

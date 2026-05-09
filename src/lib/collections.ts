@@ -24,6 +24,9 @@ export type CollectionMeta = {
   /** Hex used for the corner glow + accent badge on the collection hero. */
   accent: string;
   badgeLabel: string;
+  /** Optional hero image (path under /public). When set, the collection
+   *  page renders a split hero: text on one side, image card on the other. */
+  heroImage?: string;
 };
 
 export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
@@ -46,6 +49,7 @@ export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
       "אסופה של חולצות מהשנים 1990–1999. מבד אותנטי, גזרה כמו של פעם, רפרודוקציות נאמנות למקור.",
     accent: "#D4AF37",
     badgeLabel: "RETRO · 90s CLASSICS",
+    heroImage: "/categories/retro.jpg",
   },
   "champions-league": {
     id: "champions-league",
@@ -76,6 +80,7 @@ export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
       "כל הדגמים בשרוול ארוך — מתאימים לחורף, לשוערים, ולמי שאוהב את המראה הקלאסי.",
     accent: "#A855F7",
     badgeLabel: "LONG SLEEVE",
+    heroImage: "/categories/long-sleeve.jpg",
   },
   special: {
     id: "special",
@@ -86,6 +91,7 @@ export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
       "אסופה של חולצות מיוחדות — מהדורות הוואי, מארדונה, באלוגי, ימי הולדת מועדונים, ועוד שאי אפשר למצוא בקטלוג רגיל.",
     accent: "#F59E0B",
     badgeLabel: "SPECIAL EDITIONS",
+    heroImage: "/categories/special.jpg",
   },
   surprise: {
     id: "surprise",
@@ -96,6 +102,7 @@ export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
       "המהדורה המיוחדת שלנו — הזמינו חולצה בהפתעה ואנחנו נבחר עבורכם דגם איכותי במחיר מוזל. גודל לבחירה, הקבוצה — מפתיעה.",
     accent: "#FCD34D",
     badgeLabel: "MYSTERY DROP",
+    heroImage: "/categories/mystery.jpg",
   },
 };
 
