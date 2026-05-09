@@ -11,6 +11,7 @@ import {
   type ProductFilterParams,
 } from "@/lib/filters";
 import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
+import AudienceToggle from "@/components/product/AudienceToggle";
 import FilterSidebar, {
   type FilterGroupConfig,
 } from "@/components/filters/FilterSidebar";
@@ -140,6 +141,7 @@ export default function TeamPage({ params, searchParams }: Props) {
       </section>
 
       <section className="container py-6 md:py-8">
+        <AudienceToggle />
         <TeamQuickChips />
       </section>
 

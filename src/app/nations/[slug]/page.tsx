@@ -7,6 +7,7 @@ import { getProductsByNation } from "@/lib/products";
 import { getTeamsInScope } from "@/lib/teams";
 import { applyFilters, parseFilters, type ProductFilterParams } from "@/lib/filters";
 import ProductGrid from "@/components/product/ProductGrid";
+import AudienceToggle from "@/components/product/AudienceToggle";
 import FilterSidebar, { type FilterGroupConfig } from "@/components/filters/FilterSidebar";
 import SortDropdown from "@/components/filters/SortDropdown";
 import TeamCard from "@/components/team/TeamCard";
@@ -194,7 +195,11 @@ function NationPage({
         </div>
       </section>
 
-      <section className="container py-8 md:py-12">
+      <section className="container py-6 md:py-8">
+        <AudienceToggle />
+      </section>
+
+      <section className="container py-4 md:py-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-start">
           <FilterSidebar groups={groups} />
           <div className="flex-1 space-y-6">

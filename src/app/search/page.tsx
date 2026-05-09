@@ -4,9 +4,10 @@ import { Search as SearchIcon } from "lucide-react";
 import { searchProducts, SEARCH_SUGGESTIONS } from "@/lib/search";
 import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
 import SearchBar from "@/components/search/SearchBar";
+import AudienceToggle from "@/components/product/AudienceToggle";
 
 type Props = {
-  searchParams: { q?: string };
+  searchParams: { q?: string; audience?: string };
 };
 
 export function generateMetadata({ searchParams }: Props): Metadata {
@@ -21,8 +22,15 @@ export function generateMetadata({ searchParams }: Props): Metadata {
 
 export default function SearchPage({ searchParams }: Props) {
   const q = (searchParams.q || "").trim();
+  const audience = searchParams.audience;
   const results = q ? searchProducts(q, 200) : [];
-  const products = results.map((r) => r.product);
+  const allHits = results.map((r) => r.product);
+  const products =
+    audience === "adult"
+      ? allHits.filter((p) => !p.isKids && p.priceTier !== "kids-set")
+      : audience === "kids"
+        ? allHits.filter((p) => p.isKids || p.priceTier === "kids-set")
+        : allHits;
 
   return (
     <>
@@ -56,10 +64,17 @@ export default function SearchPage({ searchParams }: Props) {
       <section className="container py-8 md:py-12">
         {!q ? (
           <SuggestionsBlock />
-        ) : products.length > 0 ? (
-          <InfiniteProductGrid products={products} />
         ) : (
-          <EmptyState query={q} />
+          <>
+            <AudienceToggle />
+            {products.length > 0 ? (
+              <div className="mt-3">
+                <InfiniteProductGrid products={products} />
+              </div>
+            ) : (
+              <EmptyState query={q} />
+            )}
+          </>
         )}
       </section>
     </>

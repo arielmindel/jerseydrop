@@ -8,6 +8,7 @@ import {
 } from "@/lib/filters";
 import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
 import QuickFilterChips from "@/components/product/QuickFilterChips";
+import AudienceToggle from "@/components/product/AudienceToggle";
 import FilterSidebar, {
   type FilterGroupConfig,
 } from "@/components/filters/FilterSidebar";
@@ -199,6 +200,7 @@ export default function ProductsPage({ searchParams }: Props) {
       </section>
 
       <section className="container py-6 md:py-8">
+        <AudienceToggle />
         <QuickFilterChips />
       </section>
 

@@ -8,8 +8,12 @@ import {
   type CollectionId,
 } from "@/lib/collections";
 import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
+import AudienceToggle from "@/components/product/AudienceToggle";
 
-type Props = { params: { slug: string } };
+type Props = {
+  params: { slug: string };
+  searchParams?: { audience?: string };
+};
 
 export function generateStaticParams() {
   return Object.keys(COLLECTIONS).map((slug) => ({ slug }));
@@ -29,10 +33,19 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function CollectionPage({ params }: Props) {
+export default function CollectionPage({ params, searchParams }: Props) {
   if (!isCollectionId(params.slug)) notFound();
   const meta = getCollectionMeta(params.slug);
-  const products = getCollectionProducts(params.slug);
+  const all = getCollectionProducts(params.slug);
+  // Audience gate (segmented toggle above grid). A product is "kids" if
+  // explicitly flagged OR is a kids set.
+  const audience = searchParams?.audience;
+  const products =
+    audience === "adult"
+      ? all.filter((p) => !p.isKids && p.priceTier !== "kids-set")
+      : audience === "kids"
+        ? all.filter((p) => p.isKids || p.priceTier === "kids-set")
+        : all;
 
   return (
     <>
@@ -76,7 +89,11 @@ export default function CollectionPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="container py-10 md:py-14">
+      <section className="container py-6 md:py-8">
+        <AudienceToggle />
+      </section>
+
+      <section className="container py-4 md:py-10">
         <InfiniteProductGrid
           products={products}
           emptyHint="הקולקציה הזו תתעדכן עם מוצרים נוספים בקרוב."

@@ -21,6 +21,9 @@ export type ProductFilterParams = {
   color?: string | string[];
   /** decade filter (retro only): "80s" / "90s" / "00s" / "10s" */
   decade?: string | string[];
+  /** audience filter — "adult" hides kids products, "kids" shows only kids,
+   *  empty shows both. Drives the segmented toggle on listing pages. */
+  audience?: string;
   min?: string;
   max?: string;
   sort?: string;
@@ -41,6 +44,7 @@ export type ParsedFilters = {
   catalog: string[];
   color: string[];
   decade: string[];
+  audience: "adult" | "kids" | "";
   min: number;
   max: number;
   sort: SortKey;
@@ -79,6 +83,10 @@ export function parseFilters(params: ProductFilterParams): ParsedFilters {
     catalog: toArray(params.catalog),
     color: toArray(params.color),
     decade: toArray(params.decade),
+    audience:
+      params.audience === "adult" || params.audience === "kids"
+        ? params.audience
+        : "",
     min: Number(params.min ?? PRICE_MIN) || PRICE_MIN,
     max: Number(params.max ?? PRICE_MAX) || PRICE_MAX,
     sort: (params.sort as SortKey) || "popularity",
@@ -107,6 +115,10 @@ export function applyFilters(
   filters: ParsedFilters,
 ): Product[] {
   let out = source.filter((p) => {
+    // Audience gate: a product is "kids" if explicitly flagged OR is a kids set.
+    const isKidsProduct = !!p.isKids || p.priceTier === "kids-set";
+    if (filters.audience === "adult" && isKidsProduct) return false;
+    if (filters.audience === "kids" && !isKidsProduct) return false;
     if (filters.category.length && !filters.category.includes(p.category))
       return false;
     if (filters.league.length && !filters.league.includes(p.league))
