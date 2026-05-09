@@ -92,8 +92,10 @@ export default function HeroLegendsRotator() {
   return (
     <section
       aria-label="Hero"
-      className="relative w-full overflow-hidden bg-black"
-      style={{ height: "min(100vh, 1080px)" }}
+      // Mobile: 88vh — almost full screen, immersive without crowding the
+      // header. Desktop: full viewport height (clamped at 1080px on huge
+      // monitors so the hero never balloons absurdly).
+      className="relative w-full overflow-hidden bg-black h-[88vh] md:h-screen md:max-h-[1080px]"
     >
       {/* ============ TWO STACKED VIDEO LAYERS (always mounted) ============ */}
       <video
@@ -146,7 +148,8 @@ export default function HeroLegendsRotator() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-        className="absolute bottom-8 start-6 z-10 sm:bottom-12 sm:start-12"
+        className="absolute bottom-10 start-5 z-10 md:bottom-12 md:start-12"
+        style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
       >
         <motion.div
           animate={{ scale: [1, 1.04, 1] }}
@@ -155,10 +158,10 @@ export default function HeroLegendsRotator() {
           <button
             type="button"
             onClick={scrollToLeagues}
-            className="group inline-flex items-center gap-2 rounded-full bg-[#00FF88] px-8 py-4 font-display text-lg font-black uppercase tracking-[0.16em] text-black shadow-[0_18px_50px_-10px_rgba(0,255,136,0.55)] transition-all duration-200 ease-out hover:scale-[1.08] hover:brightness-110 sm:px-10 sm:py-5 sm:text-xl"
+            className="group inline-flex items-center gap-3 rounded-full bg-[#00FF88] px-8 py-4 font-display text-xl font-black uppercase tracking-[0.16em] text-black shadow-[0_18px_50px_-10px_rgba(0,255,136,0.55)] transition-all duration-200 ease-out hover:scale-[1.08] hover:brightness-110 md:px-12 md:py-6 md:text-2xl"
           >
             קנה עכשיו
-            <ArrowDown className="h-5 w-5 transition-transform duration-200 group-hover:translate-y-0.5" />
+            <ArrowDown className="h-5 w-5 transition-transform duration-200 group-hover:translate-y-0.5 md:h-6 md:w-6" />
           </button>
         </motion.div>
       </motion.div>

@@ -42,15 +42,15 @@ export default function Header() {
   const counts = buildNavCounts();
   const topTeamsByLeague = buildTopTeams();
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-40 border-b border-white/5 bg-black/80 backdrop-blur-md supports-[backdrop-filter]:bg-black/60">
       {/* Top hairline accent — barely-there neon green strip that signals
            "premium dark UI" without being loud. */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
       />
-      <div className="container flex h-24 items-center justify-between gap-4 md:h-28">
-        <div className="flex items-center gap-6">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 md:h-20 md:gap-4 md:px-8">
+        <div className="flex items-center gap-4 md:gap-6">
           <Link
             href="/"
             className="flex items-center transition-transform duration-base ease-emphasized hover:scale-[1.03]"
@@ -62,17 +62,18 @@ export default function Header() {
               width={256}
               height={256}
               priority
-              className="h-16 w-auto md:h-20"
+              className="h-10 w-auto md:h-12"
             />
           </Link>
           <MegaMenu counts={counts} topTeamsByLeague={topTeamsByLeague} />
         </div>
         <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* Home icon redundant on mobile — the logo on the left is the link. */}
           <Link
             href="/"
             aria-label="חזרה לעמוד הבית"
             title="עמוד הבית"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-muted transition-all duration-base hover:bg-surface hover:text-accent"
+            className="hidden h-11 w-11 items-center justify-center rounded-full text-muted transition-all duration-base hover:bg-surface hover:text-accent md:inline-flex"
           >
             <Home className="h-5 w-5" />
           </Link>

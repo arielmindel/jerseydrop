@@ -66,7 +66,7 @@ export default function InfiniteProductGrid({
 
   return (
     <div className="space-y-8">
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5 lg:grid-cols-4 lg:gap-6">
         {sliced.map((p) => (
           <ProductCard key={p.id} product={p} />
         ))}

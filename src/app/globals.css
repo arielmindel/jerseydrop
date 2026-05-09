@@ -71,13 +71,18 @@
    * = generous. py-12 → 48px, md:py-20 → 80px, lg:py-24 → 96px.
    * ============================================================ */
   .section-y {
-    @apply py-12 md:py-20 lg:py-24;
+    /* mobile py-16 (64px), desktop md:py-24 (96px), generous lg:py-28 (112px) */
+    @apply py-16 md:py-24 lg:py-28;
   }
   .section-y-tight {
-    @apply py-8 md:py-12 lg:py-16;
+    @apply py-12 md:py-16 lg:py-20;
   }
   .section-y-loose {
-    @apply py-16 md:py-24 lg:py-32;
+    @apply py-20 md:py-28 lg:py-36;
+  }
+  /* Use on consecutive collection rows for vertical breathing room */
+  .row-y {
+    @apply my-12 md:my-20;
   }
 
   /* Stagger reveal — apply to a parent; children with .reveal-item

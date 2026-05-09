@@ -522,30 +522,37 @@ export default function ProductDetail({ product }: { product: Product }) {
         </div>
       </section>
 
-      {/* Mobile sticky CTA */}
+      {/* Mobile sticky CTA — neon-green for primary visibility, safe-area inset */}
       {productHasPrice && total !== null ? (
-        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/95 p-3 shadow-2xl backdrop-blur md:hidden">
+        <div
+          className="fixed inset-x-0 bottom-0 z-30 border-t border-white/10 bg-black/95 p-3 shadow-2xl backdrop-blur md:hidden"
+          style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
+        >
           <div className="flex items-center justify-between gap-3">
             <div className="flex flex-col">
-              <span className="font-display text-[10px] uppercase text-muted">
+              <span className="font-display text-[10px] uppercase text-white/60">
                 סה״כ
               </span>
-              <span className="font-display text-base font-bold">
+              <span className="font-display text-base font-bold text-white">
                 {formatILS(total)}
               </span>
             </div>
-            <Button
-              size="md"
-              className="flex-1"
+            <button
+              type="button"
               onClick={() => addToCart(false)}
               disabled={adding}
+              className="flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#00FF88] px-6 font-display text-base font-bold uppercase tracking-wide text-black shadow-[0_8px_24px_-8px_rgba(0,255,136,0.7)] transition-transform duration-150 active:scale-95 disabled:opacity-60"
             >
-              {justAdded ? "נוסף" : "הוספה לסל"} <ArrowLeft className="h-4 w-4" />
-            </Button>
+              {justAdded ? "נוסף" : "הוספה לסל"}
+              <ArrowLeft className="h-4 w-4" />
+            </button>
           </div>
         </div>
       ) : (
-        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/95 p-3 shadow-2xl backdrop-blur md:hidden">
+        <div
+          className="fixed inset-x-0 bottom-0 z-30 border-t border-white/10 bg-black/95 p-3 shadow-2xl backdrop-blur md:hidden"
+          style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
+        >
           <Button asChild size="md" className="w-full">
             <a
               href={whatsappLink(whatsappMessage)}

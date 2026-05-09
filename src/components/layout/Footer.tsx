@@ -54,7 +54,7 @@ export default function Footer() {
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
       />
 
-      <div className="container relative grid gap-12 py-12 md:grid-cols-3 md:gap-10 md:py-16">
+      <div className="container relative grid gap-8 py-12 md:grid-cols-3 md:gap-10 md:py-16">
         {/* ============ COL 1 — BRAND ============ */}
         <div className="space-y-5">
           <Link href="/" aria-label="JerseyDrop — דף הבית" className="inline-block">
@@ -139,22 +139,22 @@ export default function Footer() {
 
       {/* ============ BOTTOM BAR ============ */}
       <div className="border-t border-white/10">
-        <div className="container flex flex-col items-center justify-between gap-4 py-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] text-sm text-white/55 md:flex-row md:py-5">
+        <div className="container flex flex-col items-center justify-between gap-4 py-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] text-xs text-white/55 md:flex-row md:py-5 md:text-sm">
           <span>© 2026 JerseyDrop. כל הזכויות שמורות.</span>
           <div
             aria-label="אמצעי תשלום מקובלים"
-            className="flex flex-wrap items-center gap-2 font-display text-[10px] font-bold uppercase tracking-[0.18em]"
+            className="flex flex-wrap items-center justify-center gap-1.5 font-display text-[9px] font-bold uppercase tracking-[0.18em] md:gap-2 md:text-[10px]"
           >
-            <span className="rounded border border-white/15 px-3 py-1.5 text-white/75">
+            <span className="rounded border border-white/15 px-2.5 py-1 text-white/75 md:px-3 md:py-1.5">
               VISA
             </span>
-            <span className="rounded border border-white/15 px-3 py-1.5 text-white/75">
+            <span className="rounded border border-white/15 px-2.5 py-1 text-white/75 md:px-3 md:py-1.5">
               MASTERCARD
             </span>
-            <span className="rounded border border-white/15 px-3 py-1.5 text-white/75">
+            <span className="rounded border border-white/15 px-2.5 py-1 text-white/75 md:px-3 md:py-1.5">
               ביט
             </span>
-            <span className="rounded border border-white/15 px-3 py-1.5 text-white/75">
+            <span className="rounded border border-white/15 px-2.5 py-1 text-white/75 md:px-3 md:py-1.5">
               PAYPAL
             </span>
           </div>

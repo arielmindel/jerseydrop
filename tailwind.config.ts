@@ -10,8 +10,9 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
-      screens: { "2xl": "1400px" },
+      // Mobile px-4, desktop px-8 — matches the responsive spec
+      padding: { DEFAULT: "1rem", md: "2rem" },
+      screens: { "2xl": "1280px" },
     },
     extend: {
       colors: {
