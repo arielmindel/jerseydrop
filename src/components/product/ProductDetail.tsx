@@ -27,6 +27,11 @@ import CustomizationForm, {
   initialCustomization,
   type CustomizationState,
 } from "./CustomizationForm";
+import MysteryBoxControls, {
+  initialMystery,
+  mysteryNote,
+  type MysteryState,
+} from "./MysteryBoxControls";
 import { useCart } from "@/lib/cart";
 import {
   getAvailableVersions,
@@ -56,6 +61,7 @@ export default function ProductDetail({ product }: { product: Product }) {
   const sizes = getDisplayableSizes(product);
   const productHasPrice = hasPrice(product);
   const images = product.images?.length ? product.images : [FALLBACK_IMG];
+  const isMysteryBox = getPriceTier(product) === "mystery";
 
   const [version, setVersion] = useState<ProductVersion>(
     availableVersions[0] ?? "fan",
@@ -65,12 +71,16 @@ export default function ProductDetail({ product }: { product: Product }) {
   const [customization, setCustomization] = useState<CustomizationState>(
     initialCustomization,
   );
+  const [mystery, setMystery] = useState<MysteryState>(initialMystery);
   const [adding, setAdding] = useState(false);
   const [justAdded, setJustAdded] = useState(false);
 
   const base = priceFor(product, version);
-  const total =
-    base !== null
+  const total = isMysteryBox
+    ? base !== null
+      ? base * mystery.quantity
+      : null
+    : base !== null
       ? base + (customization.nameNumberEnabled ? CUSTOMIZATION_FEE : 0)
       : null;
 
@@ -91,6 +101,42 @@ export default function ProductDetail({ product }: { product: Product }) {
 
   const addToCart = (buyNow = false) => {
     if (!productHasPrice || base === null) return;
+    // Mystery Box flow: validate the mystery-specific size, encode preferences
+    // (type + size) into customerNotes so the team sees what to source.
+    if (isMysteryBox) {
+      if (!mystery.size) {
+        document
+          .getElementById("size-group")
+          ?.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+      setAdding(true);
+      addItem({
+        productId: product.id,
+        slug: product.slug,
+        nameHe: product.nameHe,
+        nameEn: product.nameEn,
+        team: product.team,
+        image: images[0],
+        version,
+        size: mystery.size as never,
+        unitPrice: base,
+        customization: null,
+        selectedPatchId: null,
+        customerNotes: mysteryNote(mystery),
+        quantity: mystery.quantity,
+      });
+      setTimeout(() => {
+        setAdding(false);
+        if (buyNow) router.push("/checkout");
+        else {
+          setJustAdded(true);
+          setOpen(true);
+          setTimeout(() => setJustAdded(false), 1500);
+        }
+      }, 250);
+      return;
+    }
     if (sizes.length > 0 && !size) {
       document
         .getElementById("size-group")
@@ -260,8 +306,15 @@ export default function ProductDetail({ product }: { product: Product }) {
 
           <Badge variant={stockBadge.tone}>{stockBadge.text}</Badge>
 
-          {/* Version selector — only when prices set */}
-          {productHasPrice && availableVersions.length > 0 && (
+          {/* Mystery Box controls — replaces version/size/customization for
+              the lottery product. Encodes type+size into customerNotes; quantity
+              is passed straight to addItem so cart math multiplies correctly. */}
+          {isMysteryBox && productHasPrice && (
+            <MysteryBoxControls value={mystery} onChange={setMystery} />
+          )}
+
+          {/* Version selector — only when prices set & not a Mystery Box */}
+          {!isMysteryBox && productHasPrice && availableVersions.length > 0 && (
             <fieldset>
               <legend className="mb-2 font-display text-overline font-bold tracking-[0.18em] text-muted">
                 גרסה
@@ -309,8 +362,8 @@ export default function ProductDetail({ product }: { product: Product }) {
             </fieldset>
           )}
 
-          {/* Size selector */}
-          {sizes.length > 0 ? (
+          {/* Size selector — Mystery Box has its own size control above */}
+          {!isMysteryBox && sizes.length > 0 ? (
             <fieldset id="size-group">
               <legend className="mb-2 flex items-center justify-between font-display text-overline font-bold tracking-[0.18em] text-muted">
                 מידה
@@ -360,14 +413,15 @@ export default function ProductDetail({ product }: { product: Product }) {
                 })}
               </div>
             </fieldset>
-          ) : (
+          ) : !isMysteryBox ? (
             <div className="rounded-xl border border-border bg-surface px-3 py-2 text-caption text-muted">
               מידה אחידה — בחר/י את הגרסה ולחץ/י על &quot;הוספה לסל&quot;.
             </div>
-          )}
+          ) : null}
 
-          {/* Customization (name+number, patch, notes) */}
-          {productHasPrice && (
+          {/* Customization (name+number, patch, notes) — irrelevant for the
+              random Mystery Box flow. */}
+          {!isMysteryBox && productHasPrice && (
             <CustomizationForm
               product={product}
               value={customization}
@@ -410,7 +464,8 @@ export default function ProductDetail({ product }: { product: Product }) {
                   קנייה מיידית
                 </Button>
               </div>
-              {sizes.length > 0 && !size && (
+              {((isMysteryBox && !mystery.size) ||
+                (!isMysteryBox && sizes.length > 0 && !size)) && (
                 <p
                   role="status"
                   aria-live="polite"
