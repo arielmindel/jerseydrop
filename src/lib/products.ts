@@ -263,7 +263,9 @@ export function getRelatedProducts(product: Product, limit = 6): Product[] {
 }
 
 // ============================================================================
-// Pricing helpers — flat 119 ₪ catalog as of May 2026.
+// V7 pricing helpers — every product carries a priceTier (see TIER_META
+// below). priceFan/Player/Retro mirror the tier price so any legacy code
+// reading them keeps working.
 // `hasPrice` kept for backwards compatibility with any callers that still
 // branch on it; under flat pricing it returns true for every product whose
 // data has at least one priceFan/pricePlayer/priceRetro set (i.e. all of them

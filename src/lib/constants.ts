@@ -174,11 +174,12 @@ export const SHIPPING = {
   leadTimeDays: "10-15",
 };
 
-// Customization (name + number on the back, official patches) is FREE as of
-// May 2026 — included in the flat 119 ₪ price. The constant stays exported
-// because cart math + product UIs add `+ CUSTOMIZATION_FEE` when the toggle
-// is on; setting it to 0 means those code paths keep working with no change.
-// If we ever charge for customization again, just bump this number.
+// V7 — customization (name + number, official patches) is FREE on every
+// pricing tier (regular/long-sleeve/sets/special/mystery). The constant
+// stays exported because cart math + product UIs add `+ CUSTOMIZATION_FEE`
+// when the toggle is on; setting it to 0 means those code paths keep
+// working with no change. If we ever charge for customization again,
+// just bump this number.
 export const CUSTOMIZATION_FEE = 0;
 
 export const SIZES = ["S", "M", "L", "XL", "2XL", "3XL", "4XL"] as const;

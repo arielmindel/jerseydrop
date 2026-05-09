@@ -17,12 +17,11 @@ function displayTeam(product: Product): string {
 }
 
 export default function ProductCard({ product }: { product: Product }) {
-  // Catalog-wide flat price as of May 2026 — every product is 119 ₪ regardless
-  // of edition (Fan / Player / Retro). Falls back to getStartingPrice() so we
-  // still render correctly if the data file is ever rolled back to per-version
-  // pricing. No struck-through originalPrice anymore — that field was removed
-  // from the data when we went flat.
-  const startingPrice = getStartingPrice(product) ?? 119;
+  // V7 — every product carries a priceTier (regular 109, long-sleeve 129,
+  // adult-set 189, kids-set 169, special 119, mystery 99) and the
+  // priceFan/Player/Retro fields are mirrored to that tier price. Falls
+  // back to 109 if the row is from a pre-V7 snapshot without a price.
+  const startingPrice = getStartingPrice(product) ?? 109;
   const fallbackImg =
     "https://picsum.photos/seed/jerseydrop-fallback/600/750";
   const primaryImg = product.images?.[0] || fallbackImg;
