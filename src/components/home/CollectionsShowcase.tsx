@@ -6,7 +6,7 @@ import { BLUR_DATA_URL } from "@/lib/image-placeholder";
 import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 /**
- * Magazine-style collections grid (sporthub-inspired).
+ * Magazine-style collections grid.
  * Bento layout: a single big card on the right (RTL = reads first), 4 smaller
  * cards filling the rest. After V5 cleanup we removed:
  *   - "ישראל" — no real israeli inventory yet

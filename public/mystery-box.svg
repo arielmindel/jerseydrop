@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Mystery Box">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#0a0e1a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#04060c" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="boxFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1f2e"/>
+      <stop offset="100%" stop-color="#0d1018"/>
+    </linearGradient>
+    <linearGradient id="boxLid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#222838"/>
+      <stop offset="100%" stop-color="#10131c"/>
+    </linearGradient>
+    <linearGradient id="boxLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1018"/>
+      <stop offset="100%" stop-color="#181d2a"/>
+    </linearGradient>
+    <linearGradient id="lidLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10131c"/>
+      <stop offset="100%" stop-color="#1c2230"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#d4a017"/>
+    </linearGradient>
+    <linearGradient id="ribbonSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b8861f"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <radialGradient id="sparkle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#3b82f6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="boxGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background with glow -->
+  <rect width="800" height="1000" fill="#04060c"/>
+  <rect width="800" height="1000" fill="url(#bgGlow)"/>
+
+  <!-- Floor shadow -->
+  <ellipse cx="400" cy="780" rx="280" ry="32" fill="#000" opacity="0.55"/>
+
+  <!-- Sparkle behind/inside box (light leaking out) -->
+  <circle cx="400" cy="430" r="220" fill="url(#sparkle)" opacity="0.85"/>
+
+  <!-- ===== Box body (front + left side, isometric) ===== -->
+  <!-- Left side -->
+  <polygon points="220,500 400,560 400,780 220,720" fill="url(#boxLeft)" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.35"/>
+  <!-- Front face -->
+  <polygon points="400,560 580,500 580,720 400,780" fill="url(#boxFront)" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.35"/>
+
+  <!-- Box edge glow accents -->
+  <line x1="400" y1="560" x2="400" y2="780" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+
+  <!-- ===== Lid (slightly raised + open) ===== -->
+  <!-- Lid top -->
+  <polygon points="190,440 400,510 610,440 400,370" fill="url(#boxLid)" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.4" filter="url(#boxGlow)"/>
+  <!-- Lid front face (small height) -->
+  <polygon points="400,510 610,440 610,478 400,548" fill="url(#boxFront)" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- Lid left face -->
+  <polygon points="190,440 400,510 400,548 190,478" fill="url(#lidLeft)" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Inner sparkle (peeking through lid gap) -->
+  <ellipse cx="400" cy="540" rx="170" ry="18" fill="#60a5fa" opacity="0.55"/>
+  <ellipse cx="400" cy="540" rx="120" ry="10" fill="#bfdbfe" opacity="0.7"/>
+
+  <!-- ===== Ribbon vertical front ===== -->
+  <polygon points="475,540 505,532 505,752 475,762" fill="url(#ribbon)"/>
+  <!-- Ribbon vertical left -->
+  <polygon points="295,533 325,540 325,762 295,752" fill="url(#ribbonSide)" opacity="0.85"/>
+  <!-- Ribbon top across lid -->
+  <polygon points="295,468 325,475 505,427 475,420" fill="url(#ribbon)"/>
+
+  <!-- ===== Bow on top ===== -->
+  <g transform="translate(400 395)">
+    <path d="M -55 -10 Q -90 -55 -55 -45 Q -25 -25 0 -10 Q 25 -25 55 -45 Q 90 -55 55 -10 Q 25 8 0 0 Q -25 8 -55 -10 Z" fill="url(#ribbon)" stroke="#7a5b0d" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-8" rx="14" ry="10" fill="#d4a017"/>
+  </g>
+
+  <!-- ===== Gold question mark on front face ===== -->
+  <g transform="translate(490 640)" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="70" fill="#fcd34d" opacity="0.92">
+    <text text-anchor="middle">?</text>
+  </g>
+
+  <!-- ===== Floating sparkle dots (mysterious vibe) ===== -->
+  <g fill="#bfdbfe">
+    <circle cx="290" cy="380" r="3.5" opacity="0.85"/>
+    <circle cx="540" cy="350" r="2.5" opacity="0.7"/>
+    <circle cx="600" cy="430" r="3" opacity="0.8"/>
+    <circle cx="220" cy="470" r="2.2" opacity="0.65"/>
+    <circle cx="170" cy="530" r="3" opacity="0.55"/>
+    <circle cx="650" cy="540" r="2.6" opacity="0.65"/>
+    <circle cx="380" cy="280" r="4" opacity="0.95"/>
+    <circle cx="430" cy="320" r="2" opacity="0.6"/>
+  </g>
+
+  <!-- ===== 4-point star sparkle ===== -->
+  <g fill="#bfdbfe" opacity="0.9">
+    <path d="M 380 280 L 386 296 L 402 302 L 386 308 L 380 324 L 374 308 L 358 302 L 374 296 Z"/>
+    <path d="M 580 360 L 583 369 L 593 372 L 583 375 L 580 384 L 577 375 L 567 372 L 577 369 Z"/>
+  </g>
+</svg>
