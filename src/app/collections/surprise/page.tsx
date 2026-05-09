@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Gift, Sparkles, Truck, Heart, ArrowLeft, MessageCircle } from "lucide-react";
-import { whatsappLink } from "@/lib/constants";
+import { notFound } from "next/navigation";
+import { Gift, Sparkles, Truck, Heart } from "lucide-react";
+import MysteryBoxBuilder from "@/components/mystery/MysteryBoxBuilder";
+import { getAllProducts, getPriceTier, TIER_META } from "@/lib/products";
 
 export const metadata: Metadata = {
   title: "חולצה בהפתעה — JerseyDrop Mystery Drop",
   description:
-    "הזמינו חולצה בהפתעה — אנחנו נבחר עבורכם חולצה איכותית מהקטלוג. חוויה ייחודית, מחיר מיוחד.",
+    "בנו את הקופסה: בחרו כמות, סוג (רטרו / ארוכה / מיוחדת) ומידה לכל חולצה. אנחנו בוחרים את החולצה עצמה לפי הזמין במלאי.",
 };
 
 const FEATURES = [
@@ -28,10 +29,21 @@ const FEATURES = [
 ];
 
 export default function SurprisePage() {
-  const message = "היי! מתעניין/ת בחולצה בהפתעה — Mystery Drop. אפשר שתספרו לי איך זה עובד?";
+  // Find the canonical mystery product to anchor cart lines (image, ids).
+  // Type+size choices live in customerNotes; this just gives the cart a
+  // pretty image + name + a real productId so server-side joins still work.
+  const mysteryProduct = getAllProducts().find(
+    (p) => getPriceTier(p) === "mystery",
+  );
+  if (!mysteryProduct) notFound();
+  const unitPrice = TIER_META.mystery.price;
+  const fallbackImg =
+    "https://picsum.photos/seed/jerseydrop-mystery/800/1000";
+  const image = mysteryProduct.images?.[0] || fallbackImg;
 
   return (
     <>
+      {/* Hero */}
       <section className="relative isolate overflow-hidden border-b border-border/60 bg-background">
         <div
           aria-hidden
@@ -41,7 +53,7 @@ export default function SurprisePage() {
               "radial-gradient(at 18% 12%, rgba(252, 211, 77, 0.22) 0px, transparent 55%), radial-gradient(at 90% 30%, rgba(245, 158, 11, 0.18) 0px, transparent 50%)",
           }}
         />
-        <div className="container relative py-16 md:py-24">
+        <div className="container relative py-12 md:py-16">
           <div className="flex items-center gap-2">
             <Gift className="h-4 w-4 text-amber" />
             <span className="font-display text-xs font-bold uppercase tracking-widest text-amber">
@@ -52,29 +64,26 @@ export default function SurprisePage() {
             חולצה <span className="text-amber">בהפתעה</span>
           </h1>
           <p className="mt-4 max-w-xl text-sm text-muted md:text-lg">
-            תזמינו, אנחנו נבחר ונפתיע. חוויה אחת אחת — חולצה איכותית מהקטלוג
-            שלנו במחיר מיוחד.
+            תבחרו כמות, סוג (רטרו / ארוכה / מיוחדת) ומידה — אנחנו נבחר
+            את החולצה עצמה לפי הזמין במלאי.
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <a
-              href={whatsappLink(message)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center gap-2 rounded-full bg-amber px-6 font-display text-sm font-bold uppercase tracking-wide text-background shadow-gold transition-transform hover:-translate-y-0.5"
-            >
-              <MessageCircle className="h-4 w-4" />
-              דברו איתנו בוואטסאפ
-            </a>
-            <Link
-              href="/products"
-              className="inline-flex h-12 items-center gap-2 rounded-full border border-border bg-surface px-6 font-display text-sm font-bold uppercase tracking-wide text-foreground"
-            >
-              בכל מקרה לקטלוג <ArrowLeft className="h-4 w-4" />
-            </Link>
-          </div>
         </div>
       </section>
 
+      {/* Configurator */}
+      <section className="container py-8 md:py-12">
+        <MysteryBoxBuilder
+          productId={mysteryProduct.id}
+          slug={mysteryProduct.slug}
+          nameHe="Mystery Box · חולצה בהפתעה"
+          nameEn={mysteryProduct.nameEn || "Mystery Box"}
+          team={mysteryProduct.team || "Mystery"}
+          image={image}
+          unitPrice={unitPrice}
+        />
+      </section>
+
+      {/* Features */}
       <section className="container py-12 md:py-16">
         <div className="grid gap-4 md:grid-cols-3">
           {FEATURES.map((f) => (
@@ -94,6 +103,7 @@ export default function SurprisePage() {
         </div>
       </section>
 
+      {/* How it works */}
       <section className="container pb-16">
         <div className="rounded-3xl border border-amber/30 bg-amber/5 p-6 md:p-10">
           <h2 className="font-display text-2xl font-black uppercase tracking-tight md:text-3xl">
@@ -101,20 +111,21 @@ export default function SurprisePage() {
           </h2>
           <ol className="mt-4 space-y-3 text-sm leading-relaxed text-muted md:text-base">
             <li>
-              <strong className="text-foreground">1. שלחו הודעה.</strong> WhatsApp או
-              אימייל. תספרו לנו את המידה ואת הסגנון שאתם אוהבים (קלאסי / סטריט / רטרו).
+              <strong className="text-foreground">1. בחרו כמות.</strong> כל חולצה
+              ב-99 ₪. עד 10 חולצות בהזמנה אחת.
             </li>
             <li>
-              <strong className="text-foreground">2. אנחנו בוחרים.</strong> אנחנו
-              נסרוק את הקטלוג ונבחר חולצה שמתאימה לכם — כזו שתאהבו.
+              <strong className="text-foreground">2. הגדירו לכל חולצה.</strong>{" "}
+              סוג (רטרו / ארוכה / מיוחדת) ומידה — בנפרד לכל חולצה.
             </li>
             <li>
-              <strong className="text-foreground">3. תשלום מיוחד.</strong> מחיר מיוחד
-              שיוסכם עליו — בדרך כלל זול ב-15-25 ₪ ממחיר הקטלוג.
+              <strong className="text-foreground">3. אנחנו בוחרים.</strong>{" "}
+              צוות הבחירה שלנו סורק את הקטלוג לפי ההעדפות שלכם וקובע את
+              החולצה הספציפית.
             </li>
             <li>
-              <strong className="text-foreground">4. הפתעה!</strong> החולצה מגיעה
-              באריזה מסתורית — אתם פותחים, רואים, נהנים.
+              <strong className="text-foreground">4. הפתעה.</strong> החולצה
+              מגיעה באריזה רגילה — אתם פותחים, רואים, נהנים.
             </li>
           </ol>
           <div className="mt-6 rounded-xl border border-border bg-background p-4 text-xs text-muted">
