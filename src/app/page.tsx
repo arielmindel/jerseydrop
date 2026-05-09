@@ -1,4 +1,4 @@
-import HeroDroppingJerseys from "@/components/home/HeroDroppingJerseys";
+import HeroLegendsRotator from "@/components/home/HeroLegendsRotator";
 import LeaguesShowcase from "@/components/home/LeaguesShowcase";
 import CollectionsShowcase from "@/components/home/CollectionsShowcase";
 import FeaturedGrid from "@/components/home/FeaturedGrid";
@@ -10,7 +10,7 @@ import Newsletter from "@/components/home/Newsletter";
 export default function Home() {
   return (
     <>
-      <HeroDroppingJerseys />
+      <HeroLegendsRotator />
       <LeaguesShowcase />
       <CollectionsShowcase />
       <FeaturedGrid />
