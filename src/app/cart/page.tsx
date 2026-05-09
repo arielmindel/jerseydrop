@@ -196,7 +196,7 @@ export default function CartPage() {
           <Link href="/checkout">לתשלום ←</Link>
         </Button>
         <p className="text-[11px] text-muted">
-          משלוח 10–15 ימי עסקים · החלפות תוך 14 יום · תשלום מאובטח.
+          משלוח 10-15 ימי עסקים · החלפות תוך 14 יום · תשלום מאובטח.
         </p>
       </aside>
     </section>
