@@ -7,7 +7,6 @@ import {
   getProductBySlug,
   getRelatedProducts,
   getStartingPrice,
-  hasPrice,
 } from "@/lib/products";
 import { descriptionParagraphs } from "@/lib/sanitize";
 import ProductDetail from "@/components/product/ProductDetail";
@@ -26,9 +25,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!product) return { title: "חולצה לא נמצאה" };
   const summary = descriptionParagraphs(product.description)[0]?.slice(0, 160);
   const seasonChip = product.season ? ` · ${product.season}` : "";
-  const priceChip = hasPrice(product)
-    ? ` · החל מ-${getStartingPrice(product)} ₪`
-    : "";
+  const priceChip = ` · ${getStartingPrice(product) ?? 119} ₪`;
   return {
     title: `${product.team || product.nameHe}${seasonChip}`,
     description:

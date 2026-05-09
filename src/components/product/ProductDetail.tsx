@@ -376,32 +376,7 @@ export default function ProductDetail({ product }: { product: Product }) {
                 </p>
               )}
             </div>
-          ) : (
-            <div className="space-y-3 rounded-2xl border border-accent/30 bg-accent/5 p-4">
-              <div className="flex items-baseline justify-between">
-                <span className="font-display text-xs uppercase tracking-widest text-muted">
-                  מחיר
-                </span>
-                <span className="font-display text-lg font-bold text-foreground">
-                  בקרוב
-                </span>
-              </div>
-              <p className="text-xs leading-relaxed text-muted">
-                המחיר עוד לא נקבע. שלח/י הודעה בוואטסאפ ונחזיר תשובה מיידית
-                עם מחיר וזמינות.
-              </p>
-              <Button asChild size="lg" className="w-full">
-                <a
-                  href={whatsappLink(whatsappMessage)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MessageCircle className="h-4 w-4" />
-                  הזמנה — צור קשר בוואטסאפ
-                </a>
-              </Button>
-            </div>
-          )}
+          ) : null}
 
           {/* Trust row */}
           <div className="grid gap-2 rounded-2xl border border-border bg-surface p-4 text-xs text-muted md:grid-cols-2">

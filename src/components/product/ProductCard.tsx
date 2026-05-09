@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/lib/types";
 import { formatILS } from "@/lib/utils";
-import { getStartingPrice, hasPrice } from "@/lib/products";
+import { getStartingPrice } from "@/lib/products";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
 import JerseyDropWatermark from "./JerseyDropWatermark";
 
@@ -17,11 +17,12 @@ function displayTeam(product: Product): string {
 }
 
 export default function ProductCard({ product }: { product: Product }) {
-  const startingPrice = getStartingPrice(product);
-  const hasDiscount =
-    typeof startingPrice === "number" &&
-    typeof product.originalPrice === "number" &&
-    product.originalPrice > startingPrice;
+  // Catalog-wide flat price as of May 2026 — every product is 119 ₪ regardless
+  // of edition (Fan / Player / Retro). Falls back to getStartingPrice() so we
+  // still render correctly if the data file is ever rolled back to per-version
+  // pricing. No struck-through originalPrice anymore — that field was removed
+  // from the data when we went flat.
+  const startingPrice = getStartingPrice(product) ?? 119;
   const fallbackImg =
     "https://picsum.photos/seed/jerseydrop-fallback/600/750";
   const primaryImg = product.images?.[0] || fallbackImg;
@@ -67,22 +68,9 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="line-clamp-1 text-caption text-muted">{product.nameHe}</div>
         <div className="mt-auto flex items-center justify-between pt-2">
           <div className="flex items-baseline gap-2">
-            {hasPrice(product) && typeof startingPrice === "number" ? (
-              <>
-                <span className="font-display text-body-lg font-bold text-foreground">
-                  {formatILS(startingPrice)}
-                </span>
-                {hasDiscount && (
-                  <span className="font-display text-caption text-muted line-through">
-                    {formatILS(product.originalPrice as number)}
-                  </span>
-                )}
-              </>
-            ) : (
-              <span className="font-display text-caption uppercase tracking-[0.18em] text-muted">
-                מחיר בקרוב
-              </span>
-            )}
+            <span className="font-display text-body-lg font-bold text-foreground">
+              {formatILS(startingPrice)}
+            </span>
           </div>
           <span className="inline-flex items-center gap-1 font-display text-[0.625rem] uppercase tracking-[0.18em] text-muted transition-all duration-base group-hover:gap-2 group-hover:text-accent">
             גלה
