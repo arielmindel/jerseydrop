@@ -67,7 +67,19 @@ export type Product = {
   priceFan: number | null;
   pricePlayer: number | null;
   priceRetro: number | null;
-  originalPrice: number | null;
+  /** V7 — pricing tier resolved at migration time. Drives the chip on the
+   *  product detail page + cart line item. Six values:
+   *    'mystery' (99), 'kids-set' (169), 'adult-set' (189),
+   *    'long-sleeve' (129), 'special' (119), 'regular' (109).
+   *  Older snapshots may not have this field; UI falls back to 'regular'. */
+  priceTier?:
+    | "regular"
+    | "long-sleeve"
+    | "adult-set"
+    | "kids-set"
+    | "special"
+    | "mystery";
+  originalPrice?: number | null;
   sizes: ProductSize[];
   images: string[];
   /** Backup local filenames — not used for rendering yet (Shopify CDN is primary). */

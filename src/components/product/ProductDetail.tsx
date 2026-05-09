@@ -31,9 +31,12 @@ import { useCart } from "@/lib/cart";
 import {
   getAvailableVersions,
   getDisplayableSizes,
+  getPriceTier,
   hasPrice,
   priceFor,
+  TIER_META,
 } from "@/lib/products";
+import { Sparkles } from "lucide-react";
 import { CUSTOMIZATION_FEE, SHIPPING, whatsappLink } from "@/lib/constants";
 import { NO_PATCH } from "@/lib/patches";
 import { formatILS } from "@/lib/utils";
@@ -209,6 +212,51 @@ export default function ProductDetail({ product }: { product: Product }) {
             </h1>
             <p className="text-sm text-muted">{product.nameHe}</p>
           </div>
+
+          {/* V7 — pricing tier chip + price headline. The chip mirrors the
+               brand tone of the tier (gold for special, accent neon for
+               mystery, etc.) so the buyer instantly clocks what kind of
+               product they're looking at. */}
+          {(() => {
+            const tier = getPriceTier(product);
+            const meta = TIER_META[tier];
+            const toneClass: Record<string, string> = {
+              regular: "border-border bg-surface text-foreground",
+              accent: "border-accent/60 bg-accent/15 text-accent shadow-glow-sm",
+              gold: "border-gold/60 bg-gold/15 text-gold shadow-gold",
+              violet: "border-violet/40 bg-violet/15 text-violet",
+              amber: "border-amber/40 bg-amber/15 text-amber",
+              cyan: "border-cyan/40 bg-cyan/15 text-cyan",
+            };
+            return (
+              <div className="flex items-baseline gap-3">
+                <span
+                  className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 font-display text-overline tracking-[0.18em] ${toneClass[meta.tone]}`}
+                >
+                  {tier === "mystery" && <Sparkles className="h-3 w-3" />}
+                  {meta.labelHe}
+                </span>
+                <span className="font-display text-h1 font-black text-foreground">
+                  {formatILS(meta.price)}
+                </span>
+              </div>
+            );
+          })()}
+
+          {/* Mystery Box explainer — only shown for the lottery product. */}
+          {getPriceTier(product) === "mystery" && (
+            <div className="flex items-start gap-3 rounded-2xl border border-accent/40 bg-accent/5 p-4">
+              <Sparkles className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
+              <div className="space-y-1">
+                <div className="font-display text-body font-bold text-accent">
+                  Mystery Box
+                </div>
+                <p className="text-body-sm text-muted">
+                  חולצת כדורגל אקראית במידה לבחירתך. הקבוצה מפתיעה!
+                </p>
+              </div>
+            </div>
+          )}
 
           <Badge variant={stockBadge.tone}>{stockBadge.text}</Badge>
 

@@ -288,6 +288,33 @@ export function getStartingPrice(product: Product): number | null {
   return Math.min(...candidates);
 }
 
+// ============================================================================
+// V7 — pricing tier display
+// ----------------------------------------------------------------------------
+// Each tier maps to a Hebrew label + brand tone. Used by the chip on the
+// product detail page and by cart line-item descriptions.
+// ============================================================================
+
+export type PriceTier = NonNullable<Product["priceTier"]>;
+
+export const TIER_META: Record<
+  PriceTier,
+  { labelHe: string; price: number; tone: "regular" | "accent" | "gold" | "violet" | "amber" | "cyan" }
+> = {
+  regular: { labelHe: "חולצה רגילה", price: 109, tone: "regular" },
+  "long-sleeve": { labelHe: "חולצה ארוכה", price: 129, tone: "cyan" },
+  "adult-set": { labelHe: "סט מבוגרים", price: 189, tone: "violet" },
+  "kids-set": { labelHe: "סט ילדים", price: 169, tone: "amber" },
+  special: { labelHe: "מהדורה מיוחדת", price: 119, tone: "gold" },
+  mystery: { labelHe: "Mystery Box", price: 99, tone: "accent" },
+};
+
+/** Resolve the tier to use for display. Falls back to 'regular' when the
+ *  product was migrated from an older snapshot without a priceTier field. */
+export function getPriceTier(product: Product): PriceTier {
+  return product.priceTier ?? "regular";
+}
+
 export function getAvailableVersions(product: Product): ProductVersion[] {
   const versions: ProductVersion[] = [];
   if (product.priceRetro !== null || product.isRetro) versions.push("retro");
