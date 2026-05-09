@@ -92,10 +92,11 @@ export default function HeroLegendsRotator() {
   return (
     <section
       aria-label="Hero"
-      // h-screen as the fallback (older browsers), h-[100dvh] takes over
-      // where supported (Safari 15.4+, Chrome 108+) so iOS browser chrome
-      // doesn't steal pixels. Desktop clamps at 1080px on huge monitors.
-      className="relative w-full overflow-hidden bg-black h-screen h-[100dvh] md:h-screen md:max-h-[1080px]"
+      // Desktop-only — mobile gets MobileHero (static composition) via the
+      // Hero.tsx wrapper. The Higgsfield videos are 16:9 landscape and
+      // would crop badly on a 9:16 phone, so they only shine here at md+.
+      // Clamps at 1080px on huge monitors.
+      className="relative hidden w-full overflow-hidden bg-black md:block md:h-screen md:max-h-[1080px]"
     >
       {/* ============ TWO STACKED VIDEO LAYERS (always mounted) ============ */}
       <video
