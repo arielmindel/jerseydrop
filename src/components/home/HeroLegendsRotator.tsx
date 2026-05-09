@@ -1,78 +1,29 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
 /**
- * JerseyDrop — Cinematic Legendary Jersey Hero (V8.7).
+ * JerseyDrop — Cinematic Hero (V8.8).
  *
  * Two stacked <video> layers — both ALWAYS in the DOM and ALWAYS
  * loaded. We swap which is "in front" via opacity + transform so
  * there's never a load-pause between clips. The vortex transition
  * applies to those layers (CSS transform/filter), not to mounts.
  *
- * The AI generated jerseys with plausible-but-wrong surnames on the
- * back (Higgsfield's NSFW filter blocks any prompt that names an
- * actual player). We overlay the REAL legend identity as a small
- * glassy pill in the corner so the viewer always knows who they're
- * looking at — flag, name, number, team.
- *
- * Foreground: legend pill (top-end) + neon "קנה עכשיו" CTA (bottom-
- * start) that smooth-scrolls to the #leagues section.
+ * Foreground: ONE element only — the neon-green "קנה עכשיו" CTA
+ * bottom-left. On click, smooth-scrolls to the #leagues section.
+ * The hero is meant to be felt, not read — no captions, no labels.
  */
 
-type Legend = {
-  src: string;
-  name: string;
-  number: string;
-  teamHe: string;
-  flag: string;
-};
-
-const LEGENDS: Legend[] = [
-  {
-    src: "/videos/heroes/ronaldo-brazil.mp4",
-    name: "Ronaldo",
-    number: "9",
-    teamHe: "ברזיל",
-    flag: "🇧🇷",
-  },
-  {
-    src: "/videos/heroes/zidane-france.mp4",
-    name: "Zidane",
-    number: "10",
-    teamHe: "צרפת",
-    flag: "🇫🇷",
-  },
-  {
-    src: "/videos/heroes/messi-argentina.mp4",
-    name: "Messi",
-    number: "10",
-    teamHe: "ארגנטינה",
-    flag: "🇦🇷",
-  },
-  {
-    src: "/videos/heroes/maradona-argentina.mp4",
-    name: "Maradona",
-    number: "10",
-    teamHe: "ארגנטינה",
-    flag: "🇦🇷",
-  },
-  {
-    src: "/videos/heroes/ronaldo-portugal.mp4",
-    name: "Cristiano",
-    number: "7",
-    teamHe: "פורטוגל",
-    flag: "🇵🇹",
-  },
-  {
-    src: "/videos/heroes/pele-brazil.mp4",
-    name: "Pelé",
-    number: "10",
-    teamHe: "ברזיל",
-    flag: "🇧🇷",
-  },
+const CLIPS = [
+  "/videos/heroes/ronaldo-brazil.mp4",
+  "/videos/heroes/zidane-france.mp4",
+  "/videos/heroes/messi-argentina.mp4",
+  "/videos/heroes/maradona-argentina.mp4",
+  "/videos/heroes/ronaldo-portugal.mp4",
+  "/videos/heroes/pele-brazil.mp4",
 ];
 
 const CLIP_DWELL_MS = 6400; // visible per clip
@@ -85,8 +36,8 @@ export default function HeroLegendsRotator() {
 
   // Each layer holds a clip src. Layer A initially shows clip 0,
   // Layer B initially preloads clip 1.
-  const [srcA, setSrcA] = useState(LEGENDS[0].src);
-  const [srcB, setSrcB] = useState(LEGENDS[1].src);
+  const [srcA, setSrcA] = useState(CLIPS[0]);
+  const [srcB, setSrcB] = useState(CLIPS[1]);
 
   const aRef = useRef<HTMLVideoElement | null>(null);
   const bRef = useRef<HTMLVideoElement | null>(null);
@@ -95,7 +46,7 @@ export default function HeroLegendsRotator() {
   useEffect(() => {
     if (prefersReduced) return;
     const id = window.setInterval(() => {
-      setFrontIdx((i) => (i + 1) % LEGENDS.length);
+      setFrontIdx((i) => (i + 1) % CLIPS.length);
       setFrontLayer((f) => (f === "a" ? "b" : "a"));
     }, CLIP_DWELL_MS);
     return () => window.clearInterval(id);
@@ -105,7 +56,7 @@ export default function HeroLegendsRotator() {
   // *next* upcoming clip so it has CLIP_DWELL_MS to preload before its
   // turn in front.
   useEffect(() => {
-    const next = LEGENDS[(frontIdx + 1) % LEGENDS.length].src;
+    const next = CLIPS[(frontIdx + 1) % CLIPS.length];
     if (frontLayer === "a") {
       setSrcB(next);
     } else {
@@ -141,8 +92,6 @@ export default function HeroLegendsRotator() {
     transformOrigin: "50% 50%",
     willChange: "transform, opacity, filter",
   });
-
-  const current = LEGENDS[frontIdx];
 
   return (
     <section
@@ -195,36 +144,6 @@ export default function HeroLegendsRotator() {
             "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.30) 70%, rgba(0,0,0,0.65) 100%)",
         }}
       />
-
-      {/* ============ LEGEND IDENTITY PILL (top-end / right in RTL) ============ */}
-      <div className="absolute end-6 top-6 z-10 sm:end-12 sm:top-12">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={current.src}
-            initial={{ opacity: 0, y: -8, scale: 0.96 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -8, scale: 0.96 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-black/40 px-4 py-2 backdrop-blur-md sm:gap-3 sm:px-5 sm:py-2.5"
-            style={{
-              boxShadow: "0 10px 30px -10px rgba(0,0,0,0.6)",
-            }}
-          >
-            <span className="text-lg leading-none sm:text-xl" aria-hidden>
-              {current.flag}
-            </span>
-            <div className="flex flex-col items-start leading-tight">
-              <span className="font-display text-sm font-black uppercase tracking-[0.12em] text-white sm:text-base">
-                {current.name}
-                <span className="ms-1.5 text-[#00FF88]">#{current.number}</span>
-              </span>
-              <span className="font-display text-[0.625rem] font-bold uppercase tracking-[0.22em] text-white/70 sm:text-[0.7rem]">
-                {current.teamHe}
-              </span>
-            </div>
-          </motion.div>
-        </AnimatePresence>
-      </div>
 
       {/* ============ "קנה עכשיו" CTA (bottom-start) — scrolls to leagues ============ */}
       <motion.div
