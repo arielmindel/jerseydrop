@@ -11,6 +11,21 @@
     background: #0b1220;
     color: #f8fafc;
     scroll-behavior: smooth;
+    /* iOS: prevent rubber-banding side-scroll caused by stray sub-pixel overflow */
+    overflow-x: hidden;
+  }
+
+  /* iOS Safari: any <input>/<select>/<textarea> with font-size < 16px gets
+   * a forced page zoom on focus. Force 16px globally; explicit overrides on
+   * larger fields still apply.
+   */
+  input, select, textarea {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) {
+    input, select, textarea {
+      font-size: inherit;
+    }
   }
 
   /* Subtle global aurora wash so the page never feels flat-black */

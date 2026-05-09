@@ -31,7 +31,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/products/${product.slug}`}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-surface edge-light transition-all duration-base ease-emphasized hover:-translate-y-1 hover:border-accent/50 hover:shadow-glow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+      className="group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-md transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background md:hover:-translate-y-1 md:hover:border-accent/50 md:hover:shadow-2xl md:hover:shadow-accent/15"
     >
       <div className="relative aspect-[4/5] overflow-hidden bg-background">
         <Image
@@ -42,15 +42,24 @@ export default function ProductCard({ product }: { product: Product }) {
           loading="lazy"
           placeholder="blur"
           blurDataURL={BLUR_DATA_URL}
-          className="object-cover transition-transform duration-slow ease-emphasized group-hover:scale-[1.06]"
+          className="object-cover transition-transform duration-300 ease-out md:group-hover:scale-105"
         />
         {/* Subtle bottom gradient on hover so the card feet read as connected */}
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent opacity-0 transition-opacity duration-base group-hover:opacity-100"
+          className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-0 transition-opacity duration-200 md:group-hover:opacity-100"
         />
         <JerseyDropWatermark src={primaryImg} size="sm" />
-        {/* Badges intentionally removed from card grids — kept on the detail page only. */}
+        {/* "תצוגה מהירה" pill — fades up over the image bottom on hover.
+             Hidden on mobile (no hover, would jitter on scroll). */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 bottom-3 hidden translate-y-2 justify-center px-3 opacity-0 transition-all duration-200 ease-out md:flex md:group-hover:translate-y-0 md:group-hover:opacity-100"
+        >
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-black/75 px-4 py-2 font-display text-[0.7rem] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-md">
+            תצוגה מהירה
+          </span>
+        </div>
       </div>
 
       <div className="flex flex-1 flex-col gap-2 p-4">

@@ -40,6 +40,10 @@ const sheetVariants = cva(
         left: "inset-y-0 right-0 h-full w-3/4 border-s border-border sm:max-w-sm data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right",
         right:
           "inset-y-0 left-0 h-full w-3/4 border-e border-border sm:max-w-sm data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left",
+        // Responsive cart: full-width bottom sheet on mobile (handles thumb
+        // reach), right-edge drawer on md+ (RTL → visually right).
+        "responsive-cart":
+          "inset-x-0 bottom-0 max-h-[88vh] rounded-t-2xl border-t border-border data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom md:inset-y-0 md:bottom-auto md:left-auto md:right-0 md:h-full md:max-h-none md:w-3/4 md:max-w-sm md:rounded-none md:border-s md:border-t-0 md:data-[state=closed]:slide-out-to-right md:data-[state=open]:slide-in-from-right",
       },
     },
     defaultVariants: { side: "left" },

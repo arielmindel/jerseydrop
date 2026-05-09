@@ -115,7 +115,7 @@ export default function SearchBar({
             setTimeout(() => inputRef.current?.focus(), 30);
           }}
           aria-label="חיפוש"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground md:hidden"
         >
           <Search className="h-5 w-5" />
         </button>
@@ -127,13 +127,15 @@ export default function SearchBar({
           <input
             ref={inputRef}
             type="search"
+            inputMode="search"
+            enterKeyHint="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => setOpen(true)}
             onKeyDown={onKey}
             placeholder="חפש חולצה, מועדון, נבחרת..."
             aria-label="חיפוש"
-            className="h-10 w-64 rounded-full border border-border bg-surface ps-10 pe-4 text-sm text-foreground placeholder:text-muted focus:border-accent/60 focus:outline-none focus:ring-2 focus:ring-accent/40 lg:w-80"
+            className="h-11 w-64 rounded-full border border-border bg-surface pe-4 ps-10 text-base text-foreground placeholder:text-muted focus:border-accent/60 focus:outline-none focus:ring-2 focus:ring-accent/40 lg:w-80"
             dir="rtl"
           />
         </form>

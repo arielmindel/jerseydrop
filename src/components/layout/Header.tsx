@@ -49,7 +49,7 @@ export default function Header() {
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
       />
-      <div className="container flex h-20 items-center justify-between gap-4">
+      <div className="container flex h-24 items-center justify-between gap-4 md:h-28">
         <div className="flex items-center gap-6">
           <Link
             href="/"
@@ -62,17 +62,17 @@ export default function Header() {
               width={256}
               height={256}
               priority
-              className="h-14 w-auto md:h-16"
+              className="h-16 w-auto md:h-20"
             />
           </Link>
           <MegaMenu counts={counts} topTeamsByLeague={topTeamsByLeague} />
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2">
           <Link
             href="/"
             aria-label="חזרה לעמוד הבית"
             title="עמוד הבית"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-all duration-base hover:bg-surface hover:text-accent"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-muted transition-all duration-base hover:bg-surface hover:text-accent"
           >
             <Home className="h-5 w-5" />
           </Link>

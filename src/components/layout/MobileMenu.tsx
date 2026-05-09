@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, ChevronDown } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Menu, ChevronDown, Search } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -14,8 +15,10 @@ import {
 import { LEAGUES, NATIONS } from "@/lib/constants";
 
 export default function MobileMenu() {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [section, setSection] = useState<"leagues" | "nations" | null>(null);
+  const [query, setQuery] = useState("");
 
   const tier1 = NATIONS.filter((n) => n.tier === "tier-1");
   const tier2 = NATIONS.filter((n) => n.tier === "tier-2");
@@ -25,23 +28,57 @@ export default function MobileMenu() {
     setSection(null);
   };
 
+  const submitSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const q = query.trim();
+    if (!q) return;
+    router.push(`/search?q=${encodeURIComponent(q)}`);
+    close();
+    setQuery("");
+  };
+
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <button
           type="button"
           aria-label="תפריט"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface hover:text-foreground md:hidden"
         >
           <Menu className="h-5 w-5" />
         </button>
       </SheetTrigger>
-      <SheetContent side="left" className="flex flex-col p-0">
+      <SheetContent
+        side="left"
+        className="flex flex-col p-0 w-full !max-w-none border-s-0"
+      >
         <SheetHeader>
           <SheetTitle>
             Jersey<span className="text-accent">Drop</span>
           </SheetTitle>
         </SheetHeader>
+        {/* Search input — large, full-width, type=search → mobile keyboard
+             shows the magnifying-glass enter key. Font-size 16px keeps iOS
+             from auto-zooming the page on focus. */}
+        <form onSubmit={submitSearch} className="border-b border-border px-4 py-3">
+          <label className="relative block">
+            <span className="sr-only">חיפוש</span>
+            <Search
+              aria-hidden
+              className="pointer-events-none absolute end-3 top-1/2 h-5 w-5 -translate-y-1/2 text-muted"
+            />
+            <input
+              type="search"
+              inputMode="search"
+              enterKeyHint="search"
+              autoComplete="off"
+              placeholder="חפש חולצה, מועדון, נבחרת..."
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              className="block h-12 w-full rounded-full border border-border bg-background pe-12 ps-4 text-base text-foreground placeholder:text-muted focus:border-accent focus:outline-none"
+            />
+          </label>
+        </form>
         <nav className="flex-1 overflow-y-auto px-2 py-3">
           <ul className="flex flex-col gap-1">
             <li>
