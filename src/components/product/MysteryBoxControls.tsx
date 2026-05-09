@@ -4,9 +4,14 @@ import { Minus, Plus, Sparkles } from "lucide-react";
 
 /** Three jersey "themes" the customer can request from a Mystery Box.
  *  We send the supplier the count + theme + size; they pick what's in stock. */
-export type MysteryType = "retro" | "long-sleeve" | "special";
+export type MysteryType = "regular" | "retro" | "long-sleeve" | "special";
 
 export const MYSTERY_TYPES: { id: MysteryType; labelHe: string; descriptionHe: string }[] = [
+  {
+    id: "regular",
+    labelHe: "רגילה",
+    descriptionHe: "חולצת מועדון או נבחרת מהעונה הנוכחית",
+  },
   {
     id: "retro",
     labelHe: "רטרו",

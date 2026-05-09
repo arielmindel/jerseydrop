@@ -64,8 +64,8 @@ export default function SurprisePage() {
             חולצה <span className="text-amber">בהפתעה</span>
           </h1>
           <p className="mt-4 max-w-xl text-sm text-muted md:text-lg">
-            תבחרו כמות, סוג (רטרו / ארוכה / מיוחדת) ומידה — אנחנו נבחר
-            את החולצה עצמה לפי הזמין במלאי.
+            תבחרו כמות (ללא הגבלה), קהל, סוג ומידה לכל חולצה — וגם מה
+            פחות אוהבים. אנחנו נבחר את החולצה עצמה לפי הזמין במלאי.
           </p>
         </div>
       </section>
@@ -112,19 +112,25 @@ export default function SurprisePage() {
           <ol className="mt-4 space-y-3 text-sm leading-relaxed text-muted md:text-base">
             <li>
               <strong className="text-foreground">1. בחרו כמות.</strong> כל חולצה
-              ב-99 ₪. עד 10 חולצות בהזמנה אחת.
+              ב-99 ₪. ללא הגבלה — קנו כמה שאתם רוצים.
             </li>
             <li>
               <strong className="text-foreground">2. הגדירו לכל חולצה.</strong>{" "}
-              סוג (רטרו / ארוכה / מיוחדת) ומידה — בנפרד לכל חולצה.
+              קהל (בוגרים / ילדים), סוג (רגילה / רטרו / ארוכה / מיוחדת)
+              ומידה — בנפרד לכל חולצה.
             </li>
             <li>
-              <strong className="text-foreground">3. אנחנו בוחרים.</strong>{" "}
+              <strong className="text-foreground">3. סננו העדפות.</strong>{" "}
+              צבעים וקבוצות שאתם פחות אוהבים — נשתדל לא לבחור עבורכם משהו
+              שלא תיהנו ממנו.
+            </li>
+            <li>
+              <strong className="text-foreground">4. אנחנו בוחרים.</strong>{" "}
               צוות הבחירה שלנו סורק את הקטלוג לפי ההעדפות שלכם וקובע את
               החולצה הספציפית.
             </li>
             <li>
-              <strong className="text-foreground">4. הפתעה.</strong> החולצה
+              <strong className="text-foreground">5. הפתעה.</strong> החולצה
               מגיעה באריזה רגילה — אתם פותחים, רואים, נהנים.
             </li>
           </ol>
