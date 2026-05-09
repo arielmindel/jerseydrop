@@ -3,6 +3,7 @@ import { Heebo, Space_Grotesk, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import CantFindCTA from "@/components/layout/CantFindCTA";
 import MarqueeBanner from "@/components/layout/MarqueeBanner";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import JsonLd from "@/components/seo/JsonLd";
@@ -127,6 +128,7 @@ export default function RootLayout({
           <MarqueeBanner />
           <Header />
           <main className="flex-1">{children}</main>
+          <CantFindCTA />
           <Footer />
         </div>
         <WhatsAppFloat />
