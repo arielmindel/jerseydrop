@@ -168,9 +168,14 @@ export default function Hero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
       />
 
-      {/* ============ CTA ============ */}
-      <motion.a
-        href="/products"
+      {/* ============ CTA — smooth-scrolls down to the leagues section ============ */}
+      <motion.button
+        type="button"
+        onClick={() => {
+          document
+            .getElementById("leagues")
+            ?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }}
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
@@ -187,7 +192,7 @@ export default function Hero() {
           קנה עכשיו
           <ArrowDown aria-hidden className="h-5 w-5 lg:h-6 lg:w-6" />
         </motion.span>
-      </motion.a>
+      </motion.button>
     </section>
   );
 }
