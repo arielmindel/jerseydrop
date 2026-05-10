@@ -168,7 +168,10 @@ export default function Hero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
       />
 
-      {/* ============ CTA — smooth-scrolls down to the leagues section ============ */}
+      {/* ============ CTA — smooth-scrolls down to the leagues section ============
+           Anchored bottom-end (RTL → visually LEFT) on every viewport so it
+           sits opposite the WhatsApp float (which is bottom-start = right
+           in RTL). Slightly smaller on mobile for a tighter feel. */}
       <motion.button
         type="button"
         onClick={() => {
@@ -179,9 +182,9 @@ export default function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-        className="absolute z-30 inline-flex items-center gap-2 rounded-full bg-[#00FF88] px-12 py-5 font-display text-xl font-bold uppercase tracking-wide text-black shadow-[0_0_40px_rgba(0,255,136,0.6)] transition-transform active:scale-95 bottom-12 left-1/2 -translate-x-1/2 landscape:left-12 landscape:translate-x-0 lg:bottom-16 lg:left-16 lg:px-14 lg:py-6 lg:text-2xl"
+        className="absolute bottom-8 end-6 z-30 inline-flex items-center gap-2 rounded-full bg-[#00FF88] px-8 py-4 font-display text-lg font-bold uppercase tracking-wide text-black shadow-[0_0_40px_rgba(0,255,136,0.6)] transition-transform active:scale-95 sm:px-10 sm:py-5 sm:text-xl md:bottom-12 lg:bottom-16 lg:end-16 lg:px-14 lg:py-6 lg:text-2xl"
         style={{
-          paddingBottom: "calc(1.25rem + env(safe-area-inset-bottom))",
+          paddingBottom: "calc(1rem + env(safe-area-inset-bottom))",
         }}
       >
         <motion.span
