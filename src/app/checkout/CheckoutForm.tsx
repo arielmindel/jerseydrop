@@ -13,7 +13,7 @@ import CartItemDetails from "@/components/cart/CartItemDetails";
 import { SHIPPING } from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
 
-type PaymentMethod = "card" | "paypal" | "bit";
+type PaymentMethod = "card" | "bit";
 
 export default function CheckoutForm() {
   const router = useRouter();
@@ -150,11 +150,10 @@ export default function CheckoutForm() {
           <h2 className="font-display text-sm font-bold uppercase tracking-widest text-muted">
             אמצעי תשלום
           </h2>
-          <div className="grid gap-2 md:grid-cols-3">
+          <div className="grid gap-2 md:grid-cols-2">
             {(
               [
-                { key: "card", label: "כרטיס אשראי", hint: "ויזה / מאסטרקארד / דיינרס" },
-                { key: "paypal", label: "PayPal", hint: "חשבון PayPal" },
+                { key: "card", label: "כרטיס אשראי", hint: "Visa · Mastercard · Amex · Diners · Isracard · עד 12 תשלומים" },
                 { key: "bit", label: "Bit", hint: "תשלום מהיר מהנייד" },
               ] as const
             ).map((opt) => (
@@ -217,11 +216,6 @@ export default function CheckoutForm() {
               </div>
               {/* TODO: Replace stub POST with Tranzila or Cardcom integration (Israeli processors). */}
             </div>
-          )}
-          {payment === "paypal" && (
-            <p className="rounded-lg bg-background p-3 text-xs text-muted">
-              תועברו ל-PayPal לאחר לחיצה על ״לתשלום״. {/* TODO: PayPal Business SDK */}
-            </p>
           )}
           {payment === "bit" && (
             <p className="rounded-lg bg-background p-3 text-xs text-muted">

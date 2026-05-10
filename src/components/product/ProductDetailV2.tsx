@@ -407,7 +407,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                 {
                   Icon: CreditCard,
                   title: "תשלום מאובטח",
-                  sub: "ביט · אשראי · PayPal",
+                  sub: "אשראי · Bit · Apple/Google Pay",
                 },
               ].map((t) => (
                 <div

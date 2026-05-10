@@ -43,7 +43,7 @@ const QUESTIONS: { id: string; q: string; a: string }[] = [
   {
     id: "payment",
     q: "אילו אמצעי תשלום אתם מקבלים?",
-    a: "כרטיסי אשראי (Visa, Mastercard), ביט, ו-PayPal. כל התשלומים מאובטחים ב-HTTPS וסולק מורשה.",
+    a: "אנחנו מקבלים את כל כרטיסי האשראי הנפוצים (Visa, Mastercard, American Express, Diners, Isracard), וגם Apple Pay, Google Pay וביט. אפשר לפצל את התשלום עד 12 תשלומים ללא ריבית בכרטיס אשראי.",
   },
   {
     id: "tracking",

@@ -144,19 +144,29 @@ export default function Footer() {
           <span>© 2026 JerseyDrop. כל הזכויות שמורות.</span>
           <div
             aria-label="אמצעי תשלום מקובלים"
-            className="flex flex-wrap items-center justify-center gap-1.5 font-display text-[9px] font-bold uppercase tracking-[0.18em] md:gap-2 md:text-[10px]"
+            className="flex flex-wrap items-center justify-center gap-1.5 opacity-80 transition-opacity hover:opacity-100 md:gap-2"
           >
-            <span className="rounded border border-white/15 px-2.5 py-1 text-white/75 md:px-3 md:py-1.5">
-              VISA
-            </span>
-            <span className="rounded border border-white/15 px-2.5 py-1 text-white/75 md:px-3 md:py-1.5">
-              MASTERCARD
-            </span>
-            <span className="rounded border border-white/15 px-2.5 py-1 text-white/75 md:px-3 md:py-1.5">
-              ביט
-            </span>
-            <span className="rounded border border-white/15 px-2.5 py-1 text-white/75 md:px-3 md:py-1.5">
-              PAYPAL
+            {[
+              { src: "/icons/payments/visa.svg", alt: "Visa" },
+              { src: "/icons/payments/mastercard.svg", alt: "Mastercard" },
+              { src: "/icons/payments/amex.svg", alt: "American Express" },
+              { src: "/icons/payments/diners.svg", alt: "Diners" },
+              { src: "/icons/payments/isracard.svg", alt: "Isracard" },
+              { src: "/icons/payments/apple-pay.svg", alt: "Apple Pay" },
+              { src: "/icons/payments/google-pay.svg", alt: "Google Pay" },
+              { src: "/icons/payments/bit.svg", alt: "Bit" },
+            ].map((p) => (
+              <Image
+                key={p.alt}
+                src={p.src}
+                alt={p.alt}
+                width={36}
+                height={24}
+                className="h-6 w-auto md:h-7"
+              />
+            ))}
+            <span className="ms-1 inline-flex items-center rounded-full border border-white/20 px-2.5 py-1 font-display text-[10px] font-bold tracking-wide text-white/85 md:text-[11px]">
+              עד 12 תשלומים
             </span>
           </div>
         </div>

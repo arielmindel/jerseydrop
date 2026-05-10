@@ -35,7 +35,7 @@ const ITEMS: { id: string; q: string; a: string }[] = [
   {
     id: "payment",
     q: "אילו אמצעי תשלום אתם מקבלים?",
-    a: "כרטיס אשראי (Visa, Mastercard, American Express), PayPal, ו-Bit. כל הרכישות מאובטחות ב-SSL.",
+    a: "כרטיסי אשראי (Visa, Mastercard, American Express, Diners, Isracard), Apple Pay, Google Pay וביט. עד 12 תשלומים ללא ריבית בכרטיס אשראי. כל הרכישות מאובטחות ב-SSL.",
   },
   {
     id: "authenticity",

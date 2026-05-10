@@ -9,7 +9,7 @@ import { shortOrderId, type OrderItem } from "@/lib/supabase/types";
  * but using service-role keeps the audit trail server-side and stops
  * malicious clients from forging admin-only fields).
  *
- * Payment integration is still TODO (Tranzila / Cardcom / PayPal / Bit).
+ * Payment integration is still TODO (Meshulam aggregator → card + Bit + Apple/Google Pay).
  * For now we record payment_method but mark payment_status='pending'.
  *
  * Returns: { ok, id (uuid), orderNumber (JD-XXXXXXXX) }.

@@ -25,7 +25,7 @@ const PILLARS = [
   {
     Icon: Lock,
     title: "תשלום מאובטח",
-    sub: "ביט · אשראי · PayPal",
+    sub: "אשראי · Apple Pay · Google Pay · ביט · עד 12 תשלומים",
   },
 ];
 

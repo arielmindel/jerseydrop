@@ -496,7 +496,7 @@ export default function ProductDetail({ product }: { product: Product }) {
             </div>
             <div className="flex items-center gap-2">
               <Check className="h-4 w-4 text-accent" />
-              <span>תשלום מאובטח — אשראי / PayPal / Bit</span>
+              <span>תשלום מאובטח — אשראי / Bit / Apple Pay</span>
             </div>
           </div>
 
