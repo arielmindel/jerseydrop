@@ -96,10 +96,10 @@ export default function HeroVideo() {
 
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
             <Link
-              href="/products"
+              href="/leagues"
               className="group inline-flex h-14 items-center justify-center gap-2 rounded-full bg-accent px-8 font-display text-sm font-bold uppercase tracking-wide text-accent-foreground shadow-glow transition-all duration-300 hover:-translate-y-0.5"
             >
-              לקולקציה
+              לקטלוג הליגות
               <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
             </Link>
             <Link

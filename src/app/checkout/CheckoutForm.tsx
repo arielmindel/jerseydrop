@@ -47,7 +47,7 @@ export default function CheckoutForm() {
           צריך להוסיף לפחות חולצה אחת לפני שעוברים לקופה.
         </p>
         <Button asChild>
-          <Link href="/products">לקולקציה ←</Link>
+          <Link href="/leagues">לקטלוג הליגות ←</Link>
         </Button>
       </div>
     );
