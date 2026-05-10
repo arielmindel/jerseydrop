@@ -9,7 +9,7 @@ import {
   getStartingPrice,
 } from "@/lib/products";
 import { descriptionParagraphs } from "@/lib/sanitize";
-import ProductDetail from "@/components/product/ProductDetail";
+import ProductDetailV2 from "@/components/product/ProductDetailV2";
 import RelatedProducts from "@/components/product/RelatedProducts";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
@@ -140,7 +140,7 @@ export default function ProductPage({ params }: Props) {
           חזרה
         </Link>
       </nav>
-      <ProductDetail product={product} />
+      <ProductDetailV2 product={product} />
       <RelatedProducts products={related} />
     </>
   );

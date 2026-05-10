@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CantFindCTA from "@/components/layout/CantFindCTA";
+import { Toaster } from "sonner";
 import MarqueeBanner from "@/components/layout/MarqueeBanner";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import JsonLd from "@/components/seo/JsonLd";
@@ -134,6 +135,18 @@ export default function RootLayout({
           <Footer />
         </div>
         <WhatsAppFloat />
+        <Toaster
+          richColors
+          position="top-center"
+          theme="dark"
+          dir="rtl"
+          toastOptions={{
+            style: {
+              fontFamily: "var(--font-heebo)",
+              fontSize: "0.95rem",
+            },
+          }}
+        />
       </body>
     </html>
   );
