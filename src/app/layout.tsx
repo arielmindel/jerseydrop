@@ -57,18 +57,29 @@ export const metadata: Metadata = {
     title: "JerseyDrop — חולצות כדורגל רשמיות",
     description:
       "חולצות רשמיות לנבחרות ולמועדונים. התאמה אישית. משלוח לכל הארץ.",
+    images: [
+      {
+        url: "/logo/logo-full.png",
+        width: 1536,
+        height: 1024,
+        alt: "JerseyDrop — Wear the Culture",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "JerseyDrop — חולצות כדורגל רשמיות",
     description:
       "חולצות רשמיות לנבחרות ולמועדונים. התאמה אישית. משלוח לכל הארץ.",
+    images: ["/logo/logo-full.png"],
   },
   // Canonical here applies only to the homepage. Other pages override
   // via their own generateMetadata().
   alternates: { canonical: "/" },
+  manifest: "/manifest.json",
   icons: {
     icon: [
+      { url: "/logo/favicon-16.png", type: "image/png", sizes: "16x16" },
       { url: "/logo/favicon-32.png", type: "image/png", sizes: "32x32" },
       { url: "/logo/favicon-64.png", type: "image/png", sizes: "64x64" },
       { url: "/logo/favicon-96.png", type: "image/png", sizes: "96x96" },

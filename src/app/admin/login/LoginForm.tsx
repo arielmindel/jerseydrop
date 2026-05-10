@@ -68,7 +68,7 @@ export default function LoginForm({ errorParam }: { errorParam?: string }) {
       <div className="relative w-full max-w-sm rounded-3xl border border-border bg-surface/80 p-8 backdrop-blur-md edge-light">
         <div className="mb-8 flex flex-col items-center gap-3 text-center">
           <Image
-            src="/logo/logo-256.png"
+            src="/logo/logo-mark.png"
             alt="JerseyDrop"
             width={96}
             height={96}

@@ -95,11 +95,11 @@ export default function Footer() {
         <div className="space-y-5">
           <Link href="/" aria-label="JerseyDrop — דף הבית" className="inline-block">
             <Image
-              src="/logo/logo-256.png"
+              src="/logo/logo-wordmark.png"
               alt="JerseyDrop"
-              width={256}
-              height={256}
-              className="h-10 w-auto"
+              width={400}
+              height={112}
+              className="h-12 w-auto"
             />
           </Link>
           <p className="max-w-xs text-base leading-relaxed text-white/70">

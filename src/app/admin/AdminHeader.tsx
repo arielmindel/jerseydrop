@@ -26,7 +26,7 @@ export default function AdminHeader({ email }: { email: string }) {
       <div className="container relative flex h-16 items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <Image
-            src="/logo/logo-256.png"
+            src="/logo/logo-mark.png"
             alt="JerseyDrop"
             width={40}
             height={40}

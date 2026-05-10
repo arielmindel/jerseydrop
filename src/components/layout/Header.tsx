@@ -57,12 +57,12 @@ export default function Header() {
             aria-label="JerseyDrop — דף הבית"
           >
             <Image
-              src="/logo/logo-256.png"
+              src="/logo/logo-wordmark.png"
               alt="JerseyDrop"
-              width={256}
-              height={256}
+              width={400}
+              height={112}
               priority
-              className="h-9 w-auto md:h-10 lg:h-12"
+              className="h-10 w-auto md:h-12 lg:h-14"
             />
           </Link>
           <MegaMenu counts={counts} topTeamsByLeague={topTeamsByLeague} />
