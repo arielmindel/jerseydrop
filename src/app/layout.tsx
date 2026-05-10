@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrustBar from "@/components/layout/TrustBar";
 import CantFindCTA from "@/components/layout/CantFindCTA";
+import AccessibilityMenu from "@/components/layout/AccessibilityMenu";
 import { Toaster } from "sonner";
 import MarqueeBanner from "@/components/layout/MarqueeBanner";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
@@ -148,6 +149,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <WhatsAppFloat />
+        <AccessibilityMenu />
         <Toaster
           richColors
           position="top-center"
