@@ -4,31 +4,40 @@ import { Instagram, MessageCircle } from "lucide-react";
 import { whatsappLink } from "@/lib/constants";
 
 /**
- * Minimal three-column footer for JerseyDrop.
+ * 4-column premium footer.
  *
- * COL 1 — brand block: logo + tagline + social icons (Instagram, TikTok, WhatsApp)
- * COL 2 — quick navigation links
- * COL 3 — legal links
+ * COL 1 — brand block: logo + tagline + Instagram / TikTok / WhatsApp
+ * COL 2 — ניווט מהיר (catalog navigation)
+ * COL 3 — מידע ושירות (info + support)
+ * COL 4 — משפטי (legal pages)
  *
- * Bottom bar: copyright + payment-method badges (Visa, Mastercard, Bit, PayPal).
+ * Bottom bar: copyright + payment-method badges.
  *
- * Mobile: stacks vertically with bigger tap targets (min h-11) and 16px text.
- * Safe-area inset for iOS notch on the bottom bar.
+ * Mobile: stacks vertically with bigger tap targets and 16px text.
+ * Safe-area inset for iOS notched devices on the bottom bar.
  */
 
-const QUICK_LINKS: { href: string; labelHe: string }[] = [
+const NAV_LINKS: { href: string; labelHe: string }[] = [
+  { href: "/products", labelHe: "כל החולצות" },
   { href: "/products?category=club", labelHe: "חולצות מועדונים" },
   { href: "/products?category=national", labelHe: "חולצות נבחרות" },
   { href: "/retro", labelHe: "רטרו" },
   { href: "/collections/special", labelHe: "מיוחדות" },
+  { href: "/kids", labelHe: "ילדים" },
+];
+
+const INFO_LINKS: { href: string; labelHe: string }[] = [
+  { href: "/about", labelHe: "אודותינו" },
+  { href: "/shipping", labelHe: "מדיניות משלוחים" },
+  { href: "/returns", labelHe: "מדיניות החזרות" },
   { href: "/contact", labelHe: "צור קשר" },
+  { href: "/faq", labelHe: "שאלות נפוצות" },
 ];
 
 const LEGAL_LINKS: { href: string; labelHe: string }[] = [
-  { href: "/contact", labelHe: "מדיניות החזרות" },
   { href: "/terms", labelHe: "תנאי שימוש" },
   { href: "/privacy", labelHe: "מדיניות פרטיות" },
-  { href: "/terms", labelHe: "תקנון אתר" },
+  { href: "/policy", labelHe: "תקנון אתר" },
 ];
 
 // TikTok glyph as inline SVG — Lucide doesn't ship a TikTok icon yet.
@@ -45,17 +54,44 @@ function TikTokIcon({ className }: { className?: string }) {
   );
 }
 
+function FooterLinks({
+  heading,
+  links,
+}: {
+  heading: string;
+  links: { href: string; labelHe: string }[];
+}) {
+  return (
+    <div>
+      <h4 className="mb-5 font-display text-overline font-bold uppercase tracking-[0.18em] text-[#00FF88]">
+        {heading}
+      </h4>
+      <ul className="space-y-3 text-base">
+        {links.map((l) => (
+          <li key={`${heading}-${l.labelHe}`}>
+            <Link
+              href={l.href}
+              className="inline-flex h-8 items-center text-white/80 transition-colors duration-150 hover:text-[#00FF88]"
+            >
+              {l.labelHe}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 bg-black/95 text-white/80">
-      {/* Top hairline accent — keeps the visual link with the header */}
+    <footer className="relative overflow-hidden border-t border-white/10 bg-black/95 text-white/80 backdrop-blur">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
       />
 
-      <div className="container relative grid gap-8 py-12 md:grid-cols-2 md:gap-8 md:py-14 lg:grid-cols-3 lg:gap-12 lg:py-16">
-        {/* ============ COL 1 — BRAND ============ */}
+      <div className="container relative grid gap-10 py-12 md:grid-cols-2 md:gap-10 md:py-16 lg:grid-cols-4 lg:gap-8">
+        {/* COL 1 — BRAND */}
         <div className="space-y-5">
           <Link href="/" aria-label="JerseyDrop — דף הבית" className="inline-block">
             <Image
@@ -63,11 +99,11 @@ export default function Footer() {
               alt="JerseyDrop"
               width={256}
               height={256}
-              className="h-14 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
           <p className="max-w-xs text-base leading-relaxed text-white/70">
-            חולצות כדורגל אותנטיות, ישר אליך.
+            חולצות כדורגל אותנטיות, ישר אליך
           </p>
           <div className="flex gap-2 pt-1">
             <a
@@ -98,46 +134,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* ============ COL 2 — QUICK NAV ============ */}
-        <div>
-          <h4 className="mb-5 font-display text-overline font-bold uppercase tracking-[0.18em] text-[#00FF88]">
-            ניווט מהיר
-          </h4>
-          <ul className="space-y-3 text-base">
-            {QUICK_LINKS.map((l) => (
-              <li key={l.labelHe}>
-                <Link
-                  href={l.href}
-                  className="inline-flex h-8 items-center text-white/80 transition-colors duration-150 hover:text-[#00FF88]"
-                >
-                  {l.labelHe}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* ============ COL 3 — LEGAL ============ */}
-        <div>
-          <h4 className="mb-5 font-display text-overline font-bold uppercase tracking-[0.18em] text-[#00FF88]">
-            מידע
-          </h4>
-          <ul className="space-y-3 text-base">
-            {LEGAL_LINKS.map((l) => (
-              <li key={l.labelHe}>
-                <Link
-                  href={l.href}
-                  className="inline-flex h-8 items-center text-white/80 transition-colors duration-150 hover:text-[#00FF88]"
-                >
-                  {l.labelHe}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <FooterLinks heading="ניווט מהיר" links={NAV_LINKS} />
+        <FooterLinks heading="מידע ושירות" links={INFO_LINKS} />
+        <FooterLinks heading="משפטי" links={LEGAL_LINKS} />
       </div>
 
-      {/* ============ BOTTOM BAR ============ */}
       <div className="border-t border-white/10">
         <div className="container flex flex-col items-center justify-between gap-4 py-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] text-xs text-white/55 md:flex-row md:py-5 md:text-sm">
           <span>© 2026 JerseyDrop. כל הזכויות שמורות.</span>
