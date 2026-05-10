@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { whatsappLink } from "@/lib/constants";
 
@@ -8,11 +9,57 @@ const DEFAULT_MESSAGE = "היי, יש לי שאלה לגבי JerseyDrop";
 /**
  * Floating WhatsApp call-to-action — fixed bottom-left visually (start in
  * RTL terms), 56×56 round button with the official WhatsApp green and a
- * gentle 4-second pulse. Hidden on /checkout because the page is for
- * payment focus.
+ * gentle 4-second pulse.
+ *
+ * Hidden on /checkout (payment focus).
+ *
+ * Hidden on portrait devices while the Hero section is on-screen so it
+ * doesn't compete with the green "קנה עכשיו" CTA. Reappears once the
+ * user scrolls past the hero. Always visible on landscape (desktop).
  */
 export default function WhatsAppFloat() {
   const pathname = usePathname();
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    if (pathname !== "/") return; // hero only lives on the homepage
+    const portraitMql = window.matchMedia("(orientation: portrait)");
+    let observer: IntersectionObserver | null = null;
+
+    const wireObserver = () => {
+      const hero = document.querySelector("section[aria-label='Hero']");
+      if (!hero) return;
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            // Only hide while we're in portrait orientation.
+            const inPortrait = portraitMql.matches;
+            setHidden(entry.isIntersecting && inPortrait);
+          }
+        },
+        { threshold: 0.05 },
+      );
+      observer.observe(hero);
+    };
+
+    // Defer one tick so the Hero is mounted by the time we query.
+    const id = window.setTimeout(wireObserver, 50);
+
+    // If the orientation flips (e.g. user rotates device), recompute by
+    // re-observing.
+    const onOrientationChange = () => {
+      observer?.disconnect();
+      wireObserver();
+    };
+    portraitMql.addEventListener("change", onOrientationChange);
+
+    return () => {
+      window.clearTimeout(id);
+      observer?.disconnect();
+      portraitMql.removeEventListener("change", onOrientationChange);
+    };
+  }, [pathname]);
+
   if (pathname.startsWith("/checkout")) return null;
 
   return (
@@ -21,9 +68,12 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="צ'אט בוואטסאפ"
-      className="group fixed bottom-6 start-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-[0_8px_28px_rgba(37,211,102,0.45)] transition-all duration-200 hover:scale-105 hover:shadow-[0_12px_36px_rgba(37,211,102,0.55)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+      aria-hidden={hidden}
+      className={`group fixed bottom-6 start-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-[0_8px_28px_rgba(37,211,102,0.45)] transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_36px_rgba(37,211,102,0.55)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
+        hidden ? "pointer-events-none translate-y-4 opacity-0" : "opacity-100"
+      }`}
       style={{
-        animation: "wa-pulse 4s ease-in-out infinite",
+        animation: hidden ? undefined : "wa-pulse 4s ease-in-out infinite",
       }}
     >
       {/* WhatsApp glyph — official lockup */}

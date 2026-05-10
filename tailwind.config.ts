@@ -15,6 +15,12 @@ const config: Config = {
       screens: { "2xl": "1280px" },
     },
     extend: {
+      // Orientation-based variants — used by the universal Hero so the
+      // right video set (vertical/horizontal) shows on each device.
+      screens: {
+        portrait: { raw: "(orientation: portrait)" },
+        landscape: { raw: "(orientation: landscape)" },
+      },
       colors: {
         // Refresh: navy-charcoal with subtle blue undertone instead of pure
         // black. Reads as "premium dark" rather than "void". Surface +
