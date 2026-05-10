@@ -114,7 +114,7 @@ export default function MobileMenu() {
                   <li>
                     <SheetClose asChild>
                       <Link
-                        href="/leagues"
+                        href="/#leagues"
                         className="flex items-center rounded-lg px-3 py-2 text-sm font-semibold text-accent"
                       >
                         כל הליגות ←

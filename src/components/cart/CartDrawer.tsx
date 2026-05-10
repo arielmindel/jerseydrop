@@ -90,7 +90,7 @@ export default function CartDrawer() {
                 className="mt-3"
                 onClick={() => setOpen(false)}
               >
-                <Link href="/leagues">לקטלוג הליגות ←</Link>
+                <Link href="/#leagues">לקטלוג הליגות ←</Link>
               </Button>
             </div>
           </div>

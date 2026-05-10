@@ -39,7 +39,7 @@ export default function LeaguePage({ params }: Props) {
         <div className="container relative section-y-tight">
           <nav className="mb-4 flex items-center gap-1 text-caption text-muted">
             <Link
-              href="/leagues"
+              href="/#leagues"
               className="inline-flex items-center gap-1 transition-colors duration-base hover:text-foreground"
             >
               <ChevronLeft className="h-3.5 w-3.5" />

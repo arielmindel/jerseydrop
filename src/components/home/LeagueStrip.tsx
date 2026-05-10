@@ -15,7 +15,7 @@ export default function LeagueStrip() {
           </h2>
         </div>
         <Link
-          href="/leagues"
+          href="/#leagues"
           className="font-display text-xs font-bold uppercase tracking-widest text-accent hover:underline"
         >
           הכל ←

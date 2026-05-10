@@ -96,7 +96,7 @@ export default function HeroVideo() {
 
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
             <Link
-              href="/leagues"
+              href="/#leagues"
               className="group inline-flex h-14 items-center justify-center gap-2 rounded-full bg-accent px-8 font-display text-sm font-bold uppercase tracking-wide text-accent-foreground shadow-glow transition-all duration-300 hover:-translate-y-0.5"
             >
               לקטלוג הליגות

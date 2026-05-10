@@ -42,7 +42,7 @@ export default function CartPage() {
           אין לכם פריטים בסל. כנסו לקולקציה ותמצאו את החולצה שלכם.
         </p>
         <Button asChild>
-          <Link href="/leagues">לקטלוג הליגות ←</Link>
+          <Link href="/#leagues">לקטלוג הליגות ←</Link>
         </Button>
       </div>
     );
@@ -127,7 +127,7 @@ export default function CartPage() {
           ))}
         </ul>
         <Button asChild variant="ghost" size="sm">
-          <Link href="/leagues">← המשך בקניות</Link>
+          <Link href="/#leagues">← המשך בקניות</Link>
         </Button>
       </div>
 

@@ -20,7 +20,7 @@ export default function FeaturedGrid() {
           </p>
         </div>
         <Link
-          href="/leagues"
+          href="/#leagues"
           className="hidden items-center gap-1.5 font-display text-caption font-bold uppercase tracking-[0.18em] text-accent transition-all duration-base ease-emphasized hover:gap-2.5 hover:underline hover:underline-offset-4 md:inline-flex"
         >
           לקטלוג הליגות
@@ -38,7 +38,7 @@ export default function FeaturedGrid() {
 
       <div className="mt-8 flex md:hidden">
         <Link
-          href="/leagues"
+          href="/#leagues"
           className="inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-border bg-surface py-3 font-display text-caption font-bold uppercase tracking-[0.18em] text-accent transition-all duration-base hover:border-accent/60 hover:bg-surface-2"
         >
           לקטלוג הליגות <ArrowLeft className="h-3.5 w-3.5" />

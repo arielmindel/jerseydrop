@@ -186,7 +186,7 @@ export default function WhyJerseydrop() {
           className="mt-12 text-center md:mt-16"
         >
           <Link
-            href="/leagues"
+            href="/#leagues"
             className="inline-flex items-center gap-2 rounded-full bg-[#00FF88] px-10 py-4 font-display text-lg font-bold uppercase tracking-wide text-black shadow-[0_18px_50px_-10px_rgba(0,255,136,0.55)] transition-transform duration-200 hover:scale-105 active:scale-95 md:text-xl"
           >
             התחל לקנות עכשיו

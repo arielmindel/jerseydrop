@@ -21,7 +21,7 @@ export default function NotFound() {
           <Link href="/">לעמוד הבית ←</Link>
         </Button>
         <Button asChild variant="outline">
-          <Link href="/leagues">לקטלוג הליגות</Link>
+          <Link href="/#leagues">לקטלוג הליגות</Link>
         </Button>
       </div>
     </section>

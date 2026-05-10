@@ -102,7 +102,7 @@ export default function MegaMenu({
               })}
               <NavigationMenuLink asChild>
                 <Link
-                  href="/leagues"
+                  href="/#leagues"
                   className="col-span-2 mt-1 inline-flex items-center justify-center gap-2 rounded-full bg-accent/10 py-2 font-display text-xs font-bold uppercase tracking-widest text-accent transition-colors hover:bg-accent/20"
                 >
                   כל הליגות <ArrowLeft className="h-3.5 w-3.5" />
