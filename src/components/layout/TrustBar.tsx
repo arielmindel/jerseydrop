@@ -9,7 +9,7 @@ import { Truck, Shield, RotateCw, Lock } from "lucide-react";
 const PILLARS = [
   {
     Icon: Truck,
-    title: "משלוח 10-15 ימים",
+    title: "משלוח 10-17 ימים",
     sub: "ישר מהיצרן",
   },
   {

@@ -391,7 +391,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
               {[
                 {
                   Icon: Truck,
-                  title: "משלוח 10-15 ימים",
+                  title: "משלוח 10-17 ימים",
                   sub: "ישר מהיצרן",
                 },
                 {

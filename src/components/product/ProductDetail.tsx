@@ -187,7 +187,7 @@ export default function ProductDetail({ product }: { product: Product }) {
       return { text: "אחרונים במלאי", tone: "destructive" as const };
     if (product.stock === "preorder")
       return { text: "הזמנה מוקדמת", tone: "gold" as const };
-    return { text: "במלאי · משלוח 10-15 ימי עסקים", tone: "accent" as const };
+    return { text: "במלאי · משלוח 10-17 ימי עסקים", tone: "accent" as const };
   }, [product.stock]);
 
   return (

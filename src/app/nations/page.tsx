@@ -120,7 +120,7 @@ export default function NationsPage() {
               <span className="text-accent">מונדיאל 2026</span>
             </h1>
             <p className="mt-4 max-w-xl text-sm text-muted md:text-base">
-              המונדיאל נפתח ב-11 ביוני 2026. הזמינו את החולצות עכשיו — 10-15 ימי עסקים, מגיעות ישר אליכם בזמן.
+              המונדיאל נפתח ב-11 ביוני 2026. הזמינו את החולצות עכשיו — 10-17 ימי עסקים, מגיעות ישר אליכם בזמן.
             </p>
           </div>
           <WorldCupCountdown />

@@ -171,7 +171,7 @@ export const SHIPPING = {
   // the supplier quotes in business days.
   freeThreshold: 200,
   standardFee: 25,
-  leadTimeDays: "10-15",
+  leadTimeDays: "10-17",
 };
 
 // V7 — customization (name + number, official patches) is FREE on every
