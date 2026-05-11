@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, type FormEvent } from "react";
+import { useState, useEffect, useRef, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useCart, computeTotals, lineTotal } from "@/lib/cart";
+import { trackBeginCheckout, trackPurchase } from "@/lib/gtag";
 import CartItemDetails from "@/components/cart/CartItemDetails";
 import { SHIPPING } from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
@@ -23,6 +24,23 @@ export default function CheckoutForm() {
   const items = useCart((s) => s.items);
   const clear = useCart((s) => s.clear);
   const { subtotal, count, shipping, total } = computeTotals(items);
+
+  // GA4 begin_checkout — fires once after hydration when the cart has items
+  const beganCheckoutRef = useRef(false);
+  useEffect(() => {
+    if (!mounted || beganCheckoutRef.current || items.length === 0) return;
+    beganCheckoutRef.current = true;
+    trackBeginCheckout(
+      items.map((i) => ({
+        slug: i.slug,
+        nameHe: i.nameHe,
+        team: i.team,
+        price: i.unitPrice,
+        quantity: i.quantity,
+      })),
+      total,
+    );
+  }, [mounted, items, total]);
 
   const [payment, setPayment] = useState<PaymentMethod>("card");
   const [submitting, setSubmitting] = useState(false);
@@ -72,6 +90,18 @@ export default function CheckoutForm() {
       });
       if (!res.ok) throw new Error("order-failed");
       const data = (await res.json()) as { orderNumber: string };
+      // GA4 purchase — track BEFORE clearing the cart (we need items + total)
+      trackPurchase(
+        data.orderNumber,
+        items.map((i) => ({
+          slug: i.slug,
+          nameHe: i.nameHe,
+          team: i.team,
+          price: i.unitPrice,
+          quantity: i.quantity,
+        })),
+        total,
+      );
       clear();
       router.push(`/checkout/success?order=${encodeURIComponent(data.orderNumber)}`);
     } catch (err) {

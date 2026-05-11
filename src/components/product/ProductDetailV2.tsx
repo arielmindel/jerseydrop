@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import { trackAddToCart, trackViewItem } from "@/lib/gtag";
 import {
   Check,
   ChevronDown,
@@ -59,6 +60,17 @@ export default function ProductDetailV2({ product }: { product: Product }) {
   const descParagraphs = descriptionParagraphs(product.description);
   const longDescription = descParagraphs.join(" ").length > 280;
 
+  // GA4 view_item — fires once when the product detail mounts
+  useEffect(() => {
+    trackViewItem({
+      slug: product.slug,
+      nameHe: product.nameHe,
+      category: product.category,
+      team: product.team,
+      price: basePrice,
+    });
+  }, [product.slug, product.nameHe, product.category, product.team, basePrice]);
+
   const addToCart = (buyNow = false) => {
     if (!size) {
       toast.error("יש לבחור מידה לפני הוספה לסל");
@@ -88,6 +100,17 @@ export default function ProductDetailV2({ product }: { product: Product }) {
       selectedPatchId,
       customerNotes: null,
     });
+    // GA4 add_to_cart
+    trackAddToCart(
+      {
+        slug: product.slug,
+        nameHe: product.nameHe,
+        category: product.category,
+        team: product.team,
+        price: totalPrice,
+      },
+      1,
+    );
     toast.success("נוסף לסל!", {
       description: `${product.team || product.nameHe} · מידה ${size}${cust ? ` · ${cust.name} #${cust.number}` : ""}`,
     });
