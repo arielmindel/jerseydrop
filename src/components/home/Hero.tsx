@@ -39,6 +39,8 @@ const VERTICAL = [
   "/videos/heroes/mobile/zidane-france-vertical.mp4",
   "/videos/heroes/mobile/messi-argentina-vertical.mp4",
   "/videos/heroes/mobile/maradona-argentina-vertical.mp4",
+  "/videos/heroes/mobile/ronaldo-portugal-vertical.mp4",
+  "/videos/heroes/mobile/pele-brazil-vertical.mp4",
 ];
 
 const CYCLE_MS = 7000; // dwell per clip
