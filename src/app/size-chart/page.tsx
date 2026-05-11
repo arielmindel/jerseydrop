@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/layout/LegalPage";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "טבלת מידות | JerseyDrop",
@@ -47,8 +48,45 @@ function Td({ children }: { children: React.ReactNode }) {
 }
 
 export default function SizeChartPage() {
+  // HowTo JSON-LD — Google + AI engines extract these as
+  // "how to measure a jersey" answers in instant results.
+  const howToLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "איך לבחור מידת חולצת כדורגל נכונה",
+    description:
+      "מדריך מקצועי לבחירת מידת חולצת כדורגל לפי מדידות גוף בסנטימטרים.",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "מדידת היקף החזה",
+        text: "מדוד את היקף הגוף בנקודה הרחבה ביותר מתחת לבית השחי, מסביב לכתפיים, עם סרט מדידה הצמוד לגוף אך לא מתוח.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "מדידת אורך החולצה",
+        text: "מדוד מהקצה של הצווארון מאחור עד התחתית של החולצה.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "השוואה לטבלת המידות",
+        text: "השווה את המידות בסנטימטרים לטבלת המבוגרים (S–XXL) או הילדים (16–28).",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "בחירה בין שתי מידות",
+        text: "אם אתה בין שתי מידות — קח את הגדולה. המידות הן מידות בד, לא מידות גוף.",
+      },
+    ],
+  };
+
   return (
     <LegalPage title="טבלת מידות">
+      <JsonLd data={howToLd} />
       <p>
         הטבלאות הבאות מציגות את המידות המדויקות של החולצות שלנו{" "}
         <strong>בסנטימטרים</strong>. אם אתה בין שתי מידות — אנחנו ממליצים

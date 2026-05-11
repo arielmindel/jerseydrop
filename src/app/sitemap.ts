@@ -16,7 +16,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kids`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE}/shipping`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE}/returns`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE}/size-guide`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
+    { url: `${BASE}/size-chart`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
+    { url: `${BASE}/care-instructions`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
+    { url: `${BASE}/track-order`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${BASE}/accessibility`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE}/collections/special`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${BASE}/collections/surprise`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${BASE}/collections/long-sleeve`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${BASE}/collections/retro-90s`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
   ];
 
   const leagueRoutes: MetadataRoute.Sitemap = LEAGUES.map((l) => ({

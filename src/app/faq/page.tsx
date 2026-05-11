@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import LegalPage from "@/components/layout/LegalPage";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "שאלות נפוצות | JerseyDrop",
@@ -68,8 +69,25 @@ const QUESTIONS: { id: string; q: string; a: string }[] = [
 ];
 
 export default function FAQPage() {
+  // FAQPage JSON-LD — what powers AEO citations on ChatGPT / Perplexity /
+  // Google AI Overviews. Each Q+A becomes an independently citable answer
+  // that AI engines can lift into responses with attribution.
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: QUESTIONS.map((q) => ({
+      "@type": "Question",
+      name: q.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: q.a,
+      },
+    })),
+  };
+
   return (
     <LegalPage title="שאלות נפוצות">
+      <JsonLd data={faqLd} />
       <p>
         כל מה שצריך לדעת לפני שמזמינים. אם השאלה שלך לא פה — שלחו לנו הודעה
         ב-WhatsApp או למייל.

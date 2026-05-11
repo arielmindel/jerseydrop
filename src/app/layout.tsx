@@ -38,11 +38,11 @@ const oswald = Oswald({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "JerseyDrop — חולצות כדורגל רשמיות | מונדיאל 2026",
+    default: "JerseyDrop — חולצות כדורגל אותנטיות | מועדונים, נבחרות, רטרו",
     template: "%s | JerseyDrop",
   },
   description:
-    "חולצות רשמיות לנבחרות ולמועדונים. גרסת Fan ו-Player, התאמה אישית של שם ומספר, משלוח לכל הארץ.",
+    "חנות חולצות כדורגל מקוונת בישראל. 1,600+ חולצות מקוריות של כל המועדונים והנבחרות בעולם. שם, מספר ופאצ׳ים — חינם. משלוח 10-17 ימים מהיצרן.",
   keywords: [
     "חולצות כדורגל",
     "מונדיאל 2026",
@@ -78,8 +78,26 @@ export const metadata: Metadata = {
   },
   // Canonical here applies only to the homepage. Other pages override
   // via their own generateMetadata().
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: {
+      he: "/",
+      "he-IL": "/",
+      "x-default": "/",
+    },
+  },
+  applicationName: "JerseyDrop",
+  authors: [{ name: "JerseyDrop" }],
+  referrer: "origin-when-cross-origin",
   manifest: "/manifest.json",
+  // Google Search Console / Bing Webmaster verification slots —
+  // fill in the meta-tag values when the property is verified.
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
+    other: process.env.NEXT_PUBLIC_BING_VERIFICATION
+      ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION }
+      : undefined,
+  },
   icons: {
     icon: [
       { url: "/logo/favicon-16.png", type: "image/png", sizes: "16x16" },
