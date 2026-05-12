@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
  *
  * photo.yupoo.com hot-link-protects its CDN — it only serves images when the
  * request carries a Referer from a *.yupoo.com page. Browsers loading our
- * pages send Referer: jerseydrop.vercel.app, so direct <img src> requests
+ * pages send Referer: jerseydrop.co.il, so direct <img src> requests
  * come back as 403 broken icons.
  *
  * This route fetches the upstream image server-side with the correct Referer

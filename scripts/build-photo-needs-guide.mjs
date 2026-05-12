@@ -67,7 +67,7 @@ function imgUrl(p) {
   const candidate = original || (p.images && p.images[0]);
   if (!candidate) return "";
   if (candidate.startsWith("/api/yupoo-image") || candidate.startsWith("/")) {
-    return `https://jerseydrop.vercel.app${candidate}`;
+    return `https://jerseydrop.co.il${candidate}`;
   }
   return candidate;
 }
