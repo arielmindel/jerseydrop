@@ -112,7 +112,7 @@ export function normalizeSeason(s: string | null | undefined): string | null {
  * Look up the UEFA competition (if any) a given team participated in during
  * a specific normalized season. Returns the competition key or null.
  */
-function findCompetitionForTeam(
+function findCompetitionInSeason(
   teamSlug: string,
   normalizedSeason: string,
 ): Competition | null {
@@ -133,6 +133,39 @@ function findCompetitionForTeam(
     if (list && list.includes(teamSlug)) return comp;
   }
   return null;
+}
+
+/**
+ * Resolve all candidate normalized seasons for a raw catalog value.
+ *  - "2024-25"      → ["2024-25"]
+ *  - "0910"         → ["2009-10"]
+ *  - "2096-97"      → ["1996-97"]   (corrupted mass-rename)
+ *  - "2007" (retro) → ["2006-07", "2007-08"]  (ambiguous start-vs-end year)
+ *  - "1986" / "1990" / "1994" / "1998" etc. — still ambiguous, but for
+ *    pre-1992 we don't have data so both candidates will simply miss.
+ *  - null / unparseable → []
+ *
+ * The patch resolver UNIONs competition memberships across all candidates,
+ * so a "2007 Manchester United" jersey gets UCL even if the buyer doesn't
+ * know whether their shirt is from the 06-07 or 07-08 season.
+ */
+function candidateSeasons(raw: string | null | undefined): string[] {
+  const single = normalizeSeason(raw);
+  if (single) return [single];
+  if (!raw) return [];
+  const t = String(raw).trim();
+  const year = t.match(/^(\d{4})$/);
+  if (year) {
+    const y = parseInt(year[1], 10);
+    if (y >= 1950 && y <= 2030) {
+      const yyEnd = String((y + 1) % 100).padStart(2, "0");
+      const yyStart = String(y % 100).padStart(2, "0");
+      // Try BOTH conventions: "YYYY" → "YYYY-(YY+1)" (start year, common
+      // European convention) and "YYYY" → "(YYYY-1)-YY" (end year).
+      return [`${y}-${yyEnd}`, `${y - 1}-${yyStart}`];
+    }
+  }
+  return [];
 }
 
 /**
@@ -167,16 +200,19 @@ export function getAvailablePatches(product: Product): Patch[] {
   const domesticId = CONFIG.teamLeague[slug];
   const domestic = domesticId ? patchById(domesticId) : null;
 
-  const season = normalizeSeason(product.season);
-  if (season) {
-    const comp = findCompetitionForTeam(slug, season);
-    if (comp) {
-      const compPatch = patchById(COMPETITION_TO_PATCH[comp]);
-      if (compPatch) {
-        patches.push(compPatch);
-        if (domestic) patches.push(domestic);
-        return patches;
-      }
+  // Try every candidate season this raw string could legitimately mean.
+  // First match wins (priority order inside findCompetitionInSeason).
+  let comp: Competition | null = null;
+  for (const season of candidateSeasons(product.season)) {
+    comp = findCompetitionInSeason(slug, season);
+    if (comp) break;
+  }
+  if (comp) {
+    const compPatch = patchById(COMPETITION_TO_PATCH[comp]);
+    if (compPatch) {
+      patches.push(compPatch);
+      if (domestic) patches.push(domestic);
+      return patches;
     }
   }
 

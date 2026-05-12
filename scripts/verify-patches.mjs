@@ -68,6 +68,23 @@ function findCompetitionForTeam(slug, season) {
   return null;
 }
 
+function candidateSeasons(raw) {
+  const single = normalizeSeason(raw);
+  if (single) return [single];
+  if (!raw) return [];
+  const t = String(raw).trim();
+  const year = t.match(/^(\d{4})$/);
+  if (year) {
+    const y = parseInt(year[1], 10);
+    if (y >= 1950 && y <= 2030) {
+      const yyEnd = String((y + 1) % 100).padStart(2, "0");
+      const yyStart = String(y % 100).padStart(2, "0");
+      return [`${y}-${yyEnd}`, `${y - 1}-${yyStart}`];
+    }
+  }
+  return [];
+}
+
 function getAvailablePatches(product) {
   const ids = ["none"];
   if (product.category === "national") {
@@ -79,14 +96,15 @@ function getAvailablePatches(product) {
     return ids;
   }
   const domesticId = CONFIG.teamLeague[product.teamSlug];
-  const season = normalizeSeason(product.season);
-  if (season) {
-    const comp = findCompetitionForTeam(product.teamSlug, season);
-    if (comp) {
-      ids.push(COMPETITION_TO_PATCH[comp]);
-      if (domesticId) ids.push(domesticId);
-      return ids;
-    }
+  let comp = null;
+  for (const season of candidateSeasons(product.season)) {
+    comp = findCompetitionForTeam(product.teamSlug, season);
+    if (comp) break;
+  }
+  if (comp) {
+    ids.push(COMPETITION_TO_PATCH[comp]);
+    if (domesticId) ids.push(domesticId);
+    return ids;
   }
   if (domesticId) ids.push(domesticId);
   return ids;

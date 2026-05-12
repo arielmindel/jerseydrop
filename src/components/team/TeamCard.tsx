@@ -2,19 +2,21 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { BLUR_DATA_URL } from "@/lib/image-placeholder";
-import { TEAM_COLORS } from "@/lib/teams";
 
 /**
  * Drill-down card for a single team. Top 75% is the team's representative
- * jersey image, bottom 25% is a brand-coloured ribbon with the team name +
+ * jersey image, bottom 25% is the brand-green ribbon with the team name +
  * product count. Hover lifts + neon-green glow.
+ *
+ * The ribbon colour is intentionally uniform (brand accent green) across
+ * every team — earlier per-team palette had several teams with white
+ * ribbons that rendered the name invisible against the page background.
  *
  * The `to` prop lets the caller send users to /teams/{slug} (clubs) or to
  * /nations/{slug} (national teams) — same card, two destinations.
  */
 export default function TeamCard({
   to,
-  slug,
   name,
   productCount,
   image,
@@ -25,11 +27,6 @@ export default function TeamCard({
   productCount: number;
   image: string | null;
 }) {
-  const colors = TEAM_COLORS[slug] || {
-    bg: "bg-accent",
-    fg: "text-background",
-  };
-
   return (
     <Link
       href={to}
@@ -58,9 +55,9 @@ export default function TeamCard({
         />
       </div>
 
-      {/* Bottom 25%: brand-coloured ribbon */}
+      {/* Bottom 25%: uniform brand-green ribbon */}
       <div
-        className={`absolute inset-x-0 bottom-0 flex h-1/4 items-center justify-between gap-2 px-4 ${colors.bg} ${colors.fg}`}
+        className="absolute inset-x-0 bottom-0 flex h-1/4 items-center justify-between gap-2 bg-accent px-4 text-background"
       >
         <div className="flex flex-col leading-tight">
           <span className="font-display text-h3 font-black uppercase leading-none tracking-tight">
