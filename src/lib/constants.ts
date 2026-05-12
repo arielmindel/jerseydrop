@@ -101,11 +101,11 @@ export function whatsappLink(message?: string): string {
 }
 
 // Public site URL — used for canonical links, OG image, sitemap, JSON-LD.
-// Set NEXT_PUBLIC_SITE_URL in Vercel env vars when the custom domain is wired
-// up. Until then we fall back to the Vercel preview URL so social previews
-// and structured data point at a domain that actually resolves.
+// Custom domain jerseydrop.co.il is the canonical home. Env var override
+// (NEXT_PUBLIC_SITE_URL) is honored so preview deploys can point at the
+// Vercel-generated preview URL when needed.
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://jerseydrop.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://jerseydrop.co.il";
 
 export type NationInfo = {
   slug: string;
