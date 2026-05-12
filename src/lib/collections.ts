@@ -1,10 +1,8 @@
-import patchesConfig from "@catalog/patches-config.json";
 import { getAllProducts } from "./products";
+import { getCurrentUclTeams } from "./patches";
 import type { Product } from "./types";
 
-const UCL_TEAMS = new Set(
-  (patchesConfig as { championsLeague25_26: string[] }).championsLeague25_26,
-);
+const UCL_TEAMS = new Set(getCurrentUclTeams());
 
 export type CollectionId =
   | "world-cup-2026"

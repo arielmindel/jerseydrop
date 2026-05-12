@@ -1,21 +1,45 @@
 {
-  "_comment": "Champions League / Europa League / Domestic patches per team. Updated for 2025-26 season — verify before launch.",
+  "_comment": "Dynamic season-based UEFA patches. competitions[season] lists catalog teamSlugs that participated in each competition's group stage / round of 32 minimum. Cup Winners' Cup runs 1992-93 to 1998-99; Europa League replaced UEFA Cup in 2009-10; Conference League began 2021-22.",
   "patches": {
-    "champions-league-25-26": {
-      "id": "champions-league-25-26",
+    "champions-league": {
+      "id": "champions-league",
       "nameHe": "ליגת האלופות",
       "nameEn": "Champions League",
       "iconUrl": "/images/patches/champions-league.svg",
       "price": 0,
-      "description": "פאצ' רשמי של ליגת האלופות 2025-26"
+      "description": "פאצ' רשמי של ליגת האלופות"
     },
-    "europa-league-25-26": {
-      "id": "europa-league-25-26",
+    "europa-league": {
+      "id": "europa-league",
       "nameHe": "ליגה האירופית",
       "nameEn": "Europa League",
       "iconUrl": "/images/patches/europa-league.svg",
       "price": 0,
-      "description": "פאצ' רשמי של ליגה האירופית 2025-26"
+      "description": "פאצ' רשמי של ליגה האירופית"
+    },
+    "uefa-cup": {
+      "id": "uefa-cup",
+      "nameHe": "גביע אופ\"א",
+      "nameEn": "UEFA Cup",
+      "iconUrl": "/images/patches/europa-league.svg",
+      "price": 0,
+      "description": "פאצ' רשמי של גביע אופ\"א (קדם ליגה האירופית)"
+    },
+    "cup-winners-cup": {
+      "id": "cup-winners-cup",
+      "nameHe": "גביע גביעי אירופה",
+      "nameEn": "Cup Winners' Cup",
+      "iconUrl": "/images/patches/champions-league.svg",
+      "price": 0,
+      "description": "פאצ' רשמי של גביע גביעי אירופה (1960-1999)"
+    },
+    "conference-league": {
+      "id": "conference-league",
+      "nameHe": "ליגת הקונפרנס",
+      "nameEn": "Conference League",
+      "iconUrl": "/images/patches/europa-league.svg",
+      "price": 0,
+      "description": "פאצ' רשמי של ליגת הקונפרנס האירופית"
     },
     "premier-league": {
       "id": "premier-league",
@@ -74,45 +98,156 @@
       "description": "פאצ' רשמי של ליגת העל הישראלית"
     }
   },
-  "_note": "championsLeague25_26 = teams currently in UCL group stage 25-26. Update each season.",
-  "championsLeague25_26": [
-    "real-madrid",
-    "barcelona",
-    "atletico-madrid",
-    "athletic-bilbao",
-    "manchester-city",
-    "liverpool",
-    "arsenal",
-    "aston-villa",
-    "inter-milan",
-    "ac-milan",
-    "juventus",
-    "atalanta",
-    "bologna",
-    "bayern-munich",
-    "borussia-dortmund",
-    "bayer-leverkusen",
-    "rb-leipzig",
-    "vfb-stuttgart",
-    "psg",
-    "monaco",
-    "brest",
-    "lille",
-    "benfica",
-    "sporting-lisbon",
-    "celtic"
-  ],
-  "_note2": "europaLeague25_26 = teams in UEL. For clubs in UCL we don't show UEL.",
-  "europaLeague25_26": [
-    "manchester-united",
-    "tottenham",
-    "chelsea",
-    "roma",
-    "lazio",
-    "ajax",
-    "rangers"
-  ],
-  "_note3": "Domestic league per team (used for fallback patch).",
+  "competitions": {
+    "1992-93": {
+      "ucl": ["ac-milan", "psv", "porto", "marseille"],
+      "uefaCup": ["juventus", "borussia-dortmund", "ajax", "real-madrid", "roma", "bayern-munich", "liverpool", "napoli", "real-sociedad", "celtic", "sporting-lisbon", "vfb-stuttgart"],
+      "cwc": ["parma", "atletico-madrid", "werder-bremen"]
+    },
+    "1993-94": {
+      "ucl": ["ac-milan", "werder-bremen", "porto", "barcelona", "galatasaray"],
+      "uefaCup": ["juventus", "borussia-dortmund", "inter-milan", "real-madrid", "napoli", "roma", "ajax", "bayern-munich", "vfb-stuttgart", "real-sociedad", "celtic", "sporting-lisbon", "athletic-bilbao"],
+      "cwc": ["parma", "arsenal", "real-madrid", "torino", "benfica"]
+    },
+    "1994-95": {
+      "ucl": ["ajax", "ac-milan", "barcelona", "manchester-united", "porto", "bayern-munich", "psg", "benfica", "galatasaray"],
+      "uefaCup": ["parma", "juventus", "borussia-dortmund", "real-madrid", "inter-milan", "napoli", "athletic-bilbao", "roma", "lazio", "fiorentina", "leeds", "celtic", "eintracht-frankfurt"],
+      "cwc": ["arsenal", "real-zaragoza", "chelsea", "sampdoria", "feyenoord", "panathinaikos", "auxerre"]
+    },
+    "1995-96": {
+      "ucl": ["ajax", "juventus", "real-madrid", "borussia-dortmund", "porto", "panathinaikos", "rangers"],
+      "uefaCup": ["bayern-munich", "borussia-monchengladbach", "barcelona", "ac-milan", "inter-milan", "lazio", "roma", "werder-bremen", "leeds", "nantes", "lens", "olympiakos", "celtic", "sevilla"],
+      "cwc": ["psg", "barcelona", "valencia", "feyenoord", "trabzonspor", "sporting-lisbon", "everton", "real-zaragoza"]
+    },
+    "1996-97": {
+      "ucl": ["juventus", "borussia-dortmund", "manchester-united", "ajax", "atletico-madrid", "porto", "fenerbahce", "galatasaray", "rosenborg"],
+      "uefaCup": ["schalke-04", "inter-milan", "valencia", "anderlecht", "tenerife", "monaco", "as-monaco", "feyenoord", "boavista", "bordeaux", "newcastle", "celtic", "aston-villa", "roma", "lazio", "celta-vigo"],
+      "cwc": ["barcelona", "psg", "liverpool", "fiorentina", "benfica", "lazio", "ac-milan"]
+    },
+    "1997-98": {
+      "ucl": ["real-madrid", "juventus", "borussia-dortmund", "manchester-united", "bayern-munich", "galatasaray", "feyenoord", "psv", "besiktas", "newcastle", "monaco", "porto", "rosenborg"],
+      "uefaCup": ["inter-milan", "lazio", "atletico-madrid", "ajax", "bayer-leverkusen", "schalke-04", "auxerre", "bordeaux", "valencia", "celtic", "anderlecht", "fiorentina", "udinese", "aston-villa", "liverpool"],
+      "cwc": ["chelsea", "vfb-stuttgart", "real-betis", "vicenza", "liverpool", "sporting-lisbon", "lokomotiv-moscow"]
+    },
+    "1998-99": {
+      "ucl": ["manchester-united", "bayern-munich", "real-madrid", "juventus", "inter-milan", "barcelona", "athletic-bilbao", "galatasaray", "arsenal", "besiktas", "ac-milan", "kaiserslautern", "panathinaikos", "olympiakos", "spartak-moscow", "lens", "rosenborg", "dynamo-kyiv", "croatia-zagreb", "porto", "brondby"],
+      "uefaCup": ["parma", "marseille", "roma", "liverpool", "atletico-madrid", "werder-bremen", "bordeaux", "bologna", "celta-vigo", "valencia", "real-sociedad", "fiorentina", "udinese", "vfb-stuttgart", "leeds", "celtic", "monaco"],
+      "cwc": ["lazio", "mallorca", "chelsea", "heerenveen", "anorthosis"]
+    },
+    "1999-00": {
+      "ucl": ["real-madrid", "valencia", "manchester-united", "bayern-munich", "barcelona", "porto", "lazio", "fiorentina", "ac-milan", "chelsea", "marseille", "psv", "rangers", "sparta-prague", "galatasaray", "dynamo-kyiv", "olympiakos", "rosenborg", "feyenoord", "borussia-dortmund", "bordeaux", "willem-ii", "hertha-bsc", "molde", "boavista", "spartak-moscow"],
+      "uefaCup": ["galatasaray", "arsenal", "leeds", "lens", "celta-vigo", "atletico-madrid", "roma", "parma", "juventus", "inter-milan", "ajax", "newcastle", "bologna", "udinese", "borussia-monchengladbach", "athletic-bilbao", "werder-bremen", "celtic"]
+    },
+    "2000-01": {
+      "ucl": ["bayern-munich", "valencia", "real-madrid", "manchester-united", "arsenal", "barcelona", "milan", "ac-milan", "juventus", "lazio", "roma", "porto", "sporting-lisbon", "galatasaray", "panathinaikos", "anderlecht", "rangers", "psg", "deportivo", "leeds", "lyon", "marseille", "spartak-moscow", "olympiakos", "shakhtar-donetsk", "rosenborg"],
+      "uefaCup": ["liverpool", "alaves", "porto", "kaiserslautern", "inter-milan", "parma", "udinese", "fiorentina", "barcelona", "celta-vigo", "rayo-vallecano", "atletico-madrid", "bordeaux", "ajax", "psv", "feyenoord", "werder-bremen", "vfb-stuttgart", "bayer-leverkusen", "borussia-dortmund", "chelsea", "leicester-city", "celtic", "rangers", "roma"]
+    },
+    "2001-02": {
+      "ucl": ["real-madrid", "bayer-leverkusen", "manchester-united", "barcelona", "deportivo", "juventus", "roma", "ac-milan", "borussia-dortmund", "bayern-munich", "liverpool", "arsenal", "porto", "boavista", "lazio", "valencia", "psv", "feyenoord", "panathinaikos", "lille", "galatasaray", "celtic", "fenerbahce", "anderlecht", "sparta-prague", "olympiakos"],
+      "uefaCup": ["feyenoord", "borussia-dortmund", "ac-milan", "inter-milan", "ajax", "parma", "valencia", "celtic", "rangers", "psv", "lens", "leeds", "porto", "fulham", "udinese", "fiorentina", "werder-bremen", "stuttgart", "bordeaux", "auxerre", "rapid-bucharest"]
+    },
+    "2002-03": {
+      "ucl": ["ac-milan", "juventus", "inter-milan", "real-madrid", "valencia", "manchester-united", "barcelona", "deportivo", "bayer-leverkusen", "borussia-dortmund", "bayern-munich", "arsenal", "newcastle", "porto", "ajax", "psv", "rosenborg", "galatasaray", "feyenoord", "roma", "olympiakos", "lokomotiv-moscow", "spartak-moscow", "basel", "auxerre", "maccabi-haifa", "lens", "club-brugge"],
+      "uefaCup": ["porto", "celtic", "lazio", "boavista", "liverpool", "celta-vigo", "fulham", "leeds", "blackburn", "chelsea", "ajax", "inter-milan", "rangers", "vfb-stuttgart", "werder-bremen", "borussia-monchengladbach", "vitesse", "panathinaikos", "fenerbahce", "valencia", "udinese", "espanyol", "malaga"]
+    },
+    "2003-04": {
+      "ucl": ["porto", "monaco", "ac-milan", "chelsea", "real-madrid", "manchester-united", "arsenal", "deportivo", "juventus", "inter-milan", "bayern-munich", "bayer-leverkusen", "vfb-stuttgart", "barcelona", "celtic", "rangers", "lokomotiv-moscow", "lyon", "psg", "olympiakos", "panathinaikos", "ajax", "psv", "sparta-prague", "club-brugge", "anderlecht", "real-sociedad", "galatasaray", "marseille", "partizan", "besiktas", "dynamo-kyiv"],
+      "uefaCup": ["valencia", "marseille", "newcastle", "vfb-stuttgart", "liverpool", "ac-milan", "inter-milan", "barcelona", "celta-vigo", "real-betis", "villarreal", "atletico-madrid", "valencia", "celtic", "rangers", "borussia-dortmund", "schalke-04", "panathinaikos", "ajax", "feyenoord", "psv", "udinese", "bordeaux", "lens", "leeds"]
+    },
+    "2004-05": {
+      "ucl": ["liverpool", "ac-milan", "chelsea", "psv", "juventus", "inter-milan", "arsenal", "manchester-united", "real-madrid", "barcelona", "bayer-leverkusen", "bayern-munich", "porto", "monaco", "olympiakos", "panathinaikos", "lyon", "psg", "valencia", "deportivo", "rosenborg", "anderlecht", "ajax", "celtic", "werder-bremen", "shakhtar-donetsk", "fenerbahce", "club-brugge", "sparta-prague", "dynamo-kyiv", "maccabi-tel-aviv"],
+      "uefaCup": ["cska-moscow", "sporting-lisbon", "ajax", "auxerre", "panionios", "real-zaragoza", "athletic-bilbao", "alemannia-aachen", "feyenoord", "lille", "olympiakos", "vfb-stuttgart", "schalke-04", "rangers", "newcastle", "middlesbrough", "lens", "udinese", "parma", "roma", "villarreal", "sevilla", "athletic-bilbao", "real-sociedad", "celta-vigo", "espanyol"]
+    },
+    "2005-06": {
+      "ucl": ["barcelona", "arsenal", "real-madrid", "juventus", "ac-milan", "inter-milan", "chelsea", "manchester-united", "liverpool", "lyon", "bayern-munich", "werder-bremen", "porto", "benfica", "villarreal", "rangers", "panathinaikos", "psv", "ajax", "olympiakos", "fenerbahce", "rosenborg", "rapid-wien", "anderlecht", "schalke-04", "club-brugge", "udinese", "real-betis", "lille", "thun", "sparta-prague", "artmedia-bratislava"],
+      "uefaCup": ["sevilla", "middlesbrough", "schalke-04", "steaua-bucharest", "rapid-bucharest", "espanyol", "marseille", "lens", "monaco", "psg", "ajax", "feyenoord", "az-alkmaar", "heerenveen", "athletic-bilbao", "real-betis", "real-sociedad", "valencia", "deportivo", "celta-vigo", "vfb-stuttgart", "hertha-bsc", "hamburg", "leverkusen", "bayer-leverkusen", "borussia-dortmund", "palermo", "lazio", "roma", "udinese", "parma", "sampdoria", "fenerbahce", "besiktas", "trabzonspor"]
+    },
+    "2006-07": {
+      "ucl": ["ac-milan", "liverpool", "manchester-united", "chelsea", "arsenal", "real-madrid", "barcelona", "valencia", "psv", "celtic", "inter-milan", "roma", "lyon", "bayern-munich", "werder-bremen", "porto", "benfica", "sporting-lisbon", "bordeaux", "anderlecht", "lille", "spartak-moscow", "olympiakos", "cska-moscow", "galatasaray", "hamburg", "shakhtar-donetsk", "steaua-bucharest", "levski-sofia", "dynamo-kyiv", "copenhagen", "rangers"],
+      "uefaCup": ["sevilla", "espanyol", "werder-bremen", "tottenham", "ajax", "az-alkmaar", "feyenoord", "psv", "athletic-bilbao", "osasuna", "celta-vigo", "deportivo", "real-betis", "bayer-leverkusen", "leverkusen", "hertha-bsc", "lens", "auxerre", "rangers", "celtic", "fenerbahce", "besiktas", "lazio", "fiorentina", "parma", "udinese", "livorno", "panathinaikos", "panionios", "blackburn", "newcastle", "west-ham", "middlesbrough"]
+    },
+    "2007-08": {
+      "ucl": ["manchester-united", "chelsea", "barcelona", "liverpool", "real-madrid", "arsenal", "inter-milan", "ac-milan", "roma", "fiorentina", "juventus", "valencia", "schalke-04", "vfb-stuttgart", "werder-bremen", "porto", "benfica", "sporting-lisbon", "lyon", "rangers", "celtic", "sevilla", "olympiakos", "psv", "fenerbahce", "besiktas", "dynamo-kyiv", "shakhtar-donetsk", "steaua-bucharest", "rosenborg", "slavia-prague", "cska-moscow"],
+      "uefaCup": ["zenit", "rangers", "bayer-leverkusen", "fiorentina", "psv", "az-alkmaar", "feyenoord", "ajax", "bordeaux", "everton", "tottenham", "atletico-madrid", "villarreal", "athletic-bilbao", "getafe", "racing-santander", "espanyol", "panathinaikos", "aris-thessaloniki", "fenerbahce", "galatasaray", "bayern-munich", "borussia-dortmund", "hamburg", "leverkusen", "werder-bremen", "rosenborg", "spartak-moscow", "anderlecht"]
+    },
+    "2008-09": {
+      "ucl": ["barcelona", "manchester-united", "chelsea", "arsenal", "liverpool", "villarreal", "real-madrid", "atletico-madrid", "inter-milan", "ac-milan", "juventus", "fiorentina", "roma", "bayern-munich", "werder-bremen", "vfb-stuttgart", "schalke-04", "porto", "sporting-lisbon", "lyon", "marseille", "bordeaux", "panathinaikos", "olympiakos", "psv", "fenerbahce", "celtic", "shakhtar-donetsk", "dynamo-kyiv", "cska-moscow", "anorthosis", "basel", "aalborg"],
+      "uefaCup": ["shakhtar-donetsk", "werder-bremen", "hamburg", "psv", "feyenoord", "az-alkmaar", "ajax", "borussia-dortmund", "bayer-leverkusen", "hertha-bsc", "marseille", "psg", "saint-etienne", "nice", "tottenham", "manchester-city", "aston-villa", "everton", "atletico-madrid", "valencia", "sevilla", "deportivo", "real-betis", "lazio", "udinese", "sampdoria", "fiorentina", "ac-milan", "inter-milan", "napoli", "rangers", "celtic", "galatasaray", "besiktas"]
+    },
+    "2009-10": {
+      "ucl": ["inter-milan", "bayern-munich", "barcelona", "lyon", "manchester-united", "chelsea", "arsenal", "real-madrid", "ac-milan", "juventus", "fiorentina", "porto", "sevilla", "stuttgart", "vfb-stuttgart", "wolfsburg", "olympiakos", "bordeaux", "marseille", "rangers", "cska-moscow", "rubin-kazan", "besiktas", "fenerbahce", "dynamo-kyiv", "atletico-madrid", "apoel", "debrecen", "standard-liege", "unirea-urziceni", "maccabi-haifa", "zurich"],
+      "europaLeague": ["atletico-madrid", "fulham", "liverpool", "hamburg", "valencia", "werder-bremen", "wolfsburg", "bayer-leverkusen", "borussia-dortmund", "club-brugge", "anderlecht", "ajax", "psv", "az-alkmaar", "celtic", "rangers", "everton", "manchester-city", "ventspils", "athletic-bilbao", "villarreal", "valencia", "sporting-lisbon", "lille", "lazio", "roma", "fiorentina", "juventus", "napoli", "sampdoria", "panathinaikos", "fenerbahce", "galatasaray", "cska-moscow", "shakhtar-donetsk"]
+    },
+    "2010-11": {
+      "ucl": ["barcelona", "manchester-united", "real-madrid", "schalke-04", "chelsea", "tottenham", "arsenal", "inter-milan", "ac-milan", "roma", "porto", "marseille", "lyon", "bayern-munich", "werder-bremen", "shakhtar-donetsk", "valencia", "rangers", "ajax", "twente", "sporting-braga", "braga", "spartak-moscow", "cska-moscow", "rubin-kazan", "panathinaikos", "basel", "copenhagen", "auxerre", "benfica", "hapoel-tel-aviv", "zilina", "partizan", "bursaspor"],
+      "europaLeague": ["porto", "braga", "villarreal", "benfica", "psv", "ajax", "psg", "manchester-city", "liverpool", "rangers", "celtic", "young-boys", "borussia-dortmund", "stuttgart", "wolfsburg", "bayer-leverkusen", "hamburg", "atletico-madrid", "sevilla", "athletic-bilbao", "real-mallorca", "getafe", "udinese", "napoli", "juventus", "sampdoria", "lazio", "lech-poznan", "salzburg", "red-bull-salzburg", "metalist-kharkiv", "dynamo-kyiv", "fenerbahce", "besiktas", "galatasaray"]
+    },
+    "2011-12": {
+      "ucl": ["chelsea", "bayern-munich", "ac-milan", "real-madrid", "barcelona", "inter-milan", "manchester-united", "manchester-city", "arsenal", "ajax", "lyon", "marseille", "bayer-leverkusen", "borussia-dortmund", "porto", "benfica", "valencia", "napoli", "cska-moscow", "shakhtar-donetsk", "zenit", "olympiakos", "apoel", "trabzonspor", "lille", "genk", "basel", "viktoria-plzen", "villarreal", "otelul-galati", "bate-borisov", "dinamo-zagreb"],
+      "europaLeague": ["atletico-madrid", "athletic-bilbao", "sporting-lisbon", "valencia", "twente", "az-alkmaar", "manchester-united", "ajax", "psv", "schalke-04", "stuttgart", "vfb-stuttgart", "hannover-96", "hannover", "wisla-krakow", "salzburg", "anderlecht", "lazio", "udinese", "atalanta", "porto", "braga", "rangers", "rubin-kazan", "lokomotiv-moscow", "zenit", "cska-moscow", "tottenham", "fulham", "liverpool", "rennes", "lille", "psg", "dinamo-bucharest", "metalist-kharkiv", "club-brugge"]
+    },
+    "2012-13": {
+      "ucl": ["bayern-munich", "borussia-dortmund", "barcelona", "real-madrid", "ac-milan", "juventus", "manchester-united", "manchester-city", "arsenal", "chelsea", "porto", "benfica", "lille", "psg", "valencia", "schalke-04", "shakhtar-donetsk", "spartak-moscow", "zenit", "lyon", "olympiakos", "celtic", "anderlecht", "ajax", "galatasaray", "cluj", "dinamo-zagreb", "nordsjaelland", "malaga", "montpellier", "braga"],
+      "europaLeague": ["chelsea", "benfica", "fenerbahce", "basel", "newcastle", "tottenham", "liverpool", "manchester-city", "atletico-madrid", "athletic-bilbao", "lazio", "napoli", "udinese", "inter-milan", "ajax", "feyenoord", "twente", "az-alkmaar", "psv", "stuttgart", "borussia-monchengladbach", "hannover", "lille", "marseille", "bordeaux", "psg", "rennes", "metalist-kharkiv", "rubin-kazan", "dnipro", "sporting-lisbon", "rapid-wien", "club-brugge", "anderlecht", "panathinaikos", "olympiakos", "videoton", "anzhi"]
+    },
+    "2013-14": {
+      "ucl": ["real-madrid", "atletico-madrid", "barcelona", "manchester-united", "manchester-city", "arsenal", "chelsea", "real-sociedad", "porto", "benfica", "ajax", "psv", "bayern-munich", "borussia-dortmund", "bayer-leverkusen", "schalke-04", "ac-milan", "napoli", "juventus", "psg", "marseille", "olympiakos", "anderlecht", "celtic", "galatasaray", "fenerbahce", "shakhtar-donetsk", "zenit", "cska-moscow", "copenhagen", "viktoria-plzen", "steaua-bucharest", "basel", "real-madrid", "austria-wien"],
+      "europaLeague": ["sevilla", "benfica", "valencia", "porto", "fiorentina", "lazio", "ajax", "juventus", "psv", "feyenoord", "tottenham", "swansea", "wigan", "liverpool", "atletico-mineiro", "anzhi", "zenit", "rubin-kazan", "lyon", "psg", "marseille", "bordeaux", "saint-etienne", "real-betis", "real-sociedad", "rayo-vallecano", "valencia", "esbjerg", "trabzonspor", "fenerbahce", "lazio", "udinese", "sporting-lisbon", "estoril", "salzburg", "az-alkmaar", "lille", "rennes", "dnipro"]
+    },
+    "2014-15": {
+      "ucl": ["barcelona", "juventus", "real-madrid", "bayern-munich", "atletico-madrid", "borussia-dortmund", "schalke-04", "bayer-leverkusen", "monaco", "psg", "arsenal", "chelsea", "manchester-city", "liverpool", "porto", "benfica", "sporting-lisbon", "shakhtar-donetsk", "anderlecht", "ajax", "roma", "ac-milan", "athletic-bilbao", "olympiakos", "galatasaray", "cska-moscow", "zenit", "basel", "ludogorets", "apoel", "bate-borisov", "malmo"],
+      "europaLeague": ["sevilla", "dnipro", "napoli", "fiorentina", "club-brugge", "wolfsburg", "borussia-monchengladbach", "tottenham", "everton", "young-boys", "feyenoord", "psv", "ajax", "az-alkmaar", "twente", "celtic", "rangers", "fenerbahce", "besiktas", "galatasaray", "trabzonspor", "lille", "saint-etienne", "marseille", "guingamp", "monaco", "lazio", "fiorentina", "torino", "inter-milan", "athletic-bilbao", "villarreal", "real-betis", "real-sociedad", "metalist-kharkiv", "dynamo-kyiv", "krasnodar", "lokomotiv-moscow", "viktoria-plzen", "steaua-bucharest", "salzburg"]
+    },
+    "2015-16": {
+      "ucl": ["real-madrid", "atletico-madrid", "barcelona", "manchester-city", "psg", "bayern-munich", "borussia-monchengladbach", "wolfsburg", "bayer-leverkusen", "juventus", "roma", "manchester-united", "arsenal", "chelsea", "benfica", "porto", "valencia", "sevilla", "shakhtar-donetsk", "dynamo-kyiv", "zenit", "cska-moscow", "lyon", "olympiakos", "galatasaray", "astana", "malmo", "bate-borisov", "maccabi-tel-aviv", "ghent", "psv", "kaa-gent"],
+      "europaLeague": ["sevilla", "liverpool", "shakhtar-donetsk", "villarreal", "athletic-bilbao", "tottenham", "manchester-united", "borussia-dortmund", "schalke-04", "bayer-leverkusen", "ajax", "feyenoord", "psv", "fenerbahce", "besiktas", "galatasaray", "celtic", "rangers", "lazio", "napoli", "fiorentina", "marseille", "monaco", "lille", "saint-etienne", "rennes", "athletic-bilbao", "rapid-wien", "anderlecht", "molde", "salzburg", "krasnodar", "lokomotiv-moscow", "viktoria-plzen", "club-brugge", "midtjylland", "skenderbeu", "basel"]
+    },
+    "2016-17": {
+      "ucl": ["real-madrid", "juventus", "monaco", "atletico-madrid", "barcelona", "manchester-city", "leicester-city", "arsenal", "borussia-dortmund", "bayern-munich", "bayer-leverkusen", "psg", "benfica", "porto", "sporting-lisbon", "napoli", "roma", "lyon", "celtic", "tottenham", "sevilla", "club-brugge", "cska-moscow", "ludogorets", "rostov", "kobenhavn", "basel", "fc-copenhagen", "dinamo-zagreb", "legia-warszawa", "besiktas", "psv"],
+      "europaLeague": ["manchester-united", "ajax", "lyon", "celta-vigo", "anderlecht", "schalke-04", "genk", "krasnodar", "rostov", "lyon", "saint-etienne", "lille", "athletic-bilbao", "atalanta", "fenerbahce", "feyenoord", "olympiakos", "manchester-united", "ajax", "ac-milan", "inter-milan", "roma", "lazio", "fiorentina", "sassuolo", "tottenham", "borussia-dortmund", "borussia-monchengladbach", "schalke-04", "hertha-bsc", "fc-copenhagen", "young-boys", "salzburg", "rapid-wien", "shakhtar-donetsk", "zenit", "krasnodar", "qarabag", "panathinaikos"]
+    },
+    "2017-18": {
+      "ucl": ["real-madrid", "liverpool", "barcelona", "manchester-city", "manchester-united", "tottenham", "chelsea", "bayern-munich", "borussia-dortmund", "rb-leipzig", "psg", "juventus", "roma", "napoli", "porto", "benfica", "sporting-lisbon", "monaco", "sevilla", "atletico-madrid", "shakhtar-donetsk", "celtic", "anderlecht", "qarabag", "spartak-moscow", "olympiakos", "apoel", "basel", "feyenoord", "besiktas", "maribor", "cska-moscow"],
+      "europaLeague": ["atletico-madrid", "marseille", "arsenal", "salzburg", "rb-salzburg", "red-bull-salzburg", "borussia-dortmund", "lazio", "ac-milan", "atalanta", "athletic-bilbao", "real-sociedad", "villarreal", "real-betis", "everton", "lyon", "olympiakos", "lokomotiv-moscow", "zenit", "celtic", "rangers", "young-boys", "viktoria-plzen", "sporting-lisbon", "vfb-stuttgart", "hannover-96", "hertha-bsc", "hoffenheim", "ostersund", "ludogorets", "qarabag", "fc-copenhagen", "rosenborg", "konyaspor", "fenerbahce", "trabzonspor", "ac-milan", "inter-milan", "napoli", "lille", "marseille", "saint-etienne", "lyon", "monaco", "rennes"]
+    },
+    "2018-19": {
+      "ucl": ["liverpool", "tottenham", "manchester-city", "manchester-united", "barcelona", "real-madrid", "atletico-madrid", "valencia", "juventus", "roma", "napoli", "inter-milan", "bayern-munich", "borussia-dortmund", "schalke-04", "hoffenheim", "psg", "lyon", "monaco", "porto", "benfica", "ajax", "psv", "galatasaray", "club-brugge", "shakhtar-donetsk", "lokomotiv-moscow", "cska-moscow", "young-boys", "viktoria-plzen", "red-bull-salzburg", "aek-athens"],
+      "europaLeague": ["chelsea", "arsenal", "valencia", "eintracht-frankfurt", "salzburg", "rb-salzburg", "red-bull-salzburg", "napoli", "lazio", "ac-milan", "atalanta", "fiorentina", "real-betis", "sevilla", "villarreal", "celtic", "rangers", "leicester-city", "everton", "psv", "feyenoord", "vitesse", "az-alkmaar", "krasnodar", "spartak-moscow", "zenit", "young-boys", "olympiakos", "apoel", "qarabag", "ludogorets", "vidi", "marseille", "rennes", "bordeaux", "saint-etienne", "fenerbahce", "besiktas", "trabzonspor", "rapid-wien", "ajax", "fc-copenhagen", "dynamo-kyiv", "dynamo-zagreb", "anderlecht", "club-brugge", "sporting-lisbon", "braga"]
+    },
+    "2019-20": {
+      "ucl": ["bayern-munich", "psg", "lyon", "rb-leipzig", "barcelona", "real-madrid", "atletico-madrid", "valencia", "juventus", "atalanta", "napoli", "inter-milan", "manchester-city", "liverpool", "chelsea", "tottenham", "borussia-dortmund", "bayer-leverkusen", "ajax", "psv", "porto", "benfica", "shakhtar-donetsk", "dynamo-zagreb", "olympiakos", "galatasaray", "salzburg", "red-bull-salzburg", "rb-salzburg", "club-brugge", "genk", "lokomotiv-moscow", "zenit", "slavia-prague"],
+      "europaLeague": ["sevilla", "inter-milan", "manchester-united", "shakhtar-donetsk", "wolves", "wolverhampton-wanderers", "arsenal", "celtic", "rangers", "ajax", "psv", "az-alkmaar", "feyenoord", "rb-leipzig", "leverkusen", "bayer-leverkusen", "wolfsburg", "frankfurt", "eintracht-frankfurt", "borussia-monchengladbach", "psv", "vfb-stuttgart", "espanyol", "getafe", "athletic-bilbao", "real-betis", "real-sociedad", "olympiakos", "trabzonspor", "fenerbahce", "besiktas", "porto", "braga", "sporting-lisbon", "salzburg", "ludogorets", "qarabag", "young-boys", "ferencvaros", "celtic", "rangers", "club-brugge", "fc-copenhagen", "wolves"]
+    },
+    "2020-21": {
+      "ucl": ["chelsea", "manchester-city", "liverpool", "manchester-united", "real-madrid", "atletico-madrid", "barcelona", "sevilla", "juventus", "atalanta", "inter-milan", "lazio", "bayern-munich", "borussia-dortmund", "rb-leipzig", "borussia-monchengladbach", "psg", "marseille", "rennes", "porto", "ajax", "shakhtar-donetsk", "olympiakos", "ferencvaros", "club-brugge", "midtjylland", "krasnodar", "lokomotiv-moscow", "zenit", "basaksehir", "salzburg", "dynamo-kyiv"],
+      "europaLeague": ["villarreal", "manchester-united", "arsenal", "roma", "ajax", "tottenham", "real-sociedad", "real-betis", "granada", "leicester-city", "celtic", "rangers", "ac-milan", "napoli", "rapid-wien", "molde", "young-boys", "lille", "psv", "az-alkmaar", "feyenoord", "slavia-prague", "olympiakos", "qarabag", "wolfsburg", "leverkusen", "bayer-leverkusen", "hoffenheim", "freiburg", "braga", "sporting-lisbon", "benfica", "fenerbahce", "trabzonspor", "besiktas", "galatasaray", "antwerp", "standard-liege", "anderlecht", "lyon", "rennes", "nice", "saint-etienne", "monaco", "psg", "marseille"]
+    },
+    "2021-22": {
+      "ucl": ["real-madrid", "liverpool", "manchester-city", "chelsea", "atletico-madrid", "barcelona", "sevilla", "villarreal", "manchester-united", "juventus", "ac-milan", "inter-milan", "atalanta", "bayern-munich", "borussia-dortmund", "rb-leipzig", "wolfsburg", "psg", "lille", "porto", "benfica", "sporting-lisbon", "ajax", "club-brugge", "young-boys", "salzburg", "dynamo-kyiv", "zenit", "shakhtar-donetsk", "besiktas", "malmo"],
+      "europaLeague": ["eintracht-frankfurt", "rangers", "rb-leipzig", "west-ham", "barcelona", "borussia-dortmund", "napoli", "lazio", "real-sociedad", "real-betis", "marseille", "lyon", "monaco", "rennes", "fenerbahce", "galatasaray", "olympiakos", "porto", "sporting-braga", "braga", "celtic", "ajax", "psv", "feyenoord", "salzburg", "leverkusen", "bayer-leverkusen", "leicester-city", "midtjylland", "spartak-moscow", "ferencvaros", "antwerp", "genk", "ludogorets", "sturm-graz", "dinamo-zagreb"],
+      "conferenceLeague": ["roma", "feyenoord", "marseille", "leicester-city", "psv", "az-alkmaar", "rennes", "tottenham", "qarabag", "basel", "fc-copenhagen", "celtic", "slavia-prague", "vitesse", "stade-rennais", "az-alkmaar", "partizan", "anorthosis", "lincoln-red-imps", "kairat-almaty", "alashkert", "flora-tallinn", "maccabi-tel-aviv", "hapoel-be'er-sheva", "union-berlin", "gent", "kaa-gent", "mura"]
+    },
+    "2022-23": {
+      "ucl": ["manchester-city", "inter-milan", "real-madrid", "ac-milan", "manchester-united", "chelsea", "tottenham", "liverpool", "barcelona", "atletico-madrid", "sevilla", "napoli", "juventus", "bayern-munich", "borussia-dortmund", "bayer-leverkusen", "rb-leipzig", "psg", "marseille", "porto", "benfica", "sporting-lisbon", "club-brugge", "ajax", "celtic", "rangers", "salzburg", "shakhtar-donetsk", "dinamo-zagreb", "maccabi-haifa", "viktoria-plzen", "copenhagen"],
+      "europaLeague": ["sevilla", "roma", "juventus", "manchester-united", "arsenal", "real-sociedad", "real-betis", "sporting-lisbon", "ferencvaros", "monaco", "stade-rennais", "rennes", "lazio", "fenerbahce", "psv", "feyenoord", "az-alkmaar", "freiburg", "leverkusen", "bayer-leverkusen", "union-berlin", "qarabag", "ludogorets", "trabzonspor", "midtjylland", "sturm-graz", "olympiakos", "nantes", "braga", "malmo", "omonia"],
+      "conferenceLeague": ["west-ham", "fiorentina", "az-alkmaar", "basel", "lech-poznan", "anderlecht", "nice", "slovacko", "partizan", "fc-copenhagen", "djurgardens", "gent", "kaa-gent", "molde", "shamrock-rovers", "ludogorets", "istanbul-basaksehir", "basaksehir", "ballkani", "rfs", "silkeborg", "villarreal", "young-boys", "vienna", "austria-wien", "hearts", "fiorentina"]
+    },
+    "2023-24": {
+      "ucl": ["real-madrid", "borussia-dortmund", "bayern-munich", "psg", "manchester-city", "inter-milan", "atletico-madrid", "barcelona", "arsenal", "rb-leipzig", "napoli", "porto", "benfica", "lazio", "ac-milan", "real-sociedad", "manchester-united", "newcastle", "psv", "lens", "shakhtar-donetsk", "celtic", "feyenoord", "antwerp", "young-boys", "copenhagen", "galatasaray", "sevilla", "braga", "union-berlin", "salzburg", "red-star-belgrade"],
+      "europaLeague": ["atalanta", "bayer-leverkusen", "marseille", "liverpool", "roma", "ac-milan", "west-ham", "sporting-lisbon", "benfica", "freiburg", "qarabag", "molde", "rangers", "betis", "real-betis", "rennes", "milan", "ac-milan", "panathinaikos", "ajax", "olympiakos", "toulouse", "fenerbahce", "ferencvaros", "slavia-prague", "lask", "olimpija-ljubljana", "raków-czestochowa", "sheriff-tiraspol", "sparta-prague", "villarreal"],
+      "conferenceLeague": ["olympiakos", "fiorentina", "aston-villa", "club-brugge", "lille", "fenerbahce", "ajax", "ludogorez", "ludogorets", "molde", "olimpija-ljubljana", "servette", "nordsjaelland", "viktoria-plzen", "legia-warszawa", "lugano", "gent", "kaa-gent", "ferencvaros", "maccabi-haifa", "maccabi-tel-aviv", "hapoel-be'er-sheva", "zorya-luhansk", "dinamo-zagreb", "rapid-wien", "breidablik", "ballkani", "bodo-glimt", "besiktas", "eintracht-frankfurt", "pas-giannina", "houston-dynamo", "astana"]
+    },
+    "2024-25": {
+      "ucl": ["psg", "manchester-city", "bayern-munich", "real-madrid", "liverpool", "arsenal", "aston-villa", "atalanta", "borussia-dortmund", "ac-milan", "inter-milan", "juventus", "bayer-leverkusen", "rb-leipzig", "atletico-madrid", "barcelona", "girona", "shakhtar-donetsk", "young-boys", "salzburg", "red-bull-salzburg", "rb-salzburg", "psv", "feyenoord", "celtic", "club-brugge", "monaco", "lille", "brest", "benfica", "sporting-lisbon", "stuttgart", "vfb-stuttgart", "sparta-prague", "slovan-bratislava", "sturm-graz", "dinamo-zagreb", "bologna"],
+      "europaLeague": ["tottenham", "manchester-united", "lazio", "athletic-bilbao", "lyon", "roma", "ajax", "real-sociedad", "porto", "rangers", "olympiakos", "fenerbahce", "galatasaray", "anderlecht", "ferencvaros", "frankfurt", "eintracht-frankfurt", "psv", "psv-eindhoven", "ludogorets", "az-alkmaar", "qarabag", "viktoria-plzen", "slavia-prague", "twente", "fc-twente", "elfsborg", "midtjylland", "nice", "rfs", "malmo", "union-saint-gilloise", "hoffenheim", "tsg-hoffenheim", "braga", "besiktas", "maccabi-tel-aviv"],
+      "conferenceLeague": ["chelsea", "real-betis", "fiorentina", "panathinaikos", "fenerbahce", "djurgardens", "celje", "shamrock-rovers", "lask", "vitoria-guimaraes", "guimaraes", "molde", "rapid-wien", "pafos", "apoel", "mlada-boleslav", "borac-banja-luka", "the-new-saints", "tns", "noah", "petrocub-hincesti", "olimpija-ljubljana", "astana", "vikingur-reykjavik", "ruzomberok", "legia-warszawa", "copenhagen", "fc-copenhagen", "jagiellonia", "heidenheim", "1-fc-heidenheim"]
+    },
+    "2025-26": {
+      "ucl": ["real-madrid", "barcelona", "atletico-madrid", "athletic-bilbao", "manchester-city", "liverpool", "arsenal", "aston-villa", "inter-milan", "ac-milan", "juventus", "atalanta", "bologna", "bayern-munich", "borussia-dortmund", "bayer-leverkusen", "rb-leipzig", "vfb-stuttgart", "psg", "monaco", "brest", "lille", "benfica", "sporting-lisbon", "celtic"],
+      "europaLeague": ["manchester-united", "tottenham", "chelsea", "roma", "lazio", "ajax", "rangers"],
+      "conferenceLeague": ["fiorentina", "real-betis", "crystal-palace", "celje", "lask", "rapid-wien", "shamrock-rovers", "noah"]
+    }
+  },
   "teamLeague": {
     "real-madrid": "la-liga",
     "barcelona": "la-liga",
@@ -120,6 +255,20 @@
     "athletic-bilbao": "la-liga",
     "sevilla": "la-liga",
     "real-betis": "la-liga",
+    "real-sociedad": "la-liga",
+    "real-valladolid": "la-liga",
+    "valencia": "la-liga",
+    "villarreal": "la-liga",
+    "celta-vigo": "la-liga",
+    "espanyol": "la-liga",
+    "girona": "la-liga",
+    "osasuna": "la-liga",
+    "mallorca": "la-liga",
+    "alaves": "la-liga",
+    "cadiz": "la-liga",
+    "granada": "la-liga",
+    "levante": "la-liga",
+    "malaga": "la-liga",
     "manchester-city": "premier-league",
     "manchester-united": "premier-league",
     "liverpool": "premier-league",
@@ -131,7 +280,19 @@
     "wolves": "premier-league",
     "everton": "premier-league",
     "brighton": "premier-league",
-    "leicester": "premier-league",
+    "leicester-city": "premier-league",
+    "leeds": "premier-league",
+    "fulham": "premier-league",
+    "west-ham": "premier-league",
+    "nottingham-forest": "premier-league",
+    "bournemouth": "premier-league",
+    "burnley": "premier-league",
+    "crystal-palace": "premier-league",
+    "sheffield-united": "premier-league",
+    "sunderland": "premier-league",
+    "coventry": "premier-league",
+    "derby-county": "premier-league",
+    "wrexham": "premier-league",
     "ac-milan": "serie-a",
     "inter-milan": "serie-a",
     "juventus": "serie-a",
@@ -140,17 +301,27 @@
     "lazio": "serie-a",
     "atalanta": "serie-a",
     "bologna": "serie-a",
+    "fiorentina": "serie-a",
+    "lecce": "serie-a",
+    "como": "serie-a",
+    "parma": "serie-a",
     "bayern-munich": "bundesliga",
     "borussia-dortmund": "bundesliga",
     "bayer-leverkusen": "bundesliga",
     "rb-leipzig": "bundesliga",
     "vfb-stuttgart": "bundesliga",
+    "werder-bremen": "bundesliga",
+    "wolfsburg": "bundesliga",
+    "borussia-monchengladbach": "bundesliga",
+    "eintracht-frankfurt": "bundesliga",
+    "st-pauli": "bundesliga",
     "psg": "ligue-1",
     "monaco": "ligue-1",
     "brest": "ligue-1",
     "lille": "ligue-1",
     "marseille": "ligue-1",
     "lyon": "ligue-1",
+    "nice": "ligue-1",
     "hapoel-tel-aviv": "israeli-premier-league",
     "maccabi-tel-aviv": "israeli-premier-league",
     "beitar-jerusalem": "israeli-premier-league"
