@@ -96,8 +96,16 @@ function getAvailablePatches(product) {
     return ids;
   }
   const domesticId = CONFIG.teamLeague[product.teamSlug];
+  const CURRENT = "2025-26";
+  const cands = candidateSeasons(product.season);
+  const probe =
+    cands.length === 0
+      ? [CURRENT]
+      : cands.some((s) => CONFIG.competitions[s])
+      ? cands
+      : [...cands, CURRENT];
   let comp = null;
-  for (const season of candidateSeasons(product.season)) {
+  for (const season of probe) {
     comp = findCompetitionForTeam(product.teamSlug, season);
     if (comp) break;
   }

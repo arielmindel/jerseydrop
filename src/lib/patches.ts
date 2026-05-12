@@ -200,10 +200,22 @@ export function getAvailablePatches(product: Product): Patch[] {
   const domesticId = CONFIG.teamLeague[slug];
   const domestic = domesticId ? patchById(domesticId) : null;
 
-  // Try every candidate season this raw string could legitimately mean.
-  // First match wins (priority order inside findCompetitionInSeason).
+  // Build list of seasons to probe. Falls back to the current season
+  // whenever the catalog can't supply a usable one — a null-season
+  // "Barcelona Special" shirt should still surface the UCL patch,
+  // and a "2026-27" shirt (no data yet) should default to the
+  // 2025-26 footprint until the new season is filled in.
+  const CURRENT = "2025-26";
+  const cands = candidateSeasons(product.season);
+  const probe: string[] =
+    cands.length === 0
+      ? [CURRENT]
+      : cands.some((s) => CONFIG.competitions[s])
+      ? cands
+      : [...cands, CURRENT];
+
   let comp: Competition | null = null;
-  for (const season of candidateSeasons(product.season)) {
+  for (const season of probe) {
     comp = findCompetitionInSeason(slug, season);
     if (comp) break;
   }
