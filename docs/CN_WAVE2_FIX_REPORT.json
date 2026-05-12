@@ -1,0 +1,2228 @@
+{
+  "stats": {
+    "total": 2111,
+    "withCn": 1277,
+    "skipNoCn": 834,
+    "skipAmbiguous": 16,
+    "skipNoMatch": 14,
+    "skipNoCanonical": 0,
+    "teamSlugFixed": 2,
+    "nameHeFixed": 255,
+    "alreadyOk": 992
+  },
+  "teamSlugDiffs": {
+    "nigeria → algeria": 2
+  },
+  "teamSlugFixSamples": [
+    {
+      "id": "yp-short-suit-879",
+      "slug": "unknown-home-2026-it-879",
+      "cn": "2026阿尼及利亚主场",
+      "before": "nigeria",
+      "after": "algeria",
+      "nameHe": "2026 בית"
+    },
+    {
+      "id": "yp-yupoo-232202368",
+      "slug": "nigeria-home-2026-set",
+      "cn": "2026阿尼及利亚主场",
+      "before": "nigeria",
+      "after": "algeria",
+      "nameHe": "ניגריה סט מבוגרים בית 2026"
+    }
+  ],
+  "nameHeFixSamples": [
+    {
+      "id": "10340448010514",
+      "slug": "japan-away-2025-26",
+      "cn": "25-26阿贾克斯二客",
+      "teamSlug": "ajax",
+      "before": "יפן מדי חוץ 2025/26 מונדיאל",
+      "after": "אייאקס חוץ 2025/26"
+    },
+    {
+      "id": "10328706154770",
+      "slug": "england-home-2025-26",
+      "cn": "25-26英格兰主",
+      "teamSlug": "england",
+      "before": "צרפת מדי בית 2025/26 - מונדיאל",
+      "after": "אנגליה בית 2025/26"
+    },
+    {
+      "id": "10257721458962",
+      "slug": "japan-home-2025-26",
+      "cn": "25-26马竞主",
+      "teamSlug": "atletico-madrid",
+      "before": "יפן מדי בית 2025/26 מונדיאל",
+      "after": "אתלטיקו מדריד בית 2025/26"
+    },
+    {
+      "id": "9798623330578",
+      "slug": "japan-away-2023-24",
+      "cn": "23-24曼城客场成人套装",
+      "teamSlug": "manchester-city",
+      "before": "חולצת כדורגל נבחרת יפן חוץ 2024",
+      "after": "מנצ׳סטר סיטי חוץ 2023/24"
+    },
+    {
+      "id": "9798624149778",
+      "slug": "japan-home-2023-24",
+      "cn": "23-24曼城主场成人套装",
+      "teamSlug": "manchester-city",
+      "before": "חולצת כדורגל נבחרת יפן דרגון בול 2024",
+      "after": "מנצ׳סטר סיטי בית 2023/24"
+    },
+    {
+      "id": "yp-fan-1-0",
+      "slug": "japan-home-2026-27-an-1-0",
+      "cn": "26-27曼城主场",
+      "teamSlug": "manchester-city",
+      "before": "26-27 ירוק ניגריה בית",
+      "after": "מנצ׳סטר סיטי בית 2026/27"
+    },
+    {
+      "id": "yp-fan-1-3",
+      "slug": "japan-away-2026-27-an-1-3",
+      "cn": "26-27曼城客场",
+      "teamSlug": "manchester-city",
+      "before": "26-27 ירוק דרום אפריקה חוץ",
+      "after": "מנצ׳סטר סיטי חוץ 2026/27"
+    },
+    {
+      "id": "yp-fan-1-22",
+      "slug": "unknown-away-2026-27-n-1-22",
+      "cn": "26-27黑牙买加客场",
+      "teamSlug": "jamaica",
+      "before": "26-27 שחור ג'מייקה חוץ",
+      "after": "ג׳מייקה חוץ 2026/27"
+    },
+    {
+      "id": "yp-fan-1-23",
+      "slug": "unknown-home-2026-27-n-1-23",
+      "cn": "26-27黄牙买加主场",
+      "teamSlug": "jamaica",
+      "before": "26-27 צהוב ג'מייקה בית",
+      "after": "ג׳מייקה בית 2026/27"
+    },
+    {
+      "id": "yp-fan-1-36",
+      "slug": "unknown-home-2026-27-n-1-36",
+      "cn": "26-27巴赛POLO衫",
+      "teamSlug": "barcelona",
+      "before": "26-27 פולו",
+      "after": "ברצלונה בית 2026/27"
+    },
+    {
+      "id": "yp-fan-1-60",
+      "slug": "japan-home-n-1-60",
+      "cn": "1比1三叶草浅黄哥伦比亚棉T",
+      "teamSlug": "colombia",
+      "before": "26 אדום בלגיה בית",
+      "after": "קולומביה בית"
+    },
+    {
+      "id": "yp-fan-1-62",
+      "slug": "japan-away-n-1-62",
+      "cn": "科特迪瓦客场",
+      "teamSlug": "ivory-coast",
+      "before": "26 ירוק סנגל חוץ",
+      "after": "חוף השנהב חוץ"
+    },
+    {
+      "id": "yp-fan-1-74",
+      "slug": "unknown-home-n-1-74",
+      "cn": "26黑巴赛联名版",
+      "teamSlug": "barcelona",
+      "before": "26 שחור",
+      "after": "ברצלונה בית"
+    },
+    {
+      "id": "yp-fan-1-76",
+      "slug": "unknown-away-n-1-76",
+      "cn": "26红兰巴赛3客场",
+      "teamSlug": "barcelona",
+      "before": "26 אדום כחול 3 חוץ",
+      "after": "ברצלונה חוץ"
+    },
+    {
+      "id": "yp-fan-1-88",
+      "slug": "unknown-away-2025-26-n-1-88",
+      "cn": "25-26新橙巴赛2客场",
+      "teamSlug": "barcelona",
+      "before": "25-26 כתום 2 חוץ",
+      "after": "ברצלונה חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-1-89",
+      "slug": "unknown-home-2025-26-n-1-89",
+      "cn": "25-26兰白马拉加主场",
+      "teamSlug": "malaga",
+      "before": "25-26 כחול לבן בית",
+      "after": "מלאגה בית 2025/26"
+    },
+    {
+      "id": "yp-fan-1-91",
+      "slug": "unknown-home-2025-26-n-1-91",
+      "cn": "25-26兰十字主场",
+      "teamSlug": "cruz-azul",
+      "before": "25-26 כחול בית",
+      "after": "קרוז אסול בית 2025/26"
+    },
+    {
+      "id": "yp-fan-1-97",
+      "slug": "unknown-home-2025-26-n-1-97",
+      "cn": "25-26白绿里斯本主场",
+      "teamSlug": "sporting-lisbon",
+      "before": "25-26 לבן ירוק בית",
+      "after": "ספורטינג ליסבון בית 2025/26"
+    },
+    {
+      "id": "yp-fan-1-99",
+      "slug": "unknown-retro-2025-26-n-1-99",
+      "cn": "25-26红兰巴赛复古摆尾版",
+      "teamSlug": "barcelona",
+      "before": "25-26 אדום כחול רטרו",
+      "after": "רטרו ברצלונה 2025/26"
+    },
+    {
+      "id": "yp-fan-1-103",
+      "slug": "unknown-home-2025-26--1-103",
+      "cn": "25-26兰白马拉加纪念版",
+      "teamSlug": "malaga",
+      "before": "25-26 כחול לבן",
+      "after": "מלאגה בית 2025/26"
+    },
+    {
+      "id": "yp-fan-1-109",
+      "slug": "unknown-retro-2025-26--1-109",
+      "cn": "25-26红兰巴赛复古版",
+      "teamSlug": "barcelona",
+      "before": "25-26 אדום כחול רטרו",
+      "after": "רטרו ברצלונה 2025/26"
+    },
+    {
+      "id": "yp-fan-1-119",
+      "slug": "unknown-special-2025-26--1-119",
+      "cn": "25-26粉巴赛训练服",
+      "teamSlug": "barcelona",
+      "before": "25-26 ורוד אימון",
+      "after": "ברצלונה מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-124",
+      "slug": "unknown-special-2025-26--1-124",
+      "cn": "25-26兰彩巴赛特别版",
+      "teamSlug": "barcelona",
+      "before": "25-26 כחול מהדורה מיוחדת",
+      "after": "ברצלונה מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-125",
+      "slug": "unknown-special-2025-26--1-125",
+      "cn": "25-26粉彩巴赛特别版",
+      "teamSlug": "barcelona",
+      "before": "25-26 ורוד מהדורה מיוחדת",
+      "after": "ברצלונה מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-129",
+      "slug": "unknown-home-2025-26--1-129",
+      "cn": "25-26红兰巴赛125周年纪念版",
+      "teamSlug": "barcelona",
+      "before": "25-26 אדום כחול 125",
+      "after": "ברצלונה בית 2025/26"
+    },
+    {
+      "id": "yp-fan-1-136",
+      "slug": "ac-away-2025-26--1-136",
+      "cn": "25-26黄AC客场",
+      "teamSlug": "ac-milan",
+      "before": "25-26 צהוב AC חוץ",
+      "after": "מילאן חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-1-141",
+      "slug": "ac-away-2025-26--1-141",
+      "cn": "25-26白AC客场",
+      "teamSlug": "ac-milan",
+      "before": "25-26 לבן AC חוץ",
+      "after": "מילאן חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-1-149",
+      "slug": "unknown-away-2025-26--1-149",
+      "cn": "25-26红客麦隆客场",
+      "teamSlug": "cameroon",
+      "before": "25-26 אדום חוץ חוץ",
+      "after": "קמרון חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-1-150",
+      "slug": "unknown-home-2025-26--1-150",
+      "cn": "25-26绿客麦隆主场",
+      "teamSlug": "cameroon",
+      "before": "25-26 ירוק חוץ בית",
+      "after": "קמרון בית 2025/26"
+    },
+    {
+      "id": "yp-fan-1-154",
+      "slug": "unknown-away-2025-26--1-154",
+      "cn": "25-26白客麦隆客场",
+      "teamSlug": "cameroon",
+      "before": "25-26 לבן חוץ חוץ",
+      "after": "קמרון חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-1-155",
+      "slug": "ac-away-2025-26--1-155",
+      "cn": "25-26绿AC客场",
+      "teamSlug": "ac-milan",
+      "before": "25-26 ירוק AC חוץ",
+      "after": "מילאן חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-1-162",
+      "slug": "ac-home-2025-26--1-162",
+      "cn": "25-26红黑AC主场",
+      "teamSlug": "ac-milan",
+      "before": "25-26 אדום שחור AC בית",
+      "after": "מילאן בית 2025/26"
+    },
+    {
+      "id": "yp-fan-1-176",
+      "slug": "japan-home-2024-25--1-176",
+      "cn": "24-25帕尔梅拉斯主场",
+      "teamSlug": "palmeiras",
+      "before": "24-25 לבן סנטוס בית",
+      "after": "פלמייראס בית 2024/25"
+    },
+    {
+      "id": "yp-fan-1-178",
+      "slug": "ac-special-2025-26--1-178",
+      "cn": "25-26黑绿AC特别版",
+      "teamSlug": "ac-milan",
+      "before": "25-26 שחור ירוק AC מהדורה מיוחדת",
+      "after": "מילאן מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-180",
+      "slug": "ac-special-2025-26--1-180",
+      "cn": "25-26红绿AC特别版",
+      "teamSlug": "ac-milan",
+      "before": "25-26 אדום ירוק AC מהדורה מיוחדת",
+      "after": "מילאן מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-188",
+      "slug": "unknown-away-2024-25--1-188",
+      "cn": "24-25黑巴赛客场",
+      "teamSlug": "barcelona",
+      "before": "24-25 שחור חוץ",
+      "after": "ברצלונה חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-1-195",
+      "slug": "japan-special-2024-25--1-195",
+      "cn": "24-25白帕尔梅拉斯特别版",
+      "teamSlug": "palmeiras",
+      "before": "24-25 חוף השנהב מהדורה מיוחדת",
+      "after": "פלמייראס מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-207",
+      "slug": "japan-special--1-207",
+      "cn": "拜仁特别版",
+      "teamSlug": "bayern-munich",
+      "before": "מנצ'סטר סיטי מהדורה מיוחדת",
+      "after": "באיירן מינכן מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-1-217",
+      "slug": "ac-away--1-217",
+      "cn": "AC二客",
+      "teamSlug": "ac-milan",
+      "before": "AC חוץ שני",
+      "after": "מילאן חוץ"
+    },
+    {
+      "id": "yp-fan-1-225",
+      "slug": "ac-away--1-225",
+      "cn": "Ac客场",
+      "teamSlug": "ac-milan",
+      "before": "Ac חוץ",
+      "after": "מילאן חוץ"
+    },
+    {
+      "id": "yp-fan-1-226",
+      "slug": "unknown-away--1-226",
+      "cn": "万城二客",
+      "teamSlug": "manchester-city",
+      "before": "חוץ שני",
+      "after": "מנצ׳סטר סיטי חוץ"
+    },
+    {
+      "id": "yp-fan-1-228",
+      "slug": "unknown-away--1-228",
+      "cn": "万联二客",
+      "teamSlug": "manchester-united",
+      "before": "חוץ שני",
+      "after": "מנצ׳סטר יונייטד חוץ"
+    },
+    {
+      "id": "yp-fan-1-245",
+      "slug": "japan-away-2024-25--1-245",
+      "cn": "24-25帕尔梅拉斯客场",
+      "teamSlug": "palmeiras",
+      "before": "24-25 פריז חוץ",
+      "after": "פלמייראס חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-1-252",
+      "slug": "ac-home-2024-25--1-252",
+      "cn": "24-25AC红色",
+      "teamSlug": "ac-milan",
+      "before": "24-25AC אדום",
+      "after": "מילאן בית 2024/25"
+    },
+    {
+      "id": "yp-fan-2-465",
+      "slug": "japan-special-2026--2-465",
+      "cn": "2026马年曼城特别版",
+      "teamSlug": "manchester-city",
+      "before": "2026 כחול מנצ'סטר יונייטד מהדורה מיוחדת",
+      "after": "מנצ׳סטר סיטי מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-2-480",
+      "slug": "japan-retro--2-480",
+      "cn": "曼联复古风",
+      "teamSlug": "manchester-united",
+      "before": "70# רטרו כחול אייאקס מהדורה מיוחדת",
+      "after": "רטרו מנצ׳סטר יונייטד"
+    },
+    {
+      "id": "yp-fan-2-490",
+      "slug": "unknown-home--2-490",
+      "cn": "白黄波尔图",
+      "teamSlug": "porto",
+      "before": "לבן צהוב",
+      "after": "פורטו בית"
+    },
+    {
+      "id": "yp-fan-2-494",
+      "slug": "unknown-home--2-494",
+      "cn": "蓝黑波尔图",
+      "teamSlug": "porto",
+      "before": "כחול שחור",
+      "after": "פורטו בית"
+    },
+    {
+      "id": "yp-fan-2-498",
+      "slug": "japan-special-2526--2-498",
+      "cn": "2526克鲁塞罗训练服蓝色",
+      "teamSlug": "cruzeiro",
+      "before": "2526 לבן פריז מהדורה מיוחדת",
+      "after": "קרוזיירו מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-2-504",
+      "slug": "unknown-home--2-504",
+      "cn": "红马洛卡主场",
+      "teamSlug": "mallorca",
+      "before": "אדום בית",
+      "after": "מאיורקה בית"
+    },
+    {
+      "id": "yp-fan-2-511",
+      "slug": "unknown-home-2024-25--2-511",
+      "cn": "24-25马洛卡主场",
+      "teamSlug": "mallorca",
+      "before": "24-25 בית",
+      "after": "מאיורקה בית 2024/25"
+    },
+    {
+      "id": "yp-fan-2-513",
+      "slug": "unknown-home-2024-25--2-513",
+      "cn": "24-25马拉加主场",
+      "teamSlug": "malaga",
+      "before": "24-25 בית",
+      "after": "מלאגה בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-524",
+      "slug": "unknown-home-2026-27--3-524",
+      "cn": "26-27 牙买加 主场",
+      "teamSlug": "jamaica",
+      "before": "26-27 ג'מייקה בית",
+      "after": "ג׳מייקה בית 2026/27"
+    },
+    {
+      "id": "yp-fan-3-525",
+      "slug": "ac-away-2026-27--3-525",
+      "cn": "26-27 AC客场",
+      "teamSlug": "ac-milan",
+      "before": "26-27 AC חוץ",
+      "after": "מילאן חוץ 2026/27"
+    },
+    {
+      "id": "yp-fan-3-526",
+      "slug": "unknown-away-2026-27--3-526",
+      "cn": "26-27 牙买加 客场",
+      "teamSlug": "jamaica",
+      "before": "26-27 ג'מייקה חוץ",
+      "after": "ג׳מייקה חוץ 2026/27"
+    },
+    {
+      "id": "yp-fan-3-531",
+      "slug": "ac-home-2026-27--3-531",
+      "cn": "26-27 AC",
+      "teamSlug": "ac-milan",
+      "before": "26-27 AC",
+      "after": "מילאן בית 2026/27"
+    },
+    {
+      "id": "yp-fan-3-535",
+      "slug": "japan-special-2025-26--3-535",
+      "cn": "25-26克鲁塞罗训练服",
+      "teamSlug": "cruzeiro",
+      "before": "25-26 פאלמייראס מהדורה מיוחדת",
+      "after": "קרוזיירו מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-3-539",
+      "slug": "unknown-away-2025-26--3-539",
+      "cn": "25-26 博塔弗戈四客",
+      "teamSlug": "botafogo",
+      "before": "25-26 חוץ",
+      "after": "בוטפוגו חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-540",
+      "slug": "unknown-away-2025-26--3-540",
+      "cn": "25-26 达咖马 二客",
+      "teamSlug": "vasco",
+      "before": "25-26 חוץ שני",
+      "after": "וסקו דה גאמה חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-542",
+      "slug": "japan-third-2025-26--3-542",
+      "cn": "25-26 巴黎三客S-4XL",
+      "teamSlug": "psg",
+      "before": "25-26 מארסיי חוץ שלישי",
+      "after": "פריז חוץ שלישי 2025/26"
+    },
+    {
+      "id": "yp-fan-3-545",
+      "slug": "unknown-away-2025-26--3-545",
+      "cn": "25-26  弗鲁米二客",
+      "teamSlug": "fluminense",
+      "before": "25-26 בז' חוץ שני",
+      "after": "פלומיננסה חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-548",
+      "slug": "unknown-away-2025-26--3-548",
+      "cn": "25-26 格雷米二客",
+      "teamSlug": "gremio",
+      "before": "25-26 בז' חוץ שני",
+      "after": "גרמיו חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-554",
+      "slug": "unknown-home-2025-26--3-554",
+      "cn": "25-26 费内巴 主场",
+      "teamSlug": "fenerbahce",
+      "before": "25-26 בית",
+      "after": "פנרבחצ׳ה בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-555",
+      "slug": "unknown-away-2025-26--3-555",
+      "cn": "25-26 费内巴 二客",
+      "teamSlug": "fenerbahce",
+      "before": "25-26 חוץ שני",
+      "after": "פנרבחצ׳ה חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-557",
+      "slug": "unknown-away-2025-26--3-557",
+      "cn": "25-26 美洲狮 二客",
+      "teamSlug": "club-america",
+      "before": "25-26 חוץ שני",
+      "after": "קלוב אמריקה חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-558",
+      "slug": "unknown-away-2025-26--3-558",
+      "cn": "25-26 克鲁塞 二客",
+      "teamSlug": "cruzeiro",
+      "before": "25-26 חוץ שני",
+      "after": "קרוזיירו חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-570",
+      "slug": "japan-away-2026--3-570",
+      "cn": "2026日本客场",
+      "teamSlug": "japan",
+      "before": "2026 סנגל חוץ",
+      "after": "יפן חוץ 2026"
+    },
+    {
+      "id": "yp-fan-3-590",
+      "slug": "unknown-home-2025-26--3-590",
+      "cn": "25-26 美洲主场",
+      "teamSlug": "club-america",
+      "before": "25-26 בית",
+      "after": "קלוב אמריקה בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-599",
+      "slug": "unknown-home-2025-26--3-599",
+      "cn": "25-26 智利 主场",
+      "teamSlug": "chile",
+      "before": "25-26 צ'ילה בית",
+      "after": "צ׳ילה בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-601",
+      "slug": "unknown-home-2025-26--3-601",
+      "cn": "25-26 吉达联合 主场",
+      "teamSlug": "al-ittihad",
+      "before": "25-26 בית",
+      "after": "אל איתחאד בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-603",
+      "slug": "unknown-away-2025-26--3-603",
+      "cn": "25-26 蒙特雷客场",
+      "teamSlug": "monterrey",
+      "before": "25-26 חוץ",
+      "after": "מונטריי חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-604",
+      "slug": "unknown-away-2025-26--3-604",
+      "cn": "25-26 波尔图二客S-4XL",
+      "teamSlug": "porto",
+      "before": "25-26 חוץ שני S-4XL",
+      "after": "פורטו חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-611",
+      "slug": "unknown-away-2025-26--3-611",
+      "cn": "25-26  里斯本 二客 S-4XL",
+      "teamSlug": "sporting-lisbon",
+      "before": "25-26 חוץ שני S-4XL",
+      "after": "ספורטינג ליסבון חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-613",
+      "slug": "unknown-away-2025-26--3-613",
+      "cn": "25-26 里斯本 客场S-4XL",
+      "teamSlug": "sporting-lisbon",
+      "before": "25-26 חוץ S-4XL",
+      "after": "ספורטינג ליסבון חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-614",
+      "slug": "unknown-away-2025-26--3-614",
+      "cn": "25-26 阿斯顿二客S-4XL",
+      "teamSlug": "aston-villa",
+      "before": "25-26 חוץ שני S-4XL",
+      "after": "אסטון וילה חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-620",
+      "slug": "unknown-home-2025-26--3-620",
+      "cn": "25-26费耶诺得主场S-4XL",
+      "teamSlug": "feyenoord",
+      "before": "25-26 בית S-4XL",
+      "after": "פיינורד בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-624",
+      "slug": "unknown-home-2025-29--3-624",
+      "cn": "25-29 皇家贝斯 主场 S-4XL",
+      "teamSlug": "real-betis",
+      "before": "25-29 בית S-4XL",
+      "after": "ריאל בטיס בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-625",
+      "slug": "s-home-2025-26--3-625",
+      "cn": "25-26波尔图主场S-4X",
+      "teamSlug": "porto",
+      "before": "25-26 בית S-4X",
+      "after": "פורטו בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-627",
+      "slug": "unknown-away-2025-26--3-627",
+      "cn": "25-26波尔图客场S-4XL",
+      "teamSlug": "porto",
+      "before": "25-26 חוץ S-4XL",
+      "after": "פורטו חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-637",
+      "slug": "unknown-home-2025-26--3-637",
+      "cn": "25-26 里斯本竞技主场S-4XL",
+      "teamSlug": "sporting-lisbon",
+      "before": "25-26 בית S-4XL",
+      "after": "ספורטינג ליסבון בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-641",
+      "slug": "unknown-home-2025-26--3-641",
+      "cn": "25-26 新兰蒙特雷S-4XL",
+      "teamSlug": "monterrey",
+      "before": "25-26 כחול S-4XL",
+      "after": "מונטריי בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-652",
+      "slug": "unknown-away-2025-26--3-652",
+      "cn": "25-26 老虎队二客S-4XL",
+      "teamSlug": "tigres",
+      "before": "25-26 חוץ שני S-4XL",
+      "after": "טיגרס חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-658",
+      "slug": "ac-away-2025-26--3-658",
+      "cn": "25-26 AC二客S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "25-26 AC חוץ שני S-4XL",
+      "after": "מילאן חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-660",
+      "slug": "unknown-home-2025-26--3-660",
+      "cn": "25-26 利雅得新月主场S-4XL",
+      "teamSlug": "al-hilal",
+      "before": "25-26 בית S-4XL",
+      "after": "אל הילאל בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-666",
+      "slug": "unknown-home-2025-26--3-666",
+      "cn": "25-26 圣保罗主场S-4XL",
+      "teamSlug": "sao-paulo",
+      "before": "25-26 בית S-4XL",
+      "after": "סאו פאולו בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-672",
+      "slug": "unknown-away-2025-26--3-672",
+      "cn": "25-26 萨尔茨堡红牛 客场S-4XL",
+      "teamSlug": "red-bull-salzburg",
+      "before": "25-26 אדום חוץ S-4XL",
+      "after": "רד בול זלצבורג חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-676",
+      "slug": "unknown-home-2025-26--3-676",
+      "cn": "25-26 老虎队主场S-4XL",
+      "teamSlug": "tigres",
+      "before": "25-26 בית S-4XL",
+      "after": "טיגרס בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-683",
+      "slug": "unknown-away--3-683",
+      "cn": "老虎队客场S-4XL",
+      "teamSlug": "tigres",
+      "before": "חוץ S-4XL",
+      "after": "טיגרס חוץ"
+    },
+    {
+      "id": "yp-fan-3-685",
+      "slug": "ac-away-2025-26--3-685",
+      "cn": "25-26 AC客场S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "25-26 AC חוץ S-4XL",
+      "after": "מילאן חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-702",
+      "slug": "ac-home-2025-26--3-702",
+      "cn": "25-26 AC主场S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "25-26 AC בית S-4XL",
+      "after": "מילאן בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-703",
+      "slug": "ac-away-2025-26--3-703",
+      "cn": "25-26 AC客场S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "25-26 AC חוץ S-4XL",
+      "after": "מילאן חוץ 2025/26"
+    },
+    {
+      "id": "yp-fan-3-707",
+      "slug": "unknown-home-2025-26--3-707",
+      "cn": "25-26 帕梅拉斯 主S-4XL",
+      "teamSlug": "palmeiras",
+      "before": "25-26 בית S-4XL",
+      "after": "פלמייראס בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-708",
+      "slug": "unknown-home-2025-26--3-708",
+      "cn": "25-26 百万富翁主场S-4XL",
+      "teamSlug": "millonarios",
+      "before": "25-26 בית S-4XL",
+      "after": "מיליונריוס בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-717",
+      "slug": "unknown-home-2025-26--3-717",
+      "cn": "25-26米内罗 主场S-4XL",
+      "teamSlug": "atletico-mineiro",
+      "before": "25-26 בז' בית S-4XL",
+      "after": "אתלטיקו מינייהו בית 2025/26"
+    },
+    {
+      "id": "yp-fan-3-741",
+      "slug": "unknown-home-2024-25--3-741",
+      "cn": "24/25正版西汉姆联主场S-4XL",
+      "teamSlug": "west-ham",
+      "before": "24/25 בית S-4XL",
+      "after": "ווסט האם בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-744",
+      "slug": "unknown-home-2024-25--3-744",
+      "cn": "24/25正版新月主场S-4XL",
+      "teamSlug": "al-hilal",
+      "before": "24/25 בית S-4XL",
+      "after": "אל הילאל בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-749",
+      "slug": "unknown-home-2024-25--3-749",
+      "cn": "24/25正版蓝十字主场S-4XL",
+      "teamSlug": "cruz-azul",
+      "before": "24/25 כחול בית S-4XL",
+      "after": "קרוז אסול בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-754",
+      "slug": "unknown-away-2024-25--3-754",
+      "cn": "24/25正版蓝十字客场S-4XL",
+      "teamSlug": "cruz-azul",
+      "before": "24/25 כחול חוץ S-4XL",
+      "after": "קרוז אסול חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-756",
+      "slug": "unknown-away-2024-25--3-756",
+      "cn": "24/25正版美洲二客S-4XL",
+      "teamSlug": "club-america",
+      "before": "24/25 חוץ שני S-4XL",
+      "after": "קלוב אמריקה חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-762",
+      "slug": "unknown-home-2024-25--3-762",
+      "cn": "24/25正版蒙特雷主场S-4XL",
+      "teamSlug": "monterrey",
+      "before": "24/25 בית S-4XL",
+      "after": "מונטריי בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-764",
+      "slug": "unknown-away-2024-25--3-764",
+      "cn": "24/25正版蒙特雷客场S-4XL",
+      "teamSlug": "monterrey",
+      "before": "24/25 חוץ S-4XL",
+      "after": "מונטריי חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-768",
+      "slug": "ac-away-2024-25--3-768",
+      "cn": "24/25正版AC二客S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "24/25 AC חוץ שני S-4XL",
+      "after": "מילאן חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-770",
+      "slug": "ac-away-2024-25--3-770",
+      "cn": "24/25正版AC客场S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "24/25 AC חוץ S-4XL",
+      "after": "מילאן חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-772",
+      "slug": "unknown-away-2024-25--3-772",
+      "cn": "24/25正版美洲狮客场S-4XL",
+      "teamSlug": "club-america",
+      "before": "24/25 חוץ S-4XL",
+      "after": "קלוב אמריקה חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-773",
+      "slug": "unknown-home-2024-25--3-773",
+      "cn": "24/25正版老虎主场S-4XL",
+      "teamSlug": "tigres",
+      "before": "24/25 בית S-4XL",
+      "after": "טיגרס בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-774",
+      "slug": "unknown-away-2024-25--3-774",
+      "cn": "24/25正版老虎客场S-4XL",
+      "teamSlug": "tigres",
+      "before": "24/25 חוץ S-4XL",
+      "after": "טיגרס חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-775",
+      "slug": "unknown-home-2024-25--3-775",
+      "cn": "24/25正版波尔图主场S-2XL",
+      "teamSlug": "porto",
+      "before": "24/25 בית S-2XL",
+      "after": "פורטו בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-777",
+      "slug": "unknown-home-2024-25--3-777",
+      "cn": "24/25正版美洲狮主场S-4XL",
+      "teamSlug": "club-america",
+      "before": "24/25 בית S-4XL",
+      "after": "קלוב אמריקה בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-782",
+      "slug": "unknown-home-2024-25--3-782",
+      "cn": "24/25正版里斯本主场S-4XL",
+      "teamSlug": "sporting-lisbon",
+      "before": "24/25 בית S-4XL",
+      "after": "ספורטינג ליסבון בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-787",
+      "slug": "unknown-away-2024-25--3-787",
+      "cn": "24/25正版美洲客场S-4XL",
+      "teamSlug": "club-america",
+      "before": "24/25 חוץ S-4XL",
+      "after": "קלוב אמריקה חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-788",
+      "slug": "unknown-home-2024-25--3-788",
+      "cn": "24/25正版美洲主场S-4XL",
+      "teamSlug": "club-america",
+      "before": "24/25 בית S-4XL",
+      "after": "קלוב אמריקה בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-790",
+      "slug": "unknown-away-2024-25--3-790",
+      "cn": "24/25正版美洲二客S-4XL",
+      "teamSlug": "club-america",
+      "before": "24/25 חוץ שני S-4XL",
+      "after": "קלוב אמריקה חוץ 2024/25"
+    },
+    {
+      "id": "yp-fan-3-810",
+      "slug": "ac-home-2024-25--3-810",
+      "cn": "24/25正版AC主场S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "24/25 AC בית S-4XL",
+      "after": "מילאן בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-819",
+      "slug": "ac-goalkeeper-2024-25--3-819",
+      "cn": "24/25正版AC守门员S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "24/25 AC שוער S-4XL",
+      "after": "מילאן שוער 2024/25"
+    },
+    {
+      "id": "yp-fan-3-820",
+      "slug": "ac-third-2024-25--3-820",
+      "cn": "24/25正版AC三客S-4XL",
+      "teamSlug": "ac-milan",
+      "before": "24/25 AC חוץ שלישי S-4XL",
+      "after": "מילאן חוץ שלישי 2024/25"
+    },
+    {
+      "id": "yp-fan-3-824",
+      "slug": "japan-special-2024--3-824",
+      "cn": "2024阿尔及利亚特别版",
+      "teamSlug": "algeria",
+      "before": "2024 מנצ'סטר סיטי מהדורה מיוחדת",
+      "after": "אלג׳יריה מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-fan-3-832",
+      "slug": "unknown-home-2024-25--3-832",
+      "cn": "24/25正版中国主场",
+      "teamSlug": "china",
+      "before": "24/25 בית",
+      "after": "סין בית 2024/25"
+    },
+    {
+      "id": "yp-fan-3-834",
+      "slug": "unknown-home-2024-25--3-834",
+      "cn": "24/25正版捷克主场",
+      "teamSlug": "czech-republic",
+      "before": "24/25 בית",
+      "after": "צ׳כיה בית 2024/25"
+    },
+    {
+      "id": "yp-short-suit-879",
+      "slug": "unknown-home-2026-it-879",
+      "cn": "2026阿尼及利亚主场",
+      "teamSlug": "algeria",
+      "before": "2026 בית",
+      "after": "אלג׳יריה בית 2026"
+    },
+    {
+      "id": "yp-short-suit-882",
+      "slug": "japan-third-2526-it-882",
+      "cn": "2526曼城三客",
+      "teamSlug": "manchester-city",
+      "before": "2526 פריז חוץ שלישי",
+      "after": "מנצ׳סטר סיטי חוץ שלישי 2025/26"
+    },
+    {
+      "id": "yp-short-suit-890",
+      "slug": "japan-home-2627-it-890",
+      "cn": "2627帕尔梅拉斯主场",
+      "teamSlug": "palmeiras",
+      "before": "2627 קרוזיירו בית",
+      "after": "פלמייראס בית 2026/27"
+    },
+    {
+      "id": "yp-short-suit-892",
+      "slug": "japan-away-2627-it-892",
+      "cn": "2627帕尔梅拉斯客场",
+      "teamSlug": "palmeiras",
+      "before": "2627 צ'יבאס חוץ שני",
+      "after": "פלמייראס חוץ 2026/27"
+    },
+    {
+      "id": "yp-short-suit-894",
+      "slug": "unknown-home-2627-it-894",
+      "cn": "2627达伽马主场",
+      "teamSlug": "vasco",
+      "before": "2627 בית",
+      "after": "וסקו דה גאמה בית 2026/27"
+    },
+    {
+      "id": "yp-short-suit-895",
+      "slug": "unknown-home-2627-it-895",
+      "cn": "2627佛拉门戈主场",
+      "teamSlug": "flamengo",
+      "before": "2627 בית",
+      "after": "פלמנגו בית 2026/27"
+    },
+    {
+      "id": "yp-short-suit-897",
+      "slug": "unknown-home-2627-it-897",
+      "cn": "2627米内罗主场",
+      "teamSlug": "atletico-mineiro",
+      "before": "2627 בז' בית",
+      "after": "אתלטיקו מינייהו בית 2026/27"
+    },
+    {
+      "id": "yp-short-suit-899",
+      "slug": "unknown-home-2026-27-it-899",
+      "cn": "26-27弗鲁米嫩塞主场",
+      "teamSlug": "fluminense",
+      "before": "26-27 בז' בית",
+      "after": "פלומיננסה בית 2026/27"
+    },
+    {
+      "id": "yp-short-suit-918",
+      "slug": "unknown-home-2526-it-918",
+      "cn": "2526科莫主场",
+      "teamSlug": "como",
+      "before": "2526 בית",
+      "after": "קומו בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-934",
+      "slug": "unknown-home-2098-99-it-934",
+      "cn": "1998-99佛罗伦赛主场",
+      "teamSlug": "fiorentina",
+      "before": "1998-99 בית",
+      "after": "פיורנטינה בית 1998/99"
+    },
+    {
+      "id": "yp-short-suit-940",
+      "slug": "japan-home-2526-it-940",
+      "cn": "2526曼城主成人套装",
+      "teamSlug": "manchester-city",
+      "before": "2526 יפן",
+      "after": "מנצ׳סטר סיטי בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-972",
+      "slug": "japan-away-2526-it-972",
+      "cn": "2526曼联客场成人套装",
+      "teamSlug": "manchester-united",
+      "before": "2526 קורינתיאנס חוץ שני",
+      "after": "מנצ׳סטר יונייטד חוץ 2025/26"
+    },
+    {
+      "id": "yp-short-suit-979",
+      "slug": "japan-home-2526-kids-it-979",
+      "cn": "2526桑托斯主场童装",
+      "teamSlug": "santos",
+      "before": "2526 מנצ'סטר סיטי ילדים",
+      "after": "סנטוס בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-981",
+      "slug": "japan-home-2526-kids-ls-it-981",
+      "cn": "2526曼联主长袖童装",
+      "teamSlug": "manchester-united",
+      "before": "2526 מנצ'סטר סיטי בית שרוול ארוך ילדים",
+      "after": "מנצ׳סטר יונייטד בית 2025/26 שרוול ארוך - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-984",
+      "slug": "unknown-home-2526-it-984",
+      "cn": "2526阿深纳主长袖童装",
+      "teamSlug": "arsenal",
+      "before": "2526 כהה בית שרוול ארוך ילדים",
+      "after": "ארסנל בית 2025/26 שרוול ארוך - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-986",
+      "slug": "japan-away-2526-kids-it-986",
+      "cn": "2526曼城客童装",
+      "teamSlug": "manchester-city",
+      "before": "2526 פריז חוץ שני ילדים",
+      "after": "מנצ׳סטר סיטי חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-988",
+      "slug": "unknown-home-2526-it-988",
+      "cn": "2526博塔佛戈主场童装",
+      "teamSlug": "botafogo",
+      "before": "2526 בית ילדים",
+      "after": "בוטפוגו בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-989",
+      "slug": "unknown-away-2526-it-989",
+      "cn": "2526达伽马客场童装",
+      "teamSlug": "vasco",
+      "before": "2526 חוץ ילדים",
+      "after": "וסקו דה גאמה חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-996",
+      "slug": "ac-away-2526-it-996",
+      "cn": "2526Ac二客成人套装",
+      "teamSlug": "ac-milan",
+      "before": "2526Ac חוץ שני סט",
+      "after": "מילאן חוץ 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1006",
+      "slug": "unknown-away-2526-t-1006",
+      "cn": "2526阿深纳二客长袖童装",
+      "teamSlug": "arsenal",
+      "before": "2526 כהה חוץ שני שרוול ארוך ילדים",
+      "after": "ארסנל חוץ 2025/26 שרוול ארוך - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1023",
+      "slug": "unknown-away-2526-t-1023",
+      "cn": "2526北爱尔兰客场童装",
+      "teamSlug": "northern-ireland",
+      "before": "2526 כחול חוץ ילדים",
+      "after": "צפון אירלנד חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1024",
+      "slug": "unknown-away-2526-t-1024",
+      "cn": "2526佛拉门戈二客童装",
+      "teamSlug": "flamengo",
+      "before": "2526 חוץ שני ילדים",
+      "after": "פלמנגו חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1025",
+      "slug": "unknown-away-2526-t-1025",
+      "cn": "2526利兹联二客童装",
+      "teamSlug": "leeds",
+      "before": "2526 חוץ שני ילדים",
+      "after": "לידס חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1028",
+      "slug": "unknown-away-2526-t-1028",
+      "cn": "2526博塔佛戈客场童装",
+      "teamSlug": "botafogo",
+      "before": "2526 חוץ ילדים",
+      "after": "בוטפוגו חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1032",
+      "slug": "ac-home-2526-t-1032",
+      "cn": "2526Ac主童装",
+      "teamSlug": "ac-milan",
+      "before": "2526Ac בית ילדים",
+      "after": "מילאן בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1034",
+      "slug": "unknown-away-2526-t-1034",
+      "cn": "2526阿深纳二客童装",
+      "teamSlug": "arsenal",
+      "before": "2526 כהה חוץ שני ילדים",
+      "after": "ארסנל חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1035",
+      "slug": "unknown-away-2526-t-1035",
+      "cn": "2526利兹联客场童装",
+      "teamSlug": "leeds",
+      "before": "2526 חוץ ילדים",
+      "after": "לידס חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1043",
+      "slug": "unknown-home-2526-t-1043",
+      "cn": "2526美洲主场成人套装",
+      "teamSlug": "club-america",
+      "before": "2526 בית סט",
+      "after": "קלוב אמריקה בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1048",
+      "slug": "unknown-away-2526-t-1048",
+      "cn": "2526美洲客场成人套装",
+      "teamSlug": "club-america",
+      "before": "2526 חוץ סט",
+      "after": "קלוב אמריקה חוץ 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1050",
+      "slug": "unknown-home-2526-t-1050",
+      "cn": "2526美洲主场童装",
+      "teamSlug": "club-america",
+      "before": "2526 בית ילדים",
+      "after": "קלוב אמריקה בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1051",
+      "slug": "unknown-away-2526-t-1051",
+      "cn": "2526美洲客场童装",
+      "teamSlug": "club-america",
+      "before": "2526 חוץ ילדים",
+      "after": "קלוב אמריקה חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1055",
+      "slug": "unknown-home-2526-t-1055",
+      "cn": "2526老虎队主场童装",
+      "teamSlug": "tigres",
+      "before": "2526 בית ילדים",
+      "after": "טיגרס בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1056",
+      "slug": "ac-away-2526-t-1056",
+      "cn": "2526AC客成人套装",
+      "teamSlug": "ac-milan",
+      "before": "2526AC חוץ סט",
+      "after": "מילאן חוץ 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1057",
+      "slug": "unknown-home-2526-t-1057",
+      "cn": "2526埃佛顿主场童装",
+      "teamSlug": "everton",
+      "before": "2526 בית ילדים",
+      "after": "אברטון בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1059",
+      "slug": "unknown-home-2526-t-1059",
+      "cn": "2526西汉姆主场童装",
+      "teamSlug": "west-ham",
+      "before": "2526 בית ילדים",
+      "after": "ווסט האם בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1060",
+      "slug": "unknown-home-2526-t-1060",
+      "cn": "2526瓦伦西亚红色童装",
+      "teamSlug": "valencia",
+      "before": "2526 אדום ילדים",
+      "after": "ולנסיה בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1061",
+      "slug": "unknown-home-2526-t-1061",
+      "cn": "2526瓦伦西亚白色童装",
+      "teamSlug": "valencia",
+      "before": "2526 לבן ילדים",
+      "after": "ולנסיה בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1064",
+      "slug": "unknown-home-2526-t-1064",
+      "cn": "2526马拉加主场童装",
+      "teamSlug": "malaga",
+      "before": "2526 בית ילדים",
+      "after": "מלאגה בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1065",
+      "slug": "unknown-away-2526-t-1065",
+      "cn": "2526巴拿马二客童装",
+      "teamSlug": "panama",
+      "before": "2526 חוץ שני ילדים",
+      "after": "פנמה חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1066",
+      "slug": "unknown-home-2526-t-1066",
+      "cn": "2526费耶诺德主场童装",
+      "teamSlug": "feyenoord",
+      "before": "2526 בית ילדים",
+      "after": "פיינורד בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1067",
+      "slug": "unknown-home-2526-t-1067",
+      "cn": "2526瓦伦西亚黄色童装",
+      "teamSlug": "valencia",
+      "before": "2526 צהוב ילדים",
+      "after": "ולנסיה בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1068",
+      "slug": "unknown-away-2526-t-1068",
+      "cn": "2526阿深纳客童装",
+      "teamSlug": "arsenal",
+      "before": "2526 כהה חוץ ילדים",
+      "after": "ארסנל חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1078",
+      "slug": "unknown-home-2526-t-1078",
+      "cn": "2526巴拿马主场童装",
+      "teamSlug": "panama",
+      "before": "2526 בית ילדים",
+      "after": "פנמה בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1079",
+      "slug": "unknown-home-2526-t-1079",
+      "cn": "2526阿深纳主童装",
+      "teamSlug": "arsenal",
+      "before": "2526 כהה בית ילדים",
+      "after": "ארסנל בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1082",
+      "slug": "japan-home-2025-26-kids-t-1082",
+      "cn": "25-26帕尔梅拉斯主场童装",
+      "teamSlug": "palmeiras",
+      "before": "25-26 באיירן מינכן בית ילדים",
+      "after": "פלמייראס בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1100",
+      "slug": "unknown-away-2526-t-1100",
+      "cn": "2526达伽马客童装",
+      "teamSlug": "vasco",
+      "before": "2526 חוץ ילדים",
+      "after": "וסקו דה גאמה חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1101",
+      "slug": "unknown-home-2526-t-1101",
+      "cn": "2526里资本主场童装",
+      "teamSlug": "sporting-lisbon",
+      "before": "2526 בית ילדים",
+      "after": "ספורטינג ליסבון בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1118",
+      "slug": "unknown-home-2526-t-1118",
+      "cn": "2526阿深纳主成人套装",
+      "teamSlug": "arsenal",
+      "before": "2526 כהה בית סט",
+      "after": "ארסנל בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1125",
+      "slug": "unknown-home-0103-t-1125",
+      "cn": "0103里资本主场",
+      "teamSlug": "sporting-lisbon",
+      "before": "0103 בית",
+      "after": "רטרו ספורטינג ליסבון בית 2001/02"
+    },
+    {
+      "id": "yp-short-suit-1126",
+      "slug": "ac-home-0910-t-1126",
+      "cn": "0910AC主场童装",
+      "teamSlug": "ac-milan",
+      "before": "0910AC בית ילדים",
+      "after": "רטרו מילאן בית 2009/10 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1127",
+      "slug": "unknown-away-2526-t-1127",
+      "cn": "2526国民竞技客场成人套装",
+      "teamSlug": "atletico-nacional",
+      "before": "2526 חוץ סט",
+      "after": "אטלטיקו נסיונל חוץ 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1132",
+      "slug": "unknown-home-2526-t-1132",
+      "cn": "2526北爱尔兰主场童装",
+      "teamSlug": "northern-ireland",
+      "before": "2526 כחול בית ילדים",
+      "after": "צפון אירלנד בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1137",
+      "slug": "unknown-away-2526-t-1137",
+      "cn": "2526佛拉门戈客童装",
+      "teamSlug": "flamengo",
+      "before": "2526 חוץ ילדים",
+      "after": "פלמנגו חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1138",
+      "slug": "unknown-away-2526-t-1138",
+      "cn": "2526圣保罗客童装",
+      "teamSlug": "sao-paulo",
+      "before": "2526 חוץ ילדים",
+      "after": "סאו פאולו חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1144",
+      "slug": "ac-home-2526-t-1144",
+      "cn": "2526AC主成人套装",
+      "teamSlug": "ac-milan",
+      "before": "2526AC בית סט",
+      "after": "מילאן בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1145",
+      "slug": "unknown-home-2425-t-1145",
+      "cn": "2425国民竞技成人套装",
+      "teamSlug": "atletico-nacional",
+      "before": "2425 סט",
+      "after": "אטלטיקו נסיונל בית 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1151",
+      "slug": "unknown-home-2025-t-1151",
+      "cn": "2025中国队童装",
+      "teamSlug": "china",
+      "before": "2025 ילדים",
+      "after": "סין בית 2025 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1160",
+      "slug": "japan-special-kids-t-1160",
+      "cn": "帕尔梅拉斯特别版童装",
+      "teamSlug": "palmeiras",
+      "before": "מנצ'סטר יונייטד מהדורה מיוחדת ילדים",
+      "after": "פלמייראס מהדורה מיוחדת - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1174",
+      "slug": "unknown-home-2526-t-1174",
+      "cn": "2526格雷米奥主场童装",
+      "teamSlug": "gremio",
+      "before": "2526 בז' בית ילדים",
+      "after": "גרמיו בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1176",
+      "slug": "unknown-home-2526-t-1176",
+      "cn": "2526佛拉门戈主成人套装",
+      "teamSlug": "flamengo",
+      "before": "2526 בית סט",
+      "after": "פלמנגו בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1184",
+      "slug": "unknown-home-t-1184",
+      "cn": "科洛科洛百年纪念版童装",
+      "teamSlug": "colo-colo",
+      "before": "ילדים",
+      "after": "קולו קולו בית - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1191",
+      "slug": "unknown-home-2025-t-1191",
+      "cn": "2025中国队主场S-2XL",
+      "teamSlug": "china",
+      "before": "2025 בית S-2XL",
+      "after": "סין בית 2025"
+    },
+    {
+      "id": "yp-short-suit-1192",
+      "slug": "japan-third-t-1192",
+      "cn": "巴黎三客",
+      "teamSlug": "psg",
+      "before": "ריבר פלייט חוץ שלישי סט",
+      "after": "פריז חוץ שלישי"
+    },
+    {
+      "id": "yp-short-suit-1205",
+      "slug": "ac-home-2425-t-1205",
+      "cn": "2425AC红绿童装",
+      "teamSlug": "ac-milan",
+      "before": "2425AC אדום ירוק ילדים",
+      "after": "מילאן בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1206",
+      "slug": "japan-away-2425-t-1206",
+      "cn": "2425芝华士二客成人套装",
+      "teamSlug": "chivas",
+      "before": "2425 צ'יבאס חוץ שני סט",
+      "after": "צ׳יבאס חוץ 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1209",
+      "slug": "ac-home-2008-09-t-1209",
+      "cn": "2008-09AC主场",
+      "teamSlug": "ac-milan",
+      "before": "2008-09AC בית",
+      "after": "רטרו מילאן בית 2008/09"
+    },
+    {
+      "id": "yp-short-suit-1210",
+      "slug": "ac-home-2526-t-1210",
+      "cn": "2526AC主成人套装",
+      "teamSlug": "ac-milan",
+      "before": "2526AC בית סט",
+      "after": "מילאן בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1216",
+      "slug": "unknown-home-2526-t-1216",
+      "cn": "2526佛鲁米嫩塞主场童装",
+      "teamSlug": "fluminense",
+      "before": "2526 בז' בית ילדים",
+      "after": "פלומיננסה בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1219",
+      "slug": "ac-third-2425-t-1219",
+      "cn": "2425AC三客童装",
+      "teamSlug": "ac-milan",
+      "before": "2425AC חוץ שלישי ילדים",
+      "after": "מילאן חוץ שלישי 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1224",
+      "slug": "unknown-home-2526-t-1224",
+      "cn": "2526老虎队主场童装",
+      "teamSlug": "tigres",
+      "before": "2526 בית ילדים",
+      "after": "טיגרס בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1227",
+      "slug": "unknown-away-2025-26-t-1227",
+      "cn": "25-26天主教客场童装",
+      "teamSlug": "universidad-catolica",
+      "before": "25-26 בית חוץ ילדים",
+      "after": "אוניברסידד קתוליקה חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1235",
+      "slug": "ac-home-0607-t-1235",
+      "cn": "0607AC主场",
+      "teamSlug": "ac-milan",
+      "before": "0607AC בית",
+      "after": "רטרו מילאן בית 2006/07"
+    },
+    {
+      "id": "yp-short-suit-1251",
+      "slug": "ac-away-0607-t-1251",
+      "cn": "0607AC客场",
+      "teamSlug": "ac-milan",
+      "before": "0607AC חוץ",
+      "after": "רטרו מילאן חוץ 2006/07"
+    },
+    {
+      "id": "yp-short-suit-1256",
+      "slug": "unknown-home-2025-26-t-1256",
+      "cn": "25-26圣保罗主童装",
+      "teamSlug": "sao-paulo",
+      "before": "25-26 בית ילדים",
+      "after": "סאו פאולו בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1261",
+      "slug": "japan-home-2024-25-kids-t-1261",
+      "cn": "24-25曼城主场童装",
+      "teamSlug": "manchester-city",
+      "before": "24-25 סנטוס בית ילדים",
+      "after": "מנצ׳סטר סיטי בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1266",
+      "slug": "unknown-away-2025-26-t-1266",
+      "cn": "25-26帕尔拉斯客场童装",
+      "teamSlug": "palmeiras",
+      "before": "25-26 חוץ ילדים",
+      "after": "פלמייראס חוץ 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1268",
+      "slug": "unknown-home-2526-t-1268",
+      "cn": "2526AC125周年纪念版成人套装",
+      "teamSlug": "ac-milan",
+      "before": "2526AC125 סט",
+      "after": "מילאן בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1272",
+      "slug": "unknown-home-2025-26-t-1272",
+      "cn": "25-26米内罗主场童装",
+      "teamSlug": "atletico-mineiro",
+      "before": "25-26 בז' בית ילדים",
+      "after": "אתלטיקו מינייהו בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1275",
+      "slug": "unknown-home-2025-26-t-1275",
+      "cn": "25-26佛拉门戈主场童装",
+      "teamSlug": "flamengo",
+      "before": "25-26 בית ילדים",
+      "after": "פלמנגו בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1285",
+      "slug": "unknown-away-2025-26-t-1285",
+      "cn": "25-26蓝十字二客成人套装",
+      "teamSlug": "cruz-azul",
+      "before": "25-26 כחול חוץ שני סט",
+      "after": "קרוז אסול חוץ 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1288",
+      "slug": "unknown-away-2025-26-t-1288",
+      "cn": "25-26美洲狮二客成人套装",
+      "teamSlug": "club-america",
+      "before": "25-26 חוץ שני סט",
+      "after": "קלוב אמריקה חוץ 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1290",
+      "slug": "unknown-home-2025-26-t-1290",
+      "cn": "25-26科洛科洛童装",
+      "teamSlug": "colo-colo",
+      "before": "25-26 ילדים",
+      "after": "קולו קולו בית 2025/26 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1292",
+      "slug": "ac-home-2526-t-1292",
+      "cn": "2526AC联名版成人套装",
+      "teamSlug": "ac-milan",
+      "before": "2526AC סט",
+      "after": "מילאן בית 2025/26"
+    },
+    {
+      "id": "yp-short-suit-1300",
+      "slug": "unknown-away-2024-25-t-1300",
+      "cn": "24-25圣保罗二客童装",
+      "teamSlug": "sao-paulo",
+      "before": "24-25 חוץ שני ילדים",
+      "after": "סאו פאולו חוץ 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1313",
+      "slug": "japan-away-2024-25-kids-t-1313",
+      "cn": "24-25韩国客场童装",
+      "teamSlug": "south-korea",
+      "before": "24-25 מארסיי חוץ שני ילדים",
+      "after": "דרום קוריאה חוץ 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1315",
+      "slug": "unknown-away-2024-25-t-1315",
+      "cn": "24-25费耶诺德二客成人套装",
+      "teamSlug": "feyenoord",
+      "before": "24-25 חוץ שני סט",
+      "after": "פיינורד חוץ 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1324",
+      "slug": "unknown-away-2024-25-t-1324",
+      "cn": "24-25阿深纳客场球迷长袖套装",
+      "teamSlug": "arsenal",
+      "before": "24-25 כהה חוץ שרוול ארוך סט",
+      "after": "ארסנל חוץ 2024/25 שרוול ארוך"
+    },
+    {
+      "id": "yp-short-suit-1327",
+      "slug": "japan-home-2024-25-ls-t-1327",
+      "cn": "24-25曼联主球迷长袖",
+      "teamSlug": "manchester-united",
+      "before": "24-25 מנצ'סטר סיטי בית סט שרוול ארוך",
+      "after": "מנצ׳סטר יונייטד בית 2024/25 שרוול ארוך"
+    },
+    {
+      "id": "yp-short-suit-1328",
+      "slug": "unknown-home-2024-25-t-1328",
+      "cn": "24-25新月主场童装",
+      "teamSlug": "al-hilal",
+      "before": "24-25 בית ילדים",
+      "after": "אל הילאל בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1338",
+      "slug": "unknown-away-2024-25-t-1338",
+      "cn": "24-25阿深纳二客成人套装",
+      "teamSlug": "arsenal",
+      "before": "24-25 כהה חוץ שני סט",
+      "after": "ארסנל חוץ 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1340",
+      "slug": "unknown-home-2024-25-t-1340",
+      "cn": "24-25阿深纳主长袖",
+      "teamSlug": "arsenal",
+      "before": "24-25 כהה בית שרוול ארוך",
+      "after": "ארסנל בית 2024/25 שרוול ארוך"
+    },
+    {
+      "id": "yp-short-suit-1347",
+      "slug": "unknown-away-2024-25-t-1347",
+      "cn": "24-25阿深纳二客童装",
+      "teamSlug": "arsenal",
+      "before": "24-25 כהה חוץ שני ילדים",
+      "after": "ארסנל חוץ 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1352",
+      "slug": "unknown-home-2024-25-t-1352",
+      "cn": "24-25埃因霍温主场童装",
+      "teamSlug": "psv",
+      "before": "24-25 בית ילדים",
+      "after": "פ.ס.וו איינדהובן בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1357",
+      "slug": "unknown-away-2024-25-t-1357",
+      "cn": "24-25阿深纳客场成人套装",
+      "teamSlug": "arsenal",
+      "before": "24-25 כהה חוץ סט",
+      "after": "ארסנל חוץ 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1366",
+      "slug": "unknown-home-2024-25-t-1366",
+      "cn": "24-25费耶诺德主场成人套装",
+      "teamSlug": "feyenoord",
+      "before": "24-25 בית סט",
+      "after": "פיינורד בית 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1367",
+      "slug": "unknown-away-2024-25-t-1367",
+      "cn": "24-25费耶诺德客场成人套装",
+      "teamSlug": "feyenoord",
+      "before": "24-25 חוץ סט",
+      "after": "פיינורד חוץ 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1373",
+      "slug": "unknown-home-2024-25-t-1373",
+      "cn": "24-25埃因霍温主场成人套装",
+      "teamSlug": "psv",
+      "before": "24-25 בית סט",
+      "after": "פ.ס.וו איינדהובן בית 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1377",
+      "slug": "unknown-away-2024-25-t-1377",
+      "cn": "24-25美洲客场成人套装",
+      "teamSlug": "club-america",
+      "before": "24-25 חוץ סט",
+      "after": "קלוב אמריקה חוץ 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1378",
+      "slug": "unknown-home-2024-25-t-1378",
+      "cn": "24-25美洲主场成人套装",
+      "teamSlug": "club-america",
+      "before": "24-25 בית סט",
+      "after": "קלוב אמריקה בית 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1380",
+      "slug": "unknown-away-2024-25-t-1380",
+      "cn": "24-25埃因霍温客场成人套装",
+      "teamSlug": "psv",
+      "before": "24-25 חוץ סט",
+      "after": "פ.ס.וו איינדהובן חוץ 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1381",
+      "slug": "unknown-away-2024-25-t-1381",
+      "cn": "24-25美洲客场童装",
+      "teamSlug": "club-america",
+      "before": "24-25 חוץ ילדים",
+      "after": "קלוב אמריקה חוץ 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1384",
+      "slug": "unknown-home-2024-25-t-1384",
+      "cn": "24-25美洲主场童装",
+      "teamSlug": "club-america",
+      "before": "24-25 בית ילדים",
+      "after": "קלוב אמריקה בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1388",
+      "slug": "ac-home-2024-25-t-1388",
+      "cn": "24-25AC主成人套装",
+      "teamSlug": "ac-milan",
+      "before": "24-25AC בית סט",
+      "after": "מילאן בית 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1392",
+      "slug": "unknown-home-2024-25-t-1392",
+      "cn": "24-25阿深纳主场成人套装",
+      "teamSlug": "arsenal",
+      "before": "24-25 כהה בית סט",
+      "after": "ארסנל בית 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1399",
+      "slug": "unknown-away-2024-25-t-1399",
+      "cn": "24-25巴拿马客场童装",
+      "teamSlug": "panama",
+      "before": "24-25 חוץ ילדים",
+      "after": "פנמה חוץ 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1403",
+      "slug": "unknown-away-2024-25-t-1403",
+      "cn": "24-25阿深纳客场童装",
+      "teamSlug": "arsenal",
+      "before": "24-25 כהה חוץ ילדים",
+      "after": "ארסנל חוץ 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1404",
+      "slug": "unknown-home-2024-25-t-1404",
+      "cn": "24-25里斯本主场童装",
+      "teamSlug": "sporting-lisbon",
+      "before": "24-25 בית ילדים",
+      "after": "ספורטינג ליסבון בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1406",
+      "slug": "ac-home-2024-25-t-1406",
+      "cn": "24-25AC主场童装",
+      "teamSlug": "ac-milan",
+      "before": "24-25AC בית ילדים",
+      "after": "מילאן בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1417",
+      "slug": "unknown-away-2024-25-t-1417",
+      "cn": "24-25埃因霍温客场成人套装",
+      "teamSlug": "psv",
+      "before": "24-25 חוץ סט",
+      "after": "פ.ס.וו איינדהובן חוץ 2024/25"
+    },
+    {
+      "id": "yp-short-suit-1422",
+      "slug": "unknown-home-2024-25-t-1422",
+      "cn": "24-25阿深纳主场童装",
+      "teamSlug": "arsenal",
+      "before": "24-25 כהה בית ילדים",
+      "after": "ארסנל בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1441",
+      "slug": "unknown-retro-t-1441",
+      "cn": "红阿深纳02.03复古童装",
+      "teamSlug": "arsenal",
+      "before": "אדום כהה 02.03 רטרו ילדים",
+      "after": "רטרו ארסנל - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1448",
+      "slug": "unknown-home-2024-25-t-1448",
+      "cn": "24-25达伽马主场童装",
+      "teamSlug": "vasco",
+      "before": "24-25 בית ילדים",
+      "after": "וסקו דה גאמה בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-short-suit-1459",
+      "slug": "unknown-home-2024-25-t-1459",
+      "cn": "24-25佛拉门戈主场童装",
+      "teamSlug": "flamengo",
+      "before": "24-25 בית ילדים",
+      "after": "פלמנגו בית 2024/25 - סט ילדים"
+    },
+    {
+      "id": "yp-player-1-1485",
+      "slug": "japan-special-2026-27-1-1485",
+      "cn": "26-27加纳特别版",
+      "teamSlug": "ghana",
+      "before": "26-27 פריז מהדורה מיוחדת",
+      "after": "גאנה מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-player-1-1488",
+      "slug": "ac-away-2026-27-1-1488",
+      "cn": "26-27AC客场",
+      "teamSlug": "ac-milan",
+      "before": "26-27AC חוץ",
+      "after": "מילאן חוץ 2026/27"
+    },
+    {
+      "id": "yp-player-1-1490",
+      "slug": "ac-home-2026-27-1-1490",
+      "cn": "26-27AC主场",
+      "teamSlug": "ac-milan",
+      "before": "26-27AC בית",
+      "after": "מילאן בית 2026/27"
+    },
+    {
+      "id": "yp-player-1-1508",
+      "slug": "unknown-home-2026-27-1-1508",
+      "cn": "26-27牙买加主场",
+      "teamSlug": "jamaica",
+      "before": "26-27 ג'מייקה בית",
+      "after": "ג׳מייקה בית 2026/27"
+    },
+    {
+      "id": "yp-player-1-1510",
+      "slug": "unknown-away-2026-27-1-1510",
+      "cn": "26-27牙买加客场",
+      "teamSlug": "jamaica",
+      "before": "26-27 ג'מייקה חוץ",
+      "after": "ג׳מייקה חוץ 2026/27"
+    },
+    {
+      "id": "yp-player-1-1515",
+      "slug": "unknown-special-1-1515",
+      "cn": "蓝十字特别版",
+      "teamSlug": "cruz-azul",
+      "before": "כחול מהדורה מיוחדת",
+      "after": "קרוז אסול מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-player-1-1521",
+      "slug": "unknown-special-1-1521",
+      "cn": "蓝十字特别版",
+      "teamSlug": "cruz-azul",
+      "before": "כחול מהדורה מיוחדת",
+      "after": "קרוז אסול מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-player-1-1532",
+      "slug": "unknown-away-1-1532",
+      "cn": "新月二客",
+      "teamSlug": "al-hilal",
+      "before": "חוץ שני",
+      "after": "אל הילאל חוץ"
+    },
+    {
+      "id": "yp-player-1-1550",
+      "slug": "ac-away-2000-01-1-1550",
+      "cn": "00-01 AC客场",
+      "teamSlug": "ac-milan",
+      "before": "00-01 AC חוץ",
+      "after": "רטרו מילאן חוץ 2000/01"
+    },
+    {
+      "id": "yp-player-1-1619",
+      "slug": "ac-goalkeeper-1-1619",
+      "cn": "AC 125周年纪念版守门员",
+      "teamSlug": "ac-milan",
+      "before": "AC 125 שוער",
+      "after": "מילאן שוער"
+    },
+    {
+      "id": "yp-player-1-1620",
+      "slug": "ac-home-1-1620",
+      "cn": "AC 125周年纪念版",
+      "teamSlug": "ac-milan",
+      "before": "AC 125",
+      "after": "מילאן בית"
+    },
+    {
+      "id": "yp-player-1-1624",
+      "slug": "unknown-away-1-1624",
+      "cn": "里斯本二客",
+      "teamSlug": "sporting-lisbon",
+      "before": "חוץ שני",
+      "after": "ספורטינג ליסבון חוץ"
+    },
+    {
+      "id": "yp-player-1-1625",
+      "slug": "unknown-away-1-1625",
+      "cn": "美洲狮二客",
+      "teamSlug": "club-america",
+      "before": "חוץ שני",
+      "after": "קלוב אמריקה חוץ"
+    },
+    {
+      "id": "yp-player-1-1627",
+      "slug": "unknown-third-2024-25-1-1627",
+      "cn": "24-25里斯本三客",
+      "teamSlug": "sporting-lisbon",
+      "before": "24-25 חוץ שלישי",
+      "after": "ספורטינג ליסבון חוץ שלישי 2024/25"
+    },
+    {
+      "id": "yp-player-1-1633",
+      "slug": "unknown-special-1-1633",
+      "cn": "新月67年特别版",
+      "teamSlug": "al-hilal",
+      "before": "67 מהדורה מיוחדת",
+      "after": "אל הילאל מהדורה מיוחדת"
+    },
+    {
+      "id": "yp-player-1-1667",
+      "slug": "japan-home-2024-1-1667",
+      "cn": "2024阿尔及利亚主场",
+      "teamSlug": "algeria",
+      "before": "2024 מצרים בית",
+      "after": "אלג׳יריה בית 2024"
+    },
+    {
+      "id": "yp-player-1-1669",
+      "slug": "japan-away-2024-1-1669",
+      "cn": "2024阿尔及利亚客场",
+      "teamSlug": "algeria",
+      "before": "2024 מרוקו חוץ",
+      "after": "אלג׳יריה חוץ 2024"
+    },
+    {
+      "id": "yp-player-2-1691",
+      "slug": "unknown-home-2026-2-1691",
+      "cn": "2026卡塔尔主场",
+      "teamSlug": "qatar",
+      "before": "2026 בית",
+      "after": "קטאר בית 2026"
+    },
+    {
+      "id": "yp-player-2-1714",
+      "slug": "ac-away-2026-27-2-1714",
+      "cn": "26-27AC客场",
+      "teamSlug": "ac-milan",
+      "before": "26-27AC חוץ",
+      "after": "מילאן חוץ 2026/27"
+    },
+    {
+      "id": "yp-player-2-1724",
+      "slug": "ac-home-2026-27-2-1724",
+      "cn": "26-27AC主场",
+      "teamSlug": "ac-milan",
+      "before": "26-27AC בית",
+      "after": "מילאן בית 2026/27"
+    },
+    {
+      "id": "yp-player-2-1759",
+      "slug": "japan-away-2025-26-ls-2-1759",
+      "cn": "25-26曼城客场（长袖款）",
+      "teamSlug": "manchester-city",
+      "before": "25-26 אתלטיקו מדריד חוץ （ שרוול ארוך ）",
+      "after": "מנצ׳סטר סיטי חוץ 2025/26 שרוול ארוך"
+    },
+    {
+      "id": "yp-player-2-1763",
+      "slug": "japan-home-2025-26-ls-2-1763",
+      "cn": "25-26马竞主场（长袖款）",
+      "teamSlug": "atletico-madrid",
+      "before": "25-26 מנצ'סטר סיטי בית （ שרוול ארוך ）",
+      "after": "אתלטיקו מדריד בית 2025/26 שרוול ארוך"
+    },
+    {
+      "id": "yp-retro-1797",
+      "slug": "ac-away-2000-01-o-1797",
+      "cn": "00-01 AC客场",
+      "teamSlug": "ac-milan",
+      "before": "00-01 AC חוץ",
+      "after": "רטרו מילאן חוץ 2000/01"
+    },
+    {
+      "id": "yp-yupoo-232202368",
+      "slug": "nigeria-home-2026-set",
+      "cn": "2026阿尼及利亚主场",
+      "teamSlug": "algeria",
+      "before": "ניגריה סט מבוגרים בית 2026",
+      "after": "אלג׳יריה בית 2026"
+    }
+  ],
+  "skipSamples": {
+    "ambiguous": [
+      {
+        "id": "yp-fan-1-200",
+        "cn": "24-25利雅得客场",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-fan-1-202",
+        "cn": "24-25利雅得二 客",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-fan-3-593",
+        "cn": "25-26 利雅得客场",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-fan-3-612",
+        "cn": "25-26 利雅得 主场S-4XL",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-fan-3-634",
+        "cn": "25-26 利雅得客场S-4XL",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-fan-3-740",
+        "cn": "24/25正版利雅得二客S-2XL",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-fan-3-755",
+        "cn": "24/25正版利雅得主场S-4XL",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-998",
+        "cn": "2526利雅得客场成人套装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1018",
+        "cn": "2526利雅得主场成人套装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1021",
+        "cn": "2526利雅得客童装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1026",
+        "cn": "2526利雅得主场童装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1030",
+        "cn": "2526利雅得二客童装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1306",
+        "cn": "24-25利雅得二客童装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1335",
+        "cn": "24-25利雅得主场成人套装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-player-1-1632",
+        "cn": "利雅得二客",
+        "teamSlug": "al-nassr"
+      }
+    ],
+    "noMatch": [
+      {
+        "id": "yp-fan-2-454",
+        "cn": "特别版球衣",
+        "teamSlug": "special-edition"
+      },
+      {
+        "id": "yp-fan-2-457",
+        "cn": "特别版球衣",
+        "teamSlug": "special-edition"
+      },
+      {
+        "id": "yp-fan-2-458",
+        "cn": "内马尔球衣纪念版",
+        "teamSlug": "santos"
+      },
+      {
+        "id": "yp-fan-2-461",
+        "cn": "内马尔球衣特别版",
+        "teamSlug": "santos"
+      },
+      {
+        "id": "yp-fan-2-467",
+        "cn": "内马尔纪念版球衣",
+        "teamSlug": "santos"
+      },
+      {
+        "id": "yp-fan-3-547",
+        "cn": "25-26 玛利亚 黑色",
+        "teamSlug": "argentina"
+      },
+      {
+        "id": "yp-short-suit-1139",
+        "cn": "2526C罗特别版童装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1140",
+        "cn": "2526内马尔纪念版童装",
+        "teamSlug": "santos"
+      },
+      {
+        "id": "yp-short-suit-1175",
+        "cn": "C罗纪念版成人套装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1178",
+        "cn": "梅西纪念版成人套装",
+        "teamSlug": "inter-miami"
+      },
+      {
+        "id": "yp-short-suit-1181",
+        "cn": "C罗纪念版童装",
+        "teamSlug": "al-nassr"
+      },
+      {
+        "id": "yp-short-suit-1183",
+        "cn": "梅西纪念版童装",
+        "teamSlug": "inter-miami"
+      },
+      {
+        "id": "yp-short-suit-1297",
+        "cn": "12-13桑拖斯主场复古童装",
+        "teamSlug": "santos"
+      },
+      {
+        "id": "yp-player-1-1551",
+        "cn": "90-91马塞主场",
+        "teamSlug": "marseille"
+      }
+    ],
+    "noCanonical": []
+  }
+}

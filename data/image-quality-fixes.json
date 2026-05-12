@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-05-12T18:16:58.314Z",
+  "applied": true,
+  "totals": {
+    "products_in_catalog": 2111,
+    "yupoo_linked_products": 1277,
+    "album_matched": 1274,
+    "album_unmatched": 3,
+    "fixed": 0,
+    "investigated_no_fix": 3,
+    "closeup_marker_hits": 0
+  },
+  "fixes": [],
+  "investigated_no_fix": [
+    {
+      "slug": "atletico-madrid-retro-1999-00-home",
+      "reason": "no-album-match"
+    },
+    {
+      "slug": "atletico-madrid-retro-1995-96-home",
+      "reason": "no-album-match"
+    },
+    {
+      "slug": "atletico-madrid-retro-1994-95-home",
+      "reason": "no-album-match"
+    }
+  ],
+  "closeup_marker_hits": []
+}
