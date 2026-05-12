@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { AlertCircle, Loader2, LogIn } from "lucide-react";
@@ -27,6 +27,17 @@ export default function LoginForm({ errorParam }: { errorParam?: string }) {
     errorParam && ERROR_COPY[errorParam] ? ERROR_COPY[errorParam] : null,
   );
 
+  // Pre-fill email from last successful login so Safari can trigger
+  // Touch ID autofill for the password the moment the page renders.
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem("jd:admin:email");
+      if (saved) setEmail(saved);
+    } catch {
+      // private-browsing / blocked storage — fine, just no pre-fill
+    }
+  }, []);
+
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
@@ -44,6 +55,13 @@ export default function LoginForm({ errorParam }: { errorParam?: string }) {
       );
       setSubmitting(false);
       return;
+    }
+    // Remember the email locally for next visit (password stays in the
+    // iCloud / browser keychain, never in our storage).
+    try {
+      window.localStorage.setItem("jd:admin:email", email);
+    } catch {
+      // ignore
     }
     // Successful auth — middleware will check admin_users membership on
     // the next page load and bounce back here with ?error=no_access if
