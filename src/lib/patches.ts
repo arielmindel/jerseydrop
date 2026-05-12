@@ -15,10 +15,10 @@ export type Patch = {
 };
 
 type Competition =
-  | "ucl"
+  | "championsLeague"
   | "uefaCup"
   | "europaLeague"
-  | "cwc"
+  | "cupWinnersCup"
   | "conferenceLeague";
 
 type SeasonCompetitions = Partial<Record<Competition, string[]>>;
@@ -32,10 +32,10 @@ type PatchesConfig = {
 const CONFIG = patchesConfigJson as unknown as PatchesConfig;
 
 const COMPETITION_TO_PATCH: Record<Competition, string> = {
-  ucl: "champions-league",
+  championsLeague: "champions-league",
   uefaCup: "uefa-cup",
   europaLeague: "europa-league",
-  cwc: "cup-winners-cup",
+  cupWinnersCup: "cup-winners-cup",
   conferenceLeague: "conference-league",
 };
 
@@ -122,11 +122,11 @@ function findCompetitionForTeam(
   // season; if data accidentally has them in two, prefer UCL > UEL/UEFA-Cup
   // > Conference League > Cup Winners' Cup.
   const order: Competition[] = [
-    "ucl",
+    "championsLeague",
     "uefaCup",
     "europaLeague",
     "conferenceLeague",
-    "cwc",
+    "cupWinnersCup",
   ];
   for (const comp of order) {
     const list = season[comp];
@@ -191,5 +191,5 @@ export function getPatchById(id: string | null | undefined): Patch | null {
 
 /** Teams currently in UCL — used by the "Champions League" collection page. */
 export function getCurrentUclTeams(): string[] {
-  return CONFIG.competitions["2025-26"]?.ucl ?? [];
+  return CONFIG.competitions["2025-26"]?.championsLeague ?? [];
 }

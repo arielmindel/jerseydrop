@@ -16,10 +16,10 @@ const CONFIG_PATH = resolve(__dirname, "../data/patches-config.json");
 const CONFIG = JSON.parse(readFileSync(CONFIG_PATH, "utf8"));
 
 const COMPETITION_TO_PATCH = {
-  ucl: "champions-league",
+  championsLeague: "champions-league",
   uefaCup: "uefa-cup",
   europaLeague: "europa-league",
-  cwc: "cup-winners-cup",
+  cupWinnersCup: "cup-winners-cup",
   conferenceLeague: "conference-league",
 };
 
@@ -55,7 +55,13 @@ function normalizeSeason(s) {
 function findCompetitionForTeam(slug, season) {
   const s = CONFIG.competitions?.[season];
   if (!s) return null;
-  const order = ["ucl", "uefaCup", "europaLeague", "conferenceLeague", "cwc"];
+  const order = [
+    "championsLeague",
+    "uefaCup",
+    "europaLeague",
+    "conferenceLeague",
+    "cupWinnersCup",
+  ];
   for (const c of order) {
     if (s[c]?.includes(slug)) return c;
   }
