@@ -64660,15 +64660,15 @@
   {
     "id": "yp-short-suit-912",
     "slug": "unknown-home-2026-it-912",
-    "nameHe": "2026 בית",
+    "nameHe": "ונציה מדי בית 2026",
     "nameEn": "",
     "sourceHandle": "",
     "sourceUrl": "",
     "sourceHandleCn": "2026威尼斯主场",
     "category": "club",
-    "league": "ligue-1",
-    "team": "ניס",
-    "teamSlug": "nice",
+    "league": "serie-a",
+    "team": "ונציה",
+    "teamSlug": "venezia",
     "season": "2026",
     "type": "home",
     "isRetro": false,
@@ -64692,7 +64692,9 @@
       "/images/products-clean/yp-short-suit-912-1.webp"
     ],
     "tags": [
-      "yupoo"
+      "yupoo",
+      "ונציה",
+      "venezia"
     ],
     "colorHe": null,
     "description": "",
