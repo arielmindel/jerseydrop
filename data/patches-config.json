@@ -132,7 +132,8 @@
         "werder-bremen",
         "porto",
         "barcelona",
-        "galatasaray"
+        "galatasaray",
+        "manchester-united"
       ],
       "uefaCup": [
         "juventus",
@@ -259,7 +260,8 @@
         "aston-villa",
         "roma",
         "lazio",
-        "celta-vigo"
+        "celta-vigo",
+        "arsenal"
       ],
       "cupWinnersCup": [
         "barcelona",
@@ -285,7 +287,8 @@
         "newcastle",
         "monaco",
         "porto",
-        "rosenborg"
+        "rosenborg",
+        "psg"
       ],
       "uefaCup": [
         "inter-milan",
@@ -302,7 +305,8 @@
         "fiorentina",
         "udinese",
         "aston-villa",
-        "liverpool"
+        "liverpool",
+        "arsenal"
       ],
       "cupWinnersCup": [
         "chelsea",
@@ -362,7 +366,8 @@
         "mallorca",
         "chelsea",
         "heerenveen",
-        "anorthosis"
+        "anorthosis",
+        "psg"
       ]
     },
     "1999-00": {
@@ -522,7 +527,8 @@
         "stuttgart",
         "bordeaux",
         "auxerre",
-        "rapid-bucharest"
+        "rapid-bucharest",
+        "sporting-lisbon"
       ]
     },
     "2002-03": {
@@ -642,7 +648,9 @@
         "udinese",
         "bordeaux",
         "lens",
-        "leeds"
+        "leeds",
+        "sporting-lisbon",
+        "benfica"
       ]
     },
     "2004-05": {
@@ -705,7 +713,8 @@
         "athletic-bilbao",
         "real-sociedad",
         "celta-vigo",
-        "espanyol"
+        "espanyol",
+        "benfica"
       ]
     },
     "2005-06": {
@@ -2070,6 +2079,7 @@
         "celtic",
         "rangers",
         "salzburg",
+        "red-bull-salzburg",
         "shakhtar-donetsk",
         "dinamo-zagreb",
         "maccabi-haifa",
@@ -2172,6 +2182,7 @@
         "braga",
         "union-berlin",
         "salzburg",
+        "red-bull-salzburg",
         "red-star-belgrade"
       ],
       "europaLeague": [
@@ -2363,36 +2374,61 @@
         "barcelona",
         "atletico-madrid",
         "athletic-bilbao",
+        "villarreal",
         "manchester-city",
         "liverpool",
         "arsenal",
         "aston-villa",
+        "tottenham",
+        "chelsea",
+        "newcastle",
         "inter-milan",
         "ac-milan",
         "juventus",
         "atalanta",
         "bologna",
+        "napoli",
         "bayern-munich",
         "borussia-dortmund",
         "bayer-leverkusen",
         "rb-leipzig",
         "vfb-stuttgart",
+        "eintracht-frankfurt",
         "psg",
         "monaco",
+        "marseille",
         "brest",
         "lille",
         "benfica",
         "sporting-lisbon",
-        "celtic"
+        "celtic",
+        "psv",
+        "ajax",
+        "galatasaray"
       ],
       "europaLeague": [
         "manchester-united",
         "tottenham",
         "chelsea",
+        "aston-villa",
+        "nottingham-forest",
         "roma",
         "lazio",
+        "bologna",
+        "real-betis",
+        "celta-vigo",
+        "vfb-stuttgart",
+        "lille",
+        "lyon",
+        "nice",
+        "porto",
+        "braga",
+        "feyenoord",
         "ajax",
-        "rangers"
+        "fenerbahce",
+        "rangers",
+        "red-bull-salzburg",
+        "young-boys"
       ],
       "conferenceLeague": [
         "fiorentina",
@@ -2402,7 +2438,11 @@
         "lask",
         "rapid-wien",
         "shamrock-rovers",
-        "noah"
+        "noah",
+        "shakhtar-donetsk",
+        "besiktas",
+        "aberdeen",
+        "aek-athens"
       ]
     }
   },
