@@ -110,6 +110,7 @@ export default function Hero() {
   return (
     <section
       aria-label="Hero"
+      data-chatbot-hide
       className="relative w-full h-[100dvh] landscape:h-screen landscape:lg:max-h-[1080px] overflow-hidden bg-black"
     >
       {/* ============ VERTICAL LAYERS (portrait only) ============ */}
