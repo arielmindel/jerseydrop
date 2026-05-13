@@ -18,7 +18,9 @@ import type { Product } from "@/lib/types";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const MODEL = "claude-sonnet-4-6";
+// Default to Sonnet 4.5 — known-good alias. Override per-deploy via env if a
+// newer model becomes available without redeploying code.
+const MODEL = process.env.ANTHROPIC_MODEL || "claude-sonnet-4-5";
 const MAX_TOKENS = 1024;
 const MAX_TOOL_ITERATIONS = 4; // assistant ↔ tool ping-pong cap
 
@@ -276,44 +278,57 @@ export async function POST(req: NextRequest) {
   let assistantText = "";
   const productCards: ProductCard[] = [];
 
-  for (let i = 0; i < MAX_TOOL_ITERATIONS; i++) {
-    const reply: Anthropic.Messages.Message = await anthropic.messages.create({
-      model: MODEL,
-      max_tokens: MAX_TOKENS,
-      system: SYSTEM_PROMPT,
-      tools: TOOLS,
-      messages: conversation,
-    });
-
-    // Collect any text and any tool_use blocks from this turn.
-    const toolUses: Anthropic.Messages.ToolUseBlock[] = [];
-    let turnText = "";
-    for (const block of reply.content) {
-      if (block.type === "text") turnText += block.text;
-      else if (block.type === "tool_use") toolUses.push(block);
-    }
-
-    if (turnText) assistantText = turnText; // keep latest visible text
-    conversation.push({ role: "assistant", content: reply.content });
-
-    if (reply.stop_reason !== "tool_use" || toolUses.length === 0) {
-      break; // assistant gave a final answer
-    }
-
-    // Run each tool and append a tool_result back to the conversation
-    const toolResults: Anthropic.Messages.ToolResultBlockParam[] = [];
-    for (const tu of toolUses) {
-      const result = runTool(tu.name, tu.input);
-      if (tu.name === "searchProducts" && Array.isArray(result)) {
-        productCards.push(...(result as ProductCard[]));
-      }
-      toolResults.push({
-        type: "tool_result",
-        tool_use_id: tu.id,
-        content: JSON.stringify(result),
+  try {
+    for (let i = 0; i < MAX_TOOL_ITERATIONS; i++) {
+      const reply: Anthropic.Messages.Message = await anthropic.messages.create({
+        model: MODEL,
+        max_tokens: MAX_TOKENS,
+        system: SYSTEM_PROMPT,
+        tools: TOOLS,
+        messages: conversation,
       });
+
+      // Collect any text and any tool_use blocks from this turn.
+      const toolUses: Anthropic.Messages.ToolUseBlock[] = [];
+      let turnText = "";
+      for (const block of reply.content) {
+        if (block.type === "text") turnText += block.text;
+        else if (block.type === "tool_use") toolUses.push(block);
+      }
+
+      if (turnText) assistantText = turnText; // keep latest visible text
+      conversation.push({ role: "assistant", content: reply.content });
+
+      if (reply.stop_reason !== "tool_use" || toolUses.length === 0) {
+        break; // assistant gave a final answer
+      }
+
+      // Run each tool and append a tool_result back to the conversation
+      const toolResults: Anthropic.Messages.ToolResultBlockParam[] = [];
+      for (const tu of toolUses) {
+        const result = runTool(tu.name, tu.input);
+        if (tu.name === "searchProducts" && Array.isArray(result)) {
+          productCards.push(...(result as ProductCard[]));
+        }
+        toolResults.push({
+          type: "tool_result",
+          tool_use_id: tu.id,
+          content: JSON.stringify(result),
+        });
+      }
+      conversation.push({ role: "user", content: toolResults });
     }
-    conversation.push({ role: "user", content: toolResults });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("[chat] Anthropic API call failed:", msg, err);
+    return NextResponse.json(
+      {
+        error: "Anthropic API call failed",
+        detail: msg,
+        model: MODEL,
+      },
+      { status: 500 },
+    );
   }
 
   // Persist the exchange to Supabase. Best-effort — don't fail the user

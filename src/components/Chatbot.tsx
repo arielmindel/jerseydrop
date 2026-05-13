@@ -213,7 +213,20 @@ export default function Chatbot() {
             messages: payload,
           }),
         });
-        if (!res.ok) throw new Error(`Server error ${res.status}`);
+        if (!res.ok) {
+          // Try to surface the server's actual reason (model name, missing key,
+          // Anthropic API error) instead of a generic "Server error 500".
+          let serverDetail = `Server error ${res.status}`;
+          try {
+            const errBody = await res.json();
+            if (errBody?.detail || errBody?.error) {
+              serverDetail = `${errBody.error || "error"}: ${errBody.detail || ""}${errBody.model ? ` (model: ${errBody.model})` : ""}`;
+            }
+          } catch {
+            /* response wasn't JSON */
+          }
+          throw new Error(serverDetail);
+        }
         const data: {
           role: "assistant";
           content: string;
@@ -228,13 +241,14 @@ export default function Chatbot() {
         setMessages((prev) => [...prev, reply]);
       } catch (err) {
         console.error("[chatbot] send failed", err);
+        const detail = err instanceof Error ? err.message : "Unknown error";
         setMessages((prev) => [
           ...prev,
           {
             id: crypto.randomUUID(),
             role: "assistant",
             content:
-              "אופס, משהו נתקע אצלי 💬 נסה שוב בעוד רגע, או דבר איתנו ישירות בוואטסאפ. " +
+              `אופס, משהו נתקע אצלי 💬 נסה שוב בעוד רגע, או דבר איתנו ישירות בוואטסאפ.\n\n[debug] ${detail} ` +
               WA_TRIGGER,
           },
         ]);
