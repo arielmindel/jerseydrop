@@ -11,7 +11,6 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Toaster } from "sonner";
 import MarqueeBanner from "@/components/layout/MarqueeBanner";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
-import Chatbot from "@/components/Chatbot";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 
@@ -170,7 +169,6 @@ export default function RootLayout({
           <Footer />
         </div>
         <WhatsAppFloat />
-        <Chatbot />
         <AccessibilityMenu />
         <Clarity />
         {process.env.NEXT_PUBLIC_GA_ID && (
