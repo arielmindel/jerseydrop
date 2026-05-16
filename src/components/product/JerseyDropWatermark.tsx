@@ -6,8 +6,9 @@
  * watermarks sit. Uses `right-2` (physical) so it lands on the same corner
  * regardless of RTL layout context.
  *
- * Only applied to images sourced from supplier CDNs (shopify / yupoo proxy);
- * once we ship images from our own CDN this can be turned off per image.
+ * Applied to images that still carry the supplier watermark in their bytes:
+ * supplier CDNs (shopify / yupoo proxy) and our own R2 mirror of those same
+ * bytes. Skipped only for images we've re-shot or specifically curated.
  */
 export default function JerseyDropWatermark({
   src,
@@ -21,7 +22,9 @@ export default function JerseyDropWatermark({
   const isSupplier =
     src.includes("cdn.shopify.com") ||
     src.includes("/api/yupoo-image") ||
-    src.includes("photo.yupoo.com");
+    src.includes("photo.yupoo.com") ||
+    src.includes(".r2.dev") ||
+    src.includes(".r2.cloudflarestorage.com");
   if (!isSupplier) return null;
 
   const cls =

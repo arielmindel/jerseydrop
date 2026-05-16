@@ -41,3 +41,9 @@ public/images/products/*.jpg
 public/images/products/*.jpeg
 public/images/products/*.png
 public/images/products/*.webp
+
+# R2 migration runtime artifacts
+data/migration.log
+data/migration-errors.json
+data/sporthub-products.pre-r2.*.json
+.claude/
