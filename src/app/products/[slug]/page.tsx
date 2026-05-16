@@ -66,6 +66,28 @@ export default function ProductPage({ params }: Props) {
   // Only include offers when we have a real price; Google rejects offers
   // without a numeric price.
   if (startingPrice !== null) {
+    // Reused inside both tiers of shippingDetails below — 1-3 business days
+    // handling + 10-16 days transit from the supplier.
+    const deliveryTime = {
+      "@type": "ShippingDeliveryTime",
+      handlingTime: {
+        "@type": "QuantitativeValue",
+        minValue: 1,
+        maxValue: 3,
+        unitCode: "DAY",
+      },
+      transitTime: {
+        "@type": "QuantitativeValue",
+        minValue: 10,
+        maxValue: 16,
+        unitCode: "DAY",
+      },
+    };
+    const shippingDestination = {
+      "@type": "DefinedRegion",
+      addressCountry: "IL",
+    };
+
     productLd.offers = {
       "@type": "Offer",
       priceCurrency: "ILS",
@@ -77,6 +99,51 @@ export default function ProductPage({ params }: Props) {
             ? "https://schema.org/LimitedAvailability"
             : "https://schema.org/InStock",
       url: `${SITE_URL}/products/${product.slug}`,
+      // Two-tier shipping: flat 25 ILS up to 199.99, free at 200+. Google
+      // supports an array of OfferShippingDetails so the eligibility band
+      // (PriceSpecification.min/maxPrice) tells the SERP which rate applies
+      // to a given order subtotal.
+      shippingDetails: [
+        {
+          "@type": "OfferShippingDetails",
+          shippingRate: {
+            "@type": "MonetaryAmount",
+            value: "25",
+            currency: "ILS",
+          },
+          shippingDestination,
+          eligibleTransactionVolume: {
+            "@type": "PriceSpecification",
+            maxPrice: 199.99,
+            priceCurrency: "ILS",
+          },
+          deliveryTime,
+        },
+        {
+          "@type": "OfferShippingDetails",
+          shippingRate: {
+            "@type": "MonetaryAmount",
+            value: "0",
+            currency: "ILS",
+          },
+          shippingDestination,
+          eligibleTransactionVolume: {
+            "@type": "PriceSpecification",
+            minPrice: 200,
+            priceCurrency: "ILS",
+          },
+          deliveryTime,
+        },
+      ],
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: "IL",
+        returnPolicyCategory:
+          "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 14,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/FreeReturn",
+      },
     };
   }
 
