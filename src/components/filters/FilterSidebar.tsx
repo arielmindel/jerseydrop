@@ -227,7 +227,7 @@ function FilterGroup({
             step={10}
             value={maxPrice}
             onChange={(e) => onSetPrice(minPrice, Number(e.target.value))}
-            className="flex-1 accent-[#00B85F]"
+            className="flex-1 accent-[#00FF88]"
           />
           <span>{maxPrice} ₪</span>
         </div>

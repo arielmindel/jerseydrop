@@ -56,7 +56,7 @@ export default function ProductCard({ product }: { product: Product }) {
           aria-hidden
           className="pointer-events-none absolute inset-x-0 bottom-3 hidden translate-y-2 justify-center px-3 opacity-0 transition-all duration-200 ease-out md:flex md:group-hover:translate-y-0 md:group-hover:opacity-100"
         >
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-background/75 px-4 py-2 font-display text-[0.7rem] font-bold uppercase tracking-[0.18em] text-foreground backdrop-blur-md">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-black/75 px-4 py-2 font-display text-[0.7rem] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-md">
             תצוגה מהירה
           </span>
         </div>

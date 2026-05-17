@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    color-scheme: light;
+    color-scheme: dark;
   }
 
   html {
-    background: #ffffff;
-    color: #0a0a0a;
+    background: #0f1115;
+    color: #fafafa;
     scroll-behavior: smooth;
     /* Prevent iOS auto-zoom on text inputs at >100% page zoom */
     -webkit-text-size-adjust: 100%;
@@ -44,14 +44,13 @@
     }
   }
 
-  /* Subtle global aurora wash on the white canvas — barely visible
-     brand tints in corners so the page never feels flat-white. */
+  /* Subtle global aurora wash so the page never feels flat-black */
   body {
     @apply bg-background text-foreground antialiased;
     background-image:
-      radial-gradient(1200px 600px at 8% -10%, rgba(0, 184, 95, 0.04), transparent 60%),
-      radial-gradient(1100px 700px at 100% 10%, rgba(126, 34, 206, 0.03), transparent 55%),
-      radial-gradient(1400px 800px at 50% 110%, rgba(8, 145, 178, 0.03), transparent 60%);
+      radial-gradient(1200px 600px at 8% -10%, rgba(0, 255, 136, 0.06), transparent 60%),
+      radial-gradient(1100px 700px at 100% 10%, rgba(168, 85, 247, 0.05), transparent 55%),
+      radial-gradient(1400px 800px at 50% 110%, rgba(34, 211, 238, 0.05), transparent 60%);
     background-attachment: fixed;
     font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
@@ -59,8 +58,8 @@
   }
 
   ::selection {
-    background: rgba(0, 184, 95, 0.25);
-    color: #0a0a0a;
+    background: rgba(0, 255, 136, 0.25);
+    color: #ffffff;
   }
 
   *:focus-visible {
@@ -117,9 +116,7 @@
   }
 
   .neon-glow {
-    /* Light-theme: tinted drop shadow instead of haze.
-       Pure outer glows wash out on white; this reads as a brand lift. */
-    box-shadow: 0 8px 24px -6px rgba(0, 184, 95, 0.35), 0 0 0 1px rgba(0, 184, 95, 0.18);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.35);
   }
 
   /* ============================================================
@@ -169,12 +166,12 @@
     @apply active:translate-y-0 active:duration-snap;
   }
 
-  /* Light-theme card lift — replaces the dark-theme inset highlight
-   * with a clean soft shadow. Cards "float" on the white canvas. */
+  /* Edge highlight — adds a thin top-edge highlight on cards/buttons,
+   * giving them a "lit" sheen. Like a subtle reflection. */
   .edge-light {
     box-shadow:
-      0 1px 2px rgba(0, 0, 0, 0.04),
-      0 4px 16px -4px rgba(0, 0, 0, 0.08);
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.06),
+      0 4px 24px -8px rgba(0, 0, 0, 0.4);
   }
 
   .grain::before {
@@ -288,7 +285,7 @@
     background: linear-gradient(
       120deg,
       transparent 30%,
-      rgba(0, 0, 0, 0.05) 50%,
+      rgba(255, 255, 255, 0.08) 50%,
       transparent 70%
     );
     transform: translateX(-100%);

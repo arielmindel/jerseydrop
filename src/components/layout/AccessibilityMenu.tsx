@@ -102,7 +102,7 @@ export default function AccessibilityMenu() {
         onClick={() => setOpen(true)}
         aria-label="פתח תפריט נגישות ושימושי"
         title="תפריט שימושי ונגישות"
-        className={`group fixed left-3 top-3 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#00B85F]/30 bg-background/80 text-[#00B85F] backdrop-blur-md transition-all duration-200 hover:scale-110 hover:border-[#00B85F]/60 hover:bg-background/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00B85F] focus-visible:ring-offset-2 focus-visible:ring-offset-background md:left-4 md:top-4 ${
+        className={`group fixed left-3 top-3 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#00FF88]/30 bg-black/80 text-[#00FF88] backdrop-blur-md transition-all duration-200 hover:scale-110 hover:border-[#00FF88]/60 hover:bg-black/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00FF88] focus-visible:ring-offset-2 focus-visible:ring-offset-background md:left-4 md:top-4 ${
           pulse ? "a11y-pulse" : ""
         }`}
       >
@@ -117,7 +117,7 @@ export default function AccessibilityMenu() {
         <div
           aria-hidden
           onClick={() => setOpen(false)}
-          className="fixed inset-0 z-[60] bg-background/70 backdrop-blur-sm"
+          className="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm"
         />
       )}
 
@@ -126,17 +126,17 @@ export default function AccessibilityMenu() {
         role="dialog"
         aria-modal="true"
         aria-label="תפריט נגישות ושימושי"
-        className={`fixed inset-x-0 bottom-0 z-[70] max-h-[85dvh] overflow-y-auto rounded-t-2xl border-t border-border bg-background/95 backdrop-blur-xl transition-transform duration-300 ease-out md:inset-y-0 md:bottom-auto md:left-0 md:right-auto md:h-full md:max-h-none md:w-[400px] md:rounded-none md:border-r md:border-t-0 ${
+        className={`fixed inset-x-0 bottom-0 z-[70] max-h-[85dvh] overflow-y-auto rounded-t-2xl border-t border-white/10 bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-out md:inset-y-0 md:bottom-auto md:left-0 md:right-auto md:h-full md:max-h-none md:w-[400px] md:rounded-none md:border-r md:border-t-0 ${
           open
             ? "translate-y-0 md:translate-x-0"
             : "translate-y-full md:translate-y-0 md:-translate-x-full"
         }`}
       >
         {/* HEADER */}
-        <header className="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-border bg-background/95 px-5 py-4 backdrop-blur-xl">
+        <header className="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-white/10 bg-black/95 px-5 py-4 backdrop-blur-xl">
           <div className="flex items-center gap-2.5">
-            <Settings2 className="h-5 w-5 text-[#00B85F]" />
-            <h2 className="font-display text-base font-bold uppercase tracking-wider text-foreground">
+            <Settings2 className="h-5 w-5 text-[#00FF88]" />
+            <h2 className="font-display text-base font-bold uppercase tracking-wider text-white">
               תפריט שימושי
             </h2>
           </div>
@@ -145,7 +145,7 @@ export default function AccessibilityMenu() {
             type="button"
             onClick={() => setOpen(false)}
             aria-label="סגור"
-            className="inline-flex h-12 w-12 items-center justify-center rounded-full text-foreground/70 transition-colors hover:bg-foreground/10 hover:text-foreground"
+            className="inline-flex h-12 w-12 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-white"
           >
             <X className="h-5 w-5" />
           </button>
@@ -156,10 +156,10 @@ export default function AccessibilityMenu() {
           {/* ===== ACCESSIBILITY ===== */}
           <section aria-labelledby="a11y-title">
             <header className="mb-4 flex items-center gap-2.5">
-              <Accessibility className="h-5 w-5 text-[#00B85F]" />
+              <Accessibility className="h-5 w-5 text-[#00FF88]" />
               <h3
                 id="a11y-title"
-                className="font-display text-base font-bold uppercase tracking-wider text-foreground"
+                className="font-display text-base font-bold uppercase tracking-wider text-white"
               >
                 אפשרויות נגישות
               </h3>
@@ -170,13 +170,13 @@ export default function AccessibilityMenu() {
               <button
                 type="button"
                 onClick={a11y.cycleTextSize}
-                className="flex h-12 w-full items-center justify-between gap-2 rounded-xl border border-border bg-foreground/[0.03] px-4 text-start text-base text-foreground transition-colors hover:border-border hover:bg-foreground/[0.06]"
+                className="flex h-12 w-full items-center justify-between gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 text-start text-base text-white transition-colors hover:border-white/20 hover:bg-white/[0.06]"
               >
                 <span className="flex items-center gap-2.5">
-                  <Type className="h-4 w-4 text-[#00B85F]" />
+                  <Type className="h-4 w-4 text-[#00FF88]" />
                   הגדלת טקסט
                 </span>
-                <span className="rounded-full border border-[#00B85F]/30 bg-[#00B85F]/10 px-2.5 py-0.5 text-xs font-bold text-[#00B85F]">
+                <span className="rounded-full border border-[#00FF88]/30 bg-[#00FF88]/10 px-2.5 py-0.5 text-xs font-bold text-[#00FF88]">
                   {TEXT_LABEL[a11y.textSize]}
                 </span>
               </button>
@@ -209,7 +209,7 @@ export default function AccessibilityMenu() {
               <button
                 type="button"
                 onClick={a11y.reset}
-                className="mt-1 flex h-10 w-full items-center justify-center gap-2 rounded-xl text-sm text-foreground/60 transition-colors hover:bg-foreground/5 hover:text-foreground"
+                className="mt-1 flex h-10 w-full items-center justify-center gap-2 rounded-xl text-sm text-white/60 transition-colors hover:bg-white/5 hover:text-white"
               >
                 <RefreshCw className="h-3.5 w-3.5" />
                 אפס הגדרות
@@ -218,7 +218,7 @@ export default function AccessibilityMenu() {
               <Link
                 href="/accessibility"
                 onClick={() => setOpen(false)}
-                className="mt-3 inline-flex items-center gap-1 text-sm text-[#00B85F] underline-offset-4 hover:underline"
+                className="mt-3 inline-flex items-center gap-1 text-sm text-[#00FF88] underline-offset-4 hover:underline"
               >
                 <Link2 className="h-3.5 w-3.5" />
                 הצהרת נגישות מלאה ←
@@ -227,15 +227,15 @@ export default function AccessibilityMenu() {
           </section>
 
           {/* DIVIDER */}
-          <div aria-hidden className="h-px bg-foreground/10" />
+          <div aria-hidden className="h-px bg-white/10" />
 
           {/* ===== USEFUL LINKS ===== */}
           <section aria-labelledby="useful-title">
             <header className="mb-4 flex items-center gap-2.5">
-              <Info className="h-5 w-5 text-[#00B85F]" />
+              <Info className="h-5 w-5 text-[#00FF88]" />
               <h3
                 id="useful-title"
-                className="font-display text-base font-bold uppercase tracking-wider text-foreground"
+                className="font-display text-base font-bold uppercase tracking-wider text-white"
               >
                 מידע שימושי
               </h3>
@@ -244,12 +244,12 @@ export default function AccessibilityMenu() {
             <ul className="space-y-1">
               {utilityLinks.map((l) => {
                 const inner = (
-                  <span className="flex h-14 w-full items-center justify-between gap-3 rounded-xl px-4 text-start text-base text-foreground transition-colors hover:bg-foreground/5">
+                  <span className="flex h-14 w-full items-center justify-between gap-3 rounded-xl px-4 text-start text-base text-white transition-colors hover:bg-white/5">
                     <span className="flex items-center gap-3">
-                      <l.Icon className="h-5 w-5 text-[#00B85F]" />
+                      <l.Icon className="h-5 w-5 text-[#00FF88]" />
                       <span className="font-medium">{l.label}</span>
                     </span>
-                    <ChevronLeft className="h-4 w-4 text-foreground/40" />
+                    <ChevronLeft className="h-4 w-4 text-white/40" />
                   </span>
                 );
                 return (
@@ -280,10 +280,10 @@ export default function AccessibilityMenu() {
       <style jsx global>{`
         @keyframes a11y-pulse-kf {
           0%, 100% {
-            box-shadow: 0 0 0 0 rgba(0,184,95, 0.55);
+            box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.55);
           }
           50% {
-            box-shadow: 0 0 0 12px rgba(0,184,95, 0);
+            box-shadow: 0 0 0 12px rgba(0, 255, 136, 0);
           }
         }
         .a11y-pulse {
@@ -316,22 +316,22 @@ function ToggleRow({
       onClick={onToggle}
       role="switch"
       aria-checked={value}
-      className="flex h-12 w-full items-center justify-between gap-2 rounded-xl border border-border bg-foreground/[0.03] px-4 text-start text-base text-foreground transition-colors hover:border-border hover:bg-foreground/[0.06]"
+      className="flex h-12 w-full items-center justify-between gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-4 text-start text-base text-white transition-colors hover:border-white/20 hover:bg-white/[0.06]"
     >
       <span className="flex items-center gap-2.5">
-        <Icon className="h-4 w-4 text-[#00B85F]" />
+        <Icon className="h-4 w-4 text-[#00FF88]" />
         {label}
       </span>
       <span
         className={`relative inline-block h-6 w-11 flex-shrink-0 rounded-full border transition-colors ${
           value
-            ? "border-[#00B85F] bg-[#00B85F]/20"
-            : "border-border bg-foreground/10"
+            ? "border-[#00FF88] bg-[#00FF88]/20"
+            : "border-white/20 bg-white/10"
         }`}
       >
         <span
           className={`absolute top-0.5 inline-block h-5 w-5 rounded-full bg-white transition-all duration-200 ${
-            value ? "start-[1.5rem] bg-[#00B85F]" : "start-0.5"
+            value ? "start-[1.5rem] bg-[#00FF88]" : "start-0.5"
           }`}
         />
       </span>

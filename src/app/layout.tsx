@@ -141,7 +141,7 @@ const WEBSITE_LD = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0A0A0A",
+  themeColor: "#0F1115",
   width: "device-width",
   initialScale: 1,
   // Lets us read env(safe-area-inset-*) on iOS notched devices

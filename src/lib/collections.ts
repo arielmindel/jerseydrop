@@ -56,7 +56,7 @@ export const COLLECTIONS: Record<CollectionId, CollectionMeta> = {
     subtitleHe: "המועדונים שמשחקים על הגביע הגדול ביותר באירופה",
     descriptionHe:
       "כל החולצות של מועדוני ליגת האלופות 2025-26 — Real Madrid, Barcelona, Bayern, PSG, Inter, Juventus, City, Liverpool, Arsenal ועוד.",
-    accent: "#00B85F",
+    accent: "#00FF88",
     badgeLabel: "UEFA CHAMPIONS LEAGUE 25-26",
   },
   "short-suit": {

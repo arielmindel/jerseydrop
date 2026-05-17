@@ -52,7 +52,7 @@ export default function CollectionPage({ params, searchParams }: Props) {
     <>
       <section
         className="relative isolate overflow-hidden border-b border-border/60"
-        style={{ backgroundColor: "#FFFFFF" }}
+        style={{ backgroundColor: "#0B1220" }}
       >
         <div
           aria-hidden

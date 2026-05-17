@@ -97,12 +97,12 @@ export default function FAQPage() {
           <AccordionItem
             key={item.id}
             value={item.id}
-            className="rounded-2xl border border-border bg-foreground/[0.03] px-5 transition-colors data-[state=open]:border-[#00B85F]/40 data-[state=open]:bg-[#00B85F]/5"
+            className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 transition-colors data-[state=open]:border-[#00FF88]/40 data-[state=open]:bg-[#00FF88]/5"
           >
-            <AccordionTrigger className="text-start font-display text-base font-bold leading-snug text-foreground md:text-lg">
+            <AccordionTrigger className="text-start font-display text-base font-bold leading-snug text-white md:text-lg">
               {item.q}
             </AccordionTrigger>
-            <AccordionContent className="pb-4 text-sm leading-relaxed text-foreground/75 md:text-base">
+            <AccordionContent className="pb-4 text-sm leading-relaxed text-white/75 md:text-base">
               {item.a}
             </AccordionContent>
           </AccordionItem>

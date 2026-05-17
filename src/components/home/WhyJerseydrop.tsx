@@ -73,7 +73,7 @@ export default function WhyJerseydrop() {
   return (
     <section
       aria-label="למה JerseyDrop"
-      className="relative overflow-hidden bg-gradient-to-b from-surface-2 via-background to-surface-2 py-16 md:py-24"
+      className="relative overflow-hidden bg-gradient-to-b from-slate-950 via-black to-slate-950 py-16 md:py-24"
     >
       <div className="mx-auto max-w-5xl px-4 md:px-6">
         {/* HEADER */}
@@ -84,13 +84,13 @@ export default function WhyJerseydrop() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mb-12 text-center md:mb-16"
         >
-          <p className="font-display text-xs font-bold uppercase tracking-[0.32em] text-[#00B85F] md:text-sm">
+          <p className="font-display text-xs font-bold uppercase tracking-[0.32em] text-[#00FF88] md:text-sm">
             THE JERSEYDROP DIFFERENCE
           </p>
           <h2 className="mt-3 font-display text-3xl font-black md:text-5xl">
-            למה <span className="text-[#00B85F]">JerseyDrop?</span>
+            למה <span className="text-[#00FF88]">JerseyDrop?</span>
           </h2>
-          <p className="mt-4 text-base text-foreground/70 md:text-lg">
+          <p className="mt-4 text-base text-white/70 md:text-lg">
             מה אנחנו עושים אחרת מכל חנות אחרת
           </p>
         </motion.header>
@@ -100,7 +100,7 @@ export default function WhyJerseydrop() {
           {/* column headers */}
           <div className="grid grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)_minmax(0,1.4fr)] gap-3 px-2 pb-4">
             <div></div>
-            <div className="rounded-t-xl bg-[#00B85F]/10 px-4 py-3 text-center font-display text-sm font-black uppercase tracking-widest text-[#00B85F]">
+            <div className="rounded-t-xl bg-[#00FF88]/10 px-4 py-3 text-center font-display text-sm font-black uppercase tracking-widest text-[#00FF88]">
               JerseyDrop
             </div>
             <div className="rounded-t-xl bg-red-500/10 px-4 py-3 text-center font-display text-sm font-black uppercase tracking-widest text-red-300">
@@ -115,18 +115,18 @@ export default function WhyJerseydrop() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
-                className="grid grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)_minmax(0,1.4fr)] gap-3 rounded-xl border border-border bg-foreground/[0.02] px-2 py-1 transition-all duration-200 hover:border-border hover:bg-foreground/[0.04]"
+                className="grid grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)_minmax(0,1.4fr)] gap-3 rounded-xl border border-white/5 bg-white/[0.02] px-2 py-1 transition-all duration-200 hover:border-white/10 hover:bg-white/[0.04]"
               >
-                <div className="flex items-center justify-end px-3 py-3 text-end font-display text-base font-semibold text-foreground">
+                <div className="flex items-center justify-end px-3 py-3 text-end font-display text-base font-semibold text-white">
                   {r.label}
                 </div>
-                <div className="flex items-center gap-2.5 rounded-lg bg-[#00B85F]/[0.06] px-4 py-3">
-                  <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-[#00B85F]" />
-                  <span className="text-base font-medium text-foreground">{r.ours}</span>
+                <div className="flex items-center gap-2.5 rounded-lg bg-[#00FF88]/[0.06] px-4 py-3">
+                  <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-[#00FF88]" />
+                  <span className="text-base font-medium text-white">{r.ours}</span>
                 </div>
                 <div className="flex items-center gap-2.5 rounded-lg bg-red-500/[0.06] px-4 py-3">
                   <XCircle className="h-5 w-5 flex-shrink-0 text-red-400" />
-                  <span className="text-base text-foreground/60">{r.theirs}</span>
+                  <span className="text-base text-white/60">{r.theirs}</span>
                 </div>
               </motion.li>
             ))}
@@ -142,22 +142,22 @@ export default function WhyJerseydrop() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
-              className="overflow-hidden rounded-2xl border border-border bg-foreground/[0.02]"
+              className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]"
             >
               {/* Row label */}
-              <h3 className="border-b border-border bg-foreground/[0.03] px-4 py-3 text-center font-display text-sm font-bold text-foreground">
+              <h3 className="border-b border-white/10 bg-white/[0.03] px-4 py-3 text-center font-display text-sm font-bold text-white">
                 {r.label}
               </h3>
               {/* Us / Them */}
-              <div className="grid grid-cols-2 gap-px bg-foreground/10">
-                <div className="flex flex-col items-start gap-2 bg-[#00B85F]/[0.08] p-3">
+              <div className="grid grid-cols-2 gap-px bg-white/10">
+                <div className="flex flex-col items-start gap-2 bg-[#00FF88]/[0.08] p-3">
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="h-4 w-4 text-[#00B85F]" />
-                    <span className="font-display text-[10px] font-black uppercase tracking-widest text-[#00B85F]">
+                    <CheckCircle2 className="h-4 w-4 text-[#00FF88]" />
+                    <span className="font-display text-[10px] font-black uppercase tracking-widest text-[#00FF88]">
                       JerseyDrop
                     </span>
                   </div>
-                  <p className="text-sm font-medium leading-snug text-foreground">
+                  <p className="text-sm font-medium leading-snug text-white">
                     {r.ours}
                   </p>
                 </div>
@@ -168,7 +168,7 @@ export default function WhyJerseydrop() {
                       אחרים
                     </span>
                   </div>
-                  <p className="text-sm leading-snug text-foreground/65">
+                  <p className="text-sm leading-snug text-white/65">
                     {r.theirs}
                   </p>
                 </div>
@@ -187,7 +187,7 @@ export default function WhyJerseydrop() {
         >
           <Link
             href="/#leagues"
-            className="inline-flex items-center gap-2 rounded-full bg-[#00B85F] px-10 py-4 font-display text-lg font-bold uppercase tracking-wide text-black shadow-[0_18px_50px_-10px_rgba(0,184,95,0.55)] transition-transform duration-200 hover:scale-105 active:scale-95 md:text-xl"
+            className="inline-flex items-center gap-2 rounded-full bg-[#00FF88] px-10 py-4 font-display text-lg font-bold uppercase tracking-wide text-black shadow-[0_18px_50px_-10px_rgba(0,255,136,0.55)] transition-transform duration-200 hover:scale-105 active:scale-95 md:text-xl"
           >
             התחל לקנות עכשיו
             <ArrowLeft className="h-5 w-5" />
