@@ -1,0 +1,325 @@
+{
+  "generatedAt": "2026-05-16T22:55:38.123Z",
+  "slugs": [
+    {
+      "slug": "real-madrid-home-1999-00-set",
+      "filename": "adult_001.png",
+      "layoutType": "D"
+    },
+    {
+      "slug": "real-madrid-home-2024-25",
+      "filename": "adult_002.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-1112-t-1237",
+      "filename": "adult_004.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2024-25-real-madrid-2024-25-home-644946",
+      "filename": "adult_007.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2023-24-real-madrid-2023-24-home",
+      "filename": "adult_008.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2023-24",
+      "filename": "adult_009.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-2016-17",
+      "filename": "adult_010.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2017-18-long-sleeve",
+      "filename": "adult_011.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2017-18-ls-t-1228",
+      "filename": "adult_012.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-548754",
+      "filename": "adult_013.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-special-2025-26--1-115",
+      "filename": "adult_014.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2012-13-set",
+      "filename": "adult_019.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2011-12-set",
+      "filename": "adult_020.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-081170",
+      "filename": "adult_021.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "ריאל-מדריד-away-1-1562",
+      "filename": "adult_023.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2098-00-it-930",
+      "filename": "adult_025.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-128594",
+      "filename": "adult_026.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-721874",
+      "filename": "adult_027.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-988626",
+      "filename": "adult_028.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-1995-96",
+      "filename": "adult_029.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-long-sleeve-real-madrid-retro-389586",
+      "filename": "adult_030.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-925394",
+      "filename": "adult_031.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2017-18-kids",
+      "filename": "kids_001.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2013-14-kids",
+      "filename": "kids_002.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2022-23-kids-set",
+      "filename": "kids_003.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2016-17-kids-t-1386",
+      "filename": "kids_004.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2012-13-kids",
+      "filename": "kids_005.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2023-24-set",
+      "filename": "kids_006.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2024-25-kids-t-1411",
+      "filename": "kids_007.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2017-18-kids-set",
+      "filename": "kids_008.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2024-25-kids-t-1355",
+      "filename": "long_sleeve_001.png",
+      "layoutType": "C"
+    },
+    {
+      "slug": "real-madrid-away-2016-17-ls-t-1232",
+      "filename": "long_sleeve_003.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2014-15-long-sleeve",
+      "filename": "long_sleeve_006.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-goalkeeper-2013-14-long-sleeve",
+      "filename": "long_sleeve_008.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-1999-00-long-sleeve",
+      "filename": "long_sleeve_010.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2017-18-set",
+      "filename": "set_003.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2012-13",
+      "filename": "set_006.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-2017-18",
+      "filename": "set_008.png",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2021-22",
+      "filename": "0484154F-B66B-4796-B0D4-5E6F509435B2.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2003-04",
+      "filename": "06AC24B8-FA07-408F-9270-C1BC71723BB1.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2099-01-it-917",
+      "filename": "28F71100-EBA5-4C29-A12E-7FE41F298672.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2025-26",
+      "filename": "4E4FC74D-E598-42D3-8B82-13A92480A02E.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2025-26-kids-set",
+      "filename": "4EE9786D-7371-4C7A-8EFB-974045F75C1B.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2013-14",
+      "filename": "5122E118-9B4C-4B8C-854A-648DE0C57306.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-260818",
+      "filename": "5A6D1382-7B28-45F3-815E-BD903EDEC40C.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-360978",
+      "filename": "616F41C8-7BA0-452E-8DB3-9A2BD744CAFE.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-2010-11",
+      "filename": "6C32F0D1-6E0D-4382-8EA7-BF82C67AE9A1.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-goalkeeper-2011-12",
+      "filename": "6E43E840-69AD-405D-8003-84F8D482F9A2.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2024-25-ls-set",
+      "filename": "8E332059-A8D0-454C-98FA-E89BAC034ECA.jpeg",
+      "layoutType": "D"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-521810",
+      "filename": "8E425713-8BA7-4AD1-A3E9-CFCA6773846E.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-2014-15",
+      "filename": "9D26CD20-C476-4B81-9BCE-A77FBFBB1D9F.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2006-07-it-925",
+      "filename": "A3B139A8-61F9-4124-A48A-5561B39ACC43.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2016-17-long-sleeve",
+      "filename": "A4CDC5AF-61C2-4D3C-BB9E-D139A2232E69.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2024-25",
+      "filename": "AAC61127-3C34-4B7A-8B6D-DE3560FFF491.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-418066",
+      "filename": "B7B0CDF5-6267-4CDA-B9F7-8510281A055F.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-retro-real-madrid-retro-195026",
+      "filename": "C17594ED-8858-40D6-925B-C8D96E831231.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2026-27-set",
+      "filename": "C7D43240-E9A9-46BD-9198-83DA5B38580B.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2024-25-set",
+      "filename": "CE9120D8-31B0-47B6-97B9-D3B93F593BED.jpeg",
+      "layoutType": "D"
+    },
+    {
+      "slug": "real-madrid-special-2024-25",
+      "filename": "D4AF8526-78C6-4E3C-8172-BF0C03FAE45E.jpeg",
+      "layoutType": "D"
+    },
+    {
+      "slug": "real-madrid-away-1415-t-1244",
+      "filename": "D53E5683-4643-4444-AB90-4D28EE4FCBE5.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-away-2006-07-it-919",
+      "filename": "E1375B42-BD7E-4914-83F2-44614780DF90.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-home-2015-16",
+      "filename": "E3D6200E-12E1-4CB4-97D9-BFA7EBDF3CD1.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2013-14-long-sleeve",
+      "filename": "F100FA36-BCF0-4AAB-B612-EA0183FB5C90.jpeg",
+      "layoutType": "A"
+    },
+    {
+      "slug": "real-madrid-third-2025-26-long-sleeve",
+      "filename": "F6490188-233B-45E5-AD25-AA1A1C48ACB2.jpeg",
+      "layoutType": "A"
+    }
+  ]
+}

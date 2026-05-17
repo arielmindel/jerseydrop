@@ -1,0 +1,181 @@
+{
+  "startedAt": "2026-05-16T22:06:34.430Z",
+  "done": {
+    "real-madrid-home-1999-00-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/adults/adult_001.png",
+      "variant": "set",
+      "finalDim": "768×1024",
+      "frontBytes": 129139,
+      "backBytes": 91540,
+      "uploadedAt": "2026-05-16T22:06:35.194Z"
+    },
+    "real-madrid-away-2011-12-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/adults/adult_020.png",
+      "variant": "set",
+      "finalDim": "724×1086",
+      "frontBytes": 72021,
+      "backBytes": 62302,
+      "uploadedAt": "2026-05-16T22:06:35.219Z"
+    },
+    "real-madrid-away-2023-24": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/adults/adult_009.png",
+      "variant": "set",
+      "finalDim": "724×1086",
+      "frontBytes": 113334,
+      "backBytes": 77968,
+      "uploadedAt": "2026-05-16T22:06:35.236Z"
+    },
+    "real-madrid-home-2012-13-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/adults/adult_019.png",
+      "variant": "set",
+      "finalDim": "724×1086",
+      "frontBytes": 79986,
+      "backBytes": 70003,
+      "uploadedAt": "2026-05-16T22:06:35.354Z"
+    },
+    "real-madrid-home-2017-18-kids": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/kids/kids_001.png",
+      "variant": "kids-set",
+      "finalDim": "724×1086",
+      "frontBytes": 95792,
+      "backBytes": 67589,
+      "uploadedAt": "2026-05-16T22:06:35.725Z"
+    },
+    "real-madrid-away-2022-23-kids-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/kids/kids_003.png",
+      "variant": "kids-set",
+      "finalDim": "724×1086",
+      "frontBytes": 102075,
+      "backBytes": 78915,
+      "uploadedAt": "2026-05-16T22:06:35.797Z"
+    },
+    "real-madrid-away-2016-17-kids-t-1386": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/kids/kids_004.png",
+      "variant": "kids-set",
+      "finalDim": "724×1086",
+      "frontBytes": 125110,
+      "backBytes": 73234,
+      "uploadedAt": "2026-05-16T22:06:35.843Z"
+    },
+    "real-madrid-third-2013-14-kids-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/kids/kids_002.png",
+      "variant": "kids-set",
+      "finalDim": "724×1086",
+      "frontBytes": 109646,
+      "backBytes": 70075,
+      "uploadedAt": "2026-05-16T22:06:36.039Z"
+    },
+    "real-madrid-home-2012-13-kids": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/kids/kids_005.png",
+      "variant": "kids-set",
+      "finalDim": "724×1086",
+      "frontBytes": 94186,
+      "backBytes": 55121,
+      "uploadedAt": "2026-05-16T22:06:36.210Z"
+    },
+    "real-madrid-special-2023-24-kids-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/kids/kids_006.png",
+      "variant": "kids-set",
+      "finalDim": "724×1086",
+      "frontBytes": 165357,
+      "backBytes": 111636,
+      "uploadedAt": "2026-05-16T22:06:36.436Z"
+    },
+    "real-madrid-home-2024-25-kids-t-1411": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/kids/kids_007.png",
+      "variant": "kids-set",
+      "finalDim": "724×1086",
+      "frontBytes": 85635,
+      "backBytes": 66633,
+      "uploadedAt": "2026-05-16T22:06:36.446Z"
+    },
+    "real-madrid-third-2017-18-kids-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/kids/kids_008.png",
+      "variant": "kids-set",
+      "finalDim": "724×1086",
+      "frontBytes": 97844,
+      "backBytes": 71205,
+      "uploadedAt": "2026-05-16T22:06:36.526Z"
+    },
+    "real-madrid-away-2024-25-kids-t-1355": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/long-sleeves/long_sleeve_001.png",
+      "variant": "kids-set",
+      "finalDim": "543×1448",
+      "frontBytes": 88675,
+      "backBytes": 74024,
+      "uploadedAt": "2026-05-16T22:06:36.735Z"
+    },
+    "real-madrid-third-2023-24-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/sets/set_001.png",
+      "variant": "set",
+      "finalDim": "724×1086",
+      "frontBytes": 165357,
+      "backBytes": 111636,
+      "uploadedAt": "2026-05-16T22:06:36.953Z"
+    },
+    "real-madrid-home-2024-25-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/sets/set_002.png",
+      "variant": "set",
+      "finalDim": "724×1086",
+      "frontBytes": 85635,
+      "backBytes": 66633,
+      "uploadedAt": "2026-05-16T22:06:36.964Z"
+    },
+    "real-madrid-third-2017-18-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/sets/set_003.png",
+      "variant": "set",
+      "finalDim": "724×1086",
+      "frontBytes": 97844,
+      "backBytes": 71205,
+      "uploadedAt": "2026-05-16T22:06:36.988Z"
+    },
+    "real-madrid-third-2024-25-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/sets/set_004.png",
+      "variant": "set",
+      "finalDim": "724×1086",
+      "frontBytes": 91915,
+      "backBytes": 96993,
+      "uploadedAt": "2026-05-16T22:06:37.230Z"
+    },
+    "real-madrid-away-2023-24-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/sets/set_005.png",
+      "variant": "set",
+      "finalDim": "724×1086",
+      "frontBytes": 113334,
+      "backBytes": 77968,
+      "uploadedAt": "2026-05-16T22:06:37.472Z"
+    },
+    "real-madrid-third-2025-26-kids-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/round2/4EE9786D-7371-4C7A-8EFB-974045F75C1B.jpeg",
+      "variant": "kids-set",
+      "finalDim": "627×1254",
+      "frontBytes": 109851,
+      "backBytes": 85170,
+      "uploadedAt": "2026-05-16T22:06:37.482Z"
+    },
+    "real-madrid-third-2006-07-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/sets/set_007.png",
+      "variant": "set",
+      "finalDim": "768×1024",
+      "frontBytes": 97238,
+      "backBytes": 69504,
+      "uploadedAt": "2026-05-16T22:06:37.500Z"
+    },
+    "real-madrid-home-2026-27-set": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/round2/C7D43240-E9A9-46BD-9198-83DA5B38580B.jpeg",
+      "variant": "set",
+      "finalDim": "701×1122",
+      "frontBytes": 120069,
+      "backBytes": 103265,
+      "uploadedAt": "2026-05-16T22:06:37.692Z"
+    },
+    "real-madrid-special-2024-25": {
+      "srcFile": "/Users/arielmindel/Downloads/jerseydrop_approved_images/round2/D4AF8526-78C6-4E3C-8172-BF0C03FAE45E.jpeg",
+      "variant": "set",
+      "finalDim": "543×1448",
+      "frontBytes": 121210,
+      "backBytes": 91849,
+      "uploadedAt": "2026-05-16T22:06:37.998Z"
+    }
+  }
+}

@@ -67,7 +67,7 @@ export default function ProductGalleryV2({
                   priority={i === 0}
                   placeholder="blur"
                   blurDataURL={BLUR_DATA_URL}
-                  className="object-cover"
+                  className="object-contain"
                 />
               </button>
             ))}
@@ -144,7 +144,7 @@ export default function ProductGalleryV2({
             priority
             placeholder="blur"
             blurDataURL={BLUR_DATA_URL}
-            className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
           />
           <div className="pointer-events-none absolute end-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-2 text-xs font-bold uppercase tracking-wider text-white opacity-0 backdrop-blur-md transition-opacity duration-200 group-hover:opacity-100">
             <ZoomIn className="h-4 w-4" />

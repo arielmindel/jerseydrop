@@ -1,0 +1,393 @@
+{
+  "generatedAt": "2026-05-16T22:09:47.037Z",
+  "stats": {
+    "rmProducts": 165,
+    "dupGroups": 21,
+    "autoMerged": 7,
+    "flaggedForReview": 23,
+    "catalogBefore": 2134,
+    "catalogAfter": 2127
+  },
+  "auto": [
+    {
+      "groupKey": "2025-26|home|A-no-LS",
+      "canonicalSlug": "real-madrid-home-2025-26-long-sleeve",
+      "deletedSlug": "real-madrid-home-2025-26-long-sleeve-real-madrid-2025-26-home",
+      "action": "neither-ai-kept-canon",
+      "canonicalNameHe": "חולצת כדורגל ארוכה ריאל מדריד נטרלית 2025/26",
+      "duplicateNameHe": "חולצת כדורגל ארוכה ריאל מדריד בית 2025/26"
+    },
+    {
+      "groupKey": "2025-26|home|A-no-SS",
+      "canonicalSlug": "real-madrid-home-2025-26",
+      "deletedSlug": "real-madrid-home-2025-26-real-madrid-2025-26-home",
+      "action": "neither-ai-kept-canon",
+      "canonicalNameHe": "חולצת כדורגל ריאל מדריד נטרלית 2025/26",
+      "duplicateNameHe": "חולצת כדורגל ריאל מדריד בית 2025/26"
+    },
+    {
+      "groupKey": "2017-18|home|K-no-SS",
+      "canonicalSlug": "real-madrid-home-2017-18-kids",
+      "deletedSlug": "real-madrid-home-2017-18-kids-real-madrid-2017-18-home",
+      "action": "canon-already-ai",
+      "canonicalNameHe": "ריאל מדריד רטרו 2017-18 - סט ילדים",
+      "duplicateNameHe": "ריאל מדריד רטרו 2017-18 - סט ילדים"
+    },
+    {
+      "groupKey": "2017-18|home|K-no-SS",
+      "canonicalSlug": "real-madrid-home-2017-18-kids",
+      "deletedSlug": "real-madrid-home-2017-18-kids-real-madrid-2017-18-home-322898",
+      "action": "canon-already-ai",
+      "canonicalNameHe": "ריאל מדריד רטרו 2017-18 - סט ילדים",
+      "duplicateNameHe": "ריאל מדריד רטרו 2017-18 - סט ילדים"
+    },
+    {
+      "groupKey": "2011|retro|A-no-SS",
+      "canonicalSlug": "real-madrid-retro",
+      "deletedSlug": "real-madrid-retro-real-madrid-retro-081170",
+      "action": "ai-promoted-from-dup",
+      "canonicalNameHe": "רטרו שוער ריאל מדריד 2011",
+      "duplicateNameHe": "רטרו ריאל מדריד 2011 שלישית"
+    },
+    {
+      "groupKey": "2017|retro|A-no-LS",
+      "canonicalSlug": "real-madrid-retro-long-sleeve",
+      "deletedSlug": "real-madrid-retro-long-sleeve-real-madrid-retro",
+      "action": "neither-ai-kept-canon",
+      "canonicalNameHe": "רטרו ריאל מדריד 2017 ארוך",
+      "duplicateNameHe": "רטרו ריאל מדריד 2017 ארוך"
+    },
+    {
+      "groupKey": "2017-18|retro|A-no-SS",
+      "canonicalSlug": "real-madrid-retro-2017-18",
+      "deletedSlug": "real-madrid-retro-2017-18-real-madrid-2017-18-retro",
+      "action": "canon-already-ai",
+      "canonicalNameHe": "חולצה כדורגל רטרו ריאל מדריד בית 2017/18",
+      "duplicateNameHe": "חולצה כדורגל רטרו ריאל מדריד 2017/18"
+    }
+  ],
+  "manualReview": [
+    {
+      "groupKey": "2025-26|home|K-set-SS",
+      "canonical": {
+        "slug": "real-madrid-home-2025-26-kids",
+        "nameHe": "ריאל מדריד נטרלית 2025/26 - סט ילדים",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-home-2526-kids-t-1123",
+        "nameHe": "2526 ריאל מדריד בית ילדים",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|special|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-special",
+        "nameHe": "ריאל מדריד מיוחדת 2023",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-special-2024-25",
+        "nameHe": "ריאל מדריד מיוחדת 2024-25",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|special|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-special",
+        "nameHe": "ריאל מדריד מיוחדת 2023",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-special-2526-it-945",
+        "nameHe": "2526 ריאל מדריד אימון",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|special|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-special",
+        "nameHe": "ריאל מדריד מיוחדת 2023",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-special-2025-26--1-115",
+        "nameHe": "25-26 ורוד ריאל מדריד אימון",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|special|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-special",
+        "nameHe": "ריאל מדריד מיוחדת 2023",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-special-2024-25-real-madrid-2024-25-special",
+        "nameHe": "ריאל מדריד מיוחדת 2024-25",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2023-24|away|A-set-SS",
+      "canonical": {
+        "slug": "real-madrid-away-2023-24",
+        "nameHe": "ריאל מדריד חוץ 2024",
+        "hasAi": true
+      },
+      "candidate": {
+        "slug": "real-madrid-away-2023-24-set",
+        "nameHe": "ריאל מדריד חוץ 2023-24 - סט מבוגרים",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "1996|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-real-madrid-retro-128594",
+        "nameHe": "רטרו ריאל מדריד 1996",
+        "hasAi": true
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-988626",
+        "nameHe": "רטרו ריאל מדריד שלישית 1996",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2014|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-real-madrid-retro-255378",
+        "nameHe": "רטרו ריאל מדריד חוץ 2014",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-978578",
+        "nameHe": "רטרו ריאל מדריד 2014",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2013|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-real-madrid-retro-174034",
+        "nameHe": "רטרו ריאל מדריד 2013",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-455250",
+        "nameHe": "חולצה כדורגל רטרו ריאל מדריד 2013",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "1997|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-real-madrid-retro-418066",
+        "nameHe": "רטרו ריאל מדריד 1997",
+        "hasAi": true
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-521810",
+        "nameHe": "חולצה כדורגל רטרו ריאל מדריד 1997",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "1997|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-real-madrid-retro-418066",
+        "nameHe": "רטרו ריאל מדריד 1997",
+        "hasAi": true
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-721874",
+        "nameHe": "רטרו ריאל מדריד 1997",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2024-25|home|A-set-SS",
+      "canonical": {
+        "slug": "real-madrid-home-2024-25",
+        "nameHe": "חולצת כדורגל ריאל מדריד נטרלית 2025",
+        "hasAi": true
+      },
+      "candidate": {
+        "slug": "real-madrid-home-2024-25-set",
+        "nameHe": "ריאל מדריד בית 2024-25 - סט מבוגרים",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2024-25|home|A-no-SS",
+      "canonical": {
+        "slug": "ריאל-מדריד-s-home-2024-25--3-823",
+        "nameHe": "24/25 ריאל מדריד בית S",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-home-2024-25-real-madrid-2024-25-home",
+        "nameHe": "חולצת כדורגל ריאל מדריד בית 2025",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2024-25|home|A-no-SS",
+      "canonical": {
+        "slug": "ריאל-מדריד-s-home-2024-25--3-823",
+        "nameHe": "24/25 ריאל מדריד בית S",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-home-2024-25-real-madrid-2024-25-home-644946",
+        "nameHe": "חולצת כדורגל ריאל מדריד אימון 2024-25",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2024-25|home|A-no-SS",
+      "canonical": {
+        "slug": "ריאל-מדריד-s-home-2024-25--3-823",
+        "nameHe": "24/25 ריאל מדריד בית S",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-home-2024-25-real-madrid-2024-25-home-731794",
+        "nameHe": "חולצת כדורגל ריאל מדריד 2025",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2014-15|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-2014-15",
+        "nameHe": "חולצת כדורגל רטרו ריאל מדריד נטרלית 2014/15",
+        "hasAi": true
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-173266",
+        "nameHe": "חולצה כדורגל רטרו ריאל מדריד 14/15",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-217770801",
+        "nameHe": "ריאל מדריד רטרו",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-360978",
+        "nameHe": "חולצה כדורגל רטרו ריאל מדריד 1996",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-217770801",
+        "nameHe": "ריאל מדריד רטרו",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-548754",
+        "nameHe": "חולצה כדורגל רטרו ריאל מדריד מיוחדות 14/15",
+        "hasAi": true
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|retro|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-retro-217770801",
+        "nameHe": "ריאל מדריד רטרו",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-retro-real-madrid-retro-706770",
+        "nameHe": "חולצה כדורגל רטרו ריאל מדריד 2006",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2026-27|home|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-home-2627-it-877",
+        "nameHe": "2627 ריאל מדריד בית",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-home-2026-27-n-1-25",
+        "nameHe": "26-27 שחור ריאל מדריד פולו",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|special|K-set-SS",
+      "canonical": {
+        "slug": "real-madrid-special-kids-t-1158",
+        "nameHe": "ריאל מדריד מהדורה מיוחדת אדום שחור ילדים",
+        "hasAi": false
+      },
+      "candidate": {
+        "slug": "real-madrid-special-2526-kids-t-1135",
+        "nameHe": "2526 ריאל מדריד מהדורה מיוחדת ירוק ילדים",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "2014-15|away|A-no-SS",
+      "canonical": {
+        "slug": "real-madrid-away-1415-t-1244",
+        "nameHe": "1415 ריאל מדריד חוץ שני",
+        "hasAi": true
+      },
+      "candidate": {
+        "slug": "real-madrid-away-2014-15-t-1249",
+        "nameHe": "14-15 ריאל מדריד חוץ",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    },
+    {
+      "groupKey": "null|away|A-no-SS",
+      "canonical": {
+        "slug": "ריאל-מדריד-away-1-1562",
+        "nameHe": "03−04 ריאל מדריד חוץ",
+        "hasAi": true
+      },
+      "candidate": {
+        "slug": "ריאל-מדריד-away-o-1804",
+        "nameHe": "03−04 ריאל מדריד חוץ",
+        "hasAi": false
+      },
+      "reason": "slug shape does not prove duplication — manual review required"
+    }
+  ]
+}
