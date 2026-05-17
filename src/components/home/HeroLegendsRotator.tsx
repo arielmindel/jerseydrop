@@ -96,7 +96,7 @@ export default function HeroLegendsRotator() {
       // Hero.tsx wrapper. The Higgsfield videos are 16:9 landscape and
       // would crop badly on a 9:16 phone, so they only shine here at md+.
       // Clamps at 1080px on huge monitors.
-      className="relative hidden w-full overflow-hidden bg-black md:block md:h-screen md:max-h-[1080px]"
+      className="relative hidden w-full overflow-hidden bg-background md:block md:h-screen md:max-h-[1080px]"
     >
       {/* ============ TWO STACKED VIDEO LAYERS (always mounted) ============ */}
       <video
@@ -165,7 +165,7 @@ export default function HeroLegendsRotator() {
           <button
             type="button"
             onClick={scrollToLeagues}
-            className="group inline-flex min-h-[56px] items-center gap-3 rounded-full bg-[#00FF88] px-10 py-5 font-display text-2xl font-black uppercase tracking-[0.16em] text-black shadow-[0_18px_50px_-10px_rgba(0,255,136,0.55)] transition-all duration-200 ease-out hover:scale-[1.08] hover:brightness-110 md:text-xl lg:px-12 lg:py-6 lg:text-2xl"
+            className="group inline-flex min-h-[56px] items-center gap-3 rounded-full bg-[#00B85F] px-10 py-5 font-display text-2xl font-black uppercase tracking-[0.16em] text-black shadow-[0_18px_50px_-10px_rgba(0,184,95,0.55)] transition-all duration-200 ease-out hover:scale-[1.08] hover:brightness-110 md:text-xl lg:px-12 lg:py-6 lg:text-2xl"
           >
             קנה עכשיו
             <ArrowDown

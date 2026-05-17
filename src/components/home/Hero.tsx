@@ -111,7 +111,7 @@ export default function Hero() {
     <section
       aria-label="Hero"
       data-chatbot-hide
-      className="relative w-full h-[100dvh] landscape:h-screen landscape:lg:max-h-[1080px] overflow-hidden bg-black"
+      className="relative w-full h-[100dvh] landscape:h-screen landscape:lg:max-h-[1080px] overflow-hidden bg-background"
     >
       {/* ============ VERTICAL LAYERS (portrait only) ============ */}
       <video
@@ -185,7 +185,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-        className="absolute bottom-8 end-6 z-30 inline-flex items-center gap-2 rounded-full bg-[#00FF88] px-8 py-4 font-display text-lg font-bold uppercase tracking-wide text-black shadow-[0_0_40px_rgba(0,255,136,0.6)] transition-transform active:scale-95 sm:px-10 sm:py-5 sm:text-xl md:bottom-12 lg:bottom-16 lg:end-16 lg:px-14 lg:py-6 lg:text-2xl"
+        className="absolute bottom-8 end-6 z-30 inline-flex items-center gap-2 rounded-full bg-[#00B85F] px-8 py-4 font-display text-lg font-bold uppercase tracking-wide text-black shadow-[0_0_40px_rgba(0,184,95,0.6)] transition-transform active:scale-95 sm:px-10 sm:py-5 sm:text-xl md:bottom-12 lg:bottom-16 lg:end-16 lg:px-14 lg:py-6 lg:text-2xl"
         style={{
           paddingBottom: "calc(1rem + env(safe-area-inset-bottom))",
         }}

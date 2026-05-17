@@ -190,7 +190,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
               <span className="font-display text-3xl font-black md:text-5xl">
                 {formatILS(totalPrice)}
               </span>
-              <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-muted">
+              <span className="rounded-full border border-border bg-foreground/5 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-muted">
                 {tierMeta.labelHe}
               </span>
             </div>
@@ -204,7 +204,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                   </h3>
                   <a
                     href="/size-guide"
-                    className="text-xs text-[#00FF88] underline-offset-4 hover:underline"
+                    className="text-xs text-[#00B85F] underline-offset-4 hover:underline"
                   >
                     מדריך מידות
                   </a>
@@ -220,8 +220,8 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                         aria-pressed={selected}
                         className={`inline-flex h-12 min-w-[56px] items-center justify-center rounded-full border-2 px-4 font-display text-base font-bold transition-all duration-150 ${
                           selected
-                            ? "border-[#00FF88] bg-[#00FF88] text-black shadow-[0_0_18px_rgba(0,255,136,0.35)]"
-                            : "border-white/20 bg-white/5 text-foreground hover:border-white/40"
+                            ? "border-[#00B85F] bg-[#00B85F] text-black shadow-[0_0_18px_rgba(0,184,95,0.35)]"
+                            : "border-border bg-foreground/5 text-foreground hover:border-border"
                         }`}
                       >
                         {s}
@@ -233,14 +233,14 @@ export default function ProductDetailV2({ product }: { product: Product }) {
             )}
 
             {/* ============ CUSTOMIZATION (collapsible mobile / open desktop) ============ */}
-            <div className="rounded-2xl border border-[#00FF88]/30 bg-[#00FF88]/5 p-5">
+            <div className="rounded-2xl border border-[#00B85F]/30 bg-[#00B85F]/5 p-5">
               <button
                 type="button"
                 onClick={() => setCustomOpen((v) => !v)}
                 className="flex w-full items-center justify-between gap-3 md:cursor-default md:pointer-events-none"
               >
                 <div className="flex items-start gap-2.5 text-start">
-                  <Sparkles className="h-5 w-5 flex-shrink-0 text-[#00FF88]" />
+                  <Sparkles className="h-5 w-5 flex-shrink-0 text-[#00B85F]" />
                   <div>
                     <h3 className="font-display text-lg font-bold leading-tight">
                       התאמה אישית — חינם
@@ -263,7 +263,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                 } md:mt-5 md:block`}
               >
                 {/* Toggle */}
-                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-white/10 bg-black/30 p-3">
+                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-border bg-background/30 p-3">
                   <input
                     type="checkbox"
                     checked={enableCustom}
@@ -273,13 +273,13 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                   <span
                     className={`relative inline-block h-6 w-11 flex-shrink-0 rounded-full border transition-colors duration-150 ${
                       enableCustom
-                        ? "border-[#00FF88] bg-[#00FF88]/20"
-                        : "border-white/20 bg-white/10"
+                        ? "border-[#00B85F] bg-[#00B85F]/20"
+                        : "border-border bg-foreground/10"
                     }`}
                   >
                     <span
                       className={`absolute top-0.5 inline-block h-5 w-5 rounded-full bg-white transition-all duration-200 ${
-                        enableCustom ? "start-[1.5rem] bg-[#00FF88]" : "start-0.5"
+                        enableCustom ? "start-[1.5rem] bg-[#00B85F]" : "start-0.5"
                       }`}
                     />
                   </span>
@@ -306,7 +306,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                               .toUpperCase(),
                           )
                         }
-                        className="w-full rounded-lg border border-white/10 bg-black/40 px-4 py-3 text-base text-foreground placeholder:text-muted focus:border-[#00FF88] focus:outline-none"
+                        className="w-full rounded-lg border border-border bg-background/40 px-4 py-3 text-base text-foreground placeholder:text-muted focus:border-[#00B85F] focus:outline-none"
                       />
                       <input
                         type="tel"
@@ -322,31 +322,31 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                             setNumber(v);
                           }
                         }}
-                        className="w-full rounded-lg border border-white/10 bg-black/40 px-4 py-3 text-base text-foreground placeholder:text-muted focus:border-[#00FF88] focus:outline-none"
+                        className="w-full rounded-lg border border-border bg-background/40 px-4 py-3 text-base text-foreground placeholder:text-muted focus:border-[#00B85F] focus:outline-none"
                       />
                     </div>
 
                     {/* Live preview — jersey back simulation */}
-                    <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-gradient-to-b from-slate-800 via-slate-900 to-black">
+                    <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-border bg-gradient-to-b from-surface-2 via-background to-surface-2">
                       {images[1] && (
                         <Image
                           src={images[1]}
                           alt=""
                           fill
                           sizes="(min-width: 768px) 400px, 100vw"
-                          className="object-cover opacity-30"
+                          className="object-cover opacity-50"
                         />
                       )}
                       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                        <span className="font-display text-3xl font-bold uppercase tracking-[0.18em] text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] md:text-5xl">
+                        <span className="font-display text-3xl font-bold uppercase tracking-[0.18em] text-foreground drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] md:text-5xl">
                           {name || "YOUR NAME"}
                         </span>
-                        <span className="mt-2 font-display text-7xl font-black tabular-nums text-white drop-shadow-[0_6px_12px_rgba(0,0,0,0.6)] md:text-9xl">
+                        <span className="mt-2 font-display text-7xl font-black tabular-nums text-foreground drop-shadow-[0_6px_12px_rgba(0,0,0,0.6)] md:text-9xl">
                           {number || "10"}
                         </span>
                       </div>
                       <div className="pointer-events-none absolute bottom-3 inset-x-0 text-center">
-                        <span className="inline-flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-[#00FF88] backdrop-blur-md">
+                        <span className="inline-flex items-center gap-1.5 rounded-full bg-background/70 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-[#00B85F] backdrop-blur-md">
                           <Sparkles className="h-3 w-3" />
                           תצוגה חיה
                         </span>
@@ -372,8 +372,8 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                               aria-pressed={selected}
                               className={`flex flex-col items-center gap-1.5 rounded-xl border-2 p-2.5 transition-all duration-150 ${
                                 selected
-                                  ? "border-[#00FF88] bg-[#00FF88]/10 shadow-[0_0_18px_rgba(0,255,136,0.25)]"
-                                  : "border-white/10 bg-black/20 hover:border-white/30"
+                                  ? "border-[#00B85F] bg-[#00B85F]/10 shadow-[0_0_18px_rgba(0,184,95,0.25)]"
+                                  : "border-border bg-background/20 hover:border-border"
                               }`}
                             >
                               <div className="relative h-12 w-12">
@@ -403,7 +403,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
               type="button"
               onClick={() => addToCart(false)}
               disabled={adding}
-              className="hidden w-full items-center justify-center gap-2 rounded-full bg-[#00FF88] py-5 font-display text-xl font-bold uppercase tracking-wide text-black shadow-[0_0_30px_rgba(0,255,136,0.45)] transition-transform duration-150 active:scale-95 disabled:opacity-60 md:inline-flex md:hover:scale-[1.02]"
+              className="hidden w-full items-center justify-center gap-2 rounded-full bg-[#00B85F] py-5 font-display text-xl font-bold uppercase tracking-wide text-black shadow-[0_0_30px_rgba(0,184,95,0.45)] transition-transform duration-150 active:scale-95 disabled:opacity-60 md:inline-flex md:hover:scale-[1.02]"
             >
               {adding ? <Check className="h-5 w-5" /> : "הוסף לסל"}
               <span>· {formatILS(totalPrice)}</span>
@@ -435,9 +435,9 @@ export default function ProductDetailV2({ product }: { product: Product }) {
               ].map((t) => (
                 <div
                   key={t.title}
-                  className="flex flex-col items-start gap-1.5 rounded-xl border border-white/5 bg-white/5 p-3"
+                  className="flex flex-col items-start gap-1.5 rounded-xl border border-border bg-foreground/5 p-3"
                 >
-                  <t.Icon className="h-5 w-5 text-[#00FF88]" />
+                  <t.Icon className="h-5 w-5 text-[#00B85F]" />
                   <span className="font-display text-sm font-bold leading-tight">
                     {t.title}
                   </span>
@@ -482,7 +482,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
                 <button
                   type="button"
                   onClick={() => setDescOpen((v) => !v)}
-                  className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#00FF88] hover:underline"
+                  className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#00B85F] hover:underline"
                 >
                   {descOpen ? "קרא פחות" : "קרא עוד"}
                   <ChevronDown
@@ -499,7 +499,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
 
       {/* ===== MOBILE STICKY CTA ===== */}
       <div
-        className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-black/95 p-3 backdrop-blur-md md:hidden"
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur-md md:hidden"
         style={{
           paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))",
         }}
@@ -508,7 +508,7 @@ export default function ProductDetailV2({ product }: { product: Product }) {
           type="button"
           onClick={() => addToCart(false)}
           disabled={adding}
-          className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-[#00FF88] font-display text-lg font-bold uppercase tracking-wide text-black shadow-[0_8px_28px_-6px_rgba(0,255,136,0.6)] transition-transform duration-150 active:scale-95 disabled:opacity-60"
+          className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-[#00B85F] font-display text-lg font-bold uppercase tracking-wide text-black shadow-[0_8px_28px_-6px_rgba(0,184,95,0.6)] transition-transform duration-150 active:scale-95 disabled:opacity-60"
         >
           {adding ? <Check className="h-5 w-5" /> : "הוסף לסל"}
           <span>· {formatILS(totalPrice)}</span>

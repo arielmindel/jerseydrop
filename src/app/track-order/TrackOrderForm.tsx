@@ -24,10 +24,10 @@ export default function TrackOrderForm() {
   return (
     <form
       onSubmit={submit}
-      className="space-y-4 rounded-2xl border border-white/10 bg-white/[0.03] p-5"
+      className="space-y-4 rounded-2xl border border-border bg-foreground/[0.03] p-5"
     >
       <label className="block">
-        <span className="mb-1.5 block text-sm font-semibold text-white">
+        <span className="mb-1.5 block text-sm font-semibold text-foreground">
           מספר הזמנה
         </span>
         <input
@@ -37,11 +37,11 @@ export default function TrackOrderForm() {
           placeholder="למשל: JD-2026-0123"
           value={orderId}
           onChange={(e) => setOrderId(e.target.value)}
-          className="w-full rounded-lg border border-white/10 bg-black/40 px-4 py-3 text-base text-white placeholder:text-white/40 focus:border-[#00FF88] focus:outline-none"
+          className="w-full rounded-lg border border-border bg-background/40 px-4 py-3 text-base text-foreground placeholder:text-foreground/40 focus:border-[#00B85F] focus:outline-none"
         />
       </label>
       <label className="block">
-        <span className="mb-1.5 block text-sm font-semibold text-white">
+        <span className="mb-1.5 block text-sm font-semibold text-foreground">
           מייל שאיתו הזמנת
         </span>
         <input
@@ -51,12 +51,12 @@ export default function TrackOrderForm() {
           placeholder="you@example.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full rounded-lg border border-white/10 bg-black/40 px-4 py-3 text-base text-white placeholder:text-white/40 focus:border-[#00FF88] focus:outline-none"
+          className="w-full rounded-lg border border-border bg-background/40 px-4 py-3 text-base text-foreground placeholder:text-foreground/40 focus:border-[#00B85F] focus:outline-none"
         />
       </label>
       <button
         type="submit"
-        className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#00FF88] px-6 font-display text-base font-bold uppercase tracking-wide text-black shadow-[0_8px_24px_-8px_rgba(0,255,136,0.7)] transition-transform duration-150 active:scale-95"
+        className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#00B85F] px-6 font-display text-base font-bold uppercase tracking-wide text-black shadow-[0_8px_24px_-8px_rgba(0,184,95,0.7)] transition-transform duration-150 active:scale-95"
       >
         <MessageCircle className="h-5 w-5" />
         בדוק סטטוס ב-WhatsApp

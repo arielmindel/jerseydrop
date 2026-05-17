@@ -33,7 +33,7 @@ export default function TrustBar() {
   return (
     <section
       aria-label="הבטחות JerseyDrop"
-      className="border-y border-white/10 bg-surface/60"
+      className="border-y border-border bg-surface/60"
     >
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 py-6 md:grid-cols-4 md:gap-8 md:px-6 md:py-8 lg:px-8">
         {PILLARS.map((p) => (
@@ -43,13 +43,13 @@ export default function TrustBar() {
           >
             <p.Icon
               aria-hidden
-              className="h-7 w-7 flex-shrink-0 text-[#00FF88] md:h-8 md:w-8"
+              className="h-7 w-7 flex-shrink-0 text-[#00B85F] md:h-8 md:w-8"
             />
             <div className="flex flex-col leading-tight">
-              <span className="font-display text-base font-bold text-white">
+              <span className="font-display text-base font-bold text-foreground">
                 {p.title}
               </span>
-              <span className="mt-0.5 text-sm text-white/60">{p.sub}</span>
+              <span className="mt-0.5 text-sm text-foreground/60">{p.sub}</span>
             </div>
           </div>
         ))}

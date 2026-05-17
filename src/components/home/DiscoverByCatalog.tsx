@@ -20,7 +20,7 @@ const TILES: CatalogTile[] = [
     titleHe: "Player Edition",
     subtitleHe: "חולצות שחקנים — בד מיקרו פייבר נושם",
     badgeLabel: "PRO QUALITY",
-    accent: "#00FF88",
+    accent: "#00B85F",
     filterTag: "player",
   },
   {

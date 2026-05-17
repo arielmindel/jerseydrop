@@ -8,7 +8,7 @@ export default function JerseyPreview({
   name,
   number,
   jerseyColor = "#141414",
-  accent = "#00FF88",
+  accent = "#00B85F",
   textColor = "#FFFFFF",
 }: {
   name: string;

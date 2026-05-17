@@ -16,7 +16,7 @@ export default function TrackOrderPage() {
         רוצה לבדוק איפה ההזמנה שלך? הזן את מספר ההזמנה והמייל שאיתו הזמנת
         — ננתב אותך לצוות שלנו ב-WhatsApp עם כל הפרטים מוכנים.
       </p>
-      <p className="rounded-xl border border-[#00FF88]/20 bg-[#00FF88]/5 p-4 text-sm">
+      <p className="rounded-xl border border-[#00B85F]/20 bg-[#00B85F]/5 p-4 text-sm">
         💡 מעקב אוטומטי מלא יושק בקרוב. בינתיים — אנחנו עונים תוך 24 שעות
         ב-WhatsApp.
       </p>

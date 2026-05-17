@@ -34,14 +34,14 @@ const KIDS_ROWS: {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="border-b border-white/15 bg-white/[0.05] px-3 py-3 text-end font-display text-sm font-bold uppercase tracking-wider text-[#00FF88]">
+    <th className="border-b border-border bg-foreground/[0.05] px-3 py-3 text-end font-display text-sm font-bold uppercase tracking-wider text-[#00B85F]">
       {children}
     </th>
   );
 }
 function Td({ children }: { children: React.ReactNode }) {
   return (
-    <td className="border-b border-white/5 px-3 py-3 text-end text-base text-white/85">
+    <td className="border-b border-border px-3 py-3 text-end text-base text-foreground/85">
       {children}
     </td>
   );
@@ -94,7 +94,7 @@ export default function SizeChartPage() {
       </p>
 
       <h2>חולצות מבוגרים (S–XXL)</h2>
-      <div className="not-prose overflow-x-auto rounded-xl border border-white/10">
+      <div className="not-prose overflow-x-auto rounded-xl border border-border">
         <table className="w-full border-collapse">
           <thead>
             <tr>
@@ -107,7 +107,7 @@ export default function SizeChartPage() {
             {ADULT_ROWS.map((r) => (
               <tr key={r.size}>
                 <Td>
-                  <strong className="text-white">{r.size}</strong>
+                  <strong className="text-foreground">{r.size}</strong>
                 </Td>
                 <Td>{r.chest}</Td>
                 <Td>{r.length}</Td>
@@ -118,7 +118,7 @@ export default function SizeChartPage() {
       </div>
 
       <h2>חולצות ילדים (16–28)</h2>
-      <div className="not-prose overflow-x-auto rounded-xl border border-white/10">
+      <div className="not-prose overflow-x-auto rounded-xl border border-border">
         <table className="w-full border-collapse">
           <thead>
             <tr>
@@ -132,7 +132,7 @@ export default function SizeChartPage() {
             {KIDS_ROWS.map((r) => (
               <tr key={r.size}>
                 <Td>
-                  <strong className="text-white">{r.size}</strong>
+                  <strong className="text-foreground">{r.size}</strong>
                 </Td>
                 <Td>{r.age}</Td>
                 <Td>{r.chest}</Td>

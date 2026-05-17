@@ -63,7 +63,7 @@ function FooterLinks({
 }) {
   return (
     <div>
-      <h4 className="mb-5 font-display text-overline font-bold uppercase tracking-[0.18em] text-[#00FF88]">
+      <h4 className="mb-5 font-display text-overline font-bold uppercase tracking-[0.18em] text-[#00B85F]">
         {heading}
       </h4>
       <ul className="space-y-3 text-base">
@@ -71,7 +71,7 @@ function FooterLinks({
           <li key={`${heading}-${l.labelHe}`}>
             <Link
               href={l.href}
-              className="inline-flex h-8 items-center text-white/80 transition-colors duration-150 hover:text-[#00FF88]"
+              className="inline-flex h-8 items-center text-foreground/80 transition-colors duration-150 hover:text-[#00B85F]"
             >
               {l.labelHe}
             </Link>
@@ -84,7 +84,7 @@ function FooterLinks({
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 bg-black/95 text-white/80 backdrop-blur">
+    <footer className="relative overflow-hidden border-t border-border bg-background/95 text-foreground/80 backdrop-blur">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"
@@ -102,7 +102,7 @@ export default function Footer() {
               className="h-12 w-auto"
             />
           </Link>
-          <p className="max-w-xs text-base leading-relaxed text-white/70">
+          <p className="max-w-xs text-base leading-relaxed text-foreground/70">
             חולצות כדורגל אותנטיות, ישר אליך
           </p>
           <div className="flex gap-2 pt-1">
@@ -111,14 +111,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white/70 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#00FF88] hover:bg-[#00FF88]/10 hover:text-[#00FF88]"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground/70 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#00B85F] hover:bg-[#00B85F]/10 hover:text-[#00B85F]"
             >
               <Instagram className="h-5 w-5" />
             </a>
             <a
               href="#"
               aria-label="TikTok (בקרוב)"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white/70 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#00FF88] hover:bg-[#00FF88]/10 hover:text-[#00FF88]"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground/70 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#00B85F] hover:bg-[#00B85F]/10 hover:text-[#00B85F]"
             >
               <TikTokIcon className="h-5 w-5" />
             </a>
@@ -127,7 +127,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white/70 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#00FF88] hover:bg-[#00FF88]/10 hover:text-[#00FF88]"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground/70 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#00B85F] hover:bg-[#00B85F]/10 hover:text-[#00B85F]"
             >
               <MessageCircle className="h-5 w-5" />
             </a>
@@ -139,8 +139,8 @@ export default function Footer() {
         <FooterLinks heading="משפטי" links={LEGAL_LINKS} />
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="container flex flex-col items-center justify-between gap-4 py-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] text-xs text-white/55 md:flex-row md:py-5 md:text-sm">
+      <div className="border-t border-border">
+        <div className="container flex flex-col items-center justify-between gap-4 py-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] text-xs text-foreground/55 md:flex-row md:py-5 md:text-sm">
           <span>© 2026 JerseyDrop. כל הזכויות שמורות.</span>
           <div
             aria-label="אמצעי תשלום מקובלים"
@@ -165,7 +165,7 @@ export default function Footer() {
                 className="h-6 w-auto md:h-7"
               />
             ))}
-            <span className="ms-1 inline-flex items-center rounded-full border border-white/20 px-2.5 py-1 font-display text-[10px] font-bold tracking-wide text-white/85 md:text-[11px]">
+            <span className="ms-1 inline-flex items-center rounded-full border border-border px-2.5 py-1 font-display text-[10px] font-bold tracking-wide text-foreground/85 md:text-[11px]">
               עד 12 תשלומים
             </span>
           </div>

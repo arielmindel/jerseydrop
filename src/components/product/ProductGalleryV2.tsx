@@ -73,7 +73,7 @@ export default function ProductGalleryV2({
             ))}
           </div>
           {/* Zoom hint */}
-          <div className="pointer-events-none absolute end-3 top-3 inline-flex items-center gap-1 rounded-full bg-black/60 px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-md">
+          <div className="pointer-events-none absolute end-3 top-3 inline-flex items-center gap-1 rounded-full bg-background/60 px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-foreground backdrop-blur-md">
             <ZoomIn className="h-3 w-3" />
             הגדל
           </div>
@@ -91,8 +91,8 @@ export default function ProductGalleryV2({
                 onClick={() => scrollTo(i)}
                 className={`h-2 rounded-full transition-all duration-200 ${
                   activeIdx === i
-                    ? "w-6 bg-[#00FF88]"
-                    : "w-2 bg-white/30"
+                    ? "w-6 bg-[#00B85F]"
+                    : "w-2 bg-foreground/30"
                 }`}
               />
             ))}
@@ -113,8 +113,8 @@ export default function ProductGalleryV2({
                 aria-label={`תמונה ${i + 1}`}
                 className={`relative h-20 w-20 overflow-hidden rounded-lg border-2 transition-all duration-200 ${
                   activeIdx === i
-                    ? "border-[#00FF88] shadow-[0_0_15px_rgba(0,255,136,0.3)]"
-                    : "border-white/10 opacity-70 hover:border-white/30 hover:opacity-100"
+                    ? "border-[#00B85F] shadow-[0_0_15px_rgba(0,184,95,0.3)]"
+                    : "border-border opacity-70 hover:border-border hover:opacity-100"
                 }`}
               >
                 <Image
@@ -132,7 +132,7 @@ export default function ProductGalleryV2({
         <button
           type="button"
           onClick={() => setZoomOpen(true)}
-          className="group relative aspect-[3/4] flex-1 overflow-hidden rounded-2xl border border-white/10 bg-surface"
+          className="group relative aspect-[3/4] flex-1 overflow-hidden rounded-2xl border border-border bg-surface"
           aria-label="הגדל תמונה"
         >
           <Image
@@ -146,7 +146,7 @@ export default function ProductGalleryV2({
             blurDataURL={BLUR_DATA_URL}
             className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
           />
-          <div className="pointer-events-none absolute end-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-2 text-xs font-bold uppercase tracking-wider text-white opacity-0 backdrop-blur-md transition-opacity duration-200 group-hover:opacity-100">
+          <div className="pointer-events-none absolute end-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-background/60 px-3 py-2 text-xs font-bold uppercase tracking-wider text-foreground opacity-0 backdrop-blur-md transition-opacity duration-200 group-hover:opacity-100">
             <ZoomIn className="h-4 w-4" />
             הגדל
           </div>
@@ -159,14 +159,14 @@ export default function ProductGalleryV2({
           role="dialog"
           aria-modal="true"
           aria-label="תצוגה מורחבת"
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 p-4"
           onClick={() => setZoomOpen(false)}
         >
           <button
             type="button"
             onClick={() => setZoomOpen(false)}
             aria-label="סגור"
-            className="absolute end-4 top-4 z-10 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-colors hover:bg-white/20"
+            className="absolute end-4 top-4 z-10 inline-flex h-12 w-12 items-center justify-center rounded-full bg-foreground/10 text-foreground backdrop-blur-md transition-colors hover:bg-foreground/20"
           >
             <X className="h-6 w-6" />
           </button>
@@ -179,7 +179,7 @@ export default function ProductGalleryV2({
                   scrollTo((activeIdx - 1 + images.length) % images.length);
                 }}
                 aria-label="הקודם"
-                className="absolute end-4 top-1/2 z-10 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-colors hover:bg-white/20 md:inline-flex"
+                className="absolute end-4 top-1/2 z-10 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-foreground/10 text-foreground backdrop-blur-md transition-colors hover:bg-foreground/20 md:inline-flex"
               >
                 <ChevronRight className="h-6 w-6" />
               </button>
@@ -190,7 +190,7 @@ export default function ProductGalleryV2({
                   scrollTo((activeIdx + 1) % images.length);
                 }}
                 aria-label="הבא"
-                className="absolute start-4 top-1/2 z-10 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-colors hover:bg-white/20 md:inline-flex"
+                className="absolute start-4 top-1/2 z-10 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-foreground/10 text-foreground backdrop-blur-md transition-colors hover:bg-foreground/20 md:inline-flex"
               >
                 <ChevronLeft className="h-6 w-6" />
               </button>

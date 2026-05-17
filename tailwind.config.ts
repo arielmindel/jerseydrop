@@ -22,30 +22,32 @@ const config: Config = {
         landscape: { raw: "(orientation: landscape)" },
       },
       colors: {
-        // Refresh: navy-charcoal with subtle blue undertone instead of pure
-        // black. Reads as "premium dark" rather than "void". Surface +
-        // border are nudged to give cards more visible structure.
-        background: "#0B1220",
-        surface: "#151B2C",
-        "surface-2": "#1C2237",
-        border: "#2C3349",
-        foreground: "#F8FAFC",
+        // Light theme — white page, near-black ink, subtle gray surfaces.
+        // Adidas/Nike Direct-style: black-bg AI product images "float" on
+        // the white canvas. Accent darkened from neon #00FF88 to #00B85F
+        // so green text passes WCAG AA (4.6:1) on white. CTA buttons stay
+        // bold green with white ink for max readability.
+        background: "#FFFFFF",
+        surface: "#FFFFFF",
+        "surface-2": "#FAFAFA",
+        border: "#E5E5E5",
+        foreground: "#0A0A0A",
         muted: {
-          DEFAULT: "#94A3B8",
-          foreground: "#64748B",
+          DEFAULT: "#525252",
+          foreground: "#737373",
         },
         accent: {
-          DEFAULT: "#00FF88",
-          foreground: "#0B1220",
+          DEFAULT: "#00B85F",
+          foreground: "#FFFFFF",
         },
         // Secondary accents for variety in section washes / category badges
-        cyan: "#22D3EE",
-        violet: "#A855F7",
-        rose: "#F472B6",
-        amber: "#F59E0B",
-        gold: "#D4AF37",
-        destructive: "#FF3B5C",
-        success: "#00FF88",
+        cyan: "#0891B2",
+        violet: "#7E22CE",
+        rose: "#DB2777",
+        amber: "#D97706",
+        gold: "#B8860B",
+        destructive: "#DC2626",
+        success: "#00B85F",
       },
       fontFamily: {
         sans: ["var(--font-heebo)", "ui-sans-serif", "system-ui", "sans-serif"],
@@ -80,28 +82,33 @@ const config: Config = {
         emphasized: "cubic-bezier(0.2, 0, 0, 1)",
       },
       boxShadow: {
-        glow: "0 0 24px rgba(0, 255, 136, 0.35)",
-        "glow-sm": "0 0 12px rgba(0, 255, 136, 0.25)",
-        "glow-cyan": "0 0 24px rgba(34, 211, 238, 0.30)",
-        "glow-violet": "0 0 24px rgba(168, 85, 247, 0.30)",
-        "glow-rose": "0 0 24px rgba(244, 114, 182, 0.30)",
-        gold: "0 0 20px rgba(212, 175, 55, 0.35)",
-        card: "0 4px 24px -8px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(44, 51, 73, 0.6)",
+        // Light-theme glows: tinted DROP shadow rather than haze.
+        // Brand green still pulses but reads as a colored card lift,
+        // not a neon halo (which only works on dark canvas).
+        glow: "0 8px 24px -4px rgba(0, 184, 95, 0.35), 0 0 0 1px rgba(0, 184, 95, 0.15)",
+        "glow-sm": "0 4px 12px -2px rgba(0, 184, 95, 0.25)",
+        "glow-cyan": "0 8px 24px -4px rgba(8, 145, 178, 0.30)",
+        "glow-violet": "0 8px 24px -4px rgba(126, 34, 206, 0.30)",
+        "glow-rose": "0 8px 24px -4px rgba(219, 39, 119, 0.30)",
+        gold: "0 8px 20px -4px rgba(184, 134, 11, 0.35)",
+        card: "0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04)",
       },
       backgroundImage: {
+        // Light-theme aurora — very subtle tints over white (instead of
+        // saturated glows on dark). Keeps the brand color spectrum.
         "mesh-aurora":
-          "radial-gradient(at 8% 12%, rgba(0,255,136,0.12) 0px, transparent 50%), radial-gradient(at 95% 8%, rgba(168,85,247,0.10) 0px, transparent 45%), radial-gradient(at 50% 100%, rgba(34,211,238,0.08) 0px, transparent 55%)",
+          "radial-gradient(at 8% 12%, rgba(0,184,95,0.05) 0px, transparent 50%), radial-gradient(at 95% 8%, rgba(126,34,206,0.04) 0px, transparent 45%), radial-gradient(at 50% 100%, rgba(8,145,178,0.04) 0px, transparent 55%)",
         "mesh-warm":
-          "radial-gradient(at 12% 0%, rgba(244,114,182,0.10) 0px, transparent 45%), radial-gradient(at 90% 30%, rgba(245,158,11,0.08) 0px, transparent 50%)",
+          "radial-gradient(at 12% 0%, rgba(219,39,119,0.04) 0px, transparent 45%), radial-gradient(at 90% 30%, rgba(217,119,6,0.04) 0px, transparent 50%)",
         "mesh-ice":
-          "radial-gradient(at 0% 50%, rgba(34,211,238,0.10) 0px, transparent 50%), radial-gradient(at 100% 50%, rgba(0,255,136,0.10) 0px, transparent 50%)",
+          "radial-gradient(at 0% 50%, rgba(8,145,178,0.04) 0px, transparent 50%), radial-gradient(at 100% 50%, rgba(0,184,95,0.05) 0px, transparent 50%)",
         "card-gradient":
-          "linear-gradient(180deg, rgba(28,34,55,0.6) 0%, rgba(11,18,32,0.4) 100%)",
+          "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 100%)",
       },
       keyframes: {
         pulseGlow: {
-          "0%, 100%": { boxShadow: "0 0 0 0 rgba(0,255,136,0.45)" },
-          "50%": { boxShadow: "0 0 0 8px rgba(0,255,136,0)" },
+          "0%, 100%": { boxShadow: "0 0 0 0 rgba(0,184,95,0.45)" },
+          "50%": { boxShadow: "0 0 0 8px rgba(0,184,95,0)" },
         },
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(12px)" },

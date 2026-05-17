@@ -271,7 +271,7 @@ export default function Chatbot() {
         type="button"
         aria-label="פתח צ׳אט עם עוזר AI"
         onClick={() => setOpen(true)}
-        className={`fixed bottom-6 end-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#00FF88] text-black shadow-[0_8px_32px_rgba(0,255,136,0.45)] transition-all duration-300 ease-emphasized hover:scale-105 hover:shadow-[0_12px_42px_rgba(0,255,136,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00FF88] focus-visible:ring-offset-2 focus-visible:ring-offset-background md:h-16 md:w-16 ${
+        className={`fixed bottom-6 end-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#00B85F] text-black shadow-[0_8px_32px_rgba(0,184,95,0.45)] transition-all duration-300 ease-emphasized hover:scale-105 hover:shadow-[0_12px_42px_rgba(0,184,95,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00B85F] focus-visible:ring-offset-2 focus-visible:ring-offset-background md:h-16 md:w-16 ${
           overHero || open
             ? "pointer-events-none translate-y-3 opacity-0"
             : "pointer-events-auto translate-y-0 opacity-100"
@@ -280,7 +280,7 @@ export default function Chatbot() {
       >
         <MessageCircle className="h-6 w-6 md:h-7 md:w-7" strokeWidth={2.5} />
         {/* Subtle "AI" badge top-right of the button */}
-        <span className="absolute -end-1 -top-1 inline-flex h-5 items-center gap-0.5 rounded-full bg-black px-1.5 font-display text-[9px] font-black uppercase tracking-widest text-[#00FF88] ring-2 ring-[#00FF88]">
+        <span className="absolute -end-1 -top-1 inline-flex h-5 items-center gap-0.5 rounded-full bg-background px-1.5 font-display text-[9px] font-black uppercase tracking-widest text-[#00B85F] ring-2 ring-[#00B85F]">
           <Sparkles className="h-2.5 w-2.5" /> AI
         </span>
       </button>
@@ -291,14 +291,14 @@ export default function Chatbot() {
           <div
             aria-hidden
             onClick={() => setOpen(false)}
-            className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm md:bg-black/40"
+            className="fixed inset-0 z-40 bg-background/60 backdrop-blur-sm md:bg-background/40"
             style={{ animation: "jd-bot-fade 200ms ease-out" }}
           />
           <div
             role="dialog"
             aria-modal="true"
             aria-label="צ׳אט עם עוזר AI של JerseyDrop"
-            className="fixed inset-0 z-50 flex flex-col border border-white/10 bg-black/95 text-white shadow-[0_20px_80px_rgba(0,255,136,0.12)] backdrop-blur-2xl md:bottom-24 md:end-6 md:start-auto md:top-auto md:h-[640px] md:max-h-[calc(100vh-9rem)] md:w-[420px] md:rounded-3xl md:inset-y-auto md:inset-x-auto"
+            className="fixed inset-0 z-50 flex flex-col border border-border bg-background/95 text-foreground shadow-[0_20px_80px_rgba(0,184,95,0.12)] backdrop-blur-2xl md:bottom-24 md:end-6 md:start-auto md:top-auto md:h-[640px] md:max-h-[calc(100vh-9rem)] md:w-[420px] md:rounded-3xl md:inset-y-auto md:inset-x-auto"
             style={{ animation: "jd-bot-panel-in 240ms cubic-bezier(0.22, 1, 0.36, 1)" }}
           >
             <Header onClose={() => setOpen(false)} onReset={reset} />
@@ -338,8 +338,8 @@ export default function Chatbot() {
       {/* Keyframes — colocated so the component is fully self-contained */}
       <style>{`
         @keyframes jd-bot-pulse {
-          0%, 100% { transform: scale(1); box-shadow: 0 8px 32px rgba(0,255,136,0.45); }
-          50%      { transform: scale(1.05); box-shadow: 0 12px 42px rgba(0,255,136,0.65); }
+          0%, 100% { transform: scale(1); box-shadow: 0 8px 32px rgba(0,184,95,0.45); }
+          50%      { transform: scale(1.05); box-shadow: 0 12px 42px rgba(0,184,95,0.65); }
         }
         @keyframes jd-bot-fade {
           from { opacity: 0; } to { opacity: 1; }
@@ -368,8 +368,8 @@ export default function Chatbot() {
 
 function Header({ onClose, onReset }: { onClose: () => void; onReset: () => void }) {
   return (
-    <div className="relative flex items-center gap-3 border-b border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent px-4 py-3">
-      <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full bg-[#00FF88]/15 ring-1 ring-[#00FF88]/40">
+    <div className="relative flex items-center gap-3 border-b border-border bg-gradient-to-b from-white/[0.04] to-transparent px-4 py-3">
+      <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full bg-[#00B85F]/15 ring-1 ring-[#00B85F]/40">
         <Image
           src="/logo/logo-mark.png"
           alt="JerseyDrop"
@@ -377,21 +377,21 @@ function Header({ onClose, onReset }: { onClose: () => void; onReset: () => void
           sizes="36px"
           className="object-contain p-1"
         />
-        <span className="absolute -bottom-0.5 -end-0.5 h-3 w-3 rounded-full bg-[#00FF88] ring-2 ring-black" />
+        <span className="absolute -bottom-0.5 -end-0.5 h-3 w-3 rounded-full bg-[#00B85F] ring-2 ring-black" />
       </div>
       <div className="flex flex-1 flex-col leading-tight">
         <span className="font-display text-sm font-black uppercase tracking-tight">
           עוזר JerseyDrop
         </span>
-        <span className="font-display text-[10px] uppercase tracking-widest text-white/55">
-          <span className="text-[#00FF88]">●</span> AI · עונה תוך שניות
+        <span className="font-display text-[10px] uppercase tracking-widest text-foreground/55">
+          <span className="text-[#00B85F]">●</span> AI · עונה תוך שניות
         </span>
       </div>
       <button
         type="button"
         onClick={onReset}
         aria-label="התחל שיחה חדשה"
-        className="flex h-9 w-9 items-center justify-center rounded-full text-white/60 transition-colors hover:bg-white/5 hover:text-white"
+        className="flex h-9 w-9 items-center justify-center rounded-full text-foreground/60 transition-colors hover:bg-foreground/5 hover:text-foreground"
       >
         <RotateCcw className="h-4 w-4" />
       </button>
@@ -399,7 +399,7 @@ function Header({ onClose, onReset }: { onClose: () => void; onReset: () => void
         type="button"
         onClick={onClose}
         aria-label="סגור צ׳אט"
-        className="flex h-10 w-10 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/5 hover:text-white"
+        className="flex h-10 w-10 items-center justify-center rounded-full text-foreground/70 transition-colors hover:bg-foreground/5 hover:text-foreground"
       >
         <X className="h-5 w-5" />
       </button>
@@ -425,8 +425,8 @@ function MessageBubble({
       <div
         className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${
           isUser
-            ? "rounded-bl-md bg-[#00FF88]/12 text-white"
-            : "rounded-br-md bg-white/[0.06] text-white/95"
+            ? "rounded-bl-md bg-[#00B85F]/12 text-foreground"
+            : "rounded-br-md bg-foreground/[0.06] text-foreground/95"
         }`}
       >
         {segments.map((seg, i) =>
@@ -457,10 +457,10 @@ function InlineProductCard({ product }: { product: ProductCard }) {
   return (
     <Link
       href={`/products/${product.slug}`}
-      className="group flex flex-col gap-2 overflow-hidden rounded-xl border border-white/10 bg-black/40 p-3 transition-all duration-200 hover:border-[#00FF88]/50 hover:bg-black/60 hover:shadow-[0_8px_32px_rgba(0,255,136,0.15)]"
+      className="group flex flex-col gap-2 overflow-hidden rounded-xl border border-border bg-background/40 p-3 transition-all duration-200 hover:border-[#00B85F]/50 hover:bg-background/60 hover:shadow-[0_8px_32px_rgba(0,184,95,0.15)]"
     >
       {product.imageUrl && (
-        <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-white/5">
+        <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-foreground/5">
           <Image
             src={product.imageUrl}
             alt={product.nameHe}
@@ -472,19 +472,19 @@ function InlineProductCard({ product }: { product: ProductCard }) {
         </div>
       )}
       <div className="flex flex-col gap-0.5">
-        <h4 className="font-display text-sm font-bold uppercase tracking-tight text-white">
+        <h4 className="font-display text-sm font-bold uppercase tracking-tight text-foreground">
           {product.nameHe}
         </h4>
-        <p className="font-display text-[10px] uppercase tracking-widest text-white/55">
+        <p className="font-display text-[10px] uppercase tracking-widest text-foreground/55">
           {product.team}
           {product.season ? ` · ${product.season}` : ""}
         </p>
       </div>
       <div className="flex items-center justify-between">
-        <span className="font-display text-lg font-black text-[#00FF88]">
+        <span className="font-display text-lg font-black text-[#00B85F]">
           {product.price} ₪
         </span>
-        <span className="rounded-full bg-[#00FF88] px-3 py-1 font-display text-[11px] font-black uppercase tracking-widest text-black transition-transform duration-200 group-hover:scale-[1.04]">
+        <span className="rounded-full bg-[#00B85F] px-3 py-1 font-display text-[11px] font-black uppercase tracking-widest text-black transition-transform duration-200 group-hover:scale-[1.04]">
           קנה עכשיו ←
         </span>
       </div>
@@ -501,7 +501,7 @@ function WhatsAppEscalateButton({ question }: { question: string }) {
       href={`https://wa.me/${WA_NUMBER}?text=${text}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="mt-2 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold text-white transition-transform duration-200 hover:scale-[1.03]"
+      className="mt-2 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-bold text-foreground transition-transform duration-200 hover:scale-[1.03]"
     >
       <svg
         className="h-4 w-4 fill-white"
@@ -524,7 +524,7 @@ function SuggestedChips({ onPick }: { onPick: (text: string) => void }) {
           key={s}
           type="button"
           onClick={() => onPick(s)}
-          className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs font-medium text-white/85 transition-all duration-200 hover:border-[#00FF88]/50 hover:bg-[#00FF88]/10 hover:text-white"
+          className="rounded-full border border-border bg-foreground/[0.04] px-3 py-1.5 text-xs font-medium text-foreground/85 transition-all duration-200 hover:border-[#00B85F]/50 hover:bg-[#00B85F]/10 hover:text-foreground"
         >
           {s}
         </button>
@@ -536,12 +536,12 @@ function SuggestedChips({ onPick }: { onPick: (text: string) => void }) {
 function TypingIndicator() {
   return (
     <div className="flex justify-start">
-      <div className="rounded-2xl rounded-br-md bg-white/[0.06] px-4 py-3">
+      <div className="rounded-2xl rounded-br-md bg-foreground/[0.06] px-4 py-3">
         <div className="flex items-center gap-1.5">
           {[0, 0.15, 0.3].map((delay) => (
             <span
               key={delay}
-              className="h-1.5 w-1.5 rounded-full bg-[#00FF88]"
+              className="h-1.5 w-1.5 rounded-full bg-[#00B85F]"
               style={{
                 animation: `jd-bot-dot 1.2s ease-in-out ${delay}s infinite`,
               }}
@@ -567,7 +567,7 @@ function Footer({
   inputRef: React.RefObject<HTMLTextAreaElement>;
 }) {
   return (
-    <div className="border-t border-white/10 bg-gradient-to-t from-white/[0.03] to-transparent px-4 pb-4 pt-3">
+    <div className="border-t border-border bg-gradient-to-t from-white/[0.03] to-transparent px-4 pb-4 pt-3">
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -595,13 +595,13 @@ function Footer({
           placeholder="שאל אותי כל דבר..."
           aria-label="הקלד שאלה"
           disabled={disabled}
-          className="max-h-24 flex-1 resize-none rounded-2xl border border-white/10 bg-white/[0.04] px-3.5 py-2.5 text-sm text-white placeholder:text-white/40 focus:border-[#00FF88]/50 focus:outline-none focus:ring-1 focus:ring-[#00FF88]/40 disabled:opacity-60"
+          className="max-h-24 flex-1 resize-none rounded-2xl border border-border bg-foreground/[0.04] px-3.5 py-2.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-[#00B85F]/50 focus:outline-none focus:ring-1 focus:ring-[#00B85F]/40 disabled:opacity-60"
         />
         <button
           type="submit"
           disabled={disabled || !input.trim()}
           aria-label="שלח"
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#00FF88] text-black shadow-[0_6px_20px_rgba(0,255,136,0.35)] transition-all duration-200 hover:scale-105 hover:shadow-[0_8px_28px_rgba(0,255,136,0.5)] disabled:opacity-40 disabled:hover:scale-100"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#00B85F] text-black shadow-[0_6px_20px_rgba(0,184,95,0.35)] transition-all duration-200 hover:scale-105 hover:shadow-[0_8px_28px_rgba(0,184,95,0.5)] disabled:opacity-40 disabled:hover:scale-100"
         >
           {disabled ? (
             <Loader2 className="h-5 w-5 animate-spin" />
@@ -610,7 +610,7 @@ function Footer({
           )}
         </button>
       </form>
-      <p className="mt-2 text-center text-[10px] text-white/40">
+      <p className="mt-2 text-center text-[10px] text-foreground/40">
         AI · עלול לטעות לעיתים · לחירום עבור לוואטסאפ
       </p>
     </div>

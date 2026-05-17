@@ -20,7 +20,7 @@ const MESSAGES = [
 export default function MarqueeBanner() {
   return (
     <div
-      className="group relative isolate overflow-hidden border-b border-accent/40 bg-[#0A0A0A] text-foreground"
+      className="group relative isolate overflow-hidden border-b border-border bg-surface-2 text-foreground"
       dir="ltr"
       aria-label="Promotions and policies"
     >

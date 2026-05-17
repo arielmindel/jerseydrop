@@ -19,8 +19,8 @@ export default async function OG() {
           alignItems: "flex-start",
           justifyContent: "center",
           padding: "64px 72px",
-          backgroundColor: "#0A0A0A",
-          color: "#FFFFFF",
+          backgroundColor: "#FFFFFF",
+          color: "#0A0A0A",
           fontFamily: "sans-serif",
         }}
       >
@@ -30,7 +30,7 @@ export default async function OG() {
             fontWeight: 800,
             letterSpacing: 6,
             textTransform: "uppercase",
-            color: "#00FF88",
+            color: "#00B85F",
           }}
         >
           World Cup 2026
@@ -42,7 +42,7 @@ export default async function OG() {
             lineHeight: 1,
             marginTop: 16,
             textTransform: "uppercase",
-            color: "#FFFFFF",
+            color: "#0A0A0A",
           }}
         >
           JerseyDrop
@@ -51,7 +51,7 @@ export default async function OG() {
           style={{
             fontSize: 36,
             marginTop: 24,
-            color: "#A3A3A3",
+            color: "#525252",
           }}
         >
           Official Football Jerseys · Israel
@@ -61,7 +61,7 @@ export default async function OG() {
             marginTop: 48,
             fontSize: 28,
             fontWeight: 700,
-            color: "#00FF88",
+            color: "#00B85F",
           }}
         >
           jerseydrop.co.il

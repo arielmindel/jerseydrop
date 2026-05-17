@@ -42,7 +42,7 @@ export default function Header() {
   const counts = buildNavCounts();
   const topTeamsByLeague = buildTopTeams();
   return (
-    <header className="sticky top-0 z-40 border-b border-white/5 bg-black/80 backdrop-blur-md supports-[backdrop-filter]:bg-black/60">
+    <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
       {/* Top hairline accent — barely-there neon green strip that signals
            "premium dark UI" without being loud. */}
       <div
