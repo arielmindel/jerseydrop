@@ -22,22 +22,24 @@ const config: Config = {
         landscape: { raw: "(orientation: landscape)" },
       },
       colors: {
-        // Refined dark theme — 3-tier LAYERED grays with cool undertone.
-        // Premium streetwear / Mr Porter / Adidas Originals feel, NOT
-        // pure-OLED-black. Each surface has its own tonal level so
-        // products always have a visible frame even when AI image bg
-        // is also dark.
-        //   bg-background (base)   = #0F1115  (page, deepest)
-        //   bg-surface-2  (mid)    = #12151B  (sections, header, footer)
-        //   bg-surface    (card)   = #161A22  (highest — cards, modals)
-        background: "#0F1115",
-        surface: "#161A22",
+        // Refined dark theme — 3-tier LAYERED grays with stronger
+        // contrast between layers. Page bg deeper, cards noticeably
+        // lighter, so AI product photos with black studio bg get a
+        // clearly visible card frame.
+        //   bg-background (base)        = #0A0A0A  (page, deepest black)
+        //   bg-surface-2  (mid)         = #12151B  (header, footer, sections)
+        //   bg-surface    (card)        = #1F2329  (~20% lighter than base — the lift)
+        //   bg-card-hover               = #262B33  (interactive feedback)
+        //   border (border-subtle)      = #2A2E36  (visible 1px card outline)
+        background: "#0A0A0A",
+        surface: "#1F2329",
         "surface-2": "#12151B",
-        border: "#262932",
+        "card-hover": "#262B33",
+        border: "#2A2E36",
         // Semantic aliases (per the layered-grays spec)
-        base: "#0F1115",
-        card: "#161A22",
-        "border-subtle": "#262932",
+        base: "#0A0A0A",
+        card: "#1F2329",
+        "border-subtle": "#2A2E36",
         foreground: "#FAFAFA",
         muted: {
           DEFAULT: "#A1A1AA",
@@ -45,7 +47,7 @@ const config: Config = {
         },
         accent: {
           DEFAULT: "#00FF88",
-          foreground: "#0F1115",
+          foreground: "#0A0A0A",
         },
         // Secondary accents for variety in section washes / category badges
         cyan: "#22D3EE",
@@ -95,7 +97,7 @@ const config: Config = {
         "glow-violet": "0 0 24px rgba(168, 85, 247, 0.30)",
         "glow-rose": "0 0 24px rgba(244, 114, 182, 0.30)",
         gold: "0 0 20px rgba(212, 175, 55, 0.35)",
-        card: "0 4px 24px -8px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(38, 41, 50, 0.8)",
+        card: "0 6px 24px -6px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(42, 46, 54, 0.9)",
       },
       backgroundImage: {
         "mesh-aurora":

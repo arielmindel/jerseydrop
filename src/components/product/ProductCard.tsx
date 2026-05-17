@@ -31,7 +31,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/products/${product.slug}`}
-      className="group relative flex cursor-pointer flex-col overflow-hidden rounded-xl border border-border bg-surface shadow-md transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background md:rounded-2xl [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:border-accent/50 [@media(hover:hover)]:hover:shadow-2xl [@media(hover:hover)]:hover:shadow-accent/15"
+      className="group relative flex cursor-pointer flex-col overflow-hidden rounded-xl border border-border-subtle bg-card shadow-md shadow-black/40 transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background md:rounded-2xl [@media(hover:hover)]:hover:-translate-y-1 [@media(hover:hover)]:hover:border-accent/50 [@media(hover:hover)]:hover:bg-card-hover [@media(hover:hover)]:hover:shadow-lg [@media(hover:hover)]:hover:shadow-black/50"
     >
       <div className="relative aspect-[3/4] overflow-hidden bg-background">
         <Image
