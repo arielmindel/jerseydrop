@@ -63,7 +63,7 @@ export default function HomepageFAQ() {
             <AccordionItem
               key={item.id}
               value={item.id}
-              className="rounded-2xl border border-border bg-surface/60 px-5 transition-colors duration-base hover:border-accent/30 data-[state=open]:border-accent/50 data-[state=open]:bg-surface"
+              className="rounded-2xl border border-border-subtle bg-card px-5 transition-colors duration-base hover:border-accent/30 hover:bg-card-hover data-[state=open]:border-accent/50 data-[state=open]:bg-card-hover"
             >
               <AccordionTrigger className="text-start font-display text-body font-bold leading-snug">
                 {item.q}

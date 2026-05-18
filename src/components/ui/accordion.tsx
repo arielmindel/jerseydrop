@@ -30,14 +30,18 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex w-full items-center justify-between gap-3 px-5 py-4 text-start font-display text-base font-bold tracking-tight text-foreground transition-colors hover:text-accent focus-visible:outline-none focus-visible:text-accent [&[data-state=open]>svg]:rotate-180",
+        // Trigger text: pure white at all states so closed questions stay
+        // fully legible against the card bg (text-foreground at #FAFAFA
+        // read slightly dimmer than the accent-bordered OPEN sibling).
+        // Hover/focus tints the green accent for affordance.
+        "flex w-full items-center justify-between gap-3 px-5 py-4 text-start font-display text-base font-bold tracking-tight text-white transition-colors hover:text-accent focus-visible:outline-none focus-visible:text-accent [&[data-state=open]>svg]:rotate-180",
         className,
       )}
       {...props}
     >
       {children}
       <ChevronDown
-        className="h-4 w-4 shrink-0 text-muted transition-transform duration-200"
+        className="h-4 w-4 shrink-0 text-neutral-400 transition-transform duration-200"
         aria-hidden="true"
       />
     </AccordionPrimitive.Trigger>
