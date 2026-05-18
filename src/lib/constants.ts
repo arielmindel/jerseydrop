@@ -166,11 +166,11 @@ export const TIER_LABELS: Record<NationTier, { he: string; en: string; descripti
 export const WORLD_CUP_START_UTC = Date.UTC(2026, 5, 11, 18, 0, 0);
 
 export const SHIPPING = {
-  // Free shipping kicks in at 200 ₪ subtotal (flat-price model: ~2 jerseys).
-  // Standard fee 25 ₪ when below the threshold. Lead time is the same window
+  // Free shipping kicks in at 250 ₪ subtotal (flat-price model: ~2 jerseys).
+  // Standard fee 30 ₪ when below the threshold. Lead time is the same window
   // the supplier quotes in business days.
-  freeThreshold: 200,
-  standardFee: 25,
+  freeThreshold: 250,
+  standardFee: 30,
   leadTimeDays: "10-17",
 };
 

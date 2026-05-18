@@ -24,10 +24,10 @@ export default function ShippingPolicyPage() {
       <h2>עלות משלוח</h2>
       <ul>
         <li>
-          <strong>משלוח רגיל</strong>: 25 ש״ח
+          <strong>משלוח רגיל</strong>: 30 ש״ח
         </li>
         <li>
-          <strong>משלוח חינם</strong>: בקנייה מעל 200 ש״ח
+          <strong>משלוח חינם</strong>: בקנייה מעל 250 ש״ח
         </li>
       </ul>
       <h2>מכס ומיסים</h2>
