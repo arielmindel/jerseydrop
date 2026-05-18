@@ -37863,7 +37863,7 @@
       "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/76688935c266e486fb1d040524894e46.webp?v=1774721249"
     ],
     "priceTier": "mystery",
-    "imageQuality": "low"
+    "imageQuality": null
   },
   {
     "id": "8306393645330",
@@ -37912,7 +37912,7 @@
       "https://cdn.shopify.com/s/files/1/0732/1452/5714/files/f48b77fa68a5d8f267d0875db733c5e0.webp?v=1774721236"
     ],
     "priceTier": "mystery",
-    "imageQuality": "low"
+    "imageQuality": null
   },
   {
     "id": "9765789499666",
