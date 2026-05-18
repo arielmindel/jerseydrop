@@ -36,8 +36,10 @@ const config: Config = {
         "surface-2": "#12151B",
         "card-hover": "#262B33",
         border: "#2A2E36",
-        // Semantic aliases (per the layered-grays spec)
-        base: "#0A0A0A",
+        // Semantic aliases (per the layered-grays spec).
+        // NOTE: do NOT add `base` here — it collides with Tailwind's
+        // built-in `text-base` font-size class and turns it into a color
+        // override. Use `bg-background` for page bg semantics.
         card: "#1F2329",
         "border-subtle": "#2A2E36",
         foreground: "#FAFAFA",
