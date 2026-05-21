@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { LEAGUES, SIZES, TIER_LABELS } from "@/lib/constants";
 import { getAllProducts } from "@/lib/products";
-import {
-  applyFilters,
-  parseFilters,
-  type ProductFilterParams,
-} from "@/lib/filters";
-import InfiniteProductGrid from "@/components/product/InfiniteProductGrid";
+import ProductsFilteredCount from "@/components/product/ProductsFilteredCount";
+import ProductsFilteredGrid from "@/components/product/ProductsFilteredGrid";
 import QuickFilterChips from "@/components/product/QuickFilterChips";
 import AudienceToggle from "@/components/product/AudienceToggle";
 import FilterSidebar, {
@@ -21,12 +18,19 @@ export const metadata: Metadata = {
     "כל חולצות הכדורגל של JerseyDrop במקום אחד. סנן לפי קבוצה, ליגה, גרסה, מידה ומחיר.",
 };
 
-type Props = { searchParams: ProductFilterParams };
+// ============================================================================
+// ISR — regenerate at most once an hour. The catalog ships baked into the JS
+// bundle and only changes when we redeploy; an hourly stale-while-revalidate
+// keeps the CDN copy fresh after manual data tweaks without ever forcing the
+// page back to dynamic. CRITICAL: do NOT read `searchParams` here — that
+// implicitly opts the route into dynamic rendering and breaks the caching
+// (Vercel "Fast Origin Transfer" balloons because every bot hit re-runs SSR).
+// All filter state lives in `useSearchParams()` on the client components below.
+// ============================================================================
+export const revalidate = 3600;
 
-export default function ProductsPage({ searchParams }: Props) {
+export default function ProductsPage() {
   const all = getAllProducts();
-  const filters = parseFilters(searchParams);
-  const filtered = applyFilters(all, filters);
 
   // ----- Build dynamic option lists from the current catalog -----
   const teams = Array.from(new Set(all.map((p) => p.teamSlug)))
@@ -190,25 +194,35 @@ export default function ProductsPage({ searchParams }: Props) {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-sm text-muted">
-                {filtered.length} / {all.length} חולצות
-              </span>
-              <SortDropdown />
+              <Suspense fallback={<span className="text-sm text-muted">— / {all.length} חולצות</span>}>
+                <ProductsFilteredCount products={all} />
+              </Suspense>
+              <Suspense fallback={null}>
+                <SortDropdown />
+              </Suspense>
             </div>
           </div>
         </div>
       </section>
 
       <section className="container py-6 md:py-8">
-        <AudienceToggle />
-        <QuickFilterChips />
+        <Suspense fallback={null}>
+          <AudienceToggle />
+        </Suspense>
+        <Suspense fallback={null}>
+          <QuickFilterChips />
+        </Suspense>
       </section>
 
       <section className="container py-4 md:py-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-start">
-          <FilterSidebar groups={groups} counts={counts} />
+          <Suspense fallback={null}>
+            <FilterSidebar groups={groups} counts={counts} />
+          </Suspense>
           <div className="flex-1">
-            <InfiniteProductGrid products={filtered} />
+            <Suspense fallback={<div className="min-h-[400px]" />}>
+              <ProductsFilteredGrid products={all} />
+            </Suspense>
           </div>
         </div>
       </section>
