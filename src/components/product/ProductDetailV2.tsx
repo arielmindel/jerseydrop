@@ -21,7 +21,12 @@ import { toast } from "sonner";
 import ProductGalleryV2 from "./ProductGalleryV2";
 import { useCart } from "@/lib/cart";
 import { getAvailablePatches, NO_PATCH } from "@/lib/patches";
-import { getDisplayableSizes, getPriceTier, TIER_META } from "@/lib/products";
+import {
+  getCompareAtPrice,
+  getDisplayableSizes,
+  getPriceTier,
+  TIER_META,
+} from "@/lib/products";
 import { CUSTOMIZATION_FEE, SHIPPING } from "@/lib/constants";
 import { formatILS } from "@/lib/utils";
 import { descriptionParagraphs } from "@/lib/sanitize";
@@ -185,14 +190,27 @@ export default function ProductDetailV2({ product }: { product: Product }) {
               </p>
             </div>
 
-            {/* Price */}
-            <div className="flex items-baseline gap-3">
-              <span className="font-display text-3xl font-black md:text-5xl">
-                {formatILS(totalPrice)}
-              </span>
-              <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-muted">
-                {tierMeta.labelHe}
-              </span>
+            {/* Price — strikethrough compare-at anchor above the real price.
+                Compare-at is a computed ~+40% rounded-to-X9 anchor (display
+                only, never charged). Render only when it's actually higher
+                than the real price. RTL: logical utilities (me-*) only. */}
+            <div className="flex flex-col gap-1">
+              {totalPrice > 0 && getCompareAtPrice(totalPrice) > totalPrice && (
+                <span
+                  className="font-display text-lg font-bold text-muted line-through decoration-red-500 decoration-2 md:text-2xl"
+                  aria-label={`מחיר מקורי: ${formatILS(getCompareAtPrice(totalPrice))}`}
+                >
+                  {formatILS(getCompareAtPrice(totalPrice))}
+                </span>
+              )}
+              <div className="flex items-baseline gap-3">
+                <span className="font-display text-3xl font-black md:text-5xl">
+                  {formatILS(totalPrice)}
+                </span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-muted">
+                  {tierMeta.labelHe}
+                </span>
+              </div>
             </div>
 
             {/* Size selector */}

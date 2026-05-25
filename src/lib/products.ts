@@ -317,6 +317,23 @@ export function getPriceTier(product: Product): PriceTier {
   return product.priceTier ?? "regular";
 }
 
+/**
+ * Compute a "compare-at" / anchor price that's ~40% above the real price,
+ * rounded up to the nearest 10 and shifted to end in 9 (psychology pricing).
+ * Used purely for the strikethrough display on the product detail page —
+ * never stored, never charged, never used in cart math.
+ *
+ *   109 → 159 · 139 → 199 · 179 → 259 · 199 → 289
+ *
+ * Returns 0 when the input is non-positive — callers should guard with
+ * `compareAt > price` before rendering.
+ */
+export function getCompareAtPrice(price: number): number {
+  if (!Number.isFinite(price) || price <= 0) return 0;
+  const raw = price * 1.4;
+  return Math.ceil(raw / 10) * 10 - 1;
+}
+
 export function getAvailableVersions(product: Product): ProductVersion[] {
   const versions: ProductVersion[] = [];
   if (product.priceRetro !== null || product.isRetro) versions.push("retro");
